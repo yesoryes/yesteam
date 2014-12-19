@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+#slider-wrapper{
+			width: 300px;
+			height: 250px;
+			margin: 0px auto;
+			position: relative;
+			margin-bottom: 0px;
+			overflow: hidden;
+		}
+ 
+				#s1{
+					padding: 4px;
+					background: #fff;
+					position: absolute;
+					left: 53%;
+					bottom: 25px;
+					margin-left: -24px;
+					border-radius: 10px;
+					cursor: pointer;
+					z-index: 999;
+					
+				}
+				
+				#s2{
+					padding: 4px;
+					background: #fff;
+					position: absolute;
+					left: 53%;
+					bottom: 25px;
+					margin-left: -8px;
+					border-radius: 10px;					 
+					cursor: pointer;
+					z-index: 999;
+				}
+				
+				#s3{
+					padding: 4px;
+					background: #fff;
+					position: absolute;
+					left: 53%;
+					bottom: 25px;
+					margin-left: 8px;
+					border-radius: 10px;					 
+					cursor: pointer;
+					z-index: 999;
+				}
+				
+				 
+				#s1:hover, #s2:hover, #s3:hover{ background: #050404;}
+				
+			.inner-wrapper{
+				width: 300px;
+				height:250px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin-bottom: 0px;
+				overflow: hidden;
+				
+				
+			}
+				.control{ display: none;}
+				
+				#Slide1:checked ~ .overflow-wrapper{ margin-left: 0%; }
+				#Slide2:checked ~ .overflow-wrapper{ margin-left: -100%; }
+				#Slide3:checked ~ .overflow-wrapper{ margin-left: -200%; }
+				
+				#Slide1:checked + #s1 { opacity: 1;background: #050404; }
+				#Slide2:checked + #s2 { opacity: 1; background: #050404;}
+				#Slide3:checked + #s3 { opacity: 1;background: #050404; }
+				 
+				
+			.overflow-wrapper{
+				width: 300%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow-y: hidden;
+				z-index: 1;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+			
+				.slide img{
+					float:left;
+	                width:100px;
+	                height:100px;
+					 
+				}
+				
