@@ -282,3 +282,103 @@ ul.navigation
 .animScale {
 	transform: scale(1.2);
 }
+
+/*overlay*/
+
+#overlay {
+	position:fixed;
+	top:0;bottom:0;left:0;right:0;
+	margin:auto;
+	background-color:rgba(20,20,20,0.9);
+	display:none;
+}
+#forClose {
+	position:fixed;
+	top:0;bottom:0;left:0;right:0;
+	margin:auto;
+}
+#bigImg {
+	position:fixed;
+	top:0;bottom:0;left:0;right:0;
+	margin:auto;
+	max-width:90%;
+	max-height:90%;
+}
+
+#overlay .descriptionContainer
+{
+	float: right;
+	width: 34%;
+	position: relative; 
+	top: 128px;
+	right: 0px;
+	left: -120px;
+	bottom: 40px;
+}
+#overlay .description
+{
+	background-color: #FFF;
+	float: left;
+	padding: 35px;
+	margin-right: 89px;
+}
+#overlay .descriptionLink
+{
+    width: 89px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #444444;
+	display: block;
+	height: 100%;
+	float: right; 
+} 
+#overlay .p1
+{
+	font-family: 'MyriadProLight';
+	font-size: 30px;
+	color: #444444;
+	text-align: left;
+	line-height: 20px;
+}
+#overlay .p2
+{
+	font-family: 'MyriadProSemibold';
+	font-size: 16px;
+	color: #444444;
+	line-height: 31px;
+	text-align: left;
+}
+#overlay .p3
+{
+	font-family: 'MyriadProRegular';
+	font-size: 16px;
+	text-align: left;
+	color: #666666;
+	line-height: 21px;
+}
+#overlay .descriptionLink a
+{
+	position:a;
+	top:0;bottom:0;left:0;right:0;
+	margin:auto;
+	
+} 
+#overlay .descriptionLink a p {
+	width:89px;
+	height:90px;
+	display:block; 
+	text-decoration: none;
+	font-family: 'MyriadProRegular';
+	font-size: 16px;
+	color: #ffffff;	 
+	background:url(../images/externalArrow.png) no-repeat 45% 40%;
+	margin-left: auto;
+    margin-right: auto;
+	margin: 0;
+	position: absolute;               
+	top: 50%;                       
+	transform: translate(0, -50%);
+	line-height: 150px;
+	text-align: center;
+}

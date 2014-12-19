@@ -6,12 +6,20 @@ $(document).ready(function(){
 
 
 
-// Add images	
-var project = [];
+// Get Data
+/*var project = [];
 $('.portWarp img').each(function(index) {
-	var img ="<div class='project'><div class='templates'><a href='#'><img src='"+ $('.portWarp').find('img:eq('+index+')').attr('src') +"'></a></div><div class='templateHover'><a href='#'><img src='images/arrows.png'><h2>Website<br>Development</h2><div class='templateName'><h3>Be On The Scene</h3></div></a></div></div>";
+	var img ="<div class='project'><div class='templates'><a href='#'><img src='"+ $('.portWarp').find('img:eq('+index+')').attr('src') +"' big='"+ $('.portWarp').find('img:eq('+index+')').attr('big') +"'></a></div><div class='templateHover'><a href='#'><img src='images/arrows.png'><h2>Website<br>Development</h2><div class='templateName'><h3>Be On The Scene</h3></div></a></div></div>";
 	project.push(img);
+});*/
+
+var project = [];
+$('#portfolioData ul').each(function(index) {
+	var img ="<div class='project'><div class='templates'><a href='#'><img src='"+ $(this).children().eq(0).html() +"' big='"+ $(this).children().eq(1).html() +"' title='"+ $(this).children().eq(2).html() +"' caty='"+ $(this).children().eq(3).html() +"' desp='"+ $(this).children().eq(4).html() +"' link='"+ $(this).children().eq(5).html() +"'></a></div><div class='templateHover'><a href='#'><img src='images/arrows.png'><h2>Website<br>Development</h2><div class='templateName'><h3>Be On The Scene</h3></div></a></div></div>";
+	project.push(img);
+	//console.log("dd= "+$(this).children().eq(5).html());
 });
+
 
 
 function loadPort() {
@@ -115,6 +123,28 @@ $( window ).resize(function() {
 	}
 });
 
+
+//Big Image
+$(".project").click(function(){
+  $('#bigImg').attr({src: $(this).children('.templates').children('a').children('img').attr('')});
+  $('#bigImg').attr({src: $(this).children('.templates').children('a').children('img').attr('big')});
+  $("#overlay").fadeIn('fast');
+});
+$("#forClose").click(function(){
+  $("#overlay").fadeOut('fast');
+});
+$('body').keydown(function(e) {
+    if (e.keyCode == 27) {
+       $("#overlay").fadeOut('fast');
+    }
+});
+
+function bigPos() {
+	var maxWidth=$('#forClose').width();
+	if($('#forClose').width()>$('#forClose').width()){
+		//$('#bigImg').css("width",maxWidth +"px");
+	}
+};
 
 
 
