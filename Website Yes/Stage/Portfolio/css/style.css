@@ -301,8 +301,8 @@ ul.navigation
 	position:fixed;
 	top:0;bottom:0;left:0;right:0;
 	margin:auto;
-	max-width:90%;
-	max-height:90%;
+	max-width:80%;
+	max-height:80%;
 }
 
 #overlay .descriptionContainer
@@ -326,11 +326,11 @@ ul.navigation
 {
     width: 89px;
 	position: absolute;
-	bottom: 0;
+	/*bottom: 0;*/
 	right: 0;
 	background-color: #444444;
 	display: block;
-	height: 100%;
+	/*height: 100%;*/
 	float: right; 
 } 
 #overlay .p1

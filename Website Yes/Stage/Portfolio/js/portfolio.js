@@ -113,6 +113,7 @@ function clearPortfoio() {
 	var initTemplate = "<ul class='bjqs'><li class='templateContent' id='portSlide0'><div class='portWarp'></div></li></ul>";
 	$("#screens").append(initTemplate);
 	loadPort();
+	bigPos();
 }
 
 var resizeTimer;
@@ -128,7 +129,9 @@ $( window ).resize(function() {
 $(".project").click(function(){
   $('#bigImg').attr({src: $(this).children('.templates').children('a').children('img').attr('')});
   $('#bigImg').attr({src: $(this).children('.templates').children('a').children('img').attr('big')});
-  $("#overlay").fadeIn('fast');
+  $('#overlay').fadeIn('fast', function() {
+    bigPos();
+  });
 });
 $("#forClose").click(function(){
   $("#overlay").fadeOut('fast');
@@ -140,10 +143,14 @@ $('body').keydown(function(e) {
 });
 
 function bigPos() {
-	var maxWidth=$('#forClose').width();
-	if($('#forClose').width()>$('#forClose').width()){
-		//$('#bigImg').css("width",maxWidth +"px");
-	}
+	var bLeft = $('#bigImg').offset().left + $('#bigImg').width() - $('.description').outerWidth(true)/1.5;
+	$('.descriptionContainer').css("position","absolute");
+	$('.descriptionLink').css("height",$('.description').outerHeight(true));
+	$('.descriptionContainer').css("height",$('.description').outerHeight(true));
+	$('.descriptionContainer').css("left",bLeft +"px");
+	var bTop = $('#bigImg').offset().top + $('#bigImg').height() - $('.description').outerHeight(true)/2.5;
+	$('.descriptionContainer').css("top",bTop-50 +"px");
+	$('#bigImg').css("top",-50 +"px");
 };
 
 
