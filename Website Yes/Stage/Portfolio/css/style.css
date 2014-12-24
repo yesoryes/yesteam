@@ -22,7 +22,6 @@ body {
 }
 .heading
 {   
-    //max-width:82.1875%;
 	margin: 0 auto;	
 	display:block;
 	padding: 0 0 0 4px;
@@ -40,6 +39,7 @@ h1
 	margin-top:50px;
 	float:left;
 	padding-bottom:20px;     
+	display:none /* disable filter */
 }
 ul.navBar
 {
@@ -303,6 +303,9 @@ ul.navigation
 	margin:auto;
 	max-width:80%;
 	max-height:80%;
+	-webkit-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+	box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
 }
 
 #overlay .descriptionContainer
@@ -314,6 +317,10 @@ ul.navigation
 	right: 0px;
 	left: -120px;
 	bottom: 40px;
+	-webkit-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+	box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+	display:none;
 }
 #overlay .description
 {
@@ -321,6 +328,7 @@ ul.navigation
 	float: left;
 	padding: 35px;
 	margin-right: 89px;
+	width:100%;
 }
 #overlay .descriptionLink
 {
@@ -352,10 +360,12 @@ ul.navigation
 #overlay .p3
 {
 	font-family: 'MyriadProRegular';
-	font-size: 16px;
+	font-size: 14px;
 	text-align: left;
 	color: #666666;
-	line-height: 21px;
+	line-height:19px;
+	max-height:80px;
+	overflow-y:auto;
 }
 #overlay .descriptionLink a
 {

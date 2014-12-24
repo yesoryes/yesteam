@@ -134,23 +134,30 @@ $(".project").click(function(){
   });
 });
 $("#forClose").click(function(){
-  $("#overlay").fadeOut('fast');
+	$('.descriptionContainer').fadeOut('fast');
+	$("#overlay").fadeOut('fast');
 });
 $('body').keydown(function(e) {
     if (e.keyCode == 27) {
-       $("#overlay").fadeOut('fast');
+		$('.descriptionContainer').fadeOut('fast');
+       	$("#overlay").fadeOut('fast');
     }
 });
 
 function bigPos() {
+	$('.descriptionContainer').css("opacity",0);
+	$('.descriptionContainer').css("display","block");
 	var bLeft = $('#bigImg').offset().left + $('#bigImg').width() - $('.description').outerWidth(true)/1.5;
 	$('.descriptionContainer').css("position","absolute");
 	$('.descriptionLink').css("height",$('.description').outerHeight(true));
 	$('.descriptionContainer').css("height",$('.description').outerHeight(true));
-	$('.descriptionContainer').css("left",bLeft +"px");
+	$('.descriptionContainer').css("left",bLeft-50 +"px");
 	var bTop = $('#bigImg').offset().top + $('#bigImg').height() - $('.description').outerHeight(true)/2.5;
 	$('.descriptionContainer').css("top",bTop-50 +"px");
 	$('#bigImg').css("top",-50 +"px");
+	$('.descriptionContainer').css("opacity",1);
+	$('.descriptionContainer').css("display","none");
+	$('.descriptionContainer').fadeIn('slow');
 };
 
 
