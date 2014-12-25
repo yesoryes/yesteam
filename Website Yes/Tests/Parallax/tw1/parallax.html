@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript Parallax Example</title>
+<!-- Assumes jQuery is loaded first! -->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/gsap/easing/EasePack.js"></script>
+<script type="text/javascript" src="js/gsap/TweenLite.js"></script>
+
+</head>
+<body>
+<div id="viewPort" style="position:absolute; border-style:solid; border-color:#FF0000; border-width:thin; width:700px; height:170px; z-index:4; left:0px; top:15px;">View Port</div>
+<div id="depthB" style="position:absolute; background-color:#666666; width:794px; height:200px; z-index:3; left:0px; top:0px; opacity:0.2;">Layer Back</div>
+<div id="depthM" style="position:absolute; background-color:#888888; width:982px; height:150px; z-index:2; left: 0px; top: 50px; opacity:0.2;">Layer Middle</div>
+<div id="depthF" style="position:absolute; background-color:#bbbbbb; width:1202px; height:100px; z-index:1; left: 0px; top: 100px; opacity:0.2;">Layer Front</div>
+
+
+<script type="text/javascript" >
+function doParallax(){
+	alert($('#viewPort').width());
+	var backLayer = document.getElementById('depthB');
+	var middleLayer = document.getElementById('depthM');
+	var frontLayer = document.getElementById('depthF');
+	$('#viewPort').mousemove(
+		function(event){
+			var bMouse = event.pageX / 7.7;
+			TweenLite.to(backLayer, 1, { css:{left:'-' + bMouse + 'px'}, overwrite:true } );
+			var mMouse = event.pageX / 2.5;
+			TweenLite.to(middleLayer, 1, { css:{left:'-' + mMouse + 'px'}, overwrite:true } );
+			var fMouse = event.pageX / 1.4;
+			TweenLite.to(frontLayer, 1, { css:{left:'-' + fMouse + 'px'}, overwrite:true } );
+		}
+	);
+}
+setTimeout('doParallax()', 2000);
+</script>
+
+</body>
+</html>

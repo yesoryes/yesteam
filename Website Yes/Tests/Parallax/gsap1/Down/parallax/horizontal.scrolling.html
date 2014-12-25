@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Horizontal Scrolling</title>
+<link type="text/css" rel="stylesheet" href="../scripts/samples.styles.css" />
+<script src="../scripts/jquery-1.8.2.min.js"></script>
+<script src="../scripts/TweenMax.min.js"></script>
+<script src="../scripts/tween.progress.hor.js"></script>
+<script>
+$(document).ready(function(){
+
+var center = function(elemID)
+{
+	elemID.css({
+        "position": "absolute",
+        "left": ((($(window).width() - elemID.outerWidth()) / 2) + $(window).scrollLeft() + "px")
+    });
+};
+
+center($("div#cont1"));
+
+});
+</script>
+</head>
+
+<body>
+
+<div id="mainCont" class="mainCont" style="height:100%; position:fixed; left:0; top:0; width:6200px; padding:0; background-color:#BED2D3; margin:0; position:absolute;">
+	
+    <div class="horCont" id="cont1">
+    <h3>First Div Title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et magna non dolor euismod porta id quis odio. Mauris id lacus eget orci facilisis consectetur eu eu lectus. Pellentesque mi augue, molestie auctor convallis id, convallis varius mauris. Duis lectus quam, auctor ut adipiscing id, mattis vitae est. Suspendisse varius sem et leo commodo at tempus lorem pulvinar. Vestibulum sit amet sem vel ante blandit placerat. Aenean porttitor ante facilisis urna consequat quis varius diam accumsan. Fusce dictum fringilla massa sagittis sagittis. Fusce quis orci erat.</p>
+
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sed risus vel libero tincidunt dapibus ac vel turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus feugiat odio sit amet lacus sollicitudin viverra tempor lacus vehicula. Proin sem nisl, lobortis quis ornare vel, tempus eu urna. Donec nisi massa, scelerisque a consectetur ut, faucibus id nisl. Sed hendrerit pharetra sapien sit amet malesuada. Morbi eros velit, aliquam et luctus non, faucibus non orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae justo in risus interdum vestibulum quis at enim. Vivamus rutrum fermentum nibh, vitae tincidunt odio malesuada eu. Donec luctus velit id sapien placerat ullamcorper. Nam venenatis condimentum neque, sed porttitor urna scelerisque in. Praesent tristique, elit non vehicula semper, massa nulla interdum dui, in lobortis mi orci vel neque. Sed convallis purus at est fringilla pharetra.</p>
+
+    <p>Cras molestie tincidunt libero, eget cursus velit malesuada vitae. Suspendisse interdum, diam sit amet condimentum aliquet, velit urna mollis sem, vel tempor nunc nisi a ipsum. In turpis lacus, accumsan vitae adipiscing ut, rutrum non lacus. Morbi vel rhoncus dui. Proin pellentesque hendrerit enim at ornare. Integer ut massa lectus. Integer elementum enim quis erat pharetra in molestie quam consectetur. Phasellus at justo sit amet sem pharetra tempus. Proin vehicula imperdiet dui sit amet pulvinar.</p>
+    
+    <p>Maecenas laoreet ligula at velit consequat lobortis. Sed lobortis est eu massa molestie rutrum. Curabitur ac eros nec justo commodo vehicula. Aenean euismod nisi sed augue faucibus ut porttitor leo bibendum. Cras a tortor in augue bibendum laoreet quis vitae ipsum. Nullam eleifend dui nec est fermentum eget hendrerit massa malesuada. Maecenas iaculis hendrerit dolor, ac accumsan eros ultricies in. Nullam laoreet ultricies quam. Phasellus luctus eleifend ligula eu vehicula. Nam ut erat a risus fermentum fringilla. Fusce quis lacus augue, vitae porttitor elit. Ut non sem rhoncus magna condimentum sodales.</p>
+    </div>
+    
+    <div id="cont2" class="horCont" style="left:2200px;">
+    	<h3>Title for the second Div</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et magna non dolor euismod porta id quis odio. Mauris id lacus eget orci facilisis consectetur eu eu lectus. Pellentesque mi augue, molestie auctor convallis id, convallis varius mauris. Duis lectus quam, auctor ut adipiscing id, mattis vitae est. Suspendisse varius sem et leo commodo at tempus lorem pulvinar. Vestibulum sit amet sem vel ante blandit placerat. Aenean porttitor ante facilisis urna consequat quis varius diam accumsan. Fusce dictum fringilla massa sagittis sagittis. Fusce quis orci erat.</p>
+
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sed risus vel libero tincidunt dapibus ac vel turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus feugiat odio sit amet lacus sollicitudin viverra tempor lacus vehicula. Proin sem nisl, lobortis quis ornare vel, tempus eu urna. Donec nisi massa, scelerisque a consectetur ut, faucibus id nisl. Sed hendrerit pharetra sapien sit amet malesuada. Morbi eros velit, aliquam et luctus non, faucibus non orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae justo in risus interdum vestibulum quis at enim. Vivamus rutrum fermentum nibh, vitae tincidunt odio malesuada eu. Donec luctus velit id sapien placerat ullamcorper. Nam venenatis condimentum neque, sed porttitor urna scelerisque in. Praesent tristique, elit non vehicula semper, massa nulla interdum dui, in lobortis mi orci vel neque. Sed convallis purus at est fringilla pharetra.</p>
+
+    <p>Cras molestie tincidunt libero, eget cursus velit malesuada vitae. Suspendisse interdum, diam sit amet condimentum aliquet, velit urna mollis sem, vel tempor nunc nisi a ipsum. In turpis lacus, accumsan vitae adipiscing ut, rutrum non lacus. Morbi vel rhoncus dui. Proin pellentesque hendrerit enim at ornare. Integer ut massa lectus. Integer elementum enim quis erat pharetra in molestie quam consectetur. Phasellus at justo sit amet sem pharetra tempus. Proin vehicula imperdiet dui sit amet pulvinar.</p>
+    
+    <p>Maecenas laoreet ligula at velit consequat lobortis. Sed lobortis est eu massa molestie rutrum. Curabitur ac eros nec justo commodo vehicula. Aenean euismod nisi sed augue faucibus ut porttitor leo bibendum. Cras a tortor in augue bibendum laoreet quis vitae ipsum. Nullam eleifend dui nec est fermentum eget hendrerit massa malesuada. Maecenas iaculis hendrerit dolor, ac accumsan eros ultricies in. Nullam laoreet ultricies quam. Phasellus luctus eleifend ligula eu vehicula. Nam ut erat a risus fermentum fringilla. Fusce quis lacus augue, vitae porttitor elit. Ut non sem rhoncus magna condimentum sodales.</p>
+    </div>
+    
+    <div id="cont3" class="horCont" style="left:3200px;">
+    	<h3>Now Some Images</h3>
+        <img class="horImg" src="../img/Corruptus-In-Extremis.jpg" width="300px" height="225px" />
+        <img class="horImg" src="../img/Corruptus-In-Extremis.jpg" width="300px" height="225px" />
+        <img class="horImg" src="../img/Corruptus-In-Extremis.jpg" width="300px" height="225px" />
+        <img class="horImg" src="../img/Corruptus-In-Extremis.jpg" width="300px" height="225px" />
+    </div>
+    
+    <div id="cont4" class="horCont" style="left:5000px;">
+    	<h3>And a Contact Form</h3>
+        <p><input id="name" type="text" size="30" /> Name</p>
+        <p><input id="number" type="number" size="30" /> Phone Number</p>
+        <p><input id="mail" type="email" size="30" /> E-Mail</p>
+        <p><textarea id="comment" cols="50" rows="8" title="Comments"></textarea></p>
+    </div>    
+
+</div>
+
+</body>
+</html>
