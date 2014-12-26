@@ -7,23 +7,21 @@ html, body
 	outline:0;
 	padding:0;
 	margin:0;  
-	
 }
-  
-/* about us START */
+/* about us Mobile START */
 #aboutus
 {
-   width:100%; 
-   height:100%; 
+   width:100%;    
    overflow:auto;
-   background-color:#ee733a;    
+   background-color:#ee733a;
+    
 } 
 .header
 {
-	float: left;
+		float: left;
 	width: 100%;
-	padding-top:58px;
-	padding-bottom:60px;
+	padding-top:30px !important;
+	padding-bottom:20px !important;
 }
 .heading
 {   
@@ -33,7 +31,6 @@ html, body
 	font-size:84px;
 	font-family: 'MyriadProLight';
 }
-
  
 #aboutus .content
 {
@@ -41,8 +38,13 @@ html, body
 	  width:80%;
 	  margin:0% 10%;
 }
-
-.weare
+.about
+{
+	    float: left;
+		width: 100%;
+		margin-top: 40px;
+}
+.about .weare
 {   
 	color:#fff; 
 	text-align:left; 
@@ -60,19 +62,13 @@ html, body
 	font-family:"Calibri";
 	line-height:24px;	
 }
-.about
-{
-	    float: left;
-		width: 54%;
-		/*margin-top: 50px;*/
-}
 .testimonials
 {
-	float: left;
-	width: 41%;
-	/*margin-top: 40px;*/
+	 float: left;
+	width: 100%;
+	margin-top: 40px;
 	position: relative;
-	margin-left:5%;
+	margin-left: 0%;
 }
  .feedBack
 {
@@ -163,50 +159,44 @@ ul.navigation
 	-moz-box-shadow: 0px 5px 0px 1px rgba(0,0,0,0.1);
 	box-shadow: 0px 5px 0px 1px rgba(0,0,0,0.1);
 } 
-/* About Us END */
 
-/* Services START */
+/* ABOUT US MOBILE END */
+
+/* SERVICES MOBILE START */
 #services
 {
    width:100%; 
-   height:100%; 
+   
    margin:0 auto;
    overflow:auto;
    background-color:#446fa4;
    
 } 
-
 #services .content
 {
-      float: left;
-		width: 80%;
-		margin: 0% 10%;
+      float:left;
+	  width:80%; 
+	  margin:0% 10%;
 }
-.servicesList
+#services .content .servicesList
 {
-   float: left;
-		padding-top: 0px;
-		width: 66%;
-}
-.packageSlider
-{
-          float: right;
-margin-top: 4px;
-margin-left: 62px;
-width: 300px;
+  float:left;
+  padding-top:0px; 
+  width: 100%;
 }
 ul.navBarLeft
 {
-	 list-style: none;
-float: left;
-width: 55%;
+	list-style:none;
+	float:left;
+	 width:0%;
+	
 }
 ul.navBarRight
 {
-	 list-style: none;
-float: right;
-padding-left: 0%;
-width: 45%;
+	list-style:none;
+	float:left;
+	padding-left:0px;
+	 width:0%;
 }
 ul.navBarLeft li, ul.navBarRight li
 {
@@ -216,90 +206,48 @@ ul.navBarLeft li, ul.navBarRight li
 	text-decoration:none;
 	color:#FFF;	 
 	font-family:"calibri"; 
-	padding-left:22px;
+	padding-left:18px;
 	padding-top:16px;	
 	background:url(../images/arrowSmall.png) 0 21px no-repeat;
 } 
-
-.package
+.packageSlider
 {
-     
-	 float: left;
-	 width:300px;
-	 height:200px;
+     display:none;	
 }
-.package img
-{
-	 float:left;
-	 width:100px;
-	 height:100px;
-	 
-} 
-ul.slideNav
-{
-    
-   list-style: none;
-	margin-left: 40%;
-	margin-top:15px;
-	float: left;
- }
-.slideNav li
-{
-	 display:inline-block; 
-}
-.slideNav li a
-{
-    text-decoration: none;
-	text-align:center;
-	display: block;
-	width: 7px;
-	height: 7px; 
-	margin-left: 9px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	background-color: #bfbebe;
-}
-.slideNav li a.l2,.slideNav li a:hover
-{
-	 background-color:#1e1e1e;	 
-} 
 #services .footer
 {
-     float: left;
-		width: 80%;
-		margin: 0% 10%; 
+      float:left;
+	  width:80%;
+	  margin:0% 10%;
 }
 .quatru
 {
-  margin:0 auto;
+ 
+  float:left;
 } 
-.heading2
-{   
-	color:#fff;
-	text-align:center;
-	font-size:34px;
-	margin-top:10px;
-	font-family: 'MyriadProLight';
-}
 ul.footerNavBar
 {
-	list-style:none;
-	text-align:center;
+	list-style: none;
+   text-align:justify;
 }
 .footerNavBar li
 {
-	display:inline-block;
-	text-align:center;
-	padding:0px 6px;	 
-}
+	display: inline-block;
+	text-align: center;
+	padding: 0px 0px;
+}	 
+
 .footerNavBar li:nth-child(1)
 {
 	padding-left:0px;
 }
+.footerNavBar li.rightArrow3
+{
+	display:none;
+}
 .footerNavBar p
 {
-	 font-size:15px;
+	 font-size:10px;
 	 text-decoration:none;
 	 color:#FFF;
 	 padding-top:10px;
@@ -309,14 +257,24 @@ ul.footerNavBar
 {
 	 color:#000; 
 }
+.servicesImage
+{
+	 
+	width:60px;
+	height:60px;
+	padding:10px 0px 10px 10px;
+}
+
+
 .rightArrow1, .rightArrow2, .rightArrow3, .rightArrow4, .rightArrow5
 {
 	vertical-align:top;
-	margin-top:40px;
+	margin-top:30px;
 }
 .rightArrow1
 {
 	opacity:0.3;
+	 
 }
 .rightArrow2
 {
@@ -330,13 +288,29 @@ ul.footerNavBar
 { 
    opacity:0.8;
 }
-
-/* SERVICES END*/
-/* CONTACT US START */
+.heading2
+{   
+	color:#fff;
+	text-align:center;
+	font-size:34px;
+	padding:40px 0px;
+	font-family: 'MyriadProLight';
+}
+.footerNavBar li:nth-child(4), .footerNavBar li:nth-child(5), .footerNavBar li:nth-child(6)
+{
+	padding:0 3px;
+}
+ 
+.servicesFooterLine1, .servicesFooterLine2
+{
+	display:none;
+}
+/* SERVICES MOBILE END */
+/* CONTACTUS MOBILE START */
 #contactus
 {
     width:100%; 
-	height:100%; 
+	 
 	outline:0;
 	paddding:0;
     overflow:auto;
@@ -345,11 +319,12 @@ ul.footerNavBar
 }
 #contactus .content
 {
-    width:60%;	 
-	margin:0 auto;
-	padding:0;
-	overflow:auto;
-	min-width:785px;
+     width: 50%;
+     margin: 0 auto;
+	text-align: center;
+	padding: 0;
+	overflow: auto;
+	min-width: 60%;
 } 
 .p1
 {
@@ -396,16 +371,14 @@ ul.footerNavBar
 .address
 { 
 	float: left;
-	width:224px;
-	padding:0px 0px 50px 0; 
+	width: 90%;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0;
+
 }
 .contact-area
 {
-	background-color:rgba(8,8,8,0.1);
- 	margin-left:292px; 
-	padding:50px 0px 100px 0px;
-	/*overflow:auto; */
-	float:none;
+	 display:none;
 } 
 .SocialLinks
 {
@@ -478,70 +451,7 @@ a.s5:hover
 {
    background:url(../images/googleSprites.png) 0px -38px no-repeat; 
 }
-
-.contact-form
-{
-	padding-right:50px;
-	 
-}
  
-.contact-form input
-{ 	
-	width: 53%;
-	border: 0;
-	height: 32px;
-	margin: 0 0 15px 0;
-} 
-.contact-form textarea
-{ 	
-	width:53%;
-	border:0;
-	height:85px;
-	margin:0 0 15px	0;
-}
+  
  
-.contact-form label
-{
-	float: left;
-	width: 21%;
-	text-align: right;
-	display: block;
-	padding: 0 5% 0 10%;
-	font-family: 'MyriadProRegular';
-	font-size: 18px;
-	color: #1e1e1e;
-}
-.send
-{
-    float: left;
-	padding:2% 0 5% 32%; 
-}
-.send a
-{
-    width:96px;
-	height:36px; 
-	display:block;
-	text-indent: -9999px;
-	text-decoration:none;
-	background:url(../images/sendSprites.jpg) no-repeat;
-} 
-.send a:hover
-{
-    
-	background:url(../images/sendSprites.jpg) 1px -36px no-repeat;
-} 
- 
- /* Contact Us END */
- 
- 
- /* Intagrate START */
-
-.flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
- 
- /* Intagrate START */
- 
+ /* CONTACTUS MOBILE END */

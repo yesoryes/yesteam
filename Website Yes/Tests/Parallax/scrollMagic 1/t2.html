@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+
+<script>
+	$(document).ready(function($) {
+		
+		// init ScrollMagic Controller
+		controller = new ScrollMagic();
+		
+		// Scene Handler
+		var scene = new ScrollScene({
+		  triggerElement: "#pinned-trigger1", // point of execution
+		  duration: $(window).height() - 100, // pin element for the window height - 1
+		  triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+		  reverse: true // allows the effect to trigger when scrolled in the reverse direction
+		})
+		.setPin("#pinned-element1"); // the element we want to pin
+		
+		// Scene2 Handler
+		var scene2 = new ScrollScene({
+		  triggerElement: "#pinned-trigger2", // point of execution
+		  duration: 400 // pin the element for a total of 400px
+		})
+		.setPin("#p2"); // the element we want to pin
+		
+		// Add Scenes to ScrollMagic Controller
+		controller.addScene([
+		  scene,
+		  scene2
+		]);
+		
+		
+	});
+</script>
+
+
+<style>
+html,
+body {
+  margin: 0;
+  height: 100%
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+section {
+  text-align: center;
+  color: #EFEFEF;
+}
+
+.full-screen {
+  height: 100%; /* makes panels the entire window height */
+}
+
+.blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+	background-color: #3883d8;
+}
+.red {
+	background-color: #cf3535;
+}
+.orange {
+	background-color: #ea6300;
+}
+
+</style>
+
+</head>
+
+<body>
+<header role="banner">
+  <img src="img/char5.gif" width="64" height="auto" alt="scroll magic">
+</header>
+
+<main class="full-screen" role="main">
+  <section class="full-screen blue">
+    <div>
+      <h1>Basic Pin</h1>
+      <p>Elements are pinned for their respective pixel value set as the duration and released again.</p>
+    </div>
+  </section>
+
+  <section id="pinned-trigger1" class="full-screen orange">
+    <div id="pinned-element1">
+      <p>This element will be pinned once it's trigger hits the top of the viewport and will have a duration of window height minus 100</p>
+    </div> 
+  </section>
+
+  <section id="pinned-trigger2" class="full-screen red">
+    <div id="pinned-element2">
+      <p id="p2">This element will be pinned for a duration of 400px</p>
+    </div>
+  </section>
+  
+  <section class="full-screen blue">
+    <div>
+      <p>Section Four!</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

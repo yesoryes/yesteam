@@ -2,84 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Yes Or Yes</title>
-
+<title>Services</title>
 <link href="css/reset.css" type="text/css" rel="stylesheet">
 <link href="css/font.css" type="text/css" rel="stylesheet">
 <link href="css/style.css" type="text/css" rel="stylesheet">
 <link href="css/style-mobile.css" type="text/css" rel="stylesheet" media="(max-width:480px)">
 <link href="css/style-ipad.css" type="text/css" rel="stylesheet" media="(max-width:1024px)">
-
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/TweenMax.min.js"></script>
-<script type="text/javascript" src="js/scrollmagic-anchornav.js"></script>
-<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
-
-<script>
-	$(document).ready(function($) {
-		
-		var controller = new ScrollMagic();
-		
-		new ScrollScene({triggerElement: '#services'})
-										.setClassToggle('#intro-anchor', 'active')
-										.on("enter", function (event) {
-											if (window.history && window.history.pushState) {
-											  history.pushState("", document.title, "#intro");
-											}
-											})
-										.addTo(controller);
-		
-		
-		
-		
-		// Change behaviour of controller
-		// to animate scroll instead of jump
-		controller.scrollTo(function(target) {
-		
-		  TweenMax.to(window, 0.5, {
-			scrollTo : {
-			  y : target,
-			  autoKill : true // Allow scroll position to change outside itself
-			},
-			ease : Cubic.easeInOut
-		  });
-		
-		});
-		
-		
-		//  Bind scroll to anchor links
-		$(document).on("click", "a[href^=#]", function(e) {
-		  var id = $(this).attr("href");
-		
-		  if($(id).length > 0) {
-			e.preventDefault();
-		
-			// trigger scroll
-			controller.scrollTo(id);
-		
-			// If supported by the browser we can also update the URL
-			if (window.history && window.history.pushState) {
-			  history.pushState("", document.title, id);
-			}
-		  }
-		
-		});
-		
-		
-		
-		
-	});
-</script>
-
-</head>
+ </head>
 <body>
-
-<nav role='navigation'>
-    <a href="#intro" id="intro-anchor">About</a>
-    <a href="#section-1" id="anchor1">Section 1</a>
-    <a href="#section-2" id="anchor2">Section 2</a>
-    <a href="#section-3" id="anchor3">Section 3</a>
-</nav>
 
 <section id="aboutus">
 	<div>
@@ -130,7 +60,7 @@
 <section id="services" class="flexCenter">
 	<div>                                
                      <div class="header">               
-                                   <p class="heading" id="anim-services">services</p> 
+                                   <p class="heading">services</p> 
                    </div>
                    <div class="content">
                                  <div class="servicesList">

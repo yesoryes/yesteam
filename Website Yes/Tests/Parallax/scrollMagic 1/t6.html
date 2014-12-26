@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/scrollmagic-anchornav.js"></script>
+<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+
+<script>
+	$(document).ready(function($) {
+		
+		// Init controller
+		var controller = new ScrollMagic({
+		  globalSceneOptions: {
+			//duration: $('section').height(),
+			triggerHook: .025,
+			reverse: true
+		  }
+		});
+		
+
+		
+		var timelineA = new TimelineMax();
+		var tween1 = TweenMax.from("#title-animation", 1, {x: -500});
+		var tween2 = TweenMax.to("#title-animation", 1, {x: 500});
+		timelineA
+				.add(tween1)
+				.add(tween2);
+
+		
+		new ScrollScene({triggerElement: '#intro'})
+										.setClassToggle('#intro-anchor', 'active')
+										//triggerHook(0)
+										//.duration(100)
+										//.setPin("#hd1")
+										.on("enter", function (event) {
+											if (window.history && window.history.pushState) {
+											  history.pushState("", document.title, "#intro");
+											}
+											})
+										.addTo(controller);
+		new ScrollScene({triggerElement: '#section-1'})
+										.setClassToggle('#anchor1', 'active')
+										.duration($('section').height()/2)
+										.setTween(tween1)
+										.on("enter", function (event) {
+											if (window.history && window.history.pushState) {
+											  history.pushState("", document.title, "#section-1");
+											}
+											})
+										.addTo(controller);
+
+		new ScrollScene({triggerElement: '#section-2'})
+										.setClassToggle('#anchor2', 'active')
+										.on("enter", function (event) {
+											if (window.history && window.history.pushState) {
+											  history.pushState("", document.title, "#section-2");
+											}
+											})
+										.addTo(controller);
+		new ScrollScene({triggerElement: '#section-3'})
+										.setClassToggle('#anchor3', 'active')
+										.on("enter", function (event) {
+											if (window.history && window.history.pushState) {
+											  history.pushState("", document.title, "#section-3");
+											}
+											})
+										.addTo(controller);
+		
+		// Change behaviour of controller
+		// to animate scroll instead of jump
+		controller.scrollTo(function(target) {
+		
+		  TweenMax.to(window, 0.5, {
+			scrollTo : {
+			  y : target,
+			  autoKill : true // Allow scroll position to change outside itself
+			},
+			ease : Cubic.easeInOut
+		  });
+		
+		});
+		
+		
+		//  Bind scroll to anchor links
+		$(document).on("click", "a[href^=#]", function(e) {
+		  var id = $(this).attr("href");
+		
+		  if($(id).length > 0) {
+			e.preventDefault();
+		
+			// trigger scroll
+			controller.scrollTo(id);
+		
+			// If supported by the browser we can also update the URL
+			if (window.history && window.history.pushState) {
+			  history.pushState("", document.title, id);
+			}
+		  }
+		
+		});
+		
+
+		
+	});
+</script>
+
+
+<style>
+/*
+	Demo Styles: NOT REQUIRED
+*/
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.active {
+  color: #000;
+  text-decoration: underline;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #EFEFEF;
+}
+
+.full-screen {
+  height: 100%;
+  /* makes panels the entire window height */
+}
+
+.blue {
+  background-color: #3883d8;
+}
+
+.red {
+  background-color: #cf3535;
+}
+
+.orange {
+  background-color: #ea6300;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<header role="banner">
+ <img src="img/char5.gif" width="64" height="auto" alt="scroll magic">
+
+  <nav role='navigation'>
+    <a href="#intro" id="intro-anchor">Intro</a>
+    <a href="#section-1" id="anchor1">Section 1</a>
+    <a href="#section-2" id="anchor2">Section 2</a>
+    <a href="#section-3" id="anchor3">Section 3</a>
+  </nav>
+</header>
+
+<main class="full-screen" id="intro" role="main">
+  <section class="full-screen blue" id="start">
+    <h1 id="hd1">Anchor Navigation</h1>
+  </section>
+
+  <section class="full-screen orange" id="section-1">
+    <div>
+      <p id="title-animation">Section Uno</p>
+    </div>
+  </section>
+
+  <section class="full-screen red" id="section-2">
+    <div>
+      <p>Section Dos</p>
+    </div>
+  </section>
+
+  <section class="full-screen blue" id="section-3">
+    <div>
+      <p>Section Tres</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

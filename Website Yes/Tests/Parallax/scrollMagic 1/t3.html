@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+
+<script>
+	$(document).ready(function($) {
+		
+		// Scale Animation Setup
+		// .to('@target', @length, {@object})
+		var scale_tween = TweenMax.to('#scale-animation', 1, {
+		  transform: 'scale(.75)',
+		  ease: Linear.easeNone
+		});
+		
+		// BG Animation Setup
+		// .to('@target', @length, {@object})
+		var bg_tween = TweenMax.to('#bg-trigger', 1, {
+		  backgroundColor: '#FFA500',
+		  ease: Linear.easeNone
+		});
+		
+		// YoYo Animation Setup
+		// .to(@target, @length, @object)
+		var yoyo_tween = TweenMax.to('#yoyo-animation', 1, {
+		  transform: 'scale(2)',
+		  ease: Cubic.easeOut,
+		  repeat: -1, // this negative value repeats the animation
+		  yoyo: true // make it bounce…yo!
+		});
+		
+		
+		// init ScrollMagic Controller
+		controller = new ScrollMagic();
+		
+		
+		// Scale Scene
+		var scale_scene = new ScrollScene({
+		  triggerElement: '#scale-trigger'
+		})
+		.setTween(scale_tween);
+
+		// Background Scene
+		var bg_scene = new ScrollScene({
+		  triggerElement: '#bg-trigger'
+		})
+		.setTween(bg_tween);
+		
+		// YoYo Scene
+		var yoyo_scene = new ScrollScene({
+		  triggerElement: '#yoyo-trigger'
+		})
+		.setTween(yoyo_tween);
+		
+		controller.addScene([
+		  scale_scene,
+		  bg_scene,
+		  yoyo_scene
+		]);
+		
+
+		
+	});
+</script>
+
+
+<style>
+html,
+body {
+  margin: 0;
+  height: 100%
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #EFEFEF;
+}
+
+.full-screen {
+  height: 100%; /* makes panels the entire window height */
+}
+
+.blue {
+	background-color: #3883d8;
+}
+.red {
+	background-color: #cf3535;
+}
+.orange {
+	background-color: #ea6300;
+}
+
+</style>
+
+</head>
+
+<body>
+<header role="banner">
+  <img src="img/char5.gif" width="64" height="auto" alt="scroll magic">
+</header>
+
+<main class="full-screen" role="main">
+  <section class="full-screen blue">
+    <div>
+      <h1>Basic Tweening</h1>
+    </div>
+  </section>
+
+  <section id="scale-trigger" class="full-screen orange">
+    <div id="scale-animation">
+      <p>This element will scale down using the scale value of the CSS transform property.</p>
+    </div>
+  </section>
+
+  <section id="bg-trigger" class="full-screen red">
+    <div id="bg-animation">
+      <p>This element will have the background color change</p>
+    </div>
+  </section>
+  
+  <section id="yoyo-trigger" class="full-screen blue">
+    <div>
+      <p id="yoyo-animation">Section Four yoyo Text!</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>
