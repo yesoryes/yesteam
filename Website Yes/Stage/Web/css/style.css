@@ -542,6 +542,11 @@ a.s5:hover
     align-items: center;
     text-align: center;
 }
+
+a.active {
+  color: #000;
+  text-decoration: underline;
+}
  
  /* Intagrate START */
  
