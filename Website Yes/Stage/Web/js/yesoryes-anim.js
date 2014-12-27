@@ -5,7 +5,8 @@ $(document).ready(function($) {
 		  globalSceneOptions: {
 			duration: $('section').height(),
 			//triggerHook: .025,
-			triggerHook: 1,
+			//triggerHook: 1,
+			triggerHook: 'onProgress',
 			reverse: true
 		  }
 		});
@@ -36,7 +37,7 @@ $(document).ready(function($) {
 		
 			// If supported by the browser we can also update the URL
 			if (window.history && window.history.pushState) {
-			  history.pushState("", document.title, id);
+			  //history.pushState("", document.title, id);
 			}
 		  }
 		
@@ -48,8 +49,24 @@ $(document).ready(function($) {
 		var tween2 = TweenMax.from("#anim-services", 1, {scale:5, alpha:0});
 		
 		//  ScrollScenes
-		new ScrollScene({triggerElement: '#aboutus'})
+		new ScrollScene({triggerElement: '#home'})
 										.setClassToggle('#anchor1', 'active')
+										.on("enter", function (event) {
+											if (window.history && window.history.pushState) {
+											  history.pushState("", document.title, "#home");
+											}
+											})
+										.addTo(controller);
+		new ScrollScene({triggerElement: '#portfolio'})
+										.setClassToggle('#anchor2', 'active')
+										.on("enter", function (event) {
+											if (window.history && window.history.pushState) {
+											  history.pushState("", document.title, "#portfolio");
+											}
+											})
+										.addTo(controller);
+		new ScrollScene({triggerElement: '#aboutus'})
+										.setClassToggle('#anchor3', 'active')
 										.on("enter", function (event) {
 											if (window.history && window.history.pushState) {
 											  history.pushState("", document.title, "#aboutus");
@@ -57,7 +74,7 @@ $(document).ready(function($) {
 											})
 										.addTo(controller);
 		new ScrollScene({triggerElement: '#services'})
-										.setClassToggle('#anchor2', 'active')
+										.setClassToggle('#anchor4', 'active')
 										//.setPin("##anim-services")
 										//.duration(400)
 										//.triggerHook(1)
@@ -69,7 +86,7 @@ $(document).ready(function($) {
 											})
 										.addTo(controller);
 		new ScrollScene({triggerElement: '#contactus'})
-										.setClassToggle('#anchor3', 'active')
+										.setClassToggle('#anchor5', 'active')
 										.on("enter", function (event) {
 											if (window.history && window.history.pushState) {
 											  history.pushState("", document.title, "#contactus");
