@@ -6,34 +6,34 @@ body {
 	height:100%;
 	background-color:#e0b734; 
 }
-.container
+#portfolio .container
 {	
     width: 100%;
 	height:100%;
 	background-color:#e0b734;
 	position:relative; 
 }
-.header
+#portfolio .header
 {
 	width:100%;
 	float:left;
 	margin: 30px auto 0 auto;
 
 }
-.heading
+#portfolio .heading
 {   
 	margin: 0 auto;	
 	display:block;
 	padding: 0 0 0 4px;
 }
-h1
+#portfolio h1
 {   
 	color:#fff; 
 	font-size:60px;
 	padding-bottom:20px;
 	font-family: 'MyriadProLight';
 }
-.menuBar
+#portfolio .menuBar
 {
     color:#fff; 
 	margin-top:50px;
@@ -41,19 +41,19 @@ h1
 	padding-bottom:20px;     
 	display:none /* disable filter */
 }
-ul.navBar
+#portfolio ul.navBar
 {
    display:block;
    list-style:none;
    overflow:auto;
 }
- .navBar li
+#portfolio .navBar li
 {
 	float:left;
 	text-align:center;
 	margin:1px 0 0 1px;
 }
-.navBar li a
+#portfolio .navBar li a
 {
     width:158px;
 	height:39px;
@@ -66,18 +66,18 @@ ul.navBar
 	display:block;
 	font-family: 'MyriadProRegular';
 }
-.navBar li a:hover
+#portfolio .navBar li a:hover
 {
 	background-color:#e7e7e7;
 	color:#444444;
 }
-.content
+#portfolio .content
 {
 	width:100%;
 	float:left;
 	margin: 0 auto;
 }
-.contentArea
+#portfolio .contentArea
 {
 	margin-top:20px; 
 	float:left;
@@ -85,19 +85,19 @@ ul.navBar
 	position:relative;
 }
 
-.portWarp {
+#portfolio .portWarp {
 	position:absolute;
 	top:0; bottom:0; left:0; right:0;
 	margin:auto;
 	overflow:auto;
 }
 
-.templateContent
+#portfolio .templateContent
 {
 	overflow:auto;
 	position:relative;
 }
-.project
+#portfolio .project
 {
 	float:left;
 	position:relative;
@@ -105,16 +105,16 @@ ul.navBar
 }
 
 
-.mleft
+#portfolio .mleft
 {
 	margin-left:10px;
 }
-.mtop
+#portfolio .mtop
 {
 	margin-top:10px;
 }
 
-.templateHover
+#portfolio .templateHover
  {
 	width:222px;
     height:195px;
@@ -123,7 +123,7 @@ ul.navBar
 	display:none;
 	overflow:hidden;  /*for animtion*/
  }
-.templateHover a
+#portfolio .templateHover a
  {
 	 text-decoration:none;
 	  display:block; 
@@ -138,17 +138,17 @@ ul.navBar
   -webkit-box-sizing:border-box;
  }
 
-.templateHover h2{
+#portfolio .templateHover h2{
 	font-size:16px;
 	font-weight:100;
 }
 
-.templateHover h3{
+#portfolio .templateHover h3{
 	font-size:16px;
 	font-weight:100;
 }
 
-.templateName
+#portfolio .templateName
 {
  	text-align:center;
 	clear:both;
@@ -158,7 +158,7 @@ ul.navBar
 	width: 222px; /*212px;*/
 	padding:10px 0;
 }
-h2
+#portfolio h2
 {
 	font-family: 'MyriadProRegular';
 	font-size:24px;
@@ -166,7 +166,7 @@ h2
 	margin-top:10%;	
 	text-align:center;
 }
-h3
+#portfolio h3
 {
 	font-family: 'MyriadProRegular';
 	font-size:18px;
@@ -174,7 +174,7 @@ h3
 	text-align:center;	
 	margin-top:2%;
 }
-.arrowLeft
+#portfolio .arrowLeft
 {	
 	position:absolute;
 	float:left;
@@ -183,7 +183,7 @@ h3
 	display:block;
 	margin-top:-47px;
 }
-.arrowRight
+#portfolio .arrowRight
 {	
 	position:absolute;
 	float:right;
@@ -192,7 +192,7 @@ h3
 	display:block;
 	margin-top:-47px;
 }
-.arrowLeft a
+#portfolio .arrowLeft a
 {
 	float:left;
 	width:48px;
@@ -200,7 +200,7 @@ h3
 	text-decoration:none;
 	background:url(../images/leftArrow.png) no-repeat center;
 }
-.arrowRight a
+#portfolio .arrowRight a
 {
 	float:right;
 	width:48px;
@@ -209,26 +209,26 @@ h3
 	background:url(../images/rightArrow.png) no-repeat center;
 }
  
-.footer
+#portfolio .footer
 {
 	clear:both;
 	width:100%;
 	margin:0 auto;
 	padding:30px 0;
 } 
-ul.navigation
+#portfolio ul.navigation
 {
    list-style:none;
    margin: 0 auto;
    text-align:center;
    margin-bottom:50px;
  }
-.navigation li
+#portfolio .navigation li
 {
 	display:inline-block;
 	margin-left:10px;	
 }
-.navigation li a
+#portfolio .navigation li a
 {
     text-decoration:none;
 	display:block;
@@ -236,68 +236,68 @@ ul.navigation
 	height:8px;
 	background-color:#282828;
 }
-.navigation li a.l1,.navigation li a:hover
+#portfolio .navigation li a.l1,.navigation li a:hover
 {
 	 background-color:#ffffff;	 
 } 
-.containerA {
+#portfolio .containerA {
 	overflow:auto;
 }
 
-.containerB {
+#portfolio .containerB {
 	display:none;
 	
 } 
 
-.templates
+#portfolio .templates
 {
 	float:left;
 	position:relative;
 	
 }
-/*.templates .img1*/
-.templates img
+
+#portfolio .templates img
 {
 	max-height: 100%;
 	display:block;
 	transition: all .2s;   /*for .animScale*/
 }
 
-.templates a {
+#portfolio .templates a {
 	height:195px;
 	display:block;
 	overflow:hidden;
 	box-shadow: 0 0 4px rgba(0,0,0,0.3); 
 }
 
-.templates a img:hover {
+#portfolio .templates a img:hover {
 	transform: scale(1.2);
 }
 
-#screens {
+#portfolio #screens {
 	margin:0 auto;
 }
 
 
-.animScale {
+#portfolio .animScale {
 	transform: scale(1.2);
 }
 
 /*overlay*/
 
-#overlay {
+#portfolio #overlay {
 	position:fixed;
 	top:0;bottom:0;left:0;right:0;
 	margin:auto;
 	background-color:rgba(20,20,20,0.9);
 	display:none;
 }
-#forClose {
+#portfolio #forClose {
 	position:fixed;
 	top:0;bottom:0;left:0;right:0;
 	margin:auto;
 }
-#bigImg {
+#portfolio #bigImg {
 	position:fixed;
 	top:0;bottom:0;left:0;right:0;
 	margin:auto;
@@ -308,7 +308,7 @@ ul.navigation
 	box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
 }
 
-#overlay .descriptionContainer
+#portfolio #overlay .descriptionContainer
 {
 	float: right;
 	width: 34%;
@@ -322,7 +322,7 @@ ul.navigation
 	box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
 	display:none;
 }
-#overlay .description
+#portfolio #overlay .description
 {
 	background-color: #FFF;
 	float: left;
@@ -330,7 +330,7 @@ ul.navigation
 	margin-right: 89px;
 	width:100%;
 }
-#overlay .descriptionLink
+#portfolio #overlay .descriptionLink
 {
     width: 89px;
 	position: absolute;
@@ -341,7 +341,7 @@ ul.navigation
 	/*height: 100%;*/
 	float: right; 
 } 
-#overlay .p1
+#portfolio #overlay .p1
 {
 	font-family: 'MyriadProLight';
 	font-size: 30px;
@@ -349,7 +349,7 @@ ul.navigation
 	text-align: left;
 	line-height: 20px;
 }
-#overlay .p2
+#portfolio #overlay .p2
 {
 	font-family: 'MyriadProSemibold';
 	font-size: 16px;
@@ -357,7 +357,7 @@ ul.navigation
 	line-height: 31px;
 	text-align: left;
 }
-#overlay .p3
+#portfolio #overlay .p3
 {
 	font-family: 'MyriadProRegular';
 	font-size: 14px;
@@ -367,14 +367,14 @@ ul.navigation
 	max-height:80px;
 	overflow-y:auto;
 }
-#overlay .descriptionLink a
+#portfolio #overlay .descriptionLink a
 {
 	position:a;
 	top:0;bottom:0;left:0;right:0;
 	margin:auto;
 	
 } 
-#overlay .descriptionLink a p {
+#portfolio #overlay .descriptionLink a p {
 	width:89px;
 	height:90px;
 	display:block; 
