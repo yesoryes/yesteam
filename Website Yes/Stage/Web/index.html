@@ -6,12 +6,14 @@
 
 <link href="css/reset.css" type="text/css" rel="stylesheet">
 <link href="css/font.css" type="text/css" rel="stylesheet">
-<link href="css/style.css" type="text/css" rel="stylesheet">
-<link href="css/style-mobile.css" type="text/css" rel="stylesheet" media="(max-width:480px)">
-<link href="css/style-ipad.css" type="text/css" rel="stylesheet" media="(max-width:1024px)">
+<link href="css/yesoryes-style.css" type="text/css" rel="stylesheet">
+<link href="css/yesoryes-style-mobile.css" type="text/css" rel="stylesheet" media="(max-width:480px)">
+<link href="css/yesoryes-style-ipad.css" type="text/css" rel="stylesheet" media="(max-width:1024px)">
 
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/jquery.gsap.min.js"></script>
+<script type="text/javascript" src="js/TimelineMax.min.js"></script>
 
 <script type="text/javascript" src="js/scrollmagic-anchornav.js"></script>
 <script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
@@ -35,20 +37,49 @@
     <a href="#contactus" id="anchor5">Contact</a>
 </nav>
 
-<section id="home" class="flexCenter" style="background-color:#093; height:100%">
-	<div>
-		<div class="header">               
-        	<p class="heading">Home</p> 
-		</div>
+<section id="home" class="flexCenter">
+	<div>        
+        <div id="question">
+            <div id="q1">Will you have more <br> business in this year?</div>
+            <div id="q2">Will you surpass your <br> competitor this year?</div>
+            <div id="q3">Will you double your <br> profit this year?</div>
+            <div id="q4">Will you make your <br> customer happy this year?</div>
+            <div id="q5">Will you make your <br> employees happy this year?</div>
+        </div>
+        <script>
+        //Random Questions - BEGIN
+            var qRan = Math.floor(Math.random() * 5) + 1;
+            var Qs = "#q".concat(qRan);
+            $(Qs).show();
+        //Random Questions - End
+        </script>
+        <div id="intro-outer">
+          <div id="intro-container">
+            <img id="intro-triangle" src="images/intro-triangle.png" width="53" height="32"  alt=""/>
+            <img id="intro-rect" src="images/intro-rect.png" width="477" height="7"  alt=""/>
+            <img id="intro-coin" src="images/intro-coin.png" width="97" height="19"  alt=""/>
+            <div id="intro-text">Click on the hand<br>
+              to <strong>see the answer</strong></div>
+            <img id="intro-arrow" src="images/intro-arrow1.png" width="10" height="17"  alt=""/>
+            <img id="intro-hand" src="images/intro-hand.png" width="51" height="70"  alt=""/>
+          </div>
+          <div id="intro-container-yes">
+            <img id="intro-coin-yes" src="images/intro-coin-yes.png" width="234" height="239"  alt=""/><br>
+            <a id="link-replay" href="#">replay</a>
+          </div>
+        </div>
+        <script type="text/javascript" src="js/yesoryes-anim-intro.js"></script>
     </div>
 </section>
 
 
 <section id="portfolio" class="flexCenter" style="background:#FF6; height:100%">
 	<div>
-		<div class="header">               
-        	<p class="heading">Portfoio</p> 
-		</div>
+        <div class="header">               
+            <p class="heading">Portfoio</p> 
+        </div>
+        
+      
     </div>
 </section>
 
