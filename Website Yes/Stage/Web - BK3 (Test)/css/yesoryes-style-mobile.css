@@ -1,0 +1,457 @@
+@charset "utf-8";
+/* CSS Document */
+html, body
+{
+	width:100%; 
+	height:100%; 
+	outline:0;
+	padding:0;
+	margin:0;  
+}
+/* about us Mobile START */
+#aboutus
+{
+   width:100%;    
+   overflow:auto;
+   background-color:#ee733a;
+    
+} 
+.header
+{
+		float: left;
+	width: 100%;
+	padding-top:30px !important;
+	padding-bottom:20px !important;
+}
+.heading
+{   
+	color:#fff;
+	text-align:center;
+	margin:0 auto;
+	font-size:84px;
+	font-family: 'MyriadProLight';
+}
+ 
+#aboutus .content
+{
+	  float:left;
+	  width:80%;
+	  margin:0% 10%;
+}
+.about
+{
+	    float: left;
+		width: 100%;
+		margin-top: 40px;
+}
+.about .weare
+{   
+	color:#fff; 
+	text-align:left; 
+	font-size:38px;
+	padding:0% 0%;
+	font-family: 'MyriadProLight';
+}
+.description
+{   
+	color:#fff;
+	text-align:left;
+	margin:0 auto;
+	font-size:18px;
+	padding:1% 0%;	 
+	font-family:"Calibri";
+	line-height:24px;	
+}
+.testimonials
+{
+	 float: left;
+	width: 100%;
+	margin-top: 40px;
+	position: relative;
+	margin-left: 0%;
+}
+ .feedBack
+{
+	 background-color: #FFF;
+	float: left;
+	padding: 18px;
+	/* width: 59%; */
+	margin-right: 104px
+}
+.Quote
+{
+    width: 104px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.bQuote
+{
+	 float: left;
+	width: 20px;
+	 
+}
+.sidebarText {
+	color: #313030;
+	text-align: left;
+	font-size: 16px;
+	margin: 25px 20px;
+	line-height: 15px;
+	font-family: "Calibri";
+}
+.sidebarByLine
+{
+	 color: #6b6b6b;
+	text-align: right;
+	margin: 0 auto;
+	font-size: 16px;
+	margin-right: 25px;
+	font-family: "Calibri";
+}
+ul.navigation
+{
+    
+   list-style:none;
+   text-align:center; 
+    
+    
+ }
+.navigation li
+{
+	 display:inline-block;
+  
+	
+}
+.navigation li a
+{
+    text-decoration: none;
+	text-align:center;
+	display: block;
+	width: 6px;
+	height: 6px;
+	background: red;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #bfbebe;
+}
+.navigation li a.l1,.navigation li a:hover
+{
+	 background-color:#ee733a;	 
+} 
+.arrow
+{
+	 width: 0%;
+	height: 0%; 
+	border-bottom: 20px solid #FFF;
+	border-right: 20px solid transparent;
+	float: left; 
+} 
+.element
+{
+  float: left; 
+  margin-left: 10px;
+}
+.element img
+{
+	 border-radius: 100%;
+	-webkit-box-shadow: 0px 5px 0px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 5px 0px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 5px 0px 1px rgba(0,0,0,0.1);
+} 
+
+/* ABOUT US MOBILE END */
+
+/* SERVICES MOBILE START */
+#services
+{
+   width:100%; 
+   
+   margin:0 auto;
+   overflow:auto;
+   background-color:#446fa4;
+   
+} 
+#services .content
+{
+      float:left;
+	  width:80%; 
+	  margin:0% 10%;
+}
+#services .content .servicesList
+{
+  float:left;
+  padding-top:0px; 
+  width: 100%;
+}
+ul.navBarLeft
+{
+	list-style:none;
+	float:left;
+	 width:0%;
+	
+}
+ul.navBarRight
+{
+	list-style:none;
+	float:left;
+	padding-left:0px;
+	 width:0%;
+}
+ul.navBarLeft li, ul.navBarRight li
+{
+	display:block;
+	text-align:left;
+	font-size:18px;
+	text-decoration:none;
+	color:#FFF;	 
+	font-family:"calibri"; 
+	padding-left:18px;
+	padding-top:16px;	
+	background:url(../images/arrowSmall.png) 0 21px no-repeat;
+} 
+.packageSlider
+{
+     display:none;	
+}
+#services .footer
+{
+      float:left;
+	  width:80%;
+	  margin:0% 10%;
+}
+.quatru
+{
+ 
+  float:left;
+} 
+ul.footerNavBar
+{
+	list-style: none;
+   text-align:justify;
+}
+.footerNavBar li
+{
+	display: inline-block;
+	text-align: center;
+	padding: 0px 0px;
+}	 
+
+.footerNavBar li:nth-child(1)
+{
+	padding-left:0px;
+}
+.footerNavBar li.rightArrow3
+{
+	display:none;
+}
+.footerNavBar p
+{
+	 font-size:10px;
+	 text-decoration:none;
+	 color:#FFF;
+	 padding-top:10px;
+	 font-family: 'MyriadProRegular';
+}
+.footerNavBar p:hover
+{
+	 color:#000; 
+}
+.servicesImage
+{
+	 
+	width:60px;
+	height:60px;
+	padding:10px 0px 10px 10px;
+}
+
+
+.rightArrow1, .rightArrow2, .rightArrow3, .rightArrow4, .rightArrow5
+{
+	vertical-align:top;
+	margin-top:30px;
+}
+.rightArrow1
+{
+	opacity:0.3;
+	 
+}
+.rightArrow2
+{
+    opacity:0.4;
+}
+.rightArrow3
+{
+	opacity:0.6;
+}
+.rightArrow4
+{ 
+   opacity:0.8;
+}
+.heading2
+{   
+	color:#fff;
+	text-align:center;
+	font-size:34px;
+	padding:40px 0px;
+	font-family: 'MyriadProLight';
+}
+.footerNavBar li:nth-child(4), .footerNavBar li:nth-child(5), .footerNavBar li:nth-child(6)
+{
+	padding:0 3px;
+}
+ 
+.servicesFooterLine1, .servicesFooterLine2
+{
+	display:none;
+}
+/* SERVICES MOBILE END */
+/* CONTACTUS MOBILE START */
+#contactus
+{
+    width:100%; 
+	 
+	outline:0;
+	paddding:0;
+    overflow:auto;
+	background-color:rgba(0,0,0,0.3);
+	 
+}
+#contactus .content
+{
+     width: 50%;
+     margin: 0 auto;
+	text-align: center;
+	padding: 0;
+	overflow: auto;
+	min-width: 60%;
+} 
+.p1
+{
+	background:url(../images/addressIcon.png) 1px 1px no-repeat;
+	line-height:20px;
+}
+.p2
+{
+	background:url(../images/mailIcon.png) 1px 27px no-repeat;
+	height:22px;
+}
+.p2 a
+{
+	text-decoration:none; 
+	font-family: 'MyriadProRegular';
+	font-size:18px;
+	color:#1e1e1e;	 
+}
+.p2 a:hover
+{
+	color:#fff;	
+}
+.p3
+{
+	background:url(../images/phno.png) 1px 24px no-repeat;
+	height:27px;
+	
+}
+.p1,.p3,.p2
+{
+	float:left;
+	text-align:left;
+	font-family: 'MyriadProRegular';
+	font-size:18px;
+	color:#1e1e1e;
+	padding-top:30px;
+	padding-left:40px;
+}
+
+.p1:nth-child(1)
+{
+	padding-top:0px;
+} 
+.address
+{ 
+	float: left;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0;
+
+}
+.contact-area
+{
+	 display:none;
+} 
+.SocialLinks
+{
+	float:left;
+	margin-left:10px;
+	margin-top:30px;
+}
+.SocialLinks a
+{
+	margin-left:10px;
+}
+a.s1
+{
+	width:38px;
+	height:38px;
+	float:left;
+	background:url(../images/facebookSprites.png) no-repeat; 
+}
+a.s1:hover
+{
+	 background:url(../images/facebookSprites.png) 0px -38px no-repeat; 
+}
+a.s2
+{
+    width:38px;
+	height:38px;
+	float:left;
+	background:url(../images/twitterSprites.png) no-repeat;
+	
+}
+a.s2:hover
+{
+	 background:url(../images/twitterSprites.png) 0px -38px no-repeat; 
+}
+a.s3
+{
+    width:38px;
+	height:38px;
+	float:left;
+	display:none;
+	background:url(../images/youTubeSprites.png) no-repeat;
+	
+}
+a.s3:hover
+{
+	 background:url(../images/youTubeSprites.png) 0px -38px no-repeat; 
+	 display:none;
+}
+
+a.s4
+{
+     width:38px;
+	height:38px;
+	float:left;
+	background:url(../images/linkedSprites.png) no-repeat; 
+}
+a.s4:hover
+{ 
+	background:url(../images/linkedSprites.png) 0px -38px no-repeat; 
+}
+
+a.s5
+{
+    width:38px;
+	height:38px;
+	float:left;
+	background:url(../images/googleSprites.png) no-repeat; 
+}
+a.s5:hover
+{
+   background:url(../images/googleSprites.png) 0px -38px no-repeat; 
+}
+ 
+  
+ 
+ /* CONTACTUS MOBILE END */

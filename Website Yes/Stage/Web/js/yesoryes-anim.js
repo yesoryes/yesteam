@@ -1,19 +1,16 @@
 $(document).ready(function($) {
 	
-		// Init controller
-		var controller = new ScrollMagic({
+		// Init controller navController
+		var navController = new ScrollMagic({
 		  globalSceneOptions: {
 			duration: $('section').height(),
-			//triggerHook: .025,
-			//triggerHook: 1,
-			triggerHook: 'onProgress',
+			//triggerHook: .02,
 			reverse: true
 		  }
 		});
 				
-		// Change behaviour of controller
 		// to animate scroll instead of jump
-		controller.scrollTo(function(target) {
+		navController.scrollTo(function(target) {
 		
 		  TweenMax.to(window, 0.5, {
 			scrollTo : {
@@ -28,74 +25,98 @@ $(document).ready(function($) {
 		//  Bind scroll to anchor links
 		$(document).on("click", "a[href^=#]", function(e) {
 		  var id = $(this).attr("href");
-		
 		  if($(id).length > 0) {
 			e.preventDefault();
 		
 			// trigger scroll
-			controller.scrollTo(id);
+			navController.scrollTo(id);
 		
 			// If supported by the browser we can also update the URL
 			if (window.history && window.history.pushState) {
 			  //history.pushState("", document.title, id);
 			}
 		  }
-		
 		});
 		
-		
-		//Tweens
-		//var tween1 = TweenMax.from("#anim-services", 1, {x: -500});
-		var tween2 = TweenMax.from("#anim-services", 1, {scale:5, alpha:0});
-		
-		//  ScrollScenes
+		//  ScrollScenes navController
 		new ScrollScene({triggerElement: '#home'})
+										//.setPin("#home")
 										.setClassToggle('#anchor1', 'active')
 										.on("enter", function (event) {
 											if (window.history && window.history.pushState) {
 											  history.pushState("", document.title, "#home");
 											}
 											})
-										.addTo(controller);
+										.addTo(navController);
 		new ScrollScene({triggerElement: '#portfolio'})
+										//.setPin("#home")
 										.setClassToggle('#anchor2', 'active')
 										.on("enter", function (event) {
 											if (window.history && window.history.pushState) {
 											  history.pushState("", document.title, "#portfolio");
 											}
 											})
-										.addTo(controller);
+										.addTo(navController);
 		new ScrollScene({triggerElement: '#aboutus'})
+										//.setPin("#aboutus")
 										.setClassToggle('#anchor3', 'active')
 										.on("enter", function (event) {
 											if (window.history && window.history.pushState) {
 											  history.pushState("", document.title, "#aboutus");
 											}
 											})
-										.addTo(controller);
+										.addTo(navController);
 		new ScrollScene({triggerElement: '#services'})
+										//.setPin("#services")
 										.setClassToggle('#anchor4', 'active')
-										//.setPin("##anim-services")
-										//.duration(400)
-										//.triggerHook(1)
-										.setTween(tween2)
 										.on("enter", function (event) {
 											if (window.history && window.history.pushState) {
 											  history.pushState("", document.title, "#services");
 											}
 											})
-										.addTo(controller);
+										.addTo(navController);
 		new ScrollScene({triggerElement: '#contactus'})
+										//.setPin("#contactus")
 										.setClassToggle('#anchor5', 'active')
 										.on("enter", function (event) {
 											if (window.history && window.history.pushState) {
 											  history.pushState("", document.title, "#contactus");
 											}
 											})
-										.addTo(controller);
+										.addTo(navController);
 		
 		
 		
+		// Init controller animController1
+		var animController1 = new ScrollMagic({
+		  globalSceneOptions: {
+			//duration: $('section').height()/2,
+			//triggerHook: .025,
+			reverse: true
+		  }
+		});
 		
+		
+		new ScrollScene({triggerElement: '#services'})
+										.setTween(TweenMax.from('#anim-services', 0.3, {
+											alpha:0,
+											scale:5,
+											}))
+										.addTo(animController1);
+										
+		new ScrollScene({triggerElement: '#contactus'})
+										.setTween(TweenMax.from('#anim-contact', 0.3, {
+											alpha:0,
+											scale:.5,
+											}))
+										.addTo(animController1);
+		
+		
+		
+
+
+
+
+
 		
 });

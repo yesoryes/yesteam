@@ -657,7 +657,8 @@ html, body
 			   height:100%; 
 			   margin:0 auto;
 			   overflow:auto;
-			   background-color:#446fa4;
+			   //background-color:#446fa4;
+			   background-color:#FC9;
 			   overflow:hidden;
 			   
 			} 
@@ -933,12 +934,12 @@ html, body
 				height:38px;
 				float:left;
 				display:none;
-				/*background:url(../images/youTubeSprites.png) no-repeat;*/
+				background:url(../images/youTubeSprites.png) no-repeat;
 				
 			}
 			a.s3:hover
 			{
-				/* background:url(../images/youTubeSprites.png) 0px -38px no-repeat; */
+				 background:url(../images/youTubeSprites.png) 0px -38px no-repeat; 
 				 display:none;
 			}
 			
