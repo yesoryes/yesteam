@@ -108,8 +108,10 @@ html, body
 /* Portfolio START */
 			#portfolio .container
 			{	
-				width: 100%;
-				height:100%;
+				/*width: 100%;
+				height:100%;*/
+				width:1800px;
+				height:800px;
 				background-color:#e0b734;
 				position:relative; 
 			}
@@ -1034,6 +1036,7 @@ html, body
 			}
 			#headerMenu {
 				padding: 9px 0 0 7px;
+				float:left;
 			}
 			#headerMenu li {
 				display:inline-block;
@@ -1078,10 +1081,38 @@ html, body
 			}
 			#headerSocial {
 				float:right;
+				padding:0 25px 0 0;
 			}
 			#headerSocial li {
 				border:solid 0 0 1px 0 #CCC;
 				display:inline-block;
+				float:left;
+				padding:0 1px 0 0;
+			}
+			#headerSocial li a {
+				width:33px;
+				height:33px;
+				display:block;
+				text-indent:-9999px;
+				transition: background-position 0.2s;
+			}
+			#iconFacebook {
+				background:url(../images/headerSocial.png) no-repeat 0 0;
+			}
+			#iconFacebook:hover {
+				background-position: 0 -33px;
+			}
+			#iconLinkedin {
+				background:url(../images/headerSocial.png) no-repeat -34px 0;
+			}
+			#iconLinkedin:hover {
+				background-position: -34px -33px;
+			}
+			#iconTwitter {
+				background:url(../images/headerSocial.png) no-repeat -68px 0;
+			}
+			#iconTwitter:hover {
+				background-position: -68px -33px;
 			}
 
 /* Main Menu END */
