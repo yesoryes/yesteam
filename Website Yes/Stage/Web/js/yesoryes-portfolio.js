@@ -15,7 +15,7 @@ $('.portWarp img').each(function(index) {
 
 var project = [];
 $('#portfolioData ul').each(function(index) {
-	var img ="<div class='project'><div class='templates'><a href='#'><img src='"+ $(this).children().eq(0).html() +"' big='"+ $(this).children().eq(1).html() +"' title='"+ $(this).children().eq(2).html() +"' caty='"+ $(this).children().eq(3).html() +"' desp='"+ $(this).children().eq(4).html() +"' link='"+ $(this).children().eq(5).html() +"'></a></div><div class='templateHover'><a href='#'><img src='images/arrows.png'><h2>Website<br>Development</h2><div class='templateName'><h3>Be On The Scene</h3></div></a></div></div>";
+	var img ="<div class='project'><div class='templates'><a href='#'><img src='"+ $(this).children().eq(0).html() +"' big='"+ $(this).children().eq(1).html() +"' title='"+ $(this).children().eq(2).html() +"' caty='"+ $(this).children().eq(3).html() +"' desp='"+ $(this).children().eq(4).html() +"' link='"+ $(this).children().eq(5).html() +"'></a></div><div class='templateHover'><a href=javascript:void(0)><img src='images/arrows.png'><h2>Website<br>Development</h2><div class='templateName'><h3>Be On The Scene</h3></div></a></div></div>";
 	project.push(img);
 	//console.log("dd= "+$(this).children().eq(5).html());
 });
@@ -29,11 +29,11 @@ function loadPort() {
 	var pWidth = 230; //$(".project").outerWidth(true)
 	var pHeight = 203; //$(".project").outerHeight(true)
 
-	var contWidth = $(".contentArea").width()-pWidth-40;
+	var contWidth = $(".portfolio-contentArea").width()-pWidth-40;
 	//$('.templateContent').css("max-width",contWidth +"px"); //foget why
 	$('.templateContent').css("width",contWidth +"px");
-	$('.heading').css("width",contWidth +"px");
-	$('.footer').css("width",contWidth +"px");
+	$('.portfolio-heading').css("width",contWidth +"px");
+	$('.portfolio-footer').css("width",contWidth +"px");
 	$('#screens').css("width",contWidth +"px");
 	
 	var contHeight = $(window).height() - $(".header").outerHeight(true) - $(".footer").outerHeight(true)-80;
@@ -107,9 +107,9 @@ loadPort();
 function clearPortfoio() {
 	$("#screens").html('');
 	$("#screens").removeAttr('style');
-	$(".contentArea").removeAttr('style');
-	$(".heading").removeAttr('style');
-	$(".footer").removeAttr('style');
+	$(".portfolio-contentArea").removeAttr('style');
+	$(".portfolio-heading").removeAttr('style');
+	$(".portfolio-footer").removeAttr('style');
 	var initTemplate = "<ul class='bjqs'><li class='templateContent' id='portSlide0'><div class='portWarp'></div></li></ul>";
 	$("#screens").append(initTemplate);
 	loadPort();

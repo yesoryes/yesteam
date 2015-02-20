@@ -6,27 +6,27 @@ body {
 	height:100%;
 	background-color:#e0b734; */
 }
-#portfolio .container
+#portfolio .portfolio-container
 {	
-    width: 100%;
-	height:100%;
+    /*width: 100%;
+	height:100%;*/
 	background-color:#e0b734;
 	position:relative; 
 }
-#portfolio .header
+#portfolio .portfolio-header
 {
 	width:100%;
 	float:left;
 	margin: 30px auto 0 auto;
 
 }
-#portfolio .heading
+#portfolio .portfolio-heading
 {   
 	margin: 0 auto;	
 	display:block;
 	padding: 0 0 0 4px;
 }
-#portfolio h1
+.portfolio-heading h1
 {   
 	color:#fff; 
 	font-size:60px;
