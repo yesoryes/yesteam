@@ -684,7 +684,11 @@ html, body
 			   overflow:auto;
 			   background-color:#446fa4;
 			   overflow:hidden;
-			   
+			   background: url(../images/bg-services.jpg) no-repeat center center #ee733a; 
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
 			} 
 			
 			#services .content
@@ -851,9 +855,12 @@ html, body
 				outline:0;
 				paddding:0;
 				overflow:auto;
-				background-color:rgba(0,0,0,0.3);
 				overflow:hidden;
-				 
+				 background: url(../images/bg-contact.jpg) no-repeat center center rgba(0,0,0,0.3); 
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
 			}
 			#contactus .content
 			{
