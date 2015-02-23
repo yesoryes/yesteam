@@ -519,14 +519,17 @@ html, body
 /* About us START */
 			#aboutus
 			{
-			   width:100%; 
-			   height:100%; 
+			   width:100%;
 			   overflow:auto;
-			   background: url(../images/bg-about.jpg) no-repeat center center #ee733a; 
+			   background: url(../images/bg-about.jpg) no-repeat center bottom #ee733a; 
+				   background-size: cover;
 				  -webkit-background-size: cover;
 				  -moz-background-size: cover;
-				  -o-background-size: cover;
-				  background-size: cover;
+				  -o-background-size: cover; 
+				  background-size: contain;
+				  -webkit-background-size: contain;
+				  -moz-background-size: contain;
+				  -o-background-size: contain;
 			} 
 			.header
 			{
@@ -534,6 +537,7 @@ html, body
 				width: 100%;
 				padding-top:58px;
 				padding-bottom:60px;
+				 
 			}
 			.heading
 			{   
@@ -549,7 +553,7 @@ html, body
 			{
 				  float:left;
 				  width:80%;
-				  margin:0% 10%;
+				  margin:0% 10% 35% 10%;
 			}
 			
 			.weare
@@ -574,7 +578,6 @@ html, body
 			{
 					float: left;
 					width: 54%;
-					/*margin-top: 50px;*/
 			}
 			.testimonials
 			{
@@ -679,7 +682,7 @@ html, body
 			#services
 			{
 			   width:100%; 
-			   height:100%; 
+			   height:100%;
 			   margin:0 auto;
 			   overflow:auto;
 			   background-color:#446fa4;
@@ -782,8 +785,8 @@ html, body
 			#services .footer
 			{
 				 float: left;
-					width: 80%;
-					margin: 0% 10%; 
+				width: 80%;
+				margin: 0% 10%; 
 			}
 			.quatru
 			{
@@ -806,7 +809,7 @@ html, body
 			{
 				display:inline-block;
 				text-align:center;
-				padding:0px 6px;	 
+				padding:0px 0px;	 
 			}
 			.footerNavBar li:nth-child(1)
 			{
@@ -823,6 +826,11 @@ html, body
 			.footerNavBar p:hover
 			{
 				 color:#000; 
+			}
+			.serviceQuality
+			{
+				width:150px;
+				height:150px;
 			}
 			.rightArrow1, .rightArrow2, .rightArrow3, .rightArrow4, .rightArrow5
 			{
@@ -851,7 +859,7 @@ html, body
 			#contactus
 			{
 				width:100%; 
-				height:100%; 
+				height:100%;
 				outline:0;
 				paddding:0;
 				overflow:auto;
@@ -869,6 +877,7 @@ html, body
 				padding:0;
 				overflow:auto;
 				min-width:785px;
+				
 			} 
 			.p1
 			{
@@ -916,7 +925,7 @@ html, body
 			{ 
 				float: left;
 				width:224px;
-				padding:0px 0px 50px 0; 
+				padding: 0px 0px 40% 0; 
 			}
 			.contact-area
 			{
@@ -1048,7 +1057,7 @@ html, body
 			{
 				
 				background:url(../images/sendSprites.jpg) 1px -36px no-repeat;
-			} 
+			}
  
 /* Contact Us END */
  
@@ -1067,6 +1076,7 @@ html, body
 			#headerMenu {
 				padding: 9px 0 0 7px;
 				float:left;
+				width:100%;
 			}
 			#headerMenu li {
 				display:inline-block;

@@ -11,62 +11,61 @@ html, body
 /* about us Mobile START */
 #aboutus
 {
-   width:100%;    
-   overflow:auto;
-   background-color:#ee733a;
-    
+   width:100%; 
+   height:100%;   
+   overflow:auto; 
 } 
 .header
 {
-		float: left;
+	float: left;
 	width: 100%;
-	padding-top:30px !important;
-	padding-bottom:20px !important;
+	padding-top:45px;
+	padding-bottom:20px;
 }
 .heading
 {   
 	color:#fff;
 	text-align:center;
 	margin:0 auto;
-	font-size:84px;
+	font-size:70px !important;
 	font-family: 'MyriadProLight';
 }
  
 #aboutus .content
 {
 	  float:left;
-	  width:80%;
-	  margin:0% 10%;
+	  width:85%;
+	  margin: 0% 8% 35% 8%;
 }
 .about
 {
 	    float: left;
-		width: 100%;
-		margin-top: 40px;
+		width: 100%; 
 }
 .about .weare
 {   
-	color:#fff; 
-	text-align:left; 
-	font-size:38px;
-	padding:0% 0%;
+	color: #fff;
+	text-align: left;
+	font-size: 41px;
+	padding: 0% 0%;
+	line-height: 56px;
 	font-family: 'MyriadProLight';
 }
 .description
 {   
-	color:#fff;
-	text-align:left;
-	margin:0 auto;
-	font-size:18px;
-	padding:1% 0%;	 
-	font-family:"Calibri";
-	line-height:24px;	
+	color: #fff;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 19px;
+	padding: 1% 0%;
+	font-family: "Calibri";
+	line-height: 20px;
 }
 .testimonials
 {
 	 float: left;
 	width: 100%;
-	margin-top: 40px;
+	margin-top: 30px;
 	position: relative;
 	margin-left: 0%;
 }
@@ -74,7 +73,7 @@ html, body
 {
 	 background-color: #FFF;
 	float: left;
-	padding: 18px;
+	padding: 10px;
 	/* width: 59%; */
 	margin-right: 104px
 }
@@ -94,7 +93,7 @@ html, body
 .sidebarText {
 	color: #313030;
 	text-align: left;
-	font-size: 16px;
+	font-size: 14px;
 	margin: 25px 20px;
 	line-height: 15px;
 	font-family: "Calibri";
@@ -104,7 +103,7 @@ html, body
 	 color: #6b6b6b;
 	text-align: right;
 	margin: 0 auto;
-	font-size: 16px;
+	font-size: 14px;
 	margin-right: 25px;
 	font-family: "Calibri";
 }
@@ -166,11 +165,9 @@ ul.navigation
 #services
 {
    width:100%; 
-   
-   margin:0 auto;
+   height:100%;     
    overflow:auto;
    background-color:#446fa4;
-   
 } 
 #services .content
 {
@@ -188,7 +185,7 @@ ul.navBarLeft
 {
 	list-style:none;
 	float:left;
-	 width:0%;
+	  width: 100%;
 	
 }
 ul.navBarRight
@@ -196,19 +193,20 @@ ul.navBarRight
 	list-style:none;
 	float:left;
 	padding-left:0px;
-	 width:0%;
+	 width: 100%;
 }
 ul.navBarLeft li, ul.navBarRight li
 {
-	display:block;
-	text-align:left;
-	font-size:18px;
-	text-decoration:none;
-	color:#FFF;	 
-	font-family:"calibri"; 
-	padding-left:18px;
-	padding-top:16px;	
-	background:url(../images/arrowSmall.png) 0 21px no-repeat;
+	display: block;
+	text-align: left;
+	font-size: 18px;
+	text-decoration: none;
+	color: #FFF;
+	font-family: "calibri";
+	padding-left: 18px;
+	padding-top: 9px;
+	padding-bottom: 2px;
+	background: url(../images/arrowSmall.png) 0 14px no-repeat;
 } 
 .packageSlider
 {
@@ -216,9 +214,9 @@ ul.navBarLeft li, ul.navBarRight li
 }
 #services .footer
 {
-      float:left;
-	  width:80%;
-	  margin:0% 10%;
+     float:left;
+	 width:80%;
+	 margin: 0% 5% 10% 5%;
 }
 .quatru
 {
@@ -227,16 +225,25 @@ ul.navBarLeft li, ul.navBarRight li
 } 
 ul.footerNavBar
 {
-	list-style: none;
-   text-align:justify;
+   list-style: none;
+   text-align:center;
+   width:410px;
+}
+.footerNavBar1, .footerNavBar2
+{
+	float:left;
 }
 .footerNavBar li
 {
 	display: inline-block;
 	text-align: center;
-	padding: 0px 0px;
+	padding: 0px 0px; 
 }	 
-
+.serviceQuality
+{
+	width:111px;
+	height:111px;
+}
 .footerNavBar li:nth-child(1)
 {
 	padding-left:0px;
@@ -260,12 +267,10 @@ ul.footerNavBar
 .servicesImage
 {
 	 
-	width:60px;
-	height:60px;
-	padding:10px 0px 10px 10px;
-}
-
-
+	width:81px !important;
+	height:81px !important;
+	padding:10px 0px 10px 0px;
+} 
 .rightArrow1, .rightArrow2, .rightArrow3, .rightArrow4, .rightArrow5
 {
 	vertical-align:top;
@@ -293,12 +298,12 @@ ul.footerNavBar
 	color:#fff;
 	text-align:center;
 	font-size:34px;
-	padding:40px 0px;
+	padding: 20px 0px;
 	font-family: 'MyriadProLight';
 }
 .footerNavBar li:nth-child(4), .footerNavBar li:nth-child(5), .footerNavBar li:nth-child(6)
 {
-	padding:0 3px;
+	padding:0 0px;
 }
  
 .servicesFooterLine1, .servicesFooterLine2
@@ -310,17 +315,15 @@ ul.footerNavBar
 #contactus
 {
     width:100%; 
-	 
-	outline:0;
-	paddding:0;
-    overflow:auto;
+    height:100%;     
+	overflow:auto; 
 	background-color:rgba(0,0,0,0.3);
 	 
 }
 #contactus .content
 {
-     width: 50%;
-     margin: 0 auto;
+    width: 50%;
+    margin: 0 auto;
 	text-align: center;
 	padding: 0;
 	overflow: auto;
@@ -369,12 +372,11 @@ ul.footerNavBar
 	padding-top:0px;
 } 
 .address
-{ 
+{
 	float: left;
 	width: 90%;
 	margin: 0 auto;
-	padding: 0px 0px 0px 0;
-
+	padding: 0px 0px 40% 0; 
 }
 .contact-area
 {
