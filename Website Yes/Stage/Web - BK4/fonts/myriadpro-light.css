@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MyriadProLight';
+    src: url('myriadpro-light.eot');
+    src: url('myriadpro-light.eot') format('embedded-opentype'),
+         url('myriadpro-light.woff2') format('woff2'),
+         url('myriadpro-light.woff') format('woff'),
+         url('myriadpro-light.ttf') format('truetype'),
+         url('myriadpro-light.svg#MyriadProLight') format('svg');
+}

@@ -1,0 +1,1163 @@
+@charset "utf-8";
+/* CSS Document */
+html, body
+{
+	width:100%; 
+	height:100%; 
+	outline:0;
+	padding:0;
+	margin:0;  
+	
+}
+
+/* Home START */
+			#home {
+				background-color:#63af49;
+				height:100%;
+			}
+			#question {
+				font-size: 84px;
+				color: #FFF;
+				position: relative;
+				font-family: 'MyriadProLight';
+			}
+			#q1, #q2, #q3, #q4, #q5 {
+				display:none;
+			}
+			#intro-outer {
+				position:relative;
+				height:314px;
+			}
+			#intro-container {
+				/*background: url(../images/ref1.png) center;*/
+			}
+			#intro-container-yes {
+				position:relative;
+				top: -100px;
+			}
+			#intro-triangle {
+				z-index: 2;
+				position: relative;
+				left: 288px;
+				top: 233px;
+			}
+			#intro-rect {
+				z-index: 3;
+				position: relative;
+				left: 22px;
+				top: 202px;
+				/*transform: rotate(-7deg);*/
+				behavior: url(-ms-transform.htc);
+				/* Firefox */
+				-moz-transform: rotate(-7deg);
+				/* Safari and Chrome */
+				-webkit-transform: rotate(-7deg);
+				/* Opera */
+				-o-transform: rotate(-7deg);
+				/* IE9 */
+				-ms-transform: rotate(-7deg);
+				/* IE6,IE7 */
+				filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476);
+				/* IE8 */
+				-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)";
+			}
+			#intro-coin {
+				z-index: 4;
+				position: relative;
+				left: -516px;
+				top: 232px;
+			}
+			#intro-text {
+				z-index: 5;
+				position: relative;
+				left: 80px;
+				top: 68px;
+				color: #FFF;
+				font-family: 'MyriadProLight';
+				font-size: 16px;
+				letter-spacing: 1px;
+			}
+			#intro-arrow {
+				z-index: 6;
+				position: relative;
+				left: 199px;
+				top: -14px;
+			}
+			#intro-hand {
+				z-index: 7;
+				position: relative;
+				left: 205px;
+				top: 21px;
+				cursor: pointer;
+			}
+			#intro-coin-yes {
+				position: relative;
+			}
+			#link-replay {
+				position: relative;
+				color:#1e1e1e;
+				font-size:17;
+				text-decoration:none;
+				background:url(../images/restart.png) no-repeat 0 3px;
+				padding-left:15px;
+				font-family: 'MyriadProLight';
+			}
+
+/* Home END */
+  
+/* Portfolio START */
+			#portfolio {
+				 height:100%;
+				 background: url(../images/bg-portfolio.jpg) no-repeat center center #e0b631; 
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
+			}
+
+			#portfolio .portfolio-container
+			{	
+				/*width: 100%;
+				height:100%;
+				width: 1800px;
+				height:900px;
+				background-color:#e0b734;*/
+				position:relative;
+			}
+			#portfolio .portfolio-header
+			{
+				width:100%;
+				float:left;
+				margin: 30px auto 0 auto;
+			
+			}
+			#portfolio .portfolio-heading
+			{   
+				margin: 0 auto;	
+				display:block;
+				padding: 0 0 0 4px;
+			}
+			.portfolio-heading h1
+			{   
+				color:#fff;
+				text-align:center;
+				margin:0 auto;
+				font-size:84px;
+				font-family: 'MyriadProLight';
+				font-weight:100;
+				padding-top: 30px;
+			}
+			#portfolio .menuBar
+			{
+				color:#fff; 
+				margin-top:50px;
+				float:left;
+				padding-bottom:20px;     
+				display:none /* disable filter */
+			}
+			#portfolio ul.navBar
+			{
+			   display:block;
+			   list-style:none;
+			   overflow:auto;
+			}
+			#portfolio .navBar li
+			{
+				float:left;
+				text-align:center;
+				margin:1px 0 0 1px;
+			}
+			#portfolio .navBar li a
+			{
+				width:158px;
+				height:39px;
+				line-height:39px;
+				text-decoration:none;
+				background-color:#444444;
+				color:#ffffff;
+				text-align:center;
+				font-size:12px;
+				display:block;
+				font-family: 'MyriadProRegular';
+			}
+			#portfolio .navBar li a:hover
+			{
+				background-color:#e7e7e7;
+				color:#444444;
+			}
+			#portfolio .portfolio-content
+			{
+				width:100%;
+				float:left;
+				margin: 0 auto;
+			}
+			#portfolio .portfolio-contentArea
+			{
+				margin-top:20px; 
+				float:left;
+				width:100%;
+				position:relative;
+			}
+			
+			#portfolio .portWarp {
+				position:absolute;
+				top:0; bottom:0; left:0; right:0;
+				margin:auto;
+				overflow:auto;
+			}
+			
+			#portfolio .templateContent
+			{
+				overflow:auto;
+				position:relative;
+			}
+			#portfolio .project
+			{
+				float:left;
+				position:relative;
+				margin:4px;
+			}
+			
+			
+			#portfolio .mleft
+			{
+				margin-left:10px;
+			}
+			#portfolio .mtop
+			{
+				margin-top:10px;
+			}
+			
+			#portfolio .templateHover
+			 {
+				width:222px;
+				height:195px;
+				position:absolute;	
+				float:left; 
+				display:none;
+				overflow:hidden;  /*for animtion*/
+			 }
+			#portfolio .templateHover a
+			 {
+				 text-decoration:none;
+				  display:block; 
+				text-align:center; 
+				background-color:rgba(68,68,68,0.5);
+				width:100%;
+				height:100%;
+				padding-top:14%;
+				border:0px solid #FFF; /*for animtion*/
+				box-sizing:border-box;
+			  -moz-box-sizing:border-box;
+			  -webkit-box-sizing:border-box;
+			 }
+			
+			#portfolio .templateHover h2{
+				font-size:16px;
+				font-weight:100;
+			}
+			
+			#portfolio .templateHover h3{
+				font-size:16px;
+				font-weight:100;
+			}
+			
+			#portfolio .templateName
+			{
+				text-align:center;
+				clear:both;
+				background-color:#FFF;
+				position:absolute;
+				bottom:-40px; /*for anim*/
+				width: 222px; /*212px;*/
+				padding:10px 0;
+			}
+			#portfolio h2
+			{
+				font-family: 'MyriadProRegular';
+				font-size:24px;
+				color:#FFF;
+				margin-top:10%;	
+				text-align:center;
+			}
+			#portfolio h3
+			{
+				font-family: 'MyriadProRegular';
+				font-size:18px;
+				color:#444444;
+				text-align:center;	
+				margin-top:2%;
+			}
+			#portfolio .arrowLeft
+			{	
+				position:absolute;
+				float:left;
+				top:50%;
+				left:64px;
+				display:block;
+				margin-top:-47px;
+			}
+			#portfolio .arrowRight
+			{	
+				position:absolute;
+				float:right;
+				top:50%;
+				right:64px;
+				display:block;
+				margin-top:-47px;
+			}
+			#portfolio .arrowLeft a
+			{
+				float:left;
+				width:48px;
+				height:95px;
+				text-decoration:none;
+				background:url(../images/leftArrow.png) no-repeat center;
+			}
+			#portfolio .arrowRight a
+			{
+				float:right;
+				width:48px;
+				height:95px;
+				text-decoration:none;
+				background:url(../images/rightArrow.png) no-repeat center;
+			}
+			 
+			#portfolio .portfolio-footer
+			{
+				clear:both;
+				width:100%;
+				margin:0 auto;
+				padding:30px 0;
+			} 
+			#portfolio ul.navigation
+			{
+			   list-style:none;
+			   margin: 0 auto;
+			   text-align:center;
+			   margin-bottom:50px;
+			 }
+			#portfolio .navigation li
+			{
+				display:inline-block;
+				margin-left:10px;	
+			}
+			#portfolio .navigation li a
+			{
+				text-decoration:none;
+				display:block;
+				width:8px;
+				height:8px;
+				background-color:#282828;
+			}
+			#portfolio .navigation li a.l1,.navigation li a:hover
+			{
+				 background-color:#ffffff;	 
+			} 
+			#portfolio .containerA {
+				overflow:auto;
+			}
+			
+			#portfolio .containerB {
+				display:none;
+				
+			} 
+			
+			#portfolio .templates
+			{
+				float:left;
+				position:relative;
+				
+			}
+			
+			#portfolio .templates img
+			{
+				max-height: 100%;
+				display:block;
+				transition: all .2s;   /*for .animScale*/
+			}
+			
+			#portfolio .templates a {
+				height:195px;
+				display:block;
+				overflow:hidden;
+				box-shadow: 0 0 4px rgba(0,0,0,0.3); 
+			}
+			
+			#portfolio .templates a img:hover {
+				transform: scale(1.2);
+			}
+			
+			#portfolio #screens {
+				margin:0 auto;
+			}
+			
+			
+			#portfolio .animScale {
+				transform: scale(1.2);
+			}
+			
+			/*overlay*/
+			
+			#portfolio #overlay {
+				position:fixed;
+				top:0;bottom:0;left:0;right:0;
+				margin:auto;
+				background-color:rgba(20,20,20,0.9);
+				display:none;
+				z-index:101;
+			}
+			#portfolio #forClose {
+				position:fixed;
+				top:0;bottom:0;left:0;right:0;
+				margin:auto;
+			}
+			#portfolio #bigImg {
+				position:fixed;
+				top:0;bottom:0;left:0;right:0;
+				margin:auto;
+				max-width:80%;
+				max-height:80%;
+				-webkit-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+				-moz-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+				box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+			}
+			
+			#portfolio #overlay .descriptionContainer
+			{
+				float: right;
+				width: 34%;
+				position: relative; 
+				top: 128px;
+				right: 0px;
+				left: -120px;
+				bottom: 40px;
+				-webkit-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+				-moz-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+				box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.25);
+				display:none;
+			}
+			#portfolio #overlay .description
+			{
+				background-color: #FFF;
+				float: left;
+				padding: 35px;
+				margin-right: 89px;
+				width:100%;
+			}
+			#portfolio #overlay .descriptionLink
+			{
+				width: 89px;
+				position: absolute;
+				/*bottom: 0;*/
+				right: -150px;
+				background-color: #444444;
+				display: block;
+				/*height: 100%;*/
+				float: right; 
+			} 
+			#portfolio #overlay .p1
+			{
+				font-family: 'MyriadProLight';
+				font-size: 30px;
+				color: #444444;
+				text-align: left;
+				line-height: 20px;
+				padding:0;
+				clear:both;
+			}
+			#portfolio #overlay .p2
+			{
+				font-family: 'MyriadProRegular';
+				font-size: 16px;
+				color: #444444;
+				line-height: 31px;
+				text-align: left;
+				padding:0;
+				clear:both;
+			}
+			#portfolio #overlay .p3
+			{
+				font-family: 'MyriadProRegular';
+				font-size: 14px;
+				text-align: left;
+				color: #666666;
+				line-height:19px;
+				max-height:80px;
+				overflow-y:auto;
+				padding:0;
+				clear:both;
+			}
+			#portfolio #overlay .descriptionLink a
+			{
+				position:absolute;
+				top:0;bottom:0;left:0;right:0;
+				margin:auto;
+				
+			} 
+			#portfolio #overlay .descriptionLink a p {
+				width:89px;
+				height:90px;
+				display:block; 
+				text-decoration: none;
+				font-family: 'MyriadProRegular';
+				font-size: 16px;
+				color: #ffffff;	 
+				background:url(../images/externalArrow.png) no-repeat 45% 40%;
+				margin-left: auto;
+				margin-right: auto;
+				margin: 0;
+				position: absolute;               
+				top: 50%;                       
+				transform: translate(0, -50%);
+				line-height: 150px;
+				text-align: center;
+			}
+			
+/* Portfolio END */
+  
+/* About us START */
+			#aboutus
+			{
+			   width:100%; 
+			   height:100%; 
+			   overflow:auto;
+			   background: url(../images/bg-about.jpg) no-repeat center center #ee733a; 
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
+			} 
+			.header
+			{
+				float: left;
+				width: 100%;
+				padding-top:58px;
+				padding-bottom:60px;
+			}
+			.heading
+			{   
+				color:#fff;
+				text-align:center;
+				margin:0 auto;
+				font-size:84px;
+				font-family: 'MyriadProLight';
+			}
+			
+			 
+			#aboutus .content
+			{
+				  float:left;
+				  width:80%;
+				  margin:0% 10%;
+			}
+			
+			.weare
+			{   
+				color:#fff; 
+				text-align:left; 
+				font-size:38px;
+				padding:0% 0%;
+				font-family: 'MyriadProLight';
+			}
+			.description
+			{   
+				color:#fff;
+				text-align:left;
+				margin:0 auto;
+				font-size:18px;
+				padding:1% 0%;	 
+				font-family:"Calibri";
+				line-height:24px;	
+			}
+			.about
+			{
+					float: left;
+					width: 54%;
+					/*margin-top: 50px;*/
+			}
+			.testimonials
+			{
+				float: left;
+				width: 41%;
+				/*margin-top: 40px;*/
+				position: relative;
+				margin-left:5%;
+			}
+			 .feedBack
+			{
+				 background-color: #FFF;
+				float: left;
+				padding: 18px;
+				/* width: 59%; */
+				margin-right: 104px
+			}
+			.Quote
+			{
+				width: 104px;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+			.bQuote
+			{
+				 float: left;
+				width: 20px;
+				 
+			}
+			.sidebarText {
+				color: #313030;
+				text-align: left;
+				font-size: 16px;
+				margin: 25px 20px;
+				line-height: 15px;
+				font-family: "Calibri";
+			}
+			.sidebarByLine
+			{
+				 color: #6b6b6b;
+				text-align: right;
+				margin: 0 auto;
+				font-size: 16px;
+				margin-right: 25px;
+				font-family: "Calibri";
+			}
+			ul.navigation
+			{
+				
+			   list-style:none;
+			   text-align:center; 
+				
+				
+			 }
+			.navigation li
+			{
+				 display:inline-block;
+			  
+				
+			}
+			.navigation li a
+			{
+				text-decoration: none;
+				text-align:center;
+				display: block;
+				width: 6px;
+				height: 6px;
+				background: red;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+				background-color: #bfbebe;
+			}
+			.navigation li a.l1,.navigation li a:hover
+			{
+				 background-color:#ee733a;	 
+			} 
+			.arrow
+			{
+				 width: 0%;
+				height: 0%; 
+				border-bottom: 20px solid #FFF;
+				border-right: 20px solid transparent;
+				float: left; 
+			} 
+			.element
+			{
+			  float: left; 
+			  margin-left: 10px;
+			}
+			.element img
+			{
+				 border-radius: 100%;
+				-webkit-box-shadow: 0px 5px 0px 1px rgba(0,0,0,0.1);
+				-moz-box-shadow: 0px 5px 0px 1px rgba(0,0,0,0.1);
+				box-shadow: 0px 5px 0px 1px rgba(0,0,0,0.1);
+			} 
+/* About Us END */
+
+/* Services START */
+			#services
+			{
+			   width:100%; 
+			   height:100%; 
+			   margin:0 auto;
+			   overflow:auto;
+			   background-color:#446fa4;
+			   overflow:hidden;
+			   background: url(../images/bg-services.jpg) no-repeat center center #ee733a; 
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
+			} 
+			
+			#services .content
+			{
+				  float: left;
+					width: 80%;
+					margin: 0% 10%;
+			}
+			.servicesList
+			{
+			   float: left;
+					padding-top: 0px;
+					width: 66%;
+			}
+			.packageSlider
+			{
+					  float: right;
+			margin-top: 4px;
+			margin-left: 62px;
+			width: 300px;
+			}
+			ul.navBarLeft
+			{
+				 list-style: none;
+			float: left;
+			width: 55%;
+			}
+			ul.navBarRight
+			{
+				 list-style: none;
+			float: right;
+			padding-left: 0%;
+			width: 45%;
+			}
+			ul.navBarLeft li, ul.navBarRight li
+			{
+				display:block;
+				text-align:left;
+				font-size:18px;
+				text-decoration:none;
+				color:#FFF;	 
+				font-family:"calibri"; 
+				padding-left:22px;
+				padding-top:16px;	
+				background:url(../images/arrowSmall.png) 0 21px no-repeat;
+			} 
+			
+			.package
+			{
+				 
+				 float: left;
+				 width:300px;
+				 height:200px;
+			}
+			.package img
+			{
+				 float:left;
+				 width:100px;
+				 height:100px;
+				 
+			} 
+			ul.slideNav
+			{
+				
+			   list-style: none;
+				margin-left: 40%;
+				margin-top:15px;
+				float: left;
+			 }
+			.slideNav li
+			{
+				 display:inline-block; 
+			}
+			.slideNav li a
+			{
+				text-decoration: none;
+				text-align:center;
+				display: block;
+				width: 7px;
+				height: 7px; 
+				margin-left: 9px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+				background-color: #bfbebe;
+			}
+			.slideNav li a.l2,.slideNav li a:hover
+			{
+				 background-color:#1e1e1e;	 
+			} 
+			#services .footer
+			{
+				 float: left;
+					width: 80%;
+					margin: 0% 10%; 
+			}
+			.quatru
+			{
+			  margin:0 auto;
+			} 
+			.heading2
+			{   
+				color:#fff;
+				text-align:center;
+				font-size:34px;
+				margin-top:10px;
+				font-family: 'MyriadProLight';
+			}
+			ul.footerNavBar
+			{
+				list-style:none;
+				text-align:center;
+			}
+			.footerNavBar li
+			{
+				display:inline-block;
+				text-align:center;
+				padding:0px 6px;	 
+			}
+			.footerNavBar li:nth-child(1)
+			{
+				padding-left:0px;
+			}
+			.footerNavBar p
+			{
+				 font-size:15px;
+				 text-decoration:none;
+				 color:#FFF;
+				 padding-top:10px;
+				 font-family: 'MyriadProRegular';
+			}
+			.footerNavBar p:hover
+			{
+				 color:#000; 
+			}
+			.rightArrow1, .rightArrow2, .rightArrow3, .rightArrow4, .rightArrow5
+			{
+				vertical-align:top;
+				margin-top:40px;
+			}
+			.rightArrow1
+			{
+				opacity:0.3;
+			}
+			.rightArrow2
+			{
+				opacity:0.4;
+			}
+			.rightArrow3
+			{
+				opacity:0.6;
+			}
+			.rightArrow4
+			{ 
+			   opacity:0.8;
+			}
+/* SERVICES END*/
+
+/* CONTACT US START */
+			#contactus
+			{
+				width:100%; 
+				height:100%; 
+				outline:0;
+				paddding:0;
+				overflow:auto;
+				overflow:hidden;
+				 background: url(../images/bg-contact.jpg) no-repeat center center rgba(0,0,0,0.3); 
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
+			}
+			#contactus .content
+			{
+				width:60%;	 
+				margin:0 auto;
+				padding:0;
+				overflow:auto;
+				min-width:785px;
+			} 
+			.p1
+			{
+				background:url(../images/addressIcon.png) 1px 1px no-repeat;
+				line-height:20px;
+			}
+			.p2
+			{
+				background:url(../images/mailIcon.png) 1px 27px no-repeat;
+				height:22px;
+			}
+			.p2 a
+			{
+				text-decoration:none; 
+				font-family: 'MyriadProRegular';
+				font-size:18px;
+				color:#1e1e1e;	 
+			}
+			.p2 a:hover
+			{
+				color:#fff;	
+			}
+			.p3
+			{
+				background:url(../images/phno.png) 1px 24px no-repeat;
+				height:27px;
+				
+			}
+			.p1,.p3,.p2
+			{
+				float:left;
+				text-align:left;
+				font-family: 'MyriadProRegular';
+				font-size:18px;
+				color:#1e1e1e;
+				padding-top:30px;
+				padding-left:40px;
+			}
+			
+			.p1:nth-child(1)
+			{
+				padding-top:0px;
+			} 
+			.address
+			{ 
+				float: left;
+				width:224px;
+				padding:0px 0px 50px 0; 
+			}
+			.contact-area
+			{
+				background-color:rgba(8,8,8,0.1);
+				margin-left:292px; 
+				padding:50px 0px 100px 0px;
+				/*overflow:auto; */
+				float:none;
+			} 
+			.SocialLinks
+			{
+				float:left;
+				margin-left:10px;
+				margin-top:30px;
+			}
+			.SocialLinks a
+			{
+				margin-left:10px;
+			}
+			a.s1
+			{
+				width:38px;
+				height:38px;
+				float:left;
+				background:url(../images/facebookSprites.png) no-repeat; 
+			}
+			a.s1:hover
+			{
+				 background:url(../images/facebookSprites.png) 0px -38px no-repeat; 
+			}
+			a.s2
+			{
+				width:38px;
+				height:38px;
+				float:left;
+				background:url(../images/twitterSprites.png) no-repeat;
+				
+			}
+			a.s2:hover
+			{
+				 background:url(../images/twitterSprites.png) 0px -38px no-repeat; 
+			}
+			a.s3
+			{
+				width:38px;
+				height:38px;
+				float:left;
+				display:none;
+				/*background:url(../images/youTubeSprites.png) no-repeat;*/
+				
+			}
+			a.s3:hover
+			{
+				/* background:url(../images/youTubeSprites.png) 0px -38px no-repeat; */
+				 display:none;
+			}
+			
+			a.s4
+			{
+				 width:38px;
+				height:38px;
+				float:left;
+				background:url(../images/linkedSprites.png) no-repeat; 
+			}
+			a.s4:hover
+			{ 
+				background:url(../images/linkedSprites.png) 0px -38px no-repeat; 
+			}
+			
+			a.s5
+			{
+				width:38px;
+				height:38px;
+				float:left;
+				background:url(../images/googleSprites.png) no-repeat; 
+			}
+			a.s5:hover
+			{
+			   background:url(../images/googleSprites.png) 0px -38px no-repeat; 
+			}
+			
+			.contact-form
+			{
+				padding-right:50px;
+				 
+			}
+			 
+			.contact-form input
+			{ 	
+				width: 53%;
+				border: 0;
+				height: 32px;
+				margin: 0 0 15px 0;
+			} 
+			.contact-form textarea
+			{ 	
+				width:53%;
+				border:0;
+				height:85px;
+				margin:0 0 15px	0;
+			}
+			 
+			.contact-form label
+			{
+				float: left;
+				width: 21%;
+				text-align: right;
+				display: block;
+				padding: 0 5% 0 10%;
+				font-family: 'MyriadProRegular';
+				font-size: 18px;
+				color: #1e1e1e;
+			}
+			.send
+			{
+				float: left;
+				padding:2% 0 5% 32%; 
+			}
+			.send a
+			{
+				width:96px;
+				height:36px; 
+				display:block;
+				text-indent: -9999px;
+				text-decoration:none;
+				background:url(../images/sendSprites.jpg) no-repeat;
+			} 
+			.send a:hover
+			{
+				
+				background:url(../images/sendSprites.jpg) 1px -36px no-repeat;
+			} 
+ 
+/* Contact Us END */
+ 
+
+
+/* Main Menu START */
+
+			#mainNav {
+				position:fixed;
+				top:0;
+				width:100%;
+				height:33px;
+				background-color:rgba(11,11,11,0.75);
+				z-index:1010;
+			}
+			#headerMenu {
+				padding: 9px 0 0 7px;
+				float:left;
+			}
+			#headerMenu li {
+				display:inline-block;
+				padding: 0 20px 0 19px;
+				/*border-right:1px solid rgba(255,255,255,0.25);*/
+				color:rgba(255,255,255,0.7);
+			}
+			#headerMenu li a {
+				color:inherit;
+				text-decoration:none;
+				font-family: 'MyriadProRegular';
+			}
+			#headerMenu li a:hover {
+				color:rgba(255,255,255,1);
+			}
+			a.active {
+			  	border-bottom: 1px solid rgba(255,255,255,0.3);
+				border-top: 1px solid rgba(255,255,255,0.3);
+			}
+			a.activeHome {
+			  	/*border-bottom: 1px solid rgba(255,255,255,0.3);
+				border-top: 1px solid rgba(255,255,255,0.3);*/
+				background-color:#63af49;
+				padding:7px;
+			}
+			a.activePortfolio {
+				background-color:#FF6;
+				color:rgba(0,0,0,0.8);
+				padding:7px;
+			}
+			a.activeAboutus {
+				background-color:#ee733a;
+				padding:7px;
+			}
+			a.activeServices {
+				background-color:#446fa4;
+				padding:7px;
+			}
+			a.activeContactus {
+				background-color:rgba(0,0,0,0.3);
+				padding:7px;
+			}
+			#headerSocial {
+				float:right;
+				padding:0 25px 0 0;
+			}
+			#headerSocial li {
+				border:solid 0 0 1px 0 #CCC;
+				display:inline-block;
+				float:left;
+				padding:0 1px 0 0;
+			}
+			#headerSocial li a {
+				width:33px;
+				height:33px;
+				display:block;
+				text-indent:-9999px;
+				transition: background-position 0.2s;
+			}
+			#iconFacebook {
+				background:url(../images/headerSocial.png) no-repeat 0 0;
+			}
+			#iconFacebook:hover {
+				background-position: 0 -33px;
+			}
+			#iconLinkedin {
+				background:url(../images/headerSocial.png) no-repeat -34px 0;
+			}
+			#iconLinkedin:hover {
+				background-position: -34px -33px;
+			}
+			#iconTwitter {
+				background:url(../images/headerSocial.png) no-repeat -68px 0;
+			}
+			#iconTwitter:hover {
+				background-position: -68px -33px;
+			}
+
+/* Main Menu END */
+ 
+
+ 
+/* Intagrate START */
+
+			.flexCenter {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+			
+ 
+/* Intagrate START */
+ 
