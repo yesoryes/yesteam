@@ -2,192 +2,21 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Transcare</title>
-    
-<link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/main.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
-		<link rel="stylesheet" type="text/css" href="css/custom.css" />
-		
-
+<title>Untitled Document</title>
+<link href="css/trans1st.css" type="text/css" rel="stylesheet">
+<link href="css/reset.css" type="text/css" rel="stylesheet">
+ 
 </head>
-
 <body>
-	<div id="wrapper">
-    	<div class="container">
-        	<header>
-            	<div class="logo"><a href="#"><img src="img/logo.png" width="276" height="130"  alt=""/></a></div>
-                
-                <div class="header_right">
-                	<p class="weather">26&deg;C</p>
-                    <div class="time">
-                    	<ul>
-                        	<li class="bg_white">10</li>
-                            <li>:</li>
-                            <li class="bg_white">54</li>
-                        </ul>
-                        <p>17<br><span>FEB</span></p>
-                    </div>
-                </div>
-            </header>  
-            
-            <section class="content">
-            	<div class="banner">
-                	<ul id="sb-slider" class="sb-slider">
-                        <li><a href="#" target="_blank"><img src="img/banner.png"/></a></li>
-                        <li><a href="#" target="_blank"><img src="img/banner.png"/></a></li>
-                        <li><a href="#" target="_blank"><img src="img/banner.png"/></a></li>
-                        <li><a href="#" target="_blank"><img src="img/banner.png"/></a></li>
-                        <li><a href="#" target="_blank"><img src="img/banner.png"/></a></li>
-                        <li><a href="#" target="_blank"><img src="img/banner.png"/></a></li>
-                        <li><a href="#" target="_blank"><img src="img/banner.png"/></a></li>                       				
-				    </ul>
-                </div>
-                                
-                <div class="sec_menu" id="boxscroll">
-                	<ul>
-                    	<li><a href="#">Operating Policies</a></li>
-                        <li><a href="#">Accreditation</a></li>
-                        <li><a href="#">Union News</a></li>
-                        <li><a href="#">United Way Campaign</a></li>
-                        <li><a href="#">TransCare Campaign</a></li>
-                        <li><a href="#">News & Reports</a></li>
-                        <li><a href="#">TransCare Policies</a></li>
-                        <li><a href="#">Operating Policies</a></li>
-                        <li><a href="#">Accreditation</a></li>
-                        <li><a href="#">Union News</a></li>
-                        <li><a href="#">United Way Campaign</a></li>
-                        <li><a href="#">TransCare Campaign</a></li>
-                        <li><a href="#">News & Reports</a></li>
-                        <li><a href="#">TransCare Policies</a></li>
-                        <li><a href="#">Operating Policies</a></li>
-                        <li><a href="#">Accreditation</a></li>
-                        <li><a href="#">Union News</a></li>
-                        <li><a href="#">United Way Campaign</a></li>
-                        <li><a href="#">TransCare Campaign</a></li>
-                        <li><a href="#">News & Reports</a></li>
-                        <li><a href="#">TransCare Policies</a></li>
-                    </ul>                         
-                </div>
-                <div class="primary_menu">
-                	<ul>
-                    	<li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                    </ul>
-                </div>
-            </section>      
+    <div class="container">
+        <ul class="home-slider"> 
+            <li><a href="#"><img src="images/red.jpg" class="img1"></a></li>
+            <li><a href="#"><img src="images/purple.jpg" class="img1"></a></li>
+            <<li><a href="#"><img src="images/blue.jpg" class="img1"></a></li>
+        </ul>
+        <div class="click">
+            <a href="#"><img src="images/click.png" class="" alt=""></a>
         </div>
-        
-        <footer class="foo_Home">
-        	<div class="container">
-            	<marquee>ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectet do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</marquee><br>
-				
-            </div>
-        </footer>
-    </div>
-
-<script type="text/javascript" src="js/jquery.min.js"></script>   
-<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
-<script type="text/javascript" src="js/jquery.slicebox.js"></script>
-<script src="js/jquery.nicescroll.min.js"></script>
-		<script type="text/javascript">
-			$(function() {
-
-				var Page = (function() {
-
-					var $navArrows = $( '#nav-arrows' ).hide(),
-						$navDots = $( '#nav-dots' ).hide(),
-						$nav = $navDots.children( 'span' ),
-						$shadow = $( '#shadow' ).hide(),
-						slicebox = $( '#sb-slider' ).slicebox( {
-							onReady : function() {
-
-								$navArrows.show();
-								$navDots.show();
-								$shadow.show();
-
-							},
-							onBeforeChange : function( pos ) {
-
-								$nav.removeClass( 'nav-dot-current' );
-								$nav.eq( pos ).addClass( 'nav-dot-current' );
-
-							}
-						} ),
-						
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							// add navigation events
-							$navArrows.children( ':first' ).on( 'click', function() {
-
-								slicebox.next();
-								return false;
-
-							} );
-
-							$navArrows.children( ':last' ).on( 'click', function() {
-								
-								slicebox.previous();
-								return false;
-
-							} );
-
-							$nav.each( function( i ) {
-							
-								$( this ).on( 'click', function( event ) {
-									
-									var $dot = $( this );
-									
-									if( !slicebox.isActive() ) {
-
-										$nav.removeClass( 'nav-dot-current' );
-										$dot.addClass( 'nav-dot-current' );
-									
-									}
-									
-									slicebox.jump( i + 1 );
-									return false;
-								
-								} );
-								
-							} );
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-			});
-			
-			
-			//bOX sCROLL
-			$(document).ready(function() {
-  
-				var nice = $("html").niceScroll();  // The document page (body)
-				
-				$("#div1").html($("#div1").html()+' '+nice.version);
-				
-				$("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#FFF",boxzoom:true}); // First scrollable DIV
-			
-				$("#boxscroll2").niceScroll("#contentscroll2",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // Second scrollable DIV
-				$("#boxframe").niceScroll("#boxscroll3",{cursorcolor:"#0F0",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
-				
-				$("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
-				
-		  });
-		</script>
+    </div> 
 </body>
 </html>
