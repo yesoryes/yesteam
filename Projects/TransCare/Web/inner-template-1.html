@@ -12,7 +12,7 @@
 	<div id="wrapper1">
     	<div class="container">
         	<header class="inner_head">
-            	<div class="btn_back"><a href="index.html">Back</a></div>
+            	<div class="btn_back"><a href="#">Back</a></div>
                 <p>Lorem Lpsum</p>	
             	<div class="logo1"><a href="index.html"><img src="img/logo1.png" width="147" height="56"  alt="Transcare"/></a></div>
             </header>
@@ -173,6 +173,15 @@
 				
 				$("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
 				
+
+        /* iframe call */
+
+        $(".btn_back").click(function(){
+          window.parent.$('body').trigger('transMain');
+            //alert("call clicked");
+        });
+
+
 		  });
 </script>
 </body>

@@ -48,7 +48,7 @@
                 <div class="sec_menu" id="boxscroll">
                 	<ul>
                     	<li><a href="#">Operating Policies</a></li>
-                        <li><a href="#">Accreditation</a></li>
+                        <li><a ref="#">Accreditation</a></li>
                         <li><a href="#">Union News</a></li>
                         <li><a href="#">United Way Campaign</a></li>
                         <li><a href="#">TransCare Campaign</a></li>
@@ -187,6 +187,15 @@
 				
 				$("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
 				
+				
+				/* iframe call */
+
+				$("a").click(function(){
+					window.parent.$('body').trigger('transInner');
+				   	//alert("call clicked");
+				});
+
+
 		  });
 		</script>
 </body>
