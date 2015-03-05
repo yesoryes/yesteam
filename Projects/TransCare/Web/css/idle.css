@@ -25,7 +25,10 @@ html, body
 	width:100%;
 	height:auto;
 }
- 
+.img2, .img3
+{
+	display:none;
+}
 .click
 {
 	 position:absolute;
