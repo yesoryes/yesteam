@@ -507,3 +507,31 @@ xpopup
 	overflow:hidden;
 	height: 245px; 
 }*/
+	/* ....InnnerPage-6.....*/
+ 
+.inner_contentLeft
+{
+	float:left;
+	overflow:hidden;
+	width: 1010px;
+}
+.inner_contentRight
+{
+	float:right;
+	overflow:hidden;
+	width: 542px;
+	padding:0px 52px;
+
+}
+.inner_contentRight
+{
+	float:right;
+	overflow:hidden;
+	width: 542px;
+	padding:0px 52px;
+
+}
+.inner_image6
+{
+	border:9px solid #fff;
+}
