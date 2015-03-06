@@ -6,10 +6,11 @@
 <link href="css/idle.css" type="text/css" rel="stylesheet">
 <link href="css/reset.css" type="text/css" rel="stylesheet"> 
 <script type="text/javascript" src="js/jquery.min.js"></script> 
+<script src="js/slider.jquery.js"></script>
 </head>
 <body>
     <div class="container">
-        <ul class="home-slider"> 
+        <ul class="home-slider" id="slider"> 
             <li><a href="#"><img src="img/image1.jpg" class="img1"></a></li>
             <li><a href="#"><img src="img/image1.jpg" class="img2"></a></li>
             <<li><a href="#"><img src="img/image1.jpg" class="img3"></a></li>
@@ -28,9 +29,16 @@
                 window.parent.$('body').trigger('transMain');
                 //alert("call clicked");
             });
-
+			
 
       });
+	  var $slider = $( '#slider' );
+	  
+	  $slider.lateralSlider( {
+		captionPadding: '0',
+		captionHeight: 45
+		} );
+	  
     </script>
 </body>
 </html>
