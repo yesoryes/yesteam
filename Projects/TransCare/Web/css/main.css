@@ -621,3 +621,76 @@ xpopup
 {
 	border:9px solid #fff;
 }
+
+
+/*Events*/
+.events {
+	overflow: hidden;
+	margin: 85px 0 75px 60px;
+}
+.calender {
+	overflow: hidden;
+	width: 347px;
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 27px 0 30px;
+	line-height: 30px;
+	float: left;
+	margin: 0 35px;
+}
+.calender p {
+	text-transform: uppercase;
+	margin: 0 0 20px;
+}
+.calender table {
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+}
+.venue {
+	overflow: hidden;
+	width: 1656px;
+	margin: 0 auto 152px;
+	border-radius: 15px;
+	background: rgba(255,255,255,0.2)
+}
+.venue_details {
+	overflow: hidden;	
+	color: #000;
+	font-size: 20px;
+	line-height: 24px;
+	margin: 30px;
+}
+.details_1, .details_2 {
+	overflow: hidden;
+	width: 486px;
+	float: left;
+	background:url(../img/date.png) no-repeat 20px 22px #fff;
+	padding: 25px 110px 22px 190px;
+	margin: 0 21px 0 0;
+}
+.details_1 h1, .details_2 h1 {
+	overflow: hidden;
+	font-size: 40px;
+	font-family: 'ufonts_com_gillsansmtprobookopentype';
+	line-height: 47px;
+}
+.details_1 ul, .details_2 ul {
+	overflow: hidden;
+	font-family: 'ufonts_com_gillsansmtprobookopentype';
+}
+.details_1 ul li, .details_2 ul li {
+	overflow: hidden;
+	float: left;
+	margin: 0 30px 0 0;
+	padding: 5px 0 4px 38px;
+}
+.event_time {
+	background: url(../img/bg_time.png) no-repeat 0px 0px;
+}
+.event_place {
+	background: url(../img/event_place.png) no-repeat 0px 0px;
+}	
+.details_2 {
+	margin: 0 0px 0 0;
+}
