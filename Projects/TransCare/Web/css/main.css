@@ -261,12 +261,29 @@ header.inner_head p {
 	overflow: hidden;
 	float: right;
 	margin: 45px 0 0;
-}	
+}
+.ip_container
+{
+	width: 90%;
+	overflow: hidden;
+	margin: 70px 0px 90px 60px;
+}
 .inner_content {
 	width: 1195px;
 	float: left;
 	overflow: hidden;
 	margin: 105px 0 100px 80px;
+}
+.inner_content5 {
+	width: 1602px;
+	float: left;
+	overflow: hidden;
+}
+.inner_content5 p.ip_img5{
+	overflow: hidden;
+	width: 1602px;
+	float: none;
+	margin: 25px 0px;
 }
 .inner_content h1 {
 	overflow: hidden;
@@ -280,6 +297,16 @@ header.inner_head p {
 	overflow:hidden;
 	height: 545px;
 }
+ip_content5
+{
+	overflow:hidden;
+	height: 245px; 
+}
+ 
+ip_contentlist li
+{
+	list-style:decimal;
+}
 .ip_content1 p.ip_img {
 	overflow: hidden;
 	width: 450px;
@@ -287,8 +314,13 @@ header.inner_head p {
 }
 .ip_content2 {
 	overflow: hidden;
+	padding: 0 0 0 0px;
+}
+.ip_content3 {
+	overflow: hidden;
 	padding: 0 0 0 43px;
 }
+ 
 .ip_content2 h2 {
 	overflow: hidden;
 	font-family: 'ufonts_com_gillsansmtproboldopentype';
