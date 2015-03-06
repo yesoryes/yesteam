@@ -599,16 +599,23 @@ xpopup
 	float:right;
 	overflow:hidden;
 	width: 542px;
-	padding:0px 52px;
-
+	padding:0px 52px; 
+	position:relative;
+	text-align:center;
 }
-.inner_contentRight
+.inner_contentRight p
 {
-	float:right;
-	overflow:hidden;
-	width: 542px;
-	padding:0px 52px;
-
+	position: absolute;
+	bottom: 50px;
+	right: 0px;
+	font-size: 84px;
+	line-height: 62px;
+	color: rgba(255,255,255,0.7);
+	
+}
+.inner_contentRight p span
+{
+	 color:rgba(255,255,255,0.9);
 }
 .inner_image6
 {
