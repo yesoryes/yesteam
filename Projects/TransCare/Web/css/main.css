@@ -7,6 +7,11 @@ body {
 	color: #fff;
 	font-family: 'ufonts_com_gillsansmtprobookopentype';
 }
+h3
+{
+	font-size: 40px;
+	color: rgba(00,00,00,0.7);
+}
 
 #wrapper {
 	width: 100%;
@@ -483,7 +488,81 @@ xpopup
 	overflow: hidden;
 }
 
+	/* ....InnnerPage-4.....*/
+	
+.acc_executive	
+{
+	width:748px;
+	padding:25px;
+	position:relative;
+	background:rgba(255,255,255,0.9);
+}
+.acc_content
+{
+	width:622px
+}
+.acc_content p
+{
+	font-size:20px;
+	color:rgba(00,00,00,0.8);
+	line-height:25px;
+}
+.acc_details
+{
+	list-style:none;
+	margin-top:10px;
+	width:735px;
+}
 
+.acc_details li
+{
+	display:inline-block;
+	font-size:20px;
+}
+
+.acc_details li:nth-child(odd)
+{
+	color:#fff;
+	background-color:#858585;
+	padding:0px 10px;
+	border-radius:15px 0px 0px 15px;	
+}
+.acc_details li:nth-child(even)
+{
+	color:#222222;
+	padding-right:18px;
+}
+.acc_link
+{
+	position: absolute;
+	top: 53px;
+	right: 30px;
+}
+.acc_executive_left
+{
+	float:left;
+	margin-right:18px;
+}
+.acc_executive_left>ul>li
+{
+	display:block;
+	border:10px solid rgba(255,255,255, 0.1);
+	border-radius:10px;
+	margin-bottom:15px; 
+}
+.acc_executive_right>ul>li
+{
+	display:block;
+	border:10px solid rgba(255,255,255, 0.1);
+	border-radius:10px;
+	margin-bottom:15px; 
+}
+.acc_executive_right
+{
+	float:right;
+}
+
+	
 /*InnnerPage-5*/
 /*.ip_container
 {
