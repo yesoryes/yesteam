@@ -7,6 +7,9 @@
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/owl.carousel.css" rel="stylesheet">
 <link href="css/owl.theme.css" rel="stylesheet">
+<style>
+
+</style>
 </head>
 
 <body>
@@ -734,8 +737,40 @@
                 </div>
                 
                 <div class="venue">
-                	<div class="venue_details ">
-                    	<ul  id="flexiselDemo3">
+                	<div class="venue_details list_carousel">
+                    	<ul  id="foo2">
+                            <li><div class="details_1">
+                                <h1>Eleifend option congue</h1>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                                <ul>
+                                    <li class="event_time">10.00 Am</li>
+                                    <li class="event_place">Meeting Hall</li>
+                                </ul>
+                            </div></li>
+                            <li><div class="details_2">
+                                <h1>Eleifend option congue</h1>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                                <ul>
+                                    <li class="event_time">10.00 Am</li>
+                                    <li class="event_place">Meeting Hall</li>
+                                </ul>
+                            </div></li>
+                            <li><div class="details_1">
+                                <h1>Eleifend option congue</h1>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                                <ul>
+                                    <li class="event_time">10.00 Am</li>
+                                    <li class="event_place">Meeting Hall</li>
+                                </ul>
+                            </div></li>
+                            <li><div class="details_2">
+                                <h1>Eleifend option congue</h1>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                                <ul>
+                                    <li class="event_time">10.00 Am</li>
+                                    <li class="event_place">Meeting Hall</li>
+                                </ul>
+                            </div></li>
                             <li><div class="details_1">
                                 <h1>Eleifend option congue</h1>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
@@ -769,6 +804,7 @@
                                 </ul>
                             </div></li>
                         </ul>
+                        <div id="pager2" class="pager"></div>
                     </div>
                 </div>
             </div>
@@ -778,9 +814,11 @@
 
 <script src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-
 <script src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.touchSwipe.min.js"></script>
 <script>
 
     $(document).ready(function($) {
@@ -791,35 +829,24 @@
 
     $("body").data("page", "frontpage");
 	
-	$(window).load(function() {
-    $("#flexiselDemo3").flexisel({
-        visibleItems: 2,
-        animationSpeed: 1000,
-        autoPlay: false,
-        autoPlaySpeed: 3000,            
-        pauseOnHover: true,
-        enableResponsiveBreakpoints: true,
-        responsiveBreakpoints: { 
-            portrait: { 
-                changePoint:480,
-                visibleItems: 1
-            }, 
-            landscape: { 
-                changePoint:640,
-                visibleItems: 2
-            },
-            tablet: { 
-                changePoint:768,
-                visibleItems: 3
-            }
-        }
-    });
+$(function() {
+	//	Scrolled by user interaction
+	$('#foo2').carouFredSel({
+		auto: false,
+		prev: '#prev2',
+		next: '#next2',
+		pagination: "#pager2",
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		}
+	});
 
-    $("#flexiselDemo4").flexisel({
-        clone:false
-    });
-    
 });
-    </script>
+    
+</script>
+    
+
 </body>
 </html>

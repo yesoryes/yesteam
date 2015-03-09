@@ -717,3 +717,72 @@ xpopup
 .details_2 {
 	margin: 0 0px 0 0;
 }
+#intro {
+	width: 580px;
+	margin: 0 auto;
+}
+.wrapper {
+	background-color: white;
+	width: 480px;
+	margin: 40px auto;
+	padding: 50px;
+	box-shadow: 0 0 5px #999;
+}
+.list_carousel {
+}
+.list_carousel ul {
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.list_carousel li {
+	display: block;
+	float: left;
+}
+.list_carousel.responsive {
+	width: auto;
+	margin-left: 0;
+}
+.clearfix {
+	float: none;
+	clear: both;
+}
+.prev {
+	float: left;
+	margin-left: 10px;
+}
+.next {
+	float: right;
+	margin-right: 10px;
+}
+.pager {
+	float: left;
+	width: 1600px;
+	height: 11px;
+	text-align: center;
+	margin: 22px 0 0;
+}
+.pager a {
+	margin: 0 5px;
+	width: 11px;
+	height: 11px;
+	background: url(../img/bg_pagenation.png) no-repeat left top;
+	
+}
+.pager a span {
+	display: inline-block;
+	text-indent: -9999px;
+	width: 11px;
+	height: 11px;
+	background: url(../img/bg_pagenation.png) no-repeat left top;
+	
+}
+.pager a.selected span {
+	background: url(../img/bg_pagenation.png) no-repeat left bottom;
+}
+.timer {
+	background-color: #999;
+	height: 6px;
+	width: 0px;
+}
