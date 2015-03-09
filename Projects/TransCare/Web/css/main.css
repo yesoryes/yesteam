@@ -287,7 +287,7 @@ header.inner_head p {
 
 .ip_content1 p.ip_img {
 	overflow: hidden;
-	width: 450px;
+	width:505px;
 	float: left;
 }
 .ip_content2 {
@@ -309,7 +309,7 @@ header.inner_head p {
 }
 .ip_content2 ul li {
 	overflow: hidden;
-	background: url(../img/ul_bullet.gif) no-repeat  0px 15px;
+	background: url(../img/bullet.png) no-repeat  0px 15px;
 	padding: 0px 0px 0px 28px;
 }
 .ip_para_margin {
@@ -598,6 +598,11 @@ xpopup
 .inner_content5 p.ip_img5{
 	overflow: hidden;
 	width: 1602px;
+}
+.ip_content5
+{
+	overflow: hidden;
+	padding: 30px 0 0 0px;
 }
 /*.ip_content5
 {
