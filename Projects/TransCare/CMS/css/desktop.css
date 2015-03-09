@@ -685,6 +685,7 @@ textarea
 {
 	overflow:auto;
 	margin-top:40px;
+	padding-bottom:30px;
 	background-color:#fbfbfb;
 	-webkit-box-shadow: 0px 1px 4px 2px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0px 1px 4px 2px rgba(0,0,0,0.1);
@@ -798,18 +799,18 @@ textarea
 {
 	color:#252525;
 }
-/* Transcare Sub Page Backend Inner2 */
+/* sub screenn2 Start */
 
 .course-title
 {
-	margin:30px 0px 95px 90px;
+	padding: 30px 0px 60px 90px;
 }
 .course-title-text
 {
-	height:16px;
-    width:288px;
+	height:10px;
+    width:282px;
 	float:left;
-	padding:5px;
+	padding:8px;
     border: 1px solid #d7d7d7;
 	border-radius:2px;
 	background-color:#fbfbfb;	
@@ -819,7 +820,7 @@ input
 	font-size: 18px;
 }
  
-.course-title span
+.course-title span, .event-content span
 {
 	font-size:21px;
 	color:#514e4e; 
@@ -828,14 +829,14 @@ input
 } 
 .course-title a, .fillConText a
 {
-	line-height:28px;
+	line-height:30px;
 	color:#fff; 
 	float:left;
 	display:block;
 	text-decoration:none;
 	text-align:center;
 	width:83px;
-	height:28px;
+	height:30px;
 	font-size:14px;
 	margin: 15px 15px 0px 0px;
 	border-radius:1px;
@@ -845,6 +846,7 @@ input
 {
 	margin: 0px 0px 0px 15px !important;
 }
+ 
 .course-title a:hover, .fillConText a:hover
 { 
 	width:83px;
@@ -881,3 +883,90 @@ input
 	border-radius:2px;
 	background-color:#fbfbfb;
 } 
+
+/* sub screenn2 End */
+
+/* sub screenn3 Start */
+
+.event-sec
+{
+	overflow:hidden;
+	margin:0px 18px 30px 18px;
+	border:1px solid #d7d7d7;
+	position:relative;
+}
+.event-form
+{	
+	overflow: auto;
+}	
+.event-content
+{
+	padding:30px 70px;
+	overflow:hidden;
+}
+.event-time, .event-place
+{ 
+	float:left;
+	padding-top:15px;
+}
+.event-time span, .event-place span
+{ 
+	font-size:16px; 
+	color:#69696d;
+	padding-top:5px;
+}
+.event-time img
+{
+	padding-left:9px;
+}
+.event-time input
+{ 
+	margin-left:80px; 
+	font-size:16px;
+	color:#69696d;
+}
+.event-place input
+{ 
+	margin-left:75px; 
+	font-size:16px;
+	color:#69696d;
+}
+.event-form-text
+{
+	height:30px;
+	padding-bottom:15px;
+}
+.event-form-text img
+{
+	float:right;
+	padding-right:2px;
+	
+} 	
+.deLete
+{ 
+	float: left;
+	width: 100px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 17px; 
+}
+.deLete a, .edit-delete a
+{ 
+	 
+	width:100px;
+	height:30px;
+	float:left;
+	background:url(../images/delete.jpg) no-repeat; 
+}
+.deLete a:hover, .edit-delete a
+{ 
+	 background:url(../images/delete.jpg) 0px -30px no-repeat; 
+} 
+.event-action
+{
+	padding:20px 0 0 130px; 
+}
+
+
+/* sub screenn3 End */
+
