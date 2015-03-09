@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'ufonts_com_gillsansmtprolightopentype';
-    src: url('fonts/ufonts_com_gillsansmtprolightopentype.eot');
-    src: url('fonts/ufonts_com_gillsansmtprolightopentype.eot') format('embedded-opentype'),
-         url('fonts/ufonts_com_gillsansmtprolightopentype.woff2') format('woff2'),
-         url('fonts/ufonts_com_gillsansmtprolightopentype.woff') format('woff'),
-         url('fonts/ufonts_com_gillsansmtprolightopentype.ttf') format('truetype'),
-         url('fonts/ufonts_com_gillsansmtprolightopentype.svg#ufonts_com_gillsansmtprolightopentype') format('svg');
-}

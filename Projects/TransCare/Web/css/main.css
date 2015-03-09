@@ -7,14 +7,10 @@ body {
 	color: #fff;
 	font-family: 'ufonts_com_gillsansmtprobookopentype';
 }
-h3
-{
-	font-size: 40px;
-	color: rgba(00,00,00,0.7);
-}
 
 #wrapper {
 	width: 100%;
+	overflow: hidden;
 	background:url(../img/header_rec.png) no-repeat center 0px, url(../img/bg_wrapper.jpg) no-repeat center 0px;
 }
 .container {
@@ -488,8 +484,30 @@ xpopup
 	overflow: hidden;
 }
 
-	/* ....InnnerPage-4.....*/
-	
+
+/*InnnerPage-5*/
+/*.ip_container
+{
+	width: 90%;
+	overflow: hidden;
+	margin: 70px 0px 90px 60px;
+}*/
+.inner_content5 {
+	width: 1656px;
+	float: left;
+	overflow: hidden;
+	margin: 105px 0 100px 55px;
+	padding: 0 48px 0 0;
+}
+.inner_content5 p.ip_img5{
+	overflow: hidden;
+	width: 1602px;
+}
+/*.ip_content5
+{
+	overflow:hidden;
+	height: 245px; 
+}*/
 .acc_executive	
 {
 	width:748px;
@@ -626,14 +644,14 @@ xpopup
 /*Events*/
 .events {
 	overflow: hidden;
-	margin: 85px 0 75px 60px;
+	margin: 85px 80px 75px 60px;
 }
 .calender {
 	overflow: hidden;
-	width: 347px;
+	/*width: 347px;*/
 	text-align: center;
 	border: 1px solid #fff;
-	padding: 27px 0 30px;
+	padding: 27px 26px 30px;
 	line-height: 30px;
 	float: left;
 	margin: 0 35px;
