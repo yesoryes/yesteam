@@ -16,58 +16,56 @@ html, body
 .center
 {
 	text-align:center;
-}
+} 
 /*Login Part Start*/
-.loginLogo
+.login-logo
 { 
 	width:245px;
 	margin:60px auto;
 }	
-.loginContent
+.login-content
 {
-	width:465px;
-	overflow:auto;
-	margin:0 auto;
-	padding:37px 0px 37px 0px;
-	border-radius:20px;
-	background-color:#fff;
+	width: 342px;
+	overflow: auto;
+	margin: 0 auto;
+	padding: 40px 60px;
+	border-radius: 20px;
+	background-color: #fff;
 } 
+.user, .pass
+{
+    height: 25px;
+	width: 238px;
+	border: 1px solid #393838;
+	float: right;
+	border-radius: 2px;
+}
 .user
 {
-    height:25px;
-    width:238px;
-    border: 1px solid #393838;
-	border-radius:2px;
-	margin-left: 25px; 
-	background:url(../images/user.png) no-repeat 215px 6px #FFF;
+	background: url(../images/user.png) no-repeat 215px 6px #FFF;
 }
 .pass
 {
-    height:25px;
-    width:238px;
-    border: 1px solid #393838;
-	border-radius:2px;
-	margin-left: 35px; 
 	background:url(../images/pass.png) no-repeat 218px 7px #FFF;
 }
 h4
 {
 	text-align:center;  
 }
-label
+.username label, .password label
 {
-	padding-left:64px;
-	text-align:left;
-	font-size:14px; 
+	text-align: left;
+	font-size: 14px;
+	float: left;
+	margin: 4px 0 0; 
 }
-.username
+.username, .password
 {
-	padding-top:27px; 
+	width: 342px;
+	/* margin: 0 auto; */
+	overflow: auto;
+	margin: 25px 0; 
 }
-.password
-{
-	padding-top:22px; 
-} 
 .login-submit a
 {
 	line-height:30px;
@@ -78,7 +76,7 @@ label
 	width:83px;
 	height:30px; 
 	font-size:14px;
-	margin: 24px 0px 0px 167px;
+	margin: 0px 0px 0px 102px;
 	border-radius:1px;
 	background:url(../images/loginBG.jpg) repeat-x;
 }
@@ -89,8 +87,7 @@ label
 	color:#252525;  
 	background:url(../images/loginBGHover.jpg) repeat-x;
 }
-/*  Login Part End */
-
+/*  Login Part End */ 
 /*  Index Part Start*/
 
 .header
@@ -139,9 +136,9 @@ label
 }
 .mainTitle
 {
-	height:50px;
-	background-color:#181717;
-	margin-top: 40px;	
+	height: 50px;
+	background-color: #181717;
+	margin: 40px 0;	
 }
 .mainTitle h3
 {
@@ -161,8 +158,9 @@ label
 } 
 .contentSecTitle
 {
-	height:50px;
-	background-color:#d3d3d3;
+	height: 50px;
+	background-color: #d3d3d3;
+	margin: 0px 0px 30px 0px;
 }
 .contentSecLeft
 {
@@ -248,6 +246,7 @@ label
 .section2
 {
 	margin-top:40px;
+	padding-bottom: 30px;
 	background-color:#fbfbfb;
 	-webkit-box-shadow: 0px 1px 4px 2px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0px 1px 4px 2px rgba(0,0,0,0.1);
@@ -255,8 +254,8 @@ label
 }
 .subSec
 {
-	padding: 30px 15px 0 15px;
-	overflow:auto;
+	padding: 30px 15px 0px 15px;
+	overflow: auto;
 }
 .subSec1
 {
@@ -681,7 +680,12 @@ textarea
 {
 	margin:15px 0px 0px 0px;
 }
-.fillConSec
+.fillContent
+{
+	width:864px;  
+	margin:0 auto;
+}
+.fillSec
 {
 	overflow:auto;
 	margin-top:40px;
@@ -691,34 +695,35 @@ textarea
 	-moz-box-shadow: 0px 1px 4px 2px rgba(0,0,0,0.1);
 	box-shadow: 0px 1px 4px 2px rgba(0,0,0,0.1);
 }
-.fillConText
+.left-part
 {
-	margin:30px 16px;
+	margin:30px 18px;
+	padding:30px;
 	border: 1px solid #d7d7d7;
-	height: 339px;
-	padding:33px;
-} 
-.fillTitle
-{
-  	margin-bottom: 60px;
+
 }
-.fillTitle span
+.fill-title
 {
-	font-size:21px;
-	color:#514e4e; 
+	overflow: hidden;
+}
+.fill-title label
+{
+	color:#514e4e;
 	padding-right:15px;
 	float:left;
-}
+	margin:4px 0 0;
+} 
 .fillTitleText
 {
 	height:26px;
     width:298px;
 	float:left; 
-    border: 1px solid #828282;
+    border: 1px solid #d7d7d7;
 	border-radius:2px;
-	background-color:#fbfbfb;	
+	background-color:#fbfbfb;
 }
-.fillTitle a
+
+.fill-title a
 { 
 	width: 30px;
 	height: 29px;
@@ -726,14 +731,14 @@ textarea
 	margin-left: 3px;
 	background:url(../images/close.png) no-repeat; 
 }
-.fillTitle a:hover
+.fill-title a:hover
 { 
 	 background:url(../images/close.png) 0px -29px no-repeat; 
-}
-.fillContent
+} 
+.text-area
 {
-	width:864px;  
-	margin:0 auto;
+	overflow: hidden;
+	margin-top:30px;
 }
 .addMore
 {
@@ -801,33 +806,58 @@ textarea
 }
 /* sub screenn2 Start */
 
-.course-title
+
+.current-title
 {
-	padding: 30px 0px 60px 90px;
+	overflow: hidden;
+	padding: 0px 90px 0px 90px;
 }
-.course-title-text
+.current-title label
 {
-	height:10px;
-    width:282px;
+	color:#514e4e; 
 	float:left;
-	padding:8px;
+	margin:4px 0 0;
+	width:130px;
+} 
+.fillTitleText
+{
+	height:26px;
+    width:298px;
+	float:left; 
+	padding-left:10px;
     border: 1px solid #d7d7d7;
 	border-radius:2px;
-	background-color:#fbfbfb;	
+	background-color:#fbfbfb;
 }
+
+.current-title a
+{
+	line-height:30px;
+	color:#fff; 
+	float:left;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	width:83px;
+	height:30px;
+	font-size:14px; 
+	border-radius:1px;
+	margin: 0px 0px 0px 15px;
+	background:url(../images/loginBG.jpg) repeat-x;
+}
+.current-title a:hover
+{ 
+	width:83px;
+	height:30px;
+	color:#252525;  
+	background:url(../images/loginBGHover.jpg) repeat-x;
+} 
 input
 {
 	font-size: 18px;
 }
  
-.course-title span, .event-content span
-{
-	font-size:21px;
-	color:#514e4e; 
-	padding-right:15px;
-	float:left;
-} 
-.course-title a, .fillConText a
+.course-title a 
 {
 	line-height:30px;
 	color:#fff; 
@@ -842,47 +872,73 @@ input
 	border-radius:1px;
 	background:url(../images/loginBG.jpg) repeat-x;
 }
-.course-title a
-{
-	margin: 0px 0px 0px 15px !important;
-}
  
-.course-title a:hover, .fillConText a:hover
+.course-title a:hover 
 { 
 	width:83px;
 	height:30px;
 	color:#252525;  
 	background:url(../images/loginBGHover.jpg) repeat-x;
 } 
-.course-subtitle
+.current-subtitle
 {
-	margin-left: 15px;
-	margin:30px 15px 0 15px;
-	border: 1px solid #d7d7d7;
-	position: relative;
-	padding: 15px 70px;
-	overflow: auto;
-}
- 
-.course-subtitle span
-{
-	font-size:21px;
-	color:#514e4e; 
-	padding-right:15px;
-	float:left;
-	text-align:left;
+	 border: 1px solid #d7d7d7;
+	 padding:15px 70px;
+	 margin:0px 15px 0px 15px;
+	 overflow: hidden;
 } 
-.course-subtitle-text
+.current-subtitle label
 {
-	height:18px;
-    width:288px;
+	 
+	color:#514e4e;
+	margin:4px 0 0; 
 	float:left;
-	margin-left: 34px;
-	padding:5px;
-    border: 1px solid #cecece;
-	border-radius:2px;
+	width:134px;
+} 
+.subtitle-text
+{
+	height:26px;
+    width:298px;
+	float:left; 
+	padding-left:10px;
+    border: 1px solid #d7d7d7;
+	border-radius:2px; 
 	background-color:#fbfbfb;
-} 
+}
+
+.current-textarea
+{
+	margin:0px 15px;
+	padding:0 0 30px 70px;
+	border: 1px solid #d7d7d7;
+}
+.update-content
+{
+	overflow: hidden;
+	margin-top: 30px;
+}
+.update-content a
+{
+	line-height:30px;
+	color:#fff; 
+	float:left;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	width:83px;
+	height:30px;
+	margin:0px 15px 0 0;
+	font-size:14px;
+	border-radius:1px;
+	background:url(../images/loginBG.jpg) repeat-x;
+}
+.update-content a:hover
+{ 
+	width:83px;
+	height:30px;
+	color:#252525;  
+	background:url(../images/loginBGHover.jpg) repeat-x;
+}
 
 /* sub screenn2 End */
 
@@ -891,82 +947,50 @@ input
 .event-sec
 {
 	overflow:hidden;
-	margin:0px 18px 30px 18px;
+	margin:30px 18px 0px 18px;
 	border:1px solid #d7d7d7;
 	position:relative;
-}
-.event-form
-{	
-	overflow: auto;
-}	
+} 
+
 .event-content
 {
 	padding:30px 70px;
 	overflow:hidden;
-}
-.event-time, .event-place
-{ 
-	float:left;
-	padding-top:15px;
-}
-.event-time span, .event-place span
-{ 
-	font-size:16px; 
-	color:#69696d;
-	padding-top:5px;
-}
-.event-time img
-{
-	padding-left:9px;
-}
-.event-time input
-{ 
-	margin-left:80px; 
-	font-size:16px;
-	color:#69696d;
-}
-.event-place input
-{ 
-	margin-left:75px; 
-	font-size:16px;
-	color:#69696d;
-}
-.event-form-text
-{
-	height:30px;
-	padding-bottom:15px;
-}
-.event-form-text img
-{
-	float:right;
-	padding-right:2px;
-	
-} 	
-.deLete
-{ 
-	float: left;
-	width: 100px;
-	height: 30px;
-	margin-top: 10px;
-	margin-left: 17px; 
-}
-.deLete a, .edit-delete a
-{ 
-	 
-	width:100px;
-	height:30px;
-	float:left;
-	background:url(../images/delete.jpg) no-repeat; 
-}
-.deLete a:hover, .edit-delete a
-{ 
-	 background:url(../images/delete.jpg) 0px -30px no-repeat; 
 } 
+.event-form
+{	
+	overflow: auto;
+}	
+ .event-title
+{
+	overflow: hidden; 
+	margin-bottom:15px;
+} 
+.event-title label
+{
+	color:#514e4e;
+	float:left;
+	width:131px;
+	margin:4px 0 0;
+} 
+.fillTitleText
+{
+	height:26px;
+    width:298px;
+	float:left; 
+	padding-left:10px;
+    border: 1px solid #d7d7d7;
+	border-radius:2px;
+	background-color:#fbfbfb;
+}
+.event-title .dt
+{
+	padding-left:10px;
+}
 .event-action
 {
-	padding:20px 0 0 130px; 
+	overflow: hidden;
+	margin-left: 131px;
 }
-
-
 /* sub screenn3 End */
 
