@@ -6,37 +6,34 @@
 <link href="css/reset.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.min.js"></script> 
 <style type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
     .wrapper {
-    	width: 100%;
-    	height: 100%;
+    	width: 1920px;
+        height: 1080px;
     	overflow: hidden;
+        background: red;
+        -webkit-transform-origin: top left;
+        //-webkit-transform-origin-x: 0;
+        //-webkit-transform-origin-y: 0;
     }
     .container {
 		width:6000px;
     }
-    #idle {
+    .container iframe {
         width: 1920px;
         height: 1080px;
         float:left;
         display:block;
         border: none;
+        //-webkit-transform:scale(0.5,1);
+        //-moz-transform-scale(0.5);
     }
-    #dashboard {
-    	width: 1920px;
-    	height: 1080px;
-    	float:left;
-    	display:block;
-    	border: none;
-    	//-webkit-transform:scale(0.5);
-    	//-moz-transform-scale(0.5);
-    }
-    #inner-template {
-    	width: 1920px;
-    	height: 1080px;
-    	float:left;
-    	display:block;
-    	border: none;
-    }
+    
 </style>
 </head>
 <body>
@@ -51,16 +48,35 @@
     </div> 
 
     <script type="text/javascript">
-	    $(document).ready(function() {
 
-			/*$("#tdiv1").click(function(){
-				$('body').trigger('transInner');
-			});*/
+        function allResize() {
+            var vWidth = $('html').width();
+            var vHeight = $('html').height();
+            //vWidth = $('.wrapper').width();
+            //vHeight = $('.wrapper').height();
+            var vW = (vWidth/1920);
+            var vH = (vHeight/1080);
+            console.log("vW="+vW);
+            //$('.wrapper').css('webkit-transform', "scale("+.1+","+.1+")");
+            $('.wrapper').css('webkit-transform', "scale("+vW+","+vH+")");
+            //$('.wrapper').css('margin-left', -(100-(vW*100)) +"%");
+            //$('.wrapper').css('margin-left', -(vWidth/) +"%");
+            //$('.wrapper').css('margin-top', -(100-(vH*100)) +"%");
+            console.log(vWidth+", "+vHeight);
+        };
+        allResize();
 
-            //window.setInterval(callIdle, 15000);
-            //function callIdle() { $(".container").animate({marginLeft: "0px"}); }
+        $(window).resize(function() {
+            //console.log("w="+vWidth+", h="+vHeight);
+            allResize();
+        });
 
             
+	    $(document).ready(function() {
+
+			
+
+
 
 
             $('body').bind('transMain', function(){
@@ -85,6 +101,8 @@
                 $(".container").animate({marginLeft: "0px"});
             }, 5000);
         });
+
+
 
 
     </script>
