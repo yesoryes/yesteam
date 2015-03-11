@@ -168,5 +168,17 @@
 		</div> 
     </div> 
     
+    <script type="text/javascript" language="javascript" src="js/jquery-1.9.1.min.js"></script>  
+    <script type="text/javascript">
+        $(document).ready(function() {                
+
+            /* iframe call */
+            $(".btn_back").click(function(){
+              window.parent.$('body').trigger('transMain');
+            });
+
+        });
+    </script>
+    
 </body>
 </html>

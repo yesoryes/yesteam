@@ -30,7 +30,7 @@
     	//-webkit-transform:scale(0.5);
     	//-moz-transform-scale(0.5);
     }
-    #inner-template-1 {
+    #inner-template {
     	width: 1920px;
     	height: 1080px;
     	float:left;
@@ -45,7 +45,7 @@
         <div class="container">
             <iframe id="idle" src="idle.html"></iframe>
     		<iframe id="dashboard" src="dashboard.html"></iframe>
-    		<iframe id="inner-template-1" src="inner-template-2.html"></iframe>
+    		<iframe id="inner-template" src=""></iframe>
     		<!--<div id="tdiv1" style="width:600px; height:600px; display:block; position:absolute; z-index:100; background:red"></div>-->
         </div>
     </div> 
@@ -67,8 +67,10 @@
                 $(".container").animate({marginLeft: "-1920px"});
             });
 
-			$('body').bind('transInner', function(){
+			$('body').bind('transInner', function(event, innerPage){
+                $("#inner-template").attr('src',innerPage);
 		        $(".container").animate({marginLeft: "-3840px"});
+                //alert(innerPage);
 		    });
 
 

@@ -72,12 +72,12 @@
                 </div>
                 <div class="primary_menu">
                 	<ul>
-                    	<li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
+                    	<li><a data="inner-template-2.html">inner-template-2</a></li>
+                        <li><a data="inner-template-3.html">inner-template-3</a></li>
+                        <li><a data="inner-template-4.html">inner-template-4</a></li>
+                        <li><a data="inner-template-5.html">inner-template-5</a></li>
+                        <li><a data="inner-template-6.html">inner-template-6</a></li>
+                        <li><a data="inner-template-2.html">inner-template-2</a></li>
                     </ul>
                 </div>
             </section>      
@@ -191,8 +191,8 @@
 				/* iframe call */
 
 				$("a").click(function(){
-					window.parent.$('body').trigger('transInner');
-				   	//alert("call clicked");
+					window.parent.$('body').trigger('transInner',[$(this).attr('data')]);
+				   	//alert($(this).attr('href'));
 				});
 
 

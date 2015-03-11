@@ -822,8 +822,16 @@
 <script>
 
     $(document).ready(function($) {
+        /* iframe call */
+        $(".btn_back").click(function(){
+          window.parent.$('body').trigger('transMain');
+          //alert(window.parent.$('body'));
+        });
+
       $("#owl-example").owlCarousel();
 	  $("#owl-example1").owlCarousel();
+
+
     });
 
 
@@ -844,6 +852,8 @@ $(function() {
 	});
 
 });
+
+
     
 </script>
     
