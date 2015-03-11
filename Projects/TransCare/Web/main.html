@@ -30,8 +30,6 @@
         float:left;
         display:block;
         border: none;
-        //-webkit-transform:scale(0.5,1);
-        //-moz-transform-scale(0.5);
     }
     
 </style>
@@ -52,32 +50,18 @@
         function allResize() {
             var vWidth = $('html').width();
             var vHeight = $('html').height();
-            //vWidth = $('.wrapper').width();
-            //vHeight = $('.wrapper').height();
             var vW = (vWidth/1920);
             var vH = (vHeight/1080);
             console.log("vW="+vW);
-            //$('.wrapper').css('webkit-transform', "scale("+.1+","+.1+")");
-            $('.wrapper').css('webkit-transform', "scale("+vW+","+vH+")");
-            //$('.wrapper').css('margin-left', -(100-(vW*100)) +"%");
-            //$('.wrapper').css('margin-left', -(vWidth/) +"%");
-            //$('.wrapper').css('margin-top', -(100-(vH*100)) +"%");
-            console.log(vWidth+", "+vHeight);
         };
         allResize();
 
         $(window).resize(function() {
-            //console.log("w="+vWidth+", h="+vHeight);
             allResize();
         });
 
             
 	    $(document).ready(function() {
-
-			
-
-
-
 
             $('body').bind('transMain', function(){
                 $(".container").animate({marginLeft: "-1920px"});
