@@ -1,0 +1,503 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	overflow: hidden;
+	height: 100%;
+	font-size: 13px;
+	line-height: 19px;
+	font-family: 'OpenSansRegular';
+}
+#wrapper {
+	width: 100%;
+}
+.container {
+	overflow: hidden;
+	width: 1366px;
+	margin: 0 auto;
+}
+header {
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	background: url(../img/bg_header.gif) repeat-x 0 0;
+}
+.logo {
+	overflow: hidden;
+	float:left;
+	margin: 18px 0 0 115px;
+}
+/*Menu navigation*/
+nav {
+	overflow: hidden;
+	margin: 0 106px 0 0;
+}
+nav ul {
+	overflow: hidden;
+	float: right;
+	font-family: 'rockwellstd';
+	font-size: 18px;
+}
+nav ul li {
+	overflow: hidden;
+	float: left;
+}
+nav ul li a {
+	display: block;
+	width: 110px;
+	height: 80px;
+	margin: 0 auto;
+	color: #222;
+	text-transform:capitalize;
+	text-indent: -9999px;
+}
+nav ul li span {
+	font-family: 'RockwellStdLight';
+}
+.trn_home, .my_shots, .who_am, .my_studio, .my_clients, .reach_us {
+	width: 136px;
+	height: 80px;
+	background: url(../img/menu_home.png) no-repeat 0px -86px;
+}
+.my_shots {
+	width: 104px;
+	background: url(../img/menu_home.png) no-repeat -136px 0px;
+}
+.who_am {
+	width: 110px;
+	background: url(../img/menu_home.png) no-repeat -240px 0px;
+}
+.my_studio {
+	width: 110px;
+	background: url(../img/menu_home.png) no-repeat -350px 0px;
+}
+.my_clients {
+	width: 117px;
+	background: url(../img/menu_home.png) no-repeat -457px 0px;
+}
+.reach_us {
+	width: 91px;
+	background: url(../img/menu_home.png) no-repeat -574px 0px;
+}
+/*Active Nav*/
+.trn_home a.active  {
+	width: 136px;
+	height: 86px;
+	background: url(../img/menu_home.png) no-repeat 0px 0px;
+}
+.my_shots a.active  { 
+	background: url(../img/menu_home.png) no-repeat -136px -86px;
+}
+/*end---Menu navigation*/
+
+.home_banner, .shot_banner, .about_banner, .studio_banner, .reachUs_banner {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg_home_banner.png) repeat-x center 0px ;
+	margin: 80px 0 0;
+}
+.container.home, .container.shot, .container.about, .container.studio, .container.reachUs {
+	overflow: hidden;
+	position: relative;
+}
+.bg_home {
+	overflow: hidden;
+	width: 815px;
+	background: url(../img/hp_img_bg.png) no-repeat center 0px;
+	margin: 73px auto 60px;
+	padding: 0 0 300px 168px;
+}
+.bg_home h1 {
+	font-size: 33px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #f88a81;
+	margin: 42px 0 0;
+	font-family: 'RockwellStdLight';
+}
+.bg_home h1 span {
+	color: #ce8a4e;	
+}
+.bg_home sup {
+	font-size: 16px;
+	line-height: 19px;
+}
+.bg_home h4 {
+	font-size: 14px;
+	margin: 25px 0 10px;
+	font-family: 'OpenSansRegular';
+}
+.bg_home article {
+	font-size: 12px;
+	line-height: 19px;
+}
+.img_light_l, .img_light_r, .img_photos, .img_instrument, .img_stool, .img_stand, .img_clock, .img_door {
+	overflow: hidden;
+	position: absolute;
+	right: 342px;
+	top: -23px;
+}
+.img_light_r {
+	left: 337px;
+	top: -65px;
+}
+.img_photos {
+	left: 30px;
+	top: 80px;
+}
+.img_instrument {
+	left: 375px;
+	top: 280px;
+}
+.img_stool {
+	left: -26px;
+	top: 378px;
+}
+.img_stand {
+	right: 170px;
+	top: 225px;
+}
+.img_clock {
+	right: 120px;
+	top: 125px;
+}
+.img_door {
+	right: 90px;
+	top: 220px;
+}
+
+
+/*Shots*/
+.shot_banner {
+	background: url(../img/shot_bg.png) no-repeat center -35px;
+}
+.shot {
+	height: 702px;
+	overflow: hidden;
+}
+.img_modeling, .img_interiors, .img_adv, .img_life_style, .img_industry {
+	position: absolute;
+	left: 2px;
+	top: 210px;
+}
+.img_interiors {
+	left: 310px;
+	top: 380px;
+}
+.img_adv {
+	left: 310px;
+	top: 170px;
+}
+.img_life_style {
+	left: 607px;
+	top: 185px;
+}
+.img_industry {
+	left: 607px;
+	top: 340px
+}
+.img_jewellery, .img_food, .img_fashion, .img_automobile, .img_corporate {
+	position: absolute;
+	right: 405px;
+	top: 170px;
+}
+.img_food {
+	right: 300px;
+	top: 157px;
+}
+.img_fashion {
+	right: 106px;
+	top: 215px;
+}
+.img_automobile {
+	right: 300px;
+	top: 385px;
+}
+.img_corporate {
+	right: 405px;
+	top: 388px;
+}
+
+
+/*Who Am I*/
+.about_banner {
+	background: url(../img/about_bg.png) no-repeat center -105px;
+	color: #544510;
+}
+.about {
+	height: 663px;
+}
+.about_para {
+	overflow: hidden;
+	font-family: 'OpenSansRegular';
+	width: 622px;
+	margin: 94px 0 0 203px;
+}
+.about_para h1 {
+	 font-family: 'RockwellStdLight';
+	 font-size: 24px;
+	 color: #544510;
+	 line-height: 34px;
+	 margin: 0 0 13px;
+}
+.about_para h1 span {
+	 font-size: 35px;
+	 text-transform: uppercase;
+}
+.about_para p {
+	overflow: hidden;
+	float: left;
+	margin: 115px 28px 0 15px;
+}
+.about_para article {
+	overflow: hidden;
+	margin: 0 28px 0 0;
+}
+.img_toplight, .img_myblog, .img_standlight {
+	position: absolute;
+	right: 300px;
+	top: 0;
+}
+.img_myblog {
+	right: 240px;
+	top: 140px;
+}
+.img_standlight {
+	right: 0px;
+	top: 295px;
+}
+.img_sofa {
+	position: absolute;
+	right: 0px;
+	bottom: -45px;
+}
+.img_chair {
+	position: absolute;
+	left: 210px;
+	bottom: -20px;
+}
+
+/*My Studio*/
+.studio_banner {
+	background: url(../img/studio_bg.jpg) no-repeat center -25px;
+	position: relative;
+	width: 1920px;
+	margin: 80px auto;
+}
+.studio {
+	height: 661px;
+}
+.my_studio_para {
+	overflow: hidden;
+	color: #fff;
+	width: 440px;
+	margin: 0 auto;
+}
+.my_studio_para h1 {
+	overflow: hidden;
+	font-size: 24px;
+	font-family: 'RockwellStdLight';
+	margin: 0 0 20px;
+}
+.my_studio_para {
+	overflow: hidden;
+	color: #fff;
+	width: 440px;
+	margin: 0 auto;
+}
+.my_studio_para p {
+	overflow: hidden;
+	margin: 0 0 20px;
+}
+.my_studio_para ul {
+	overflow: hidden;
+	margin: 25px 0 0px;
+}
+.my_studio_para ul li {
+	overflow: hidden;
+	padding: 0 0 10px 18px;
+	background: url(../img/bg_list.png) no-repeat 0 6px;
+}
+.img_lightrays, .img_projector, .img_self, .img_lighting_set {
+	position: absolute;
+	left: 350px;
+	top: -60px;
+}
+.img_projector {
+	left: 520px;
+    top: -76px;
+}
+.img_self {
+	top: 90px;
+	left: 135px;
+}
+.img_lighting_set {
+	top: 315px;
+	left: 275px;
+}
+.img_flicker, .img_black_sofa {
+	position: absolute;
+	right: 325px;
+	bottom: -140px;
+}
+.img_black_sofa {
+	right: 20px;
+	bottom: 60px;
+}
+.img_frame_1, .img_frame_2 {
+	position: absolute;
+	right: 75px;
+	top: 210px;
+}
+.img_frame_2 {
+	right: 210px;
+	top: 130px;
+}
+.img_mac {
+	position: absolute;
+	left: 60px;
+	bottom: -140px;
+}
+
+
+/*client*/
+
+.client_banner
+{
+	position: relative;
+	width: 1920px; 
+	margin:0 auto;
+	background:url(../img/clients_bg.jpg) no-repeat center -80px, url(../img/bg_clients.jpg) repeat-x;
+}
+.client
+{
+	height: 660px;
+	width: 1520px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.img_leftclients, .img_hometheatre, .img_clientlist, .img_rightclients, .img_light_left, .client_list
+{
+	position: absolute;
+}
+.img_leftclients
+{
+ 	right: 0px;
+	left: 129px;
+	top: 74px;
+}
+.img_hometheatre
+{
+ 	left: 0px;
+	top: 287px;
+	right: 0px;
+	bottom: 0;
+	text-align: center;
+}
+.img_rightclients
+{
+ 	right: 164px;
+	top: 42px;
+}
+.client_list
+{
+	right: 462px;
+	top: 174px; 
+}
+.img_clientlist
+{
+	right: 0px;
+	top: 0px;
+	position:relative;
+}
+.clientlist_content
+{
+	position: absolute;
+	top: 91px;
+	left: 78px;
+	font-family: 'rockwellstd';
+}
+
+.clientlist_content h3
+{
+	font-size:30px;
+	color:rgba(82,75,67,0.4);
+	text-align:center;
+	padding-bottom: 25px; 
+}
+.clientlist_content h3 span, .clientlist_content p span
+{
+	font-weight:900; 
+}
+.clientlist_content p
+{
+	font-size:13px;
+	color:#fff; 
+	text-align:left;
+	line-height:30px;
+	font-family: 'OpenSansRegular';
+	 
+} 
+/* Reach us*/
+
+.reachUs_banner {
+	background:url(../img/reachus_bg.jpg) no-repeat center -38px;
+	color: #ac628a;
+}
+.reachUs {
+	height: 726px;
+}
+.reachUs_para {
+	overflow: hidden;
+	font-family: 'OpenSansRegular';
+	width: 782px;
+	margin: 108px 0 0 280px;
+}
+.reachUs_para h1 {
+	 font-family: 'RockwellStdLight';
+	 font-size: 18px;
+	 color: #fff;
+	 line-height: 34px;
+	 margin: 0 0 13px;
+}
+ 
+.reachUs_para p {
+	overflow: hidden;
+	float: left;
+	color: #fff;
+	font-size: 15px;
+	margin: 115px 28px 0 15px;
+} 
+.reachUs_para h2 {
+	overflow: hidden;
+	float: left;
+	color: #fff;
+	font-size: 15px;
+	font-family: 'rockwellstd';
+	margin: 140px 28px 0 15px;
+	 
+}  
+.img_toplight, .img_myblog, .img_standlight {
+	position: absolute;
+	right: 300px;
+	top: 0;
+}
+.img_myblog {
+	right: 240px;
+	top: 140px;
+}
+.img_standlight {
+	right: 0px;
+	top: 295px;
+}
+.img_sofa {
+	position: absolute;
+	right: 0px;
+	bottom: -45px;
+}
+.img_chair {
+	position: absolute;
+	left: 210px;
+	bottom: -20px;
+}
