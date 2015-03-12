@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TransCare</title>
+<link href="css/reset.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<style type="text/css">
+    .wrapper {
+    	width: 100%;
+    	height: 100%;
+    	overflow: hidden;
+    }
+    .container {
+		width:6000px;
+    }
+    #idle {
+        width: 1920px;
+        height: 1080px;
+        float:left;
+        display:block;
+        border: none;
+    }
+    #dashboard {
+    	width: 1920px;
+    	height: 1080px;
+    	float:left;
+    	display:block;
+    	border: none;
+    	//-webkit-transform:scale(0.5);
+    	//-moz-transform-scale(0.5);
+    }
+    #inner-template-1 {
+    	width: 1920px;
+    	height: 1080px;
+    	float:left;
+    	display:block;
+    	border: none;
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+    	
+        <div class="container">
+            <iframe id="idle" src="idle.html"></iframe>
+    		<iframe id="dashboard" src="dashboard.html"></iframe>
+    		<iframe id="inner-template-1" src="inner-template-1.html"></iframe>
+    		<!--<div id="tdiv1" style="width:600px; height:600px; display:block; position:absolute; z-index:100; background:red"></div>-->
+        </div>
+    </div> 
+
+    <script type="text/javascript">
+	    $(document).ready(function() {
+
+			/*$("#tdiv1").click(function(){
+				$('body').trigger('transInner');
+			});*/
+
+            //window.setInterval(callIdle, 15000);
+            //function callIdle() { $(".container").animate({marginLeft: "0px"}); }
+
+            
+
+
+            $('body').bind('transMain', function(){
+                $(".container").animate({marginLeft: "-1920px"});
+            });
+
+			$('body').bind('transInner', function(){
+		        $(".container").animate({marginLeft: "-3840px"});
+		    });
+
+
+		});
+
+
+        var timeout = null;
+        $(document).on('mousemove', function() {
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                console.log('Mouse idle for 5 sec');
+                $(".container").animate({marginLeft: "0px"});
+            }, 5000);
+        });
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

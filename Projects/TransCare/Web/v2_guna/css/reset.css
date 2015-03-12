@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+ul {
+    list-style:none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+	cursor:pointer;
+}
+table {
+	border-collapse: collapse;
+}
+h3
+{
+	font-size: 40px;
+	font-weight: 100;
+	color: rgba(0,0,0,0.9);
+	font-family: 'ufonts_com_gillsansmtprobookopentype';
+}
+
+/*Font-Family*/
+@font-face {
+    font-family: 'ufonts_com_gillsansmtprolightopentype';
+    src: url('../fonts/ufonts_com_gillsansmtprolightopentype.eot');
+    src: url('../fonts/ufonts_com_gillsansmtprolightopentype.eot') format('embedded-opentype'),
+         url('../fonts/ufonts_com_gillsansmtprolightopentype.woff2') format('woff2'),
+         url('../fonts/ufonts_com_gillsansmtprolightopentype.woff') format('woff'),
+         url('../fonts/ufonts_com_gillsansmtprolightopentype.ttf') format('truetype'),
+         url('../fonts/ufonts_com_gillsansmtprolightopentype.svg#ufonts_com_gillsansmtprolightopentype') format('svg');
+}
+@font-face {
+    font-family: 'ufonts_com_gillsansmtprobookopentype';
+    src: url('../fonts/ufonts_com_gillsansmtprobookopentype.eot');
+    src: url('../fonts/ufonts_com_gillsansmtprobookopentype.eot') format('embedded-opentype'),
+         url('../fonts/ufonts_com_gillsansmtprobookopentype.woff2') format('woff2'),
+         url('../fonts/ufonts_com_gillsansmtprobookopentype.woff') format('woff'),
+         url('../fonts/ufonts_com_gillsansmtprobookopentype.ttf') format('truetype'),
+         url('../fonts/ufonts_com_gillsansmtprobookopentype.svg#ufonts_com_gillsansmtprobookopentype') format('svg');
+}
+@font-face {
+    font-family: 'ufonts_com_gillsansmtproboldopentype';
+    src: url('../fonts/ufonts_com_gillsansmtproboldopentype.eot');
+    src: url('../fonts/ufonts_com_gillsansmtproboldopentype.eot') format('embedded-opentype'),
+         url('../fonts/ufonts_com_gillsansmtproboldopentype.woff2') format('woff2'),
+         url('../fonts/ufonts_com_gillsansmtproboldopentype.woff') format('woff'),
+         url('../fonts/ufonts_com_gillsansmtproboldopentype.ttf') format('truetype'),
+         url('../fonts/ufonts_com_gillsansmtproboldopentype.svg#ufonts_com_gillsansmtproboldopentype') format('svg');
+}
