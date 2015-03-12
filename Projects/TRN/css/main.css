@@ -90,14 +90,14 @@ nav ul li span {
 }
 /*end---Menu navigation*/
 
-.home_banner, .shot_banner, .about_banner, .studio_banner, .reachUs_banner {
+.home_banner, .shot_banner, .about_banner, .client_banner, .studio_banner, .reachUs_banner {
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
 	background: url(../img/bg_home_banner.png) repeat-x center 0px ;
 	margin: 80px 0 0;
 }
-.container.home, .container.shot, .container.about, .container.studio, .container.reachUs {
+.container.home, .container.shot, .container.about, .container.studio, .container.client, .container.reachUs {
 	overflow: hidden;
 	position: relative;
 }
@@ -286,13 +286,14 @@ nav ul li span {
 	margin: 80px auto;
 }
 .studio {
-	height: 661px;
+	height: 682px;
 }
 .my_studio_para {
 	overflow: hidden;
 	color: #fff;
 	width: 440px;
-	margin: 0 auto;
+	margin: 172px auto;
+	padding-left: 100px;
 }
 .my_studio_para h1 {
 	overflow: hidden;
@@ -300,15 +301,11 @@ nav ul li span {
 	font-family: 'RockwellStdLight';
 	margin: 0 0 20px;
 }
-.my_studio_para {
-	overflow: hidden;
-	color: #fff;
-	width: 440px;
-	margin: 0 auto;
-}
+
 .my_studio_para p {
 	overflow: hidden;
 	margin: 0 0 20px;
+	font-size:13px;
 }
 .my_studio_para ul {
 	overflow: hidden;
@@ -333,16 +330,16 @@ nav ul li span {
 	left: 135px;
 }
 .img_lighting_set {
-	top: 315px;
-	left: 275px;
+	top: 320px;
+	left: 286px;
 }
 .img_flicker, .img_black_sofa {
 	position: absolute;
-	right: 325px;
-	bottom: -140px;
+	right: 278px;
+	bottom: -154px;
 }
 .img_black_sofa {
-	right: 20px;
+	right: -35px;
 	bottom: 60px;
 }
 .img_frame_1, .img_frame_2 {
@@ -356,8 +353,9 @@ nav ul li span {
 }
 .img_mac {
 	position: absolute;
-	left: 60px;
+	left: 87px;
 	bottom: -140px;
+	top: 373px;
 }
 
 
@@ -367,15 +365,13 @@ nav ul li span {
 {
 	position: relative;
 	width: 1920px; 
-	margin:0 auto;
+	margin:80px auto;
 	background:url(../img/clients_bg.jpg) no-repeat center -80px, url(../img/bg_clients.jpg) repeat-x;
 }
 .client
 {
 	height: 660px;
 	width: 1520px;
-	margin: 0 auto;
-	overflow: hidden;
 }
 .img_leftclients, .img_hometheatre, .img_clientlist, .img_rightclients, .img_light_left, .client_list
 {
@@ -384,7 +380,7 @@ nav ul li span {
 .img_leftclients
 {
  	right: 0px;
-	left: 129px;
+	left: -70px;
 	top: 74px;
 }
 .img_hometheatre
@@ -397,12 +393,12 @@ nav ul li span {
 }
 .img_rightclients
 {
- 	right: 164px;
+ 	right: -36px;
 	top: 42px;
 }
 .client_list
 {
-	right: 462px;
+	right: 259px;
 	top: 174px; 
 }
 .img_clientlist
