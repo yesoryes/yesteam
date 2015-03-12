@@ -56,16 +56,6 @@ h1, h2, h3, h4, h5, h6 {
          url('../fonts/RockwellStdLight.ttf') format('truetype'),
          url('../fonts/RockwellStdLight.svg#RockwellStdLight') format('svg');
 }
-@font-face {
-    font-family: 'RockwellStd';
-    src: url('../fonts/RockwellStd.eot');
-    src: url('../fonts/RockwellStd.eot') format('embedded-opentype'),
-         url('../fonts/RockwellStd.woff2') format('woff2'),
-         url('../fonts/RockwellStd.woff') format('woff'),
-         url('../fonts/RockwellStd.ttf') format('truetype'),
-         url('../fonts/RockwellStd.svg#RockwellStd') format('svg');
-}
-
 
 @font-face {
     font-family: 'OpenSansRegular';
