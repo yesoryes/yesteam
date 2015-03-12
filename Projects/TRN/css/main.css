@@ -316,10 +316,15 @@ nav ul li span {
 	padding: 0 0 10px 18px;
 	background: url(../img/bg_list.png) no-repeat 0 6px;
 }
-.img_lightrays, .img_projector, .img_self, .img_lighting_set {
+.img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_cupboard {
 	position: absolute;
 	left: 350px;
 	top: -60px;
+}
+.img_cupboard
+{
+	top:156px;
+	left:200px;
 }
 .img_projector {
 	left: 520px;
@@ -336,11 +341,11 @@ nav ul li span {
 .img_flicker, .img_black_sofa {
 	position: absolute;
 	right: 278px;
-	bottom: -154px;
+	bottom: -145px;
 }
 .img_black_sofa {
-	right: -35px;
-	bottom: 60px;
+	right: -37px;
+	bottom: 64px;
 }
 .img_frame_1, .img_frame_2 {
 	position: absolute;
