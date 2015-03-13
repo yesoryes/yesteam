@@ -293,7 +293,7 @@ nav ul li span {
 	color: #fff;
 	width: 440px;
 	margin: 172px auto;
-	padding-left: 100px;
+	padding-left: 30px;
 }
 .my_studio_para h1 {
 	overflow: hidden;
@@ -310,41 +310,37 @@ nav ul li span {
 .my_studio_para ul {
 	overflow: hidden;
 	margin: 25px 0 0px;
+	width:322px;
 }
 .my_studio_para ul li {
 	overflow: hidden;
 	padding: 0 0 10px 18px;
 	background: url(../img/bg_list.png) no-repeat 0 6px;
 }
-.img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_cupboard {
+.img_lightrays, .img_projector, .img_self, .img_lighting_set {
 	position: absolute;
 	left: 350px;
 	top: -60px;
-}
-.img_cupboard
-{
-	top:156px;
-	left:200px;
-}
+} 
 .img_projector {
-	left: 520px;
+	left: 500px;
     top: -76px;
 }
 .img_self {
-	top: 90px;
+	top:80px;
 	left: 135px;
 }
 .img_lighting_set {
 	top: 320px;
-	left: 286px;
+	left: 247px;
 }
 .img_flicker, .img_black_sofa {
 	position: absolute;
-	right: 278px;
+	right: 315px;
 	bottom: -145px;
 }
 .img_black_sofa {
-	right: -37px;
+	right: -1px;
 	bottom: 64px;
 }
 .img_frame_1, .img_frame_2 {
@@ -354,11 +350,11 @@ nav ul li span {
 }
 .img_frame_2 {
 	right: 210px;
-	top: 130px;
+	top: 110px;
 }
 .img_mac {
 	position: absolute;
-	left: 87px;
+	left: 64px;
 	bottom: -140px;
 	top: 373px;
 }
@@ -391,8 +387,8 @@ nav ul li span {
 .img_hometheatre
 {
  	left: 0px;
-	top: 287px;
-	right: 0px;
+	top: 289px;
+	right: 5px;
 	bottom: 0;
 	text-align: center;
 }
