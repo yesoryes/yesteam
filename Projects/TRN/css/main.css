@@ -488,13 +488,17 @@ nav ul li span {
 .address ul
 {
 	 list-style:none;
-	 padding:15px 0 0 0;
+	 padding:15px 0 26px 0;
 }
-.address li, .enquiry p
+.address li, .enquiry p, .address p
 {
 	color: #fff;
 	font-size: 15px;
 	font-family: 'OpenSansRegular';
+}
+.address p span
+{
+	padding-left:15px;
 }
 .location
 {
@@ -552,29 +556,26 @@ nav ul li span {
     box-shadow: 0px 9px 0px rgba(138,203,209,0), 0px 9px 25px rgba(0,0,0,.1);
 	position: relative;
 	top: 6px;
+} 
+.img_centertoplight
+{
+	position: absolute; 
+	right: 600px;
+	top: -95px;
 }
 
- 
-.img_toplight, .img_myblog, .img_standlight {
-	position: absolute;
-	right: 300px;
-	top: 0;
-}
-.img_myblog {
-	right: 240px;
-	top: 140px;
-}
-.img_standlight {
+.img_rightlight {
+	position: absolute; 
 	right: 0px;
-	top: 295px;
+	top: 90px;
 }
-.img_sofa {
-	position: absolute;
-	right: 125px;
-	bottom: 36px;
+.img_leftlight {
+	position: absolute; 
+	left: 0px;
+	top: 90px;
 }
-.img_chair {
+.img_reachtable {
 	position: absolute;
-	left: 224px;
-	bottom: 47px;
+	right: 155px;
+	bottom: 10px;
 }
