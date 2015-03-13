@@ -46,18 +46,24 @@
 <script>
 	$(document).ready(function() {
   
-			var nice = $("html").niceScroll();  // The document page (body)
-			
-			$("#div1").html($("#div1").html()+' '+nice.version);
-			
-			$("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#FFF",boxzoom:true}); // First scrollable DIV
-			
-			$("#boxscroll1").niceScroll({cursorborder:"",cursorcolor:"#FFF",boxzoom:true});
+		var nice = $("html").niceScroll();  // The document page (body)
 		
-			$("#boxscroll2").niceScroll("#contentscroll2",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // Second scrollable DIV
-			$("#boxframe").niceScroll("#boxscroll3",{cursorcolor:"#0F0",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
+		$("#div1").html($("#div1").html()+' '+nice.version);
+		
+		$("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#FFF",boxzoom:true}); // First scrollable DIV
+		
+		$("#boxscroll1").niceScroll({cursorborder:"",cursorcolor:"#FFF",boxzoom:true});
+	
+		$("#boxscroll2").niceScroll("#contentscroll2",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // Second scrollable DIV
+		$("#boxframe").niceScroll("#boxscroll3",{cursorcolor:"#0F0",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
+		
+		$("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
 			
-			$("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
+			
+			/* iframe call */
+        $(".btn_back").click(function(){
+          window.parent.$('body').trigger('transMain');
+        });
 			
 	});
 				

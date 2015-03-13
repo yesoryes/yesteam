@@ -43,37 +43,36 @@
                                 
                 <div class="sec_menu" id="boxscroll">
                 	<ul>
-                    	<li><a href="#">Operating Policies</a></li>
-                        <li><a ref="#">Accreditation</a></li>
-                        <li><a href="#">Union News</a></li>
-                        <li><a href="#">United Way Campaign</a></li>
-                        <li><a href="#">TransCare Campaign</a></li>
-                        <li><a href="#">News & Reports</a></li>
-                        <li><a href="#">TransCare Policies</a></li>
-                        <li><a href="#">Operating Policies</a></li>
-                        <li><a href="#">Accreditation</a></li>
-                        <li><a href="#">Union News</a></li>
-                        <li><a href="#">United Way Campaign</a></li>
-                        <li><a href="#">TransCare Campaign</a></li>
-                        <li><a href="#">News & Reports</a></li>
-                        <li><a href="#">TransCare Policies</a></li>
-                        <li><a href="#">Operating Policies</a></li>
-                        <li><a href="#">Accreditation</a></li>
-                        <li><a href="#">Union News</a></li>
-                        <li><a href="#">United Way Campaign</a></li>
-                        <li><a href="#">TransCare Campaign</a></li>
-                        <li><a href="#">News & Reports</a></li>
-                        <li><a href="#">TransCare Policies</a></li>
+                    	<li><a href="#" data="inner-template-1.html">Operating Policies</a></li>
+                        <li><a href="#" data="inner-template-2.html">Accreditation</a></li>
+                        <li><a href="#" data="inner-template-3.html">Union News</a></li>
+                        <li><a href="#" data="inner-template-4.html">United Way Campaign</a></li>
+                        <li><a href="#" data="inner-template-5.html">TransCare Campaign</a></li>
+                        <li><a href="#" data="inner-template-1.html">News & Reports</a></li>
+                        <li><a href="#" data="inner-template-2.html">TransCare Policies</a></li>
+                        <li><a href="#" data="inner-template-3.html">Operating Policies</a></li>
+                        <li><a href="#" data="inner-template-4.html">Accreditation</a></li>
+                        <li><a href="#" data="inner-template-5.html">Union News</a></li>
+                        <li><a href="#" data="inner-template-1.html">United Way Campaign</a></li>
+                        <li><a href="#" data="inner-template-2.html">TransCare Campaign</a></li>
+                        <li><a href="#" data="inner-template-3.html">News & Reports</a></li>
+                        <li><a href="#" data="inner-template-4.html">TransCare Policies</a></li>
+                        <li><a href="#" data="inner-template-5.html">Operating Policies</a></li>
+                        <li><a href="#" data="inner-template-1.html">Accreditation</a></li>
+                        <li><a href="#" data="inner-template-2.html">Union News</a></li>
+                        <li><a href="#" data="inner-template-3.html">United Way Campaign</a></li>
+                        <li><a href="#" data="inner-template-4.html">TransCare Campaign</a></li>
+                        <li><a href="#" data="inner-template-5.html">News & Reports</a></li>
                     </ul>                         
                 </div>
                 <div class="primary_menu">
                 	<ul>
-                    	<li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
-                        <li><a href="#">Health & Safety</a></li>
+                    	<li><a href="#" data="inner-template-1.html">Health & Safety</a></li>
+                        <li><a href="#" data="inner-template-2.html">Employee Training</a></li>
+                        <li><a href="#" data="inner-template-3.html">Human Resources</a></li>
+                        <li><a href="#" data="inner-template-4.html">Job Posting</a></li>
+                        <li><a href="#" data="inner-template-5.html">Volunteer Posting</a></li>
+                        <li><a href="#" data="inner-template-2.html">Events Calendar</a></li>
                     </ul>
                 </div>
             </section>      
@@ -184,11 +183,17 @@
 				$("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
 				
 				
-				/* iframe call */
+				/* iframe call 
 
 				$("a").click(function(){
 					window.parent.$('body').trigger('transInner');
 				   	//alert("call clicked");
+				});*/
+				
+				
+				/* iframe call */
+				$("a").click(function(){
+					window.parent.$('body').trigger('transInner',[$(this).attr('data')]);
 				});
 
 

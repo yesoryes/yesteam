@@ -180,11 +180,17 @@
 				$("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
 				
 
-        /* iframe call */
+        /*/* iframe call 
 
         $(".btn_back").click(function(){
           window.parent.$('body').trigger('transMain');
             //alert("call clicked");
+        });*/
+		
+		
+		/* iframe call */
+        $(".btn_back").click(function(){
+          window.parent.$('body').trigger('transMain');
         });
 
 

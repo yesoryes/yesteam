@@ -231,15 +231,15 @@ header.inner_head {
 .btn_back a {
 	overflow: hidden;
 	position: relative;
-	width: 185px;
+	width: 115px;
 	height: 75px;
 	border-radius: 10px;
-	background: #f0f5f6 url(../img/bg_back_btn.png) no-repeat 20px 20px;
+	background: #f0f5f6 url(../img/btn_back.png) no-repeat 20px 20px;
 	display: table-cell;
-	text-align: center;
+	padding: 0 0 0 75px;
 	vertical-align: middle;
 	color: #808080;
-	font-size: 32px;
+	font-size: 43px;
 	-webkit-box-shadow: 0px 9px 0px rgba(146,146,146,1), 0px 9px 25px rgba(0,0,0,.3);
     -moz-box-shadow: 0px 9px 0px rgba(146,146,146,1), 0px 9px 25px rgba(0,0,0,.3);
     box-shadow: 0px 9px 0px rgba(146,146,146,1), 0px 9px 25px rgba(0,0,0,.3);
@@ -421,7 +421,7 @@ a.foo_btn.active {
 	color: #000;
 	cursor: pointer;
 } 
-.popup_container {
+.popup_container, .popup_container.account_exe {
 	width: 700px;
 	margin: 60px auto;
 }
@@ -439,16 +439,22 @@ a.foo_btn.active {
 	font-size: 40px;
 	font-family: 'ufonts_com_gillsansmtprobookopentype';
 } 
-.popup_text {
+.popup_text, .account_exe {
 	overflow: hidden;
 	height: 650px;
 	border: 1px solid #dfdfdf;
 	font-size: 16px;
-	line-height: 19px;
 	padding:  10px 60px;
+}
+.account_exe {
+	border: none;
+	margin: 30px 0px 0px
 }
 .reveal-modal.img_popup {
 	height: 756px;
+}
+.reveal-modal.event_popup {
+	height: 485px;
 }
 .reveal-modal.img_popup p {
 	font-size: 24px;
@@ -471,6 +477,30 @@ a.foo_btn.active {
 	width: 850px;
 	height: 500px;
 }
+.account_exe.contentHolder {
+	overflow: hidden;
+}
+.event_popup .popup_text {
+	height: 301px;
+	overflow: hidden;
+	padding: 40px 0 0px 190px;
+	margin: 0 20px;
+	background: url(../img/event_date.png) no-repeat 20px 40px;
+}
+.event_popup .popup_text ul {
+	overflow: hidden;
+}
+.event_popup .popup_text ul li {
+	overflow: hidden;
+	padding: 0px 0px 0px 35px;
+}
+.event_popup .popup_text ul li.event_time {
+	background: url(../img/bg_time.png) no-repeat 0px 8px;
+}
+.event_popup .popup_text ul li.event_place {
+	background: url(../img/event_place.png) no-repeat 0px 6px;
+}	
+
 /*End POPUP*/
 
 
@@ -720,6 +750,7 @@ a.event_date_confirm {
 	background:url(../img/date.png) no-repeat 20px 22px #fff;
 	padding: 25px 110px 22px 190px;
 	margin: 0 21px 0 0;
+	color: #000;
 }
 .details_1 h1, .details_2 h1 {
 	overflow: hidden;

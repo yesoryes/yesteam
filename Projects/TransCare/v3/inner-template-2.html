@@ -739,14 +739,14 @@
                 <div class="venue">
                 	<div class="venue_details list_carousel">
                     	<ul  id="foo2">
-                            <li><div class="details_1">
+                            <li><a href="" data-reveal-id="myModal1"><div class="details_1">
                                 <h1>Eleifend option congue</h1>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                                 <ul>
                                     <li class="event_time">10.00 Am</li>
                                     <li class="event_place">Meeting Hall</li>
                                 </ul>
-                            </div></li>
+                            </div></a></li>
                             <li><div class="details_2">
                                 <h1>Eleifend option congue</h1>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
@@ -809,6 +809,28 @@
                 </div>
             </div>
             
+            
+            <!--IMG POPUP-->
+            
+            		<div id="myModal1" class="reveal-modal event_popup">
+                   		<div class="popup_container">
+                            <h1>Eleifend option congue</h1>
+                            <div class=" popup_text contentHolder"  id="boxscroll1">
+                            	 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt. </p>
+                            	 
+                                 <ul>
+                                    <li class="event_time">10.00 Am</li>
+                                    <li class="event_place">Meeting Hall</li>
+                                </ul>
+                          </div>
+                      </div>
+                         <a class="close-reveal-modal"><img src="img/btn_close.png" width="65" height="65"  alt=""/></a>
+                    </div>
+                    
+            <!--End-->
+            
+            
+            
         </div>    
     </div>
 
@@ -819,6 +841,7 @@
 <script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 <script type="text/javascript" language="javascript" src="js/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
 <script>
 
     $(document).ready(function($) {
@@ -842,6 +865,11 @@ $(function() {
 			onTouch: true
 		}
 	});
+	
+	/* iframe call */
+        $(".btn_back").click(function(){
+          window.parent.$('body').trigger('transMain');
+        });
 
 });
     
