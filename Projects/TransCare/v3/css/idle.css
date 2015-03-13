@@ -32,7 +32,7 @@ html, body
 .click
 {
 	 position:absolute;
-	 bottom:0;
+	 bottom:-5px;
 	 left:0;
 	 right:0;
 	 text-align:center;

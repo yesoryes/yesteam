@@ -49,20 +49,62 @@
                   <a href="#"><img src="img/inner_banner.png" id="item-9" /></a>
               </div>-->              
 
-  
+  					<div class="vertical_caurosel">
+                    	<ul id="content-1" class="content">
+                        	<li>
+                            	<a href="#"  data-reveal-id="myModal">
+                                    <div class="ip2_caurosel">
+                                        <p class="img_caurosel"><img src="img/img_-caurosel1.jpg" width="117" height="144"  alt=""/></p>
+                                        <p>Sick leave / pay plan</p>
+                                    </div>
+                                 </a>
+                            </li>
+                            <li>
+                            	<a href="#"  data-reveal-id="myModal1">
+                                    <div class="ip2_caurosel">
+                                        <p class="img_caurosel"><img src="img/vertical_img2.jpg" width="117" height="144"  alt=""/></p>
+                                        <p>Clients List Record</p>
+                                    </div>
+                                 </a>
+                            </li>
+                            <li>
+                            	<a href="#"  data-reveal-id="myModal2">
+                                    <div class="ip2_caurosel">
+                                        <p class="img_caurosel"><img src="img/videoIcon.jpg"  alt=""/></p>
+                                        <p>Trans Document</p>
+                                    </div>
+                                 </a>
+                            </li>
+                            
+                            <li>
+                            	<a href="#"  data-reveal-id="myModal">
+                                    <div class="ip2_caurosel">
+                                        <p class="img_caurosel"><img src="img/img_-caurosel1.jpg" width="117" height="144"  alt=""/></p>
+                                        <p>Sick leave / pay plan</p>
+                                    </div>
+                                 </a>
+                            </li>
+                            <li>
+                            	<a href="#"  data-reveal-id="myModal1">
+                                    <div class="ip2_caurosel">
+                                        <p class="img_caurosel"><img src="img/vertical_img2.jpg" width="117" height="144"  alt=""/></p>
+                                        <p>Clients List Record</p>
+                                    </div>
+                                 </a>
+                            </li>
+                            <li>
+                            	<a href="#"  data-reveal-id="myModal2">
+                                    <div class="ip2_caurosel">
+                                        <p class="img_caurosel"><img src="img/videoIcon.jpg"  alt=""/></p>
+                                        <p>Trans Document</p>
+                                    </div>
+                                 </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
   					
-                    <a href="#"  data-reveal-id="myModal"><div class="ip2_caurosel">
-                    	<p class="img_caurosel"><img src="img/img_-caurosel1.jpg" width="117" height="144"  alt=""/></p>
-                        <p>Sick leave / pay plan</p>
-                    </div></a>
-                    <a href="#"  data-reveal-id="myModal1"><div class="ip2_caurosel">
-                    	<p class="img_caurosel"><img src="img/img_-caurosel1.jpg" width="117" height="144"  alt=""/></p>
-                        <p>Sick leave / pay plan</p>
-                    </div></a>
-                    <a href="#"  data-reveal-id="myModal2"><div class="ip2_caurosel">
-                    	<p class="img_caurosel"><img src="img/img_-caurosel1.jpg" width="117" height="144"  alt=""/></p>
-                        <p>Sick leave / pay plan</p>
-                    </div></a>
+                    
     
         			<!--PopUP Content-->
                    <div id="myModal" class="reveal-modal">
@@ -125,6 +167,7 @@
 <script src="js/modernizr.js"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
 <script type="text/javascript" src="js/jquery.reveal.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
 	$(document).ready(function () {
         var carousel = $("#carousel").waterwheelCarousel({
@@ -195,6 +238,16 @@
 
 
 		  });
+		  (function($){
+			$(window).load(function(){
+				
+				$("#content-1").mCustomScrollbar({
+					autoHideScrollbar:true,
+					theme:"rounded"
+				});
+				
+			});
+		})(jQuery);
 </script>
 
 </body>
