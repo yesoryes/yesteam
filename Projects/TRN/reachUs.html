@@ -5,7 +5,19 @@
 <title>Reach Us</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
-</head> 
+<script>
+	function myFunction1()
+	{
+   	document.getElementById('light').style.display='block';
+    document.getElementById('fade').style.display='block';
+    }
+	function myFunction2()
+	{
+   	document.getElementById('light').style.display='none';
+    document.getElementById('fade').style.display='none';
+    }
+</script>
+</head>
 <body>
 <section id="wrapper">
   <div class="container"></div>
@@ -26,6 +38,10 @@
   </header>
   <section class="reachUs_banner">
     <div class="container reachUs">
+      <p class="img_centertoplight"><img src="img/img_centertoplight.png" width="179" height="368"  alt=""/></p>
+      <p class="img_leftlight"><img src="img/img_leftlight.png" width="248" height="267"  alt=""/></p>
+      <p class="img_rightlight"><img src="img/img_rightlight.png" width="248" height="267"  alt=""/></p>
+      <p class="img_reachtable"><img src="img/img_reachtable.png" width="824" height="285"  alt=""/></p>
       <div class="reachUs_para">
         <h1>Get In Touch</h1>
         <p>Please feel free to contact me at any time, whether it’s to chat about an exciting idea, a concrete photography ir 
@@ -48,13 +64,37 @@
         <div class="enquiry">
           <h2>Make an Enquiry</h2>
           <p>Feel free to ask your questions here</p>
-          <div class="btn_enquiry"><a href="#">Contact <span>Now!</span></a></div>
+          <div class="btn_enquiry"><a href = "javascript:void(0)"  onclick="myFunction1()">Contact <span>Now!</span></a></div>
+          <div id="light" class="white_content">
+            <div class="event-content">
+              <h4>Fill this form, and will be in touch</h4>
+              <form action="" method="" class="event-form">
+                <div class="event-title">
+                  <label>Name</label>
+                  <input type="text" name="" id="" value="" class="fillTitleText" placeholder="">
+                </div>
+                <div class="event-title">
+                  <label>Email</label>
+                  <input type="text" name="" id="" value="" class="fillTitleText" placeholder="">
+                </div>
+                <div class="event-title">
+                  <label>Phone</label>
+                  <input type="text" name="User" id="User" value="" class="fillTitleText" placeholder="">
+                </div>
+                <div class="event-title">
+                  <label>Details</label>
+                  <input type="text" name="User" id="User" value="" class="fillTitleText" placeholder="">
+                </div>
+              </form>
+              <div class="event-action">
+                <div class="btn_contact"><a href="#">Send</a></div>
+              </div>
+            </div>
+            <a href = "javascript:void(0)"  onclick="myFunction2()" class="close_box"><img src="img/btn_close.png" width="30" height="30"  alt=""/></a></div>
         </div>
+        <div id="fade" class="black_overlay"></div>
       </div>
-      <p class="img_centertoplight"><img src="img/img_centertoplight.png" width="179" height="368"  alt=""/></p>  
-      <p class="img_leftlight"><img src="img/img_leftlight.png" width="248" height="267"  alt=""/></p>
-      <p class="img_rightlight"><img src="img/img_rightlight.png" width="248" height="267"  alt=""/></p> 
-      <p class="img_reachtable"><img src="img/img_reachtable.png" width="824" height="285"  alt=""/></p> 
+    </div>
     </div>
   </section>
 </section>

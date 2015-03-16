@@ -445,9 +445,32 @@ nav ul li span {
 .reachUs {
 	height: 726px;
 }
+.img_centertoplight
+{
+	position: absolute; 
+	right: 600px;
+	top: -95px;
+}
+
+.img_rightlight {
+	position: absolute; 
+	right: 0px;
+	top: 90px;
+}
+.img_leftlight {
+	position: absolute; 
+	left: 0px;
+	top: 90px;
+}
+.img_reachtable {
+	position: absolute;
+	right: 155px;
+	bottom: 10px;
+}
+
 .reachUs_para {
 	overflow: hidden;
-	font-family: 'OpenSansRegular';
+	font-family: 'rockwellstd';
 	width: 782px;
 	margin: 108px 0 0 295px;
 }
@@ -531,7 +554,6 @@ nav ul li span {
 }
 .btn_enquiry a {
 	overflow: hidden;
-	position: relative;
 	width:156px;
 	height:56px; 
 	background:url(../img/contact_bg.jpg) repeat-x;
@@ -556,26 +578,114 @@ nav ul li span {
     box-shadow: 0px 9px 0px rgba(138,203,209,0), 0px 9px 25px rgba(0,0,0,.1);
 	position: relative;
 	top: 6px;
-} 
-.img_centertoplight
-{
-	position: absolute; 
-	right: 600px;
-	top: -95px;
+}  
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.white_content {
+	display: none;
+	position: absolute;
+	width: 31%;
+	height: 100%;
+	left: 35%;
+	right: 34%;
+	top: 25%;
+	bottom: 25%;
+	padding: 16px;
+	z-index: 1002;
+	overflow: auto;
+	box-sizing: border-box;
 }
 
-.img_rightlight {
-	position: absolute; 
+.event-content {
+	padding: 54px 35px;
+	overflow: hidden;
+	background-color: #FFF;
+}
+.event-content h4 {
+	font-size: 21px;
+	color: #000;
+	text-align: center;
+	font-family: 'rockwellstd';
+}
+.event-form {
+	overflow: auto;
+	overflow: auto;
+	margin: 25px 0;
+}
+.event-title {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.event-title label {
+	color: #000;
+	float: left;
+	width: 70px;
+	margin: 4px 0 0;
+	font-family: 'rockwellstd';
+	font-size:15px;
+}
+.fillTitleText {
+	height: 20px;
+	width: 216px;
+	float: left;
+	padding-left: 10px;
+	border: 1px solid #000000;
+	background-color: #fff;
+}
+.event-title .dt {
+	padding-left: 10px;
+}
+.event-action {
+	overflow: hidden;
+	margin-left: 71px;
+}
+.btn_contact {
+	overflow: hidden;
+	height: 30px;
+	float: left;
+}
+.btn_contact a {
+	overflow: hidden;
+	position: relative;
+	width: 86px;
+	height: 30px;
+	background:url(../img/send_bg.png) repeat-x;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 30px;
+	font-family: 'rockwellstd';
+	-webkit-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
+	-moz-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
+	box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
+}
+.btn_contact a:active {
+	-webkit-box-shadow: 0px 9px 0px rgba(138,203,209,00), 0px 9px 25px rgba(0,0,0,.1);
+	-moz-box-shadow: 0px 9px 0px rgba(138,203,209,0), 0px 9px 25px rgba(0,0,0,.1);
+	box-shadow: 0px 9px 0px rgba(138,203,209,0), 0px 9px 25px rgba(0,0,0,.1);
+	position: relative;
+	top: 6px;
+}
+.close_box {
+	top: 0px;
 	right: 0px;
-	top: 90px;
-}
-.img_leftlight {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
 	position: absolute; 
-	left: 0px;
-	top: 90px;
 }
-.img_reachtable {
-	position: absolute;
-	right: 155px;
-	bottom: 10px;
-}
+/* rech us end*/
