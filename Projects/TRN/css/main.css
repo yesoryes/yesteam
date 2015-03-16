@@ -170,7 +170,7 @@ nav ul li span {
 
 /*Shots*/
 .shot_banner {
-	background: url(../img/shot_bg.png) no-repeat center -35px;
+	background: url(../img/shot_bg.png) no-repeat center -35px #af2923;
 }
 .shot {
 	height: 702px;
@@ -222,7 +222,7 @@ nav ul li span {
 
 /*Who Am I*/
 .about_banner {
-	background: url(../img/about_bg.png) no-repeat center -105px;
+	background: url(../img/about_bg.png) no-repeat center -105px #d6b240;
 	color: #544510;
 }
 .about {
@@ -280,7 +280,7 @@ nav ul li span {
 
 /*My Studio*/
 .studio_banner {
-	background: url(../img/studio_bg.jpg) no-repeat center -25px;
+	background: url(../img/studio_bg.jpg) no-repeat center -25px #7980a2;
 	position: relative;
 	width: 1920px;
 	margin: 80px auto;
@@ -364,10 +364,8 @@ nav ul li span {
 
 .client_banner
 {
-	position: relative;
-	width: 1920px; 
-	margin:80px auto;
-	background:url(../img/clients_bg.jpg) no-repeat center -80px, url(../img/bg_clients.jpg) repeat-x;
+	 
+	background:url(../img/clients_bg.jpg) no-repeat center -80px, url(../img/bg_clients.jpg) repeat-x #ee6c26;
 }
 .client
 {
@@ -439,11 +437,11 @@ nav ul li span {
 /* Reach us*/
 
 .reachUs_banner {
-	background:url(../img/reachus_bg.jpg) no-repeat center -38px;
+	background:url(../img/reachus_bg.jpg) no-repeat center -38px #ad628b;
 	color: #ac628a;
 }
 .reachUs {
-	height: 726px;
+	height: 689px;
 }
 .img_centertoplight
 {
@@ -465,7 +463,7 @@ nav ul li span {
 .img_reachtable {
 	position: absolute;
 	right: 155px;
-	bottom: 10px;
+	bottom: -27px;
 }
 
 .reachUs_para {
