@@ -1,0 +1,347 @@
+/* Scss Document */
+/*Header*/
+/*Why Champs*/
+body {
+  font-size: 16px;
+  color: #000;
+  font-family: "RobotoRegular";
+  line-height: 24px; }
+
+/*Start Index Page*/
+#wrapper {
+  width: 100%; }
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.home {
+  overflow: hidden;
+  height: 770px; }
+
+header {
+  overflow: hidden;
+  background: url(../img/header_bg.png) no-repeat center 0px;
+  padding: 0 5px; }
+
+.logo {
+  float: left; }
+
+.main-nav {
+  overflow: hidden;
+  float: right; }
+  .main-nav ul, .main-nav .contact .address p, .contact .address .main-nav p {
+    overflow: hidden;
+    float: left; }
+    .main-nav ul li, .main-nav .contact .address p li, .contact .address .main-nav p li {
+      float: left;
+      font-family: "Action_Man";
+      font-size: 25px; }
+    .main-nav ul a, .main-nav .contact .address p a, .contact .address .main-nav p a {
+      display: block;
+      color: #fff;
+      padding: 31px 35px 36px;
+      background: url(../img/main_nav_li_bg.png) no-repeat center 68px; }
+  .main-nav .more {
+    overflow: hidden;
+    float: left; }
+
+.banner {
+  position: absolute;
+  top: 0px;
+  z-index: -1; }
+
+.left-cloud, .right-cloud {
+  position: absolute;
+  top: 1150px;
+  z-index: 1; }
+
+.right-cloud {
+  right: 0;
+  top: 1200px; }
+
+/*Why Champs*/
+.why-champs {
+  overflow: hidden;
+  width: 100%;
+  background: #fbc93d;
+  color: #3b3116;
+  padding: 50px 0 0;
+  position: relative; }
+  .why-champs h1 {
+    text-align: center; }
+  .why-champs p {
+    text-align: center;
+    width: 900px;
+    margin: 38px auto 70px; }
+
+.whychamps-accordian {
+  overflow: hidden;
+  padding: 0 0 0 330px;
+  background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;
+  overflow: hidden; }
+
+.panelContent {
+  padding: 35px;
+  /*height:340px;
+  width:400px;*/
+  text-align: center; }
+  .panelContent h1 {
+    font-size: 26px;
+    margin: 0 0 20px; }
+
+.green, .white, .blue, .red {
+  width: 50px;
+  height: 340px;
+  float: left;
+  background: url(../img/index_why_acc1.png);
+  border-right: 5px solid #fbc93d;
+  cursor: pointer; }
+  .green span, .white span, .blue span, .red span {
+    display: block;
+    height: 200px;
+    text-align: center;
+    width: 340px;
+    text-align: center;
+    color: #fff;
+    -webkit-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+    -moz-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+    -ms-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+    -o-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+    transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+    -webkit-transform-origin: right top 0;
+    -moz-transform-origin: right top 0;
+    -ms-transform-origin: right top 0;
+    -o-transform-origin: right top 0;
+    transform-origin: right top 0; }
+
+.white {
+  background: #fff; }
+  .white span {
+    color: #000; }
+
+.blue {
+  background: url(../img/index_why_acc2.png); }
+
+.red {
+  background: url(../img/index_why_acc4.png); }
+
+.last {
+  border: none; }
+
+.video {
+  margin: 157px 0px 0 0;
+  padding: 5px 0 165px 20px;
+  overflow: hidden;
+  background: url(../img/index_why_video.png) no-repeat 0px 0px; }
+
+/*acadamic-program*/
+.acadamic-program, .activity-programes, .testimonials, .gallery, .contact {
+  background: #8dc8f4;
+  padding: 50px 0 45px;
+  position: relative; }
+  .acadamic-program h1, .activity-programes h1, .testimonials h1, .gallery h1, .contact h1 {
+    text-align: center; }
+
+.contain-program, .contain-activity {
+  overflow: hidden;
+  float: right;
+  margin: 70px 20px 0px 0; }
+
+.programs {
+  overflow: hidden; }
+  .programs .pro-preschool, .programs .pro-afterschool, .programs .pro-tution {
+    overflow: hidden;
+    width: 306px;
+    float: left;
+    margin: 0 0 0 35px; }
+    .programs .pro-preschool h1, .programs .pro-afterschool h1, .programs .pro-tution h1 {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 24px;
+      color: #454545;
+      margin: 50px 0 25px;
+      font-family: 'RobotoRegular'; }
+    .programs .pro-preschool p, .programs .pro-afterschool p, .programs .pro-tution p {
+      text-align: center;
+      color: #7e7e7e;
+      font-size: 14px; }
+      .programs .pro-preschool p a, .programs .pro-afterschool p a, .programs .pro-tution p a {
+        display: table;
+        vertical-align: middle;
+        text-transform: capitalize;
+        color: #2a79be;
+        width: 68px;
+        padding: 4px 0;
+        margin: 30px auto 60px;
+        border: 1px solid #2a79be; }
+        .programs .pro-preschool p a:hover, .programs .pro-afterschool p a:hover, .programs .pro-tution p a:hover {
+          background: #2a79be;
+          color: #fff; }
+
+.btn-viewall {
+  overflow: hidden;
+  float: right; }
+  .btn-viewall a {
+    display: block;
+    background: url(../img/btn_view.png) no-repeat 0px;
+    text-indent: -9999px;
+    width: 364px;
+    height: 54px; }
+
+/*Activity programs*/
+.activity-programes {
+  background: #d8efe9;
+  color: #fff; }
+
+.activity {
+  overflow: hidden;
+  margin: 0 0 80px; }
+  .activity .activity-karate, .activity .activity-kungfu, .activity .activity-chess, .activity .activity-dance {
+    overflow: hidden;
+    float: left;
+    width: 170px;
+    padding: 54px 19px 18px;
+    margin: 0 0 0 63px;
+    background: url(../img/index_karate_bg.png) no-repeat 0px 0px;
+    border-radius: 5px; }
+    .activity .activity-karate p, .activity .activity-kungfu p, .activity .activity-chess p, .activity .activity-dance p {
+      text-align: center;
+      margin: 0px 0 13px; }
+    .activity .activity-karate a, .activity .activity-kungfu a, .activity .activity-chess a, .activity .activity-dance a {
+      text-transform: capitalize;
+      display: block;
+      width: 80px;
+      margin: 0 auto;
+      padding: 6px 7px 8px;
+      color: #fff;
+      background: #357605;
+      transition: all 0.8s linear; }
+      .activity .activity-karate a:hover, .activity .activity-kungfu a:hover, .activity .activity-chess a:hover, .activity .activity-dance a:hover {
+        background: #fff;
+        color: #73a60b; }
+  .activity .activity-kungfu {
+    background: url(../img/index_kungfu_bg.png) no-repeat 0px 0px; }
+    .activity .activity-kungfu a {
+      background: #24449d; }
+      .activity .activity-kungfu a:hover {
+        background: #fff;
+        color: #2a7abf; }
+  .activity .activity-chess {
+    background: url(../img/index_chess_bg.png) no-repeat 0px 0px; }
+    .activity .activity-chess a {
+      background: #f09309; }
+      .activity .activity-chess a:hover {
+        background: #fff;
+        color: #f5b913; }
+  .activity .activity-dance {
+    background: url(../img/index_dance_bg.png) no-repeat 0px 0px; }
+    .activity .activity-dance a {
+      background: #ab2865; }
+      .activity .activity-dance a:hover {
+        background: #fff;
+        color: #ce5d92; }
+
+.testimonials {
+  background: #9ad563;
+  color: #454545; }
+
+.testimonials-tell1 {
+  overflow: hidden;
+  margin: 0px 0 50px 0px;
+  width: 1140px; }
+  .testimonials-tell1 figure {
+    float: left; }
+  .testimonials-tell1 article {
+    overflow: hidden; }
+  .testimonials-tell1 div {
+    overflow: hidden;
+    padding: 30px 0 0 27px; }
+    .testimonials-tell1 div h4 {
+      color: #2d7cc0;
+      margin: 20px 0 0; }
+
+.gallery {
+  background: #ff7e37; }
+  .gallery h1 {
+    margin: 0 0 45px 0; }
+
+.contact {
+  background: #fff;
+  color: #454545;
+  padding: 50px 0 0; }
+  .contact h1 {
+    margin: 0 0 50px; }
+  .contact .address {
+    overflow: hidden;
+    float: left;
+    margin: 0 0 0 300px; }
+    .contact .address ul, .contact .address p {
+      background: url(../img/ico_locate.png) no-repeat 0px 5px;
+      padding: 0 0 0 40px; }
+    .contact .address p {
+      background: url(../img/ico_mail.png) no-repeat 0px 5px;
+      margin: 30px 0 0; }
+      .contact .address p a {
+        color: #454545; }
+  .contact .ico-social {
+    overflow: hidden;
+    float: right;
+    margin: 0 275px 0 0; }
+    .contact .ico-social p {
+      background: url(../img/ico_call.png) no-repeat 0px 7px;
+      padding: 0 0 43px 40px; }
+      .contact .ico-social p span {
+        color: #2a79be; }
+    .contact .ico-social ul, .contact .ico-social .address p, .contact .address .ico-social p {
+      overflow: hidden;
+      padding: 0 0 0 40px; }
+      .contact .ico-social ul li, .contact .ico-social .address p li, .contact .address .ico-social p li {
+        float: left; }
+        .contact .ico-social ul li a, .contact .ico-social .address p li a, .contact .address .ico-social p li a {
+          width: 61px;
+          height: 60px;
+          display: block;
+          margin: 0 15px 0 0;
+          background: url(../img/ico_social.png) no-repeat 0px 0px; }
+        .contact .ico-social ul li a.ico-fb, .contact .ico-social .address p li a.ico-fb, .contact .address .ico-social p li a.ico-fb {
+          background-position: 0px 0px; }
+          .contact .ico-social ul li a.ico-fb:hover, .contact .ico-social .address p li a.ico-fb:hover, .contact .address .ico-social p li a.ico-fb:hover {
+            background-position: 0px bottom; }
+        .contact .ico-social ul li a.ico-tweet, .contact .ico-social .address p li a.ico-tweet, .contact .address .ico-social p li a.ico-tweet {
+          background-position: -61px 0px; }
+          .contact .ico-social ul li a.ico-tweet:hover, .contact .ico-social .address p li a.ico-tweet:hover, .contact .address .ico-social p li a.ico-tweet:hover {
+            background-position: -61px bottom; }
+        .contact .ico-social ul li a.ico-google, .contact .ico-social .address p li a.ico-google, .contact .address .ico-social p li a.ico-google {
+          background-position: -122px 0px; }
+          .contact .ico-social ul li a.ico-google:hover, .contact .ico-social .address p li a.ico-google:hover, .contact .address .ico-social p li a.ico-google:hover {
+            background-position: -122px bottom; }
+
+/*Character*/
+.char1, .char-skating, .char3, .char-gallery, .char-champion, .char-karate {
+  position: absolute;
+  top: 250px;
+  left: 330px; }
+
+.char-skating {
+  z-index: 1;
+  top: 400px;
+  left: 140px; }
+
+.char3, .char-gallery, .char-champion {
+  top: 100px; }
+
+/*End Index Page*
+
+/*Font Face*/
+@font-face {
+  font-family: 'Action_Man';
+  src: url("../fonts/action/Action_Man.eot");
+  src: url("../fonts/action/Action_Man.eot") format("embedded-opentype"), url("../fonts/action/Action_Man.woff2") format("woff2"), url("../fonts/action/Action_Man.woff") format("woff"), url("../fonts/action/Action_Man.ttf") format("truetype"), url("../fonts/action/Action_Man.svg#Action_Man") format("svg"); }
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff2") format("woff2"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.svg#RobotoRegular") format("svg"); }
+
+/*# sourceMappingURL=main.css.map */

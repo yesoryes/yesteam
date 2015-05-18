@@ -1,0 +1,367 @@
+/* Scss Document */
+$font-size:16px;
+$color:#000;
+$font-family:'RobotoRegular';
+
+/*Header*/
+$main_nav_font:'Action_Man';
+$main_nav_font_size:25px;
+$nav_anchor_color:#fff;
+
+/*Why Champs*/
+$whychamps-bgcolor:#fbc93d;
+
+
+body {
+	font-size: $font-size;
+	color: $color;
+	font-family: $font-family;
+	line-height: 24px;
+}
+/*Start Index Page*/
+#wrapper {
+	width: 100%;
+}
+.container {
+	width: 1366px;
+	margin: 0 auto;
+}
+.home {
+	overflow: hidden;
+	height: 770px; 
+}
+header{
+	overflow: hidden;
+	background: url(../img/header_bg.png) no-repeat center 0px;
+	padding: 0 50px;
+}
+.logo {
+	float: left;
+}
+.main-nav {	
+	overflow: hidden;
+	float: right;
+		
+	ul {
+		overflow: hidden
+	}	
+	li {
+		float: left;
+		font-family: $main_nav_font;
+		font-size: $main_nav_font_size;
+	}	
+	a {
+		display: block;
+		color: $nav_anchor_color;
+		padding: 31px 47px 36px;
+		background: url(../img/main_nav_li_bg.png) no-repeat center 68px;
+	}
+}
+.banner {
+	position: absolute;
+	top: 0px; 
+	z-index: -1;
+}
+
+/*Why Champs*/
+.why-champs {
+	overflow: hidden; 
+	background: $whychamps-bgcolor;
+	color: #3b3116;
+	padding: 73px 0 0;
+	
+	h1 {
+		text-align: center; 
+	}
+	p {
+		text-align: center;
+		width: 900px;
+		margin: 38px auto 70px;
+	}
+	
+}
+#accordion {
+	list-style:none;
+	margin:30px 0;
+	padding:0;
+	height:340px;
+	width:630px;
+	padding:0 0 0 330px;
+	background: url(../img/index_why_aerochar.png) no-repeat 0px center;
+	overflow:hidden;
+	float: left;
+}
+#accordion .panel {
+	float:left;
+	display:block;
+	height:340px;
+	width:44px;
+	overflow:hidden;
+	color:#666666;
+	text-decoration:none;
+	font-size:16px;
+	line-height:1.5em;
+	margin: 0 5px 0 5px;
+}
+#accordion .green-clr.active {
+	width:400px;
+	background: #73a60a;
+	color: #fff;
+}
+#accordion .blue-clr.active {
+	width:400px;
+	color: #fff;
+	background: #2a79be;
+}
+#accordion .red-clr.active {
+	width:400px;
+	color: #fff;
+	background: #da3130;
+}
+#accordion .white-clr.active {
+	width:400px;
+	color: #000;
+	background: #fff;
+}
+.panelContent {
+	padding:15px 15px 15px 55px;
+	height:340px;
+	width:400px;
+}
+.green {
+	width:50px;
+	height:340px;
+	float:left;
+	background: url(../img/index_why_acc1.png);
+	border-right:5px solid #fbc93d;
+	cursor:pointer;
+
+	
+	span {
+		display: block;
+		height: 200px;	
+		text-align: center;
+		width: 340px;
+		text-align: center;
+		color: #fff;
+		-webkit-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+		-moz-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+		-ms-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+		-o-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+		transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+		-webkit-transform-origin: right top 0;
+		-moz-transform-origin: right top 0;
+		-ms-transform-origin: right top 0;
+		-o-transform-origin: right top 0;
+		transform-origin: right top 0;
+	}
+
+}
+.white {
+	@extend.green;
+	background: #fff;
+	
+	span {
+		color: #000;
+	}
+}
+.blue {
+	@extend.green;
+	background: url(../img/index_why_acc2.png);
+}
+.red {
+	@extend.green;
+	background: url(../img/index_why_acc4.png);
+}
+
+.last {
+	border:none
+}
+
+
+.video {
+	margin: 157px 0px 0 0;
+	overflow: hidden;
+}
+
+/*acadamic-program*/
+.acadamic-program {
+	overflow: hidden;
+	background: #8dc8f4;
+	padding: 50px 0 45px;
+	
+	h1 {
+		text-align: center;
+	}
+}
+.contain-program {
+	overflow: hidden;
+	float: right;
+	margin: 70px 0 0px;
+}
+.programs {
+	overflow: hidden;
+	
+	.pro-preschool {
+		overflow: hidden;
+		width: 306px;
+		float: left;
+		margin:0 0 0 35px;
+		h1{
+			text-align: center;
+			text-transform: capitalize;
+			font-size: 24px;
+			color: #454545;
+			margin: 50px 0 25px;
+			font-family: 'RobotoRegular';
+		}
+		p {
+			text-align: center;
+			color: #7e7e7e;
+			font-size: 14px;
+			a {
+				display: table;
+				vertical-align: middle;
+				text-transform: capitalize;
+				color: #2a79be;
+				width: 68px;
+				padding: 4px 0;
+				margin: 30px auto 60px;
+				border: 1px solid #2a79be; 
+				&:hover{
+					background: #2a79be;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.pro-afterschool {
+		@extend.pro-preschool;
+	}
+	.pro-tution {
+		@extend.pro-preschool;
+	}
+}
+.btn-viewall {
+	overflow: hidden;
+	float: right;
+	
+	a {
+		display: block;
+		background: url(../img/btn_view.png) no-repeat 0px;
+		text-indent: -9999px;
+		width: 364px;
+		height: 54px;
+	}
+}
+
+/*Activity programs*/
+.activity-programes {
+	@extend.acadamic-program;
+	background: #d8efe9;
+	color: #fff;
+}
+.contain-activity {
+	@extend.contain-program;
+}
+.activity {
+	overflow: hidden;
+	margin: 0 0 80px;
+	
+	.activity-karate {
+		overflow: hidden;
+		float: left;
+		width: 170px; 
+		padding: 54px 19px 18px;
+		margin: 0 0 0 63px;
+		background: #73a60b;
+		border-radius: 5px;
+		
+		p {
+			text-align: center;
+			margin: 16px 0 36px;
+		}
+		a {
+			text-transform: capitalize;
+			display: block;
+			width: 80px;
+			margin: 0 auto;
+			padding: 8px 4px;
+			color: #fff;
+			background: #357605;
+		}
+		
+	}
+	.activity-kungfu {
+		@extend.activity-karate;
+		background: #2a7abf url(../img/kungfu.png) no-repeat center 0px;
+		
+		a {
+			background: #24449d;
+		}
+	}
+	.activity-chess {
+		@extend.activity-karate;
+		background: #f5b913;
+		
+		a {
+			background: #f09309;
+		}
+	}
+	.activity-dance {
+		@extend.activity-karate;
+		background: #ce5d92;
+		
+		a {
+			background: #ab2865;
+		}
+	}
+}
+.testimonials {
+	@extend.acadamic-program;
+	background: #9ad563;
+	color: #454545;
+}
+.testimonials-tell1 {
+	overflow: hidden;
+	margin: 20px 0 0 230px;
+	
+	figure {
+		float: left;
+	}
+	div {
+		overflow: hidden;
+		padding: 30px 0 0 27px;
+		
+		h4 {
+			color: #2d7cc0;
+			margin: 20px 0 0;
+		}
+	}
+}
+
+.gallery {
+	@extend.acadamic-program;
+	background: #ff7e37;
+}
+/*End Index Page*
+
+/*Font Face*/
+@font-face {
+    font-family: 'Action_Man';
+    src: url('../fonts/action/Action_Man.eot');
+    src: url('../fonts/action/Action_Man.eot') format('embedded-opentype'),
+         url('../fonts/action/Action_Man.woff2') format('woff2'),
+         url('../fonts/action/Action_Man.woff') format('woff'),
+         url('../fonts/action/Action_Man.ttf') format('truetype'),
+         url('../fonts/action/Action_Man.svg#Action_Man') format('svg');
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular/RobotoRegular.eot');
+    src: url('../fonts/RobotoRegular/RobotoRegular.eot') format('embedded-opentype'),
+         url('../fonts/RobotoRegular/RobotoRegular.woff2') format('woff2'),
+         url('../fonts/RobotoRegular/RobotoRegular.woff') format('woff'),
+         url('../fonts/RobotoRegular/RobotoRegular.ttf') format('truetype'),
+         url('../fonts/RobotoRegular/RobotoRegular.svg#RobotoRegular') format('svg');
+}
