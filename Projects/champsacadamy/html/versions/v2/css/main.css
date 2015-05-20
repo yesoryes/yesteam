@@ -1,6 +1,11 @@
 /* Scss Document */
 /*Header*/
 /*Why Champs*/
+.position {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
 body {
   font-size: 16px;
   color: #000;
@@ -16,21 +21,22 @@ body {
   margin: 0 auto;
   overflow: hidden; }
 
-.home {
-  overflow: hidden;
-  height: 770px; }
-
 header {
   overflow: hidden;
   background: url(../img/header_bg.png) no-repeat center 0px;
-  padding: 0 5px; }
+  padding: 0 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
 
 .logo {
-  float: left; }
+  float: left;
+  margin: 0 0 0 5px; }
 
 .main-nav {
   overflow: hidden;
-  float: right; }
+  float: right;
+  margin: 0 15px 0 0; }
   .main-nav ul, .main-nav .contact .address p, .contact .address .main-nav p {
     overflow: hidden;
     float: left; }
@@ -48,9 +54,7 @@ header {
     float: left; }
 
 .banner {
-  position: absolute;
-  top: 0px;
-  z-index: -1; }
+  overflow: hidden; }
 
 .left-cloud, .right-cloud {
   position: absolute;
@@ -177,7 +181,6 @@ header {
         margin: 30px auto 60px;
         border: 1px solid #2a79be; }
         .programs .pro-preschool p a:hover, .programs .pro-afterschool p a:hover, .programs .pro-tution p a:hover {
-          background: #2a79be;
           color: #fff; }
 
 .btn-viewall {
@@ -216,31 +219,26 @@ header {
       margin: 0 auto;
       padding: 6px 7px 8px;
       color: #fff;
-      background: #357605;
-      transition: all 0.8s linear; }
+      background: #357605; }
       .activity .activity-karate a:hover, .activity .activity-kungfu a:hover, .activity .activity-chess a:hover, .activity .activity-dance a:hover {
-        background: #fff;
         color: #73a60b; }
   .activity .activity-kungfu {
     background: url(../img/index_kungfu_bg.png) no-repeat 0px 0px; }
     .activity .activity-kungfu a {
       background: #24449d; }
       .activity .activity-kungfu a:hover {
-        background: #fff;
         color: #2a7abf; }
   .activity .activity-chess {
     background: url(../img/index_chess_bg.png) no-repeat 0px 0px; }
     .activity .activity-chess a {
       background: #f09309; }
       .activity .activity-chess a:hover {
-        background: #fff;
         color: #f5b913; }
   .activity .activity-dance {
     background: url(../img/index_dance_bg.png) no-repeat 0px 0px; }
     .activity .activity-dance a {
       background: #ab2865; }
       .activity .activity-dance a:hover {
-        background: #fff;
         color: #ce5d92; }
 
 .testimonials {

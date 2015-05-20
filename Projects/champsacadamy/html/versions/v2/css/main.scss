@@ -11,6 +11,11 @@ $nav_anchor_color:#fff;
 /*Why Champs*/
 $whychamps-bgcolor:#fbc93d;
 
+.position {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%); 
+}
 
 body {
 	font-size: $font-size;
@@ -27,21 +32,22 @@ body {
 	margin: 0 auto;
 	overflow: hidden;
 }
-.home {
-	overflow: hidden;
-	height: 770px; 
-}
 header{
 	overflow: hidden;
 	background: url(../img/header_bg.png) no-repeat center 0px;
 	padding: 0 5px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
 }
 .logo {
 	float: left;
+	margin: 0 0 0 5px;
 }
 .main-nav {	
 	overflow: hidden;
 	float: right;
+	margin: 0 15px 0 0;
 		
 	ul {
 		overflow: hidden;
@@ -65,9 +71,7 @@ header{
 	}
 }
 .banner {
-	position: absolute;
-	top: 0px; 
-	z-index: -1;
+	overflow: hidden;
 }
 
 
@@ -219,9 +223,10 @@ header{
 				width: 68px;
 				padding: 4px 0;
 				margin: 30px auto 60px;
-				border: 1px solid #2a79be; 
+				border: 1px solid #2a79be;
+				
 				&:hover{
-					background: #2a79be;
+					//background: #2a79be;
 					color: #fff;
 				}
 			}
@@ -281,9 +286,9 @@ header{
 			padding: 6px 7px 8px;
 			color: #fff;
 			background: #357605;
-			transition: all 0.8s linear; 
+			//transition: all 0.8s linear; 
 			&:hover {
-				background: #fff;
+				
 				color: #73a60b;
 			}
 		}
@@ -296,7 +301,7 @@ header{
 		a {
 			background: #24449d;
 			&:hover {
-				background: #fff;
+				;
 				color: #2a7abf;
 			}
 		}
@@ -308,7 +313,7 @@ header{
 		a {
 			background: #f09309;
 			&:hover {
-				background: #fff;
+				
 				color: #f5b913;
 			}
 		}
@@ -320,7 +325,7 @@ header{
 		a {
 			background: #ab2865;
 			&:hover {
-				background: #fff;
+				
 				color: #ce5d92;
 			}
 		}
