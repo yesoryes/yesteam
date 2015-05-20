@@ -6,13 +6,15 @@
     box-sizing: content-box;
     width:700px;
     height:203px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding:0px 20px;
     white-space:nowrap;
-    position:relative;
+    /*position:relative;*/
     font-size:0px;
 }
-
+#mcts1.abs_pos {
+	top: 210px;
+}
 #mcts1>a, #mcts1>div, #mcts1>img {display:none;}
   
 /*-------- div.item is each thumbnail's wrapper created by the javascript ------*/

@@ -11,7 +11,7 @@ $nav_anchor_color:#fff;
 /*Why Champs*/
 $whychamps-bgcolor:#fbc93d;
 
-.position {
+.abs_pos {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%); 
@@ -35,8 +35,8 @@ body {
 header{
 	overflow: hidden;
 	background: url(../img/header_bg.png) no-repeat center 0px;
-	padding: 0 5px;
-	position: fixed;
+	/*padding: 0 5px;*/
+	position: absolute;
 	width: 100%;
 	z-index: 100;
 }
@@ -57,18 +57,35 @@ header{
 			float: left;
 			font-family: $main_nav_font;
 			font-size: $main_nav_font_size;
-		}	
-		a {
-			display: block;
-			color: $nav_anchor_color;
-			padding: 31px 35px 36px;
-			background: url(../img/main_nav_li_bg.png) no-repeat center 68px;
+			
+			a {
+				display: block;
+				color: $nav_anchor_color;
+				padding: 31px 29px 36px;
+				background: url(../img/main_nav_li_bg.png) no-repeat center 68px;
+			}
 		}
 	}
 	.more {
 		overflow: hidden;
 		float: left;
+		font-family: 'Action_Man';
+		font-size: 25px;
+		margin: 7px 0 0;
+		
+		a {
+			color: #fff;
+			background: url(../img/bg_more.png) no-repeat;
+			display: block;
+			padding: 22px 0;
+			width: 120px;
+			text-align: center;
+		}
 	}
+}
+.li-seps {
+	overflow: hidden;
+	margin: 30px 0px 0px;
 }
 .banner {
 	overflow: hidden;
@@ -89,18 +106,24 @@ header{
 .why-champs {
 	overflow: hidden; 
 	width: 100%;
+	height: 795px;
 	background: $whychamps-bgcolor;
 	color: #3b3116;
-	padding: 50px 0 0;
+	//padding: 50px 0 0;
 	position: relative;
 	
 	h1 {
-		text-align: center; 
+		text-align: center;
+		top: 50px; 
 	}
 	p {
 		text-align: center;
 		width: 900px;
-		margin: 38px auto 70px;
+		/*margin: 38px auto 70px;*/
+		
+		&.abs_pos {
+			top: 245px;
+		}
 	}
 	
 }
@@ -110,6 +133,10 @@ header{
 	padding:0 0 0 330px;
 	background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;
 	overflow:hidden;
+	&.abs_pos {
+		top: 385px;
+		margin: 0 0 0 -180px;
+	}
 }
 .panelContent {
 	padding: 35px;
@@ -174,26 +201,40 @@ header{
 
 
 .video {
-	margin: 157px 0px 0 0;
-	padding: 5px 0 165px 20px;
+	margin: 147px 0px 0 0;
+	padding: 5px 15px 165px 20px;
 	overflow: hidden;
 	background: url(../img/index_why_video.png) no-repeat 0px 0px;
+	&.abs_pos {
+		bottom: 0;
+		margin: 0px 0px 0px 500px;
+	}
 }
 
 /*acadamic-program*/
 .acadamic-program {
 	background: #8dc8f4;
-	padding: 50px 0 45px;
+	//padding: 40px 0 0;
 	position: relative;
+	height: 870px;
+	
 	
 	h1 {
 		text-align: center;
+		
+		&.abs_pos {
+			top: 50px;
+		}
 	}
 }
 .contain-program {
 	overflow: hidden;
-	float: right;
-	margin: 70px 20px 0px 0;
+	/*float: right;*/
+	/*margin: 70px 20px 0px 0;*/
+	
+	&.abs_pos {
+		top: 245px;
+	}
 }
 .programs {
 	overflow: hidden;
@@ -201,54 +242,71 @@ header{
 	.pro-preschool {
 		overflow: hidden;
 		width: 306px;
-		float: left;
+		float: right;
 		margin:0 0 0 35px;
-		h1{
-			text-align: center;
-			text-transform: capitalize;
-			font-size: 24px;
-			color: #454545;
-			margin: 50px 0 25px;
-			font-family: 'RobotoRegular';
-		}
-		p {
-			text-align: center;
-			color: #7e7e7e;
-			font-size: 14px;
-			a {
-				display: table;
-				vertical-align: middle;
+		&.abs_pos {
+			top: 245px;
+			margin: 0 0 0 -140px;
+		
+			h1{
+				text-align: center;
 				text-transform: capitalize;
-				color: #2a79be;
-				width: 68px;
-				padding: 4px 0;
-				margin: 30px auto 60px;
-				border: 1px solid #2a79be;
-				
-				&:hover{
-					//background: #2a79be;
-					color: #fff;
+				font-size: 24px;
+				color: #454545;
+				margin: 50px 0 25px;
+				font-family: 'RobotoRegular';
+			}
+			p {
+				text-align: center;
+				color: #7e7e7e;
+				font-size: 14px;
+				a {
+					display: table;
+					vertical-align: middle;
+					text-transform: capitalize;
+					color: #2a79be;
+					width: 68px;
+					padding: 4px 0;
+					margin: 30px auto 60px;
+					border: 1px solid #2a79be;
+					
+					&:hover{
+						//background: #2a79be;
+						color: #fff;
+					}
 				}
 			}
 		}
 	}
 	.pro-afterschool {
 		@extend.pro-preschool;
+		&.abs_pos {
+			top: 245px;
+			margin: 0 0 0 177px;
+		}
 	}
 	.pro-tution {
 		@extend.pro-preschool;
+		&.abs_pos {
+			top: 245px;
+			margin: 0 0 0 525px;
+		}
 	}
 }
 .btn-viewall {
 	overflow: hidden;
 	float: right;
+	&.abs_pos {
+		bottom: 47px;
+		margin: 0 0 0 493px;
 	
-	a {
-		display: block;
-		background: url(../img/btn_view.png) no-repeat 0px;
-		text-indent: -9999px;
-		width: 364px;
-		height: 54px;
+		a {
+			display: block;
+			background: url(../img/btn_view.png) no-repeat 0px;
+			text-indent: -9999px;
+			width: 364px;
+			height: 54px;
+		}
 	}
 }
 
@@ -257,6 +315,7 @@ header{
 	@extend.acadamic-program;
 	background: #d8efe9;
 	color: #fff;
+	height: 745px;
 }
 .contain-activity {
 	@extend.contain-program;
@@ -273,68 +332,84 @@ header{
 		margin: 0 0 0 63px;
 		background: url(../img/index_karate_bg.png) no-repeat 0px 0px;
 		border-radius: 5px;
-		
-		p {
-			text-align: center;
-			margin: 0px 0 13px;
-		}
-		a {
-			text-transform: capitalize;
-			display: block;
-			width: 80px;
-			margin: 0 auto;
-			padding: 6px 7px 8px;
-			color: #fff;
-			background: #357605;
-			//transition: all 0.8s linear; 
-			&:hover {
-				
-				color: #73a60b;
+		&.abs_pos {
+			top: 205px;
+			margin: 0 0 0 -218px;			
+			
+			p {
+				text-align: center;
+				margin: 0px 0 13px;
 			}
-		}
-		
+			a {
+				text-transform: capitalize;
+				display: block;
+				width: 80px;
+				margin: 0 auto;
+				padding: 6px 7px 8px;
+				color: #fff;
+				background: #357605;
+				//transition: all 0.8s linear; 
+				&:hover {					
+					color: #73a60b;
+				}
+			}
+		}		
 	}
 	.activity-kungfu {
 		@extend.activity-karate;
 		background: url(../img/index_kungfu_bg.png) no-repeat 0px 0px;
+		&.abs_pos {
+			top: 205px;
+			margin: 0 0 0 41px;
 		
-		a {
-			background: #24449d;
-			&:hover {
-				;
-				color: #2a7abf;
+			a {
+				background: #24449d;
+				&:hover {
+					;
+					color: #2a7abf;
+				}
 			}
 		}
 	}
 	.activity-chess {
 		@extend.activity-karate;
 		background: url(../img/index_chess_bg.png) no-repeat 0px 0px;
+		&.abs_pos {
+			top: 205px;
+			margin: 0 0 0 298px;
 		
-		a {
-			background: #f09309;
-			&:hover {
-				
-				color: #f5b913;
+			a {
+				background: #f09309;
+				&:hover {
+					
+					color: #f5b913;
+				}
 			}
 		}
 	}
 	.activity-dance {
 		@extend.activity-karate;
 		background: url(../img/index_dance_bg.png) no-repeat 0px 0px;
+		&.abs_pos {
+			top: 205px;
+			margin: 0 0 0 561px;
 		
-		a {
-			background: #ab2865;
-			&:hover {
-				
-				color: #ce5d92;
+			a {
+				background: #ab2865;
+				&:hover {
+					
+					color: #ce5d92;
+				}
 			}
 		}
 	}
 }
+/*Testimonials*/
 .testimonials {
 	@extend.acadamic-program;
 	background: #9ad563;
 	color: #454545;
+	height: 430px;
 }
 .testimonials-tell1 {
 	overflow: hidden;
@@ -357,10 +432,18 @@ header{
 		}
 	}
 }
-
+.div2 {
+	overflow: hidden;
+	&.abs_pos {
+		top: 205px;
+		margin: 0 0 0 100px;
+	}
+}
+/*Gallery*/
 .gallery {
 	@extend.acadamic-program;
 	background: #ff7e37;
+	height: 460px;
 	
 	h1 {
 		margin: 0 0 45px 0;
@@ -450,20 +533,22 @@ header{
 .char1 {
 	position: absolute;
 	top: 250px;
-	left: 330px;
+	margin: 0 0 0 -515px;
 }
 .char-skating {
 	@extend.char1;
 	z-index: 1;
 	top: 400px;
-	left: 140px;
+	margin: 0 0 0 -635px;
 }
 .char3 {
 	@extend.char1;
 	top: 100px;
+	margin: 0 0 0 -545px;
 }
 .char-karate {
 	@extend.char1;
+	margin: 0 0 0 -500px
 }
 .char-gallery {
 	@extend.char3;

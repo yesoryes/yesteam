@@ -1,7 +1,7 @@
 /* Scss Document */
 /*Header*/
 /*Why Champs*/
-.position {
+.abs_pos {
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
@@ -24,8 +24,8 @@ body {
 header {
   overflow: hidden;
   background: url(../img/header_bg.png) no-repeat center 0px;
-  padding: 0 5px;
-  position: fixed;
+  /*padding: 0 5px;*/
+  position: absolute;
   width: 100%;
   z-index: 100; }
 
@@ -44,14 +44,28 @@ header {
       float: left;
       font-family: "Action_Man";
       font-size: 25px; }
-    .main-nav ul a, .main-nav .contact .address p a, .contact .address .main-nav p a {
-      display: block;
-      color: #fff;
-      padding: 31px 35px 36px;
-      background: url(../img/main_nav_li_bg.png) no-repeat center 68px; }
+      .main-nav ul li a, .main-nav .contact .address p li a, .contact .address .main-nav p li a {
+        display: block;
+        color: #fff;
+        padding: 31px 29px 36px;
+        background: url(../img/main_nav_li_bg.png) no-repeat center 68px; }
   .main-nav .more {
     overflow: hidden;
-    float: left; }
+    float: left;
+    font-family: 'Action_Man';
+    font-size: 25px;
+    margin: 7px 0 0; }
+    .main-nav .more a {
+      color: #fff;
+      background: url(../img/bg_more.png) no-repeat;
+      display: block;
+      padding: 22px 0;
+      width: 120px;
+      text-align: center; }
+
+.li-seps {
+  overflow: hidden;
+  margin: 30px 0px 0px; }
 
 .banner {
   overflow: hidden; }
@@ -69,22 +83,28 @@ header {
 .why-champs {
   overflow: hidden;
   width: 100%;
+  height: 795px;
   background: #fbc93d;
   color: #3b3116;
-  padding: 50px 0 0;
   position: relative; }
   .why-champs h1 {
-    text-align: center; }
+    text-align: center;
+    top: 50px; }
   .why-champs p {
     text-align: center;
     width: 900px;
-    margin: 38px auto 70px; }
+    /*margin: 38px auto 70px;*/ }
+    .why-champs p.abs_pos {
+      top: 245px; }
 
 .whychamps-accordian {
   overflow: hidden;
   padding: 0 0 0 330px;
   background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;
   overflow: hidden; }
+  .whychamps-accordian.abs_pos {
+    top: 385px;
+    margin: 0 0 0 -180px; }
 
 .panelContent {
   padding: 35px;
@@ -135,68 +155,88 @@ header {
   border: none; }
 
 .video {
-  margin: 157px 0px 0 0;
-  padding: 5px 0 165px 20px;
+  margin: 147px 0px 0 0;
+  padding: 5px 15px 165px 20px;
   overflow: hidden;
   background: url(../img/index_why_video.png) no-repeat 0px 0px; }
+  .video.abs_pos {
+    bottom: 0;
+    margin: 0px 0px 0px 500px; }
 
 /*acadamic-program*/
 .acadamic-program, .activity-programes, .testimonials, .gallery, .contact {
   background: #8dc8f4;
-  padding: 50px 0 45px;
-  position: relative; }
+  position: relative;
+  height: 870px; }
   .acadamic-program h1, .activity-programes h1, .testimonials h1, .gallery h1, .contact h1 {
     text-align: center; }
+    .acadamic-program h1.abs_pos, .activity-programes h1.abs_pos, .testimonials h1.abs_pos, .gallery h1.abs_pos, .contact h1.abs_pos {
+      top: 50px; }
 
 .contain-program, .contain-activity {
   overflow: hidden;
-  float: right;
-  margin: 70px 20px 0px 0; }
+  /*float: right;*/
+  /*margin: 70px 20px 0px 0;*/ }
+  .contain-program.abs_pos, .abs_pos.contain-activity {
+    top: 245px; }
 
 .programs {
   overflow: hidden; }
   .programs .pro-preschool, .programs .pro-afterschool, .programs .pro-tution {
     overflow: hidden;
     width: 306px;
-    float: left;
+    float: right;
     margin: 0 0 0 35px; }
-    .programs .pro-preschool h1, .programs .pro-afterschool h1, .programs .pro-tution h1 {
-      text-align: center;
-      text-transform: capitalize;
-      font-size: 24px;
-      color: #454545;
-      margin: 50px 0 25px;
-      font-family: 'RobotoRegular'; }
-    .programs .pro-preschool p, .programs .pro-afterschool p, .programs .pro-tution p {
-      text-align: center;
-      color: #7e7e7e;
-      font-size: 14px; }
-      .programs .pro-preschool p a, .programs .pro-afterschool p a, .programs .pro-tution p a {
-        display: table;
-        vertical-align: middle;
+    .programs .pro-preschool.abs_pos, .programs .abs_pos.pro-afterschool, .programs .abs_pos.pro-tution {
+      top: 245px;
+      margin: 0 0 0 -140px; }
+      .programs .pro-preschool.abs_pos h1, .programs .abs_pos.pro-afterschool h1, .programs .abs_pos.pro-tution h1 {
+        text-align: center;
         text-transform: capitalize;
-        color: #2a79be;
-        width: 68px;
-        padding: 4px 0;
-        margin: 30px auto 60px;
-        border: 1px solid #2a79be; }
-        .programs .pro-preschool p a:hover, .programs .pro-afterschool p a:hover, .programs .pro-tution p a:hover {
-          color: #fff; }
+        font-size: 24px;
+        color: #454545;
+        margin: 50px 0 25px;
+        font-family: 'RobotoRegular'; }
+      .programs .pro-preschool.abs_pos p, .programs .abs_pos.pro-afterschool p, .programs .abs_pos.pro-tution p {
+        text-align: center;
+        color: #7e7e7e;
+        font-size: 14px; }
+        .programs .pro-preschool.abs_pos p a, .programs .abs_pos.pro-afterschool p a, .programs .abs_pos.pro-tution p a {
+          display: table;
+          vertical-align: middle;
+          text-transform: capitalize;
+          color: #2a79be;
+          width: 68px;
+          padding: 4px 0;
+          margin: 30px auto 60px;
+          border: 1px solid #2a79be; }
+          .programs .pro-preschool.abs_pos p a:hover, .programs .abs_pos.pro-afterschool p a:hover, .programs .abs_pos.pro-tution p a:hover {
+            color: #fff; }
+  .programs .pro-afterschool.abs_pos {
+    top: 245px;
+    margin: 0 0 0 177px; }
+  .programs .pro-tution.abs_pos {
+    top: 245px;
+    margin: 0 0 0 525px; }
 
 .btn-viewall {
   overflow: hidden;
   float: right; }
-  .btn-viewall a {
-    display: block;
-    background: url(../img/btn_view.png) no-repeat 0px;
-    text-indent: -9999px;
-    width: 364px;
-    height: 54px; }
+  .btn-viewall.abs_pos {
+    bottom: 47px;
+    margin: 0 0 0 493px; }
+    .btn-viewall.abs_pos a {
+      display: block;
+      background: url(../img/btn_view.png) no-repeat 0px;
+      text-indent: -9999px;
+      width: 364px;
+      height: 54px; }
 
 /*Activity programs*/
 .activity-programes {
   background: #d8efe9;
-  color: #fff; }
+  color: #fff;
+  height: 745px; }
 
 .activity {
   overflow: hidden;
@@ -209,41 +249,55 @@ header {
     margin: 0 0 0 63px;
     background: url(../img/index_karate_bg.png) no-repeat 0px 0px;
     border-radius: 5px; }
-    .activity .activity-karate p, .activity .activity-kungfu p, .activity .activity-chess p, .activity .activity-dance p {
-      text-align: center;
-      margin: 0px 0 13px; }
-    .activity .activity-karate a, .activity .activity-kungfu a, .activity .activity-chess a, .activity .activity-dance a {
-      text-transform: capitalize;
-      display: block;
-      width: 80px;
-      margin: 0 auto;
-      padding: 6px 7px 8px;
-      color: #fff;
-      background: #357605; }
-      .activity .activity-karate a:hover, .activity .activity-kungfu a:hover, .activity .activity-chess a:hover, .activity .activity-dance a:hover {
-        color: #73a60b; }
+    .activity .activity-karate.abs_pos, .activity .abs_pos.activity-kungfu, .activity .abs_pos.activity-chess, .activity .abs_pos.activity-dance {
+      top: 205px;
+      margin: 0 0 0 -218px; }
+      .activity .activity-karate.abs_pos p, .activity .abs_pos.activity-kungfu p, .activity .abs_pos.activity-chess p, .activity .abs_pos.activity-dance p {
+        text-align: center;
+        margin: 0px 0 13px; }
+      .activity .activity-karate.abs_pos a, .activity .abs_pos.activity-kungfu a, .activity .abs_pos.activity-chess a, .activity .abs_pos.activity-dance a {
+        text-transform: capitalize;
+        display: block;
+        width: 80px;
+        margin: 0 auto;
+        padding: 6px 7px 8px;
+        color: #fff;
+        background: #357605; }
+        .activity .activity-karate.abs_pos a:hover, .activity .abs_pos.activity-kungfu a:hover, .activity .abs_pos.activity-chess a:hover, .activity .abs_pos.activity-dance a:hover {
+          color: #73a60b; }
   .activity .activity-kungfu {
     background: url(../img/index_kungfu_bg.png) no-repeat 0px 0px; }
-    .activity .activity-kungfu a {
-      background: #24449d; }
-      .activity .activity-kungfu a:hover {
-        color: #2a7abf; }
+    .activity .activity-kungfu.abs_pos {
+      top: 205px;
+      margin: 0 0 0 41px; }
+      .activity .activity-kungfu.abs_pos a {
+        background: #24449d; }
+        .activity .activity-kungfu.abs_pos a:hover {
+          color: #2a7abf; }
   .activity .activity-chess {
     background: url(../img/index_chess_bg.png) no-repeat 0px 0px; }
-    .activity .activity-chess a {
-      background: #f09309; }
-      .activity .activity-chess a:hover {
-        color: #f5b913; }
+    .activity .activity-chess.abs_pos {
+      top: 205px;
+      margin: 0 0 0 298px; }
+      .activity .activity-chess.abs_pos a {
+        background: #f09309; }
+        .activity .activity-chess.abs_pos a:hover {
+          color: #f5b913; }
   .activity .activity-dance {
     background: url(../img/index_dance_bg.png) no-repeat 0px 0px; }
-    .activity .activity-dance a {
-      background: #ab2865; }
-      .activity .activity-dance a:hover {
-        color: #ce5d92; }
+    .activity .activity-dance.abs_pos {
+      top: 205px;
+      margin: 0 0 0 561px; }
+      .activity .activity-dance.abs_pos a {
+        background: #ab2865; }
+        .activity .activity-dance.abs_pos a:hover {
+          color: #ce5d92; }
 
+/*Testimonials*/
 .testimonials {
   background: #9ad563;
-  color: #454545; }
+  color: #454545;
+  height: 430px; }
 
 .testimonials-tell1 {
   overflow: hidden;
@@ -260,8 +314,16 @@ header {
       color: #2d7cc0;
       margin: 20px 0 0; }
 
+.div2 {
+  overflow: hidden; }
+  .div2.abs_pos {
+    top: 205px;
+    margin: 0 0 0 100px; }
+
+/*Gallery*/
 .gallery {
-  background: #ff7e37; }
+  background: #ff7e37;
+  height: 460px; }
   .gallery h1 {
     margin: 0 0 45px 0; }
 
@@ -320,15 +382,19 @@ header {
 .char1, .char-skating, .char3, .char-gallery, .char-champion, .char-karate {
   position: absolute;
   top: 250px;
-  left: 330px; }
+  margin: 0 0 0 -515px; }
 
 .char-skating {
   z-index: 1;
   top: 400px;
-  left: 140px; }
+  margin: 0 0 0 -635px; }
 
 .char3, .char-gallery, .char-champion {
-  top: 100px; }
+  top: 100px;
+  margin: 0 0 0 -545px; }
+
+.char-karate {
+  margin: 0 0 0 -500px; }
 
 /*End Index Page*
 
