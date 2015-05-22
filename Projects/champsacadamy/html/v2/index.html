@@ -13,6 +13,7 @@
 <div id="wrapper">
     
         <header>
+        	<div class="bg"></div>
             <div class="logo"><img src="img/logo.png" alt=""/></div>
             <nav class="main-nav">
                 <ul>
@@ -27,14 +28,26 @@
                 <p class="more"><a href="#">more >></a></p>
                                   
             </nav>   
-            <div class="menu">   
-                <div class="icon-close"> <i class="fa fa-close"></i> <a>CLOSE</a></div>  
+          <div class="menu">   
+                <div class="more-close"><a href="#"><img src="img/more_close.png" alt=""/></a></div>  
                 <ul>
-                    <li> <a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li> <a href="#" class="menu-active">why champs</a></li>
+                    <li><a href="#">fun@champs</a></li>
+                    <li><a href="#">programmes</a></li>
+                    <li><a href="#">news & events</a></li>
+                    <li><a href="#">contact us</a></li>
                 </ul>
+                <ul class="abt-menu">
+                	<li><a href="">team</a></li>
+                    <li><a href="">career</a></li>
+                    <li><a href="">curriculam</a></li>
+                </ul>
+                <ul class="submenu-social">
+                	<li><a href="" class="sub-fb"></a></li>
+                    <li><a href="" class="sub-tweet"></a></li>
+                    <li><a href="" class="sub-google"></a></li>
+                </ul>
+                <p>&copy; 2014 Champsacademy. All rights reserved.</p>
             </div>             
         </header>                    
         
@@ -289,5 +302,24 @@
         document.createElement('figcaption');
     </script>
 <![endif]-->
+<script type="text/javascript">
+var more = function() {
+  
+	$('.more a').click(function() {	  
+		$('.menu').animate({right: "0px" }, 200);	
+		$('body').animate({right: "0"}, 200); 
+		$('.bg, .main-nav ul').hide();
+		
+	});		  
+	/* Then push them back */	  
+	$('.more-close').click(function() {
+	   $('.menu').animate({right: "-325px"}, 200);
+	   $('body').animate({right: "0px"  }, 200); 
+	   $('.bg, .main-nav ul').show(); 
+	});
+
+};
+$(document).ready(more);
+</script>
 </body>
 </html>
