@@ -27,21 +27,21 @@
       <nav>
         <ul>
           <li class="trn_home">
-              <a href="#Home" class="active_nav">
+              <a href="#Home">
               	<p class="menu_shots"><span>TRN</span> Home</p>
                 <div class="dNone active_shots"><img src="img/active_home.png"/></div>
                 <p class="dNone explore_home"><span>Its</span> Home<br> <b>of photography</b></p>
-                <div class="dNone hover_shots "><img src="img/hover_shots.png"/></div>                
+                <div class="dNone hover_shots"><img src="img/hover_shots.png"/></div>                
                 <div class="dNone rays"><img src="img/menu_rays.png"/></div>
               </a>
           </li>
           <li class="li_sep"><img src="img/nav_seps.png" width="2" height="44"  alt=""/></li>
 		  <li class="my_shots">
-          	<a href="#Shots" class="active">
+          	<a href="#Shots">
                 <p class="menu_shots"><span>My</span> Shots</p>
                 <div class="dNone active_shots"><img src="img/active_shots.png"/></div>
                 <p class="dNone explore_shots"><span>My</span> Shots<br> <b>explore now</b></p>
-                <div class="dNone hover_shots "><img src="img/hover_shots.png"/></div>                
+                <div class="dNone hover_shots "><img class="ttt" src="img/hover_shots.png"/></div>                
                 <div class="dNone rays"><img src="img/menu_rays.png"/></div>
             </a>
           </li>
@@ -117,7 +117,13 @@
             <div class="hover_myclients hover_myclients_init"><img src="img/hover_myclients.png" alt=""/></div>
             <div class="img_stool"><img src="img/hp_img_stool.png" alt=""/></div>
             
-            <div class="img_clock"><img src="img/hp_img_clock.png" alt=""/></div>
+            <div class="img_clock">
+                <ul id="clock">	
+                    <li id="sec"></li>
+                    <li id="hour"></li>
+                    <li id="min"></li>
+                </ul>
+            <!--<img src="img/hp_img_clock.png" alt=""/>--></div>
             <div class="img_door"><img src="img/door.jpg" alt=""/></div>
             <div class="img_doorInner"><img src="img/doorInner.jpg" alt=""/></div>
           </div>
@@ -530,7 +536,8 @@
                   <div class="slide"> <img src="img/tv/tigerwoods.jpg" alt="" />
                     <h3>Mr.Tigerwoods</h3>
                   </div>
-                  <div id="btn-nav-holder"> <img src="images/bn-slide-on.png" width="8" height="8" alt="" /> <img src="images/bn-slide-off.png" width="8" height="8" alt="" /> <img src="images/bn-slide-off.png" width="8" height="8" alt="" /> <img src="images/bn-slide-off.png" width="8" height="8" alt="" /> <img src="images/bn-slide-off.png" width="8" height="8" alt="" /> <img src="images/bn-slide-off.png" width="8" height="8" alt="" /> <img src="images/bn-slide-off.png" width="8" height="8" alt="" /> <img src="images/bn-slide-off.png" width="8" height="8" alt="" /> </div>
+                  <div id="btn-nav-holder"> <img src="" width="8" height="8" alt="" /> <img src="" width="8" height="8" alt="" /> <img src="" width="8" height="8" alt="" /> <img src="" width="8" height="8" alt="" /> <img src="" width="8" height="8" alt="" /> <img src="" width="8" height="8" alt="" /> <img src="" width="8" height="8" alt="" /> <img src="" width="8" height="8" alt="" /> </div>
+                
                 </div>
               </div>
             </div>
@@ -636,7 +643,7 @@
         </form>
         <div class="event-action">
           <label></label>
-          <button name="submit" class="btn_contact" id="submit" onClick="sendContact();">Submit</button>
+          <button name="submit" class="btn_contact" id="submit" onClick="sendContact();">Send</button>
           
         </div>
       </div>

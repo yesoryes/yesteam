@@ -49,7 +49,7 @@ nav ul li {
 	background: url(../img/bg_menu.png) no-repeat center top;
 }
 .li_sep {
-	margin: 25px 0 0;
+	margin: 35px 0 0;
 }
 nav ul li a {
 	display: block;
@@ -64,7 +64,7 @@ nav ul li a span {
 }
 nav ul li a b {
 	font-size: 9px;
-	font-family: 'HelveticaLTStdRoman';
+	font-family: 'OpenSansRegular';
 	display: block;
 	margin: -0px 0 0;
 	text-transform: uppercase;
@@ -145,6 +145,13 @@ nav ul li a b {
 }
 .active_nav {
 	opacity: 1;
+}
+.active_mainbg, .active_letters, .active_rays {
+	opacity: 1;
+}
+.active_shutter {
+	//opacity: 1;
+	//top: -20px;
 }
 /*End---Menu navigation*/
 
@@ -331,8 +338,8 @@ nav ul li a b {
 	cursor: pointer;
 }
 .hover_myclients {
-	top: 490px;
-	margin: 0 0 0 -530px;
+	top: 450px;
+	margin: 0 0 0 -490px;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-ms-transition: all .5s;
@@ -621,7 +628,7 @@ nav ul li a b {
 	top: 30%;
 	margin: 0 0 0 300px;
 }
-/*.img_myblog img:hover {
+.img_myblog img:hover {
 	animation-name: shakeit;
 	animation-duration: 1s;
 	animation-timing-function: linear;
@@ -800,7 +807,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 -ms-transform: rotate(2deg) translate(-1px, 2px);
 -o-transform: rotate(2deg) translate(-1px, 2px);
 }
-}*/
+}
 .img_standlight {
 	bottom: 40px;
 	margin: 0 0 0 550px;
@@ -1290,8 +1297,19 @@ transform: rotate(2deg) translate(-1px, 2px);
 }
 .btn_contact {
 	overflow: hidden;
-	height: 30px;
 	float: left;
+	border: none;
+	color: #fff;
+	background: url(../img/bg_btn_send.png) repeat-x top left;
+	font-size: 18px;
+	font-family: 'rockwellstd';
+	font-weight: 100;
+	cursor: pointer;
+	padding: 0px 24px;
+	height: 30px;
+}
+.btn_contact:hover {
+	background: url(../img/bg_btn_send.png) repeat-x bottom left;;
 }
 .btn_contact a {
 	overflow: hidden;
@@ -1744,3 +1762,36 @@ transform: rotate(2deg) translate(-1px, 2px);
     -o-transform: scale(2);
     transform: scale(2);
 }*/
+
+/*clock*/
+#clock {
+        	position: relative;
+        	width: 66px;
+        	height: 66px;
+        	margin: 20px auto 0 auto;
+        	background: url(../img/clock/clockface.png) no-repeat;
+        	list-style: none;
+        	}
+        
+        #sec, #min, #hour {
+        	position: absolute;
+        	width: 3px;
+        	height: 66px;
+        	top: -2px;
+        	left: 29px;
+        	}
+        
+        #sec {
+        	/*background: url(../img/clock/sechand.png) no-repeat;*/
+        	z-index: 3;
+           	}
+           
+        #min {
+        	background: url(../img/clock/minhand.png) no-repeat;
+        	z-index: 2;
+           	}
+           
+        #hour {
+        	background: url(../img/clock/hourhand.png) no-repeat;
+        	z-index: 1;
+           	}
