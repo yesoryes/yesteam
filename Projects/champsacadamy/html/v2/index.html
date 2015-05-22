@@ -17,7 +17,7 @@
             <div class="logo"><img src="img/logo.png" alt=""/></div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#">why champs</a></li>
+                    <li><a href="#" class="menu-whychamps">why champs</a></li>
                     <li class="li-seps">|</li>
                     <li><a href="#">fun@games</a></li>
                     <li class="li-seps">|</li>
@@ -320,6 +320,11 @@ var more = function() {
 
 };
 $(document).ready(more);
+
+$("a.menu-whychamps").stop().animate({opacity: 0},1000,function(){
+	$(this).css({'background-image': "url('/images/alt_image.png')"})
+		.animate({opacity: 1},{duration:1000});
+});
 </script>
 </body>
 </html>
