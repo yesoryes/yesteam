@@ -723,7 +723,7 @@ $(document).ready(function() {
 			'-moz-transition' : 'all 1.0s ease-in-out',
 			'-o-transition' : 'all 1.0s ease-in-out',
 			'transform' : 'translateX(100%)',
-			'-webkit-transform' : 'translateX(90%)',
+			'-webkit-transform' : 'translateX(100%)',
 			'-moz-transform' : 'translateX(100%)',
 			'-ms-transform' : 'translateX(100%)',
 			'-o-transform' : 'translateX(100%)',
@@ -783,7 +783,7 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
-	$(".img_jewellery ").click(function(){
+	$(".img_industry").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
 			'-webkit-transition' : 'all 1.0s ease-in-out',
@@ -810,7 +810,7 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
-	$(".img_industry").click(function(){
+	$(".img_jewellery ").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
 			'-webkit-transition' : 'all 1.0s ease-in-out',
@@ -875,7 +875,8 @@ $(document).ready(function() {
 			'-webkit-transform' : 'translateX(-100%)',
 			'-ms-transform' : 'translateX(-100%)',
 			'-moz-transform' : 'translateX(-100%)',
-			'-o-transform' : 'translateX(-100%)'
+			'-o-transform' : 'translateX(-100%)',
+			
 		});
 	
 		$('.shot_gallery_banner.hotel').css({
@@ -889,6 +890,7 @@ $(document).ready(function() {
 			'-moz-transform' : 'translateX(100%)',
 			'-ms-transform' : 'translateX(100%)',
 			'-o-transform' : 'translateX(100%)',
+			'opacity' : '1'
 		});	 
 	});
 	$(".img_corporate").click(function(){

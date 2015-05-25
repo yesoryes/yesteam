@@ -167,7 +167,7 @@ nav ul li a b {
 .home, .Shot, .whoam, .studio, .myclients, .reachUs {
 	position: relative;
 }
-.home_about, .img_light_l, .img_light_r, .img_photos, .hover_myShots, .img_phone, .hover_reachus, .img_instrument, .img_stool, .hover_myclients, .img_stand, .hover_whoam, .img_clock, .img_door, .img_doorInner, .img_fashion, .img_interiors, .img_adv, .img_life_style, .img_industry, .img_jewellery, .img_food, .img_hotel, .img_automobile, .img_corporate, .light, .shots_gallery, .btn_back, .img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_flicker, .img_black_sofa, .img_mac, .img_frame_1, .img_frame_2, .my_studio_para, .whoam_rays, .img_myblog, .img_standlight, .img_sofa, .img_chair, .about_para, .img_leftclients, .img_rightclients, .client_list, .tv, .myclients_left_rays, .myclients_right_rays, .img_centertoplight, .img_rightlight, .img_leftlight, .img_reachtable, .reachUs_para, .reachUs_content, .reach_rays, .mystudio_rays, .tooltip, .projector, .btn_ourStudio {
+.home_about, .img_light_l, .img_light_r, .img_photos, .hover_myShots, .img_phone, .hover_reachus, .img_instrument, .img_stool, .hover_myclients, .img_stand, .hover_whoam, .img_clock, .img_door, .img_doorInner, .img_fashion, .img_interiors, .img_adv, .img_life_style, .img_industry, .img_jewellery, .img_food, .img_hotel, .img_automobile, .img_corporate, .light, .shots_gallery, .gallery_rays1, .gallery_rays2, .btn_back, .img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_flicker, .img_black_sofa, .img_mac, .img_frame_1, .img_frame_2, .my_studio_para, .whoam_rays, .img_myblog, .img_standlight, .img_sofa, .img_chair, .about_para, .img_leftclients, .img_rightclients, .client_list, .tv, .myclients_left_rays, .myclients_right_rays, .img_centertoplight, .img_rightlight, .img_leftlight, .img_reachtable, .reachUs_para, .reachUs_content, .reach_rays, .mystudio_rays, .tooltip, .projector, .btn_ourStudio {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -355,7 +355,7 @@ nav ul li a b {
 }
 .hover_whoam {
 	bottom: -60px;
-	margin: 0 0 0 330px;
+	margin: 0 0 0 470px;
 	width: 404px;
 	height: 434px;
 	transition: all .5s;
@@ -396,25 +396,32 @@ nav ul li a b {
 }
 .shot_top {
 	overflow: hidden;
-	background: url(../img/shot_top.jpg) no-repeat center top;
+	background: url(../img/shot_top.jpg) no-repeat center top, url(../img/shotTopRepeat.jpg) repeat-x center top;
 }
 .shot_bottom {
-	background: url(../img/shot_bottom.jpg) no-repeat center bottom;
+	background: url(../img/shot_bottom.jpg) no-repeat center bottom, url(../img/myshoysBottomRepeat.jpg) repeat-x center bottom;
 }
 .shot_cont {
 	background: url(../img/shot_cont.jpg) repeat-y center 0px;
 }
+.gallery_rays1, .gallery_rays2 {
+	top: 35px;
+	margin: 0 0 0 -175px;
+}
+.gallery_rays2 {
+	margin: 0 0 0 329px;
+}
 .img_fashion {
-	top: 390px;
-	margin: 0 0 0 -600px;
+	top: 31%;
+	margin: 0 0 0 -178px;
 	cursor: pointer;
 	/*z-index:3030;*/
 	-webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
-	transform-origin:1200px 60px;
-	-webkit-transform-origin: 1200px 60px;
+	transform-origin:800px 00px;
+	-webkit-transform-origin: 800px 0px;
 }
 .transition1 {
     -webkit-transform: scale(1.1); 
@@ -423,104 +430,105 @@ nav ul li a b {
     transform: scale(1.1);
 }
 .btn_back {
-	top: 155px;
-	margin: 0 0 0 -320px;
-	width: 127px;
-	height: 37px;
-	background: url(../img/btn_back.png) no-repeat 0px 0px ;
+	top: 20%;
+	margin: 0 0 0 -360px;
+	width: 40px;
+	height: 40px;
+	background: url(../img/btn_backGallery.png) no-repeat 0px 0px ;
 	cursor: pointer;
 }
 .btn_back:hover {
-	background: url(../img/btn_back.png) no-repeat 0px bottom ;
+	background: url(../img/btn_backGallery.png) no-repeat 0px bottom ;
 }
 .img_interiors {
-	top: 570px;
-	margin: 0 0 0 -390px;
+	top: 65%;
+	margin: 0 0 0 -175px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
-	transform-origin:500px 60px;
-	-webkit-transform-origin: 500px 60px;	
+	transform-origin:1350px 0px;
+	-webkit-transform-origin: 1350px 00px;	
 }
 
 .img_adv {
-	top: 270px;
-	margin: 0 0 0 -390px;
+	top: 35%;
+	margin: 0 0 0 40px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
-	transform-origin:500px 60px;
-	-webkit-transform-origin: 500px 60px;	
+	transform-origin:1100px 0px;
+	-webkit-transform-origin: 1100px 0px;	
 }
  
 .img_industry {
-	top: 370px;
+	top: 45%;
+	margin: 0 0 0 300px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
-	transform-origin:800px 60px;
-	-webkit-transform-origin: 1100px 60px;	
+	transform-origin:750px 0px;
+	-webkit-transform-origin:750px 0px;	
 }
 .img_jewellery {
-	top: 260px;
-	margin: 0 0 0 240px;
+	top: 32%;
+	margin: 0 0 0 465px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
-	transform-origin:450px 60px;
-	-webkit-transform-origin: 450px 60px;	
+	transform-origin:1000px 0px;
+	-webkit-transform-origin: 1000px 0px;	
 }
 .img_food {
-	top: 250px;
-	margin: 0 0 0 340px;
+	top: 45%;
+	margin: 0 0 0 -365px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
-	transform-origin:500px 60px;
-	-webkit-transform-origin: 500px 60px;	
+	transform-origin:700px 0px;
+	-webkit-transform-origin: 700px 0px;	
 }
 .img_hotel {
-	top: 350px;
-	margin: 0 0 0 500px;
+	top: 24%;
+	margin: 0 0 0 245px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
-	transform-origin:1000px 60px;
-	-webkit-transform-origin: 1000px 60px;	
+	transform-origin:750px 60px;
+	-webkit-transform-origin: 750px 60px;	
 }
 .img_automobile {
-	top: 545px;
-	margin: 0 0 0 350px;
+	top: 23%;
+	margin: 0 0 0 -322px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
-	transform-origin:500px 60px;
-	-webkit-transform-origin: 500px 60px;	
+	transform-origin:650px 0px;
+	-webkit-transform-origin: 650px 0px;	
 }
 .img_corporate {
-	top: 545px;
-	margin: 0 0 0 250px;
+	top: 65%;
+	margin: 0 0 0 103px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
-	transform-origin:450px 60px;
-	-webkit-transform-origin: 450px 60px;	
+	transform-origin:1000px  0px;
+	-webkit-transform-origin: 1000px 0px;	
 }
 .light {
 	bottom: 0;
@@ -1201,9 +1209,15 @@ transform: rotate(2deg) translate(-1px, 2px);
 }
 .btn_ourStudio {
 	top: 75%;
-	margin: 0 0 0 -130px;
+	height: 40px;
+	margin: 0 0 0 -75px;
 }
-.btn_enquiry a, .btn_ourStudio a {
+.btn_ourStudio ul li {
+	overflow: hidden;
+	float: left;
+	margin: 0 15px;
+}
+.btn_enquiry a {
 	overflow: hidden;
 	width: 156px;
 	height: 56px;
@@ -1219,6 +1233,30 @@ transform: rotate(2deg) translate(-1px, 2px);
 	-ms-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
 	-o-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
 	box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
+}
+.btn_ourStudio ul li a {
+	overflow: hidden;
+	padding: 0 7px;
+	height: 40px;
+	background: url(../img/btn_bg_view.jpg) repeat-x;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #7980a2;
+	font-size: 16px;
+	font-family: 'RockwellStdLight';
+	-webkit-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
+	-moz-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
+	-ms-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
+	-o-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
+	box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
+}
+.btn_ourStudio ul li a:hover {
+	color: #454545;
+	background: url(../img/btn_bg_viewHover.jpg) repeat-x;
+}
+.btn_ourStudio a span {
+	font-family: 'rockwellstd';	
 }
 .btn_enquiry a span, .btn_ourStudio a span {
 	font-weight: 900;
@@ -1804,7 +1842,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 
 /*Marquee Clients*/
 .marquee {
-    top: 6em;
+    top: 0px;
     position: relative;
     box-sizing: border-box;
     animation: marquee 15s linear infinite;
@@ -1816,6 +1854,16 @@ transform: rotate(2deg) translate(-1px, 2px);
 
 /* Make it move! */
 @keyframes marquee {
-    0%   { top:   8em }
-    100% { top: -11em }
+    0%   { top:   0em }
+    100% { top: -23em }
+}
+
+
+
+#shots p {
+	font-size: 14px;
+	color: #fff;
+	font-family: 'OpenSansRegular';
+	text-align: center;
+	margin: -20px 0 0;
 }

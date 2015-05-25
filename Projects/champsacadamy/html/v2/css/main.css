@@ -54,9 +54,11 @@ header {
       .main-nav ul li a, .main-nav .contact .address p li a, .contact .address .main-nav p li a {
         display: block;
         color: #fff;
-        padding: 31px 29px 36px;
+        padding: 31px 0px 36px;
         background: url(../img/main_nav_li_bg.png) no-repeat center 68px;
-        transition: 0.5s all; }
+        transition: 0.5s all;
+        width: 180px;
+        text-align: center; }
   .main-nav .more {
     overflow: hidden;
     float: left;
