@@ -167,7 +167,7 @@ nav ul li a b {
 .home, .Shot, .whoam, .studio, .myclients, .reachUs {
 	position: relative;
 }
-.home_about, .img_light_l, .img_light_r, .img_photos, .hover_myShots, .img_phone, .hover_reachus, .img_instrument, .img_stool, .hover_myclients, .img_stand, .hover_whoam, .img_clock, .img_door, .img_doorInner, .img_fashion, .img_interiors, .img_adv, .img_life_style, .img_industry, .img_jewellery, .img_food, .img_hotel, .img_automobile, .img_corporate, .light, .shots_gallery, .btn_back, .img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_flicker, .img_black_sofa, .img_mac, .img_frame_1, .img_frame_2, .my_studio_para, .whoam_rays, .img_myblog, .img_standlight, .img_sofa, .img_chair, .about_para, .img_leftclients, .img_rightclients, .client_list, .tv, .myclients_left_rays, .myclients_right_rays, .img_centertoplight, .img_rightlight, .img_leftlight, .img_reachtable, .reachUs_para, .reachUs_content, .reach_rays, .mystudio_rays, .tooltip, .projector {
+.home_about, .img_light_l, .img_light_r, .img_photos, .hover_myShots, .img_phone, .hover_reachus, .img_instrument, .img_stool, .hover_myclients, .img_stand, .hover_whoam, .img_clock, .img_door, .img_doorInner, .img_fashion, .img_interiors, .img_adv, .img_life_style, .img_industry, .img_jewellery, .img_food, .img_hotel, .img_automobile, .img_corporate, .light, .shots_gallery, .btn_back, .img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_flicker, .img_black_sofa, .img_mac, .img_frame_1, .img_frame_2, .my_studio_para, .whoam_rays, .img_myblog, .img_standlight, .img_sofa, .img_chair, .about_para, .img_leftclients, .img_rightclients, .client_list, .tv, .myclients_left_rays, .myclients_right_rays, .img_centertoplight, .img_rightlight, .img_leftlight, .img_reachtable, .reachUs_para, .reachUs_content, .reach_rays, .mystudio_rays, .tooltip, .projector, .btn_ourStudio {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -348,7 +348,7 @@ nav ul li a b {
 }
 .img_stand {
 	bottom: -50px;
-	margin: 0 0 0 300px;
+	margin: 0 0 0 470px;
 	width: 404px;
 	height: 434px;
 	cursor: pointer;
@@ -365,8 +365,9 @@ nav ul li a b {
 	-o-transition: all .5s;
 }
 .img_clock {
-	top: 200px;
-	margin: 0 0 0 550px;
+	top: -60px;
+	margin: 0 0 0 250px;
+	transform: scale(0.1)
 }
 .img_door {
 	top: 282px;
@@ -1020,7 +1021,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 	height: 500px;
 }
 #wrapper_iscroll2 {
-	top: 34%;
+	top: 30%;
 	height: 340px;
 	width: 500px;
 	left: 50%;
@@ -1192,13 +1193,17 @@ transform: rotate(2deg) translate(-1px, 2px);
 .enquiry p {
 	padding: 15px 0 0 0;
 }
-.btn_enquiry {
+.btn_enquiry, .btn_ourStudio {
 	overflow: hidden;
 	height: 56px;
 	float: left;
 	margin: 15px 0 0 0;
 }
-.btn_enquiry a {
+.btn_ourStudio {
+	top: 75%;
+	margin: 0 0 0 -130px;
+}
+.btn_enquiry a, .btn_ourStudio a {
 	overflow: hidden;
 	width: 156px;
 	height: 56px;
@@ -1215,10 +1220,10 @@ transform: rotate(2deg) translate(-1px, 2px);
 	-o-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
 	box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
 }
-.btn_enquiry a span {
+.btn_enquiry a span, .btn_ourStudio a span {
 	font-weight: 900;
 }
-.btn_enquiry a:active {
+.btn_enquiry a:active, .btn_ourStudio a:active {
 	-webkit-box-shadow: 0px 9px 0px rgba(138,203,209,00), 0px 9px 25px rgba(0,0,0,.1);
 	-moz-box-shadow: 0px 9px 0px rgba(138,203,209,0), 0px 9px 25px rgba(0,0,0,.1);
 	-ms-box-shadow: 0px 9px 0px rgba(138,203,209,0), 0px 9px 25px rgba(0,0,0,.1);
@@ -1764,34 +1769,53 @@ transform: rotate(2deg) translate(-1px, 2px);
 }*/
 
 /*clock*/
+
 #clock {
-        	position: relative;
-        	width: 66px;
-        	height: 66px;
-        	margin: 20px auto 0 auto;
-        	background: url(../img/clock/clockface.png) no-repeat;
-        	list-style: none;
-        	}
-        
-        #sec, #min, #hour {
-        	position: absolute;
-        	width: 3px;
-        	height: 66px;
-        	top: -2px;
-        	left: 29px;
-        	}
-        
-        #sec {
-        	/*background: url(../img/clock/sechand.png) no-repeat;*/
-        	z-index: 3;
-           	}
-           
-        #min {
-        	background: url(../img/clock/minhand.png) no-repeat;
-        	z-index: 2;
-           	}
-           
-        #hour {
-        	background: url(../img/clock/hourhand.png) no-repeat;
-        	z-index: 1;
-           	}
+	position: relative;
+	width: 600px;
+	height: 600px;
+	margin: 20px auto 0 auto;
+	background: url(../img/clockface.png);
+	list-style: none;
+	}
+
+#sec, #min, #hour {
+	position: absolute;
+	width: 30px;
+	height: 600px;
+	top: 0px;
+	left: 285px;
+	}
+
+#sec {
+	background: url(../img/sechand.png);
+	z-index: 3;
+	}
+   
+#min {
+	background: url(../img/minhand.png);
+	z-index: 2;
+	}
+   
+#hour {
+	background: url(../img/hourhand.png);
+	z-index: 1;
+	}
+
+/*Marquee Clients*/
+.marquee {
+    top: 6em;
+    position: relative;
+    box-sizing: border-box;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Make it move! */
+@keyframes marquee {
+    0%   { top:   8em }
+    100% { top: -11em }
+}

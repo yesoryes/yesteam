@@ -29,9 +29,6 @@ $( document ).ready(function() {
 	$('.activity div a').hover(function () {
 		$(this).addClass('hvr-sweep-to-left');
 	})
-	
-	
-	/*Parallex*/
 	function para() {
 	
 		var s;
@@ -58,6 +55,11 @@ $( document ).ready(function() {
 			};
 			
 			var wHeight = "top:-"+($(document).height()-$(window).height())+"px;";
+			
+			/*$('#wrapper').removeAttr("data-0");
+			$('#wrapper').removeAttr("data-2000");
+			$('#wrapper').removeAttr("data-5000");
+			$('#wrapper').removeAttr("data-6000");*/
 			
 			
 			$('#wrapper').attr("data-0","top:0px; position:fixed;");
@@ -104,36 +106,5 @@ $( document ).ready(function() {
 																	
 		};
 		setHeightKey();
-	
-		
-		/*despcription START*/
-		$(".door_trip").hover(function(){
-			$(this).find('.door_img').addClass('fadeOut');
-			$(this).find('.hover_effect').addClass('fadeIn');
-			//$(this).find('.hover_effect').animate({top:-20});
-		}, function(){
-			$(this).find('.door_img').removeClass('fadeOut');
-			$(this).find('.hover_effect').removeClass('fadeIn');
-		});	
-		/*despcription END*/
-		
-		
-		var rs;
-		$(window).resize(function(){
-		  clearTimeout(rs);
-		  rs = setTimeout(function(){
-			// call your function
-			console.log("resized");
-			setHeightKey();
-			//s.refresh($("html"));
-		  },750);
-		});			
-		
-		$("#skr_arrow").click(function(){
-			//alert("ff");
-			s.animateTo(2950*3,{duration:2000});
-		});
-	
-
 	};
 })

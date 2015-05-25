@@ -297,9 +297,11 @@ $(document).ready(function() {
 					case 4:
 						if(samePage != id) {
 							curMenu = $('.my_clients a');
+							
 							clientsOut();
 							setTimeout(clientsIn,200);
 							samePage = id;
+							setInterval(autoScrollClient, 40);
 						};
 						break;
 					case 5:
@@ -507,7 +509,18 @@ $(document).ready(function() {
 	});
 	
 	
+	/*Clients*/
 	
+		/* Auto Scroll */
+		function autoScrollClient() {
+			//alert();
+			myScrollClient.scrollBy(0, -1);
+			if (myScrollClient.y < -400) {
+				myScrollClient.scrollTo(0, 350);
+			};
+		};
+		
+		
 
 
 /*Gallery POPUP*/
@@ -1003,13 +1016,13 @@ var myScroll;
 //alert ("scroll");
 
 function loaded () {
-	myScroll = new IScroll('#wrapper_iscroll', {
+	/*myScrollClient = new IScroll('#wrapper_iscroll', {
 		scrollbars: true,
 		mouseWheel: true,
 		interactiveScrollbars: true,
 		shrinkScrollbars: 'scale',
 		fadeScrollbars: true
-	});
+	});*/
 
 	myScrollStudio = new IScroll('#wrapper_iscroll2', {
 		scrollbars: true,
