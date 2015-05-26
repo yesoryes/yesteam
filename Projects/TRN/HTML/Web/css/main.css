@@ -49,7 +49,7 @@ nav ul li {
 	background: url(../img/bg_menu.png) no-repeat center top;
 }
 .li_sep {
-	margin: 35px 0 0;
+	margin: 0px 0 0;
 }
 nav ul li a {
 	display: block;
@@ -86,7 +86,7 @@ nav ul li a b {
 	position: absolute;
 }
 .menu_shots {
-	top: 30px;
+	top: 36px;
 	margin: 0 0 0 20px;
 }
 .active_shots {
@@ -131,7 +131,8 @@ nav ul li a b {
  text-align: left;
 }
 .hover_reach {
-	width: 107px
+	width: 110px;
+	margin: 0 0 0 8px;
 }
 
 .hover_shots img, .hover_reach img {
@@ -167,7 +168,7 @@ nav ul li a b {
 .home, .Shot, .whoam, .studio, .myclients, .reachUs {
 	position: relative;
 }
-.home_about, .img_light_l, .img_light_r, .img_photos, .hover_myShots, .img_phone, .hover_reachus, .img_instrument, .img_stool, .hover_myclients, .img_stand, .hover_whoam, .img_clock, .img_door, .img_doorInner, .img_fashion, .img_interiors, .img_adv, .img_life_style, .img_industry, .img_jewellery, .img_food, .img_hotel, .img_automobile, .img_corporate, .light, .shots_gallery, .gallery_rays1, .gallery_rays2, .btn_back, .img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_flicker, .img_black_sofa, .img_mac, .img_frame_1, .img_frame_2, .my_studio_para, .whoam_rays, .img_myblog, .img_standlight, .img_sofa, .img_chair, .about_para, .img_leftclients, .img_rightclients, .client_list, .tv, .myclients_left_rays, .myclients_right_rays, .img_centertoplight, .img_rightlight, .img_leftlight, .img_reachtable, .reachUs_para, .reachUs_content, .reach_rays, .mystudio_rays, .tooltip, .projector, .btn_ourStudio {
+.home_about, .img_light_l, .img_light_r, .img_photos, .hover_myShots, .img_phone, .hover_reachus, .img_instrument, .img_stool, .hover_myclients, .img_stand, .hover_whoam, .img_clock, .img_door, .img_bgDoor, .img_doorInner, .img_fashion, .img_interiors, .img_adv, .img_life_style, .img_industry, .img_jewellery, .img_food, .img_hotel, .img_automobile, .img_corporate, .light, .shots_gallery, .gallery_rays1, .gallery_rays2, .btn_back, .img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_flicker, .img_black_sofa, .img_mac, .img_frame_1, .img_frame_2, .my_studio_para, .whoam_rays, .img_myblog, .img_standlight, .img_sofa, .img_chair, .about_para, .img_leftclients, .img_rightclients, .client_list, .tv, .myclients_left_rays, .myclients_right_rays, .img_centertoplight, .img_rightlight, .img_leftlight, .img_reachtable, .reachUs_para, .reachUs_content, .reach_rays, .mystudio_rays, .tooltip, .projector, .btn_ourStudio {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -370,14 +371,19 @@ nav ul li a b {
 	transform: scale(0.1)
 }
 .img_door {
-	top: 282px;
+	top: 275px;
 	margin: 0px 0 0 550px;
+	padding: 50px 0 0;
 	cursor: pointer;
 }
 .img_doorInner {
-	top: 340px;
+	top: 333px;
 	margin: 0px 0 0 550px;
 	cursor: pointer;
+}
+.img_bgDoor {
+	top: 275px;
+	margin: 0px 0 0 555px;
 }
 /*My Shots*/
 .shots_page {
@@ -411,8 +417,19 @@ nav ul li a b {
 .gallery_rays2 {
 	margin: 0 0 0 329px;
 }
+.gallery_img_sec {
+	overflow: hidden;
+	width: 1140px;
+	height: 450px;
+	position: relative;
+	margin: 0 auto;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
 .img_fashion {
-	top: 31%;
+	top: 53px;
 	margin: 0 0 0 -178px;
 	cursor: pointer;
 	/*z-index:3030;*/
@@ -441,7 +458,7 @@ nav ul li a b {
 	background: url(../img/btn_backGallery.png) no-repeat 0px bottom ;
 }
 .img_interiors {
-	top: 65%;
+	top: 302px;
 	margin: 0 0 0 -175px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
@@ -453,7 +470,7 @@ nav ul li a b {
 }
 
 .img_adv {
-	top: 35%;
+	top: 88px;
 	margin: 0 0 0 40px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
@@ -465,7 +482,7 @@ nav ul li a b {
 }
  
 .img_industry {
-	top: 45%;
+	top: 192px;
 	margin: 0 0 0 300px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
@@ -476,18 +493,18 @@ nav ul li a b {
 	-webkit-transform-origin:750px 0px;	
 }
 .img_jewellery {
-	top: 32%;
+	top: 53px;
 	margin: 0 0 0 465px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
-	transform-origin:1000px 0px;
-	-webkit-transform-origin: 1000px 0px;	
+	transform-origin:1000px 100px;
+	-webkit-transform-origin: 1000px 100px;	
 }
 .img_food {
-	top: 45%;
+	top: 156px;
 	margin: 0 0 0 -365px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
@@ -498,7 +515,7 @@ nav ul li a b {
 	-webkit-transform-origin: 700px 0px;	
 }
 .img_hotel {
-	top: 24%;
+	top: 26px;
 	margin: 0 0 0 245px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
@@ -509,7 +526,7 @@ nav ul li a b {
 	-webkit-transform-origin: 750px 60px;	
 }
 .img_automobile {
-	top: 23%;
+	top: 0;
 	margin: 0 0 0 -322px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
@@ -520,7 +537,7 @@ nav ul li a b {
 	-webkit-transform-origin: 650px 0px;	
 }
 .img_corporate {
-	top: 65%;
+	top: 294px;
 	margin: 0 0 0 103px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;

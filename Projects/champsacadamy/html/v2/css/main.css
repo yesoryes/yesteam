@@ -112,6 +112,7 @@ header {
   height: 795px;
   background: #fbc93d;
   color: #3b3116;
+  /*padding: 50px 0 0;*/
   position: relative; }
   .why-champs h1 {
     text-align: center;
@@ -119,19 +120,63 @@ header {
   .why-champs p {
     text-align: center;
     width: 900px;
-    /*margin: 38px auto 70px;*/ }
+    /*margin: 38px auto 70px;*/
+    transition: 0.5s all; }
     .why-champs p.abs_pos {
       top: 245px; }
 
 .whychamps-accordian {
   overflow: hidden;
   padding: 0 0 0 330px;
-  background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;
+  /*background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;*/
   overflow: hidden; }
   .whychamps-accordian.abs_pos {
     top: 385px;
     margin: 0 0 0 -180px; }
 
+.shake {
+  animation: spaceboots 5s infinite linear;
+  transform-origin: 50% 50%; }
+  .shake.abs_pos {
+    top: 60px;
+    margin: 0 0 0 -470px; }
+
+/*Shake*/
+@-webkit-keyframes spaceboots {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+    transform: translate(2px, 1px) rotate(0deg); }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+    transform: translate(0px, 2px) rotate(0deg); }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    transform: translate(2px, 1px) rotate(-1deg); }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+    transform: translate(2px, 2px) rotate(0deg); }
+  100% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg); } }
+/**/
 .panelContent {
   padding: 35px;
   /*height:340px;
@@ -210,12 +255,19 @@ header {
   overflow: hidden; }
   .programs .pro-preschool, .programs .pro-afterschool, .programs .pro-tution {
     overflow: hidden;
-    width: 306px;
+    width: 365px;
     float: right;
     margin: 0 0 0 35px; }
     .programs .pro-preschool.abs_pos, .programs .abs_pos.pro-afterschool, .programs .abs_pos.pro-tution {
       top: 245px;
       margin: 0 0 0 -140px; }
+      .programs .pro-preschool.abs_pos figure, .programs .abs_pos.pro-afterschool figure, .programs .abs_pos.pro-tution figure {
+        height: 234px;
+        margin: 0 0 0 70px; }
+        .programs .pro-preschool.abs_pos figure img, .programs .abs_pos.pro-afterschool figure img, .programs .abs_pos.pro-tution figure img {
+          display: block;
+          text-align: center;
+          padding: 30px 0 0; }
       .programs .pro-preschool.abs_pos h1, .programs .abs_pos.pro-afterschool h1, .programs .abs_pos.pro-tution h1 {
         text-align: center;
         text-transform: capitalize;
@@ -226,7 +278,8 @@ header {
       .programs .pro-preschool.abs_pos p, .programs .abs_pos.pro-afterschool p, .programs .abs_pos.pro-tution p {
         text-align: center;
         color: #7e7e7e;
-        font-size: 14px; }
+        font-size: 14px;
+        padding: 0 35px; }
         .programs .pro-preschool.abs_pos p a, .programs .abs_pos.pro-afterschool p a, .programs .abs_pos.pro-tution p a {
           display: table;
           vertical-align: middle;
@@ -240,10 +293,14 @@ header {
             color: #fff; }
   .programs .pro-afterschool.abs_pos {
     top: 245px;
-    margin: 0 0 0 177px; }
+    margin: 0 0 0 200px; }
+    .programs .pro-afterschool.abs_pos figure img {
+      padding: 0px 0 0; }
   .programs .pro-tution.abs_pos {
     top: 245px;
     margin: 0 0 0 525px; }
+    .programs .pro-tution.abs_pos figure img {
+      padding: 0px 0 0; }
 
 .btn-viewall {
   overflow: hidden;
@@ -280,7 +337,8 @@ header {
       margin: 0 0 0 -218px; }
       .activity .activity-karate.abs_pos p, .activity .abs_pos.activity-kungfu p, .activity .abs_pos.activity-chess p, .activity .abs_pos.activity-dance p {
         text-align: center;
-        margin: 0px 0 13px; }
+        margin: 0px 0 22px;
+        line-height: 22px; }
       .activity .activity-karate.abs_pos a, .activity .abs_pos.activity-kungfu a, .activity .abs_pos.activity-chess a, .activity .abs_pos.activity-dance a {
         text-transform: capitalize;
         display: block;
@@ -318,6 +376,15 @@ header {
         background: #ab2865; }
         .activity .activity-dance.abs_pos a:hover {
           color: #ce5d92; }
+  .activity .karate-btm.abs_pos, .activity .abs_pos.kungfu-btm, .activity .abs_pos.chess-btm, .activity .abs_pos.dance-btm {
+    bottom: 135px;
+    margin: 0 0 0 -310px; }
+  .activity .kungfu-btm.abs_pos {
+    margin: 0 0 0 -45px; }
+  .activity .chess-btm.abs_pos {
+    margin: 0 0 0 200px; }
+  .activity .dance-btm.abs_pos {
+    margin: 0 0 0 455px; }
 
 /*Testimonials*/
 .testimonials {
@@ -356,13 +423,17 @@ header {
 .contact {
   background: #fff;
   color: #454545;
-  padding: 50px 0 0; }
+  /*padding: 50px 0 0;*/
+  height: 360px; }
   .contact h1 {
     margin: 0 0 50px; }
   .contact .address {
     overflow: hidden;
     float: left;
-    margin: 0 0 0 300px; }
+    /*margin: 0 0 0 300px;*/ }
+    .contact .address.abs_pos {
+      bottom: 0;
+      margin: 0 0 0 -240px; }
     .contact .address ul, .contact .address p {
       background: url(../img/ico_locate.png) no-repeat 0px 5px;
       padding: 0 0 0 40px; }
@@ -374,7 +445,10 @@ header {
   .contact .ico-social {
     overflow: hidden;
     float: right;
-    margin: 0 275px 0 0; }
+    /*margin: 0 275px 0 0;*/ }
+    .contact .ico-social.abs_pos {
+      bottom: 0;
+      margin: 0 0 0 240px; }
     .contact .ico-social p {
       background: url(../img/ico_call.png) no-repeat 0px 7px;
       padding: 0 0 43px 40px; }

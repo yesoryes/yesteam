@@ -32,5 +32,10 @@ $( document ).ready(function() {
 	
 	
 	/*Parallex*/
-	
+	//window.onload = function() {
+	skrollr.init({
+		forceHeight: false,
+		smoothScrolling: true,
+	});
+	//};
 })

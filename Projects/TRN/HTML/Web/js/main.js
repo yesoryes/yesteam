@@ -181,27 +181,27 @@ $(document).ready(function() {
 	
 	//Home Door
 	function img_door_animIn() {
-		$('.img_doorInner').attr("src", "img/doorInner.jpg");
+		$('.img_doorInner').attr("src", "img/doorInner.png");
 		$('.img_doorInner img').css({ 
-			'transform': 'perspective( 600px ) rotateY(70deg)',
-			'-webkit-transform': 'perspective( 600px ) rotateY(70deg)', 
-			'-o-transform': 'perspective( 600px ) rotateY(70deg)', 
-			'-ms-transform': 'perspective( 600px ) rotateY(70deg)', 
-			'-moz-transform': 'perspective( 600px ) rotateY(70deg)',  
+			'transform': 'perspective( 600px ) rotateY(-70deg)',
+			'-webkit-transform': 'perspective( 600px ) rotateY(-70deg)', 
+			'-o-transform': 'perspective( 600px ) rotateY(-70deg)', 
+			'-ms-transform': 'perspective( 600px ) rotateY(-70deg)', 
+			'-moz-transform': 'perspective( 600px ) rotateY(-70deg)',  
 			'transition': '.5s linear transform', 
 			'webkit-transition': '.5s linear transform', 
 			'-o-transition': '.5s linear transform', 
 			'-ms-transition': '.5s linear transform', 
 			'-moz-transition': '.5s linear transform', 
 			transformOrigin: 'left', 
-			'-webkit-transform-origin': 'left',
-			'-o-transform-origin': 'left',
-			'-ms-transform-origin': 'left',
-			'-moz-transform-origin': 'left',
+			'-webkit-transform-origin': 'right',
+			'-o-transform-origin': 'right',
+			'-ms-transform-origin': 'right',
+			'-moz-transform-origin': 'right',
 			cursor: 'pointer'});
 	};
 	function img_door_animout() {
-		$('.img_doorInner').attr("src", "img/doorInner.jpg");
+		$('.img_doorInner').attr("src", "img/doorInner.png");
 		$('.img_doorInner img').css({
 			'transform': 'rotateY(-0deg)',
 			'-webkit-transform': 'rotateY(-0deg)', 		
