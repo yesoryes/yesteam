@@ -420,7 +420,7 @@ nav ul li a b {
 .gallery_img_sec {
 	overflow: hidden;
 	width: 1140px;
-	height: 450px;
+	height: 473px;
 	position: relative;
 	margin: 0 auto;
 	top: 50%;
@@ -470,7 +470,7 @@ nav ul li a b {
 }
 
 .img_adv {
-	top: 88px;
+	top: 20px;
 	margin: 0 0 0 40px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
@@ -523,7 +523,7 @@ nav ul li a b {
     -o-transition:all .5s;
     -ms-transition: all .5s;
 	transform-origin:750px 60px;
-	-webkit-transform-origin: 750px 60px;	
+	-webkit-transform-origin: 700px 60px;	
 }
 .img_automobile {
 	top: 0;
@@ -537,15 +537,15 @@ nav ul li a b {
 	-webkit-transform-origin: 650px 0px;	
 }
 .img_corporate {
-	top: 294px;
-	margin: 0 0 0 103px;
+	top: 228px;
+	margin: 0 0 0 90px;
 	cursor: pointer;
 	 -webkit-transition:all .5s;
     -moz-transition:all .5s;
     -o-transition:all .5s;
     -ms-transition: all .5s;
 	transform-origin:1000px  0px;
-	-webkit-transform-origin: 1000px 0px;	
+	-webkit-transform-origin: 750px 0px;	
 }
 .light {
 	bottom: 0;
@@ -931,7 +931,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 	top: -60px;
 }
 .img_self {
-	top: 15%;
+	top: 235px;
 	margin: 0 0 0 -400px;
 }
 .img_lighting_set {
@@ -1046,7 +1046,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 	height: 500px;
 }
 #wrapper_iscroll2 {
-	top: 30%;
+	top: 200px;
 	height: 340px;
 	width: 500px;
 	left: 50%;
@@ -1882,5 +1882,5 @@ transform: rotate(2deg) translate(-1px, 2px);
 	color: #fff;
 	font-family: 'OpenSansRegular';
 	text-align: center;
-	margin: -20px 0 0;
+	margin: -15px 0 0;
 }

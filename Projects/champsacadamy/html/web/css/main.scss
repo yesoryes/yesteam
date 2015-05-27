@@ -68,9 +68,11 @@ header{
 			a {
 				display: block;
 				color: $nav_anchor_color;
-				padding: 31px 29px 36px;
+				padding: 31px 0px 36px;
 				background: url(../img/main_nav_li_bg.png) no-repeat center 68px;
 				transition: 0.5s all;
+				width: 180px;
+			    text-align: center;
 			}
 		}
 		
@@ -136,7 +138,7 @@ header{
 	height: 795px;
 	background: $whychamps-bgcolor;
 	color: #3b3116;
-	//padding: 50px 0 0;
+	/*padding: 50px 0 0;*/
 	position: relative;
 	
 	h1 {
@@ -147,6 +149,7 @@ header{
 		text-align: center;
 		width: 900px;
 		/*margin: 38px auto 70px;*/
+		transition: 0.5s all;
 		
 		&.abs_pos {
 			top: 245px;
@@ -158,13 +161,69 @@ header{
 .whychamps-accordian {
 	overflow: hidden;
 	padding:0 0 0 330px;
-	background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;
+	/*background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;*/
 	overflow:hidden;
 	&.abs_pos {
 		top: 385px;
 		margin: 0 0 0 -180px;
 	}
 }
+.shake {
+	animation: spaceboots 5s infinite linear;
+    transform-origin:50% 50%;
+	&.abs_pos {
+		top: 60px;
+		margin: 0 0 0 -470px;
+	}
+}
+/*Shake*/
+@-webkit-keyframes spaceboots {
+	0% { 
+		-webkit-transform: translate(2px, 1px) rotate(0deg); 
+		transform: translate(2px, 1px) rotate(0deg); 
+	}
+	10% {
+		 -webkit-transform: translate(-1px, -2px) rotate(-1deg); 
+		 transform: translate(-1px, -2px) rotate(-1deg); 
+	}
+	20% { 
+		-webkit-transform: translate(-3px, 0px) rotate(1deg);
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% { 
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+		transform: translate(0px, 2px) rotate(0deg);
+	}
+	40% {
+		 -webkit-transform: translate(1px, -1px) rotate(1deg);
+		 transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		 -webkit-transform: translate(-1px, 2px) rotate(-1deg); 
+		 transform: translate(-1px, 2px) rotate(-1deg); 
+	}
+	60% {
+		 -webkit-transform: translate(-3px, 1px) rotate(0deg); 
+		 transform: translate(-3px, 1px) rotate(0deg); 
+	}
+	70% {
+		 -webkit-transform: translate(2px, 1px) rotate(-1deg); 
+		 transform: translate(2px, 1px) rotate(-1deg);
+	}
+	80% {
+		 -webkit-transform: translate(-1px, -1px) rotate(1deg); 
+		 transform: translate(-1px, -1px) rotate(1deg); 
+	}
+	90% { 
+		-webkit-transform: translate(2px, 2px) rotate(0deg); 
+		transform: translate(2px, 2px) rotate(0deg);
+	}
+	100% {
+		 -webkit-transform: translate(2px, 1px) rotate(-1deg); 
+		 transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+/**/
 .panelContent {
 	padding: 35px;
 	/*height:340px;
@@ -268,13 +327,22 @@ header{
 	
 	.pro-preschool {
 		overflow: hidden;
-		width: 306px;
+		width: 365px;
 		float: right;
 		margin:0 0 0 35px;
 		&.abs_pos {
 			top: 245px;
 			margin: 0 0 0 -140px;
-		
+			
+			figure {
+				height: 234px;
+				margin: 0 0 0 70px;
+				img {
+					display: block;
+					text-align: center;
+					padding: 30px 0 0;
+				}
+			}		
 			h1{
 				text-align: center;
 				text-transform: capitalize;
@@ -287,6 +355,7 @@ header{
 				text-align: center;
 				color: #7e7e7e;
 				font-size: 14px;
+				padding: 0 35px;
 				a {
 					display: table;
 					vertical-align: middle;
@@ -309,7 +378,12 @@ header{
 		@extend.pro-preschool;
 		&.abs_pos {
 			top: 245px;
-			margin: 0 0 0 177px;
+			margin: 0 0 0 200px;
+			figure {
+				img {
+					padding: 0px 0 0;
+				}
+			}		
 		}
 	}
 	.pro-tution {
@@ -317,6 +391,11 @@ header{
 		&.abs_pos {
 			top: 245px;
 			margin: 0 0 0 525px;
+			figure {
+				img {
+					padding: 0px 0 0;
+				}
+			}	
 		}
 	}
 }
@@ -365,7 +444,8 @@ header{
 			
 			p {
 				text-align: center;
-				margin: 0px 0 13px;
+				margin: 0px 0 22px;
+				line-height: 22px;
 			}
 			a {
 				text-transform: capitalize;
@@ -430,6 +510,30 @@ header{
 			}
 		}
 	}
+	.karate-btm {		
+		&.abs_pos {
+			bottom: 135px;
+			margin: 0 0 0 -310px;
+		}
+	}
+	.kungfu-btm {		
+		@extend.karate-btm;
+		&.abs_pos {
+			margin: 0 0 0 -45px;
+		}
+	}
+	.chess-btm {		
+		@extend.karate-btm;
+		&.abs_pos {
+			margin: 0 0 0 200px;
+		}
+	}
+	.dance-btm {		
+		@extend.karate-btm;
+		&.abs_pos {
+			margin: 0 0 0 455px;
+		}
+	}
 }
 /*Testimonials*/
 .testimonials {
@@ -481,7 +585,8 @@ header{
 	@extend.acadamic-program;
 	background: #fff;
 	color: #454545;
-	padding: 50px 0 0;
+	/*padding: 50px 0 0;*/
+	height: 360px;
 	
 	h1{
 		margin: 0 0 50px;
@@ -489,8 +594,11 @@ header{
 	.address {
 		overflow: hidden;
 		float: left;
-		margin: 0 0 0 300px;
-		
+		/*margin: 0 0 0 300px;*/
+		&.abs_pos {
+			bottom: 0;
+			margin: 0 0 0 -240px;
+		}
 		ul {
 			background: url(../img/ico_locate.png) no-repeat 0px 5px;
 			padding: 0 0 0 40px;
@@ -508,7 +616,11 @@ header{
 	.ico-social {
 		overflow: hidden;
 		float: right;
-		margin: 0 275px 0 0;
+		/*margin: 0 275px 0 0;*/
+		&.abs_pos {
+			bottom: 0;
+			margin: 0 0 0 240px;
+		}
 		
 		p {
 			background: url(../img/ico_call.png) no-repeat 0px 7px;
