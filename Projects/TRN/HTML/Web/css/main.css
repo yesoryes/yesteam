@@ -66,7 +66,7 @@ nav ul li a b {
 	font-size: 9px;
 	font-family: 'OpenSansRegular';
 	display: block;
-	margin: -0px 0 0;
+	margin: -2px 0 0;
 	text-transform: uppercase;
 }
 .trn_home, .my_shots, .who_am, .my_studio, .my_clients, .reach_us {
@@ -168,7 +168,7 @@ nav ul li a b {
 .home, .Shot, .whoam, .studio, .myclients, .reachUs {
 	position: relative;
 }
-.home_about, .img_light_l, .img_light_r, .img_photos, .hover_myShots, .img_phone, .hover_reachus, .img_instrument, .img_stool, .hover_myclients, .img_stand, .hover_whoam, .img_clock, .img_door, .img_bgDoor, .img_doorInner, .img_fashion, .img_interiors, .img_adv, .img_life_style, .img_industry, .img_jewellery, .img_food, .img_hotel, .img_automobile, .img_corporate, .light, .shots_gallery, .gallery_rays1, .gallery_rays2, .btn_back, .img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_flicker, .img_black_sofa, .img_mac, .img_frame_1, .img_frame_2, .my_studio_para, .whoam_rays, .img_myblog, .img_standlight, .img_sofa, .img_chair, .about_para, .img_leftclients, .img_rightclients, .client_list, .tv, .myclients_left_rays, .myclients_right_rays, .img_centertoplight, .img_rightlight, .img_leftlight, .img_reachtable, .reachUs_para, .reachUs_content, .reach_rays, .mystudio_rays, .tooltip, .projector, .btn_ourStudio {
+.home_about, .img_light_l, .img_light_r, .img_photos, .hover_myShots, .img_phone, .hover_reachus, .img_instrument, .img_stool, .hover_myclients, .img_stand, .hover_whoam, .img_clock, .img_door, .img_bgDoor, .img_doorInner, .img_fashion, .img_interiors, .img_adv, .img_life_style, .img_industry, .img_jewellery, .img_food, .img_hotel, .img_automobile, .img_corporate, .light, .shots_gallery, .gallery_rays1, .gallery_rays2, .btn_back, .img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_flicker, .img_black_sofa, .img_mac, .img_frame_1, .img_frame_2, .my_studio_para, .whoam_rays, .img_myblog, .img_standlight, .img_sofa, .img_chair, .about_para, .img_leftclients, .img_rightclients, .client_list, .tv, .myclients_left_rays, .myclients_right_rays, .img_centertoplight, .img_rightlight, .img_leftlight, .img_reachtable, .reachUs_para, .reachUs_content, .reach_rays, .mystudio_rays, .tooltip, .projector, .btn_view {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -375,15 +375,18 @@ nav ul li a b {
 	margin: 0px 0 0 550px;
 	padding: 50px 0 0;
 	cursor: pointer;
+	z-index:2;
 }
 .img_doorInner {
 	top: 333px;
 	margin: 0px 0 0 550px;
 	cursor: pointer;
+	z-index: 2;
 }
 .img_bgDoor {
-	top: 275px;
+	top: 273px;
 	margin: 0px 0 0 555px;
+	z-index: 2;
 }
 /*My Shots*/
 .shots_page {
@@ -589,6 +592,7 @@ nav ul li a b {
 	color: #fff;
 	text-align: center;
 	margin: 0 0 25px; 
+	padding: 4px 0;
 }
 .shots_gallery ul {
 	overflow: hidden;
@@ -1218,22 +1222,14 @@ transform: rotate(2deg) translate(-1px, 2px);
 .enquiry p {
 	padding: 15px 0 0 0;
 }
-.btn_enquiry, .btn_ourStudio {
+.btn_enquiry {
 	overflow: hidden;
 	height: 56px;
 	float: left;
 	margin: 15px 0 0 0;
 }
-.btn_ourStudio {
-	top: 75%;
-	height: 40px;
-	margin: 0 0 0 -75px;
-}
-.btn_ourStudio ul li {
-	overflow: hidden;
-	float: left;
-	margin: 0 15px;
-}
+
+
 .btn_enquiry a {
 	overflow: hidden;
 	width: 156px;
@@ -1251,34 +1247,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 	-o-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
 	box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
 }
-.btn_ourStudio ul li a {
-	overflow: hidden;
-	padding: 0 7px;
-	height: 40px;
-	background: url(../img/btn_bg_view.jpg) repeat-x;
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-	color: #7980a2;
-	font-size: 16px;
-	font-family: 'RockwellStdLight';
-	-webkit-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
-	-moz-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
-	-ms-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
-	-o-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
-	box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
-}
-.btn_ourStudio ul li a:hover {
-	color: #454545;
-	background: url(../img/btn_bg_viewHover.jpg) repeat-x;
-}
-.btn_ourStudio a span {
-	font-family: 'rockwellstd';	
-}
-.btn_enquiry a span, .btn_ourStudio a span {
-	font-weight: 900;
-}
-.btn_enquiry a:active, .btn_ourStudio a:active {
+.btn_enquiry a:active, /*.btn_ourStudio a:active*/ {
 	-webkit-box-shadow: 0px 9px 0px rgba(138,203,209,00), 0px 9px 25px rgba(0,0,0,.1);
 	-moz-box-shadow: 0px 9px 0px rgba(138,203,209,0), 0px 9px 25px rgba(0,0,0,.1);
 	-ms-box-shadow: 0px 9px 0px rgba(138,203,209,0), 0px 9px 25px rgba(0,0,0,.1);
@@ -1883,4 +1852,45 @@ transform: rotate(2deg) translate(-1px, 2px);
 	font-family: 'OpenSansRegular';
 	text-align: center;
 	margin: -15px 0 0;
+}
+
+.btn_view {
+	top: 75%;
+	margin: 0 0 0 -155px;
+}
+.view_studio, .view_college {
+	position: relative;
+	float: left;
+	margin: 0px 20px 0px;
+	width: 80px;
+	height: 108px;
+	background: url(../img/hoverEffect.png) no-repeat top;
+}
+.view_studio a, .view_college a {
+	display: block;
+	width: 82px;
+	height: 83px;
+}
+.view_college {
+	background: url(../img/hoverEffecCollege.png) no-repeat top;
+}
+.view_normal, .view_normal1 {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	width: 82px;
+	height: 83px;
+	overflow: hidden
+}
+.view_cam, .view_cam1 {
+	position: absolute;
+	width: 42px;
+	height: 33px;
+	top: 50px;
+	left: 50px;
+	transform: translate(-50%, -50%);
+}
+
+.rotate_trans {
+	transform: rotate(50deg) scale(1);
 }
