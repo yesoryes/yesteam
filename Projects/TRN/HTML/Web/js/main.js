@@ -369,6 +369,7 @@ $(document).ready(function() {
 		setTimeout("$('.whoam_rays img').addClass('animated fadeIn').show()",1700);
 		setTimeout("$('.about_img img').addClass('animated zoomIn').show()",200);
 		setTimeout("$('.img_myblog img').addClass('animated zoomIn').show()",400);
+		setTimeout("$('.img_myblog img').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', $('.img_myblog img').removeClass('animated zoomIn'));",1500);
 		setTimeout("$('.img_chair img').addClass('animated slideInUp').show()",600);
 		setTimeout("$('.img_sofa img').addClass('animated slideInUp').show()",800);
 		setTimeout("$('.img_standlight img').addClass('animated fadeIn').show()",1500);
