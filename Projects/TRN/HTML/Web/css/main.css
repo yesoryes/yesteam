@@ -306,6 +306,7 @@ nav ul li a b {
 	top: 150px;
 	margin: 0 0 0 -675px;
 	cursor: pointer;
+	transition: 0.5s all;
 }
 .hover_myShots {
 	top: 160px;
@@ -1224,16 +1225,14 @@ transform: rotate(2deg) translate(-1px, 2px);
 }
 .btn_enquiry {
 	overflow: hidden;
-	height: 56px;
+	
 	float: left;
 	margin: 15px 0 0 0;
+	cursor: pointer;
 }
-
-
-.btn_enquiry a {
+.btn_enquiry {
 	overflow: hidden;
-	width: 156px;
-	height: 56px;
+	padding: 18px 25px;
 	background: url(../img/contact_bg.jpg) repeat-x;
 	display: table-cell;
 	text-align: center;
@@ -1247,7 +1246,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 	-o-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
 	box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
 }
-.btn_enquiry a:active, /*.btn_ourStudio a:active*/ {
+.btn_enquiry:active {
 	-webkit-box-shadow: 0px 9px 0px rgba(138,203,209,00), 0px 9px 25px rgba(0,0,0,.1);
 	-moz-box-shadow: 0px 9px 0px rgba(138,203,209,0), 0px 9px 25px rgba(0,0,0,.1);
 	-ms-box-shadow: 0px 9px 0px rgba(138,203,209,0), 0px 9px 25px rgba(0,0,0,.1);
@@ -1265,8 +1264,8 @@ transform: rotate(2deg) translate(-1px, 2px);
 	height: 100%;
 	background-color: black;
 	z-index: 1001;
-	-moz-opacity: 0.8;
-	opacity: 0.8;
+	-moz-opacity: 0;
+	opacity: 0;
 	filter: alpha(opacity=80);
 }
 .white_content {
@@ -1336,8 +1335,9 @@ transform: rotate(2deg) translate(-1px, 2px);
 	cursor: pointer;
 	padding: 0px 24px;
 	height: 30px;
+	cursor: pointer;
 }
-.btn_contact:hover {
+.btn_contact a:hover {
 	background: url(../img/bg_btn_send.png) repeat-x bottom left;;
 }
 .btn_contact a {
@@ -1372,6 +1372,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 	height: 30px;
 	border-radius: 30px;
 	position: absolute;
+	cursor: pointer;
 }
 /*End reach us*/
 
@@ -1675,11 +1676,11 @@ transform: rotate(2deg) translate(-1px, 2px);
 	-ms-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
-	transition: .5s transform;
-	-webkit-transition: .5s transform;
-	-moz-transition: .5s transform;
-	-ms-transition: .5s transform;
-	-o-transition: .5s transform;
+	transition: .5s all;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
 }
 .img_photos_addclass2 {
 	transform: scale(1);
@@ -1775,22 +1776,6 @@ transform: rotate(2deg) translate(-1px, 2px);
 	-moz-transform-origin: left;
 	cursor: pointer; 
 }
-/*
-
-.img-zoom {
-    width: 310px;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-}
- 
-.transition {
-    -webkit-transform: scale(2); 
-    -moz-transform: scale(2);
-    -o-transform: scale(2);
-    transform: scale(2);
-}*/
 
 /*clock*/
 
@@ -1854,9 +1839,11 @@ transform: rotate(2deg) translate(-1px, 2px);
 	margin: -15px 0 0;
 }
 
+
+/*Studio Buttons*/
 .btn_view {
-	top: 75%;
-	margin: 0 0 0 -155px;
+	bottom:80px;
+	margin: 0 0 0 -100px;
 }
 .view_studio, .view_college {
 	position: relative;
@@ -1880,17 +1867,28 @@ transform: rotate(2deg) translate(-1px, 2px);
 	left: -1px;
 	width: 82px;
 	height: 83px;
-	overflow: hidden
+	overflow: hidden;
+	background: url(../img/img_mask.png) no-repeat top;
+}
+.view_normal_mask {
+	position: absolute;
+	width: 82px;
+	height: 83px;	
+	background: url(../img/img_mask.png) no-repeat top;
+	z-index:1;
 }
 .view_cam, .view_cam1 {
 	position: absolute;
-	width: 42px;
-	height: 33px;
-	top: 50px;
-	left: 50px;
-	transform: translate(-50%, -50%);
+	transition: 0.4s all;
 }
-
 .rotate_trans {
 	transform: rotate(50deg) scale(1);
 }
+.view_normal img, .view_normal1 img {
+	display: block;
+	width: 82px;
+	height: 83px;
+	transform: scale(4);
+	transition: 0.5s all;
+}
+/*End Studio Buttons*/
