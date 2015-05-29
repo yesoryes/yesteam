@@ -3,17 +3,41 @@
 
 $(document).ready(function() {
 	
-	/* For Browser Height*/
-	$('.bro-height').css({
-		'height' : $( window ).height() 
+	
+/* For Browser Height*/
+	function resizeSlide() {
+		var fullHeight = $(window).height();
+		if($(window).width()<1300) {
+			$("#wrapper, header").css({
+				"width": ($(window).width()+(1380-$(window).width()))+"px",
+				"transform": "scale("+($(window).width()/1400)+")",
+				"transform-origin": "0px 0px",
+			});
+			var sResp = document.getElementsByClassName("wrapperC")[0].getBoundingClientRect();
+			fullHeight = $(window).height()/(($(window).width()/1400));
+			$("#wrapper").css({
+				"height": sResp.height,
+			});
+		} else {
+			$("#wrapper, header").css({
+				"width": "100%",
+				"height": "auto",
+				"transform": "scale(1)",
+				"transform-origin": "0px 0px",
+			});
+		};
+		$(".home, .home_cont, .home_top, .home_bottom, .home_banner, .shot, .shot_banner, .shot_cont, .shot_top, .shot_bottom, .shot_gallery_banner, .shot_gallery_cont, .shot_gallery_top, .shot_gallery_bottom, .whoam_banner, .whoam_content, .whoam_top, .whoam_bottom, .whoam, .studio, .studio_banner, .studio_cont, .studio_top, .studio_bottom, .client_content, .client_top, .client_bottom, .myclients, .reachUs_banner, .reach_cont, .reach_top, .reach_bottom, .reachUs, .bro-height").css({
+				'height' : fullHeight
+		});
+	};
+	resizeSlide();
+	$( window ).resize(function() {
+		resizeSlide();
 	});
-	$(".home, .home_cont, .home_top, .home_bottom, .home_banner, .shot, .shot_banner, .shot_cont, .shot_top, .shot_bottom, .shot_gallery_banner, .shot_gallery_cont, .shot_gallery_top, .shot_gallery_bottom, .whoam_banner, .whoam_content, .whoam_top, .whoam_bottom, .whoam, .studio, .studio_banner, .studio_cont, .studio_top, .studio_bottom, .client_content, .client_top, .client_bottom, .myclients, .reachUs_banner, .reach_cont, .reach_top, .reach_bottom, .reachUs").css({
-		'height' : $( window ).height() 
-	});
-	/* End For Browser Height*/
+/* End For Browser Height*/
 	
 	
-/* Main Menu */	
+/* Main Menu Hover*/	
 	var didClick = false;
 	$('nav ul li a').hover(function() {	
 		menuActive(this);
@@ -67,7 +91,7 @@ $(document).ready(function() {
 			next(); 
 		});
 	};
-/*End Main Menu */
+/*End Main Menu Hover */
 	
 /* Menu Click */
 	$('nav ul li a').click(function(){
