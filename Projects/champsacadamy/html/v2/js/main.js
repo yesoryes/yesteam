@@ -1,6 +1,25 @@
 // JavaScript Document
 
 $( document ).ready(function() {
+	
+	/*Menu MOre Button*/
+	var more = function() {  
+		$('.more a').click(function() {	  
+			$('.menu').animate({right: "0px" }, 200);	
+			$('body').animate({right: "0"}, 200); 
+			$('.bg, .main-nav ul').hide();
+			
+		});		  
+		/* Then push them back */	  
+		$('.more-close').click(function() {
+		   $('.menu').animate({right: "-325px"}, 200);
+		   $('body').animate({right: "0px"  }, 200); 
+		   $('.bg, .main-nav ul').show(); 
+		});
+	};
+	$(document).ready(more);
+	/*Menu MOre Button*/
+	
 	//Accordian
 	(function($, d) {	
 		
@@ -37,5 +56,6 @@ $( document ).ready(function() {
 		forceHeight: false,
 		smoothScrolling: true,
 	});
-	//};
-})
+	//};	
+	
+});
