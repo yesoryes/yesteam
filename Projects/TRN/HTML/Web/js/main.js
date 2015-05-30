@@ -27,8 +27,9 @@ $(document).ready(function() {
 				"transform-origin": "0px 0px",
 			});
 		};
-		$(".home, .home_cont, .home_top, .home_bottom, .home_banner, .shot, .shot_banner, .shot_cont, .shot_top, .shot_bottom, .shot_gallery_banner, .shot_gallery_cont, .shot_gallery_top, .shot_gallery_bottom, .whoam_banner, .whoam_content, .whoam_top, .whoam_bottom, .whoam, .studio, .studio_banner, .studio_cont, .studio_top, .studio_bottom, .client_content, .client_top, .client_bottom, .myclients, .reachUs_banner, .reach_cont, .reach_top, .reach_bottom, .reachUs, .bro-height").css({
-				'height' : fullHeight
+		$(".home, .home_cont, .home_top, .home_bottom, .home_banner, .shot, .shot_banner, .shot_cont, .shot_top, .shot_bottom, .shot_gallery_banner, .shot_gallery_cont, .shot_gallery_top, .shot_gallery_bottom, .whoam_banner, .whoam_content, .whoam_top, .whoam_bottom, .whoam, .studio, .studio_banner, .studio_cont, .studio_top, .studio_bottom, .client_content, .client_top, .client_bottom, .myclients, .reachUs_banner, .reach_cont, .reach_top, .reach_bottom, .reachUs, .bro-height")
+		.css({
+				'height' : fullHeight,
 		});
 	};
 	resizeSlide();
