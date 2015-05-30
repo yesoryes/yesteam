@@ -3,6 +3,7 @@
 
 $(document).ready(function() {
 	
+	$("body").queryLoader2();
 	
 /* For Browser Height*/
 	function resizeSlide() {
