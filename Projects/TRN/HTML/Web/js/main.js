@@ -149,7 +149,7 @@ $(document).ready(function() {
 	}, function() {
 		$('.hover_whoam').addClass('hover_whoam_init');
 	});
-	$(".img_stool").mouseenter(function(){
+	/*$(".img_stool").mouseenter(function(){
 		$('.hover_myclients').addClass('hover_myclients_show');
 	})
 	.mouseleave(function(){
@@ -168,7 +168,7 @@ $(document).ready(function() {
 	})
 	.mouseleave(function(){
 		$('.hover_myShots').removeClass('hover_myShots_show');
-	});
+	});*/
 /*End Home Hover*/
 	
 /*Phone*/
@@ -217,7 +217,7 @@ $(document).ready(function() {
 			transformOrigin: 'left', 
 			cursor: 'pointer'});
 	};	
-	$(".img_door, .img_doorInner")
+	$(".img_doorInner, .img_door")
 		.hover(function () {			
 			img_door_animIn();
 		})
@@ -418,18 +418,18 @@ $(document).ready(function() {
 		setTimeout("$('.img_rightclients img').addClass('animated zoomIn').show()",0);
 		setTimeout("$('.myclients_left_rays img').addClass('animated flash').show()",300);
 		setTimeout("$('.myclients_right_rays img').addClass('animated flash').show()",300);
-		setTimeout("$('.img_clientlist img').addClass('animated pulse').show()",300);
+		setTimeout("$('.img_clientlist img').addClass('animated zoomIn').show()",300);
 		$('.slide img').show();
-		setTimeout("$('.clientlist_content').addClass('animated pulse').show()",300);
+		setTimeout("$('.clientlist_content').addClass('animated zoomIn').show()",300);
 	};
 	function clientsOut() {
 		$('.img_leftclients img').removeClass('animated zoomIn').hide();
 		$('.img_rightclients img').removeClass('animated zoomIn').hide();
 		$('.myclients_left_rays img').removeClass('animated flash').hide();
 		$('.myclients_right_rays img').removeClass('animated flash').hide();
-		$('.img_clientlist img').removeClass('animated pulse').hide();
+		$('.img_clientlist img').removeClass('animated zoomIn').hide();
 		$('.slide img').hide();
-		$('.clientlist_content').removeClass('animated pulse').hide();
+		$('.clientlist_content').removeClass('animated zoomIn').hide();
 	};
 	
 // Reach Us

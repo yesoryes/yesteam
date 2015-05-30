@@ -408,10 +408,14 @@ header{
 	
 		a {
 			display: block;
-			background: url(../img/btn_view.png) no-repeat 0px;
+			background: url(../img/btn_view.png) no-repeat left top;
 			text-indent: -9999px;
 			width: 364px;
-			height: 54px;
+			height: 55px;
+			transition: .2s all;
+			&:hover {
+				background: url(../img/btn_view.png) no-repeat left bottom;
+			}
 		}
 	}
 }

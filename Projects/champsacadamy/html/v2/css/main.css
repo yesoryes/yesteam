@@ -127,7 +127,7 @@ header {
 
 .whychamps-accordian {
   overflow: hidden;
-  padding: 0 0 0 330px;
+  /*padding:0 0 0 330px;*/
   /*background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;*/
   overflow: hidden; }
   .whychamps-accordian.abs_pos {
@@ -310,10 +310,13 @@ header {
     margin: 0 0 0 493px; }
     .btn-viewall.abs_pos a {
       display: block;
-      background: url(../img/btn_view.png) no-repeat 0px;
+      background: url(../img/btn_view.png) no-repeat left top;
       text-indent: -9999px;
       width: 364px;
-      height: 54px; }
+      height: 55px;
+      transition: .2s all; }
+      .btn-viewall.abs_pos a:hover {
+        background: url(../img/btn_view.png) no-repeat left bottom; }
 
 /*Activity programs*/
 .activity-programes {
