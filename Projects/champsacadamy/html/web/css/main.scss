@@ -118,6 +118,10 @@ header{
 }
 .banner {
 	overflow: hidden;
+	background: url(../img/UnderConstruction.jpg) no-repeat top center;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
 }
 
 
@@ -160,20 +164,20 @@ header{
 
 .whychamps-accordian {
 	overflow: hidden;
-	padding:0 0 0 330px;
+	/*padding:0 0 0 330px;*/
 	/*background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;*/
 	overflow:hidden;
 	&.abs_pos {
 		top: 385px;
-		margin: 0 0 0 -180px;
+		margin: 0 0 0 -50px;
 	}
 }
 .shake {
 	animation: spaceboots 5s infinite linear;
     transform-origin:50% 50%;
 	&.abs_pos {
-		top: 60px;
-		margin: 0 0 0 -470px;
+		top: 450px;
+		margin: 0 0 0 -680px;
 	}
 }
 /*Shake*/
@@ -666,7 +670,12 @@ header{
 		}
 	}
 }
-
+.footer-banner {
+	overflow: hidden;
+	background: url(../img/banner_footer.jpg) no-repeat center top;
+	width: 100%;
+	height: 513px;
+}
 
 /*Character*/
 .char1 {

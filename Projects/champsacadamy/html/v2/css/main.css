@@ -65,7 +65,7 @@ header {
     font-family: 'Action_Man';
     font-size: 25px;
     margin: 7px 0 0;
-    height: 770px;
+    height: 100vh;
     /*Side Menu*/ }
     .main-nav .more a {
       color: #fff;
@@ -93,9 +93,39 @@ header {
   overflow: hidden;
   margin: 30px 0px 0px; }
 
-.banner {
-  overflow: hidden; }
+/*Home Banner*/
+.home-banner {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; }
+  .home-banner .normal-home {
+    overflow: hidden;
+    background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom;
+    position: relative;
+    height: 100Vh;
+    width: 100%; }
+    .home-banner .normal-home .another-school, .home-banner .normal-home .champs-school {
+      overflow: hidden;
+      width: 50%;
+      /*height: 100Vh;*/
+      left: 0;
+      float: left;
+      position: absolute; }
+      .home-banner .normal-home .another-school .another-school-bg, .home-banner .normal-home .champs-school .another-school-bg, .home-banner .normal-home .another-school .another-school-building, .home-banner .normal-home .champs-school .another-school-building, .home-banner .normal-home .champs-school .champs-school-bg, .home-banner .normal-home .champs-school .champs-school-building {
+        overflow: hidden;
+        width: 100%;
+        /*height: 100vh;
+        /*position: absolute;
+        background: url(../img/banner/bgSecondLayer.png) repeat-x 520px bottom;*/ }
+      .home-banner .normal-home .another-school .another-school-building, .home-banner .normal-home .champs-school .another-school-building {
+        /*background: url(../img/banner/bgfirstlayerLayer.png) no-repeat -310px bottom;*/ }
+    .home-banner .normal-home .champs-school {
+      right: 0;
+      left: inherit; }
+      .home-banner .normal-home .champs-school .champs-school-building {
+        /*background: url(../img/banner/bgfirstlayerLayerChamps.png) no-repeat -870px 0px;*/ }
 
+/*End Home Banner*/
 .left-cloud, .right-cloud {
   position: absolute;
   top: 1150px;
@@ -138,8 +168,8 @@ header {
   animation: spaceboots 5s infinite linear;
   transform-origin: 50% 50%; }
   .shake.abs_pos {
-    top: 60px;
-    margin: 0 0 0 -470px; }
+    top: 450px;
+    margin: 0 0 0 -800px; }
 
 /*Shake*/
 @-webkit-keyframes spaceboots {
@@ -480,6 +510,12 @@ header {
           background-position: -122px 0px; }
           .contact .ico-social ul li a.ico-google:hover, .contact .ico-social .address p li a.ico-google:hover, .contact .address .ico-social p li a.ico-google:hover {
             background-position: -122px bottom; }
+
+.footer-banner {
+  overflow: hidden;
+  background: url(../img/banner_footer.jpg) no-repeat center top;
+  width: 100%;
+  height: 513px; }
 
 /*Character*/
 .char1, .char-skating, .char3, .char-gallery, .char-champion, .char-karate {

@@ -1,8 +1,10 @@
 // JavaScript Document
 
 $( document ).ready(function() {
-	
-	/*Menu MOre Button*/
+
+/*Index Page*/	
+
+/*Menu More Button*/
 	var more = function() {  
 		$('.more a').click(function() {	  
 			$('.menu').animate({right: "0px" }, 200);	
@@ -18,9 +20,9 @@ $( document ).ready(function() {
 		});
 	};
 	$(document).ready(more);
-	/*Menu MOre Button*/
+/*Menu More Button*/
 	
-	//Accordian
+/*Accordian*/
 	(function($, d) {	
 		
 		$('#horizontal-accordian').liteAccordion({
@@ -38,24 +40,27 @@ $( document ).ready(function() {
 		})//find('figcaption:first').show();                
 		
 	})(jQuery, document);
+/*End Accordian*/
 	
+/*Home Page Hover*/	
 	//View Hover
 	$(".programs p a").hover(function () {
 		$(this).addClass("hvr-sweep-to-right");
-	});  
-	
+	});	
 	//Read More Hover
 	$('.activity div a').hover(function () {
 		$(this).addClass('hvr-sweep-to-left');
 	})
+/*End Home Page Hover*/
 	
 	
-	/*Parallex*/
-	//window.onload = function() {
+/*Parallex*/
 	skrollr.init({
 		forceHeight: false,
 		smoothScrolling: true,
 	});
-	//};	
+/*End Parallex*/
+
+/*End Index Page*/	
 	
-});
+});/*End Document Ready*/

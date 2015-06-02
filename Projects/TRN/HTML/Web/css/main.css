@@ -4,7 +4,7 @@
 body {
 	height: 100%;
 	font-size: 13px;
-	line-height: 19px;
+	/*line-height: 19px;*/
 	font-family: 'OpenSansRegular';
 }
 #wrapper {
@@ -602,6 +602,13 @@ nav ul li a b {
 	overflow: hidden;
 	float: left;
 	margin: 6px 5px 0;
+	width: 186px;
+	height: 116px;
+	transition: 0.2s all;
+}
+
+.shots_gallery ul li img:hover {
+	transform: scale(1.1) 
 }
 /*End Shots*/
 
