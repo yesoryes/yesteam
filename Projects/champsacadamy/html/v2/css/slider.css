@@ -220,29 +220,31 @@
 .liteAccordion.dark .slide > h2 span { background: #353535; color: white }
 .liteAccordion.dark .slide > h2 b { background: #353535; color: #030303; text-shadow: -1px 1px 0 #5b5b5b }
 .liteAccordion.dark .slide > h2.selected span, .liteAccordion.dark .slide > h2.selected span:hover {
-    background: #353535;
-    background: -moz-linear-gradient(left,  #353535 0%, #555555 100%);
+    background-color:#fff; color: #454545;
+   /* background: -moz-linear-gradient(left,  #353535 0%, #555555 100%);
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,#353535), color-stop(100%,#555555));
     background: -webkit-linear-gradient(left,  #353535 0%,#555555 100%);
     background: -o-linear-gradient(left,  #353535 0%,#555555 100%);
     background: -ms-linear-gradient(left,  #353535 0%,#555555 100%);
     background: linear-gradient(left,  #353535 0%,#555555 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#555555',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#555555',GradientType=1 );*/
 }
 .liteAccordion.dark .slide > h2.selected b {
-    background: #383838;
+	background-color:#fff; color: #454545;
+    /*background: #383838;
     background: -moz-linear-gradient(top,  #3a3a3a 0%, #363636 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a3a3a), color-stop(100%,#363636));
     background: -webkit-linear-gradient(top,  #3a3a3a 0%,#363636 100%);
     background: -o-linear-gradient(top,  #3a3a3a 0%,#363636 100%);
     background: -ms-linear-gradient(top,  #3a3a3a 0%,#363636 100%);
-    background: linear-gradient(top,  #3a3a3a 0%,#363636 100%);
+    background: linear-gradient(top,  #3a3a3a 0%,#363636 100%);*/
 }
 .liteAccordion.dark .slide > div { background: #030303; margin-left: 5px }
 
 /***************************************** Light */
 .liteAccordion.light {
-    border: 9px solid white;
+	background-color:#fff; color: #454545;
+   /*border: 9px solid white;
     border-bottom-width: 8px;
     padding: 5px 5px 6px 0;
     background: #a0a0a0;
@@ -250,11 +252,12 @@
     -moz-box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);
     -ms-box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);
     -o-box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);
-    box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);*/
 }
 .liteAccordion.light .slide > h2 { background: #a0a0a0; text-shadow: 0 -1px 0 white; line-height: 265% }
 .liteAccordion.light .slide > h2 span {
-    background: #fcfcfc;
+	background-color:#fff; color: #454545;
+   /* background: #fcfcfc;
     background: -moz-linear-gradient(left,  #fcfcfc 0%, #ededed 100%);
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fcfcfc), color-stop(100%,#ededed));
     background: -webkit-linear-gradient(left,  #fcfcfc 0%,#ededed 100%);
@@ -266,10 +269,10 @@
     -moz-box-shadow: -1px -1px 0 #909090 inset, 1px 1px 0 #909090 inset;
     -o-box-shadow: -1px -1px 0 #909090 inset, 1px 1px 0 #909090 inset;
     box-shadow: -1px -1px 0 #909090 inset, 1px 1px 0 #909090 inset;
-    color: #909090;
+    color: #909090;*/
 }
 .liteAccordion.light .slide > h2 b { background: #ffffff; color: #909090; text-shadow: -1px 1px 0 white }
-.liteAccordion.light .slide > h2.selected span, .liteAccordion.light .slide h2.selected span:hover, .liteAccordion.light .slide > h2.selected b { background: #ffffff }
+.liteAccordion.light .slide > h2.selected span, .liteAccordion.light .slide h2.selected span:hover, .liteAccordion.light .slide > h2.selected b { background-color:#fff; color: #454545; }
 .liteAccordion.light .slide > div { background: #a0a0a0; margin-left: 5px }
 
 /**************************************** Stitch */
@@ -280,6 +283,10 @@
 	display: block;
 }
 .liteAccordion.stitch .slide > h2 { background: #fbc93d }
+.liteAccordion.stitch .slide > h2:hover {
+	background: #fff;
+	color: #454545;
+}
 .liteAccordion.stitch .slide > h2 span {
     height: auto;
     padding-right: 5%;
@@ -290,10 +297,15 @@
 }
 
 .liteAccordion.stitch .slide:nth-child(1) > h2 span, .liteAccordion.stitch .slide:nth-child(1) > h2:after { background: url(../img/index_why_acc1.png) 0px }
+.liteAccordion.stitch .slide:nth-child(1) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(1) > h2:after:hover { background: #fff; color: #454545; }
 .liteAccordion.stitch .slide:nth-child(2) > h2 span, .liteAccordion.stitch .slide:nth-child(2) > h2:after { background: url(../img/index_why_acc2.png) 0px }
+.liteAccordion.stitch .slide:nth-child(2) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(2) > h2:after:hover { background: #fff; color: #454545; }
 .liteAccordion.stitch .slide:nth-child(3) > h2 span, .liteAccordion.stitch .slide:nth-child(3) > h2:after { background: url(../img/index_why_acc3.png) 0px; }
+.liteAccordion.stitch .slide:nth-child(3) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(3) > h2:after:hover { background: #fff; color: #454545; }
 .liteAccordion.stitch .slide:nth-child(4) > h2 span, .liteAccordion.stitch .slide:nth-child(4) > h2:after { background: url(../img/index_why_acc4.png) 0px }
+.liteAccordion.stitch .slide:nth-child(4) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(4) > h2:after:hover { background: #fff; color: #454545; }
 .liteAccordion.stitch .slide:nth-child(5) > h2 span, .liteAccordion.stitch .slide:nth-child(5) > h2:after { background: url(../img/index_why_acc5.png) 0px }
+.liteAccordion.stitch .slide:nth-child(5) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(5) > h2:after:hover { background: #fff; color: #454545; }
 .liteAccordion.stitch .slide > h2 b { top: 19%; opacity:0; color: white; text-shadow: 1px 1px 0 #5b5b5b }
 .liteAccordion.stitch .slide > div { margin-right: 6px }
 .liteAccordion.stitch.rounded > ol { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0 }
@@ -306,17 +318,17 @@
 /* stitch */
 .liteAccordion.ie.stitch .slide > h2 { /*line-height: 265%*/ }
 .liteAccordion.ie.stitch .slide > h2 span { /*height: 89%; padding-right: 8%*/ }
-.liteAccordion.ie.stitch .slide > h2.selected:after { display: none }
-.liteAccordion.ie.stitch .slide-0 > h2 span { background-color: #c25252 }
-.liteAccordion.ie.stitch .slide-1 > h2 span { background-color: #ca9859 }
-.liteAccordion.ie.stitch .slide-2 > h2 span { background-color: #96ba5f }
-.liteAccordion.ie.stitch .slide-3 > h2 span { background-color: #59abb7 }
-.liteAccordion.ie.stitch .slide-4 > h2 span { background-color: #bb6098 }
-.liteAccordion.ie.stitch .slide-5 > h2 span { background-color: #c25252 }
-.liteAccordion.ie.stitch .slide-6 > h2 span { background-color: #ca9859 }
-.liteAccordion.ie.stitch .slide-7 > h2 span { background-color: #96ba5f }
-.liteAccordion.ie.stitch .slide-8 > h2 span { background-color: #59abb7 }
-.liteAccordion.ie.stitch .slide-9 > h2 span { background-color: #bb6098 }
+.liteAccordion.ie.stitch .slide > h2.selected:after { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide-0 > h2 span { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide-1 > h2 span { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide-2 > h2 span { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide-3 > h2 span { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide-4 > h2 span { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide-5 > h2 span { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide-6 > h2 span { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide-7 > h2 span { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide-8 > h2 span { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide-9 > h2 span { background-color:#fff; color: #454545; }
 
 /* transforms */
 .liteAccordion.ie .slide > h2,
@@ -336,7 +348,7 @@
 
 .slide .selected span {
 	background: #fff;
-	color: #000;
+	color: #454545;
 }
 
 /*Hover Effects*/
@@ -457,13 +469,8 @@
 }
 
 .menu ul li {
-  border-bottom: 1px solid #e53f3e;
+  /*border-bottom: 1px solid #e53f3e;*/
   font-family: 'Action_Man';
- /* font-family: 'Open Sans', sans-serif;
-  line-height: 45px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  padding-top: 3px;*/
   text-align: right;
 }
 
@@ -475,11 +482,16 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+.menu ul li a:hover {
+	background: #ac2f2e;
+	color: #fff
+}
 .more-close {
 	margin: 40px 0 15px 50px;
 }
 .menu-active {
 	background: #ac2f2e;
+	color: #fff;
 }
 .menu ul.abt-menu {
 	margin: 100px 0 0;
@@ -490,6 +502,9 @@
 	color: #e1e1e1;
 	font-size: 20px;
 	padding: 15px 50px 15px 0;
+}
+.menu ul.abt-menu li a:hover {
+	color: #454545;
 }
 .menu ul.submenu-social {
 	overflow: hidden;
@@ -506,15 +521,25 @@
 	height: 60px;
 	padding: 0;
 	float: left;
+	transition: all 0.5s ease;
 }
 a.sub-fb {
 	background: url(../img/submenu_social_ico.png) no-repeat left top;
 }
+a.sub-fb:hover {
+	background: url(../img/submenu_social_ico.png) no-repeat left bottom;
+}
 a.sub-tweet {
 	background: url(../img/submenu_social_ico.png) no-repeat -61px top;
 }
+a.sub-tweet:hover {
+	background: url(../img/submenu_social_ico.png) no-repeat -61px bottom;
+}
 a.sub-google {
 	background: url(../img/submenu_social_ico.png) no-repeat -122px top;
+}
+a.sub-google:hover {
+	background: url(../img/submenu_social_ico.png) no-repeat -122px bottom;
 }
 .menu p {
 	font-size: 12px;

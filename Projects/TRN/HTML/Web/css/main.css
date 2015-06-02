@@ -604,6 +604,8 @@ nav ul li a b {
 	margin: 6px 5px 0;
 	width: 186px;
 	height: 116px;
+}
+.shots_gallery ul li img {
 	transition: 0.2s all;
 }
 

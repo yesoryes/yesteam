@@ -4,7 +4,12 @@
 .abs_pos {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 1; }
 
 body {
   font-size: 16px;
@@ -23,8 +28,6 @@ body {
 
 header {
   overflow: hidden;
-  /*background: url(../img/header_bg.png) no-repeat center 0px;
-  padding: 0 5px;*/
   position: absolute;
   width: 100%;
   z-index: 100; }
@@ -65,7 +68,7 @@ header {
     font-family: 'Action_Man';
     font-size: 25px;
     margin: 7px 0 0;
-    height: 770px;
+    height: 100vh;
     /*Side Menu*/ }
     .main-nav .more a {
       color: #fff;
@@ -73,7 +76,10 @@ header {
       display: block;
       padding: 22px 0;
       width: 120px;
-      text-align: center; }
+      text-align: center;
+      transition: .2s all; }
+      .main-nav .more a:hover {
+        color: #454545; }
 
 .menu-whychamps:hover, .menu-fungames:hover, .menu-programmes:hover, .menu-contact:hover {
   font-size: 20px;
@@ -93,13 +99,64 @@ header {
   overflow: hidden;
   margin: 30px 0px 0px; }
 
-.banner {
-  overflow: hidden;
-  background: url(../img/UnderConstruction.jpg) no-repeat top center;
+/*Home Banner*/
+/*.home-banner {
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+		
+	.normal-home {
+		overflow: hidden;	
+		background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
+		position: relative;
+		height: 100Vh;
+		width: 100%;
+		
+		.another-school {
+			overflow: hidden;
+			width: 50%;
+			left: 0;
+			bottom: 182px;
+			float: left;
+			position: absolute;
+			
+			.another-school-bg {
+				overflow: hidden;
+				width: 100%;
+				position: absolute;
+				left:0;
+				bottom: -8px;;
+			}
+			.another-school-building {
+				@extend.another-school-bg;
+			}
+		}
+		.champs-school {
+			@extend.another-school;
+			right: 0;
+			left: inherit;
+			
+			.champs-school-bg {
+				@extend.another-school-bg;
+			}
+			.champs-school-building {
+				@extend.champs-school-bg;
+			}
+		}
+	}
+	.banner-seps {
+		overflow: hidden;
+		width: 3px;
+		top: 0;
+		border-right: 3px solid rgba(0,0,0,0.1);
+	}
+}*/
+.home-banner {
+  background: url(../img/banner/UnderConstruction.jpg) no-repeat center 0px;
   width: 100%;
-  height: 100vh;
-  background-size: cover; }
+  height: 393px; }
 
+/*End Home Banner*/
 .left-cloud, .right-cloud {
   position: absolute;
   top: 1150px;
@@ -120,7 +177,12 @@ header {
   position: relative; }
   .why-champs h1 {
     text-align: center;
-    top: 50px; }
+    top: 50px;
+    -webkit-transform-origin: 0 0px;
+    -ms-transform-origin: 0 0px;
+    -moz-transform-origin: 0 0px;
+    -o-transform-origin: 0 0px;
+    transform-origin: 0 0px; }
   .why-champs p {
     text-align: center;
     width: 900px;
@@ -136,14 +198,16 @@ header {
   overflow: hidden; }
   .whychamps-accordian.abs_pos {
     top: 385px;
-    margin: 0 0 0 -50px; }
+    margin: 0 0 0 -50px;
+    z-index: 3; }
 
 .shake {
   animation: spaceboots 5s infinite linear;
   transform-origin: 50% 50%; }
   .shake.abs_pos {
     top: 450px;
-    margin: 0 0 0 -680px; }
+    margin: 0 0 0 -680px;
+    z-index: 2; }
 
 /*Shake*/
 @-webkit-keyframes spaceboots {
@@ -236,15 +300,23 @@ header {
   background: url(../img/index_why_video.png) no-repeat 0px 0px; }
   .video.abs_pos {
     bottom: 0;
-    margin: 0px 0px 0px 500px; }
+    margin: 0px 0px 0px 490px; }
 
 /*acadamic-program*/
 .acadamic-program, .activity-programes, .testimonials, .gallery, .contact {
   background: #8dc8f4;
+  /*padding: 40px 0 0;*/
   position: relative;
-  height: 870px; }
+  height: 870px;
+  width: 100%;
+  overflow: hidden; }
   .acadamic-program h1, .activity-programes h1, .testimonials h1, .gallery h1, .contact h1 {
-    text-align: center; }
+    text-align: center;
+    -webkit-transform-origin: 0 0px;
+    -ms-transform-origin: 0 0px;
+    -moz-transform-origin: 0 0px;
+    -o-transform-origin: 0 0px;
+    transform-origin: 0 0px; }
     .acadamic-program h1.abs_pos, .activity-programes h1.abs_pos, .testimonials h1.abs_pos, .gallery h1.abs_pos, .contact h1.abs_pos {
       top: 50px; }
 
@@ -264,7 +336,7 @@ header {
     margin: 0 0 0 35px; }
     .programs .pro-preschool.abs_pos, .programs .abs_pos.pro-afterschool, .programs .abs_pos.pro-tution {
       top: 245px;
-      margin: 0 0 0 -140px; }
+      margin: 0 0 0 -150px; }
       .programs .pro-preschool.abs_pos figure, .programs .abs_pos.pro-afterschool figure, .programs .abs_pos.pro-tution figure {
         height: 234px;
         margin: 0 0 0 70px; }
@@ -297,12 +369,12 @@ header {
             color: #fff; }
   .programs .pro-afterschool.abs_pos {
     top: 245px;
-    margin: 0 0 0 200px; }
+    margin: 0 0 0 190px; }
     .programs .pro-afterschool.abs_pos figure img {
       padding: 0px 0 0; }
   .programs .pro-tution.abs_pos {
     top: 245px;
-    margin: 0 0 0 525px; }
+    margin: 0 0 0 515px; }
     .programs .pro-tution.abs_pos figure img {
       padding: 0px 0 0; }
 
@@ -311,13 +383,16 @@ header {
   float: right; }
   .btn-viewall.abs_pos {
     bottom: 47px;
-    margin: 0 0 0 493px; }
+    margin: 0 0 0 490px; }
     .btn-viewall.abs_pos a {
       display: block;
-      background: url(../img/btn_view.png) no-repeat 0px;
+      background: url(../img/btn_view.png) no-repeat left top;
       text-indent: -9999px;
       width: 364px;
-      height: 54px; }
+      height: 55px;
+      transition: .2s all; }
+      .btn-viewall.abs_pos a:hover {
+        background: url(../img/btn_view.png) no-repeat left bottom; }
 
 /*Activity programs*/
 .activity-programes {
@@ -468,11 +543,12 @@ header {
           height: 60px;
           display: block;
           margin: 0 15px 0 0;
+          transition: all 0.5s ease;
           background: url(../img/ico_social.png) no-repeat 0px 0px; }
         .contact .ico-social ul li a.ico-fb, .contact .ico-social .address p li a.ico-fb, .contact .address .ico-social p li a.ico-fb {
-          background-position: 0px 0px; }
+          background: url(../img/ico_social.png) no-repeat 0px 0px; }
           .contact .ico-social ul li a.ico-fb:hover, .contact .ico-social .address p li a.ico-fb:hover, .contact .address .ico-social p li a.ico-fb:hover {
-            background-position: 0px bottom; }
+            background: url(../img/ico_social.png) no-repeat 0px bottom; }
         .contact .ico-social ul li a.ico-tweet, .contact .ico-social .address p li a.ico-tweet, .contact .address .ico-social p li a.ico-tweet {
           background-position: -61px 0px; }
           .contact .ico-social ul li a.ico-tweet:hover, .contact .ico-social .address p li a.ico-tweet:hover, .contact .address .ico-social p li a.ico-tweet:hover {
@@ -486,7 +562,16 @@ header {
   overflow: hidden;
   background: url(../img/banner_footer.jpg) no-repeat center top;
   width: 100%;
-  height: 513px; }
+  height: 413px; }
+
+/*CopyRight*/
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'RobotoRegular';
+  color: #fff;
+  background: #2b2b2b;
+  padding: 33px 0 21px; }
 
 /*Character*/
 .char1, .char-skating, .char3, .char-gallery, .char-champion, .char-karate {

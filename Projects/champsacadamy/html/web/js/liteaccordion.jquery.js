@@ -31,7 +31,7 @@
             cycleSpeed : 6000,                      // time between slide cycles
             easing : 'swing',                       // custom easing function
 
-            theme : 'basic',                        // basic, dark, light, or stitch
+            theme : 'light',                        // basic, dark, light, or stitch
             rounded : false,                        // square or rounded corners
             enumerateSlides : false,                // put numbers on slides
             linkable : false                        // link slides via hash
@@ -303,7 +303,7 @@
                                 });
 
                             // remove, then add selected class
-                            header.removeClass('selected').filter(this.prev).addClass('selected');
+                            header.addClass('selected').filter(this.prev).addClass('selected');
 
                     }
                 },

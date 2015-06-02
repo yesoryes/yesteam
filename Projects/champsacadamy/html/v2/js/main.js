@@ -1,8 +1,15 @@
 // JavaScript Document
 
 $( document ).ready(function() {
-
 /*Index Page*/	
+
+/* For Browser Height*/
+	var fullHeight = $(window).height();
+	$('.home-banner, .normal-home, .more, .another-school, .champs-school, .banner-seps').css ({
+		height : fullHeight,
+	});
+
+/* End Browser Height*/
 
 /*Menu More Button*/
 	var more = function() {  
