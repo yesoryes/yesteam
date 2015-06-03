@@ -481,18 +481,18 @@ header{
 	overflow: hidden;
 	float: right;
 	&.abs_pos {
-		bottom: 47px;
+		bottom: 25px;
 		margin: 0 0 0 490px;
 	
 		a {
 			display: block;
-			background: url(../img/btn_view.png) no-repeat left top;
+			background: url(../img/btn_view.png) no-repeat top right;
 			text-indent: -9999px;
-			width: 364px;
-			height: 55px;
+			width: 393px;
+			height: 80px;
 			transition: .2s all;
 			&:hover {
-				background: url(../img/btn_view.png) no-repeat left bottom;
+				background: url(../img/btn_view.png) no-repeat left top;
 			}
 		}
 	}
@@ -692,6 +692,9 @@ header{
 			
 			a {
 				color: #454545;
+				&:hover {
+					color: #e53f3e;
+				}
 			}
 		}
 	}
@@ -725,26 +728,29 @@ header{
 					display: block;
 					margin: 0 15px 0 0;
 					transition: all 0.5s ease;
-					background: url(../img/ico_social.png) no-repeat 0px 0px;
+					/*background: url(../img/ico_social.png) no-repeat 0px 0px;*/
 				}
 				a.ico-fb {
-					background: url(../img/ico_social.png) no-repeat 0px 0px;					
+					/*background: url(../img/ico_fb.png) no-repeat 0px 0px;
+					backface-visibility: hidden;
+					transform: rotateY(360deg);					
 					&:hover {
-						background: url(../img/ico_social.png) no-repeat 0px bottom;
-						//transform: rotateY(-360deg)
-					}
+						background: url(../img/hover_ico_fb.png) no-repeat 0px 0px;
+						transform: rotateY(-180deg);
+						backface-visibility: visible;				
+					}*/
 				}
 				a.ico-tweet {
-					background-position: -61px 0px;
+					/*background: url(../img/ico_tweet.png) no-repeat 0px 0px;
 					&:hover {
-						background-position: -61px bottom;
-					}
+						background: url(../img/hover_ico_tweet.png) no-repeat 0px 0px;
+					}*/
 				}
 				a.ico-google {
-					background-position: -122px 0px;
+					/*background: url(../img/ico_google.png) no-repeat 0px 0px;
 					&:hover {
-						background-position: -122px bottom;
-					}
+						background: url(../img/hover_ico_google.png) no-repeat 0px 0px;
+					}*/
 				}
 			}
 		}

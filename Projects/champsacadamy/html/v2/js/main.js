@@ -14,16 +14,16 @@ $( document ).ready(function() {
 /*Menu More Button*/
 	var more = function() {  
 		$('.more a').click(function() {	  
-			$('.menu').animate({right: "0px" }, 200);	
-			$('body').animate({right: "0"}, 200); 
-			$('.bg, .main-nav ul').hide();
+			$('.menu').animate({right: "0px" }, 1200);	
+			$('body').animate({right: "0"}, 1200); 
+			$('.bg, .main-nav ul').slideUp(1500);
 			
 		});		  
 		/* Then push them back */	  
 		$('.more-close').click(function() {
-		   $('.menu').animate({right: "-325px"}, 200);
-		   $('body').animate({right: "0px"  }, 200); 
-		   $('.bg, .main-nav ul').show(); 
+		   $('.menu').animate({right: "-325px"}, 1200);
+		   $('body').animate({right: "0px"  }, 1200); 
+		   $('.bg, .main-nav ul').slideDown(1500); 
 		});
 	};
 	$(document).ready(more);

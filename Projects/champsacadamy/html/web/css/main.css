@@ -382,17 +382,17 @@ header {
   overflow: hidden;
   float: right; }
   .btn-viewall.abs_pos {
-    bottom: 47px;
+    bottom: 25px;
     margin: 0 0 0 490px; }
     .btn-viewall.abs_pos a {
       display: block;
-      background: url(../img/btn_view.png) no-repeat left top;
+      background: url(../img/btn_view.png) no-repeat top right;
       text-indent: -9999px;
-      width: 364px;
-      height: 55px;
+      width: 393px;
+      height: 80px;
       transition: .2s all; }
       .btn-viewall.abs_pos a:hover {
-        background: url(../img/btn_view.png) no-repeat left bottom; }
+        background: url(../img/btn_view.png) no-repeat left top; }
 
 /*Activity programs*/
 .activity-programes {
@@ -521,6 +521,8 @@ header {
       margin: 30px 0 0; }
       .contact .address p a {
         color: #454545; }
+        .contact .address p a:hover {
+          color: #e53f3e; }
   .contact .ico-social {
     overflow: hidden;
     float: right;
@@ -544,19 +546,26 @@ header {
           display: block;
           margin: 0 15px 0 0;
           transition: all 0.5s ease;
-          background: url(../img/ico_social.png) no-repeat 0px 0px; }
+          /*background: url(../img/ico_social.png) no-repeat 0px 0px;*/ }
         .contact .ico-social ul li a.ico-fb, .contact .ico-social .address p li a.ico-fb, .contact .address .ico-social p li a.ico-fb {
-          background: url(../img/ico_social.png) no-repeat 0px 0px; }
-          .contact .ico-social ul li a.ico-fb:hover, .contact .ico-social .address p li a.ico-fb:hover, .contact .address .ico-social p li a.ico-fb:hover {
-            background: url(../img/ico_social.png) no-repeat 0px bottom; }
+          /*background: url(../img/ico_fb.png) no-repeat 0px 0px;
+          backface-visibility: hidden;
+          transform: rotateY(360deg);					
+          &:hover {
+          	background: url(../img/hover_ico_fb.png) no-repeat 0px 0px;
+          	transform: rotateY(-180deg);
+          	backface-visibility: visible;				
+          }*/ }
         .contact .ico-social ul li a.ico-tweet, .contact .ico-social .address p li a.ico-tweet, .contact .address .ico-social p li a.ico-tweet {
-          background-position: -61px 0px; }
-          .contact .ico-social ul li a.ico-tweet:hover, .contact .ico-social .address p li a.ico-tweet:hover, .contact .address .ico-social p li a.ico-tweet:hover {
-            background-position: -61px bottom; }
+          /*background: url(../img/ico_tweet.png) no-repeat 0px 0px;
+          &:hover {
+          	background: url(../img/hover_ico_tweet.png) no-repeat 0px 0px;
+          }*/ }
         .contact .ico-social ul li a.ico-google, .contact .ico-social .address p li a.ico-google, .contact .address .ico-social p li a.ico-google {
-          background-position: -122px 0px; }
-          .contact .ico-social ul li a.ico-google:hover, .contact .ico-social .address p li a.ico-google:hover, .contact .address .ico-social p li a.ico-google:hover {
-            background-position: -122px bottom; }
+          /*background: url(../img/ico_google.png) no-repeat 0px 0px;
+          &:hover {
+          	background: url(../img/hover_ico_google.png) no-repeat 0px 0px;
+          }*/ }
 
 .footer-banner {
   overflow: hidden;

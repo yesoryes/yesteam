@@ -242,9 +242,9 @@
 .liteAccordion.dark .slide > div { background: #030303; margin-left: 5px }
 
 /***************************************** Light */
-.liteAccordion.light {
+/*.liteAccordion.light {
 	background-color:#fff; color: #454545;
-   /*border: 9px solid white;
+   border: 9px solid white;
     border-bottom-width: 8px;
     padding: 5px 5px 6px 0;
     background: #a0a0a0;
@@ -252,12 +252,12 @@
     -moz-box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);
     -ms-box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);
     -o-box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);
-    box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);*/
+    box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0, 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 .liteAccordion.light .slide > h2 { background: #a0a0a0; text-shadow: 0 -1px 0 white; line-height: 265% }
 .liteAccordion.light .slide > h2 span {
 	background-color:#fff; color: #454545;
-   /* background: #fcfcfc;
+    background: #fcfcfc;
     background: -moz-linear-gradient(left,  #fcfcfc 0%, #ededed 100%);
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fcfcfc), color-stop(100%,#ededed));
     background: -webkit-linear-gradient(left,  #fcfcfc 0%,#ededed 100%);
@@ -269,8 +269,8 @@
     -moz-box-shadow: -1px -1px 0 #909090 inset, 1px 1px 0 #909090 inset;
     -o-box-shadow: -1px -1px 0 #909090 inset, 1px 1px 0 #909090 inset;
     box-shadow: -1px -1px 0 #909090 inset, 1px 1px 0 #909090 inset;
-    color: #909090;*/
-}
+    color: #909090;
+}*/
 .liteAccordion.light .slide > h2 b { background: #ffffff; color: #909090; text-shadow: -1px 1px 0 white }
 .liteAccordion.light .slide > h2.selected span, .liteAccordion.light .slide h2.selected span:hover, .liteAccordion.light .slide > h2.selected b { background-color:#fff; color: #454545; }
 .liteAccordion.light .slide > div { background: #a0a0a0; margin-left: 5px }
@@ -283,10 +283,6 @@
 	display: block;
 }
 .liteAccordion.stitch .slide > h2 { background: #fbc93d }
-.liteAccordion.stitch .slide > h2:hover {
-	background: #fff;
-	color: #454545;
-}
 .liteAccordion.stitch .slide > h2 span {
     height: auto;
     padding-right: 5%;
@@ -295,17 +291,46 @@
 	text-align: center;
     margin-top: 0;
 }
+.liteAccordion.stitch .slide:nth-child(1) > h2.selected:after, .liteAccordion.stitch .slide:nth-child(2) > h2.selected:after, .liteAccordion.stitch .slide:nth-child(3) > h2.selected:after, .liteAccordion.stitch .slide:nth-child(4) > h2.selected:after, .liteAccordion.stitch .slide:nth-child(5) > h2.selected:after {
+	content: 'Summer  Camp2015';
+	display: table-cell;
+	vertical-align: middle;
+	height: auto;
+	width: 303px;
+	position: absolute;
+	bottom: 6px;
+	right: 0px;
+	color: #454545;;
+	padding: 0 5%;
+	border: 9px solid transparent;
+	text-align: center;
+	margin-top: 0;
+	background: url(../img/index_why_acc_hover.png) repeat-x 0;
+	
+}
+.liteAccordion.stitch .slide:nth-child(2) > h2.selected:after {
+	content: 'Summer Camp  Teen 2015';
+}
+.liteAccordion.stitch .slide:nth-child(3) > h2.selected:after {
+	content: 'Annual Day 2015';
+}
+.liteAccordion.stitch .slide:nth-child(4) > h2.selected:after {
+	content: 'Board Exam Coaching';
+}
+.liteAccordion.stitch .slide:nth-child(5) > h2.selected:after {
+	content: 'Preschool Opens on June 11th 2015';
+}
 
-.liteAccordion.stitch .slide:nth-child(1) > h2 span, .liteAccordion.stitch .slide:nth-child(1) > h2:after { background: url(../img/index_why_acc1.png) 0px }
-.liteAccordion.stitch .slide:nth-child(1) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(1) > h2:after:hover { background: #fff; color: #454545; }
+.liteAccordion.stitch .slide:nth-child(1) > h2 span, .liteAccordion.stitch .slide:nth-child(1) > h2:after {	background: url(../img/index_why_acc1.png) 0px; }
+.liteAccordion.stitch .slide:nth-child(1) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(1) > h2:after:hover { background: url(../img/index_why_acc_hover.png) repeat-x 0; color: #454545; }
 .liteAccordion.stitch .slide:nth-child(2) > h2 span, .liteAccordion.stitch .slide:nth-child(2) > h2:after { background: url(../img/index_why_acc2.png) 0px }
-.liteAccordion.stitch .slide:nth-child(2) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(2) > h2:after:hover { background: #fff; color: #454545; }
+.liteAccordion.stitch .slide:nth-child(2) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(2) > h2:after:hover { background: url(../img/index_why_acc_hover.png) repeat-x 0; color: #454545; }
 .liteAccordion.stitch .slide:nth-child(3) > h2 span, .liteAccordion.stitch .slide:nth-child(3) > h2:after { background: url(../img/index_why_acc3.png) 0px; }
-.liteAccordion.stitch .slide:nth-child(3) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(3) > h2:after:hover { background: #fff; color: #454545; }
+.liteAccordion.stitch .slide:nth-child(3) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(3) > h2:after:hover { background: url(../img/index_why_acc_hover.png) repeat-x 0; color: #454545; }
 .liteAccordion.stitch .slide:nth-child(4) > h2 span, .liteAccordion.stitch .slide:nth-child(4) > h2:after { background: url(../img/index_why_acc4.png) 0px }
-.liteAccordion.stitch .slide:nth-child(4) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(4) > h2:after:hover { background: #fff; color: #454545; }
+.liteAccordion.stitch .slide:nth-child(4) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(4) > h2:after:hover { background: url(../img/index_why_acc_hover.png) repeat-x 0;; color: #454545; }
 .liteAccordion.stitch .slide:nth-child(5) > h2 span, .liteAccordion.stitch .slide:nth-child(5) > h2:after { background: url(../img/index_why_acc5.png) 0px }
-.liteAccordion.stitch .slide:nth-child(5) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(5) > h2:after:hover { background: #fff; color: #454545; }
+.liteAccordion.stitch .slide:nth-child(5) > h2 span:hover, .liteAccordion.stitch .slide:nth-child(5) > h2:after:hover { background: url(../img/index_why_acc_hover.png) repeat-x 0; color: #454545; }
 .liteAccordion.stitch .slide > h2 b { top: 19%; opacity:0; color: white; text-shadow: 1px 1px 0 #5b5b5b }
 .liteAccordion.stitch .slide > div { margin-right: 6px }
 .liteAccordion.stitch.rounded > ol { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0 }
@@ -318,7 +343,7 @@
 /* stitch */
 .liteAccordion.ie.stitch .slide > h2 { /*line-height: 265%*/ }
 .liteAccordion.ie.stitch .slide > h2 span { /*height: 89%; padding-right: 8%*/ }
-.liteAccordion.ie.stitch .slide > h2.selected:after { background-color:#fff; color: #454545; }
+.liteAccordion.ie.stitch .slide > h2.selected:after { display: none; }
 .liteAccordion.ie.stitch .slide-0 > h2 span { background-color:#fff; color: #454545; }
 .liteAccordion.ie.stitch .slide-1 > h2 span { background-color:#fff; color: #454545; }
 .liteAccordion.ie.stitch .slide-2 > h2 span { background-color:#fff; color: #454545; }
@@ -368,9 +393,12 @@
   transition-duration: 0.3s;
 }
 .hvr-sweep-to-right:before {
-  content: "";
+  content: "more";
   position: absolute;
-  z-index: -1;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1;
+  padding: 4px 0 0;
   top: 0;
   left: 0;
   right: 0;
@@ -482,19 +510,29 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-.menu ul li a:hover {
+.submenu li a:hover, .abt-menu li a:hover {
 	background: #ac2f2e;
 	color: #fff
 }
 .more-close {
 	margin: 40px 0 15px 50px;
 }
+.more-close a {
+	display: block;
+	width: 39px;
+	height: 30px;
+	background: url(../img/more_close.png) no-repeat 0px 0px;
+	transition: 0.5s all ease;
+}
+.more-close a:hover {
+	background: url(../img/hover_more_close.png) no-repeat 0px 0px;
+}
 .menu-active {
 	background: #ac2f2e;
 	color: #fff;
 }
 .menu ul.abt-menu {
-	margin: 100px 0 0;
+	margin: 90px 0 0;
 	padding: 20px 0;
 	background: url(../img/submenu_bgBorder.png) no-repeat center top;
 }
@@ -503,14 +541,11 @@
 	font-size: 20px;
 	padding: 15px 50px 15px 0;
 }
-.menu ul.abt-menu li a:hover {
-	color: #454545;
-}
 .menu ul.submenu-social {
 	overflow: hidden;
 	margin: 0 0 0 50px;
 	padding: 0 0 30px;
-	background: url(../img/submenu_bgBorder.png) no-repeat 0 bottom;
+	/*background: url(../img/submenu_bgBorder.png) no-repeat 0 bottom;*/
 }
 .submenu-social li {
 	float: left;
@@ -523,24 +558,24 @@
 	float: left;
 	transition: all 0.5s ease;
 }
-a.sub-fb {
-	background: url(../img/submenu_social_ico.png) no-repeat left top;
+/*a.sub-fb {
+	background: url(../img/sub_ico_fb.png) no-repeat left top;
 }
 a.sub-fb:hover {
-	background: url(../img/submenu_social_ico.png) no-repeat left bottom;
+	background: url(../img/hover_sub_ico_fb.png) no-repeat left top;
 }
 a.sub-tweet {
-	background: url(../img/submenu_social_ico.png) no-repeat -61px top;
+	background: url(../img/sub_ico_tweet.png) no-repeat left top;
 }
 a.sub-tweet:hover {
-	background: url(../img/submenu_social_ico.png) no-repeat -61px bottom;
+	background: url(../img/hover_sub_ico_tweet.png) no-repeat left top;
 }
 a.sub-google {
-	background: url(../img/submenu_social_ico.png) no-repeat -122px top;
+	background: url(../img/sub_ico_google.png) no-repeat left top;
 }
 a.sub-google:hover {
-	background: url(../img/submenu_social_ico.png) no-repeat -122px bottom;
-}
+	background: url(../img/hover_sub_ico_google.png) no-repeat left top;
+}*/
 .menu p {
 	font-size: 12px;
 	text-align: center;
@@ -549,3 +584,49 @@ a.sub-google:hover {
 	font-family: 'RobotoRegular';
 }
 
+/* 3d filip content */
+
+#f1_container {
+  position: relative;
+  width: 61px;
+  height: 60px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+   -webkit-transform: rotateY(180deg);
+   -moz-transform: rotateY(180deg);
+   -ms-transform: rotateY(180deg);
+  
+}
+.face {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  backface-visibility: hidden;  /* W3C */
+	  -webkit-backface-visibility: hidden; /* Safari & Chrome */
+	  -moz-backface-visibility: hidden; /* Firefox */
+	  -ms-backface-visibility: hidden; /* Internet Explorer */
+	  -o-backface-visibility: hidden; /* Opera */
+}
+.face.back {
+	  display: block;
+	  transform: rotateY(180deg);
+	  box-sizing: border-box;
+}
+/* end */
