@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
 /* For Browser Height*/
 	var fullHeight = $(window).height();
-	$('.home-banner, .normal-home, .more, .another-school, .champs-school, .banner-seps').css ({
+	$('.home-banner, .normal-home, .menu, .another-school, .champs-school, .banner-seps').css ({
 		height : fullHeight,
 	});
 
@@ -17,6 +17,7 @@ $( document ).ready(function() {
 			$('.menu').animate({right: "0px" }, 1200);	
 			$('body').animate({right: "0"}, 1200); 
 			$('.bg, .main-nav ul').slideUp(1500);
+			//$('.logo').show();
 			
 		});		  
 		/* Then push them back */	  

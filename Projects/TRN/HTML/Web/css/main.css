@@ -601,12 +601,20 @@ nav ul li a b {
 .shots_gallery ul li {
 	overflow: hidden;
 	float: left;
-	margin: 6px 5px 0;
+	margin: 6px 5px;
 	width: 186px;
 	height: 116px;
 }
+/*.shots_gallery ul li a {
+	display: block;
+	width: 186px;
+	height: 116px;
+	overflow: hidden;
+	border: 1px solid #fff; 
+}*/
 .shots_gallery ul li img {
-	transition: 0.2s all;
+	transition: 0.5s all;
+	transform: scale(1);
 }
 
 .shots_gallery ul li img:hover {
@@ -1018,7 +1026,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 }
 .clientlist_content {
 	position: absolute;
-	top: 91px;
+	top: 80px;
 	left: 78px;
 	font-family: 'rockwellstd';
 }
@@ -1182,7 +1190,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 	overflow: hidden;
 	width: 782px;
 	margin: 0 auto;
-	top: 48%;
+	top: 45%;
 	color: #fff;
 }
 .address {
@@ -1215,10 +1223,11 @@ transform: rotate(2deg) translate(-1px, 2px);
 	padding-left: 15px;
 }
 .location {
-	width: 300px;
+	width: 150px;
 	height: 150px;
 	float: left;
 	overflow: hidden;
+	margin: 0 100px 0 0;
 }
 .location h2 {
 	text-align: center !important;
@@ -1233,16 +1242,12 @@ transform: rotate(2deg) translate(-1px, 2px);
 	padding: 15px 0 0 0;
 }
 .btn_enquiry {
-	overflow: hidden;
-	
+	overflow: hidden;	
 	float: left;
-	margin: 15px 0 0 0;
+	margin: 16px 0 0 0;
 	cursor: pointer;
-}
-.btn_enquiry {
-	overflow: hidden;
-	padding: 18px 25px;
-	background: url(../img/contact_bg.jpg) repeat-x;
+	padding: 15px 25px;
+	background: url(../img/contact_bg.jpg) repeat-x left top;
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
@@ -1254,6 +1259,10 @@ transform: rotate(2deg) translate(-1px, 2px);
 	-ms-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
 	-o-box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
 	box-shadow: 0px 9px 0px rgba(138,203,209,1), 0px 9px 25px rgba(0,0,0,.3);
+}
+.btn_enquiry:hover {
+	background: url(../img/contact_bg.jpg) repeat-x left bottom;
+	color: #454545;
 }
 .btn_enquiry:active {
 	-webkit-box-shadow: 0px 9px 0px rgba(138,203,209,00), 0px 9px 25px rgba(0,0,0,.1);
@@ -1332,10 +1341,11 @@ transform: rotate(2deg) translate(-1px, 2px);
 	overflow: hidden;
 	margin:0 0 0 71px;
 }
-.btn_contact {
+.btn_contact a {
 	overflow: hidden;
 	float: left;
 	border: none;
+	display: block;
 	color: #fff;
 	background: url(../img/bg_btn_send.png) repeat-x top left;
 	font-size: 18px;
@@ -1344,6 +1354,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 	cursor: pointer;
 	padding: 0px 24px;
 	height: 30px;
+	width: 40px;
 	cursor: pointer;
 }
 .btn_contact a:hover {
@@ -1352,7 +1363,6 @@ transform: rotate(2deg) translate(-1px, 2px);
 .btn_contact a {
 	overflow: hidden;
 	position: relative;
-	width: 86px;
 	height: 30px;
 	background: url(../img/send_bg.png) repeat-x;
 	display: table-cell;
@@ -1853,6 +1863,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 .btn_view {
 	bottom:80px;
 	margin: 0 0 0 -100px;
+	z-index: 1;
 }
 .view_studio, .view_college {
 	position: relative;
@@ -1901,3 +1912,199 @@ transform: rotate(2deg) translate(-1px, 2px);
 	transition: 0.5s all;
 }
 /*End Studio Buttons*/
+
+
+.locate_img {
+	cursor: pointer;
+	overflow: hidden;
+}
+.locate_img:hover {
+	-webkit-animation-name: mapShake;
+	-o-animation-name: mapShake;
+	-ms-animation-name: mapShake;
+	-moz-animation-name: mapShake;
+	animation-name: mapShake;
+	-webkit-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes mapShake {
+0%{
+transform: rotate(0deg) translate(2px, 1px);
+transform-origin: top center;
+-webkit-transform: rotate(0deg) translate(2px, 1px);
+-ms-transform: rotate(0deg) translate(2px, 1px);
+-moz-transform: rotate(0deg) translate(2px, 1px);
+-o-transform: rotate(0deg) translate(2px, 1px);
+}
+10%{
+	transform-origin: top center;
+transform: rotate(2deg) translate(1px, 2px);
+-webkit-transform: rotate(2deg) translate(1px, 2px);
+-ms-transform: rotate(2deg) translate(1px, 2px);
+-moz-transform: rotate(2deg) translate(1px, 2px);
+-o-transform: rotate(2deg) translate(1px, 2px);
+}
+20% {
+	transform-origin: top center;
+transform: rotate(-2deg) translate(3px, 0px);
+-webkit-transform: rotate(-2deg) translate(3px, 0px);
+-ms-transform: rotate(-2deg) translate(3px, 0px);
+-moz-transform: rotate(-2deg) translate(3px, 0px);
+-o-transform: rotate(-2deg) translate(3px, 0px);
+}
+30% {
+	transform-origin: top center;
+transform: rotate(0deg) translate(0px, -2px);
+-webkit-transform: rotate(0deg) translate(0px, -2px);
+-moz-transform: rotate(0deg) translate(0px, -2px);
+-ms-transform: rotate(0deg) translate(0px, -2px);
+-o-transform: rotate(0deg) translate(0px, -2px);
+}
+40% {
+	transform-origin: top center;
+transform: rotate(-2deg) translate(-1px, 1px);
+-webkit-transform: rotate(-2deg) translate(-1px, 1px);
+-moz-transform: rotate(-2deg) translate(-1px, 1px);
+-ms-transform: rotate(-2deg) translate(-1px, 1px);
+-o-transform: rotate(-2deg) translate(-1px, 1px);
+}
+50% {
+transform: rotate(2deg) translate(1px, -2px);
+-webkit-transform: rotate(2deg) translate(1px, -2px);
+-ms-transform: rotate(2deg) translate(1px, -2px);
+-moz-transform: rotate(2deg) translate(1px, -2px);
+-o-transform: rotate(2deg) translate(1px, -2px);
+}
+60% {
+	transform-origin: top center;
+transform: rotate(0deg) translate(3px, -1px);
+-webkit-transform: rotate(0deg) translate(3px, -1px);
+-moz-transform: rotate(0deg) translate(3px, -1px);
+-ms-transform: rotate(0deg) translate(3px, -1px);
+-o-transform: rotate(0deg) translate(3px, -1px);
+}
+70% {
+	transform-origin: top center;
+transform: rotate(2deg) translate(-2px, -1px);
+-webkit-transform: rotate(2deg) translate(-2px, -1px);
+-ms-transform: rotate(2deg) translate(-2px, -1px);
+-moz-transform: rotate(2deg) translate(-2px, -1px);
+-o-transform: rotate(2deg) translate(-2px, -1px);
+}
+80% {
+	transform-origin: top center;
+transform: rotate(-2deg) translate(1px, 1px);
+-webkit-transform: rotate(-2deg) translate(1px, 1px);
+-moz-transform: rotate(-2deg) translate(1px, 1px);
+-ms-transform: rotate(-2deg) translate(1px, 1px);
+-o-transform: rotate(-2deg) translate(1px, 1px);
+}
+90% {
+	transform-origin: top center;
+transform: rotate(0deg) translate(-2px, -2px);
+-webkit-transform: rotate(0deg) translate(-2px, -2px);
+-ms-transform: rotate(0deg) translate(-2px, -2px);
+-moz-transform: rotate(0deg) translate(-2px, -2px);
+-o-transform: rotate(0deg) translate(-2px, -2px);
+}
+100% {
+	transform-origin: top center;
+transform: rotate(2deg) translate(-1px, 2px);
+-webkit-transform: rotate(2deg) translate(-1px, 2px);
+-moz-transform: rotate(2deg) translate(-1px, 2px);
+-ms-transform: rotate(2deg) translate(-1px, 2px);
+-o-transform: rotate(2deg) translate(-1px, 2px);
+}
+}
+/*@keyframes shakeit {
+0% {
+transform: rotate(0deg) translate(2px, 1px);
+-webkit-transform: rotate(0deg) translate(2px, 1px);
+-ms-transform: rotate(0deg) translate(2px, 1px);
+-moz-transform: rotate(0deg) translate(2px, 1px);
+-o-transform: rotate(0deg) translate(2px, 1px);
+}
+10% {
+transform: rotate(2deg) translate(1px, 2px);
+-webkit-transform: rotate(2deg) translate(1px, 2px);
+-ms-transform: rotate(2deg) translate(1px, 2px);
+-moz-transform: rotate(2deg) translate(1px, 2px);
+-o-transform: rotate(2deg) translate(1px, 2px);
+}
+20% {
+transform: rotate(-2deg) translate(3px, 0px);
+-webkit-transform: rotate(-2deg) translate(3px, 0px);
+-ms-transform: rotate(-2deg) translate(3px, 0px);
+-moz-transform: rotate(-2deg) translate(3px, 0px);
+-o-transform: rotate(-2deg) translate(3px, 0px);
+}
+30% {
+transform: rotate(0deg) translate(0px, -2px);
+-webkit-transform: rotate(0deg) translate(0px, -2px);
+-ms-transform: rotate(0deg) translate(0px, -2px);
+-moz-transform: rotate(0deg) translate(0px, -2px);
+-o-transform: rotate(0deg) translate(0px, -2px);
+}
+40% {
+transform: rotate(-2deg) translate(-1px, 1px);
+-webkit-transform: rotate(-2deg) translate(-1px, 1px);
+-moz-transform: rotate(-2deg) translate(-1px, 1px);
+-ms-transform: rotate(-2deg) translate(-1px, 1px);
+-o-transform: rotate(-2deg) translate(-1px, 1px);
+}
+50% {
+transform: rotate(2deg) translate(1px, -2px);
+-webkit-transform: rotate(2deg) translate(1px, -2px);
+-ms-transform: rotate(2deg) translate(1px, -2px);
+-moz-transform: rotate(2deg) translate(1px, -2px);
+-o-transform: rotate(2deg) translate(1px, -2px);
+}
+60% {
+transform: rotate(0deg) translate(3px, -1px);
+-webkit-transform: rotate(0deg) translate(3px, -1px);
+-ms-transform: rotate(0deg) translate(3px, -1px);
+-moz-transform: rotate(0deg) translate(3px, -1px);
+-o-transform: rotate(0deg) translate(3px, -1px);
+}
+70% {
+transform: rotate(2deg) translate(-2px, -1px);
+-webkit-transform: rotate(2deg) translate(-2px, -1px);
+-moz-transform: rotate(2deg) translate(-2px, -1px);
+-ms-transform: rotate(2deg) translate(-2px, -1px);
+-o-transform: rotate(2deg) translate(-2px, -1px);
+}
+80% {
+transform: rotate(-2deg) translate(1px, 1px);
+-webkit-transform: rotate(-2deg) translate(1px, 1px);
+-ms-transform: rotate(-2deg) translate(1px, 1px);
+-moz-transform: rotate(-2deg) translate(1px, 1px);
+-o-transform: rotate(-2deg) translate(1px, 1px);
+}
+90% {
+transform: rotate(0deg) translate(-2px, -2px);
+-webkit-transform: rotate(0deg) translate(-2px, -2px);
+-moz-transform: rotate(0deg) translate(-2px, -2px);
+-ms-transform: rotate(0deg) translate(-2px, -2px);
+-o-transform: rotate(0deg) translate(-2px, -2px);
+}
+100% {
+transform: rotate(2deg) translate(-1px, 2px);
+-webkit-transform: rotate(2deg) translate(-1px, 2px);
+-moz-transform: rotate(2deg) translate(-1px, 2px);
+-ms-transform: rotate(2deg) translate(-1px, 2px);
+-o-transform: rotate(2deg) translate(-1px, 2px);
+}
+}*/
