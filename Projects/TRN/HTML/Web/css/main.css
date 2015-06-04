@@ -168,7 +168,7 @@ nav ul li a b {
 .home, .Shot, .whoam, .studio, .myclients, .reachUs {
 	position: relative;
 }
-.home_about, .img_light_l, .img_light_r, .img_photos, .hover_myShots, .img_phone, .hover_reachus, .img_instrument, .img_stool, .hover_myclients, .img_stand, .hover_whoam, .img_clock, .img_door, .img_bgDoor, .img_doorInner, .img_fashion, .img_interiors, .img_adv, .img_life_style, .img_industry, .img_jewellery, .img_food, .img_hotel, .img_automobile, .img_corporate, .light, .shots_gallery, .gallery_rays1, .gallery_rays2, .btn_back, .img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_flicker, .img_black_sofa, .img_mac, .img_frame_1, .img_frame_2, .my_studio_para, .whoam_rays, .img_myblog, .img_standlight, .img_sofa, .img_chair, .about_para, .img_leftclients, .img_rightclients, .client_list, .tv, .myclients_left_rays, .myclients_right_rays, .img_centertoplight, .img_rightlight, .img_leftlight, .img_reachtable, .reachUs_para, .reachUs_content, .reach_rays, .mystudio_rays, .tooltip, .projector, .btn_view {
+.home_about, .img_light_l, .img_light_r, .img_photos, .hover_myShots, .img_phone, .hover_reachus, .img_instrument, .img_stool, .hover_myclients, .img_stand, .hover_whoam, .img_clock, .img_door, .door_home, .img_bgDoor, .img_doorInner, .img_fashion, .img_interiors, .img_adv, .img_life_style, .img_industry, .img_jewellery, .img_food, .img_hotel, .img_automobile, .img_corporate, .light, .shots_gallery, .gallery_rays1, .gallery_rays2, .btn_back, .img_lightrays, .img_projector, .img_self, .img_lighting_set, .img_flicker, .img_black_sofa, .img_mac, .img_frame_1, .img_frame_2, .my_studio_para, .whoam_rays, .img_myblog, .img_standlight, .img_sofa, .img_chair, .about_para, .img_leftclients, .img_rightclients, .client_list, .tv, .myclients_left_rays, .myclients_right_rays, .img_centertoplight, .img_rightlight, .img_leftlight, .img_reachtable, .reachUs_para, .reachUs_content, .reach_rays, .mystudio_rays, .tooltip, .projector, .btn_view {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -304,13 +304,13 @@ nav ul li a b {
 }
 .img_photos {
 	top: 150px;
-	margin: 0 0 0 -675px;
+	margin: 0 0 0 -565px;
 	cursor: pointer;
 	transition: 0.5s all;
 }
 .hover_myShots {
-	top: 160px;
-	margin: 0 0 0 -561px;
+	top: 120px;
+	margin: 0 0 0 -477px;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-ms-transition: all .5s;
@@ -319,12 +319,12 @@ nav ul li a b {
 }
 .img_phone {
 	top: 285px;
-	margin: 0 0 0 -680px;
+	margin: 0 0 0 -560px;
 	cursor: pointer;
 }
 .hover_reachus {
 	top: 330px;
-	margin: 0 0 0 -610px;
+	margin: 0 0 0 -480px;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-ms-transition: all .5s;
@@ -371,23 +371,27 @@ nav ul li a b {
 	margin: 0 0 0 250px;
 	transform: scale(0.1)
 }
+.door_home {
+	top: -2px;
+	z-index: 1;
+}
 .img_door {
-	top: 275px;
+	top: 278px;
 	margin: 0px 0 0 550px;
 	padding: 50px 0 0;
 	cursor: pointer;
-	z-index:2;
+	/*z-index:2;*/
 }
 .img_doorInner {
-	top: 333px;
+	top: 335px;
 	margin: 0px 0 0 550px;
 	cursor: pointer;
-	z-index: 2;
+	/*z-index: 2;*/
 }
 .img_bgDoor {
 	top: 273px;
 	margin: 0px 0 0 555px;
-	z-index: 2;
+	/*z-index: 2;*/
 }
 /*My Shots*/
 .shots_page {
@@ -1069,7 +1073,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 }
 #wrapper_iscroll2 {
 	top: 200px;
-	height: 340px;
+	height: 270px;
 	width: 500px;
 	left: 50%;
 	transform: translateX(-50%); 
@@ -2108,3 +2112,15 @@ transform: rotate(2deg) translate(-1px, 2px);
 -o-transform: rotate(2deg) translate(-1px, 2px);
 }
 }*/
+.image_pad {
+	padding: 0;
+	margin: 0 13px -4px;;
+}
+@media screen and ( max-height: 950px ){
+	.img_stand {
+		margin: 0 0 0 285px;
+	}
+	.hover_whoam {
+		margin: 0 0 0 300px;
+	}
+}
