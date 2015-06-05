@@ -326,7 +326,8 @@ $(document).ready(function() {
 		setTimeout("$('.img_photos img').addClass('animated zoomIn').show()",500)
 		setTimeout("$('.img_phone img').addClass('animated zoomIn').show()",500)
 		setTimeout("$('.img_stool img').addClass('animated slideInLeft').show()",600);
-		setTimeout("$('.img_stand img').addClass('animated slideInUp').show()",200);
+		//setTimeout("$('.img_stand img').addClass('animated slideInUp').show()",200);
+		$('.img_stand img').show();
 	};
 	function homeOut() {
 		$('.bg_home').removeClass('animated fadeIn').hide();
