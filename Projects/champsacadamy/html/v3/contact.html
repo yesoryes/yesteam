@@ -6,7 +6,6 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/slider.css" rel="stylesheet" type="text/css"/>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <div id="wrapper" class="ip-bg ip-wrapper"> 
@@ -29,49 +28,49 @@
       </ul>
       <p class="more"><a href="#">more >></a></p>
     </nav>
-    <div class="menu">
-      <div class="more-close"><a href="#"><img src="img/more_close.png" alt=""/></a></div>
-      <ul class="submenu">
-        <li> <a href="#" class="menu-active">why champs</a></li>
-        <li><a href="#">fun@champs</a></li>
-        <li><a href="#">programmes</a></li>
-        <li><a href="#">news &amp; events</a></li>
-        <li><a href="#">contact us</a></li>
-      </ul>
-      <ul class="abt-menu">
-        <li><a href="">team</a></li>
-        <li><a href="">career</a></li>
-        <li><a href="">curriculam</a></li>
-      </ul>
-      <ul class="submenu-social">
-        <li> <a href="" class="sub-fb">
-          <div id="f1_container">
-            <div id="f1_card">
-              <div class="front face"><img src="img/sub_ico_fb.png" alt=""/></div>
-              <div class="back face"><img src="img/hover_sub_ico_fb.png" alt=""/></div>
-            </div>
-          </div>
-          </a> </li>
-        <li> <a href="" class="sub-tweet">
-          <div id="f1_container">
-            <div id="f1_card">
-              <div class="front face"><img src="img/sub_ico_tweet.png" alt=""/></div>
-              <div class="back face"><img src="img/hover_sub_ico_tweet.png" alt=""/></div>
-            </div>
-          </div>
-          </a> </li>
-        <li> <a href="" class="sub-google">
-          <div id="f1_container">
-            <div id="f1_card">
-              <div class="front face"><img src="img/sub_ico_google.png" alt=""/></div>
-              <div class="back face"><img src="img/hover_sub_ico_google.png" alt=""/></div>
-            </div>
-          </div>
-          </a> </li>
-      </ul>
-      <p>&copy; 2014 Champsacademy. All rights reserved.</p>
-    </div>
   </header>
+  <div class="menu">
+    <div class="more-close"><a href="#"><img src="img/more_close.png" alt=""/></a></div>
+    <ul class="submenu">
+      <li> <a href="#" class="menu-active">why champs</a></li>
+      <li><a href="#">fun@champs</a></li>
+      <li><a href="#">programmes</a></li>
+      <li><a href="#">news &amp; events</a></li>
+      <li><a href="#">contact us</a></li>
+    </ul>
+    <ul class="abt-menu">
+      <li><a href="">team</a></li>
+      <li><a href="">career</a></li>
+      <li><a href="">curriculam</a></li>
+    </ul>
+    <ul class="submenu-social">
+      <li> <a href="" class="sub-fb">
+        <div id="f1_container">
+          <div id="f1_card">
+            <div class="front face"><img src="img/sub_ico_fb.png" alt=""/></div>
+            <div class="back face"><img src="img/hover_sub_ico_fb.png" alt=""/></div>
+          </div>
+        </div>
+        </a> </li>
+      <li> <a href="" class="sub-tweet">
+        <div id="f1_container">
+          <div id="f1_card">
+            <div class="front face"><img src="img/sub_ico_tweet.png" alt=""/></div>
+            <div class="back face"><img src="img/hover_sub_ico_tweet.png" alt=""/></div>
+          </div>
+        </div>
+        </a> </li>
+      <li> <a href="" class="sub-google">
+        <div id="f1_container">
+          <div id="f1_card">
+            <div class="front face"><img src="img/sub_ico_google.png" alt=""/></div>
+            <div class="back face"><img src="img/hover_sub_ico_google.png" alt=""/></div>
+          </div>
+        </div>
+        </a> </li>
+    </ul>
+    <p>&copy; 2014 Champsacademy. All rights reserved.</p>
+  </div>
   
   <!--Start Banner-->
   
@@ -282,10 +281,36 @@
   </div>
   <div class="submit-button"> <a href="#" class="sub-button">Submit</a></div>
 </div>
+<script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/jquery-1.10.1.min.js"></script> 
 <script src="js/liteaccordion.jquery.js"></script><!--Home Horizontal Accordian--> 
 <script src="js/skrollr.js"></script><!--Home Page Parallex--> 
 <script src="js/main.js"></script> 
+<script>
+/*  Career Light box  Js*/
+$(document).ready(function(){
+	 $('.lightbox').click(function() {
+			$('.backdrop').animate({'opacity':'0.5'}, 300, 'linear');
+			$('.backdrop, .box').css('display','block')
+		}) ; 
+		$('.close').click(function() {
+			close_box()
+		}) ;  
+		$('.backdrop').click(function() {
+			close_box()
+		});
+		$('.can-button').click(function() {
+			close_box()
+		}); 
+		
+		function close_box() {
+			$('.backdrop').animate({'opacity':'0'}, 300, 'linear');
+			$('.backdrop, .box').css('display','none')
+		};   
+	});	
+		
+</script>
+
 <!--[if lt IE 9]>
     <script>
         document.createElement('figure');

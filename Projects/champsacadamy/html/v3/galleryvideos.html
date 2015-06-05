@@ -111,7 +111,13 @@
 <script src="js/liteaccordion.jquery.js"></script><!--Home Horizontal Accordian--> 
 <script src="js/skrollr.js"></script><!--Home Page Parallex--> 
 <script src="js/main.js"></script> 
-<script type="text/javascript" src="js/xGallery.js"></script> 
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/xGallery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#gallery").xGallery();
+});
+</script>
 <!--[if lt IE 9]>
     <script>
         document.createElement('figure');

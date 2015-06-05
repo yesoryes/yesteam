@@ -15,11 +15,7 @@ $( document ).ready(function() {
 
 /* End Browser Height*/
 
-// IP Gallery Pop up
-		
-		 $("#gallery").xGallery();
-		 
-// IP Gallery Pop End
+
 
 /*Menu More Button*/
 	var more = function() {  
@@ -119,30 +115,8 @@ $( document ).ready(function() {
       //Hide the other panels
       $(".accordion-accontent").not($(this).next()).slideUp('fast');
 	 
-    });
-	
-	
-	/*  Career Light box  Js*/
-	$('.lightbox').click(function() {
-			$('.backdrop').animate({'opacity':'0.5'}, 300, 'linear');
-			$('.backdrop, .box').css('display','block')
-		}) ; 
-		$('.close').click(function() {
-			close_box()
-		}) ;  
-		$('.backdrop').click(function() {
-			close_box()
-		})
-		//Button Close
-		$('.can-button').click(function() {
-			close_box()
-		});
-		
-		function close_box() {
-			$('.backdrop').animate({'opacity':'0'}, 300, 'linear');
-			$('.backdrop, .box').css('display','none');
-		};  
-		
+    }); 
+	 
 	/*  Contact  Light box  Js*/
 	
 		$('.lightbox-enquiry').click(function() {
