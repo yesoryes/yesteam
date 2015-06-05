@@ -478,6 +478,7 @@
   height: 100%;*/
   position: absolute;
   display: none;
+  z-index: 120;
   width: 325px;
 }
 
