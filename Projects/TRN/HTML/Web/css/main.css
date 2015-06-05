@@ -1391,11 +1391,15 @@ transform: rotate(2deg) translate(-1px, 2px);
 .close_box {
 	top: 0px;
 	right: 0px;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	border-radius: 30px;
 	position: absolute;
 	cursor: pointer;
+	background: url(../img/pop_close.png) no-repeat bottom left;
+}
+.close_box:hover {
+	background: url(../img/pop_close.png) no-repeat top left;
 }
 /*End reach us*/
 
@@ -1481,7 +1485,10 @@ transform: rotate(2deg) translate(-1px, 2px);
 	height: 40px;
 	cursor: pointer;
 	z-index: 8040;
-	background: url(../img/pop_close.png);
+	background: url(../img/pop_close.png) no-repeat left top;
+}
+.fancybox-close:hover {
+	background: url(../img/pop_close.png) no-repeat left bottom;
 }
 .fancybox-nav {
 	position: absolute;

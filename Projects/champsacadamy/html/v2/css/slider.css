@@ -477,6 +477,7 @@
 
   height: 100%;*/
   position: absolute;
+  display: none;
   width: 325px;
 }
 

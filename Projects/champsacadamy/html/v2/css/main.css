@@ -70,8 +70,7 @@ header {
     font-family: 'Action_Man';
     font-size: 25px;
     margin: 7px 0 0;
-    height: 100vh;
-    /*Side Menu*/ }
+    /*height: 100vh;/*Side Menu*/ }
     .main-nav .more a {
       color: #fff;
       background: url(../img/bg_more.png) no-repeat;

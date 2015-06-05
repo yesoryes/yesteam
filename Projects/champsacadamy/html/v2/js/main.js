@@ -14,7 +14,9 @@ $( document ).ready(function() {
 /*Menu More Button*/
 	var more = function() {  
 		$('.more a').click(function() {	  
-			$('.menu').animate({right: "0px" }, 1200);	
+			$('.menu').animate({right: "0px" }, 1200).css({
+				display : 'block'	
+			});	
 			$('body').animate({right: "0"}, 1200); 
 			$('.bg, .main-nav ul').slideUp(1500);
 			//$('.logo').show();
