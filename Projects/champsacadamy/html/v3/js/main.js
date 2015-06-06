@@ -26,9 +26,9 @@ $( document ).ready(function() {
 			});	
 			$('body').animate({right: "0"}, 1500); 
 			$('.bg, .main-nav ul').slideUp(1500);
-			$('.more').css ({
+			/*$('.more').css ({
 				display : 'none',
-			});
+			});*/
 			
 		});		  
 		/* Then push them back */	  
