@@ -1,0 +1,615 @@
+/* Scss Document */
+/*Header*/
+/*Why Champs*/
+.abs_pos {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 1; }
+
+body {
+  font-size: 16px;
+  color: #000;
+  font-family: "RobotoRegular";
+  line-height: 24px; }
+
+/*Start Index Page*/
+#wrapper {
+  width: 100%; }
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+header {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 100; }
+
+.bg {
+  background: url(../img/header_bg.png) no-repeat center 0px;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  z-index: -2; }
+
+.logo {
+  float: left;
+  margin: 0 0 0 5px; }
+
+.main-nav {
+  overflow: hidden;
+  float: right;
+  margin: 0 15px 0 0; }
+  .main-nav ul, .main-nav .contact .address p, .contact .address .main-nav p {
+    overflow: hidden;
+    float: left; }
+    .main-nav ul li, .main-nav .contact .address p li, .contact .address .main-nav p li {
+      float: left;
+      font-family: "Action_Man";
+      font-size: 25px; }
+      .main-nav ul li a, .main-nav .contact .address p li a, .contact .address .main-nav p li a {
+        display: block;
+        color: #fff;
+        padding: 31px 0px 36px;
+        background: url(../img/main_nav_li_bg.png) no-repeat center 68px;
+        transition: 0.5s all;
+        width: 180px;
+        text-align: center; }
+  .main-nav .more {
+    overflow: hidden;
+    float: left;
+    font-family: 'Action_Man';
+    font-size: 25px;
+    margin: 7px 0 0;
+    height: 100vh;
+    /*Side Menu*/ }
+    .main-nav .more a {
+      color: #fff;
+      background: url(../img/bg_more.png) no-repeat;
+      display: block;
+      padding: 22px 0;
+      width: 120px;
+      text-align: center;
+      transition: .2s all; }
+      .main-nav .more a:hover {
+        color: #454545; }
+
+.menu-whychamps:hover, .menu-fungames:hover, .menu-programmes:hover, .menu-contact:hover {
+  font-size: 20px;
+  background: url(../img/hover_whychamps.png) no-repeat center 60px;
+  transform: translateY(-20px); }
+
+.menu-fungames:hover {
+  background: url(../img/hover_fungames.png) no-repeat center 60px; }
+
+.menu-programmes:hover {
+  background: url(../img/hover_progrmmes.png) no-repeat center 60px; }
+
+.menu-contact:hover {
+  background: url(../img/hover_contact.png) no-repeat center 60px; }
+
+.li-seps {
+  overflow: hidden;
+  margin: 30px 0px 0px; }
+
+/*Home Banner*/
+/*.home-banner {
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+		
+	.normal-home {
+		overflow: hidden;	
+		background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
+		position: relative;
+		height: 100Vh;
+		width: 100%;
+		
+		.another-school {
+			overflow: hidden;
+			width: 50%;
+			left: 0;
+			bottom: 182px;
+			float: left;
+			position: absolute;
+			
+			.another-school-bg {
+				overflow: hidden;
+				width: 100%;
+				position: absolute;
+				left:0;
+				bottom: -8px;;
+			}
+			.another-school-building {
+				@extend.another-school-bg;
+			}
+		}
+		.champs-school {
+			@extend.another-school;
+			right: 0;
+			left: inherit;
+			
+			.champs-school-bg {
+				@extend.another-school-bg;
+			}
+			.champs-school-building {
+				@extend.champs-school-bg;
+			}
+		}
+	}
+	.banner-seps {
+		overflow: hidden;
+		width: 3px;
+		top: 0;
+		border-right: 3px solid rgba(0,0,0,0.1);
+	}
+}*/
+.home-banner {
+  background: url(../img/banner/UnderConstruction.jpg) no-repeat center 0px;
+  width: 100%;
+  height: 393px; }
+
+/*End Home Banner*/
+.left-cloud, .right-cloud {
+  position: absolute;
+  top: 1150px;
+  z-index: 1; }
+
+.right-cloud {
+  right: 0;
+  top: 1200px; }
+
+/*Why Champs*/
+.why-champs {
+  overflow: hidden;
+  width: 100%;
+  height: 795px;
+  background: #fbc93d;
+  color: #3b3116;
+  /*padding: 50px 0 0;*/
+  position: relative; }
+  .why-champs h1 {
+    text-align: center;
+    top: 50px;
+    -webkit-transform-origin: 0 0px;
+    -ms-transform-origin: 0 0px;
+    -moz-transform-origin: 0 0px;
+    -o-transform-origin: 0 0px;
+    transform-origin: 0 0px; }
+  .why-champs p {
+    text-align: center;
+    width: 900px;
+    /*margin: 38px auto 70px;*/
+    transition: 0.5s all; }
+    .why-champs p.abs_pos {
+      top: 245px; }
+
+.whychamps-accordian {
+  overflow: hidden;
+  /*padding:0 0 0 330px;*/
+  /*background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;*/
+  overflow: hidden; }
+  .whychamps-accordian.abs_pos {
+    top: 385px;
+    margin: 0 0 0 -50px;
+    z-index: 3; }
+
+.shake {
+  animation: spaceboots 5s infinite linear;
+  transform-origin: 50% 50%; }
+  .shake.abs_pos {
+    top: 450px;
+    margin: 0 0 0 -680px;
+    z-index: 2; }
+
+/*Shake*/
+@-webkit-keyframes spaceboots {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+    transform: translate(2px, 1px) rotate(0deg); }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+    transform: translate(0px, 2px) rotate(0deg); }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    transform: translate(2px, 1px) rotate(-1deg); }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+    transform: translate(2px, 2px) rotate(0deg); }
+  100% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg); } }
+/**/
+.panelContent {
+  padding: 35px;
+  /*height:340px;
+  width:400px;*/
+  text-align: center; }
+  .panelContent h1 {
+    font-size: 26px;
+    margin: 0 0 20px; }
+
+.green, .white, .blue, .red {
+  width: 50px;
+  height: 340px;
+  float: left;
+  background: url(../img/index_why_acc1.png);
+  border-right: 5px solid #fbc93d;
+  cursor: pointer; }
+  .green span, .white span, .blue span, .red span {
+    display: block;
+    height: 200px;
+    text-align: center;
+    width: 340px;
+    text-align: center;
+    color: #fff;
+    -webkit-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+    -moz-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+    -ms-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+    -o-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+    transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+    -webkit-transform-origin: right top 0;
+    -moz-transform-origin: right top 0;
+    -ms-transform-origin: right top 0;
+    -o-transform-origin: right top 0;
+    transform-origin: right top 0; }
+
+.white {
+  background: #fff; }
+  .white span {
+    color: #000; }
+
+.blue {
+  background: url(../img/index_why_acc2.png); }
+
+.red {
+  background: url(../img/index_why_acc4.png); }
+
+.last {
+  border: none; }
+
+.video {
+  margin: 147px 0px 0 0;
+  padding: 5px 15px 165px 20px;
+  overflow: hidden;
+  background: url(../img/index_why_video.png) no-repeat 0px 0px; }
+  .video.abs_pos {
+    bottom: 0;
+    margin: 0px 0px 0px 490px; }
+
+/*acadamic-program*/
+.acadamic-program, .activity-programes, .testimonials, .gallery, .contact {
+  background: #8dc8f4;
+  /*padding: 40px 0 0;*/
+  position: relative;
+  height: 870px;
+  width: 100%;
+  overflow: hidden; }
+  .acadamic-program h1, .activity-programes h1, .testimonials h1, .gallery h1, .contact h1 {
+    text-align: center;
+    -webkit-transform-origin: 0 0px;
+    -ms-transform-origin: 0 0px;
+    -moz-transform-origin: 0 0px;
+    -o-transform-origin: 0 0px;
+    transform-origin: 0 0px; }
+    .acadamic-program h1.abs_pos, .activity-programes h1.abs_pos, .testimonials h1.abs_pos, .gallery h1.abs_pos, .contact h1.abs_pos {
+      top: 50px; }
+
+.contain-program, .contain-activity {
+  overflow: hidden;
+  /*float: right;*/
+  /*margin: 70px 20px 0px 0;*/ }
+  .contain-program.abs_pos, .abs_pos.contain-activity {
+    top: 245px; }
+
+.programs {
+  overflow: hidden; }
+  .programs .pro-preschool, .programs .pro-afterschool, .programs .pro-tution {
+    overflow: hidden;
+    width: 365px;
+    float: right;
+    margin: 0 0 0 35px; }
+    .programs .pro-preschool.abs_pos, .programs .abs_pos.pro-afterschool, .programs .abs_pos.pro-tution {
+      top: 245px;
+      margin: 0 0 0 -150px; }
+      .programs .pro-preschool.abs_pos figure, .programs .abs_pos.pro-afterschool figure, .programs .abs_pos.pro-tution figure {
+        height: 234px;
+        margin: 0 0 0 70px; }
+        .programs .pro-preschool.abs_pos figure img, .programs .abs_pos.pro-afterschool figure img, .programs .abs_pos.pro-tution figure img {
+          display: block;
+          text-align: center;
+          padding: 30px 0 0; }
+      .programs .pro-preschool.abs_pos h1, .programs .abs_pos.pro-afterschool h1, .programs .abs_pos.pro-tution h1 {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 24px;
+        color: #454545;
+        margin: 50px 0 25px;
+        font-family: 'RobotoRegular'; }
+      .programs .pro-preschool.abs_pos p, .programs .abs_pos.pro-afterschool p, .programs .abs_pos.pro-tution p {
+        text-align: center;
+        color: #7e7e7e;
+        font-size: 14px;
+        padding: 0 35px; }
+        .programs .pro-preschool.abs_pos p a, .programs .abs_pos.pro-afterschool p a, .programs .abs_pos.pro-tution p a {
+          display: table;
+          vertical-align: middle;
+          text-transform: capitalize;
+          color: #2a79be;
+          width: 68px;
+          padding: 4px 0;
+          margin: 30px auto 60px;
+          border: 1px solid #2a79be; }
+          .programs .pro-preschool.abs_pos p a:hover, .programs .abs_pos.pro-afterschool p a:hover, .programs .abs_pos.pro-tution p a:hover {
+            color: #fff; }
+  .programs .pro-afterschool.abs_pos {
+    top: 245px;
+    margin: 0 0 0 190px; }
+    .programs .pro-afterschool.abs_pos figure img {
+      padding: 0px 0 0; }
+  .programs .pro-tution.abs_pos {
+    top: 245px;
+    margin: 0 0 0 515px; }
+    .programs .pro-tution.abs_pos figure img {
+      padding: 0px 0 0; }
+
+.btn-viewall {
+  overflow: hidden;
+  float: right; }
+  .btn-viewall.abs_pos {
+    bottom: 25px;
+    margin: 0 0 0 490px; }
+    .btn-viewall.abs_pos a {
+      display: block;
+      background: url(../img/btn_view.png) no-repeat top right;
+      text-indent: -9999px;
+      width: 393px;
+      height: 80px;
+      transition: .2s all; }
+      .btn-viewall.abs_pos a:hover {
+        background: url(../img/btn_view.png) no-repeat left top; }
+
+/*Activity programs*/
+.activity-programes {
+  background: #d8efe9;
+  color: #fff;
+  height: 745px; }
+
+.activity {
+  overflow: hidden;
+  margin: 0 0 80px; }
+  .activity .activity-karate, .activity .activity-kungfu, .activity .activity-chess, .activity .activity-dance {
+    overflow: hidden;
+    float: left;
+    width: 170px;
+    padding: 54px 19px 18px;
+    margin: 0 0 0 63px;
+    background: url(../img/index_karate_bg.png) no-repeat 0px 0px;
+    border-radius: 5px; }
+    .activity .activity-karate.abs_pos, .activity .abs_pos.activity-kungfu, .activity .abs_pos.activity-chess, .activity .abs_pos.activity-dance {
+      top: 205px;
+      margin: 0 0 0 -218px; }
+      .activity .activity-karate.abs_pos p, .activity .abs_pos.activity-kungfu p, .activity .abs_pos.activity-chess p, .activity .abs_pos.activity-dance p {
+        text-align: center;
+        margin: 0px 0 22px;
+        line-height: 22px; }
+      .activity .activity-karate.abs_pos a, .activity .abs_pos.activity-kungfu a, .activity .abs_pos.activity-chess a, .activity .abs_pos.activity-dance a {
+        text-transform: capitalize;
+        display: block;
+        width: 80px;
+        margin: 0 auto;
+        padding: 6px 7px 8px;
+        color: #fff;
+        background: #357605; }
+        .activity .activity-karate.abs_pos a:hover, .activity .abs_pos.activity-kungfu a:hover, .activity .abs_pos.activity-chess a:hover, .activity .abs_pos.activity-dance a:hover {
+          color: #73a60b; }
+  .activity .activity-kungfu {
+    background: url(../img/index_kungfu_bg.png) no-repeat 0px 0px; }
+    .activity .activity-kungfu.abs_pos {
+      top: 205px;
+      margin: 0 0 0 41px; }
+      .activity .activity-kungfu.abs_pos a {
+        background: #24449d; }
+        .activity .activity-kungfu.abs_pos a:hover {
+          color: #2a7abf; }
+  .activity .activity-chess {
+    background: url(../img/index_chess_bg.png) no-repeat 0px 0px; }
+    .activity .activity-chess.abs_pos {
+      top: 205px;
+      margin: 0 0 0 298px; }
+      .activity .activity-chess.abs_pos a {
+        background: #f09309; }
+        .activity .activity-chess.abs_pos a:hover {
+          color: #f5b913; }
+  .activity .activity-dance {
+    background: url(../img/index_dance_bg.png) no-repeat 0px 0px; }
+    .activity .activity-dance.abs_pos {
+      top: 205px;
+      margin: 0 0 0 561px; }
+      .activity .activity-dance.abs_pos a {
+        background: #ab2865; }
+        .activity .activity-dance.abs_pos a:hover {
+          color: #ce5d92; }
+  .activity .karate-btm.abs_pos, .activity .abs_pos.kungfu-btm, .activity .abs_pos.chess-btm, .activity .abs_pos.dance-btm {
+    bottom: 135px;
+    margin: 0 0 0 -310px; }
+  .activity .kungfu-btm.abs_pos {
+    margin: 0 0 0 -45px; }
+  .activity .chess-btm.abs_pos {
+    margin: 0 0 0 200px; }
+  .activity .dance-btm.abs_pos {
+    margin: 0 0 0 455px; }
+
+/*Testimonials*/
+.testimonials {
+  background: #9ad563;
+  color: #454545;
+  height: 430px; }
+
+.testimonials-tell1 {
+  overflow: hidden;
+  margin: 0px 0 50px 0px;
+  width: 1140px; }
+  .testimonials-tell1 figure {
+    float: left; }
+  .testimonials-tell1 article {
+    overflow: hidden; }
+  .testimonials-tell1 div {
+    overflow: hidden;
+    padding: 30px 0 0 27px; }
+    .testimonials-tell1 div h4 {
+      color: #2d7cc0;
+      margin: 20px 0 0; }
+
+.div2 {
+  overflow: hidden; }
+  .div2.abs_pos {
+    top: 205px;
+    margin: 0 0 0 100px; }
+
+/*Gallery*/
+.gallery {
+  background: #ff7e37;
+  height: 460px; }
+  .gallery h1 {
+    margin: 0 0 45px 0; }
+
+.contact {
+  background: #fff;
+  color: #454545;
+  /*padding: 50px 0 0;*/
+  height: 360px; }
+  .contact h1 {
+    margin: 0 0 50px; }
+  .contact .address {
+    overflow: hidden;
+    float: left;
+    /*margin: 0 0 0 300px;*/ }
+    .contact .address.abs_pos {
+      bottom: 0;
+      margin: 0 0 0 -240px; }
+    .contact .address ul, .contact .address p {
+      background: url(../img/ico_locate.png) no-repeat 0px 5px;
+      padding: 0 0 0 40px; }
+    .contact .address p {
+      background: url(../img/ico_mail.png) no-repeat 0px 5px;
+      margin: 30px 0 0; }
+      .contact .address p a {
+        color: #454545; }
+        .contact .address p a:hover {
+          color: #e53f3e; }
+  .contact .ico-social {
+    overflow: hidden;
+    float: right;
+    /*margin: 0 275px 0 0;*/ }
+    .contact .ico-social.abs_pos {
+      bottom: 0;
+      margin: 0 0 0 240px; }
+    .contact .ico-social p {
+      background: url(../img/ico_call.png) no-repeat 0px 7px;
+      padding: 0 0 43px 40px; }
+      .contact .ico-social p span {
+        color: #2a79be; }
+    .contact .ico-social ul, .contact .ico-social .address p, .contact .address .ico-social p {
+      overflow: hidden;
+      padding: 0 0 0 40px; }
+      .contact .ico-social ul li, .contact .ico-social .address p li, .contact .address .ico-social p li {
+        float: left; }
+        .contact .ico-social ul li a, .contact .ico-social .address p li a, .contact .address .ico-social p li a {
+          width: 61px;
+          height: 60px;
+          display: block;
+          margin: 0 15px 0 0;
+          transition: all 0.5s ease;
+          /*background: url(../img/ico_social.png) no-repeat 0px 0px;*/ }
+        .contact .ico-social ul li a.ico-fb, .contact .ico-social .address p li a.ico-fb, .contact .address .ico-social p li a.ico-fb {
+          /*background: url(../img/ico_fb.png) no-repeat 0px 0px;
+          backface-visibility: hidden;
+          transform: rotateY(360deg);					
+          &:hover {
+          	background: url(../img/hover_ico_fb.png) no-repeat 0px 0px;
+          	transform: rotateY(-180deg);
+          	backface-visibility: visible;				
+          }*/ }
+        .contact .ico-social ul li a.ico-tweet, .contact .ico-social .address p li a.ico-tweet, .contact .address .ico-social p li a.ico-tweet {
+          /*background: url(../img/ico_tweet.png) no-repeat 0px 0px;
+          &:hover {
+          	background: url(../img/hover_ico_tweet.png) no-repeat 0px 0px;
+          }*/ }
+        .contact .ico-social ul li a.ico-google, .contact .ico-social .address p li a.ico-google, .contact .address .ico-social p li a.ico-google {
+          /*background: url(../img/ico_google.png) no-repeat 0px 0px;
+          &:hover {
+          	background: url(../img/hover_ico_google.png) no-repeat 0px 0px;
+          }*/ }
+
+.footer-banner {
+  overflow: hidden;
+  background: url(../img/banner_footer.jpg) no-repeat center top;
+  width: 100%;
+  height: 413px; }
+
+/*CopyRight*/
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'RobotoRegular';
+  color: #fff;
+  background: #2b2b2b;
+  padding: 33px 0 21px; }
+
+/*Character*/
+.char1, .char-skating, .char3, .char-gallery, .char-champion, .char-karate {
+  position: absolute;
+  top: 250px;
+  margin: 0 0 0 -515px; }
+
+.char-skating {
+  z-index: 1;
+  top: 400px;
+  margin: 0 0 0 -635px; }
+
+.char3, .char-gallery, .char-champion {
+  top: 100px;
+  margin: 0 0 0 -545px; }
+
+.char-karate {
+  margin: 0 0 0 -500px; }
+
+/*End Index Page*
+
+/*Font Face*/
+@font-face {
+  font-family: 'Action_Man';
+  src: url("../fonts/action/Action_Man.eot");
+  src: url("../fonts/action/Action_Man.eot") format("embedded-opentype"), url("../fonts/action/Action_Man.woff2") format("woff2"), url("../fonts/action/Action_Man.woff") format("woff"), url("../fonts/action/Action_Man.ttf") format("truetype"), url("../fonts/action/Action_Man.svg#Action_Man") format("svg"); }
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff2") format("woff2"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.svg#RobotoRegular") format("svg"); }
+
+/*# sourceMappingURL=main.css.map */

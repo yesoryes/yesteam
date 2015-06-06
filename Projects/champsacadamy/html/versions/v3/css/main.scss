@@ -1,0 +1,824 @@
+/* Scss Document */
+$font-size:16px;
+$color:#000;
+$font-family:'RobotoRegular';
+
+/*Header*/
+$main_nav_font:'Action_Man';
+$main_nav_font_size:25px;
+$nav_anchor_color:#fff;
+
+/*Why Champs*/
+$whychamps-bgcolor:#fbc93d;
+
+.abs_pos {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-moz-transform: translateX(-50%); 
+	-ms-transform: translateX(-50%);
+	z-index: 1;
+}
+
+body {
+	font-size: $font-size;
+	color: $color;
+	font-family: $font-family;
+	line-height: 24px;
+}
+/*Start Index Page*/
+#wrapper {
+	width: 100%;
+}
+.container {
+	width: 1366px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header{
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+.bg {
+	background: url(../img/header_bg.png) no-repeat center 0px;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	z-index: -2;
+}
+.logo {
+	float: left;
+	margin: 0 0 0 5px;
+}
+.main-nav {	
+	overflow: hidden;
+	float: right;
+	margin: 0 15px 0 0;
+		
+	ul {
+		overflow: hidden;
+		float: left;
+		
+		li {
+			float: left;
+			font-family: $main_nav_font;
+			font-size: $main_nav_font_size;
+			
+			a {
+				display: block;
+				color: $nav_anchor_color;
+				padding: 31px 0px 36px;
+				background: url(../img/main_nav_li_bg.png) no-repeat center 68px;
+				transition: 0.5s all;
+				width: 180px;
+			    text-align: center;
+			}
+		}
+		
+	}
+	.more {
+		overflow: hidden;
+		float: left;
+		font-family: 'Action_Man';
+		font-size: 25px;
+		margin: 7px 0 0;
+		height: 100vh;/*Side Menu*/
+		
+		a {
+			color: #fff;
+			background: url(../img/bg_more.png) no-repeat;
+			display: block;
+			padding: 22px 0;
+			width: 120px;
+			text-align: center;
+			transition: .2s all;
+			
+			&:hover {
+				color: #454545;	
+			}
+		}
+		
+	}
+}
+.menu-whychamps:hover {
+	font-size: 20px;
+	background: url(../img/hover_whychamps.png) no-repeat center 60px;
+	transform: translateY(-20px);
+}
+.menu-fungames:hover {
+	@extend.menu-whychamps:hover;
+	background: url(../img/hover_fungames.png) no-repeat center 60px;
+}
+.menu-programmes:hover {
+	@extend.menu-whychamps:hover;
+	background: url(../img/hover_progrmmes.png) no-repeat center 60px;
+}
+.menu-contact:hover {
+	@extend.menu-whychamps:hover;
+	background: url(../img/hover_contact.png) no-repeat center 60px;
+}
+.li-seps {
+	overflow: hidden;
+	margin: 30px 0px 0px;
+}
+
+/*Home Banner*/
+/*.home-banner {
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+		
+	.normal-home {
+		overflow: hidden;	
+		background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
+		position: relative;
+		height: 100Vh;
+		width: 100%;
+		
+		.another-school {
+			overflow: hidden;
+			width: 50%;
+			left: 0;
+			bottom: 182px;
+			float: left;
+			position: absolute;
+			
+			.another-school-bg {
+				overflow: hidden;
+				width: 100%;
+				position: absolute;
+				left:0;
+				bottom: -8px;;
+			}
+			.another-school-building {
+				@extend.another-school-bg;
+			}
+		}
+		.champs-school {
+			@extend.another-school;
+			right: 0;
+			left: inherit;
+			
+			.champs-school-bg {
+				@extend.another-school-bg;
+			}
+			.champs-school-building {
+				@extend.champs-school-bg;
+			}
+		}
+	}
+	.banner-seps {
+		overflow: hidden;
+		width: 3px;
+		top: 0;
+		border-right: 3px solid rgba(0,0,0,0.1);
+	}
+}*/
+.home-banner {
+	background: url(../img/banner/UnderConstruction.jpg) no-repeat center 0px;;
+	width: 100%;
+	height: 393px;
+}
+/*End Home Banner*/
+
+
+.left-cloud {
+	position: absolute;
+	top: 1150px;
+	z-index: 1;
+}
+.right-cloud {
+	@extend.left-cloud;
+	right: 0;
+	top: 1200px;
+}
+/*Why Champs*/
+.why-champs {
+	overflow: hidden; 
+	width: 100%;
+	height: 795px;
+	background: $whychamps-bgcolor;
+	color: #3b3116;
+	/*padding: 50px 0 0;*/
+	position: relative;
+	
+	h1 {
+		text-align: center;
+		top: 50px; 
+		-webkit-transform-origin: 0 0px;
+		-ms-transform-origin: 0 0px;
+		-moz-transform-origin: 0 0px;
+		-o-transform-origin: 0 0px;
+		transform-origin: 0 0px;
+	}
+	p {
+		text-align: center;
+		width: 900px;
+		/*margin: 38px auto 70px;*/
+		transition: 0.5s all;
+		
+		&.abs_pos {
+			top: 245px;
+		}
+	}
+	
+}
+
+.whychamps-accordian {
+	overflow: hidden;
+	/*padding:0 0 0 330px;*/
+	/*background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;*/
+	overflow:hidden;
+	&.abs_pos {
+		top: 385px;
+		margin: 0 0 0 -50px;
+		z-index: 3;
+	}
+}
+.shake {
+	animation: spaceboots 5s infinite linear;
+    transform-origin:50% 50%;
+	&.abs_pos {
+		top: 450px;
+		margin: 0 0 0 -680px;
+		z-index: 2;
+	}
+}
+/*Shake*/
+@-webkit-keyframes spaceboots {
+	0% { 
+		-webkit-transform: translate(2px, 1px) rotate(0deg); 
+		transform: translate(2px, 1px) rotate(0deg); 
+	}
+	10% {
+		 -webkit-transform: translate(-1px, -2px) rotate(-1deg); 
+		 transform: translate(-1px, -2px) rotate(-1deg); 
+	}
+	20% { 
+		-webkit-transform: translate(-3px, 0px) rotate(1deg);
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% { 
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+		transform: translate(0px, 2px) rotate(0deg);
+	}
+	40% {
+		 -webkit-transform: translate(1px, -1px) rotate(1deg);
+		 transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		 -webkit-transform: translate(-1px, 2px) rotate(-1deg); 
+		 transform: translate(-1px, 2px) rotate(-1deg); 
+	}
+	60% {
+		 -webkit-transform: translate(-3px, 1px) rotate(0deg); 
+		 transform: translate(-3px, 1px) rotate(0deg); 
+	}
+	70% {
+		 -webkit-transform: translate(2px, 1px) rotate(-1deg); 
+		 transform: translate(2px, 1px) rotate(-1deg);
+	}
+	80% {
+		 -webkit-transform: translate(-1px, -1px) rotate(1deg); 
+		 transform: translate(-1px, -1px) rotate(1deg); 
+	}
+	90% { 
+		-webkit-transform: translate(2px, 2px) rotate(0deg); 
+		transform: translate(2px, 2px) rotate(0deg);
+	}
+	100% {
+		 -webkit-transform: translate(2px, 1px) rotate(-1deg); 
+		 transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+/**/
+.panelContent {
+	padding: 35px;
+	/*height:340px;
+	width:400px;*/
+	text-align: center;
+	h1 {
+		font-size: 26px;
+		margin: 0 0 20px;
+	}
+	
+}
+.green {
+	width:50px;
+	height:340px;
+	float:left;
+	background: url(../img/index_why_acc1.png);
+	border-right:5px solid #fbc93d;
+	cursor:pointer;
+
+	
+	span {
+		display: block;
+		height: 200px;	
+		text-align: center;
+		width: 340px;
+		text-align: center;
+		color: #fff;
+		-webkit-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+		-moz-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+		-ms-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+		-o-transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+		transform: translateX(-100%) rotate(-90deg) translateZ(0px);
+		-webkit-transform-origin: right top 0;
+		-moz-transform-origin: right top 0;
+		-ms-transform-origin: right top 0;
+		-o-transform-origin: right top 0;
+		transform-origin: right top 0;
+	}
+
+}
+.white {
+	@extend.green;
+	background: #fff;
+	
+	span {
+		color: #000;
+	}
+}
+.blue {
+	@extend.green;
+	background: url(../img/index_why_acc2.png);
+}
+.red {
+	@extend.green;
+	background: url(../img/index_why_acc4.png);
+}
+
+.last {
+	border:none
+}
+
+
+.video {
+	margin: 147px 0px 0 0;
+	padding: 5px 15px 165px 20px;
+	overflow: hidden;
+	background: url(../img/index_why_video.png) no-repeat 0px 0px;
+	&.abs_pos {
+		bottom: 0;
+		margin: 0px 0px 0px 490px;
+	}
+}
+
+/*acadamic-program*/
+.acadamic-program {
+	background: #8dc8f4;
+	/*padding: 40px 0 0;*/
+	position: relative;
+	height: 870px;
+	width: 100%;
+	overflow: hidden;
+	
+	h1 {
+		text-align: center;
+    	-webkit-transform-origin: 0 0px;
+		-ms-transform-origin: 0 0px;
+		-moz-transform-origin: 0 0px;
+		-o-transform-origin: 0 0px;
+		transform-origin: 0 0px;
+		
+		&.abs_pos {
+			top: 50px;
+		}
+	}
+}
+.contain-program {
+	overflow: hidden;
+	/*float: right;*/
+	/*margin: 70px 20px 0px 0;*/
+	
+	&.abs_pos {
+		top: 245px;
+	}
+}
+.programs {
+	overflow: hidden;
+	
+	.pro-preschool {
+		overflow: hidden;
+		width: 365px;
+		float: right;
+		margin:0 0 0 35px;
+		&.abs_pos {
+			top: 245px;
+			margin: 0 0 0 -150px;
+			
+			figure {
+				height: 234px;
+				margin: 0 0 0 70px;
+				img {
+					display: block;
+					text-align: center;
+					padding: 30px 0 0;
+				}
+			}		
+			h1{
+				text-align: center;
+				text-transform: capitalize;
+				font-size: 24px;
+				color: #454545;
+				margin: 50px 0 25px;
+				font-family: 'RobotoRegular';
+			}
+			p {
+				text-align: center;
+				color: #7e7e7e;
+				font-size: 14px;
+				padding: 0 35px;
+				a {
+					display: table;
+					vertical-align: middle;
+					text-transform: capitalize;
+					color: #2a79be;
+					width: 68px;
+					padding: 4px 0;
+					margin: 30px auto 60px;
+					border: 1px solid #2a79be;
+					
+					&:hover{
+						//background: #2a79be;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.pro-afterschool {
+		@extend.pro-preschool;
+		&.abs_pos {
+			top: 245px;
+			margin: 0 0 0 190px;
+			figure {
+				img {
+					padding: 0px 0 0;
+				}
+			}		
+		}
+	}
+	.pro-tution {
+		@extend.pro-preschool;
+		&.abs_pos {
+			top: 245px;
+			margin: 0 0 0 515px;
+			figure {
+				img {
+					padding: 0px 0 0;
+				}
+			}	
+		}
+	}
+}
+.btn-viewall {
+	overflow: hidden;
+	float: right;
+	&.abs_pos {
+		bottom: 25px;
+		margin: 0 0 0 490px;
+	
+		a {
+			display: block;
+			background: url(../img/btn_view.png) no-repeat top right;
+			text-indent: -9999px;
+			width: 393px;
+			height: 80px;
+			transition: .2s all;
+			&:hover {
+				background: url(../img/btn_view.png) no-repeat left top;
+			}
+		}
+	}
+}
+
+/*Activity programs*/
+.activity-programes {
+	@extend.acadamic-program;
+	background: #d8efe9;
+	color: #fff;
+	height: 745px;
+}
+.contain-activity {
+	@extend.contain-program;
+}
+.activity {
+	overflow: hidden;
+	margin: 0 0 80px;
+	
+	.activity-karate {
+		overflow: hidden;
+		float: left;
+		width: 170px; 
+		padding: 54px 19px 18px;
+		margin: 0 0 0 63px;
+		background: url(../img/index_karate_bg.png) no-repeat 0px 0px;
+		border-radius: 5px;
+		&.abs_pos {
+			top: 205px;
+			margin: 0 0 0 -218px;			
+			
+			p {
+				text-align: center;
+				margin: 0px 0 22px;
+				line-height: 22px;
+			}
+			a {
+				text-transform: capitalize;
+				display: block;
+				width: 80px;
+				margin: 0 auto;
+				padding: 6px 7px 8px;
+				color: #fff;
+				background: #357605;
+				//transition: all 0.8s linear; 
+				&:hover {					
+					color: #73a60b;
+				}
+			}
+		}		
+	}
+	.activity-kungfu {
+		@extend.activity-karate;
+		background: url(../img/index_kungfu_bg.png) no-repeat 0px 0px;
+		&.abs_pos {
+			top: 205px;
+			margin: 0 0 0 41px;
+		
+			a {
+				background: #24449d;
+				&:hover {
+					;
+					color: #2a7abf;
+				}
+			}
+		}
+	}
+	.activity-chess {
+		@extend.activity-karate;
+		background: url(../img/index_chess_bg.png) no-repeat 0px 0px;
+		&.abs_pos {
+			top: 205px;
+			margin: 0 0 0 298px;
+		
+			a {
+				background: #f09309;
+				&:hover {
+					
+					color: #f5b913;
+				}
+			}
+		}
+	}
+	.activity-dance {
+		@extend.activity-karate;
+		background: url(../img/index_dance_bg.png) no-repeat 0px 0px;
+		&.abs_pos {
+			top: 205px;
+			margin: 0 0 0 561px;
+		
+			a {
+				background: #ab2865;
+				&:hover {
+					
+					color: #ce5d92;
+				}
+			}
+		}
+	}
+	.karate-btm {		
+		&.abs_pos {
+			bottom: 135px;
+			margin: 0 0 0 -310px;
+		}
+	}
+	.kungfu-btm {		
+		@extend.karate-btm;
+		&.abs_pos {
+			margin: 0 0 0 -45px;
+		}
+	}
+	.chess-btm {		
+		@extend.karate-btm;
+		&.abs_pos {
+			margin: 0 0 0 200px;
+		}
+	}
+	.dance-btm {		
+		@extend.karate-btm;
+		&.abs_pos {
+			margin: 0 0 0 455px;
+		}
+	}
+}
+/*Testimonials*/
+.testimonials {
+	@extend.acadamic-program;
+	background: #9ad563;
+	color: #454545;
+	height: 430px;
+}
+.testimonials-tell1 {
+	overflow: hidden;
+	margin: 0px 0 50px 0px;
+	width: 1140px;
+	
+	figure {
+		float: left;
+	}
+	article {
+		overflow: hidden;
+	}
+	div {
+		overflow: hidden;
+		padding: 30px 0 0 27px;
+		
+		h4 {
+			color: #2d7cc0;
+			margin: 20px 0 0;
+		}
+	}
+}
+.div2 {
+	overflow: hidden;
+	&.abs_pos {
+		top: 205px;
+		margin: 0 0 0 100px;
+	}
+}
+/*Gallery*/
+.gallery {
+	@extend.acadamic-program;
+	background: #ff7e37;
+	height: 460px;
+	
+	h1 {
+		margin: 0 0 45px 0;
+	}
+}
+
+.contact {
+	@extend.acadamic-program;
+	background: #fff;
+	color: #454545;
+	/*padding: 50px 0 0;*/
+	height: 360px;
+	
+	h1{
+		margin: 0 0 50px;
+	}	
+	.address {
+		overflow: hidden;
+		float: left;
+		/*margin: 0 0 0 300px;*/
+		&.abs_pos {
+			bottom: 0;
+			margin: 0 0 0 -240px;
+		}
+		ul {
+			background: url(../img/ico_locate.png) no-repeat 0px 5px;
+			padding: 0 0 0 40px;
+		}
+		p {
+			@extend ul;
+			background: url(../img/ico_mail.png) no-repeat 0px 5px;
+			margin: 30px 0 0;
+			
+			a {
+				color: #454545;
+				&:hover {
+					color: #e53f3e;
+				}
+			}
+		}
+	}
+	.ico-social {
+		overflow: hidden;
+		float: right;
+		/*margin: 0 275px 0 0;*/
+		&.abs_pos {
+			bottom: 0;
+			margin: 0 0 0 240px;
+		}
+		
+		p {
+			background: url(../img/ico_call.png) no-repeat 0px 7px;
+			padding: 0 0 43px 40px;
+			
+			span {
+				color: #2a79be;
+			}
+		}
+		ul {
+			overflow: hidden;
+			padding: 0 0 0 40px;
+			
+			li {
+				float: left;
+				
+				a {
+					width: 61px;
+					height: 60px;
+					display: block;
+					margin: 0 15px 0 0;
+					transition: all 0.5s ease;
+					/*background: url(../img/ico_social.png) no-repeat 0px 0px;*/
+				}
+				a.ico-fb {
+					/*background: url(../img/ico_fb.png) no-repeat 0px 0px;
+					backface-visibility: hidden;
+					transform: rotateY(360deg);					
+					&:hover {
+						background: url(../img/hover_ico_fb.png) no-repeat 0px 0px;
+						transform: rotateY(-180deg);
+						backface-visibility: visible;				
+					}*/
+				}
+				a.ico-tweet {
+					/*background: url(../img/ico_tweet.png) no-repeat 0px 0px;
+					&:hover {
+						background: url(../img/hover_ico_tweet.png) no-repeat 0px 0px;
+					}*/
+				}
+				a.ico-google {
+					/*background: url(../img/ico_google.png) no-repeat 0px 0px;
+					&:hover {
+						background: url(../img/hover_ico_google.png) no-repeat 0px 0px;
+					}*/
+				}
+			}
+		}
+	}
+}
+.footer-banner {
+	overflow: hidden;
+	background: url(../img/banner_footer.jpg) no-repeat center top;
+	width: 100%;
+	height: 413px;
+}
+
+/*CopyRight*/
+.copyright {
+	text-align: center;
+	font-size: 16px;
+	font-family: 'RobotoRegular';
+	color: #fff;
+	background: #2b2b2b;
+	padding: 33px 0 21px;
+}
+
+
+/*Character*/
+.char1 {
+	position: absolute;
+	top: 250px;
+	margin: 0 0 0 -515px;
+}
+.char-skating {
+	@extend.char1;
+	z-index: 1;
+	top: 400px;
+	margin: 0 0 0 -635px;
+}
+.char3 {
+	@extend.char1;
+	top: 100px;
+	margin: 0 0 0 -545px;
+}
+.char-karate {
+	@extend.char1;
+	margin: 0 0 0 -500px
+}
+.char-gallery {
+	@extend.char3;
+}
+.char-champion {
+	@extend.char3;
+}
+/*End Index Page*
+
+/*Font Face*/
+@font-face {
+    font-family: 'Action_Man';
+    src: url('../fonts/action/Action_Man.eot');
+    src: url('../fonts/action/Action_Man.eot') format('embedded-opentype'),
+         url('../fonts/action/Action_Man.woff2') format('woff2'),
+         url('../fonts/action/Action_Man.woff') format('woff'),
+         url('../fonts/action/Action_Man.ttf') format('truetype'),
+         url('../fonts/action/Action_Man.svg#Action_Man') format('svg');
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular/RobotoRegular.eot');
+    src: url('../fonts/RobotoRegular/RobotoRegular.eot') format('embedded-opentype'),
+         url('../fonts/RobotoRegular/RobotoRegular.woff2') format('woff2'),
+         url('../fonts/RobotoRegular/RobotoRegular.woff') format('woff'),
+         url('../fonts/RobotoRegular/RobotoRegular.ttf') format('truetype'),
+         url('../fonts/RobotoRegular/RobotoRegular.svg#RobotoRegular') format('svg');
+}
