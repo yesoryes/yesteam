@@ -367,7 +367,11 @@ nav ul li a b {
 .img_clock {
 	top: -60px;
 	margin: 0 0 0 250px;
-	transform: scale(0.1)
+	transform: scale(0.1);
+	-webkit-transform: scale(0.1);
+	-ms-transform: scale(0.1);
+	-moz-transform: scale(0.1);
+	-o-transform: scale(0.1);
 }
 .door_home {
 	top: -2px;
@@ -1231,6 +1235,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 	overflow: hidden;
 	background: url(../img/phone.png) no-repeat 0px 0px;
 	padding: 4px 0 0px 30px;
+	color: #fff;
 }
 .address p span {
 	padding-left: 15px;
@@ -1856,10 +1861,18 @@ transform: rotate(2deg) translate(-1px, 2px);
     position: relative;
     box-sizing: border-box;
     animation: marquee 15s linear infinite;
+	-moz-animation: marquee 15s linear infinite;
+	-o-animation: marquee 15s linear infinite;
+	-webkit-animation: marquee 15s linear infinite;
+	-ms-animation: marquee 15s linear infinite;
 }
 
 .marquee:hover {
     animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	-ms-animation-play-state: paused;
 }
 
 /* Make it move! */
@@ -1867,7 +1880,22 @@ transform: rotate(2deg) translate(-1px, 2px);
     0%   { top:   0em }
     100% { top: -23em }
 }
-
+@-webkit-keyframes marquee {
+    0%   { top:   0em }
+    100% { top: -23em }
+}
+@-moz-keyframes marquee {
+    0%   { top:   0em }
+    100% { top: -23em }
+}
+@-ms-keyframes marquee {
+    0%   { top:   0em }
+    100% { top: -23em }
+}
+@-o-keyframes marquee {
+    0%   { top:   0em }
+    100% { top: -23em }
+}
 
 
 #shots p {
@@ -1920,16 +1948,32 @@ transform: rotate(2deg) translate(-1px, 2px);
 .view_cam, .view_cam1 {
 	position: absolute;
 	transition: 0.4s all;
+	-webkit-transition: 0.4s all;
+	-moz-transition: 0.4s all;
+	-o-transition: 0.4s all;
+	-ms-transition: 0.4s all;
 }
 .rotate_trans {
 	transform: rotate(50deg) scale(1);
+	-webkit-transform: rotate(50deg) scale(1);
+	-moz-transform: rotate(50deg) scale(1);
+	-ms-transform: rotate(50deg) scale(1);
+	-o-transform: rotate(50deg) scale(1);
 }
 .view_normal img, .view_normal1 img {
 	display: block;
 	width: 82px;
 	height: 83px;
 	transform: scale(4);
-	transition: 0.5s all;
+	-webkit-transform: scale(4);
+	-moz-transform: scale(4);
+	-ms-transform: scale(4);
+	-o-transform: scale(4);
+	transition: 0.4s all;
+	-webkit-transition: 0.4s all;
+	-moz-transition: 0.4s all;
+	-o-transition: 0.4s all;
+	-ms-transition: 0.4s all;
 }
 /*End Studio Buttons*/
 

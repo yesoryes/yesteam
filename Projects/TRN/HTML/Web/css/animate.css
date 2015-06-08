@@ -3352,3 +3352,19 @@ Copyright (c) 2015 Daniel Eden
         -webkit-transition: all 0.3s 1s ease-out;  
                 transition: all 0.3s 1s ease-out;
     }
+	
+	
+/*div#loaderWrapper {
+    ...
+    display: none;
+    }
+
+div#preloader {             
+    top: 0; right: 10px;
+    position:absolute;
+    z-index:1000;
+    width: 132px; height: 38px;
+    background: url(path/to/preloaderBg.png) no-repeat;
+    cursor: wait;
+    text-shadow: 0px 1px 0px #fefefe;  //webkit                 
+    }*/

@@ -670,6 +670,36 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
+	$('.img_fashion').on('tap', function() {
+		//alert();
+		//console.log('User tapped .img_fashion');
+		$('.myshots_page').css({
+			'transition' : 'all 1.0s ease-in-out',
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(-100%)',
+			'-webkit-transform' : 'translateX(-100%)',
+			'-ms-transform' : 'translateX(-100%)',
+			'-moz-transform' : 'translateX(-100%)',
+			'-o-transform' : 'translateX(-100%)'
+		});
+	
+		$('.shot_gallery_banner.fashion').css({
+			'transition' : 'all 1.0s ease-in-out',			
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(100%)',
+			'-webkit-transform' : 'translateX(100%)',
+			'-moz-transform' : 'translateX(100%)',
+			'-ms-transform' : 'translateX(100%)',
+			'-o-transform' : 'translateX(100%)',
+		});	 
+	});
+	/*Image Adv*/
 	$(".img_adv").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
@@ -697,6 +727,36 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
+	$('.img_adv').on('tap', function() {
+		$('.myshots_page').css({
+			'transition' : 'all 1.0s ease-in-out',
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(-100%)',
+			'-webkit-transform' : 'translateX(-100%)',
+			'-ms-transform' : 'translateX(-100%)',
+			'-moz-transform' : 'translateX(-100%)',
+			'-o-transform' : 'translateX(-100%)'
+		});
+	
+		$('.shot_gallery_banner.adv').css({
+			'transition' : 'all 1.0s ease-in-out',			
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(100%)',
+			'-webkit-transform' : 'translateX(100%)',
+			'-moz-transform' : 'translateX(100%)',
+			'-ms-transform' : 'translateX(100%)',
+			'-o-transform' : 'translateX(100%)',
+		});	 		
+	});
+	/*End Image Adv*/
+	
+	/*Image Interiors*/
 	$(".img_interiors").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
@@ -724,6 +784,36 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
+	$('.img_interiors').on('tap', function() {
+		$('.myshots_page').css({
+			'transition' : 'all 1.0s ease-in-out',
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(-100%)',
+			'-webkit-transform' : 'translateX(-100%)',
+			'-ms-transform' : 'translateX(-100%)',
+			'-moz-transform' : 'translateX(-100%)',
+			'-o-transform' : 'translateX(-100%)'
+		});
+	
+		$('.shot_gallery_banner.interiors').css({
+			'transition' : 'all 1.0s ease-in-out',			
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(100%)',
+			'-webkit-transform' : 'translateX(100%)',
+			'-moz-transform' : 'translateX(100%)',
+			'-ms-transform' : 'translateX(100%)',
+			'-o-transform' : 'translateX(100%)',
+		});	 		
+	});
+	/*End Image Interiors*/
+	
+	/*Image Life Style*/
 	$(".img_life_style").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
@@ -751,6 +841,36 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
+	$('.img_life_style').on('tap', function() {
+		$('.myshots_page').css({
+			'transition' : 'all 1.0s ease-in-out',
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(-100%)',
+			'-webkit-transform' : 'translateX(-100%)',
+			'-ms-transform' : 'translateX(-100%)',
+			'-moz-transform' : 'translateX(-100%)',
+			'-o-transform' : 'translateX(-100%)'
+		});
+	
+		$('.shot_gallery_banner.style').css({
+			'transition' : 'all 1.0s ease-in-out',			
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(100%)',
+			'-webkit-transform' : 'translateX(100%)',
+			'-moz-transform' : 'translateX(100%)',
+			'-ms-transform' : 'translateX(100%)',
+			'-o-transform' : 'translateX(100%)',
+		}); 		
+	});
+	/*End Image Life Style*/
+	
+	/*Image Industry*/
 	$(".img_industry").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
@@ -778,6 +898,36 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
+	$('.img_industry').on('tap', function() {
+		$('.myshots_page').css({
+			'transition' : 'all 1.0s ease-in-out',
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(-100%)',
+			'-webkit-transform' : 'translateX(-100%)',
+			'-ms-transform' : 'translateX(-100%)',
+			'-moz-transform' : 'translateX(-100%)',
+			'-o-transform' : 'translateX(-100%)'
+		});
+	
+		$('.shot_gallery_banner.industry').css({
+			'transition' : 'all 1.0s ease-in-out',			
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(100%)',
+			'-webkit-transform' : 'translateX(100%)',
+			'-moz-transform' : 'translateX(100%)',
+			'-ms-transform' : 'translateX(100%)',
+			'-o-transform' : 'translateX(100%)',
+		});			
+	});
+	/*End Image Industry*/
+	
+	/*Image Jewellery*/
 	$(".img_jewellery ").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
@@ -805,6 +955,35 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
+	$('.img_jewellery').on('tap', function() {
+		$('.myshots_page').css({
+			'transition' : 'all 1.0s ease-in-out',
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(-100%)',
+			'-webkit-transform' : 'translateX(-100%)',
+			'-ms-transform' : 'translateX(-100%)',
+			'-moz-transform' : 'translateX(-100%)',
+			'-o-transform' : 'translateX(-100%)'
+		});
+	
+		$('.shot_gallery_banner.jewellery').css({
+			'transition' : 'all 1.0s ease-in-out',			
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(100%)',
+			'-webkit-transform' : 'translateX(100%)',
+			'-moz-transform' : 'translateX(100%)',
+			'-ms-transform' : 'translateX(100%)',
+			'-o-transform' : 'translateX(100%)',
+		});			
+	});
+	/*End Image Jewellery*/
+	/*Image Food*/
 	$(".img_food").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
@@ -832,6 +1011,36 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
+	$('.img_food').on('tap', function() {
+		$('.myshots_page').css({
+			'transition' : 'all 1.0s ease-in-out',
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(-100%)',
+			'-webkit-transform' : 'translateX(-100%)',
+			'-ms-transform' : 'translateX(-100%)',
+			'-moz-transform' : 'translateX(-100%)',
+			'-o-transform' : 'translateX(-100%)'
+		});
+	
+		$('.shot_gallery_banner.food').css({
+			'transition' : 'all 1.0s ease-in-out',			
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(100%)',
+			'-webkit-transform' : 'translateX(100%)',
+			'-moz-transform' : 'translateX(100%)',
+			'-ms-transform' : 'translateX(100%)',
+			'-o-transform' : 'translateX(100%)',
+		});			
+	});
+	/*End Image Food*/
+	
+	/*Image Hotel*/
 	$(".img_hotel").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
@@ -861,6 +1070,38 @@ $(document).ready(function() {
 			'opacity' : '1'
 		});	 
 	});
+	$('.img_hotel').on('tap', function() {
+		$('.myshots_page').css({
+			'transition' : 'all 1.0s ease-in-out',
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(-100%)',
+			'-webkit-transform' : 'translateX(-100%)',
+			'-ms-transform' : 'translateX(-100%)',
+			'-moz-transform' : 'translateX(-100%)',
+			'-o-transform' : 'translateX(-100%)',
+			
+		});
+	
+		$('.shot_gallery_banner.hotel').css({
+			'transition' : 'all 1.0s ease-in-out',			
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(100%)',
+			'-webkit-transform' : 'translateX(100%)',
+			'-moz-transform' : 'translateX(100%)',
+			'-ms-transform' : 'translateX(100%)',
+			'-o-transform' : 'translateX(100%)',
+			'opacity' : '1'
+		});	 
+	});
+	/*End Image Hotel*/
+	
+	/*Image Corporate*/
 	$(".img_corporate").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
@@ -888,6 +1129,36 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
+	$('.img_corporate').on('tap', function() {
+		$('.myshots_page').css({
+			'transition' : 'all 1.0s ease-in-out',
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(-100%)',
+			'-webkit-transform' : 'translateX(-100%)',
+			'-ms-transform' : 'translateX(-100%)',
+			'-moz-transform' : 'translateX(-100%)',
+			'-o-transform' : 'translateX(-100%)'
+		});
+	
+		$('.shot_gallery_banner.corporate').css({
+			'transition' : 'all 1.0s ease-in-out',			
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(100%)',
+			'-webkit-transform' : 'translateX(100%)',
+			'-moz-transform' : 'translateX(100%)',
+			'-ms-transform' : 'translateX(100%)',
+			'-o-transform' : 'translateX(100%)',
+		});	 
+	});
+	/*End Image Corporate*/
+	
+	/*Image Automobile*/
 	$(".img_automobile").click(function(){
 		$('.myshots_page').css({
 			'transition' : 'all 1.0s ease-in-out',
@@ -915,37 +1186,44 @@ $(document).ready(function() {
 			'-o-transform' : 'translateX(100%)',
 		});	 
 	});
+	$('.img_automobile').on('tap', function() {
+		$('.myshots_page').css({
+			'transition' : 'all 1.0s ease-in-out',
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(-100%)',
+			'-webkit-transform' : 'translateX(-100%)',
+			'-ms-transform' : 'translateX(-100%)',
+			'-moz-transform' : 'translateX(-100%)',
+			'-o-transform' : 'translateX(-100%)'
+		});
+	
+		$('.shot_gallery_banner.automobile').css({
+			'transition' : 'all 1.0s ease-in-out',			
+			'-webkit-transition' : 'all 1.0s ease-in-out',
+			'-ms-transition' : 'all 1.0s ease-in-out',
+			'-moz-transition' : 'all 1.0s ease-in-out',
+			'-o-transition' : 'all 1.0s ease-in-out',
+			'transform' : 'translateX(100%)',
+			'-webkit-transform' : 'translateX(100%)',
+			'-moz-transform' : 'translateX(100%)',
+			'-ms-transform' : 'translateX(100%)',
+			'-o-transform' : 'translateX(100%)',
+		});	 
+	});
+	/*End Image Automobile*/
 /*End Shots Page Slide*/
 	
 /* Gallery Back Button */
 	$('.btn_back').click(function(){
 	
-		$('.myshots_page').css({
-			'transition' : 'all 1.0s ease-in-out',
-			'-webkit-transition' : 'all 1.0s ease-in-out',
-			'-ms-transition' : 'all 1.0s ease-in-out',
-			'-moz-transition' : 'all 1.0s ease-in-out',
-			'-o-transition' : 'all 1.0s ease-in-out',
-			'transform' : 'translateX(0%)',
-			'-webkit-transform' : 'translateX(0%)',
-			'-moz-transform' : 'translateX(0%)',
-			'-ms-transform' : 'translateX(0%)',
-			'-o-transform' : 'translateX(0%)',
-		});
-		
-		$('.shot_gallery_banner').css({
-			'transition' : 'all 1.0s ease-in-out',
-			'-webkit-transition' : 'all 1.0s ease-in-out',
-			'-ms-transition' : 'all 1.0s ease-in-out',
-			'-moz-transition' : 'all 1.0s ease-in-out',
-			'-o-transition' : 'all 1.0s ease-in-out',
-			'transform' : 'translateX(0%)',
-			'-webkit-transform' : 'translateX(0%)',
-			'-moz-transform' : 'translateX(0%)',
-			'-ms-transform' : 'translateX(0%)',
-			'-o-transform' : 'translateX(0%)',
-		});
+		btnBack();
 				
+	});
+	$('.btn_back').on('tap', function() {
+		btnBack();
 	});
 	
 	function btnBack() {		
