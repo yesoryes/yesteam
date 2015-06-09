@@ -172,7 +172,9 @@ $( document ).ready(function() {
 		
 			if($(this).hasClass('open')) {
 			  // do nothing because the link is already open
-			} else {
+			} 
+			else 
+			{
 			  var oldcontent = $('#banner_ip_nav a.open').attr('href');
 			  var newcontent = $(this).attr('href');
 			  
@@ -182,6 +184,16 @@ $( document ).ready(function() {
 			  });      
 			  $('#banner_ip_nav a').removeClass('open');
 			  $(this).addClass('open');
+			}
+			
+			if($(this).hasClass('active')) {
+			  // do nothing because the link is already open
+			} 
+			else 
+			{
+			       
+			  $('#banner_ip_nav a').removeClass('active');
+			  $(this).addClass('active');
 			}
 		  });
 				
@@ -202,29 +214,56 @@ $( document ).ready(function() {
 			  $('#whychamps-activities a').removeClass('open');
 			  $(this).addClass('open');
 			}
+			
+			if($(this).hasClass('active')) {
+			  // do nothing because the link is already open
+			} 
+			else 
+			{
+			       
+			  $('#whychamps-activities a').removeClass('active');
+			  $(this).addClass('active');
+			}
+			
 		  });	 
 		
 		//Tab for IP School
-		$('#ip-skills-nav a').on('click', function(e){
+		$('#ip-skills-nav a').on('click', function(e)
+		 {
 			e.preventDefault();
 		
-			if($(this).hasClass('open')) {
-			  // do nothing because the link is already open
-			} else {
-			  var oldcontent = $('#ip-skills-nav a.open').attr('href');
-			  var newcontent = $(this).attr('href');
-			  
-			  $(oldcontent).fadeOut('fast', function(){
-				$(newcontent).fadeIn().removeClass('hidden');
-				$(oldcontent).addClass('hidden');
-			  });      
-			  $('#ip-skills-nav a').removeClass('open');
-			  $(this).addClass('open');
-			}
+			if($(this).hasClass('open'))
+				{
+				  // do nothing because the link is already open
+				}
+		     else
+			   {
+				  var oldcontent = $('#ip-skills-nav a.open').attr('href');
+				  var newcontent = $(this).attr('href'); 
+				  $(oldcontent).fadeOut('fast', function()
+				  {
+					$(newcontent).fadeIn().removeClass('hidden');
+					$(oldcontent).addClass('hidden');
+				  });      
+				  $('#ip-skills-nav a').removeClass('open');
+				  $(this).addClass('open');
+				}
+			
+			if($(this).hasClass('active'))
+				{
+				  // do nothing because the link is already open
+				} 
+				  else 
+				{
+					   
+				  $('#ip-skills-nav a').removeClass('active');
+				  $(this).addClass('active');
+				}
+				
 		  });
 		
 		
-		 
+	 
 		 
 		//Custom Select Box
 		;(function( $ ) {
