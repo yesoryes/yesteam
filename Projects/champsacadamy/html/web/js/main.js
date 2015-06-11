@@ -125,24 +125,7 @@ $( document ).ready(function() {
 	 
     }); 
 	 
-	/*  Contact  Light box  Js*/
-	
-		$('.lightbox-enquiry').click(function() {
-			$('.backdrop-enquiry').animate({'opacity':'0.5'}, 300, 'linear');
-			$('.backdrop-enquiry, .box-enquiry').css('display','block')
-		}) ; 
-		$('.close').click(function() {
-			close_box1()
-		}) ;  
-		$('.backdrop-enquiry').click(function() {
-			close_box1()
-		});
-		
-		function close_box1() {
-			$('.backdrop-enquiry').animate({'opacity':'0'}, 300, 'linear');
-			$('.backdrop-enquiry, .box-enquiry').css('display','none')
-		};
-		  
+	 
 		/*  News and events  Light box  Js*/
 	
 		$('.lightbox-news').click(function() {
