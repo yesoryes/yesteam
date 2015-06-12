@@ -2029,23 +2029,17 @@ header {
         overflow: hidden;
         margin: 0 auto; }
         .ip-pre .pre-events .activities-container .up-arrow a.prev {
-          line-height: 60px;
-          background: #b82423;
           margin: 0 auto;
           width: 180px;
           height: 48px;
           display: block;
           overflow: hidden;
-          text-align: center;
-          border-radius: 180px 180px 0 0;
-          -moz-border-radius: 180px 180px 0 0;
-          -ms-border-radius: 180px 180px 0 0;
-          -webkit-border-radius: 180px 180px 0 0; }
+          background: url(../img/up_arrow.png) top center no-repeat; }
           .ip-pre .pre-events .activities-container .up-arrow a.prev.disabled, .ip-pre .pre-events .activities-container .up-arrow a.prev.disabled:hover {
-            background: rgba(184, 36, 35, 0.5);
-            cursor: default; }
+            cursor: default;
+            background: url(../img/up_arrow.png) bottom center no-repeat; }
           .ip-pre .pre-events .activities-container .up-arrow a.prev:hover {
-            background: rgba(184, 36, 35, 0.8); }
+            background: url(../img/up_arrow.png) 0 -49px no-repeat; }
       .ip-pre .pre-events .activities-container .skills {
         background: #e53f3e;
         width: 234px;
@@ -2062,7 +2056,7 @@ header {
             font-family: 'Action_Man';
             font-size: 15px;
             color: #fff;
-            line-height: 76px;
+            line-height: 69px;
             display: block;
             width: 231px;
             height: 76px; }
@@ -2072,34 +2066,27 @@ header {
               font-family: 'Action_Man';
               font-size: 15px;
               color: #fff;
-              line-height: 76px;
+              line-height: 69px;
               display: block;
               width: 231px;
               height: 76px; }
       .ip-pre .pre-events .activities-container .down-arrow {
         width: 180px;
-        height: 48px;
-        text-align: center;
+        height: 49px;
         overflow: hidden;
         margin: 0 auto; }
         .ip-pre .pre-events .activities-container .down-arrow a.next {
-          line-height: 60px;
           width: 180px;
-          height: 48px;
+          height: 49px;
           margin: 0 auto;
           display: block;
           overflow: hidden;
-          text-align: center;
-          border-radius: 0 0 180px 180px;
-          -moz-border-radius: 0 0 180px 180px;
-          -ms-border-radius: 0 0 180px 180px;
-          -webkit-border-radius: 0 0 180px 180px;
-          background: #b82423; }
+          background: url(../img/down_arrow.png) bottom center no-repeat; }
           .ip-pre .pre-events .activities-container .down-arrow a.next.disabled, .ip-pre .pre-events .activities-container .down-arrow a.next.disabled:hover {
-            background: rgba(184, 36, 35, 0.5);
+            background: url(../img/down_arrow.png) top center no-repeat;
             cursor: default; }
           .ip-pre .pre-events .activities-container .down-arrow a.next:hover {
-            background: rgba(184, 36, 35, 0.8); }
+            background: url(../img/down_arrow.png) 0 -49px no-repeat; }
   .ip-pre .class-room {
     float: left;
     Width: 900px;

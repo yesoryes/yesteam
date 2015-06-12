@@ -2738,26 +2738,21 @@ header{
 					  margin:0 auto;			 
 					  a.prev
 					  {
-							line-height:60px; 
-							background:#b82423;
 							margin:0 auto;
 							width:180px;
 							height:48px;
 							display:block;
-							overflow:hidden;
-							text-align:center;
-							border-radius: 180px 180px 0 0;
-							-moz-border-radius: 180px 180px 0 0;
-							-ms-border-radius: 180px 180px 0 0;
-							-webkit-border-radius: 180px 180px 0 0;
+							overflow:hidden; 
+							background: url(../img/up_arrow.png) top center no-repeat;
 							&.disabled, &.disabled:hover 
 							{
-								background:rgba(184,36,35,0.5);
+								 
 								cursor: default;
+								background: url(../img/up_arrow.png) bottom center no-repeat;
 							}
 							&:hover
 							{
-								background:rgba(184,36,35,0.8);
+								background: url(../img/up_arrow.png) 0 -49px no-repeat;
 							}
 					  }
 				  } 
@@ -2773,14 +2768,14 @@ header{
 					  li
 					  {
 						  display:block; 
-						  vertical-align:middle;
+						  vertical-align:middle; 
 						  a
 						  {   
 							  text-align:center;
 							  font-family: 'Action_Man';
 							  font-size:15px;
 							  color:#fff;
-							  line-height:76px;
+							  line-height:69px;
 							  display:block; 
 							  width:231px;
 							  height:76px;
@@ -2791,7 +2786,7 @@ header{
 							  font-family: 'Action_Man';
 							  font-size:15px;
 							  color:#fff;
-							  line-height:76px;
+							  line-height:69px;
 							  display:block; 
 							  width:231px;
 							  height:76px;
@@ -2799,36 +2794,30 @@ header{
 							  }
 						  }
 				  }
+				  
 			  }
 			  .down-arrow
 			  {
 				  width:180px;
-				  height:48px; 
-				  text-align:center;
+				  height:49px;
 				  overflow:hidden;
 				  margin:0 auto;
 				  a.next
 				  {
-					  line-height:60px;
 					  width:180px;
-					  height:48px;
+					  height:49px;
 					  margin:0 auto;
 					  display:block;
 					  overflow:hidden;
-					  text-align:center;
-					  border-radius:0 0 180px 180px;
-					  -moz-border-radius:0 0 180px 180px;
-					  -ms-border-radius:0 0 180px 180px;
-					  -webkit-border-radius: 0 0 180px 180px;
-					  background:#b82423; 
+					  background: url(../img/down_arrow.png) bottom center no-repeat;
 					  &.disabled, &.disabled:hover 
 						{
-							background:rgba(184,36,35,0.5);
+							background: url(../img/down_arrow.png) top center no-repeat;
 							cursor: default;
 						}
 					  &:hover
 						{
-							background:rgba(184,36,35,0.8);
+							background: url(../img/down_arrow.png) 0 -49px no-repeat;
 						}
 				  }
 			  }
