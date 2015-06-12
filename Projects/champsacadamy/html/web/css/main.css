@@ -2019,40 +2019,45 @@ header {
     margin: 30px 0 0;
     position: relative;
     z-index: 105; }
-    .ip-pre .pre-events .up-arrow {
-      width: 180px;
-      height: 48px;
-      text-align: center;
-      border-radius: 180px 180px 0 0;
-      -moz-border-radius: 180px 180px 0 0;
-      -ms-border-radius: 180px 180px 0 0;
-      -webkit-border-radius: 180px 180px 0 0;
-      background: #b82423;
-      margin: 0 auto; }
-      .ip-pre .pre-events .up-arrow a {
-        line-height: 60px; }
-    .ip-pre .pre-events .skills {
-      background: #e53f3e;
-      width: 234px;
-      border-radius: 40px;
-      -moz-border-radius: 40px;
-      -ms-border-radius: 40px;
-      -webkit-border-radius: 40px;
-      padding: 15px 30px; }
-      .ip-pre .pre-events .skills li {
-        display: block;
-        vertical-align: middle; }
-        .ip-pre .pre-events .skills li a {
-          text-align: center;
-          font-family: 'Action_Man';
-          font-size: 15px;
-          color: #fff;
-          line-height: 76px;
+    .ip-pre .pre-events .activities-container {
+      float: left;
+      overflow: hidden; }
+      .ip-pre .pre-events .activities-container .up-arrow {
+        width: 180px;
+        height: 48px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 auto; }
+        .ip-pre .pre-events .activities-container .up-arrow a.prev {
+          line-height: 60px;
+          background: #b82423;
+          margin: 0 auto;
+          width: 180px;
+          height: 48px;
           display: block;
-          width: 231px;
-          height: 76px; }
-          .ip-pre .pre-events .skills li a.active, .ip-pre .pre-events .skills li a:hover {
-            background: url(../img/skill_hover.png) no-repeat left center;
+          overflow: hidden;
+          text-align: center;
+          border-radius: 180px 180px 0 0;
+          -moz-border-radius: 180px 180px 0 0;
+          -ms-border-radius: 180px 180px 0 0;
+          -webkit-border-radius: 180px 180px 0 0; }
+          .ip-pre .pre-events .activities-container .up-arrow a.prev.disabled, .ip-pre .pre-events .activities-container .up-arrow a.prev.disabled:hover {
+            background: rgba(184, 36, 35, 0.5);
+            cursor: default; }
+          .ip-pre .pre-events .activities-container .up-arrow a.prev:hover {
+            background: rgba(184, 36, 35, 0.8); }
+      .ip-pre .pre-events .activities-container .skills {
+        background: #e53f3e;
+        width: 234px;
+        border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -webkit-border-radius: 40px;
+        padding: 15px 30px; }
+        .ip-pre .pre-events .activities-container .skills li {
+          display: block;
+          vertical-align: middle; }
+          .ip-pre .pre-events .activities-container .skills li a {
             text-align: center;
             font-family: 'Action_Man';
             font-size: 15px;
@@ -2061,18 +2066,40 @@ header {
             display: block;
             width: 231px;
             height: 76px; }
-    .ip-pre .pre-events .down-arrow {
-      width: 180px;
-      height: 48px;
-      margin: 0 auto;
-      text-align: center;
-      border-radius: 0 0 180px 180px;
-      -moz-border-radius: 0 0 180px 180px;
-      -ms-border-radius: 0 0 180px 180px;
-      -webkit-border-radius: 0 0 180px 180px;
-      background: #b82423; }
-      .ip-pre .pre-events .down-arrow a {
-        line-height: 60px; }
+            .ip-pre .pre-events .activities-container .skills li a.active, .ip-pre .pre-events .activities-container .skills li a:hover {
+              background: url(../img/skill_hover.png) no-repeat left center;
+              text-align: center;
+              font-family: 'Action_Man';
+              font-size: 15px;
+              color: #fff;
+              line-height: 76px;
+              display: block;
+              width: 231px;
+              height: 76px; }
+      .ip-pre .pre-events .activities-container .down-arrow {
+        width: 180px;
+        height: 48px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 auto; }
+        .ip-pre .pre-events .activities-container .down-arrow a.next {
+          line-height: 60px;
+          width: 180px;
+          height: 48px;
+          margin: 0 auto;
+          display: block;
+          overflow: hidden;
+          text-align: center;
+          border-radius: 0 0 180px 180px;
+          -moz-border-radius: 0 0 180px 180px;
+          -ms-border-radius: 0 0 180px 180px;
+          -webkit-border-radius: 0 0 180px 180px;
+          background: #b82423; }
+          .ip-pre .pre-events .activities-container .down-arrow a.next.disabled, .ip-pre .pre-events .activities-container .down-arrow a.next.disabled:hover {
+            background: rgba(184, 36, 35, 0.5);
+            cursor: default; }
+          .ip-pre .pre-events .activities-container .down-arrow a.next:hover {
+            background: rgba(184, 36, 35, 0.8); }
   .ip-pre .class-room {
     float: left;
     Width: 900px;

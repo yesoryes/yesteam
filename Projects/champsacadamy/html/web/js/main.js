@@ -210,41 +210,6 @@ $( document ).ready(function() {
 			
 		  });	 
 		
-		//Tab for IP School
-		$('#ip-skills-nav a').on('click', function(e)
-		 {
-			e.preventDefault();
-		
-			if($(this).hasClass('open'))
-				{
-				  // do nothing because the link is already open
-				}
-		     else
-			   {
-				  var oldcontent = $('#ip-skills-nav a.open').attr('href');
-				  var newcontent = $(this).attr('href'); 
-				  $(oldcontent).fadeOut('fast', function()
-				  {
-					$(newcontent).fadeIn().removeClass('hidden');
-					$(oldcontent).addClass('hidden');
-				  });      
-				  $('#ip-skills-nav a').removeClass('open');
-				  $(this).addClass('open');
-				}
-			
-			if($(this).hasClass('active'))
-				{
-				  // do nothing because the link is already open
-				} 
-				  else 
-				{
-					   
-				  $('#ip-skills-nav a').removeClass('active');
-				  $(this).addClass('active');
-				}
-				
-		  });
-		
 		
 	 
 		 
