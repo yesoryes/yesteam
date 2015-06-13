@@ -631,32 +631,36 @@
     </div>
     </div>
     <div id="light" class="white_content">
-      <div class="event-content">
+      <div class="event-content" >
         <h4>Fill this form, and will be in touch</h4>
-        <form action="contact_mail.php" method="post" class="event-form" id="frmContact">
-          <div id="mail-status"></div>
+        <div id="form-messages"></div>
+        <form action="enquiry.php" method="post" class="event-form" id="ajax-contact">
           <div class="event-title">
             <label>Name</label>
-            <input type="text" name="" id="userName" value="" class="fillTitleText" placeholder="">
+            <input type="text" name="name" id="name" class="fillTitleText" required>
             <span id="userName-info" class="info"></span> </div>
           <div class="event-title">
             <label>Email</label>
-            <input type="email" name="" id="userEmail" value="" class="fillTitleText" placeholder="">
+            <input type="email" name="email" id="email" class="fillTitleText" required>
             <span id="userEmail-info" class="info"></span> </div>
           <div class="event-title">
-            <label>Phone</label>
-            <input type="text" name="User" id="subject" value="" class="fillTitleText" placeholder="">
+            <label>Mobile</label>
+            <!--<input type="tel" name="phone" id="phone" value="" class="fillTitleText" placeholder="" required>-->
+            <input type="number" pattern="[0-9]*" name="phone" class="fillTitleText" title="Eg: +91 987654321" required/>
             <span id="subject-info" class="info"></span> </div>
           <div class="event-title">
             <label>Details</label>
-            <input type="text" name="User" id="content" value="" class="fillTitleText" placeholder="">
+            <textarea id="message" name="message" class="fillMsg" required></textarea>
             <span id="content-info" class="info"></span> </div>
+          <div class="event-action">
+            <button type="submit">Send</button>
+          </div>
         </form>
-        <div class="event-action">
+        <!--<div class="event-action">
         	<p class="btn_contact"><a href="" onClick="sendContact()">send</a></p>
           <label></label>
-          <!--<button name="submit" class="btn_contact" id="submit" onClick="sendContact()"></button>-->
-        </div>
+          
+        </div>--> <!--<button name="submit" class="btn_contact" id="submit" onClick="sendContact()"></button>-->
       </div>
       <div class="close_box"><!--<img src="img/btn_close.png" width="30" height="30"  alt=""/>--></div> </div>
     <div id="map">
@@ -681,6 +685,7 @@
 <script src="js/my-slider-1.0.0.js"></script> 
 <script src="js/jquery.fancybox.js?v=2.1.5"></script>
 <script src="js/jquery-mobile-events.js"></script>
+<script src="js/enquiry.js"></script>
 <script src="js/main.js"></script>
 
 <script type="text/javascript">
