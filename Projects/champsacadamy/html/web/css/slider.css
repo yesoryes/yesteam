@@ -86,7 +86,7 @@
 /* --------- Others ------- */
 #mcts1 div, #mcts1 img
 {
-    -webkit-transform: translate3d(0,0,0);
+    /*-webkit-transform: translate3d(0,0,0);*/
 	transform: translate3d(0,0,0);
 }
 /*Slider*/
@@ -547,6 +547,8 @@
 	overflow: hidden;
 	margin: 0 0 0 50px;
 	padding: 0 0 30px;
+	position: absolute;
+	bottom: 0;
 	/*background: url(../img/submenu_bgBorder.png) no-repeat 0 bottom;*/
 }
 .submenu-social li {
@@ -560,82 +562,67 @@
 	float: left;
 	transition: all 0.5s ease;
 }
-/*a.sub-fb {
-	background: url(../img/sub_ico_fb.png) no-repeat left top;
-}
-a.sub-fb:hover {
-	background: url(../img/hover_sub_ico_fb.png) no-repeat left top;
-}
-a.sub-tweet {
-	background: url(../img/sub_ico_tweet.png) no-repeat left top;
-}
-a.sub-tweet:hover {
-	background: url(../img/hover_sub_ico_tweet.png) no-repeat left top;
-}
-a.sub-google {
-	background: url(../img/sub_ico_google.png) no-repeat left top;
-}
-a.sub-google:hover {
-	background: url(../img/hover_sub_ico_google.png) no-repeat left top;
-}*/
 .menu p {
 	font-size: 12px;
 	text-align: center;
 	color: #fff;
-	margin: 10px 0 0;
+	margin: 10px 0 0 50px;
 	font-family: 'RobotoRegular';
+	position: absolute;
+	bottom: 0;
 }
 
 /* 3d filip content */
-
 #f1_container {
-  position: relative;
-  width: 61px;
-  height: 60px;
-  z-index: 1;
+	position: relative;
+	width: 61px;
+	height: 60px;
+	z-index: 1;
 }
 #f1_container {
-  perspective: 1000px;
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  -ms-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-ms-perspective: 1000px;
 }
 #f1_card {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  transition: all 0.5s linear;
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -ms-transition: all 0.5s linear;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
 }
 #f1_container:hover #f1_card {
-  transform: rotateY(180deg);
-   -webkit-transform: rotateY(180deg);
-   -moz-transform: rotateY(180deg);
-   -ms-transform: rotateY(180deg);
-  
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 .face {
-	  position: absolute;
-	  width: 100%;
-	  height: 100%;
-	  backface-visibility: hidden;  /* W3C */
-	  -webkit-backface-visibility: hidden; /* Safari & Chrome */
-	  -moz-backface-visibility: hidden; /* Firefox */
-	  -ms-backface-visibility: hidden; /* Internet Explorer */
-	  -o-backface-visibility: hidden; /* Opera */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;  /* W3C */
+	-webkit-backface-visibility: hidden; /* Safari & Chrome */
+	-moz-backface-visibility: hidden; /* Firefox */
+	-ms-backface-visibility: hidden; /* Internet Explorer */
+	-o-backface-visibility: hidden; /* Opera */
 }
 .face.back {
-	  display: block;
-	  transform: rotateY(180deg);
-	  -ms-transform: rotateY(180deg);
-	  -moz-transform: rotateY(180deg);
-	  -webkit-transform: rotateY(180deg);
-	  box-sizing: border-box;
-	  -webkit-box-sizing: border-box;
-	  -moz-transform: rotateY(180deg);
-	  -ms-transform: rotateY(180deg);
+	display: block;
+	transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
 }
 /* end */

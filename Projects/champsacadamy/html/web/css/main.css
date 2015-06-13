@@ -106,7 +106,7 @@ header {
         color: #454545;
         background: url(../img/hover_more_bg.png) no-repeat; }
 
-.menu-whychamps:hover, .menu-fungames:hover, .menu-programmes:hover, .menu-contact:hover {
+.menu-whychamps:hover, .menu-fungames:hover, .menu-fungames.activepage, .menu-programmes:hover, .menu-programmes.activepage, .menu-contact:hover, .menu-contact.activepage, .menu-whychamps.activepage {
   font-size: 20px;
   background: url(../img/hover_whychamps.png) no-repeat center 60px;
   transform: translateY(-20px);
@@ -114,13 +114,13 @@ header {
   -moz-transform: translateY(-20px);
   -webkit-transform: translateY(-20px); }
 
-.menu-fungames:hover {
+.menu-fungames:hover, .menu-fungames.activepage {
   background: url(../img/hover_fungames.png) no-repeat center 60px; }
 
-.menu-programmes:hover {
+.menu-programmes:hover, .menu-programmes.activepage {
   background: url(../img/hover_progrmmes.png) no-repeat center 60px; }
 
-.menu-contact:hover {
+.menu-contact:hover, .menu-contact.activepage {
   background: url(../img/hover_contact.png) no-repeat center 60px; }
 
 .li-seps {
@@ -252,36 +252,69 @@ header {
 @-webkit-keyframes spaceboots {
   0% {
     -webkit-transform: translate(2px, 1px) rotate(0deg);
+    -o-transform: translate(2px, 1px) rotate(0deg);
+    -ms-transform: translate(2px, 1px) rotate(0deg);
+    -moz-transform: translate(2px, 1px) rotate(0deg);
     transform: translate(2px, 1px) rotate(0deg); }
   10% {
     -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    -o-transform: translate(-1px, -2px) rotate(-1deg);
+    -ms-transform: translate(-1px, -2px) rotate(-1deg);
+    -moz-transform: translate(-1px, -2px) rotate(-1deg);
     transform: translate(-1px, -2px) rotate(-1deg); }
   20% {
     -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    -o-transform: translate(-3px, 0px) rotate(1deg);
+    -moz-transform: translate(-3px, 0px) rotate(1deg);
+    -ms-transform: translate(-3px, 0px) rotate(1deg);
     transform: translate(-3px, 0px) rotate(1deg); }
   30% {
     -webkit-transform: translate(0px, 2px) rotate(0deg);
+    -moz-transform: translate(0px, 2px) rotate(0deg);
+    -o-transform: translate(0px, 2px) rotate(0deg);
+    -ms-transform: translate(0px, 2px) rotate(0deg);
     transform: translate(0px, 2px) rotate(0deg); }
   40% {
     -webkit-transform: translate(1px, -1px) rotate(1deg);
+    -moz-transform: translate(1px, -1px) rotate(1deg);
+    -o-transform: translate(1px, -1px) rotate(1deg);
+    -ms-transform: translate(1px, -1px) rotate(1deg);
     transform: translate(1px, -1px) rotate(1deg); }
   50% {
     -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    -o-transform: translate(-1px, 2px) rotate(-1deg);
+    -moz-transform: translate(-1px, 2px) rotate(-1deg);
+    -ms-transform: translate(-1px, 2px) rotate(-1deg);
     transform: translate(-1px, 2px) rotate(-1deg); }
   60% {
     -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    -o-transform: translate(-3px, 1px) rotate(0deg);
+    -ms-transform: translate(-3px, 1px) rotate(0deg);
+    -moz-transform: translate(-3px, 1px) rotate(0deg);
     transform: translate(-3px, 1px) rotate(0deg); }
   70% {
     -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    -o-transform: translate(2px, 1px) rotate(-1deg);
+    -ms-transform: translate(2px, 1px) rotate(-1deg);
+    -moz-transform: translate(2px, 1px) rotate(-1deg);
     transform: translate(2px, 1px) rotate(-1deg); }
   80% {
     -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    -o-transform: translate(-1px, -1px) rotate(1deg);
+    -ms-transform: translate(-1px, -1px) rotate(1deg);
+    -moz-transform: translate(-1px, -1px) rotate(1deg);
     transform: translate(-1px, -1px) rotate(1deg); }
   90% {
     -webkit-transform: translate(2px, 2px) rotate(0deg);
+    -o-transform: translate(2px, 2px) rotate(0deg);
+    -moz-transform: translate(2px, 2px) rotate(0deg);
+    -ms-transform: translate(2px, 2px) rotate(0deg);
     transform: translate(2px, 2px) rotate(0deg); }
   100% {
     -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    -o-transform: translate(1px, -2px) rotate(-1deg);
+    -ms-transform: translate(1px, -2px) rotate(-1deg);
+    -moz-transform: translate(1px, -2px) rotate(-1deg);
     transform: translate(1px, -2px) rotate(-1deg); } }
 /**/
 .panelContent {
@@ -580,12 +613,14 @@ header {
       margin: 0 0 0 240px; }
     .contact .ico-social p {
       background: url(../img/ico_call.png) no-repeat 0px 7px;
-      padding: 0 0 40px 40px; }
+      padding: 0 0 40px 40px;
+      overflow: hidden; }
       .contact .ico-social p span {
         color: #2a79be; }
     .contact .ico-social ul, .contact .ico-social .address p, .contact .address .ico-social p, .contact .ico-social .ip-contact .ip-address p, .ip-contact .ip-address .contact .ico-social p {
       overflow: hidden;
-      padding: 0 0 0 40px; }
+      padding: 0 0 0 40px;
+      width: 400px; }
       .contact .ico-social ul li, .contact .ico-social .address p li, .contact .address .ico-social p li, .contact .ico-social .ip-contact .ip-address p li, .ip-contact .ip-address .contact .ico-social p li {
         float: left; }
         .contact .ico-social ul li a, .contact .ico-social .address p li a, .contact .address .ico-social p li a, .contact .ico-social .ip-contact .ip-address p li a, .ip-contact .ip-address .contact .ico-social p li a {
@@ -596,27 +631,7 @@ header {
           transition: all 0.5s ease;
           -ms-transition: all 0.5s ease;
           -moz-transition: all 0.5s ease;
-          -webkit-transition: all 0.5s ease;
-          /*background: url(../img/ico_social.png) no-repeat 0px 0px;*/ }
-        .contact .ico-social ul li a.ico-fb, .contact .ico-social .address p li a.ico-fb, .contact .address .ico-social p li a.ico-fb, .contact .ico-social .ip-contact .ip-address p li a.ico-fb, .ip-contact .ip-address .contact .ico-social p li a.ico-fb {
-          /*background: url(../img/ico_fb.png) no-repeat 0px 0px;
-          backface-visibility: hidden;
-          transform: rotateY(360deg);					
-          &:hover {
-          	background: url(../img/hover_ico_fb.png) no-repeat 0px 0px;
-          	transform: rotateY(-180deg);
-          	backface-visibility: visible;				
-          }*/ }
-        .contact .ico-social ul li a.ico-tweet, .contact .ico-social .address p li a.ico-tweet, .contact .address .ico-social p li a.ico-tweet, .contact .ico-social .ip-contact .ip-address p li a.ico-tweet, .ip-contact .ip-address .contact .ico-social p li a.ico-tweet {
-          /*background: url(../img/ico_tweet.png) no-repeat 0px 0px;
-          &:hover {
-          	background: url(../img/hover_ico_tweet.png) no-repeat 0px 0px;
-          }*/ }
-        .contact .ico-social ul li a.ico-google, .contact .ico-social .address p li a.ico-google, .contact .address .ico-social p li a.ico-google, .contact .ico-social .ip-contact .ip-address p li a.ico-google, .ip-contact .ip-address .contact .ico-social p li a.ico-google {
-          /*background: url(../img/ico_google.png) no-repeat 0px 0px;
-          &:hover {
-          	background: url(../img/hover_ico_google.png) no-repeat 0px 0px;
-          }*/ }
+          -webkit-transition: all 0.5s ease; }
 
 .footer-banner {
   overflow: hidden;
