@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8" content="IE=edge">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
 <title>Champs</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/slider.css" rel="stylesheet" type="text/css" /> 
+
 </head> 
 <body>
 <!--<div class="black-overlay">-->
@@ -276,12 +278,12 @@
                         >
                         	<figure><img src="img/index_activity_dance.jpg" alt=""/></figure>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                            <div><a href="#">read more</a></div>
+                            <div class="activity-read-more"><a href="#">read more</a></div>
                         </div>
-                        <div class="karate-btm abs_pos"><img src="img/karate_btm.png" alt=""/></div>
-                        <div class="kungfu-btm abs_pos"><img src="img/kungfu_btm.png" alt=""/></div>
-                        <div class="chess-btm abs_pos"><img src="img/chess_btm.png" alt=""/></div>
-                        <div class="dance-btm abs_pos"><img src="img/dance_btm.png" alt=""/></div>
+                        <div class="karate-btm abs_pos"><!--<img src="img/karate_btm.png" alt=""/>--></div>
+                        <div class="kungfu-btm abs_pos"><!--<img src="img/kungfu_btm.png" alt=""/>--></div>
+                        <div class="chess-btm abs_pos"><!--<img src="img/InStage.png" alt=""/>--></div>
+                        <div class="dance-btm abs_pos"><!--<img src="img/dance_btm.png" alt=""/>--></div>
                     </div>
                     <p class="btn-activity abs_pos"><a href="afterschool.html">view all</a></p>
                 </div>
@@ -442,7 +444,7 @@
 <script src="js/jquery-1.10.1.min.js"></script>
 <!--<script src="js/prefixfree.min.js"></script>-->
 <script src="js/thumbnail-slider.js"></script><!--Home Gallery Thumbnail Slider-->
-<script src="js/jquery.easing.1.3.js"></script><!--Easing-->
+<script src="js/jquery-easing-1.3.js"></script><!--Easing-->
 <script src="js/liteaccordion.jquery.js"></script><!--Home Horizontal Accordian-->
 <script src="js/skrollr.js"></script><!--Home Page Parallex-->
 <script src="js/main.js"></script>
@@ -452,5 +454,20 @@
         document.createElement('figcaption');
     </script>
 <![endif]-->
+<script>
+$(document).ready(function(e) {
+    $('.activity-read-more a').bind("mouseenter",function() {
+		$('.dance-btm').css({
+			background: "url(img/dance.gif)",
+		});
+	});
+	$('.activity-read-more a').bind("mouseleave",function() {
+		$('.dance-btm').css({
+			background: "url(img/dance_btm.png) no-repeat 35px 25px",
+		});
+	})
+	
+});
+</script>
 </body>
 </html>

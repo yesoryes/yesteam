@@ -92,7 +92,7 @@ $( document ).ready(function() {
 /*End Parallex*/
 
 /*preload Images*/
-	function preload(arrayOfImages) {
+	/*function preload(arrayOfImages) {
 		$(arrayOfImages).each(function(){
 			$('<img/>')[0].src = this;
 			// Alternatively you could use:
@@ -106,7 +106,7 @@ $( document ).ready(function() {
 		'img/imageName.jpg',
 		'img/anotherOne.jpg',
 		'img/blahblahblah.jpg'
-	]);
+	]);*/
 /*End Preload images*/
 
 /*End Index Page*/	
