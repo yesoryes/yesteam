@@ -984,7 +984,9 @@ header {
     float: left;
     margin: 50px 0 0 60px;
     position: relative;
-    z-index: 105; }
+    z-index: 105;
+    font-size: 18px;
+    font-family: 'RobotoRegular'; }
     .ip-contact .ip-address ul, .ip-contact .ip-address p {
       background: url(../img/ip_ico_locate.png) no-repeat 0px 5px;
       padding: 0 0 0 40px; }
@@ -992,13 +994,15 @@ header {
       background: url(../img/ip_ico_mail.png) no-repeat 0px 5px;
       margin: 20px 0 0; }
       .ip-contact .ip-address p a {
-        color: #454545; }
+        color: #454545;
+        font-size: 18px;
+        font-family: 'RobotoRegular'; }
         .ip-contact .ip-address p a:hover {
           color: #e53f3e; }
   .ip-contact .ip-enq, .ip-contact .ip-career {
     overflow: hidden;
     float: left;
-    margin: 80px 35px 0 104px;
+    margin: 80px 35px 0 75px;
     position: relative;
     z-index: 105; }
     .ip-contact .ip-enq ul, .ip-contact .ip-career ul, .ip-contact .ip-enq .contact .address p, .contact .address .ip-contact .ip-enq p, .ip-contact .ip-career .contact .address p, .contact .address .ip-contact .ip-career p, .ip-contact .ip-enq .ip-address p, .ip-contact .ip-address .ip-enq p, .ip-contact .ip-career .ip-address p, .ip-contact .ip-address .ip-career p {
@@ -1050,7 +1054,9 @@ header {
     float: right;
     margin: 50px 60px 0 0;
     position: relative;
-    z-index: 105; }
+    z-index: 105;
+    font-size: 18px;
+    font-family: 'RobotoRegular'; }
     .ip-contact .ico-social p {
       background: url(../img/ip_ico_call.png) no-repeat 0px 7px;
       padding: 0 0 43px 40px; }
@@ -1214,7 +1220,6 @@ header {
           margin: 0;
           padding: 0; }
         .box .event-content .event-form .customfile-container .customfile-wrap .customfile-upload {
-          display: table-cell;
           vertical-align: middle;
           width: 100px;
           height: 30px;
@@ -1223,7 +1228,7 @@ header {
           font-family: 'RobotoRegular';
           font-size: 15px;
           text-decoration: none;
-          margin: 0 0 0 -1px;
+          margin: 0 0 0 0px;
           /* align with input */
           cursor: pointer;
           background: url(../img/ip_contact_small.jpg) repeat-x; }
@@ -1310,11 +1315,11 @@ header {
     .box-enquiry .close-enquiry:hover {
       background: url(../img/close-button.png) right no-repeat; }
   .box-enquiry .enquiry-program {
-    padding: 60px;
-    width: 1265px;
+    padding: 0px 0px 50px 20px;
+    width: 1206px;
     overflow: hidden; }
     .box-enquiry .enquiry-program h2 {
-      font-size: 24px;
+      font-size: 20px;
       color: #454545;
       font-family: 'Action_Man';
       text-align: left; }
@@ -1334,7 +1339,7 @@ header {
             width: 184px;
             margin: 4px 0 0;
             font-family: 'RobotoRegular';
-            font-size: 18px;
+            font-size: 15px;
             text-align: left;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
@@ -1354,7 +1359,7 @@ header {
       overflow: hidden; }
       .box-enquiry .enquiry-program .program-opted ul, .box-enquiry .enquiry-program .program-opted .contact .address p, .contact .address .box-enquiry .enquiry-program .program-opted p, .box-enquiry .enquiry-program .program-opted .ip-contact .ip-address p, .ip-contact .ip-address .box-enquiry .enquiry-program .program-opted p {
         float: left;
-        width: 350px;
+        width: 315px;
         overflow: hidden; }
         .box-enquiry .enquiry-program .program-opted ul li, .box-enquiry .enquiry-program .program-opted .contact .address p li, .contact .address .box-enquiry .enquiry-program .program-opted p li, .box-enquiry .enquiry-program .program-opted .ip-contact .ip-address p li, .ip-contact .ip-address .box-enquiry .enquiry-program .program-opted p li {
           text-align: left;
@@ -1386,8 +1391,8 @@ header {
   .box-enquiry .submit-button {
     position: relative;
     overflow: hidden;
-    left: 3%;
-    top: -45px; }
+    left: 9px;
+    bottom: 30px; }
     .box-enquiry .submit-button .sub-button {
       display: block;
       float: left;
@@ -1486,21 +1491,68 @@ header {
                   font-size: 15px;
                   text-align: center;
                   display: block;
-                  background: url(../img/ip_contact_smallsprites.jpg) no-repeat left; }
-                  .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a:hover, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a:hover, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:hover, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a:hover, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:hover {
+                  /*background:url(../img/ip_contact_smallsprites.jpg) no-repeat left; */ }
+                  .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a:hover span, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a:hover span, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:hover span, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a:hover span, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:hover span, .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a:focus span, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a:focus span, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:focus span, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a:focus span, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:focus span {
+                    background: #2f4351; }
+                  .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a:hover span::before, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a:hover span::before, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:hover span::before, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a:hover span::before, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:hover span::before, .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a:focus span::before, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a:focus span::before, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:focus span::before, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a:focus span::before, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:focus span::before {
+                    -webkit-transform: rotateX(10deg);
+                    -moz-transform: rotateX(10deg);
+                    transform: rotateX(10deg); }
+                  .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a span, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a span, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a span, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a span, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a span {
+                    position: relative;
+                    display: block;
                     color: #fff;
-                    background: url(../img/ip_contact_smallsprites.jpg) no-repeat right;
-                    transition: all .5s;
-                    -ms-transition: all .5s;
-                    -webkit-transition: all .5s; }
+                    background: #e53f3e;
+                    box-shadow: inset 0 3px #454545;
+                    -webkit-transition: background 0.6s;
+                    -moz-transition: background 0.6s;
+                    transition: background 0.6s;
+                    -webkit-transform-origin: 50% 0;
+                    -moz-transform-origin: 50% 0;
+                    transform-origin: 50% 0;
+                    -webkit-transform-style: preserve-3d;
+                    -moz-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+                    -webkit-transform-origin: 0% 50%;
+                    -moz-transform-origin: 0% 50%;
+                    transform-origin: 0% 50%; }
+                    .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a span::before, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a span::before, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a span::before, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a span::before, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a span::before {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      background: #454545;
+                      color: #fff;
+                      content: attr(data-hover);
+                      -webkit-transform: rotateX(270deg);
+                      -moz-transform: rotateX(270deg);
+                      transform: rotateX(270deg);
+                      -webkit-transition: -webkit-transform 0.6s;
+                      -moz-transition: -moz-transform 0.6s;
+                      transition: transform 0.6s;
+                      -webkit-transform-origin: 0 0;
+                      -moz-transform-origin: 0 0;
+                      transform-origin: 0 0;
+                      pointer-events: none; }
           .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1:nth-child(3), .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1:nth-child(3), .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1:nth-child(3), .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1:nth-child(3), .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1:nth-child(3), .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1:nth-child(4), .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1:nth-child(4), .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1:nth-child(4), .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1:nth-child(4), .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1:nth-child(4) {
             border: none; }
     .ip-news .jcarousel-wrapper .jcarousel-control-prev {
       position: absolute;
-      width: 31px;
+      width: 28px;
       height: 30px;
       cursor: pointer;
-      background: url(../img/back-arrow-left.png) no-repeat top;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'RobotoRegular';
+      font-size: 20px;
+      text-align: center;
+      border-radius: 50%;
+      box-shadow: -2px 0px #454545;
+      -moz-box-shadow: -2px 0px #454545;
+      -webkit-box-shadow: -2px 0px #454545;
+      -ms-box-shadow: -2px 0px #454545;
+      background: url(../img/back-arrow-left.png) no-repeat center bottom #e53f3e;
       text-decoration: none; }
       .ip-news .jcarousel-wrapper .jcarousel-control-prev:hover span {
         display: block; }
@@ -1511,13 +1563,31 @@ header {
         opacity: 0.5; }
       .ip-news .jcarousel-wrapper .jcarousel-control-prev:hover {
         margin: 0 auto;
-        background: url(../img/back-arrow-left.png) 0 -30px no-repeat; }
+        background: url(../img/back-arrow-left.png) center top no-repeat #fff; }
+      .ip-news .jcarousel-wrapper .jcarousel-control-prev:active {
+        margin: 0 auto;
+        box-shadow: 0px 0px #454545;
+        -webkit-box-shadow: 0px 0px #454545;
+        -moz-box-shadow: 0px 0px #454545;
+        -ms-box-shadow: 0px 0px #454545;
+        background: url(../img/back-arrow-left.png) center bottom no-repeat; }
     .ip-news .jcarousel-wrapper .jcarousel-control-next {
       position: absolute;
-      width: 31px;
+      width: 28px;
       height: 30px;
       cursor: pointer;
-      background: url(../img/back-arrow-right.png) no-repeat top;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'RobotoRegular';
+      font-size: 20px;
+      text-align: center;
+      vertical-align: center;
+      border-radius: 50%;
+      box-shadow: 2px 0px #454545;
+      -moz-box-shadow: 2px 0px #454545;
+      -webkit-box-shadow: 2px 0px #454545;
+      -ms-box-shadow: 2px 0px #454545;
+      background: url(../img/back-arrow-right.png) no-repeat center bottom #e53f3e;
       text-decoration: none; }
       .ip-news .jcarousel-wrapper .jcarousel-control-next:hover span {
         display: block; }
@@ -1528,7 +1598,14 @@ header {
         /* background:url(../img/back-arrow-right.png) no-repeat bottom;*/ }
       .ip-news .jcarousel-wrapper .jcarousel-control-next:hover {
         margin: 0 auto;
-        background: url(../img/back-arrow-right.png) 0 -30px no-repeat; }
+        background: url(../img/back-arrow-right.png) center top no-repeat #fff; }
+      .ip-news .jcarousel-wrapper .jcarousel-control-next:active {
+        margin: 0 auto;
+        box-shadow: 0px 0px #454545;
+        -moz-box-shadow: 0px 0px #454545;
+        -webkit-box-shadow: 0px 0px #454545;
+        -ms-box-shadow: 0px 0px #454545;
+        background: url(../img/back-arrow-right.png) center bottom no-repeat #e53f3e; }
     .ip-news .jcarousel-wrapper .jcarousel-control-prev {
       bottom: 0;
       left: 44%; }
@@ -1674,10 +1751,20 @@ header {
                 -ms-transform: rotate(0deg); }
     .ip-gallery .jcarousel-wrapper .jcarousel-control-prev {
       position: absolute;
-      width: 31px;
+      width: 28px;
       height: 30px;
       cursor: pointer;
-      background: url(../img/back-arrow-left.png) no-repeat top;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'RobotoRegular';
+      font-size: 20px;
+      text-align: center;
+      border-radius: 50%;
+      box-shadow: -2px 0px #454545;
+      -moz-box-shadow: -2px 0px #454545;
+      -webkit-box-shadow: -2px 0px #454545;
+      -ms-box-shadow: -2px 0px #454545;
+      background: url(../img/back-arrow-left.png) no-repeat center bottom #e53f3e;
       text-decoration: none; }
       .ip-gallery .jcarousel-wrapper .jcarousel-control-prev:hover span {
         display: block; }
@@ -1688,13 +1775,31 @@ header {
         opacity: 0.5; }
       .ip-gallery .jcarousel-wrapper .jcarousel-control-prev:hover {
         margin: 0 auto;
-        background: url(../img/back-arrow-left.png) 0 -30px no-repeat; }
+        background: url(../img/back-arrow-left.png) center top no-repeat #fff; }
+      .ip-gallery .jcarousel-wrapper .jcarousel-control-prev:active {
+        margin: 0 auto;
+        box-shadow: 0px 0px #454545;
+        -webkit-box-shadow: 0px 0px #454545;
+        -moz-box-shadow: 0px 0px #454545;
+        -ms-box-shadow: 0px 0px #454545;
+        background: url(../img/back-arrow-left.png) center bottom no-repeat; }
     .ip-gallery .jcarousel-wrapper .jcarousel-control-next {
       position: absolute;
-      width: 31px;
+      width: 28px;
       height: 30px;
       cursor: pointer;
-      background: url(../img/back-arrow-right.png) no-repeat top;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'RobotoRegular';
+      font-size: 20px;
+      text-align: center;
+      vertical-align: center;
+      border-radius: 50%;
+      box-shadow: 2px 0px #454545;
+      -moz-box-shadow: 2px 0px #454545;
+      -webkit-box-shadow: 2px 0px #454545;
+      -ms-box-shadow: 2px 0px #454545;
+      background: url(../img/back-arrow-right.png) no-repeat center bottom #e53f3e;
       text-decoration: none; }
       .ip-gallery .jcarousel-wrapper .jcarousel-control-next:hover span {
         display: block; }
@@ -1705,7 +1810,14 @@ header {
         /* background:url(../img/back-arrow-right.png) no-repeat bottom;*/ }
       .ip-gallery .jcarousel-wrapper .jcarousel-control-next:hover {
         margin: 0 auto;
-        background: url(../img/back-arrow-right.png) 0 -30px no-repeat; }
+        background: url(../img/back-arrow-right.png) center top no-repeat #fff; }
+      .ip-gallery .jcarousel-wrapper .jcarousel-control-next:active {
+        margin: 0 auto;
+        box-shadow: 0px 0px #454545;
+        -moz-box-shadow: 0px 0px #454545;
+        -webkit-box-shadow: 0px 0px #454545;
+        -ms-box-shadow: 0px 0px #454545;
+        background: url(../img/back-arrow-right.png) center bottom no-repeat #e53f3e; }
     .ip-gallery .jcarousel-wrapper .jcarousel-control-prev {
       bottom: 0;
       left: 38%; }
@@ -1743,27 +1855,29 @@ header {
       line-height: 25px;
       font-family: 'RobotoRegular';
       font-size: 16px;
-      margin: 45px 0px 0 60px;
-      background: url(../img/back_sprites.png) no-repeat right; }
+      margin: 45px 0px 0 80px;
+      background: url(../img/back_sprites.png) no-repeat left;
+      transition: .5s all;
+      -webkit-transition: .5s all; }
       .ip-gallery .back-home .button-back span {
         padding: 0 5px 0 0; }
       .ip-gallery .back-home .button-back:hover {
-        background: url(../img/back_sprites.png) no-repeat left; }
+        background: url(../img/back_sprites.png) no-repeat right; }
   .ip-gallery .annual-day {
     overflow: hidden;
     position: relative;
     z-index: 105; }
     .ip-gallery .annual-day h2 {
       text-align: left;
-      font-size: 30px;
+      font-size: 25px;
       font-family: 'Action_Man';
       font-weight: bold;
       color: #e53f3e;
-      padding: 60px 10px 15px 60px; }
+      padding: 40px 0px 0px 80px; }
     .ip-gallery .annual-day .jcarousel-wrapper {
       position: relative;
       width: 1366px;
-      height: 610px; }
+      height: 545px; }
       .ip-gallery .annual-day .jcarousel-wrapper .jcarousel {
         position: relative;
         overflow: hidden; }
@@ -1778,13 +1892,14 @@ header {
             width: 1366px; }
             .ip-gallery .annual-day .jcarousel-wrapper .jcarousel ul li .xpager-gallery, .ip-gallery .annual-day .jcarousel-wrapper .jcarousel .contact .address p li .xpager-gallery, .contact .address .ip-gallery .annual-day .jcarousel-wrapper .jcarousel p li .xpager-gallery, .ip-gallery .annual-day .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .xpager-gallery, .ip-contact .ip-address .ip-gallery .annual-day .jcarousel-wrapper .jcarousel p li .xpager-gallery {
               position: relative;
-              overflow: hidden; }
+              overflow: hidden;
+              margin: 0 25px; }
               .ip-gallery .annual-day .jcarousel-wrapper .jcarousel ul li .xpager-gallery p, .ip-gallery .annual-day .jcarousel-wrapper .jcarousel .contact .address p li .xpager-gallery p, .contact .address .ip-gallery .annual-day .jcarousel-wrapper .jcarousel p li .xpager-gallery p, .ip-gallery .annual-day .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .xpager-gallery p, .ip-contact .ip-address .ip-gallery .annual-day .jcarousel-wrapper .jcarousel p li .xpager-gallery p {
-                margin: 0 13px 14px 0px;
+                margin: 0 20px 20px 0px;
                 float: left;
                 overflow: hidden;
-                width: 260px;
-                height: 260px;
+                width: 224px;
+                height: 224px;
                 -webkit-box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.3);
                 -ms-box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.3);
                 -moz-box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -1943,45 +2058,83 @@ header {
                     height: auto; }
       .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-prev {
         position: absolute;
-        width: 31px;
+        width: 28px;
         height: 30px;
         cursor: pointer;
-        background: url(../img/back-arrow-left.png) top no-repeat;
+        color: #fff;
+        font-weight: bold;
+        font-family: 'RobotoRegular';
+        font-size: 20px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: -2px 0px #454545;
+        -moz-box-shadow: -2px 0px #454545;
+        -webkit-box-shadow: -2px 0px #454545;
+        -ms-box-shadow: -2px 0px #454545;
+        background: url(../img/back-arrow-left.png) no-repeat center bottom #e53f3e;
         text-decoration: none; }
         .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-prev:hover span {
           display: block; }
         .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-prev.inactive {
-          opacity: .5;
+          /* background:url(../img/back-arrow-left.png) bottom no-repeat ;*/
           cursor: default;
-          margin: 0 auto; }
+          margin: 0 auto;
+          opacity: 0.5; }
         .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-prev:hover {
           margin: 0 auto;
-          background: url(../img/back-arrow-left.png) 0 -30px no-repeat; }
+          background: url(../img/back-arrow-left.png) center top no-repeat #fff; }
+        .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-prev:active {
+          margin: 0 auto;
+          box-shadow: 0px 0px #454545;
+          -webkit-box-shadow: 0px 0px #454545;
+          -moz-box-shadow: 0px 0px #454545;
+          -ms-box-shadow: 0px 0px #454545;
+          background: url(../img/back-arrow-left.png) center bottom no-repeat; }
       .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-next {
         position: absolute;
-        width: 31px;
+        width: 28px;
         height: 30px;
         cursor: pointer;
-        background: url(../img/back-arrow-right.png) top no-repeat;
+        color: #fff;
+        font-weight: bold;
+        font-family: 'RobotoRegular';
+        font-size: 20px;
+        text-align: center;
+        vertical-align: center;
+        border-radius: 50%;
+        box-shadow: 2px 0px #454545;
+        -moz-box-shadow: 2px 0px #454545;
+        -webkit-box-shadow: 2px 0px #454545;
+        -ms-box-shadow: 2px 0px #454545;
+        background: url(../img/back-arrow-right.png) no-repeat center bottom #e53f3e;
         text-decoration: none; }
         .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-next:hover span {
           display: block; }
         .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-next.inactive {
-          opacity: .5;
-          margin: 0 auto; }
+          cursor: default;
+          margin: 0 auto;
+          opacity: 0.5;
+          /* background:url(../img/back-arrow-right.png) no-repeat bottom;*/ }
         .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-next:hover {
           margin: 0 auto;
-          background: url(../img/back-arrow-right.png) 0 -30px no-repeat; }
+          background: url(../img/back-arrow-right.png) center top no-repeat #fff; }
+        .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-next:active {
+          margin: 0 auto;
+          box-shadow: 0px 0px #454545;
+          -moz-box-shadow: 0px 0px #454545;
+          -webkit-box-shadow: 0px 0px #454545;
+          -ms-box-shadow: 0px 0px #454545;
+          background: url(../img/back-arrow-right.png) center bottom no-repeat #e53f3e; }
       .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-prev {
         bottom: 0;
-        left: 41%; }
+        left: 37.5%; }
       .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-next {
         bottom: 0;
-        right: 42.7%; }
+        right: 46.7%; }
       .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-pagination {
         position: absolute;
         bottom: 2px;
-        left: 45%; }
+        left: 41%; }
         .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-pagination a {
           text-decoration: none;
           font-family: 'RobotoRegular';
@@ -2005,13 +2158,13 @@ header {
   overflow: hidden; }
   .career h2 {
     text-align: left;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Action_Man';
     color: #e53f3e;
-    padding: 30px 10px; }
+    padding: 52px 0px 30px 80px; }
   .career .accordion-container {
     width: 960px;
-    margin: 0 0 1px;
+    margin: 0 0 1px 80px;
     clear: both; }
     .career .accordion-container .accordion-toggle {
       position: relative;
@@ -2059,36 +2212,87 @@ header {
         /* IE6-9 */ }
     .career .accordion-container .accordion-accontent {
       display: none;
-      padding: 10px;
+      padding: 15px 20px;
       overflow: auto;
       background: #fff; }
       .career .accordion-container .accordion-accontent h3 {
         color: #e53f3e;
         font-size: 24px;
         font-family: 'RobotoRegular';
-        padding: 10px 0; }
+        padding: 0px 0 0px 0; }
       .career .accordion-container .accordion-accontent h4 {
         color: #454545;
-        font-size: 24px;
+        font-size: 20px;
         font-family: 'RobotoRegular';
-        padding: 10px 0 10px 50px;
+        padding: 15px 0 10px 50px;
         background: url(../img/job_id.png) left no-repeat; }
+      .career .accordion-container .accordion-accontent p {
+        color: #454545;
+        font-size: 15px;
+        font-family: 'RobotoRegular';
+        line-height: 20px; }
       .career .accordion-container .accordion-accontent .apply-now {
         width: 120px;
         height: 30px;
-        margin: 20px 0; }
+        margin: 25px 0 10px 0; }
         .career .accordion-container .accordion-accontent .apply-now a {
           display: block;
           color: #fff;
-          font-size: 1em;
+          font-size: 15px;
           width: 120px;
           height: 30px;
           line-height: 25px;
-          background: url(../img/applynow_sprites.jpg) left no-repeat;
+          -webkit-perspective: 800px;
+          -moz-perspective: 800px;
+          perspective: 800px;
+          /*background:url(../img/applynow_sprites.jpg) left no-repeat;
+          transition:.5s all;
+          -webkit-transition:.5s all;*/
           text-align: center; }
-          .career .accordion-container .accordion-accontent .apply-now a:hover {
-            background: url(../img/applynow_sprites.jpg) right no-repeat;
-            color: #fff; }
+          .career .accordion-container .accordion-accontent .apply-now a:hover span, .career .accordion-container .accordion-accontent .apply-now a:focus span {
+            background: #2f4351; }
+          .career .accordion-container .accordion-accontent .apply-now a:hover span::before, .career .accordion-container .accordion-accontent .apply-now a:focus span::before {
+            -webkit-transform: rotateX(10deg);
+            -moz-transform: rotateX(10deg);
+            transform: rotateX(10deg); }
+          .career .accordion-container .accordion-accontent .apply-now a span {
+            position: relative;
+            display: inline-block;
+            padding: 3px 15px 0;
+            color: #fff;
+            background: #454545;
+            box-shadow: inset 0 3px #e53f3e;
+            -webkit-transition: background 0.6s;
+            -moz-transition: background 0.6s;
+            transition: background 0.6s;
+            -webkit-transform-origin: 50% 0;
+            -moz-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transform-origin: 0% 50%;
+            -moz-transform-origin: 0% 50%;
+            transform-origin: 0% 50%; }
+            .career .accordion-container .accordion-accontent .apply-now a span::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #e53f3e;
+              color: #fff;
+              content: attr(data-hover);
+              -webkit-transform: rotateX(270deg);
+              -moz-transform: rotateX(270deg);
+              transform: rotateX(270deg);
+              -webkit-transition: -webkit-transform 0.6s;
+              -moz-transition: -moz-transform 0.6s;
+              transition: transform 0.6s;
+              -webkit-transform-origin: 0 0;
+              -moz-transform-origin: 0 0;
+              transform-origin: 0 0;
+              pointer-events: none; }
 
 /* IP whychamps */
 .ip-whychamps {
@@ -2104,7 +2308,7 @@ header {
     z-index: 106; }
   .ip-whychamps .whychamps-funtions {
     list-style: none;
-    width: 1120px;
+    width: 1150px;
     height: 160px;
     margin: 100px 100px 0 145px;
     text-align: center;
@@ -2112,7 +2316,7 @@ header {
     position: relative;
     z-index: 105; }
     .ip-whychamps .whychamps-funtions li {
-      margin: 0 22px 0 0;
+      margin: 0 26px 0 0;
       float: left; }
       .ip-whychamps .whychamps-funtions li a {
         display: block;
@@ -2120,7 +2324,7 @@ header {
         color: #fff;
         text-align: center;
         font-family: 'Action_Man';
-        font-size: 24px;
+        font-size: 20px;
         width: 140px;
         padding: 40px 22px 0;
         height: 144px;
@@ -2133,10 +2337,11 @@ header {
         .ip-whychamps .whychamps-funtions li a.active, .ip-whychamps .whychamps-funtions li a:hover {
           background-color: #708229; }
   .ip-whychamps .champs-features {
-    width: 1366px;
+    width: 1206px;
     overflow: hidden;
     position: relative;
-    z-index: 106; }
+    z-index: 106;
+    padding: 0 80px; }
     .ip-whychamps .champs-features .article-features {
       width: 267px;
       height: 300px;
@@ -2164,7 +2369,7 @@ header {
             height: 44px; }
             .ip-whychamps .champs-features .article-features .article-middle .article-title li a {
               display: block;
-              font-size: 20px;
+              font-size: 18px;
               color: #fff;
               width: 270px;
               height: 44px;
@@ -2187,23 +2392,25 @@ header {
       display: none; }
     .ip-whychamps .champs-features .champs-article {
       float: left;
-      width: 1000px; }
+      width: 840px; }
       .ip-whychamps .champs-features .champs-article h3 {
-        font-size: 30px;
+        font-size: 25px;
         font-family: 'Action_Man';
         text-align: left; }
       .ip-whychamps .champs-features .champs-article .article-head {
         margin: 30px 0px 0;
-        width: 1000px;
+        width: 900px;
         height: 300px; }
         .ip-whychamps .champs-features .champs-article .article-head img {
           float: left;
           padding: 0 10px 0 0; }
         .ip-whychamps .champs-features .champs-article .article-head .quoted-text {
           float: left;
-          font-size: 24px;
-          margin: 150px 10px 0;
-          width: 727px; }
+          font-size: 20px;
+          margin: 90px 10px 0;
+          width: 600px; }
+          .ip-whychamps .champs-features .champs-article .article-head .quoted-text blockquote {
+            line-height: 30px; }
           .ip-whychamps .champs-features .champs-article .article-head .quoted-text .byline {
             margin: 15px 0px 0;
             color: #708229; }
@@ -2211,8 +2418,10 @@ header {
         margin: 30px 0px 0;
         line-height: 20px; }
         .ip-whychamps .champs-features .champs-article .article-cont p {
-          line-height: 30px;
-          padding: 10px 0; }
+          line-height: 24px;
+          padding: 10px 0;
+          font-size: 15px;
+          font-family: 'RobotoRegular'; }
       .ip-whychamps .champs-features .champs-article .article-foot {
         margin: 30px 0px 0;
         line-height: 20px; }
@@ -2285,17 +2494,18 @@ header {
   padding: 0px 0 0;
   overflow: hidden; }
   .ip-pre h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Action_Man';
-    text-align: left; }
+    text-align: left;
+    padding: 0 80px; }
     .ip-pre h3 span {
       color: #e53f3e;
-      font-size: 18px;
+      font-size: 15px;
       font-family: 'RobotoRegular'; }
   .ip-pre p {
-    padding: 15px 0;
-    font-size: 18px;
-    line-height: 28px;
+    padding: 15px 80px 15px 80px;
+    font-size: 15px;
+    line-height: 23px;
     font-family: 'RobotoRegular'; }
   .ip-pre .pre-events {
     float: left;
@@ -2304,7 +2514,8 @@ header {
     z-index: 105; }
     .ip-pre .pre-events .activities-container {
       float: left;
-      overflow: hidden; }
+      overflow: hidden;
+      padding: 0 0 0 80px; }
       .ip-pre .pre-events .activities-container .up-arrow {
         width: 180px;
         height: 48px;
@@ -2373,21 +2584,25 @@ header {
   .ip-pre .class-room {
     float: left;
     Width: 900px;
-    margin: 30px 0 0 45px; }
+    margin: 30px 80px 0 45px; }
     .ip-pre .class-room h3 {
       color: #e53f3e;
-      font-size: 24px;
+      font-size: 20px;
+      padding: 0 0 0 0px;
       font-family: 'RobotoRegular'; }
     .ip-pre .class-room li {
       padding: 0px 0;
-      font-size: 18px;
-      line-height: 28px;
-      margin: 0 0 0 60px;
-      font-family: 'RobotoRegular'; }
+      font-size: 15px;
+      line-height: 24px;
+      margin: 0px 0 0px 60px;
+      list-style: none;
+      font-family: 'RobotoRegular';
+      padding: 0 0 0 15px;
+      background: url(../img/bullet.png) no-repeat left; }
     .ip-pre .class-room p {
-      padding: 7px 0 8px;
-      font-size: 18px;
-      line-height: 28px;
+      padding: 10px 0 8px;
+      font-size: 15px;
+      line-height: 24px;
       font-family: 'RobotoRegular'; }
   .ip-pre .after-fea {
     width: 574px;
@@ -2417,14 +2632,16 @@ header {
       text-align: center; }
       .ip-pre .after-fea .afterschool-features h5 {
         font-family: 'Action_Man';
-        font-size: 22px;
+        font-size: 25px;
         color: #e53f3e;
-        margin: 120px 0 0; }
+        margin: 110px 0 0; }
       .ip-pre .after-fea .afterschool-features p {
         font-family: 'RobotoRegular';
-        font-size: 20px;
+        font-size: 15px;
         color: #454545;
-        margin: 0px 72px; }
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 70px 0 70px; }
 
 /* IP Preschool Start */
 .ip-footer {
