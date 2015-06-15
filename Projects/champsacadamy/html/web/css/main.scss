@@ -264,8 +264,6 @@ header{
 
 .whychamps-accordian {
 	overflow: hidden;
-	/*padding:0 0 0 330px;*/
-	/*background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;*/
 	overflow:hidden;
 	&.abs_pos {
 		top: 385px;
@@ -289,6 +287,9 @@ header{
 		margin: 0 0 0 -680px;
 		z-index: 2;
 	}
+}
+.ie9 .shake .abs_pos {
+	margin: 0 0 0 -500px;
 }
 /*Shake*/
 @-webkit-keyframes spaceboots {
@@ -373,8 +374,6 @@ header{
 /**/
 .panelContent {
 	padding: 35px;
-	/*height:340px;
-	width:400px;*/
 	text-align: center;
 	h1 {
 		font-size: 26px;
@@ -447,7 +446,6 @@ header{
 /*acadamic-program*/
 .acadamic-program {
 	background: #8dc8f4;
-	/*padding: 40px 0 0;*/
 	position: relative;
 	height: 870px;
 	width: 100%;
@@ -468,9 +466,7 @@ header{
 }
 .contain-program {
 	overflow: hidden;
-	/*float: right;*/
-	/*margin: 70px 20px 0px 0;*/
-	
+		
 	&.abs_pos {
 		top: 245px;
 	}
@@ -520,7 +516,6 @@ header{
 					border: 1px solid #2a79be;
 					
 					&:hover{
-						/*background: #2a79be;*/
 						color: #fff;
 					}
 				}
@@ -756,7 +751,6 @@ header{
 	@extend.acadamic-program;
 	background: #fff;
 	color: #454545;
-	/*padding: 50px 0 0;*/
 	height: 360px;
 	
 	h1{
@@ -765,7 +759,6 @@ header{
 	.address {
 		overflow: hidden;
 		float: left;
-		/*margin: 0 0 0 300px;*/
 		&.abs_pos {
 			bottom: 0;
 			margin: 0 0 0 -240px;
@@ -790,7 +783,6 @@ header{
 	.ico-social {
 		overflow: hidden;
 		float: right;
-		/*margin: 0 275px 0 0;*/
 		&.abs_pos {
 			bottom: 0;
 			margin: 0 0 0 240px;
@@ -873,7 +865,7 @@ header{
 .char-champion {
 	@extend.char3;
 }
-/*End Index Page*
+/*End Index Page*/
 
 
                             /* Start Inner Page */

@@ -224,8 +224,6 @@ header {
 
 .whychamps-accordian {
   overflow: hidden;
-  /*padding:0 0 0 330px;*/
-  /*background: url(../img/index_why_aerochar.png) no-repeat 0px 70px;*/
   overflow: hidden; }
   .whychamps-accordian.abs_pos {
     top: 385px;
@@ -247,6 +245,9 @@ header {
     top: 450px;
     margin: 0 0 0 -680px;
     z-index: 2; }
+
+.ie9 .shake .abs_pos {
+  margin: 0 0 0 -500px; }
 
 /*Shake*/
 @-webkit-keyframes spaceboots {
@@ -319,8 +320,6 @@ header {
 /**/
 .panelContent {
   padding: 35px;
-  /*height:340px;
-  width:400px;*/
   text-align: center; }
   .panelContent h1 {
     font-size: 26px;
@@ -377,7 +376,6 @@ header {
 /*acadamic-program*/
 .acadamic-program, .activity-programes, .testimonials, .gallery, .contact {
   background: #8dc8f4;
-  /*padding: 40px 0 0;*/
   position: relative;
   height: 870px;
   width: 100%;
@@ -393,9 +391,7 @@ header {
       top: 50px; }
 
 .contain-program, .contain-activity {
-  overflow: hidden;
-  /*float: right;*/
-  /*margin: 70px 20px 0px 0;*/ }
+  overflow: hidden; }
   .contain-program.abs_pos, .abs_pos.contain-activity {
     top: 245px; }
 
@@ -438,7 +434,6 @@ header {
           margin: 30px auto 60px;
           border: 1px solid #2a79be; }
           .programs .pro-preschool.abs_pos p a:hover, .programs .abs_pos.pro-afterschool p a:hover, .programs .abs_pos.pro-tution p a:hover {
-            /*background: #2a79be;*/
             color: #fff; }
   .programs .pro-afterschool.abs_pos {
     top: 245px;
@@ -583,14 +578,12 @@ header {
 .contact {
   background: #fff;
   color: #454545;
-  /*padding: 50px 0 0;*/
   height: 360px; }
   .contact h1 {
     margin: 0 0 50px; }
   .contact .address {
     overflow: hidden;
-    float: left;
-    /*margin: 0 0 0 300px;*/ }
+    float: left; }
     .contact .address.abs_pos {
       bottom: 0;
       margin: 0 0 0 -240px; }
@@ -606,8 +599,7 @@ header {
           color: #e53f3e; }
   .contact .ico-social {
     overflow: hidden;
-    float: right;
-    /*margin: 0 275px 0 0;*/ }
+    float: right; }
     .contact .ico-social.abs_pos {
       bottom: 0;
       margin: 0 0 0 240px; }
@@ -666,10 +658,8 @@ header {
 .char-karate {
   margin: 0 0 0 -500px; }
 
-/*End Index Page*
-
-
-                            /* Start Inner Page */
+/*End Index Page*/
+/* Start Inner Page */
 /* Inner pages Common Start */
 .ip-wrapper {
   position: relative;
