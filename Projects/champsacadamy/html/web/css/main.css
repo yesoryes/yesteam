@@ -1495,15 +1495,14 @@ header {
                   .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a:hover span, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a:hover span, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:hover span, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a:hover span, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:hover span, .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a:focus span, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a:focus span, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:focus span, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a:focus span, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:focus span {
                     background: #2f4351; }
                   .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a:hover span::before, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a:hover span::before, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:hover span::before, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a:hover span::before, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:hover span::before, .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a:focus span::before, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a:focus span::before, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:focus span::before, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a:focus span::before, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a:focus span::before {
-                    -webkit-transform: rotateX(10deg);
-                    -moz-transform: rotateX(10deg);
-                    transform: rotateX(10deg); }
+                    -webkit-transform: rotateX(270deg);
+                    -moz-transform: rotateX(270deg);
+                    transform: rotateX(270deg); }
                   .ip-news .jcarousel-wrapper .jcarousel ul li .ip-events .events-1 .events-name .read-more a span, .ip-news .jcarousel-wrapper .jcarousel .contact .address p li .ip-events .events-1 .events-name .read-more a span, .contact .address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a span, .ip-news .jcarousel-wrapper .jcarousel .ip-contact .ip-address p li .ip-events .events-1 .events-name .read-more a span, .ip-contact .ip-address .ip-news .jcarousel-wrapper .jcarousel p li .ip-events .events-1 .events-name .read-more a span {
                     position: relative;
                     display: block;
                     color: #fff;
                     background: #e53f3e;
-                    box-shadow: inset 0 3px #454545;
                     -webkit-transition: background 0.6s;
                     -moz-transition: background 0.6s;
                     transition: background 0.6s;
@@ -1522,12 +1521,13 @@ header {
                       left: 0;
                       width: 100%;
                       height: 100%;
-                      background: #454545;
+                      background: #e53f3e;
                       color: #fff;
+                      box-shadow: inset 0 3px #454545;
                       content: attr(data-hover);
-                      -webkit-transform: rotateX(270deg);
-                      -moz-transform: rotateX(270deg);
-                      transform: rotateX(270deg);
+                      -webkit-transform: rotateX(10deg);
+                      -moz-transform: rotateX(10deg);
+                      transform: rotateX(10deg);
                       -webkit-transition: -webkit-transform 0.6s;
                       -moz-transition: -moz-transform 0.6s;
                       transition: transform 0.6s;
@@ -1570,7 +1570,7 @@ header {
         -webkit-box-shadow: 0px 0px #454545;
         -moz-box-shadow: 0px 0px #454545;
         -ms-box-shadow: 0px 0px #454545;
-        background: url(../img/back-arrow-left.png) center bottom no-repeat; }
+        background: url(../img/back-arrow-left.png) center bottom no-repeat #e53f3e; }
     .ip-news .jcarousel-wrapper .jcarousel-control-next {
       position: absolute;
       width: 28px;
@@ -1782,7 +1782,7 @@ header {
         -webkit-box-shadow: 0px 0px #454545;
         -moz-box-shadow: 0px 0px #454545;
         -ms-box-shadow: 0px 0px #454545;
-        background: url(../img/back-arrow-left.png) center bottom no-repeat; }
+        background: url(../img/back-arrow-left.png) center bottom no-repeat #e53f3e; }
     .ip-gallery .jcarousel-wrapper .jcarousel-control-next {
       position: absolute;
       width: 28px;
@@ -2089,7 +2089,7 @@ header {
           -webkit-box-shadow: 0px 0px #454545;
           -moz-box-shadow: 0px 0px #454545;
           -ms-box-shadow: 0px 0px #454545;
-          background: url(../img/back-arrow-left.png) center bottom no-repeat; }
+          background: url(../img/back-arrow-left.png) center bottom no-repeat #e53f3e; }
       .ip-gallery .annual-day .jcarousel-wrapper .jcarousel-control-next {
         position: absolute;
         width: 28px;
@@ -2231,68 +2231,64 @@ header {
         font-size: 15px;
         font-family: 'RobotoRegular';
         line-height: 20px; }
-      .career .accordion-container .accordion-accontent .apply-now {
+      .career .accordion-container .accordion-accontent .apply-now a {
         width: 120px;
         height: 30px;
-        margin: 25px 0 10px 0; }
-        .career .accordion-container .accordion-accontent .apply-now a {
+        font-family: 'RobotoRegular';
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 30px;
+        font-size: 15px;
+        text-align: center;
+        display: block;
+        margin: 20px 0px 10px 0;
+        /*background:url(../img/ip_contact_smallsprites.jpg) no-repeat left; */ }
+        .career .accordion-container .accordion-accontent .apply-now a:hover span, .career .accordion-container .accordion-accontent .apply-now a:focus span {
+          background: #e53f3e; }
+        .career .accordion-container .accordion-accontent .apply-now a:hover span::before, .career .accordion-container .accordion-accontent .apply-now a:focus span::before {
+          -webkit-transform: rotateX(270deg);
+          -moz-transform: rotateX(270deg);
+          transform: rotateX(270deg); }
+        .career .accordion-container .accordion-accontent .apply-now a span {
+          position: relative;
           display: block;
           color: #fff;
-          font-size: 15px;
-          width: 120px;
-          height: 30px;
-          line-height: 25px;
-          -webkit-perspective: 800px;
-          -moz-perspective: 800px;
-          perspective: 800px;
-          /*background:url(../img/applynow_sprites.jpg) left no-repeat;
-          transition:.5s all;
-          -webkit-transition:.5s all;*/
-          text-align: center; }
-          .career .accordion-container .accordion-accontent .apply-now a:hover span, .career .accordion-container .accordion-accontent .apply-now a:focus span {
-            background: #2f4351; }
-          .career .accordion-container .accordion-accontent .apply-now a:hover span::before, .career .accordion-container .accordion-accontent .apply-now a:focus span::before {
+          text-transform: uppercase;
+          background: #2f4351;
+          box-shadow: inset 0 3px #e53f3e;
+          -webkit-transition: background 0.6s;
+          -moz-transition: background 0.6s;
+          transition: background 0.6s;
+          -webkit-transform-origin: 50% 0;
+          -moz-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+          -webkit-transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+          -webkit-transform-origin: 0% 50%;
+          -moz-transform-origin: 0% 50%;
+          transform-origin: 0% 50%; }
+          .career .accordion-container .accordion-accontent .apply-now a span::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #454545;
+            color: #fff;
+            display: block;
+            box-shadow: inset 0 3px #e53f3e;
+            content: attr(data-hover);
             -webkit-transform: rotateX(10deg);
             -moz-transform: rotateX(10deg);
-            transform: rotateX(10deg); }
-          .career .accordion-container .accordion-accontent .apply-now a span {
-            position: relative;
-            display: inline-block;
-            padding: 3px 15px 0;
-            color: #fff;
-            background: #454545;
-            box-shadow: inset 0 3px #e53f3e;
-            -webkit-transition: background 0.6s;
-            -moz-transition: background 0.6s;
-            transition: background 0.6s;
-            -webkit-transform-origin: 50% 0;
-            -moz-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-            -webkit-transform-style: preserve-3d;
-            -moz-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-            -webkit-transform-origin: 0% 50%;
-            -moz-transform-origin: 0% 50%;
-            transform-origin: 0% 50%; }
-            .career .accordion-container .accordion-accontent .apply-now a span::before {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background: #e53f3e;
-              color: #fff;
-              content: attr(data-hover);
-              -webkit-transform: rotateX(270deg);
-              -moz-transform: rotateX(270deg);
-              transform: rotateX(270deg);
-              -webkit-transition: -webkit-transform 0.6s;
-              -moz-transition: -moz-transform 0.6s;
-              transition: transform 0.6s;
-              -webkit-transform-origin: 0 0;
-              -moz-transform-origin: 0 0;
-              transform-origin: 0 0;
-              pointer-events: none; }
+            transform: rotateX(10deg);
+            -webkit-transition: -webkit-transform 0.6s;
+            -moz-transition: -moz-transform 0.6s;
+            transition: transform 0.6s;
+            -webkit-transform-origin: 0 0;
+            -moz-transform-origin: 0 0;
+            transform-origin: 0 0;
+            pointer-events: none; }
 
 /* IP whychamps */
 .ip-whychamps {
@@ -2303,14 +2299,14 @@ header {
   .ip-whychamps h1 {
     margin: 0 0 0px; }
   .ip-whychamps .whychamps_iconimg {
-    margin: -57px 0 0 0;
+    margin: -60px 0 0 0;
     position: relative;
     z-index: 106; }
   .ip-whychamps .whychamps-funtions {
     list-style: none;
     width: 1150px;
     height: 160px;
-    margin: 100px 100px 0 145px;
+    margin: 100px 100px 0 117px;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -2325,13 +2321,13 @@ header {
         text-align: center;
         font-family: 'Action_Man';
         font-size: 20px;
-        width: 140px;
-        padding: 40px 22px 0;
-        height: 144px;
-        border-radius: 184px;
-        -moz-border-radius: 184px;
-        -ms-border-radius: 184px;
-        -webkit-border-radius: 184px;
+        width: 120px;
+        padding: 40px 32px 0;
+        height: 146px;
+        border-radius: 205px;
+        -moz-border-radius: 205px;
+        -ms-border-radius: 205px;
+        -webkit-border-radius: 205px;
         background-color: #e53f3e;
         border: 9px solid #edf8fd; }
         .ip-whychamps .whychamps-funtions li a.active, .ip-whychamps .whychamps-funtions li a:hover {
@@ -2459,7 +2455,7 @@ header {
       height: 86px;
       line-height: 86px;
       color: #fff;
-      background: url(../img/school_bg_sprites1.png) no-repeat top;
+      background: url(../img/school_bg_sprites.png) no-repeat top;
       display: block; }
     .school-type li a.a1 {
       width: 188px;
