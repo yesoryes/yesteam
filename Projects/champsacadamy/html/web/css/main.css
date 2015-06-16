@@ -75,7 +75,7 @@ header {
     .main-nav ul li, .main-nav .contact .address p li, .contact .address .main-nav p li, .main-nav .ip-contact .ip-address p li, .ip-contact .ip-address .main-nav p li {
       float: left;
       font-family: "Action_Man";
-      font-size: 25px; }
+      font-size: 20px; }
       .main-nav ul li a, .main-nav .contact .address p li a, .contact .address .main-nav p li a, .main-nav .ip-contact .ip-address p li a, .ip-contact .ip-address .main-nav p li a {
         display: block;
         color: #fff;
@@ -91,7 +91,7 @@ header {
     overflow: hidden;
     float: left;
     font-family: 'Action_Man';
-    font-size: 25px;
+    font-size: 20px;
     margin: 7px 0 0;
     /*height: 100vh;/*Side Menu*/ }
     .main-nav .more a {
@@ -190,7 +190,7 @@ header {
 /*End Home Banner*/
 .left-cloud, .right-cloud {
   position: absolute;
-  top: 1150px;
+  top: 700px;
   z-index: 1; }
 
 .right-cloud {
@@ -217,6 +217,7 @@ header {
   .why-champs p {
     text-align: center;
     width: 900px;
+    font-size: 15px;
     /*margin: 38px auto 70px;*/
     transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -245,8 +246,8 @@ header {
   -moz-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%; }
   .shake.abs_pos {
-    top: 450px;
-    margin: 0 0 0 -680px;
+    top: 465px;
+    margin: 0 0 0 -630px;
     z-index: 2; }
 
 /*Shake*/
@@ -672,7 +673,7 @@ header {
     margin: 0 0 0 35px; }
     .programs .pro-preschool.abs_pos, .programs .abs_pos.pro-afterschool, .programs .abs_pos.pro-tution {
       top: 245px;
-      margin: 0 0 0 -150px; }
+      margin: 0 0 0 -165px; }
       .programs .pro-preschool.abs_pos figure, .programs .abs_pos.pro-afterschool figure, .programs .abs_pos.pro-tution figure {
         height: 234px;
         margin: 0 0 0 70px; }
@@ -705,12 +706,12 @@ header {
             color: #fff; }
   .programs .pro-afterschool.abs_pos {
     top: 245px;
-    margin: 0 0 0 190px; }
+    margin: 0 0 0 175px; }
     .programs .pro-afterschool.abs_pos figure img {
       padding: 0px 0 0; }
   .programs .pro-tution.abs_pos {
     top: 245px;
-    margin: 0 0 0 515px; }
+    margin: 0 0 0 500px; }
     .programs .pro-tution.abs_pos figure img {
       padding: 0px 0 0; }
 
@@ -719,7 +720,7 @@ header {
   float: right; }
   .btn-viewall.abs_pos, .abs_pos.btn-activity {
     bottom: 25px;
-    margin: 0 0 0 490px; }
+    margin: 0 0 0 475px; }
     .btn-viewall.abs_pos a, .abs_pos.btn-activity a {
       display: block;
       background: url(../img/btn_view.png) no-repeat top right;
@@ -757,7 +758,7 @@ header {
     border-radius: 5px; }
     .activity .activity-karate.abs_pos, .activity .abs_pos.activity-kungfu, .activity .abs_pos.activity-chess, .activity .abs_pos.activity-dance {
       top: 205px;
-      margin: 0 0 0 -218px; }
+      margin: 0 0 0 -233px; }
       .activity .activity-karate.abs_pos p, .activity .abs_pos.activity-kungfu p, .activity .abs_pos.activity-chess p, .activity .abs_pos.activity-dance p {
         text-align: center;
         margin: 0px 0 22px;
@@ -776,7 +777,7 @@ header {
     background: url(../img/index_kungfu_bg.png) no-repeat 0px 0px; }
     .activity .activity-kungfu.abs_pos {
       top: 205px;
-      margin: 0 0 0 41px; }
+      margin: 0 0 0 26px; }
       .activity .activity-kungfu.abs_pos a {
         background: #24449d; }
         .activity .activity-kungfu.abs_pos a:hover {
@@ -785,7 +786,7 @@ header {
     background: url(../img/index_chess_bg.png) no-repeat 0px 0px; }
     .activity .activity-chess.abs_pos {
       top: 205px;
-      margin: 0 0 0 298px; }
+      margin: 0 0 0 283px; }
       .activity .activity-chess.abs_pos a {
         background: #f09309; }
         .activity .activity-chess.abs_pos a:hover {
@@ -794,7 +795,7 @@ header {
     background: url(../img/index_dance_bg.png) no-repeat 0px 0px; }
     .activity .activity-dance.abs_pos {
       top: 205px;
-      margin: 0 0 0 561px; }
+      margin: 0 0 0 546px; }
       .activity .activity-dance.abs_pos a {
         background: #ab2865; }
         .activity .activity-dance.abs_pos a:hover {
@@ -807,7 +808,7 @@ header {
       bottom: 110px;
       margin: 0 0 0 -325px; }
   .activity .kungfu-btm {
-    background: url(../img/kungfu_btm.png) no-repeat -30px -30px; }
+    background: url(../img/kungfu_btm.png) no-repeat 0px; }
     .activity .kungfu-btm.abs_pos {
       margin: 0 0 0 -45px; }
   .activity .chess-btm {
@@ -823,12 +824,12 @@ header {
 .testimonials {
   background: #9ad563;
   color: #454545;
-  height: 430px; }
+  height: 450px; }
 
 .testimonials-tell1 {
   overflow: hidden;
   margin: 0px 0 50px 0px;
-  width: 1140px; }
+  width: 1040px; }
   .testimonials-tell1 figure {
     float: left; }
   .testimonials-tell1 article {
@@ -920,14 +921,13 @@ header {
 
 /*Character*/
 .char1, .char-skating, .char3, .char-gallery, .char-champion, .char-karate {
-  position: absolute;
   top: 250px;
   margin: 0 0 0 -515px; }
 
 .char-skating {
-  z-index: 1;
-  top: 400px;
-  margin: 0 0 0 -635px; }
+  z-index: 100;
+  top: 1600px;
+  margin: 0 0 0 -500px; }
 
 .char3, .char-gallery, .char-champion {
   top: 100px;
@@ -935,6 +935,22 @@ header {
 
 .char-karate {
   margin: 0 0 0 -500px; }
+
+/*
+Back to top button 
+*/
+#back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  z-index: 1000; }
+
+#back-top a {
+  display: block;
+  /* background color transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s; }
 
 /*End Index Page*/
 /* Start Inner Page */

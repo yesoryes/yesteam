@@ -235,8 +235,8 @@
                 </div>                
     		</div>
             <div class="char1 abs_pos"><img src="img/char_champ1.png" alt=""/></div>
-            <div class="char-skating abs_pos"><img src="img/char_skating.png" alt=""/></div>
-        </div>
+            
+  </div><div class="char-skating abs_pos"><img src="img/char_skating.png" alt=""/></div>
         <!--End Acadamic Program-->
         
         <!--Activity Program-->
@@ -254,7 +254,7 @@
                         >
                         	<figure><img src="img/index_activity_karate.jpg" alt=""/></figure>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                            <div><a href="#">read more</a></div>
+                            <div class="activity-read-more"><a href="#">read more</a></div>
                         </div>
                         <div class="activity-kungfu abs_pos"
                         data-1850="opacity:0; transform:translate(-50%); top:355px;"
@@ -262,7 +262,7 @@
                         >
                         	<figure><img src="img/index_activity_kungufu.jpg" alt=""/></figure>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                            <div><a href="#">read more</a></div>
+                            <div class="activity-read-more"><a href="#">read more</a></div>
                         </div>
                         <div class="activity-chess abs_pos"
                         data-1850="opacity:0; transform:translate(-50%); top:-25px;"
@@ -270,7 +270,7 @@
                         >
                         	<figure><img src="img/index_activity_chess.jpg" alt=""/></figure>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                            <div><a href="#">read more</a></div>
+                            <div class="activity-read-more"><a href="#">read more</a></div>
                         </div>
                         <div class="activity-dance abs_pos"
                         data-1850="opacity:0; transform:translate(-50%); top:355px;"
@@ -439,7 +439,8 @@
         <p class="copyright">&copy; 2014 Champsacademy. All rights reserved.</p>
         <!--End CopyRight-->
         
-	</div><!--End Wrapper-->
+        <div id="back-top"><a href="#"><img src="img/back_top.png" alt=""/></a></div>
+</div><!--End Wrapper-->
 <!--</div>blackOverlay-->
 <script src="js/jquery-1.10.1.min.js"></script>
 <!--<script src="js/prefixfree.min.js"></script>-->
@@ -456,17 +457,70 @@
 <![endif]-->
 <script>
 $(document).ready(function(e) {
-    $('.activity-read-more a').bind("mouseenter",function() {
+    $('.activity-dance .activity-read-more a').bind("mouseenter",function() {
 		$('.dance-btm').css({
 			background: "url(img/dance.gif)",
 		});
 	});
-	$('.activity-read-more a').bind("mouseleave",function() {
+	$('.activity-dance .activity-read-more a').bind("mouseleave",function() {
 		$('.dance-btm').css({
 			background: "url(img/dance_btm.png) no-repeat 35px 25px",
 		});
-	})
+	});
+	$('.activity-chess .activity-read-more a').bind("mouseenter",function() {
+		$('.chess-btm').css({
+			background: "url(img/InStage.gif) no-repeat -10px -30px",
+		});
+	});
+	$('.activity-chess .activity-read-more a').bind("mouseleave",function() {
+		$('.chess-btm').css({
+			background: "url(img/InStage.png) no-repeat -10px -30px",
+		});
+	});
+	$('.activity-kungfu .activity-read-more a').bind("mouseenter",function() {
+		$('.kungfu-btm').css({
+			background: "url(img/kungfuNew.gif) no-repeat -40px -30px",
+		});
+	});
+	$('.activity-kungfu .activity-read-more a').bind("mouseleave",function() {
+		$('.kungfu-btm').css({
+			background: "url(img/kungfu_btm.png) no-repeat 0px 0px",
+		});
+	});
+	$('.activity-karate .activity-read-more a').bind("mouseenter",function() {
+		$('.karate-btm').css({
+			background: "url(img/karatelatest.gif)",
+		});
+	});
+	$('.activity-karate .activity-read-more a').bind("mouseleave",function() {
+		$('.karate-btm').css({
+			background: "url(img/karate_btm.png) no-repeat 0px 0px",
+		});
+	});
+	  
+
+	// hide #back-top first
+	$("#back-top").hide();
 	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
 });
 </script>
 </body>

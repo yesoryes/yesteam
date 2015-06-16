@@ -30,7 +30,7 @@ $font-family:'RobotoRegular';
 }
 /*Header*/
 $main_nav_font:'Action_Man';
-$main_nav_font_size:25px;
+$main_nav_font_size:20px;
 $nav_anchor_color:#fff;
 
 /*Why Champs*/
@@ -113,7 +113,7 @@ header{
 		overflow: hidden;
 		float: left;
 		font-family: 'Action_Man';
-		font-size: 25px;
+		font-size: $main_nav_font_size;
 		margin: 7px 0 0;
 		/*height: 100vh;/*Side Menu*/
 		
@@ -223,7 +223,7 @@ header{
 
 .left-cloud {
 	position: absolute;
-	top: 1150px;
+	top: 700px;
 	z-index: 1;
 }
 .right-cloud {
@@ -253,6 +253,7 @@ header{
 	p {
 		text-align: center;
 		width: 900px;
+		font-size: 15px;
 		/*margin: 38px auto 70px;*/
 		transition: 0.5s all;
 		-moz-transition: 0.5s all;
@@ -286,8 +287,8 @@ header{
 	-moz-transform-origin:50% 50%;
 	-o-transform-origin:50% 50%;
 	&.abs_pos {
-		top: 450px;
-		margin: 0 0 0 -680px;
+		top: 465px;
+		margin: 0 0 0 -630px;
 		z-index: 2;
 	}
 }
@@ -798,7 +799,7 @@ header{
 		margin:0 0 0 35px;
 		&.abs_pos {
 			top: 245px;
-			margin: 0 0 0 -150px;
+			margin: 0 0 0 -165px;
 			
 			figure {
 				height: 234px;
@@ -843,7 +844,7 @@ header{
 		@extend.pro-preschool;
 		&.abs_pos {
 			top: 245px;
-			margin: 0 0 0 190px;
+			margin: 0 0 0 175px;
 			figure {
 				img {
 					padding: 0px 0 0;
@@ -855,7 +856,7 @@ header{
 		@extend.pro-preschool;
 		&.abs_pos {
 			top: 245px;
-			margin: 0 0 0 515px;
+			margin: 0 0 0 500px;
 			figure {
 				img {
 					padding: 0px 0 0;
@@ -869,7 +870,7 @@ header{
 	float: right;
 	&.abs_pos {
 		bottom: 25px;
-		margin: 0 0 0 490px;
+		margin: 0 0 0 475px;
 	
 		a {
 			display: block;
@@ -923,7 +924,7 @@ header{
 		border-radius: 5px;
 		&.abs_pos {
 			top: 205px;
-			margin: 0 0 0 -218px;			
+			margin: 0 0 0 -233px;			
 			
 			p {
 				text-align: center;
@@ -950,7 +951,7 @@ header{
 		background: url(../img/index_kungfu_bg.png) no-repeat 0px 0px;
 		&.abs_pos {
 			top: 205px;
-			margin: 0 0 0 41px;
+			margin: 0 0 0 26px;
 		
 			a {
 				background: #24449d;
@@ -966,7 +967,7 @@ header{
 		background: url(../img/index_chess_bg.png) no-repeat 0px 0px;
 		&.abs_pos {
 			top: 205px;
-			margin: 0 0 0 298px;
+			margin: 0 0 0 283px;
 		
 			a {
 				background: #f09309;
@@ -982,7 +983,7 @@ header{
 		background: url(../img/index_dance_bg.png) no-repeat 0px 0px;
 		&.abs_pos {
 			top: 205px;
-			margin: 0 0 0 561px;
+			margin: 0 0 0 546px;
 		
 			a {
 				background: #ab2865;
@@ -1004,7 +1005,7 @@ header{
 	}
 	.kungfu-btm {		
 		@extend.karate-btm;
-		background: url(../img/kungfu_btm.png) no-repeat -30px -30px;
+		background: url(../img/kungfu_btm.png) no-repeat 0px;
 		&.abs_pos {
 			margin: 0 0 0 -45px;
 		}
@@ -1029,12 +1030,12 @@ header{
 	@extend.acadamic-program;
 	background: #9ad563;
 	color: #454545;
-	height: 430px;
+	height: 450px;
 }
 .testimonials-tell1 {
 	overflow: hidden;
 	margin: 0px 0 50px 0px;
-	width: 1140px;
+	width: 1040px;
 	
 	figure {
 		float: left;
@@ -1163,15 +1164,14 @@ header{
 
 /*Character*/
 .char1 {
-	position: absolute;
 	top: 250px;
 	margin: 0 0 0 -515px;
 }
 .char-skating {
 	@extend.char1;
-	z-index: 1;
-	top: 400px;
-	margin: 0 0 0 -635px;
+	z-index: 100;
+	top: 1600px;
+	margin: 0 0 0 -500px;
 }
 .char3 {
 	@extend.char1;
@@ -1188,6 +1188,24 @@ header{
 .char-champion {
 	@extend.char3;
 }
+
+/*
+Back to top button 
+*/
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	right: 100px;
+	z-index: 1000;
+}
+#back-top a {
+	display: block;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
 /*End Index Page*/
 
 
@@ -3605,3 +3623,6 @@ header{
          url('../fonts/RobotoRegular/RobotoRegular.ttf') format('truetype'),
          url('../fonts/RobotoRegular/RobotoRegular.svg#RobotoRegular') format('svg');
 }
+
+
+

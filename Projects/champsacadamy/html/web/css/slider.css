@@ -96,14 +96,14 @@
 #mcts2 
 {
     box-sizing: content-box;
-    width:1140px;
+    width:1040px;
     position:relative;
 	float: right;  
 }
 #mcts2>a, #mcts2>div, #mcts2>img {display:none;}
 #mcts2 div.item 
 {
-	width: 1140px;
+	width: 1040px;
     padding:0;
     margin-right:0;
     border:none;
@@ -504,7 +504,7 @@
 
 .menu ul li a {
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
   display: block;
   padding: 11px 40px 11px; 0;
   text-decoration: none;
