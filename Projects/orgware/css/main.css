@@ -1,0 +1,3658 @@
+/* Scss Document */
+/* services Mixin*/
+/* 1024 */
+/* Services End*/
+body {
+  font-family: "LinotypeMetroNovaPro"; }
+
+.navbar-brand > img {
+  margin: -25px 0 0 0; }
+
+.navbar-default {
+  border-color: transparent;
+  background: none; }
+
+.navbar-default .nav li a {
+  font-family: 'LinotypeMetroNovaProItalic';
+  font-size: 16px;
+  color: #fff;
+  padding: 5px;
+  margin: 0 30px 0 0;
+  display: block; }
+  .navbar-default .nav li a:hover {
+    border-bottom: 1px solid #fff;
+    color: #fff; }
+  .navbar-default .nav li a:focus {
+    border-bottom: 1px solid #fff;
+    color: #fff; }
+
+.menu-more {
+  Width: 24px;
+  height: 24px;
+  margin: 5px 0 0 0 !important;
+  display: block;
+  text-decoration: none;
+  background: url(../img/menu_option.png) top no-repeat; }
+  .menu-more:hover {
+    background: url(../img/menu_option.png) bottom no-repeat;
+    border: none !important; }
+  .menu-more:focus {
+    background: url(../img/menu_option.png) bottom no-repeat;
+    border: none !important; }
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: #444444;
+  display: block;
+  color: #fff; }
+  .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #444444;
+    color: #fff; }
+  .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #444444;
+    color: #fff; }
+
+.navbar-default.navbar-shrink {
+  padding: 20px 0 10px 0;
+  background-color: rgba(22, 22, 22, 0.8); }
+
+header {
+  overflow: hidden;
+  position: relative; }
+  header .carousel-caption {
+    top: 20%;
+    right: 15%;
+    text-align: right; }
+    header .carousel-caption .banner-intro {
+      font-family: 'LinotypeMetroNovaProLight';
+      font-size: 147px;
+      margin: 45px 0 0 0;
+      line-height: 125px; }
+    header .carousel-caption .banner-content {
+      font-family: 'LinotypeMetroNovaProLight';
+      font-size: 41px;
+      text-transform: uppercase; }
+      header .carousel-caption .banner-content span {
+        font-family: 'LinotypeMetroNovaProBold'; }
+    header .carousel-caption .banner-link {
+      width: 44px;
+      height: 52px;
+      position: absolute;
+      right: 0;
+      bottom: 26%;
+      background: url(../img/banner-link.png) top no-repeat;
+      cursor: pointer; }
+      header .carousel-caption .banner-link:hover {
+        background: url(../img/banner-link.png) bottom no-repeat; }
+
+section {
+  background-color: #fff;
+  color: #666;
+  padding: 0px 0 !important; }
+  section .section-heading:first-letter {
+    text-transform: uppercase; }
+  section .section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 50px;
+    color: #444444;
+    text-transform: lowercase;
+    font-family: 'LinotypeMetroNovaProLight'; }
+    section .section-heading span {
+      font-family: 'LinotypeMetroNovaProBold';
+      text-transform: uppercase; }
+  section p {
+    font-family: 'LinotypeMetroNovaPro';
+    font-size: 16px;
+    color: #fff;
+    color: #444444;
+    line-height: 24px;
+    width: 470px; }
+  section .more-link {
+    width: 54px;
+    height: 22px;
+    margin: 30px 0 0 0;
+    position: relative;
+    z-index: 2; }
+    section .more-link a {
+      text-decoration: none;
+      color: #fb3e2f;
+      width: 54px;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      font-family: 'LinotypeMetroNovaPro';
+      font-size: 12px;
+      background: url(../img/more-link.png) no-repeat left center;
+      display: block; }
+      section .more-link a:hover {
+        background: #fb3e2f;
+        color: #fff; }
+
+.our-team {
+  margin: 90px 0px 0 0;
+  overflow: hidden; }
+  .our-team .ourteam-MainImage {
+    margin: 24px 0 0 0;
+    width: 100%;
+    display: block; }
+  .our-team .ourteam-MobImage {
+    display: none; }
+
+.partners-page {
+  margin: 0 0px 40px 0; }
+
+.services {
+  width: 100%;
+  float: left;
+  margin: -60px auto 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+  .services .servicesCenter {
+    background: url(../img/app-develop-content.png) repeat-x left center;
+    margin: 0 auto;
+    overflow: hidden; }
+    .services .servicesCenter .servicesTop {
+      width: 100%;
+      margin: 0 auto;
+      float: left;
+      background: url(../img/app-develop-top.png) no-repeat top; }
+      .services .servicesCenter .servicesTop .servicesBottom {
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        background: url(../img/app-develop-bottom.png) no-repeat Bottom; }
+        .services .servicesCenter .servicesTop .servicesBottom .servicesContent {
+          width: 1206px;
+          height: 500px;
+          margin: 128px 0 125px 0;
+          padding: 10px 0 0 0;
+          background: #f03b3b;
+          position: relative;
+          perspective: 120px;
+          -webkit-perspective: 120px;
+          -ms-perspective: 120px;
+          -moz-perspective: 120px;
+          perspective-origin: 40% 40%;
+          -webkit-perspective-origin: 40% 40%;
+          -moz-perspective-origin: 40% 40%;
+          -ms-perspective-origin: 40% 40%; }
+          .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left {
+            float: left;
+            position: absolute;
+            -webkit-transform: rotateY(-361deg);
+            -moz-transform: rotateY(-361deg);
+            -ms-transform: rotateY(-361deg);
+            transform: rotateY(-361deg); }
+            .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 {
+              float: left;
+              margin: 0 0px 20px 20px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 {
+                width: 280px;
+                height: 140px;
+                float: left;
+                position: relative;
+                margin: 0 20px 0 0;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 {
+                width: 280px;
+                height: 140px;
+                float: right;
+                position: relative;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+            .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 {
+              float: left;
+              margin: 0 0px 20px 20px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 {
+                width: 280px;
+                height: 140px;
+                float: left;
+                position: relative;
+                margin: 0 20px 0 0;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 {
+                width: 280px;
+                height: 140px;
+                float: right;
+                position: relative;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+            .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 {
+              float: left;
+              margin: 0 0px 20px 20px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 {
+                width: 280px;
+                height: 140px;
+                float: left;
+                position: relative;
+                margin: 0 20px 0 0;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 {
+                width: 280px;
+                height: 140px;
+                float: right;
+                position: relative;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+          .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right {
+            float: right;
+            position: absolute;
+            -ms-transform: rotateY(361deg);
+            -webkit-transform: rotateY(361deg);
+            -moz-transform: rotateY(361deg);
+            transform: rotateY(361deg); }
+            .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 {
+              margin: 0 0px 20px 20px;
+              float: left; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1 {
+                width: 280px;
+                height: 140px;
+                float: left;
+                position: relative;
+                margin: 0 20px 0 0;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2 {
+                width: 280px;
+                height: 140px;
+                float: right;
+                position: relative;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+            .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 {
+              margin: 0 0px 20px 20px;
+              float: left; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1 {
+                width: 280px;
+                height: 140px;
+                float: left;
+                position: relative;
+                margin: 0 20px 0 0;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2 {
+                width: 280px;
+                height: 140px;
+                float: right;
+                position: relative;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+            .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 {
+              margin: 0 0px 20px 20px;
+              float: left; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1 {
+                width: 280px;
+                height: 140px;
+                float: left;
+                position: relative;
+                margin: 0 20px 0 0;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1 .front .front-content {
+                  text-align: center;
+                  display: block;
+                  font-family: 'LinotypeMetroNovaPro';
+                  font-size: 12px;
+                  color: #fff;
+                  position: absolute;
+                  bottom: 15px;
+                  left: 53px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2 {
+                width: 280px;
+                height: 140px;
+                float: right;
+                position: relative;
+                perspective: 500px;
+                -webkit-perspective: 500px;
+                -moz-perspective: 500px;
+                -ms-perspective: 500px; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2.h.flip .front {
+                transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2.h.flip .back {
+                transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2.h .back {
+                transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2 .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background: url(../img/more-app.png) 225px 70px no-repeat #fff; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2 .front .front-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2 .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                color: white;
+                background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2 .back .back-content {
+                  display: block;
+                  font-family: 'LinotypeMetroNovaProThin';
+                  font-size: 32px;
+                  color: #444444;
+                  position: absolute;
+                  padding: 40px 70px;
+                  text-align: left;
+                  line-height: 30px;
+                  text-transform: uppercase;
+                  width: auto; }
+
+.product-1 {
+  margin: 0 0px 20px 20px;
+  float: left; }
+  .product-1 a {
+    overflow: hidden; }
+    .product-1 a .product-name {
+      width: 172px;
+      height: 172px;
+      float: left;
+      margin: 0 7px 0 0;
+      background: url(../img/product-name1.png) center no-repeat #31c37c; }
+    .product-1 a .product-id {
+      width: 172px;
+      height: 172px;
+      float: left;
+      background: url(../img/product-id1.png) center no-repeat #717171; }
+      .product-1 a .product-id .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-right: 7px solid #717171;
+        margin: 82px 0px 0 -7px; }
+
+.product-2 {
+  margin: 0 0px 20px 20px;
+  float: left; }
+  .product-2 a {
+    overflow: hidden; }
+    .product-2 a .product-id {
+      width: 172px;
+      height: 172px;
+      float: left;
+      margin: 0 7px 0 0px;
+      background: url(../img/product-id2.png) center no-repeat #bbbbbb; }
+      .product-2 a .product-id .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid #bbbbbb;
+        float: right;
+        margin: 83px -7px 0 0px; }
+    .product-2 a .product-name {
+      width: 172px;
+      height: 172px;
+      float: left;
+      background: url(../img/product-name2.png) center no-repeat #f95b6c; }
+
+.product-3 {
+  margin: 0 0px 20px 0;
+  float: left; }
+  .product-3 a {
+    overflow: hidden; }
+    .product-3 a .product-name {
+      width: 172px;
+      height: 172px;
+      float: left;
+      margin: 0 7px 0 0;
+      background: url(../img/product-name3.png) center no-repeat #35d0f1; }
+    .product-3 a .product-id {
+      width: 172px;
+      height: 172px;
+      float: left;
+      background: url(../img/product-id3.png) center no-repeat #9e9e9e; }
+      .product-3 a .product-id .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-right: 7px solid #9e9e9e;
+        margin: 82px 0px 0 -7px; }
+
+.product-4 {
+  margin: 0 0px 0px 0;
+  float: left; }
+  .product-4 a {
+    overflow: hidden; }
+    .product-4 a .product-id {
+      width: 172px;
+      height: 172px;
+      float: left;
+      margin: 0 7px 0 0px;
+      background: url(../img/product-id4.png) center no-repeat #515050; }
+      .product-4 a .product-id .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid #515050;
+        float: right;
+        margin: 83px -7px 0 0px; }
+    .product-4 a .product-name {
+      width: 172px;
+      height: 172px;
+      float: left;
+      background: url(../img/product-name4.png) center no-repeat #ffcb62; }
+
+.product-main {
+  width: 429px;
+  height: 364px;
+  background: url(../img/seskhan.jpg) no-repeat left;
+  margin: 0 0px 20px -30px;
+  position: relative;
+  padding: 0 30px 0px 25px; }
+  .product-main img {
+    position: absolute;
+    right: 0px;
+    top: 0; }
+  .product-main h3 {
+    font-size: 60px;
+    font-family: 'LinotypeMetroNovaProBold';
+    color: #fff;
+    position: absolute;
+    top: 54%;
+    text-transform: uppercase; }
+  .product-main p {
+    font-size: 15px;
+    font-family: 'LinotypeMetroNovaPro';
+    color: #ccc;
+    line-height: 20px;
+    text-transform: none;
+    position: absolute;
+    top: 72%;
+    width: 335px; }
+  .product-main .sesKhan-link {
+    position: absolute;
+    bottom: 68px;
+    right: 22px;
+    width: 28px;
+    height: 30px;
+    background: url(../img/seskhan-link.png) top no-repeat; }
+    .product-main .sesKhan-link:hover {
+      background: url(../img/seskhan-link.png) bottom no-repeat; }
+
+.social-site {
+  margin: 30px 0px 0 0; }
+
+.check-out {
+  margin: 0px 0px 0 30px; }
+  .check-out p {
+    width: 405px; }
+
+.line {
+  width: 60%;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  height: 1px;
+  background: #2c2c2c;
+  opacity: 1; }
+
+.curly-brace {
+  margin: 15px 0 0 0;
+  float: left; }
+
+.partners {
+  float: right !important; }
+  .partners li {
+    display: inline-block !important;
+    vertical-align: middle;
+    margin: 0 40px 0 0; }
+
+.ceo-quotes {
+  background: #e9e9e9;
+  padding: 60px 0 !important; }
+  .ceo-quotes .col-lg-6:nth-child(2), .ceo-quotes .col-md-6:nth-child(2) {
+    padding: 0; }
+  .ceo-quotes .carousel-indicators {
+    bottom: -24px;
+    margin-left: -10%; }
+    .ceo-quotes .carousel-indicators li {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin: 4px;
+      text-indent: -999px;
+      cursor: pointer;
+      border: 1px solid #4c4c4c;
+      border-radius: 8px; }
+      .ceo-quotes .carousel-indicators li.active {
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background: #444444; }
+  .ceo-quotes h4, .ceo-quotes .ceo-name {
+    font-size: 19px;
+    font-family: 'LinotypeMetroNovaProBold';
+    color: #444;
+    text-transform: none; }
+  .ceo-quotes p {
+    font-family: 'LinotypeMetroNovaPro';
+    font-size: 16px;
+    color: #fff;
+    color: #444;
+    line-height: 24px; }
+    .ceo-quotes p a {
+      font-family: 'LinotypeMetroNovaPro';
+      font-size: 16px;
+      color: #fff;
+      color: #f03b3b; }
+  .ceo-quotes .artcle-posted {
+    font-size: 14px;
+    font-family: 'LinotypeMetroNovaProItalic';
+    color: #9b9b9b; }
+  .ceo-quotes .ceo-name {
+    margin: 17px 0 0 0; }
+
+.jcarousel-wrapper {
+  position: relative;
+  /** Carousel Controls **/ }
+  .jcarousel-wrapper .jcarousel {
+    position: relative;
+    overflow: hidden; }
+    .jcarousel-wrapper .jcarousel ul {
+      width: 2000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .jcarousel-wrapper .jcarousel ul li {
+        float: left;
+        overflow: hidden; }
+        .jcarousel-wrapper .jcarousel ul li .ceo-img {
+          float: left;
+          width: 106px; }
+        .jcarousel-wrapper .jcarousel ul li .ceo-article {
+          margin: 0 0 0 20px;
+          float: left;
+          width: 459px; }
+          .jcarousel-wrapper .jcarousel ul li .ceo-article p {
+            width: auto; }
+  .jcarousel-wrapper .jcarousel-control-prev,
+  .jcarousel-wrapper .jcarousel-control-next {
+    position: absolute;
+    bottom: -42px;
+    width: 26px;
+    height: 26px; }
+  .jcarousel-wrapper .jcarousel-control-prev {
+    right: 60px;
+    width: 26px;
+    height: 26px;
+    background: url(../img/left-nav.png) no-repeat top; }
+    .jcarousel-wrapper .jcarousel-control-prev:hover {
+      background: url(../img/left-nav.png) no-repeat bottom; }
+    .jcarousel-wrapper .jcarousel-control-prev .jcarousel-control-prev.inactive, .jcarousel-wrapper .jcarousel-control-prev .jcarousel-control-next.inactive {
+      opacity: .5;
+      cursor: default; }
+  .jcarousel-wrapper .jcarousel-control-next {
+    right: 25px;
+    width: 26px;
+    height: 26px;
+    background: url(../img/right-nav.png) no-repeat top; }
+    .jcarousel-wrapper .jcarousel-control-next:hover {
+      background: url(../img/right-nav.png) no-repeat bottom; }
+    .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-prev:hover span, .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-next:hover span {
+      display: block; }
+
+footer {
+  background: #444444 !important; }
+  footer .foot-services {
+    flaat: left;
+    margin: 60px 0; }
+    footer .foot-services h5 {
+      color: #e9e9e9;
+      font-size: 19px;
+      text-align: left;
+      font-family: 'LinotypeMetroNovaProBold';
+      text-transform: none;
+      line-height: 30px; }
+    footer .foot-services ul {
+      list-style: none; }
+      footer .foot-services ul li {
+        display: block;
+        text-align: left !important; }
+        footer .foot-services ul li a {
+          color: #9e9e9e;
+          font-family: 'LinotypeMetroNovaPro';
+          font-size: 14px;
+          line-height: 25px; }
+
+.git {
+  color: #e9e9e9;
+  font-size: 19px;
+  text-align: left;
+  font-family: 'LinotypeMetroNovaProBold';
+  text-transform: none;
+  line-height: 30px;
+  margin: 60px 35px 0px 9px;
+  float: left; }
+
+.social-icons {
+  list-style: none;
+  float: left;
+  margin: 46px 0 0px 0; }
+  .social-icons li {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 0 10px 0 0;
+    overflow: hidden; }
+    .social-icons li a {
+      width: 64px;
+      height: 64px; }
+      .social-icons li a.fb {
+        background: url(../img/facebook.png) top no-repeat;
+        width: 64px;
+        height: 64px;
+        float: left; }
+        .social-icons li a.fb:hover {
+          background: url(../img/facebook.png) bottom no-repeat; }
+      .social-icons li a.google {
+        background: url(../img/google.png) top no-repeat;
+        width: 64px;
+        height: 64px;
+        float: left; }
+        .social-icons li a.google:hover {
+          background: url(../img/google.png) bottom no-repeat; }
+      .social-icons li a.twitter {
+        background: url(../img/twitter.png) top no-repeat;
+        width: 64px;
+        height: 64px;
+        float: left; }
+        .social-icons li a.twitter:hover {
+          background: url(../img/twitter.png) bottom no-repeat; }
+      .social-icons li a.linked {
+        background: url(../img/linked.png) top no-repeat;
+        width: 64px;
+        height: 64px;
+        float: left; }
+        .social-icons li a.linked:hover {
+          background: url(../img/linked.png) bottom no-repeat; }
+
+.have-quest {
+  height: 32px;
+  overflow: hidden;
+  margin: 30px 0 0 9px; }
+  .have-quest span {
+    background: url(../img/have-quest.png) no-repeat left;
+    height: 32px;
+    width: 187px;
+    float: left;
+    overflow: hidden;
+    color: #e9e9e9;
+    line-height: 30px;
+    font-size: 19px;
+    margin: 0 10px 0 0;
+    font-family: 'LinotypeMetroNovaProLight';
+    text-align: center; }
+  .have-quest a {
+    background: url(../img/enqiury-now.png) no-repeat left;
+    height: 32px;
+    width: 156px;
+    float: left;
+    color: #fff;
+    line-height: 30px;
+    font-size: 16px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'LinotypeMetroNovaProBold';
+    text-align: center; }
+    .have-quest a:hover {
+      background: #1c1c1c;
+      color: #e9e9e9;
+      height: 32px;
+      width: 156px; }
+
+.copy-text {
+  float: left;
+  margin: 30px 15px 0 9px;
+  line-height: 20px;
+  font-family: 'LinotypeMetroNovaPro';
+  color: rgba(197, 197, 197, 0.4);
+  font-size: 13px; }
+  .copy-text a {
+    text-decoration: underline;
+    font-family: 'LinotypeMetroNovaPro';
+    color: rgba(197, 197, 197, 0.4);
+    font-size: 13px; }
+    .copy-text a:hover {
+      color: #c5c5c5; }
+  .copy-text span {
+    text-align: right !important; }
+
+.company-logo {
+  float: left;
+  margin: 30px 0 0 0px;
+  opacity: 0.2; }
+  .company-logo:hover {
+    opacity: 1; }
+
+@media (max-width: 1024px) {
+  .navbar-right {
+    float: right !important;
+    margin-right: 0px; }
+
+  navbar-default.navbar-shrink {
+    padding: 25px 0 0px 0 !important;
+    background-color: rgba(22, 22, 22, 0.8) !important; }
+
+  .navbar-default {
+    border-color: transparent;
+    background: none; }
+
+  /* header part*/
+  header {
+    overflow: hidden;
+    position: relative; }
+    header .carousel-caption {
+      top: 5%;
+      right: 5%;
+      text-align: right; }
+      header .carousel-caption .banner-intro {
+        font-family: 'LinotypeMetroNovaProLight';
+        font-size: 112px;
+        margin: 45px 0 0 0;
+        line-height: 125px; }
+      header .carousel-caption .banner-content {
+        font-family: 'LinotypeMetroNovaProLight';
+        font-size: 32px;
+        text-transform: uppercase; }
+        header .carousel-caption .banner-content span {
+          font-family: 'LinotypeMetroNovaProBold'; }
+      header .carousel-caption .banner-link {
+        width: 34px;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        bottom: 5%;
+        background: url(../img/banner-link1024.png) top no-repeat;
+        cursor: pointer; }
+        header .carousel-caption .banner-link:hover {
+          background: url(../img/banner-link1024.png) bottom no-repeat; }
+
+  .our-team {
+    margin: 90px 0px 0 0;
+    overflow: hidden; }
+    .our-team .ourteam-MainImage {
+      margin: 24px 0 0 0;
+      width: 100%;
+      display: block; }
+    .our-team .ourteam-MobImage {
+      display: none; }
+
+  /* section1 About Team */
+  section {
+    background-color: #fff;
+    color: #666; }
+    section .section-heading:first-letter {
+      text-transform: uppercase; }
+    section .section-heading {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 40px;
+      color: #444444;
+      text-transform: lowercase;
+      font-family: 'LinotypeMetroNovaProLight'; }
+      section .section-heading span {
+        font-family: 'LinotypeMetroNovaProBold';
+        text-transform: uppercase; }
+    section p {
+      font-family: 'LinotypeMetroNovaPro';
+      font-size: 16px;
+      color: #fff;
+      color: #444444;
+      line-height: 24px;
+      width: 100%; }
+    section .more-link {
+      width: 54px;
+      height: 22px;
+      margin: 30px 0 0 0;
+      position: relative;
+      z-index: 2; }
+      section .more-link a {
+        text-decoration: none;
+        color: #fb3e2f;
+        width: 54px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 12px;
+        background: url(../img/more-link.png) no-repeat left center;
+        display: block; }
+        section .more-link a:hover {
+          background: #fb3e2f;
+          color: #fff; }
+
+  /* product section*/
+  .product-1 {
+    margin: 0 0px 20px 20px;
+    float: left; }
+    .product-1 a {
+      overflow: hidden; }
+      .product-1 a .product-name {
+        width: 139px;
+        height: 139px;
+        float: left;
+        margin: 0 7px 0 0;
+        background: url(../img/product-name1.png) center no-repeat #31c37c; }
+      .product-1 a .product-id {
+        width: 139px;
+        height: 139px;
+        float: left;
+        background: url(../img/product-id1.png) center no-repeat #717171; }
+        .product-1 a .product-id .arrow-left {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-right: 5px solid #717171;
+          margin: 65px 0px 0 -5px; }
+
+  .product-2 {
+    margin: 0 0px 20px 20px;
+    float: left; }
+    .product-2 a {
+      overflow: hidden; }
+      .product-2 a .product-id {
+        width: 139px;
+        height: 139px;
+        float: left;
+        margin: 0 5px 0 0px;
+        background: url(../img/product-id2.png) center no-repeat #bbbbbb; }
+        .product-2 a .product-id .arrow-right {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 5px solid #bbbbbb;
+          float: right;
+          margin: 65px -5px 0 0px; }
+      .product-2 a .product-name {
+        width: 139px;
+        height: 139px;
+        float: left;
+        background: url(../img/product-name2.png) center no-repeat #f95b6c; }
+
+  .product-3 {
+    margin: 0 0px 20px 0;
+    float: left; }
+    .product-3 a {
+      overflow: hidden; }
+      .product-3 a .product-name {
+        width: 139px;
+        height: 139px;
+        float: left;
+        margin: 0 5px 0 0;
+        background: url(../img/product-name3.png) center no-repeat #35d0f1; }
+      .product-3 a .product-id {
+        width: 139px;
+        height: 139px;
+        float: left;
+        background: url(../img/product-id3.png) center no-repeat #9e9e9e; }
+        .product-3 a .product-id .arrow-left {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-right: 5px solid #9e9e9e;
+          margin: 65px 0px 0 -5px; }
+
+  .product-4 {
+    margin: 0 0px 0px 0;
+    float: left; }
+    .product-4 a {
+      overflow: hidden; }
+      .product-4 a .product-id {
+        width: 139px;
+        height: 139px;
+        float: left;
+        margin: 0 5px 0 0px;
+        background: url(../img/product-id4.png) center no-repeat #515050; }
+        .product-4 a .product-id .arrow-right {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 5px solid #515050;
+          float: right;
+          margin: 65px -5px 0 0px; }
+      .product-4 a .product-name {
+        width: 139px;
+        height: 139px;
+        float: left;
+        background: url(../img/product-name4.png) center no-repeat #ffcb62; }
+
+  /* services Section*/
+  .services {
+    width: 100%;
+    float: left;
+    margin: -38px auto 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1; }
+    .services .servicesCenter {
+      background: url(../img/app-develop-content-1024.png) repeat-x left center;
+      margin: 0 auto;
+      overflow: hidden; }
+      .services .servicesCenter .servicesTop {
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        background: url(../img/app-develop-top-1024.png) no-repeat top; }
+        .services .servicesCenter .servicesTop .servicesBottom {
+          width: 100%;
+          margin: 0 auto;
+          float: left;
+          background: url(../img/app-develop-bottom-1024.png) no-repeat Bottom; }
+          .services .servicesCenter .servicesTop .servicesBottom .servicesContent {
+            width: 970px;
+            height: 446px;
+            margin: 69px 0 70px 0;
+            padding: 10px 0 0 0;
+            background: #f03b3b;
+            position: relative;
+            -webkit-perspective: 120px;
+            -webkit-perspective-origin: 40% 40%;
+            perspective: 120px;
+            perspective-origin: 40% 40%; }
+            .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left {
+              float: left;
+              position: absolute;
+              -webkit-transform: rotateX(-361deg);
+              -moz-transform: rotateX(-361deg);
+              transform: rotatey(-361deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 {
+                float: left;
+                margin: 0 0px 20px 20px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 {
+                  width: 221px;
+                  height: 127px;
+                  float: left;
+                  position: relative;
+                  margin: 0 20px 0 0;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 {
+                  width: 221px;
+                  height: 127px;
+                  float: right;
+                  position: relative;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 {
+                float: left;
+                margin: 0 0px 20px 20px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 {
+                  width: 221px;
+                  height: 127px;
+                  float: left;
+                  position: relative;
+                  margin: 0 20px 0 0;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 {
+                  width: 221px;
+                  height: 127px;
+                  float: right;
+                  position: relative;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 {
+                float: left;
+                margin: 0 0px 20px 20px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 {
+                  width: 221px;
+                  height: 127px;
+                  float: left;
+                  position: relative;
+                  margin: 0 20px 0 0;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 {
+                  width: 221px;
+                  height: 127px;
+                  float: right;
+                  position: relative;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+            .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right {
+              float: right;
+              position: absolute;
+              -webkit-transform: rotateY(361deg);
+              -moz-transform: rotateY(361deg);
+              transform: rotateY(361deg); }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 {
+                margin: 0 0px 20px 20px;
+                float: left; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1 {
+                  width: 221px;
+                  height: 127px;
+                  float: left;
+                  position: relative;
+                  margin: 0 20px 0 0;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services1 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2 {
+                  width: 221px;
+                  height: 127px;
+                  float: right;
+                  position: relative;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right1 .services2 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 {
+                margin: 0 0px 20px 20px;
+                float: left; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1 {
+                  width: 221px;
+                  height: 127px;
+                  float: left;
+                  position: relative;
+                  margin: 0 20px 0 0;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services1 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2 {
+                  width: 221px;
+                  height: 127px;
+                  float: right;
+                  position: relative;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right2 .services2 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 {
+                margin: 0 0px 20px 20px;
+                float: left; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1 {
+                  width: 221px;
+                  height: 127px;
+                  float: left;
+                  position: relative;
+                  margin: 0 20px 0 0;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 21px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services1 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2 {
+                  width: 221px;
+                  height: 127px;
+                  float: right;
+                  position: relative;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2 .front .front-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 140px 75px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right .services-right3 .services2 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 25px;
+                    color: #444444;
+                    position: absolute;
+                    vertical-align: middle;
+                    padding: 30px;
+                    text-align: left;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    width: auto; }
+
+  .product-main {
+    width: 340px;
+    height: 300px;
+    background: url(../img/seskhan.jpg) no-repeat left;
+    margin: 0 0px 20px -30px;
+    position: relative;
+    padding: 0 30px 0px 25px; }
+    .product-main img {
+      position: absolute;
+      right: 0px;
+      top: 0;
+      width: 30%; }
+    .product-main h3 {
+      font-size: 45px;
+      font-family: 'LinotypeMetroNovaProBold';
+      color: #fff;
+      position: absolute;
+      top: 54%;
+      text-transform: uppercase; }
+    .product-main p {
+      font-size: 12px;
+      font-family: 'LinotypeMetroNovaPro';
+      color: #ccc;
+      line-height: 16px;
+      text-transform: none;
+      position: absolute;
+      top: 72%;
+      width: 260px; }
+    .product-main .sesKhan-link {
+      position: absolute;
+      bottom: 45px;
+      right: 22px;
+      width: 28px;
+      height: 30px;
+      background: url(../img/seskhan-link.png) top no-repeat; }
+      .product-main .sesKhan-link:hover {
+        background: url(../img/seskhan-link.png) bottom no-repeat; }
+
+  /* partners */
+  .partners {
+    float: right !important; }
+    .partners li {
+      display: inline-block !important;
+      vertical-align: middle;
+      margin: 22px 10px 0 0;
+      padding: 0; }
+      .partners li a img {
+        width: 80%; }
+
+  .ceo-quotes {
+    background: #e9e9e9; }
+    .ceo-quotes .carousel-indicators {
+      bottom: -24px;
+      margin-left: -10%; }
+      .ceo-quotes .carousel-indicators li {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin: 4px;
+        text-indent: -999px;
+        cursor: pointer;
+        border: 1px solid #4c4c4c;
+        border-radius: 8px; }
+        .ceo-quotes .carousel-indicators li.active {
+          width: 8px;
+          height: 8px;
+          border-radius: 8px;
+          background: #444444; }
+    .ceo-quotes h4, .ceo-quotes .ceo-name {
+      font-size: 19px;
+      font-family: 'LinotypeMetroNovaProBold';
+      color: #444;
+      text-transform: none; }
+    .ceo-quotes p {
+      font-family: 'LinotypeMetroNovaPro';
+      font-size: 16px;
+      color: #fff;
+      color: #444;
+      line-height: 20px;
+      width: 330px; }
+      .ceo-quotes p a {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 16px;
+        color: #fff;
+        color: #f03b3b; }
+    .ceo-quotes .artcle-posted {
+      font-size: 14px;
+      font-family: 'LinotypeMetroNovaProItalic';
+      color: #9b9b9b; }
+    .ceo-quotes .ceo-name {
+      margin: 8px 0 0 0; }
+
+  .jcarousel-wrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /** Carousel Controls **/ }
+    .jcarousel-wrapper .jcarousel {
+      position: relative;
+      overflow: hidden; }
+      .jcarousel-wrapper .jcarousel ul {
+        width: 20000em;
+        overflow: hidden;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .jcarousel-wrapper .jcarousel ul li {
+          float: left; }
+          .jcarousel-wrapper .jcarousel ul li .ceo-img {
+            float: left;
+            width: 106px; }
+          .jcarousel-wrapper .jcarousel ul li .ceo-article {
+            margin: 0 0 0 20px;
+            float: left;
+            width: 359px; }
+            .jcarousel-wrapper .jcarousel ul li .ceo-article p {
+              width: 330px; }
+    .jcarousel-wrapper .jcarousel-control-prev,
+    .jcarousel-wrapper .jcarousel-control-next {
+      position: absolute;
+      bottom: -33px;
+      width: 26px;
+      height: 26px; }
+    .jcarousel-wrapper .jcarousel-control-prev {
+      right: 60px;
+      width: 26px;
+      height: 26px;
+      background: url(../img/left-nav.png) no-repeat top; }
+      .jcarousel-wrapper .jcarousel-control-prev:hover {
+        background: url(../img/left-nav.png) no-repeat bottom; }
+      .jcarousel-wrapper .jcarousel-control-prev .jcarousel-control-prev.inactive, .jcarousel-wrapper .jcarousel-control-prev .jcarousel-control-next.inactive {
+        opacity: .5;
+        cursor: default; }
+    .jcarousel-wrapper .jcarousel-control-next {
+      right: 25px;
+      width: 26px;
+      height: 26px;
+      background: url(../img/right-nav.png) no-repeat top; }
+      .jcarousel-wrapper .jcarousel-control-next:hover {
+        background: url(../img/right-nav.png) no-repeat bottom; }
+      .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-prev:hover span, .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-next:hover span {
+        display: block; }
+
+  footer {
+    background: #444444 !important; }
+    footer .foot-services {
+      float: left;
+      margin: 60px 0; }
+      footer .foot-services h5 {
+        color: #e9e9e9;
+        font-size: 19px;
+        text-align: left;
+        font-family: 'LinotypeMetroNovaProBold';
+        text-transform: none;
+        line-height: 30px; }
+      footer .foot-services ul {
+        list-style: none; }
+        footer .foot-services ul li {
+          display: block;
+          text-align: left !important; }
+          footer .foot-services ul li a {
+            color: #9e9e9e;
+            font-family: 'LinotypeMetroNovaPro';
+            font-size: 12px;
+            line-height: 25px; }
+
+  .git {
+    color: #e9e9e9;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'LinotypeMetroNovaProBold';
+    text-transform: none;
+    line-height: 30px;
+    margin: 60px 10px 0px 0px;
+    float: left; }
+
+  .social-icons {
+    list-style: none;
+    float: left;
+    margin: 46px 0 0px 0; }
+    .social-icons li {
+      display: inline-block;
+      width: 64px;
+      height: 64px;
+      margin: 0 4px 0 0;
+      overflow: hidden; }
+      .social-icons li a {
+        width: 64px;
+        height: 64px; }
+        .social-icons li a.fb {
+          background: url(../img/facebook.png) top no-repeat;
+          width: 64px;
+          height: 64px;
+          float: left;
+          transform: scale(0.8);
+          -webkit-transform: scale(0.8);
+          -moz-transform: scale(0.8); }
+          .social-icons li a.fb:hover {
+            background: url(../img/facebook.png) bottom no-repeat; }
+        .social-icons li a.google {
+          background: url(../img/google.png) top no-repeat;
+          width: 64px;
+          height: 64px;
+          float: left;
+          transform: scale(0.8);
+          -webkit-transform: scale(0.8);
+          -moz-transform: scale(0.8); }
+          .social-icons li a.google:hover {
+            background: url(../img/google.png) bottom no-repeat; }
+        .social-icons li a.twitter {
+          background: url(../img/twitter.png) top no-repeat;
+          width: 64px;
+          height: 64px;
+          float: left;
+          transform: scale(0.8);
+          -webkit-transform: scale(0.8);
+          -moz-transform: scale(0.8); }
+          .social-icons li a.twitter:hover {
+            background: url(../img/twitter.png) bottom no-repeat; }
+        .social-icons li a.linked {
+          background: url(../img/linked.png) top no-repeat;
+          width: 64px;
+          height: 64px;
+          float: left;
+          transform: scale(0.8);
+          -webkit-transform: scale(0.8);
+          -moz-transform: scale(0.8); }
+          .social-icons li a.linked:hover {
+            background: url(../img/linked.png) bottom no-repeat; }
+
+  .have-quest {
+    height: 32px;
+    overflow: hidden;
+    margin: 30px 0 0 0px; }
+    .have-quest span {
+      background: url(../img/have-quest.png) no-repeat left;
+      height: 32px;
+      width: 187px;
+      float: left;
+      overflow: hidden;
+      color: #e9e9e9;
+      line-height: 30px;
+      font-size: 19px;
+      margin: 0 10px 0 0;
+      font-family: 'LinotypeMetroNovaProLight';
+      text-align: center; }
+    .have-quest a {
+      background: url(../img/enqiury-now.png) no-repeat left;
+      height: 32px;
+      width: 156px;
+      float: left;
+      color: #fff;
+      line-height: 30px;
+      font-size: 16px;
+      display: block;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'LinotypeMetroNovaProBold';
+      text-align: center; }
+      .have-quest a:hover {
+        background: #1c1c1c;
+        color: #e9e9e9;
+        height: 32px;
+        width: 156px; }
+
+  .copy-text {
+    float: left;
+    margin: 30px 15px 0 0px;
+    line-height: 20px;
+    font-family: 'LinotypeMetroNovaPro';
+    color: rgba(197, 197, 197, 0.4);
+    font-size: 13px; }
+    .copy-text a {
+      text-decoration: underline;
+      font-family: 'LinotypeMetroNovaPro';
+      color: rgba(197, 197, 197, 0.4);
+      font-size: 13px; }
+      .copy-text a:hover {
+        color: #c5c5c5; }
+    .copy-text span {
+      text-align: right !important; }
+
+  .company-logo {
+    float: left;
+    margin: 30px 0 0 0px;
+    opacity: 0.2; }
+    .company-logo:hover {
+      opacity: 1; } }
+@media (max-width: 768px) {
+  .our-team {
+    margin: 90px 0px 0 0;
+    overflow: hidden; }
+    .our-team .ourteam-MainImage {
+      margin: 24px 0 0 0;
+      width: 100%;
+      display: none; }
+    .our-team .ourteam-MobImage {
+      display: block;
+      margin: 0px 0 20px 0 !important;
+      text-align: center; }
+
+  section {
+    background-color: #fff;
+    color: #666;
+    padding: 0px 0 !important; }
+    section .section-heading:first-letter {
+      text-transform: uppercase; }
+    section .section-heading {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 50px;
+      color: #444444;
+      text-transform: lowercase;
+      font-family: 'LinotypeMetroNovaProLight'; }
+      section .section-heading span {
+        font-family: 'LinotypeMetroNovaProBold';
+        text-transform: uppercase; }
+    section p {
+      font-family: 'LinotypeMetroNovaPro';
+      font-size: 16px;
+      color: #fff;
+      color: #444444;
+      line-height: 24px;
+      width: auto; }
+    section .more-link {
+      width: 87px;
+      height: 35px;
+      margin: 30px 0 0 0;
+      position: relative;
+      z-index: 2; }
+      section .more-link a {
+        text-decoration: none;
+        color: #fb3e2f;
+        width: 87px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        font-family: 'LinotypeMetroNovaProLight';
+        font-size: 15px;
+        background: url(../img/more-link-mob.png) no-repeat left center;
+        display: block; }
+        section .more-link a:hover {
+          background: #fb3e2f;
+          color: #fff; }
+
+  .services {
+    width: 100%;
+    float: left;
+    margin: -60px auto 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1; }
+    .services .servicesCenter {
+      background: url(../img/app-develop-content.png) repeat-x left center;
+      margin: 0 auto;
+      overflow: hidden; }
+      .services .servicesCenter .servicesTop {
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        background: none; }
+        .services .servicesCenter .servicesTop .servicesBottom {
+          width: 100%;
+          margin: 0 auto;
+          float: left;
+          background: none; }
+          .services .servicesCenter .servicesTop .servicesBottom .servicesContent {
+            width: 768px;
+            height: 500px;
+            text-align: center;
+            margin: 128px auto 125px auto;
+            padding: 10px 0 0 0;
+            background: #f03b3b;
+            position: relative;
+            -webkit-perspective: 0;
+            -moz-perspective: 0;
+            -ms-perspective: 0;
+            perspective-origin: 0;
+            perspective: 0px;
+            -webkit-perspective-origin: 0;
+            -ms-perspective-origin: 0;
+            -moz-perspective-origin: 0; }
+            .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left {
+              float: left;
+              position: absolute;
+              transform: none;
+              -webkit-transform: none;
+              -ms-transform: none;
+              -moz-transform: none; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 {
+                float: left;
+                margin: 0 0px 20px 20px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 {
+                  width: 280px;
+                  height: 140px;
+                  float: left;
+                  position: relative;
+                  margin: 0 20px 0 0;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 15px;
+                    left: 53px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services1 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 32px;
+                    color: #444444;
+                    position: absolute;
+                    padding: 40px 70px;
+                    text-align: left;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 {
+                  width: 280px;
+                  height: 140px;
+                  float: right;
+                  position: relative;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 15px;
+                    left: 53px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left1 .services2 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 32px;
+                    color: #444444;
+                    position: absolute;
+                    padding: 40px 70px;
+                    text-align: left;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 {
+                float: left;
+                margin: 0 0px 20px 20px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 {
+                  width: 280px;
+                  height: 140px;
+                  float: left;
+                  position: relative;
+                  margin: 0 20px 0 0;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 15px;
+                    left: 53px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services1 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 32px;
+                    color: #444444;
+                    position: absolute;
+                    padding: 40px 70px;
+                    text-align: left;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 {
+                  width: 280px;
+                  height: 140px;
+                  float: right;
+                  position: relative;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 15px;
+                    left: 53px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left2 .services2 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 32px;
+                    color: #444444;
+                    position: absolute;
+                    padding: 40px 70px;
+                    text-align: left;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    width: auto; }
+              .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 {
+                float: left;
+                margin: 0 0px 20px 20px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 {
+                  width: 280px;
+                  height: 140px;
+                  float: left;
+                  position: relative;
+                  margin: 0 20px 0 0;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #fb6246; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 15px;
+                    left: 53px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services1 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 32px;
+                    color: #444444;
+                    position: absolute;
+                    padding: 40px 70px;
+                    text-align: left;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 {
+                  width: 280px;
+                  height: 140px;
+                  float: right;
+                  position: relative;
+                  perspective: 500px;
+                  -webkit-perspective: 500px;
+                  -moz-perspective: 500px;
+                  -ms-perspective: 500px; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h:hover .front, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h.flip .front {
+                  transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -webkit-transform: rotateY(180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h:hover .back, .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h.flip .back {
+                  transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -webkit-transform: rotateY(0deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2.h .back {
+                  transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -webkit-transform: rotateY(-180deg); }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .front {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  background: url(../img/servicesleft-service1.png) center no-repeat #ff7959; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .front .front-content {
+                    text-align: center;
+                    display: block;
+                    font-family: 'LinotypeMetroNovaPro';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 15px;
+                    left: 53px;
+                    text-transform: uppercase;
+                    width: auto; }
+                .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  transition: all 0.5s ease-in;
+                  -moz-transition: all 0.5s ease-in;
+                  -ms-transition: all 0.5s ease-in;
+                  -webkit-transition: all 0.5s ease-in;
+                  color: white;
+                  background: url(../img/more-app.png) 175px 70px no-repeat #fff;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden; }
+                  .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-left .services-left3 .services2 .back .back-content {
+                    display: block;
+                    font-family: 'LinotypeMetroNovaProThin';
+                    font-size: 32px;
+                    color: #444444;
+                    position: absolute;
+                    padding: 40px 70px;
+                    text-align: left;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    width: auto; }
+            .services .servicesCenter .servicesTop .servicesBottom .servicesContent .services-right {
+              display: none; } }
+/* Font Section */
+@font-face {
+  font-family: 'LinotypeMetroNovaProItalic';
+  src: url("../fonts/LinotypeMetroNovaProItalic.eot");
+  src: url("../fonts/LinotypeMetroNovaProItalic.eot") format("embedded-opentype"), url("../fonts/LinotypeMetroNovaProItalic.woff2") format("woff2"), url("../fonts/LinotypeMetroNovaProItalic.woff") format("woff"), url("../fonts/LinotypeMetroNovaProItalic.ttf") format("truetype"), url("../fonts/LinotypeMetroNovaProItalic.svg#LinotypeMetroNovaProItalic") format("svg"); }
+@font-face {
+  font-family: 'LinotypeMetroNovaPro';
+  src: url("../fonts/LinotypeMetroNovaPro.eot");
+  src: url("../fonts/LinotypeMetroNovaPro.eot") format("embedded-opentype"), url("../fonts/LinotypeMetroNovaPro.woff2") format("woff2"), url("../fonts/LinotypeMetroNovaPro.woff") format("woff"), url("../fonts/LinotypeMetroNovaPro.ttf") format("truetype"), url("../fonts/LinotypeMetroNovaPro.svg#LinotypeMetroNovaPro") format("svg"); }
+@font-face {
+  font-family: 'LinotypeMetroNovaProLight';
+  src: url("../fonts/LinotypeMetroNovaProLight.eot");
+  src: url("../fonts/LinotypeMetroNovaProLight.eot") format("embedded-opentype"), url("../fonts/LinotypeMetroNovaProLight.woff2") format("woff2"), url("../fonts/LinotypeMetroNovaProLight.woff") format("woff"), url("../fonts/LinotypeMetroNovaProLight.ttf") format("truetype"), url("../fonts/LinotypeMetroNovaProLight.svg#LinotypeMetroNovaProLight") format("svg"); }
+@font-face {
+  font-family: 'LinotypeMetroNovaProBold';
+  src: url("../fonts/LinotypeMetroNovaProBold.eot");
+  src: url("../fonts/LinotypeMetroNovaProBold.eot") format("embedded-opentype"), url("../fonts/LinotypeMetroNovaProBold.woff2") format("woff2"), url("../fonts/LinotypeMetroNovaProBold.woff") format("woff"), url("../fonts/LinotypeMetroNovaProBold.ttf") format("truetype"), url("../fonts/LinotypeMetroNovaProBold.svg#LinotypeMetroNovaProBold") format("svg"); }
+@font-face {
+  font-family: 'LinotypeMetroNovaProThin';
+  src: url("../fonts/LinotypeMetroNovaProThin.eot");
+  src: url("../fonts/LinotypeMetroNovaProThin.eot") format("embedded-opentype"), url("../fonts/LinotypeMetroNovaProThin.woff2") format("woff2"), url("../fonts/LinotypeMetroNovaProThin.woff") format("woff"), url("../fonts/LinotypeMetroNovaProThin.ttf") format("truetype"), url("../fonts/LinotypeMetroNovaProThin.svg#LinotypeMetroNovaProThin") format("svg"); }
+
+/*# sourceMappingURL=main.css.map */
