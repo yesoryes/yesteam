@@ -1,0 +1,133 @@
+
+	.fileUpload {
+
+	position: relative;
+
+	overflow: hidden;
+
+	margin: 0px;
+
+}
+
+.fileUpload input.upload {
+
+	position: absolute;
+
+	top: 3px;
+
+	right: 0;
+
+	margin: 0;
+
+	padding: 0;
+
+	font-size: 20px;
+
+	cursor: pointer;
+
+	opacity: 0;
+
+	filter: alpha(opacity=0);
+	
+	background:url(../images/upload.jpg) 0 0 no-repeat;
+
+}
+.fileUpload input.upload:hover {
+
+	background:url(../images/upload.jpg) 0 -30px no-repeat;
+
+}
+.manage_details{
+
+	text-align: center;
+
+	margin-top: 0px;
+	
+	background: #e9e8e8;
+	
+	padding: 20px 0;
+
+}
+
+.but_edit{
+
+	  text-decoration: none;
+
+	  font-size: 0px;
+
+	  color: #000;
+
+}
+
+.but_edit:hover{
+
+	color:#fff;
+
+	background-color:#000;
+
+}
+.addstarts{
+	  color: #FFFFFF;
+	  text-decoration: none;
+	  border: 1px solid #000;
+	  padding: 10px 66px;
+	  background-color: #000;
+	  float: right;
+}
+.addstarts:hover{
+	background: #D3D3D3;
+	border: none;
+	color: #000;
+	border: 1px solid #D3D3D3;
+}
+
+.save_button{
+
+  border: 1px solid #000;
+
+  padding: 12px 80px;
+
+  cursor:pointer;
+
+}
+
+.save_button:hover{
+
+  background-color:#000;
+
+  color:#fff;
+
+}
+ul.subscreenAdd{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.subscreenAdd li{
+      float: left;
+      margin-right: 9px;
+      margin-top: 10px;
+  }
+  ul.subscreenAdd li a{
+      display: inline-block;
+      padding: 8px 24px;
+      color: #000;
+      font-size: 15px;
+      border: 1px solid #D2D1D1;
+      border-radius: 6px 6px 0px 0px;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  ul.subscreenAdd > .activesub{
+    background-color: #D3D3D3;
+  }
+  .fill-title .imgCaption{
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.rstyle{
+  color: #817E7E;
+  font-size: 16px;
+}

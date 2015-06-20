@@ -32,8 +32,85 @@ html, body
 .click
 {
 	 position:absolute;
-	 bottom:0;
+	 bottom:-4px;
 	 left:0;
 	 right:0;
 	 text-align:center;
+}
+header {
+	overflow: hidden;
+}
+.idle_header {
+	width: 100%;
+	overflow: hidden;
+	position:absolute;
+	top: 0;
+	z-index: 1;
+	padding:  0 0 26px;
+	background:url(../img/idle_header.png) no-repeat center 0px;
+}
+.header_right {
+	overflow: hidden;
+	width: 370px;
+	float: right;
+	margin: 20px 190px 0px 0px;  
+}
+.weather {
+	overflow: hidden;
+	background: url(../img/head_weather.png) no-repeat 0px 0px;
+	font-size: 20px;
+	padding: 30px 0px 0px 88px;
+	margin: 0 20px 0 0;
+	float: left;
+}
+.time {
+	overflow: hidden;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 5px;
+	background: rgba(255,255,255,0.4)
+}
+.time ul {
+	overflow: hidden;
+	float: left;
+}
+.time ul li {
+	overflow: hidden;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+.time ul li.bg_white {
+	background: #ededed;
+	border: 1px solid #fff;
+	font-size: 35px;
+	color: #000;
+	padding: 15px;
+	border-radius: 10px;
+}
+.time p {
+	overflow: hidden;
+	font-size: 18px;
+	line-height:18px;
+	padding: 20px 0 0 08px;
+	text-align: center;
+	font-family: 'ufonts_com_gillsansmtprolightopentype';
+}
+.time p span {
+	font-size: 16px;
+}
+
+footer.foo_Home {
+	overflow: hidden;
+	width: 100%;
+	background: url(../img/footer.png) no-repeat center 0px;
+	margin: 98px 0 0;
+	position: absolute;
+    bottom: 0;
+}
+footer marquee {
+	overflow: hidden;
+	font-size: 24px;
+	text-align: center;
+	margin: 7px 0 -5px;
 }

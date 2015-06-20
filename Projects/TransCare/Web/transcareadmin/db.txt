@@ -1,0 +1,149 @@
+-- phpMyAdmin SQL Dump
+-- version 3.1.3.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Mar 19, 2015 at 09:21 AM
+-- Server version: 5.1.33
+-- PHP Version: 5.2.9
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `transcare`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `active_guests`
+--
+
+CREATE TABLE IF NOT EXISTS `active_guests` (
+  `ip` varchar(15) NOT NULL,
+  `timestamp` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`ip`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `active_guests`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `active_users`
+--
+
+CREATE TABLE IF NOT EXISTS `active_users` (
+  `username` varchar(30) NOT NULL,
+  `timestamp` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `active_users`
+--
+
+INSERT INTO `active_users` (`username`, `timestamp`) VALUES
+('admin', 1426672347);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `banned_users`
+--
+
+CREATE TABLE IF NOT EXISTS `banned_users` (
+  `username` varchar(30) NOT NULL,
+  `timestamp` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `banned_users`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rotate_image_idle`
+--
+
+CREATE TABLE IF NOT EXISTS `rotate_image_idle` (
+  `rii_id` int(11) NOT NULL AUTO_INCREMENT,
+  `rotate_image_idle` varchar(200) NOT NULL,
+  `created_on` datetime NOT NULL,
+  `updated_on` datetime NOT NULL,
+  PRIMARY KEY (`rii_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `rotate_image_idle`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rotate_image_main`
+--
+
+CREATE TABLE IF NOT EXISTS `rotate_image_main` (
+  `rim_id` int(11) NOT NULL AUTO_INCREMENT,
+  `rotate_image_main` varchar(200) NOT NULL,
+  `created_on` datetime NOT NULL,
+  `updated_on` datetime NOT NULL,
+  PRIMARY KEY (`rim_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `rotate_image_main`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `site_setting`
+--
+
+CREATE TABLE IF NOT EXISTS `site_setting` (
+  `s_id` int(11) NOT NULL AUTO_INCREMENT,
+  `logo_image` varchar(200) NOT NULL,
+  `bg_image` varchar(200) NOT NULL,
+  `ticker_text` text NOT NULL,
+  `created_on` datetime NOT NULL,
+  `updated_on` datetime NOT NULL,
+  PRIMARY KEY (`s_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `site_setting`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `username` varchar(30) NOT NULL,
+  `password` varchar(32) DEFAULT NULL,
+  `userid` varchar(32) DEFAULT NULL,
+  `userlevel` tinyint(1) unsigned NOT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `timestamp` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`username`, `password`, `userid`, `userlevel`, `email`, `timestamp`) VALUES
+('admin', '21232f297a57a5a743894a0e4a801fc3', '67b04b51d8fcda55c7dedb7996a49614', 9, 'admin@localhost.com', 1426672347);
