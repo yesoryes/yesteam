@@ -1,0 +1,55 @@
+.carousel-container {
+	margin: 70px 0 0;
+	width: 700px;
+	height:700px;
+	padding: 0;
+	display: none;
+	float: left;
+}
+.carousel-container ul{
+	position: relative;
+	list-style: none;
+	margin:0; 
+	padding: 0;
+}
+
+.carousel-container li{
+	position: absolute;
+	width: 365px;
+	height: 196px;
+	padding: 20px;
+	display: table;	
+	border: 1px solid rgba(255,255,255,.75);
+	box-sizing: border-box;
+	background: rgba(255,255,255,.5);
+	border-radius: 3px;
+}
+
+.carousel-container span{
+	background: black;
+	display: table-cell;
+	width: 40%;
+
+}
+.carousel-container span img{
+	width:100%;
+
+}
+
+.carousel-container p{
+	padding-left: 10px;
+	margin:0px;
+	display: table-cell;
+	vertical-align: middle;
+	width: 60%;
+
+}
+#carousel-ul {
+	 -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;    
+}
