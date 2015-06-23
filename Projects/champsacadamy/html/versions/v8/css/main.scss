@@ -289,18 +289,54 @@ header{
 		}
 	}
 	
+	/*Karate Banner*/
 	.karate-home {
+		@extend.normal-home;
 		background: none;
-		display: block;
+		display: none;
 		bottom: 0;
 		
 		.another-school-activity {
+			@extend.another-school;
+			background: #76b598 url(../img/banner/another_class_bg.png) repeat-x 0 bottom;
 			left: 0;
 			top: 0;
+			.another-class-stu {
+				bottom: 100px;
+			}
+			.another-class-char {
+				bottom: 100px;
+			}
+			.another-class-window {
+				top: 180px;
+			}
+			.another-class-clock {
+				top: 160px;
+				margin: 0 0 0 300px;		
+			}
 		}
 		.champs-school-activity {
-			left: 0;
-			top: 0;
+			@extend.another-class;
+			right: 0;
+			left: inherit;
+			background: #76aab5 url(../img/banner/champs_class_bg.png) repeat-x 0px bottom;
+			.champs-class-stu {
+				@extend.another-class-stu;
+			}
+			.champs-class-char {
+				@extend.another-class-char;
+			}
+			.champs-class-window {
+				@extend.another-class-window;
+			}
+			.champs-class-clock {			
+				@extend.another-class-clock;
+				margin: 0 0 0 -300px;
+			}
+		}
+		.class-banner-seps {
+			@extend.normal-banner-seps;
+			border-right: 4px solid #fff;
 		}
 	}
 }

@@ -23,7 +23,7 @@ header('Location:transcare_add.php');
 	
     
     <div class="container">  
-        <div class="login-logo"><img src="images/transcareLogo.png"></div>
+        <div class="login-logo">Admin Panel</div>
         <div class="login-content"> 
             <h4>Login Area</h4>
             <form role="form" method="post" action="process.php">
