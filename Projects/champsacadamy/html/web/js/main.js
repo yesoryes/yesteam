@@ -4,12 +4,12 @@ $( document ).ready(function() {
 /*Index Page*/	
 
 /* For Browser Height*/
-	/*var fullHeight = $(window).height();
-	$('.home-banner, .normal-home, .more, .another-school, .champs-school, .banner-seps').css ({
-		height : fullHeight,
-	});*/
 	var fullHeight = $(window).height();
-	$('.menu').css ({
+	$('.home-banner, .normal-home, .another-school, .champs-school, .normal-banner-seps, .class-home, .another-class, .champs-class, .class-banner-seps, .karate-home, .another-school-activity, .champs-school-activity, .activity-banner-seps, .chess-home, .festival-home, .champions-home ').css ({
+		height : fullHeight,
+	});
+	var fullHeight = $(window).height();
+	$('.menu, .black-overlay').css ({
 		height : fullHeight,
 	});
 
@@ -31,8 +31,6 @@ $( document ).ready(function() {
 			});*/
 			$('.black-overlay').css({
 				display: 'block',
-				position: 'absolute',
-				'z-index' : '100000'
 			});
 			
 		});		  
