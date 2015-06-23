@@ -182,29 +182,35 @@ header{
 		.another-school {
 			width: 50%;
 			left: 0;
-			bottom: 182px;
 			float: left;
 			position: absolute;
+			overflow: hidden;
 			
 			.another-school-bg {
-				width: 100%;
+				transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
 				position: absolute;
-				left:0;
-				bottom: -8px;;
+				left:50%;
+				bottom: 182px;
+			}
+			.banner-cloud-white {
+				top: 100px;
+			}
+			.banner-cloud-transparent {
+				top: 40px;
 			}
 			.another-school-building {
 				@extend.another-school-bg;
-				margin: 0 0 -2px 475px;
+				margin: 0 0 -2px 180px;
 			}
 			.another-school-car {
 				overflow: hidden;
-				bottom: -50px;
-				margin: 0 0 0 -50px;
+				bottom: 120px;
+				margin: 0 0 0 -140px;
 			}
 			.another-school-boy {
 				overflow: hidden;
-				bottom: -50px;
-				margin: 0 0 0 -50px;
+				bottom: 50px;
 			}
 		}
 		.champs-school {
@@ -217,17 +223,23 @@ header{
 			}
 			.champs-school-building {
 				@extend.champs-school-bg;
-				margin: 0 0 -2px 200px;
+				margin: 0 0 -2px -200px;
 			}
 			.champs-school-car {
 				@extend.another-school-car;
-				margin: 0 0 0 -200px;
-				bottom: -70px;
+				bottom: 110px;
+				margin: 0 0 0 100px;
 			}
 			.champs-school-boy {
 				@extend.another-school-boy;
 				margin: 0 0 0 170px;
 				bottom: 0;
+			}
+			.banner-cloud-white {
+				top: 100px;
+			}
+			.banner-cloud-transparent {
+				top: 40px;
 			}
 		}
 		.normal-banner-seps {
@@ -291,47 +303,52 @@ header{
 	
 	/*Karate Banner*/
 	.karate-home {
-		@extend.normal-home;
-		background: none;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
 		display: none;
-		bottom: 0;
 		
 		.another-school-activity {
-			@extend.another-school;
-			background: #76b598 url(../img/banner/another_class_bg.png) repeat-x 0 bottom;
-			left: 0;
-			top: 0;
-			.another-class-stu {
-				bottom: 100px;
+			position: absolute;
+			width: 50%;
+			float: left;
+			background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
+			overflow: hidden;
+			
+			.another-school-bg {
+				transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+				position: absolute;
+				left:50%;
+				bottom: 184px;
+	    	}
+			.another-school-building {
+				@extend.another-school-bg;
+				margin: 0 0 -2px;
 			}
-			.another-class-char {
-				bottom: 100px;
+			.another-school-busstop {
+				@extend.another-school-bg;
+				margin: 0 0 0 240px;
 			}
-			.another-class-window {
-				top: 180px;
-			}
-			.another-class-clock {
-				top: 160px;
-				margin: 0 0 0 300px;		
+			.another-school-boy {
+				overflow: hidden;
+				bottom: 150px;
+				margin: 0 0 0 180px;
 			}
 		}
 		.champs-school-activity {
-			@extend.another-class;
+			@extend.another-school-activity;
+			background: #cbefff url(../img/banner/champs_activity_bg.png) repeat-x left bottom;
 			right: 0;
-			left: inherit;
-			background: #76aab5 url(../img/banner/champs_class_bg.png) repeat-x 0px bottom;
-			.champs-class-stu {
-				@extend.another-class-stu;
+			
+			.champs-school-building {
+				@extend.another-school-bg;
+				margin: 0 0 -2px -280px;
 			}
-			.champs-class-char {
-				@extend.another-class-char;
-			}
-			.champs-class-window {
-				@extend.another-class-window;
-			}
-			.champs-class-clock {			
-				@extend.another-class-clock;
-				margin: 0 0 0 -300px;
+			.champs-school-karate {
+				@extend.another-school-bg;
+				margin: 0 0 -0px -170px;
+				bottom: 20px;
 			}
 		}
 		.class-banner-seps {
@@ -339,7 +356,106 @@ header{
 			border-right: 4px solid #fff;
 		}
 	}
+	
+	/*Chess Banner*/
+	.chess-home {
+		@extend.karate-home;
+		display: none;
+		.champs-school-activity {
+			
+			.champs-school-chess {
+				@extend.champs-school-karate;
+				margin: 0 0 0 0px;
+			}
+		}
+	}
+	
+	/*Going Home*/
+	.normal-home{
+	&.going-home {
+		display: block;
+	}
+	}
+	
+	/*Festival Home*/
+	.festival-home {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		display: none;
+		background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
+		
+		.another-school-bg {
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			position: absolute;
+			left:50%;
+			bottom: 182px;
+		}
+		.banner-sunrays {
+			margin: 0 0 0 -430px;
+		}
+		.banner-cloud-white {
+			top: 100px;
+		}
+		.banner-cloud-transparent {
+			top: 75px;
+		}
+		.champs-festival {
+			@extend.another-school-bg;
+		}
+		.champs-festival-banner {
+			bottom: 180px;
+			margin: 0 0 0 -600px;
+		}
+		.another-festival-car {
+			bottom: 110px;
+			margin: 0 0 0 700px;
+		}
+		.another-festival-boy {
+			bottom: 110px;
+			margin: 0 0 0 450px;
+		}
+		.champs-festival-car {
+			bottom: 110px;
+			margin: 0 0 0 -700px;
+		}
+		.champs-festival-boy {
+			bottom: 110px;
+			margin: 0 0 0 -380px;
+		}
+	}
+	
+	/*Champions Home*/
+	.champions-home {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		background: #4bcfc9 url(../img/banner/champions_bg.png) repeat-x left bottom ;
+		display: none;
+		
+		.champions-stage {
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			position: absolute;
+			left:50%;
+			bottom: 50px;
+		}
+		.champions-guest {
+			bottom: 100px;
+			margin: 0 0 0 -500px;
+		}
+		.champions-snow {
+			top: 80px;
+			margin: 0 0 0 -400px;
+		}
+		.school-students {
+			bottom: 10px;
+			margin: 0 0 0 250px;
+		}
+	}
 }
+
 	
 .home-banner {
 	/*background: url(../img/banner/UnderConstruction.jpg) no-repeat center 0px;

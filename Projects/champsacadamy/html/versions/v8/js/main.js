@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
 /* For Browser Height*/
 	var fullHeight = $(window).height();
-	$('.home-banner, .normal-home, .another-school, .champs-school, .normal-banner-seps, .class-home, .another-class, .champs-class, .class-banner-seps, .karate-home, .another-school-activity, .champs-school-activity, .activity-banner-seps').css ({
+	$('.home-banner, .normal-home, .another-school, .champs-school, .normal-banner-seps, .class-home, .another-class, .champs-class, .class-banner-seps, .karate-home, .another-school-activity, .champs-school-activity, .activity-banner-seps, .chess-home, .festival-home, .champions-home ').css ({
 		height : fullHeight,
 	});
 	var fullHeight = $(window).height();
