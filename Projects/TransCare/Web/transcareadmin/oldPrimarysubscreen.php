@@ -742,7 +742,7 @@ if($addtablecontent)
 
             <div class="indexLogo">
 
-                    <img src="images/transcareLogoMain.png">
+                    Admin panel
 
             </div>
 

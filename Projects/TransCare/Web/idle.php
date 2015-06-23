@@ -70,7 +70,7 @@ $output= json_decode($xml);
         </div>
     </div> 
     <footer class="foo_Home">
-        <div class="container">
+        <div class="container-idle">
             <marquee><?php echo $fetLogo['ticker_text']; ?></marquee><br>
             </div>
         </footer>

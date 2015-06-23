@@ -48,6 +48,7 @@ header {
 	z-index: 1;
 	padding:  0 0 26px;
 	background:url(../img/idle_header.png) no-repeat center 0px;
+	  font-family: 'ufonts_com_gillsansmtprobookopentype';
 }
 .header_right {
 	overflow: hidden;
@@ -106,11 +107,17 @@ footer.foo_Home {
 	background: url(../img/footer.png) no-repeat center 0px;
 	margin: 98px 0 0;
 	position: absolute;
-    bottom: 0;
+    bottom: 0px;
 }
 footer marquee {
 	overflow: hidden;
 	font-size: 24px;
 	text-align: center;
 	margin: 7px 0 -5px;
+	padding: 0 0 20px;
+}
+.container-idle {
+	overflow: hidden;
+	width: 1790px;
+	margin: 0 auto;
 }

@@ -976,7 +976,7 @@ $msg="Subscreen added successfully,if u want add another subscreen continue with
 
             <div class="indexLogo">
 
-                    <img src="images/transcareLogoMain.png">
+                    Admin Panel
 
             </div>
 

@@ -6,7 +6,7 @@ include("admin-header.php");
  <div class="header">
     	<div class="headerContent">
             <div class="indexLogo">
-                    <img src="images/transcareLogoMain.png">
+                    Admin Panel
             </div>
             <div class="indexLogout">
                 <a href="loginScreen.html"></a>

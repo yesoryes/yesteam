@@ -27,9 +27,10 @@ $fetLogo = mysql_fetch_array($getLogo);
             </header>
 			<div class="ip_container">
 				<div class="inner_content inner_content5">
-				<div id="scr-wrapper2"> 
+				 
 					<div class="ip_content1 ip_content5 contentHolder" id="boxscroll"> 
                     	<p class="ip_img5"><img src="transcareadmin/<?php echo $fetchdata['bannerimage']; ?>" width="1602" height="245"  alt=""/></p> 
+                        <div id="scr-wrapper2" style="width: 1656px; height: 520px;  overflow: hidden; position: absolute; z-index:1;">
                     	<div class="ip_content2 ip_content5"> 
                         	<?php echo $fetchdata['description'] ?>
                             

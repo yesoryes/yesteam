@@ -209,7 +209,7 @@ footer.foo_Home {
 	background: url(../img/footer.png) no-repeat center 0px;
 	margin: 98px 0 0;
 	position: absolute;
-    bottom: 0;
+    bottom: -14px;
 }
 footer marquee {
 	overflow: hidden;

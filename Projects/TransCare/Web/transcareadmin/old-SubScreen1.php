@@ -829,8 +829,7 @@ else
     	<div class="headerContent">
 
             <div class="indexLogo">
-
-                    <img src="images/transcareLogoMain.png">
+            		Admin Panel
 
             </div>
 
