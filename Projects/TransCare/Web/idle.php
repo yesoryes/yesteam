@@ -1,5 +1,9 @@
-<?php 
+<?php
+//error_reporting(0);
 include("header.php");
+$getLogo = mysql_query("SELECT * FROM site_setting WHERE s_id = 1");
+$fetLogo = mysql_fetch_array($getLogo);
+//$newlocation=getPlaceName($_COOKIE[latitude],$_COOKIE[longitude]);
 ?>
 <link href="css/idle.css" type="text/css" rel="stylesheet">
 <link href="css/reset.css" type="text/css" rel="stylesheet"> 

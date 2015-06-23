@@ -41,7 +41,7 @@ width:6000px;
     <div class="wrapper">
    
         <div id="container" class="container">
-        <section style="<?php echo $bgColor; ?>">
+		<section>
             <iframe id="idle" src="idle.php" class=""></iframe>
             </section>
             <section style="<?php echo $bgColor; ?>">
