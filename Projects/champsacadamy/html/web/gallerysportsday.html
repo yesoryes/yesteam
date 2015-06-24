@@ -8,6 +8,7 @@
 <link href="css/slider.css" rel="stylesheet" type="text/css"/> 
 </head>
 <body>
+<div id="preloader"></div>
 <div id="wrapper" class="ip-bg ip-wrapper"> 
   <!--Cloud-->
   <div class="left-cloud ip-left-cloud"><img src="img/left_cloud.png" alt=""/></div>
@@ -170,6 +171,10 @@ $(document).ready(function(){
 	$("#gallery2").xGallery();
 	$("#gallery3").xGallery();
 	$("#gallery4").xGallery();
+	
+	$(window).load(function(){
+		$('#preloader').fadeOut('slow',function(){$(this).remove();});
+	});
 });
 </script>
 <script type="text/javascript" src="js/jquery-pagenation.js"></script> 

@@ -868,7 +868,7 @@ function myremoveFunction(){
         	<div class="contentSecTitle">
 
                 <h3 style="line-height: 20px">Background Image<br>
-<span style="color:#000; font-weight: 100; font-size: 12px;">(Note : size 1632px x 918px)</span></h3>
+<span style="color:#000; font-weight: 100; font-size: 12px;">(Note : size 1920px x 918px)</span></h3>
 
         	</div>
 

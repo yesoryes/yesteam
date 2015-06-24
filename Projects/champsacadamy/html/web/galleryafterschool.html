@@ -10,6 +10,7 @@
 <link href="css/slider.css" rel="stylesheet" type="text/css"/> 
 </head>
 <body>
+<div id="preloader"></div>
 <div id="wrapper" class="ip-bg ip-wrapper"> 
   <!--Cloud-->
   <div class="left-cloud ip-left-cloud"><img src="img/left_cloud.png" alt=""/></div>
@@ -161,7 +162,8 @@
   <p class="copyright">&copy; 2014 Champsacademy. All rights reserved.</p>
   <!--End CopyRight--> 
 </div> 
-<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>  
+
+<script src="js/jquery-1.10.1.min.js"></script>  
 <script src="js/skrollr.js"></script><!--Home Page Parallex--> 
 <script src="js/main.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
@@ -171,6 +173,10 @@ $(document).ready(function(){
 	$("#gallery2").xGallery();
 	$("#gallery3").xGallery();
 	$("#gallery4").xGallery();
+	
+	$(window).load(function(){
+		$('#preloader').fadeOut('slow',function(){$(this).remove();});
+	});
 });
 </script>
 <script type="text/javascript" src="js/jquery-pagenation.js"></script> 

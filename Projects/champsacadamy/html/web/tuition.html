@@ -10,6 +10,7 @@
 <link href="css/slider.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div id="preloader"></div>
 <div id="wrapper" class="ip-bg ip-wrapper"> 
   <!--Cloud-->
   <div class="left-cloud ip-left-cloud"><img src="img/left_cloud.png" alt=""/></div>
@@ -100,6 +101,12 @@
 <script src="js/liteaccordion.jquery.js"></script><!--Home Horizontal Accordian--> 
 <script src="js/skrollr.js"></script><!--Home Page Parallex--> 
 <script src="js/main.js"></script> 
+
+<script>
+	$(window).load(function(){
+		$('#preloader').fadeOut('slow',function(){$(this).remove();});
+	});
+</script>
 <!--[if lt IE 9]>
     <script>
         document.createElement('figure');

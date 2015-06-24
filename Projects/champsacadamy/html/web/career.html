@@ -10,6 +10,7 @@
 <link href="css/slider.css" rel="stylesheet" type="text/css"/> 
 </head>
 <body>
+<div id="preloader"></div>
 <div id="wrapper" class="ip-bg ip-wrapper"> 
   <!--Cloud-->
   <div class="left-cloud ip-left-cloud"><img src="img/left_cloud.png" alt=""/></div>
@@ -187,7 +188,8 @@
     <div class="action-button"> <a href="#" class="sub-button">Submit</a> <a href="#" class="can-button">Cancel</a> </div>
   </div>
 </div>
-<script src="js/jquery-1.11.3.min.js"></script>
+
+
 <script src="js/jquery-1.10.1.min.js"></script> 
 <script src="js/liteaccordion.jquery.js"></script><!--Home Horizontal Accordian--> 
 <script src="js/skrollr.js"></script><!--Home Page Parallex--> 
@@ -212,8 +214,12 @@ $(document).ready(function(){
 		function close_box() {
 			$('.backdrop').animate({'opacity':'0'}, 300, 'linear');
 			$('.backdrop, .box').css('display','none')
-		};   
-	});	
+		}; 
+		
+	$(window).load(function(){
+		$('#preloader').fadeOut('slow',function(){$(this).remove();});
+	});  
+});	
 		
 </script>
 <!--[if lt IE 9]>

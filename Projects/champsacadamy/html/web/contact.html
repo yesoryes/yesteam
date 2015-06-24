@@ -8,6 +8,7 @@
 <link href="css/slider.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div id="preloader"></div>
 <div id="wrapper" class="ip-bg ip-wrapper"> 
   <!--Cloud-->
   <div class="left-cloud ip-left-cloud"><img src="img/left_cloud.png" alt=""/></div>
@@ -304,13 +305,12 @@
   </div>
   <div class="submit-button"> <a href="#" class="sub-button">Submit</a></div>
 </div>
-<script src="js/jquery-1.11.3.min.js"></script> 
+ 
 <script src="js/jquery-1.10.1.min.js"></script> 
 <script src="js/liteaccordion.jquery.js"></script><!--Home Horizontal Accordian--> 
 <script src="js/skrollr.js"></script><!--Home Page Parallex--> 
 <script src="js/main.js"></script> 
 
-<!--Career Light box  Js-->
 <script>
 $(document).ready(function(){
 	 $('.lightbox').click(function() {
@@ -332,25 +332,27 @@ $(document).ready(function(){
 			$('.backdrop, .box').css('display','none')
 		};   
 	}); 
-</script> 
-<script> 
 $(document).ready(function(){
-        $('.lightbox-enquiry').click(function() {
-            $('.backdrop-enquiry').animate({'opacity':'0.5'}, 300, 'linear');
-			$('.backdrop-enquiry, .box-enquiry').css('display','block')
-		}) ; 
-		$('.close-enquiry').click(function() {
-			close_box1()
-		}) ;  
-		$('.backdrop-enquiry').click(function() {
-			close_box1()
-		});
-		
-		function close_box1() {
-			$('.backdrop-enquiry').animate({'opacity':'0'}, 300, 'linear');
-			$('.backdrop-enquiry, .box-enquiry').css('display','none')
-		};
+	$('.lightbox-enquiry').click(function() {
+		$('.backdrop-enquiry').animate({'opacity':'0.5'}, 300, 'linear');
+		$('.backdrop-enquiry, .box-enquiry').css('display','block')
+	}) ; 
+	$('.close-enquiry').click(function() {
+		close_box1()
+	}) ;  
+	$('.backdrop-enquiry').click(function() {
+		close_box1()
 	});
+	
+	function close_box1() {
+		$('.backdrop-enquiry').animate({'opacity':'0'}, 300, 'linear');
+		$('.backdrop-enquiry, .box-enquiry').css('display','none')
+	};
+	
+	$(window).load(function(){
+		$('#preloader').fadeOut('slow',function(){$(this).remove();});
+	});	
+});
  </script> 
 <!--[if lt IE 9]>
     <script>

@@ -193,11 +193,18 @@ header{
 				left:50%;
 				bottom: 182px;
 			}
+			.banner-building {
+				  bottom: 185px;
+  				  z-index: 0;
+			}
 			.banner-cloud-white {
-				top: 100px;
+				top: 170px;
+ 				margin: 0px 0px 0px -100px;
+				
 			}
 			.banner-cloud-transparent {
-				top: 40px;
+				top: -40px;
+				margin: 0 0 0 -440px;
 			}
 			.another-school-building {
 				@extend.another-school-bg;
@@ -221,6 +228,10 @@ header{
 			.champs-school-bg {
 				@extend.another-school-bg;
 			}
+			.banner-building {
+				  bottom: 185px;
+  				  z-index: 0;
+			}
 			.champs-school-building {
 				@extend.champs-school-bg;
 				margin: 0 0 -2px -200px;
@@ -236,7 +247,8 @@ header{
 				bottom: 0;
 			}
 			.banner-cloud-white {
-				top: 100px;
+				  top: 130px;
+ 				  margin: 0px 0px 0px 100px;
 			}
 			.banner-cloud-transparent {
 				top: 40px;
@@ -256,6 +268,7 @@ header{
 		background: none;
 		display: none;
 		bottom: 0;
+		
 		
 		.another-class {
 			@extend.another-school;
@@ -315,6 +328,10 @@ header{
 			background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
 			overflow: hidden;
 			
+			.banner-building {
+				  bottom: 185px;
+  				  z-index: 0;
+			}
 			.another-school-bg {
 				transform: translateX(-50%);
 				-webkit-transform: translateX(-50%);
@@ -325,6 +342,13 @@ header{
 			.another-school-building {
 				@extend.another-school-bg;
 				margin: 0 0 -2px;
+			}
+			.banner-cloud-white {
+				  top: 130px;
+ 				  margin: 0px 0px 0px 100px;
+			}
+			.banner-cloud-transparent {
+				top: 40px;
 			}
 			.another-school-busstop {
 				@extend.another-school-bg;
@@ -341,9 +365,20 @@ header{
 			background: #cbefff url(../img/banner/champs_activity_bg.png) repeat-x left bottom;
 			right: 0;
 			
+			.banner-building {
+				  bottom: 185px;
+  				  z-index: 0;
+			}
 			.champs-school-building {
 				@extend.another-school-bg;
 				margin: 0 0 -2px -280px;
+			}
+			.banner-cloud-white {
+				  top: 130px;
+ 				  margin: 0px 0px 0px 100px;
+			}
+			.banner-cloud-transparent {
+				top: 40px;
 			}
 			.champs-school-karate {
 				@extend.another-school-bg;
@@ -360,7 +395,7 @@ header{
 	/*Chess Banner*/
 	.chess-home {
 		@extend.karate-home;
-		display: none;
+		display: block;
 		.champs-school-activity {
 			
 			.champs-school-chess {
@@ -373,7 +408,7 @@ header{
 	/*Going Home*/
 	.normal-home{
 	&.going-home {
-		display: block;
+		display: none;
 	}
 	}
 	
@@ -391,6 +426,10 @@ header{
 			position: absolute;
 			left:50%;
 			bottom: 182px;
+		}
+		.banner-building {
+			bottom: 185px;
+			z-index: 0;
 		}
 		.banner-sunrays {
 			margin: 0 0 0 -430px;

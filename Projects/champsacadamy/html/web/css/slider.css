@@ -582,3 +582,6 @@
 .activity-read-more a:hover .dance-btm {	 
 		background: #000 url(../img/karate_btm.png) no-repeat 35px 25px;
 }
+
+
+#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center; }
