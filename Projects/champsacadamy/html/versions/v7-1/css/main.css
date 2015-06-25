@@ -691,8 +691,10 @@ header {
       .programs .pro-preschool.abs_pos p, .programs .abs_pos.pro-afterschool p, .programs .abs_pos.pro-tution p {
         text-align: center;
         color: #7e7e7e;
-        font-size: 14px;
-        padding: 0 35px; }
+        font-size: 15px;
+        line-height: 22px;
+        padding: 0 35px;
+        height: 115px; }
         .programs .pro-preschool.abs_pos p a, .programs .abs_pos.pro-afterschool p a, .programs .abs_pos.pro-tution p a {
           display: table;
           vertical-align: middle;
@@ -747,22 +749,37 @@ header {
 
 .activity {
   overflow: hidden;
-  margin: 0 0 80px; }
+  margin: 0 0 80px;
+  position: relative;
+  height: 715px;
+  left: -35px;
+  top: 0;
+  background: url(../img/activity_bg.png) no-repeat 347px 209px; }
   .activity .activity-karate, .activity .activity-kungfu, .activity .activity-chess, .activity .activity-dance {
     overflow: hidden;
     float: left;
     width: 170px;
     padding: 54px 19px 18px;
     margin: 0 0 0 63px;
-    background: url(../img/index_karate_bg.png) no-repeat 0px 0px;
-    border-radius: 5px; }
+    /*background: url(../img/index_karate_bg.png) no-repeat 0px 0px;*/
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    -webkit-transition: 1s all; }
     .activity .activity-karate.abs_pos, .activity .abs_pos.activity-kungfu, .activity .abs_pos.activity-chess, .activity .abs_pos.activity-dance {
-      top: 205px;
+      top: 149px;
       margin: 0 0 0 -233px; }
+      .activity .activity-karate.abs_pos .img-text, .activity .abs_pos.activity-kungfu .img-text, .activity .abs_pos.activity-chess .img-text, .activity .abs_pos.activity-dance .img-text {
+        margin: 0px -18px 0px; }
       .activity .activity-karate.abs_pos p, .activity .abs_pos.activity-kungfu p, .activity .abs_pos.activity-chess p, .activity .abs_pos.activity-dance p {
         text-align: center;
         margin: 0px 0 22px;
-        line-height: 22px; }
+        line-height: 18px;
+        height: 100px;
+        font-size: 12px; }
       .activity .activity-karate.abs_pos a, .activity .abs_pos.activity-kungfu a, .activity .abs_pos.activity-chess a, .activity .abs_pos.activity-dance a {
         text-transform: capitalize;
         display: block;
@@ -774,51 +791,61 @@ header {
         .activity .activity-karate.abs_pos a:hover, .activity .abs_pos.activity-kungfu a:hover, .activity .abs_pos.activity-chess a:hover, .activity .abs_pos.activity-dance a:hover {
           color: #73a60b; }
   .activity .activity-kungfu {
-    background: url(../img/index_kungfu_bg.png) no-repeat 0px 0px; }
+    /*background: url(../img/index_kungfu_bg.png) no-repeat 0px 0px;*/ }
     .activity .activity-kungfu.abs_pos {
-      top: 205px;
-      margin: 0 0 0 26px; }
+      margin: 0 0 0 37px; }
+      .activity .activity-kungfu.abs_pos .img-text {
+        margin: 0px -19px 0px; }
       .activity .activity-kungfu.abs_pos a {
         background: #24449d; }
         .activity .activity-kungfu.abs_pos a:hover {
           color: #2a7abf; }
   .activity .activity-chess {
-    background: url(../img/index_chess_bg.png) no-repeat 0px 0px; }
+    /*background: url(../img/index_chess_bg.png) no-repeat 0px 0px;*/ }
     .activity .activity-chess.abs_pos {
-      top: 205px;
-      margin: 0 0 0 283px; }
+      margin: 0 0 0 305px; }
+      .activity .activity-chess.abs_pos .img-text {
+        margin: 0px -19px 0px; }
       .activity .activity-chess.abs_pos a {
         background: #f09309; }
         .activity .activity-chess.abs_pos a:hover {
           color: #f5b913; }
   .activity .activity-dance {
-    background: url(../img/index_dance_bg.png) no-repeat 0px 0px; }
+    /*background: url(../img/index_dance_bg.png) no-repeat 0px 0px;*/ }
     .activity .activity-dance.abs_pos {
-      top: 205px;
-      margin: 0 0 0 546px; }
+      margin: 0 0 0 574px; }
+      .activity .activity-dance.abs_pos .img-text {
+        margin: 0px -19px 0px; }
       .activity .activity-dance.abs_pos a {
         background: #ab2865; }
         .activity .activity-dance.abs_pos a:hover {
           color: #ce5d92; }
   .activity .karate-btm, .activity .kungfu-btm, .activity .chess-btm, .activity .dance-btm {
-    width: 150px;
+    width: 120px;
     height: 165px;
-    background: url(../img/karate_btm.png) no-repeat 0px 0px; }
+    background: url(../img/karatelatest.jpg) no-repeat 0px 0px; }
     .activity .karate-btm.abs_pos, .activity .abs_pos.kungfu-btm, .activity .abs_pos.chess-btm, .activity .abs_pos.dance-btm {
-      bottom: 110px;
-      margin: 0 0 0 -325px; }
+      bottom: 109px;
+      margin: 0 0 0 -350px; }
   .activity .kungfu-btm {
-    background: url(../img/kungfu_btm.png) no-repeat 0px; }
+    width: 150px;
+    height: 119px;
+    background: url(../img/kungfu.jpg) no-repeat 0px; }
     .activity .kungfu-btm.abs_pos {
-      margin: 0 0 0 -45px; }
+      margin: 0 0 0 -50px;
+      bottom: 132px; }
   .activity .chess-btm {
-    background: url(../img/InStage.png) no-repeat -10px -30px; }
+    width: 150px;
+    background: url(../img/InStage.jpg) no-repeat 0px 0px; }
     .activity .chess-btm.abs_pos {
-      margin: 0 0 -30px 200px; }
+      margin: 0 0 0px 227px;
+      bottom: 111px; }
   .activity .dance-btm {
-    background: url(../img/dance_btm.png) no-repeat 35px 25px; }
+    width: 150px;
+    background: url(../img/dancenew.jpg) no-repeat 0 0; }
     .activity .dance-btm.abs_pos {
-      margin: 0 0 0 455px; }
+      margin: 0 0 0 493px;
+      bottom: 99px; }
 
 /*Testimonials*/
 .testimonials {
