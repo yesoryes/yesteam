@@ -1893,12 +1893,11 @@ transform: rotate(2deg) translate(-1px, 2px);
 .marquee {
     top: 0px;
     position: relative;
-    box-sizing: border-box;
-    animation: marquee 15s linear infinite;
-	-moz-animation: marquee 15s linear infinite;
-	-o-animation: marquee 15s linear infinite;
-	-webkit-animation: marquee 15s linear infinite;
-	-ms-animation: marquee 15s linear infinite;
+    animation: marquee 25s linear infinite;
+	-moz-animation: marquee 25s linear infinite;
+	-o-animation: marquee 25s linear infinite;
+	-webkit-animation: marquee 25s linear infinite;
+	-ms-animation: marquee 25s linear infinite;
 }
 
 .marquee:hover {
@@ -1912,23 +1911,25 @@ transform: rotate(2deg) translate(-1px, 2px);
 /* Make it move! */
 @keyframes marquee {
     0%   { top:   0em }
-    100% { top: -23em }
+    50% { top: -85em }
+	51% { top: -85em }
+	100% { top: 0em; }
 }
-@-webkit-keyframes marquee {
+/*@-webkit-keyframes marquee {
     0%   { top:   0em }
-    100% { top: -23em }
-}
+    100% { top: -85em }
+}*/
 @-moz-keyframes marquee {
     0%   { top:   0em }
-    100% { top: -23em }
+    100% { top: -84em }
 }
 @-ms-keyframes marquee {
     0%   { top:   0em }
-    100% { top: -23em }
+    100% { top: -84em }
 }
 @-o-keyframes marquee {
     0%   { top:   0em }
-    100% { top: -23em }
+    100% { top: -84em }
 }
 
 

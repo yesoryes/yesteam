@@ -32,24 +32,25 @@ $( document ).ready(function() {
 	var more = function() {  
 		$('.more a').click(function() {	
 		//alert ();  
-			$('.menu').animate({right: "0px" }, 1500).css({
+			$('.menu').animate({right: "0px" }, 1000).css({
 				display : 'block',
 			});	
-			$('body').animate({right: "0"}, 1500); 
-			$('.bg, .main-nav ul').slideUp(1500);
-			/*$('.more').css ({
+			$('body').animate({right: "0"}, 1000); 
+			$('.bg, .main-nav ul').slideUp(1000);
+			$('.more').css ({
 				display : 'none',
-			});*/
+			});
 			$('.black-overlay').css({
 				display: 'block',
-			});
-			
+				position: 'absolute',
+				'z-index' : '100000'
+			});			
 		});		  
 		/* Then push them back */	  
 		$('.more-close').click(function() {
-		   $('.menu').animate({right: "-325px"}, 1500);
-		   $('body').animate({right: "0px"  }, 1500); 
-		   $('.bg, .main-nav ul').slideDown(1500);
+		   $('.menu').animate({right: "-325px"}, 1000);
+		   $('body').animate({right: "0px"  }, 1000); 
+		   $('.bg, .main-nav ul').slideDown(1000);
 		   $('.more').css ({
 				display : 'block',
 			});
