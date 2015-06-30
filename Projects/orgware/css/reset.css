@@ -100,3 +100,10 @@ hr {
 input, select {
     vertical-align:middle;
 } 
+
+.input-field:focus {
+          background: rgba(204, 97, 71, 0.9) none repeat scroll 0 0;
+          outline: medium none; }
+.input-field:focus .textarea-label {
+	top: 0;
+}
