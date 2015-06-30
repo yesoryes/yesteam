@@ -49,6 +49,9 @@ q:before, q:after {
     content:'';
     content:none;
 }
+li {
+	list-style: none;
+}
 
 a {
     margin:0;

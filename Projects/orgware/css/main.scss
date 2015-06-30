@@ -6339,7 +6339,244 @@ footer
 } 
 /* Font Section */
 			  
-			  
+/*Portfolio*/
+.portfolio-nav {
+	@extend.about-nav;
+	margin: 0;
+		
+	.tab-head {
+		width:100%;
+		overflow:hidden;
+		
+		.tab-navbar {
+			width:100%;
+			overflow:hidden;				
+				li {
+					border-right:1px solid #cacaca;
+					display:inline-block; 
+					width: 33%;
+					padding: 0;
+					margin: 0;
+					height: 50px;
+						&:first-child {
+							border-left:1px solid #cacaca; 
+						}
+						
+						a {
+							font-family: 'LinotypeMetroNovaProLight';
+							font-size: 25px;
+							color: #1e1e1e;
+							height: 50px;
+							display: block;
+							text-decoration:none;
+							line-height: 50px; 
+							&:hover {
+							color:#e03333;
+							}
+							&.active {
+							color:#e03333;
+							}
+						
+						}				
+				}
+		}
+	}
+}
+#tabs li a.current {
+    color: #e03333;
+    border-bottom: 2px solid #ff251b;
+}
+.portfolio-tab {
+	margin: 60px 0 0;
+	overflow: hidden;
+	.mobileGames {
+		width: 100%;
+		overflow: hidden;
+		.four-strax {
+			background: #33cae0;
+			color: #fff;
+			height: 310px;
+			width: 39%;
+			float: left;
+			overflow: hidden;
+			margin: 0 0 20px;
+			
+			.tab-content-header {
+				margin: 20px 0;
+				overflow: hidden;
+				h3 {
+					font-size: 30px;
+					font-family: 'LinotypeMetroNovaProLight';
+					float: left;
+					text-align: left;
+				}
+				ul {
+					overflow: hidden;
+					float: right;
+					li {
+						float: left;
+						margin: 0 0 0 15px; 
+					}
+				}
+			}
+			figure {
+				float: right;
+			}
+		}
+		
+		.one-touch {
+			@extend.four-strax;
+			background: #33e0de;
+			width: 59%;
+			float: right;
+			.tab-content-header {
+				li {					
+					padding: 6px 10px 9px 0;
+				}
+				.client {
+					background: #1f8685;
+			   }
+			   .arrow_box {
+					position: relative;
+				}
+				.arrow_box:after {
+					right: 100%;
+					top: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+					border-color: rgba(31, 134, 133, 0);
+					border-right-color: #1f8685;
+					border-width: 20px;
+					margin-top: -20px;
+				}
+			   
+			}
+			ul {
+				overflow: hidden;
+				float: none;
+				li {
+					margin: 0 0 0 15px; 
+					float: left;
+				}
+			}
+			.one-touch-text {
+				margin: 5px 0 0;
+				article {
+					padding: 16px 0 10px;
+					overflow: hidden;
+					float: left;
+					font-size: 15px;
+					line-height: 22px;
+					color: #fff;
+				}
+			}
+		}
+		.owaisi {
+			@extend.one-touch;
+			width: 59%;
+			float: left;
+			background: #33e088;
+			.tab-content-header {
+				li {					
+					padding: 6px 10px 9px 0;
+				}
+				.client {
+					background: #1f8652;
+			   }
+			   .arrow_box {
+					position: relative;
+				}
+				.arrow_box:after {
+					right: 100%;
+					top: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+					border-color: rgba(31, 134, 133, 0);
+					border-right-color: #1f8652;
+					border-width: 20px;
+					margin-top: -20px;
+				}
+			   
+			}
+			figure {
+				float: right;
+				margin: -80px 0 0;
+			}
+			.one-touch-text {
+				article {
+					text-align: left;
+				}
+			}
+		}
+		
+		.peter-traveler {
+			@extend.four-strax;
+			float: right;
+			background: #e0ca33;
+			.tab-content-header {
+				h3 {
+					text-align: right;
+				}
+			}
+			figure {
+				margin: -20px 20px 0 0;
+			}
+		}
+		
+		.first-aid {
+			@extend.four-strax;
+			float: left;
+			background: #e03333;
+		}
+		
+		.dress-inbox {
+			@extend.owaisi;
+			width: 59%;
+			float: right;
+			background: #e08033;
+			.tab-content-header {
+				li {					
+					padding: 6px 10px 9px 0;
+				}
+				.client {
+					background: #864d1f;
+			   }
+			   .arrow_box {
+					position: relative;
+				}
+				.arrow_box:after {
+					right: 100%;
+					top: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+					border-color: rgba(31, 134, 133, 0);
+					border-right-color: #864d1f;
+					border-width: 20px;
+					margin-top: -20px;
+				}
+			   
+			}
+			figure {
+				margin: -50px 0 0;
+			}
+		}
+	}
+}
+/*End Portfolio*/
+
+		  
 @font-face 
 {
 	font-family: 'LinotypeMetroNovaProItalic';

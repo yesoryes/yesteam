@@ -2186,27 +2186,27 @@ footer {
       vertical-align: 22px;
       width: 50%; }
 
-.about-nav {
+.about-nav, .portfolio-nav {
   overflow: hidden;
   width: 100%;
   position: relative;
   background: #f5f5f5;
   height: 50px;
   margin: 5% 0; }
-  .about-nav .tab-head {
+  .about-nav .tab-head, .portfolio-nav .tab-head {
     width: 100%;
     overflow: hidden; }
-    .about-nav .tab-head .tab-navbar {
+    .about-nav .tab-head .tab-navbar, .portfolio-nav .tab-head .tab-navbar {
       width: 100%;
       overflow: hidden; }
-      .about-nav .tab-head .tab-navbar li {
+      .about-nav .tab-head .tab-navbar li, .portfolio-nav .tab-head .tab-navbar li {
         border-right: 1px solid #cacaca;
         display: inline-block;
         width: 24%;
         height: 50px; }
-        .about-nav .tab-head .tab-navbar li:first-child {
+        .about-nav .tab-head .tab-navbar li:first-child, .portfolio-nav .tab-head .tab-navbar li:first-child {
           border-left: 1px solid #cacaca; }
-        .about-nav .tab-head .tab-navbar li a {
+        .about-nav .tab-head .tab-navbar li a, .portfolio-nav .tab-head .tab-navbar li a {
           font-family: 'LinotypeMetroNovaProLight';
           font-size: 25px;
           color: #1e1e1e;
@@ -2214,9 +2214,9 @@ footer {
           display: block;
           text-decoration: none;
           line-height: 50px; }
-          .about-nav .tab-head .tab-navbar li a:hover {
+          .about-nav .tab-head .tab-navbar li a:hover, .portfolio-nav .tab-head .tab-navbar li a:hover {
             color: #e03333; }
-          .about-nav .tab-head .tab-navbar li a.active {
+          .about-nav .tab-head .tab-navbar li a.active, .portfolio-nav .tab-head .tab-navbar li a.active {
             color: #e03333; }
 
 .about-tab {
@@ -6350,6 +6350,174 @@ footer {
       color: #ff7959;
       background: #fff; } }
 /* Font Section */
+/*Portfolio*/
+.portfolio-nav {
+  margin: 0; }
+  .portfolio-nav .tab-head {
+    width: 100%;
+    overflow: hidden; }
+    .portfolio-nav .tab-head .tab-navbar {
+      width: 100%;
+      overflow: hidden; }
+      .portfolio-nav .tab-head .tab-navbar li {
+        border-right: 1px solid #cacaca;
+        display: inline-block;
+        width: 33%;
+        padding: 0;
+        margin: 0;
+        height: 50px; }
+        .portfolio-nav .tab-head .tab-navbar li:first-child {
+          border-left: 1px solid #cacaca; }
+        .portfolio-nav .tab-head .tab-navbar li a {
+          font-family: 'LinotypeMetroNovaProLight';
+          font-size: 25px;
+          color: #1e1e1e;
+          height: 50px;
+          display: block;
+          text-decoration: none;
+          line-height: 50px; }
+          .portfolio-nav .tab-head .tab-navbar li a:hover {
+            color: #e03333; }
+          .portfolio-nav .tab-head .tab-navbar li a.active {
+            color: #e03333; }
+
+#tabs li a.current {
+  color: #e03333;
+  border-bottom: 2px solid #ff251b; }
+
+.portfolio-tab {
+  margin: 60px 0 0;
+  overflow: hidden; }
+  .portfolio-tab .mobileGames {
+    width: 100%;
+    overflow: hidden; }
+    .portfolio-tab .mobileGames .four-strax, .portfolio-tab .mobileGames .one-touch, .portfolio-tab .mobileGames .owaisi, .portfolio-tab .mobileGames .dress-inbox, .portfolio-tab .mobileGames .peter-traveler, .portfolio-tab .mobileGames .first-aid {
+      background: #33cae0;
+      color: #fff;
+      height: 310px;
+      width: 39%;
+      float: left;
+      overflow: hidden;
+      margin: 0 0 20px; }
+      .portfolio-tab .mobileGames .four-strax .tab-content-header, .portfolio-tab .mobileGames .one-touch .tab-content-header, .portfolio-tab .mobileGames .owaisi .tab-content-header, .portfolio-tab .mobileGames .dress-inbox .tab-content-header, .portfolio-tab .mobileGames .peter-traveler .tab-content-header, .portfolio-tab .mobileGames .first-aid .tab-content-header {
+        margin: 20px 0;
+        overflow: hidden; }
+        .portfolio-tab .mobileGames .four-strax .tab-content-header h3, .portfolio-tab .mobileGames .one-touch .tab-content-header h3, .portfolio-tab .mobileGames .owaisi .tab-content-header h3, .portfolio-tab .mobileGames .dress-inbox .tab-content-header h3, .portfolio-tab .mobileGames .peter-traveler .tab-content-header h3, .portfolio-tab .mobileGames .first-aid .tab-content-header h3 {
+          font-size: 30px;
+          font-family: 'LinotypeMetroNovaProLight';
+          float: left;
+          text-align: left; }
+        .portfolio-tab .mobileGames .four-strax .tab-content-header ul, .portfolio-tab .mobileGames .one-touch .tab-content-header ul, .portfolio-tab .mobileGames .owaisi .tab-content-header ul, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul, .portfolio-tab .mobileGames .peter-traveler .tab-content-header ul, .portfolio-tab .mobileGames .first-aid .tab-content-header ul {
+          overflow: hidden;
+          float: right; }
+          .portfolio-tab .mobileGames .four-strax .tab-content-header ul li, .portfolio-tab .mobileGames .one-touch .tab-content-header ul li, .portfolio-tab .mobileGames .owaisi .tab-content-header ul li, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul li, .portfolio-tab .mobileGames .peter-traveler .tab-content-header ul li, .portfolio-tab .mobileGames .first-aid .tab-content-header ul li {
+            float: left;
+            margin: 0 0 0 15px; }
+      .portfolio-tab .mobileGames .four-strax figure, .portfolio-tab .mobileGames .one-touch figure, .portfolio-tab .mobileGames .owaisi figure, .portfolio-tab .mobileGames .dress-inbox figure, .portfolio-tab .mobileGames .peter-traveler figure, .portfolio-tab .mobileGames .first-aid figure {
+        float: right; }
+    .portfolio-tab .mobileGames .one-touch, .portfolio-tab .mobileGames .owaisi, .portfolio-tab .mobileGames .dress-inbox {
+      background: #33e0de;
+      width: 59%;
+      float: right; }
+      .portfolio-tab .mobileGames .one-touch .tab-content-header li, .portfolio-tab .mobileGames .owaisi .tab-content-header li, .portfolio-tab .mobileGames .dress-inbox .tab-content-header li {
+        padding: 6px 10px 9px 0; }
+      .portfolio-tab .mobileGames .one-touch .tab-content-header .client, .portfolio-tab .mobileGames .owaisi .tab-content-header .client, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .client {
+        background: #1f8685; }
+      .portfolio-tab .mobileGames .one-touch .tab-content-header .arrow_box, .portfolio-tab .mobileGames .owaisi .tab-content-header .arrow_box, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box {
+        position: relative; }
+      .portfolio-tab .mobileGames .one-touch .tab-content-header .arrow_box:after, .portfolio-tab .mobileGames .owaisi .tab-content-header .arrow_box:after, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box:after {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(31, 134, 133, 0);
+        border-right-color: #1f8685;
+        border-width: 20px;
+        margin-top: -20px; }
+      .portfolio-tab .mobileGames .one-touch ul, .portfolio-tab .mobileGames .owaisi ul, .portfolio-tab .mobileGames .dress-inbox ul {
+        overflow: hidden;
+        float: none; }
+        .portfolio-tab .mobileGames .one-touch ul li, .portfolio-tab .mobileGames .owaisi ul li, .portfolio-tab .mobileGames .dress-inbox ul li {
+          margin: 0 0 0 15px;
+          float: left; }
+      .portfolio-tab .mobileGames .one-touch .one-touch-text, .portfolio-tab .mobileGames .owaisi .one-touch-text, .portfolio-tab .mobileGames .dress-inbox .one-touch-text {
+        margin: 5px 0 0; }
+        .portfolio-tab .mobileGames .one-touch .one-touch-text article, .portfolio-tab .mobileGames .owaisi .one-touch-text article, .portfolio-tab .mobileGames .dress-inbox .one-touch-text article {
+          padding: 16px 0 10px;
+          overflow: hidden;
+          float: left;
+          font-size: 15px;
+          line-height: 22px;
+          color: #fff; }
+    .portfolio-tab .mobileGames .owaisi, .portfolio-tab .mobileGames .dress-inbox {
+      width: 59%;
+      float: left;
+      background: #33e088; }
+      .portfolio-tab .mobileGames .owaisi .tab-content-header li, .portfolio-tab .mobileGames .dress-inbox .tab-content-header li {
+        padding: 6px 10px 9px 0; }
+      .portfolio-tab .mobileGames .owaisi .tab-content-header .client, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .client {
+        background: #1f8652; }
+      .portfolio-tab .mobileGames .owaisi .tab-content-header .arrow_box, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box {
+        position: relative; }
+      .portfolio-tab .mobileGames .owaisi .tab-content-header .arrow_box:after, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box:after {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(31, 134, 133, 0);
+        border-right-color: #1f8652;
+        border-width: 20px;
+        margin-top: -20px; }
+      .portfolio-tab .mobileGames .owaisi figure, .portfolio-tab .mobileGames .dress-inbox figure {
+        float: right;
+        margin: -80px 0 0; }
+      .portfolio-tab .mobileGames .owaisi .one-touch-text article, .portfolio-tab .mobileGames .dress-inbox .one-touch-text article {
+        text-align: left; }
+    .portfolio-tab .mobileGames .peter-traveler {
+      float: right;
+      background: #e0ca33; }
+      .portfolio-tab .mobileGames .peter-traveler .tab-content-header h3 {
+        text-align: right; }
+      .portfolio-tab .mobileGames .peter-traveler figure {
+        margin: -20px 20px 0 0; }
+    .portfolio-tab .mobileGames .first-aid {
+      float: left;
+      background: #e03333; }
+    .portfolio-tab .mobileGames .dress-inbox {
+      width: 59%;
+      float: right;
+      background: #e08033; }
+      .portfolio-tab .mobileGames .dress-inbox .tab-content-header li {
+        padding: 6px 10px 9px 0; }
+      .portfolio-tab .mobileGames .dress-inbox .tab-content-header .client {
+        background: #864d1f; }
+      .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box {
+        position: relative; }
+      .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box:after {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(31, 134, 133, 0);
+        border-right-color: #864d1f;
+        border-width: 20px;
+        margin-top: -20px; }
+      .portfolio-tab .mobileGames .dress-inbox figure {
+        margin: -50px 0 0; }
+
+/*End Portfolio*/
 @font-face {
   font-family: 'LinotypeMetroNovaProItalic';
   src: url("../fonts/LinotypeMetroNovaProItalic.eot");
