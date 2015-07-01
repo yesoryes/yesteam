@@ -2150,79 +2150,677 @@ footer {
     padding: 0 0 0% 0; }
     .ip-services .pad-row .ip-services-content {
       overflow: hidden;
-      width: 100%;
-      height: 446px; }
-      .ip-services .pad-row .ip-services-content:hover {
-        background: #f8f8f8; }
-      .ip-services .pad-row .ip-services-content .contact-heading {
-        width: 100%;
-        height: 165px;
-        margin: 5% 0 4%; }
-        .ip-services .pad-row .ip-services-content .contact-heading h4, .ip-services .pad-row .ip-services-content .contact-heading .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .contact-heading .ceo-name {
-          font-family: 'LinotypeMetroNovaPro';
-          font-size: 20px;
-          color: 1e1e1e;
-          padding: 20px 0 0 0; }
-        .ip-services .pad-row .ip-services-content .contact-heading .service-figure1 {
-          width: 90px;
-          height: 108px;
-          margin: 0 auto;
-          transition: 0.3s all;
-          background: url(../img/mob-serv-app.png) center top no-repeat; }
-        .ip-services .pad-row .ip-services-content .contact-heading .service-figure2 {
-          width: 90px;
-          height: 108px;
-          margin: 0 auto;
-          background: url(../img/game-serv-app.png) center center no-repeat; }
-        .ip-services .pad-row .ip-services-content .contact-heading .service-figure3 {
-          width: 90px;
-          height: 108px;
-          margin: 0 auto;
-          background: url(../img/cross-serv-app.png) center center no-repeat; }
-        .ip-services .pad-row .ip-services-content .contact-heading .service-figure4 {
-          width: 90px;
-          height: 108px;
-          margin: 0 auto;
-          background: url(../img/enterprise-serv-app.png) center center no-repeat; }
-        .ip-services .pad-row .ip-services-content .contact-heading .service-figure5 {
-          width: 90px;
-          height: 108px;
-          margin: 0 auto;
-          background: url(../img/mob-cloud-serv.png) center center no-repeat; }
-        .ip-services .pad-row .ip-services-content .contact-heading .service-figure6 {
-          width: 90px;
-          height: 108px;
-          margin: 0 auto;
-          background: url(../img/web-app-serv.png) center center no-repeat; }
-        .ip-services .pad-row .ip-services-content .contact-heading .service-figure7 {
-          width: 90px;
-          height: 108px;
-          margin: 0 auto;
-          background: url(../img/web-design-serv.png) center center no-repeat; }
-        .ip-services .pad-row .ip-services-content .contact-heading .service-figure8 {
-          width: 90px;
-          height: 108px;
-          margin: 0 auto;
-          background: url(../img/open-source-serv.png) center center no-repeat; }
-        .ip-services .pad-row .ip-services-content .contact-heading .service-figure9 {
-          width: 90px;
-          height: 108px;
-          margin: 0 auto;
-          background: url(../img/e-commerce-serv.png) center center no-repeat; }
-        .ip-services .pad-row .ip-services-content .contact-heading .service-figure10 {
-          width: 90px;
-          height: 108px;
-          margin: 0 auto;
-          background: url(../img/loc-base-serv.png) center center no-repeat; }
-      .ip-services .pad-row .ip-services-content .contact-address {
-        width: 100%;
-        margin: 0% 0 0; }
-        .ip-services .pad-row .ip-services-content .contact-address p {
-          font-family: 'OpenSansRegular';
-          font-size: 15px;
-          color: #8a8a8a;
-          line-height: 25px;
-          width: 100%; }
+      width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box1 {
+        background-color: #fff;
+        margin-bottom: 0;
+        min-height: 20px;
+        overflow: hidden;
+        padding: 0px 20px;
+        height: 100%; }
+      .ip-services .pad-row .ip-services-content h4, .ip-services .pad-row .ip-services-content .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .ceo-name {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 20px;
+        color: 1e1e1e;
+        padding: 20px 0; }
+      .ip-services .pad-row .ip-services-content p {
+        font-family: 'OpenSansRegular';
+        font-size: 15px;
+        color: #8a8a8a;
+        line-height: 24px;
+        width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box1:hover {
+        background-color: #f5f5f5; }
+      .ip-services .pad-row .ip-services-content .service-box1::before {
+        display: none; }
+      .ip-services .pad-row .ip-services-content .service-box1 [class*="icon"]::after {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 8px;
+        margin: 5px auto 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 88px; }
+      .ip-services .pad-row .ip-services-content .service-box1 [class*="icon"] {
+        background: url(../img/service1.png) top center no-repeat;
+        display: block;
+        height: 90px;
+        margin: 0 auto 36px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 90px;
+        line-height: 90px; }
+      .ip-services .pad-row .ip-services-content .icon-group::before {
+        content: ""; }
+      .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+        text-decoration: inherit;
+        display: inline-block;
+        width: 45px;
+        height: 45px; }
+      .ip-services .pad-row .ip-services-content .service-box1:hover ::after {
+        height: 5px;
+        transform: translate(0px, 22px);
+        -ms-transform: translate(0px, 22px);
+        -moz-transform: translate(0px, 22px);
+        -webkit-transform: translate(0px, 22px);
+        width: 53px; }
+      .ip-services .pad-row .ip-services-content .service-box1:hover [class*="icon"] {
+        background: url(../img/service1-hover.png) top center no-repeat;
+        transform: translate(0px, -20px);
+        -ms-transform: translate(0px, -20px);
+        -moz-transform: translate(0px, -20px);
+        -webkit-transform: translate(0px, -20px); }
+      .ip-services .pad-row .ip-services-content .service-box2 {
+        background-color: #fff;
+        margin-bottom: 0;
+        min-height: 20px;
+        overflow: hidden;
+        padding: 0px 20px;
+        height: 100%; }
+      .ip-services .pad-row .ip-services-content h4, .ip-services .pad-row .ip-services-content .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .ceo-name {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 20px;
+        color: 1e1e1e;
+        padding: 20px 0; }
+      .ip-services .pad-row .ip-services-content p {
+        font-family: 'OpenSansRegular';
+        font-size: 15px;
+        color: #8a8a8a;
+        line-height: 24px;
+        width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box2:hover {
+        background-color: #f5f5f5; }
+      .ip-services .pad-row .ip-services-content .service-box2::before {
+        display: none; }
+      .ip-services .pad-row .ip-services-content .service-box2 [class*="icon"]::after {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 8px;
+        margin: 5px auto 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 88px; }
+      .ip-services .pad-row .ip-services-content .service-box2 [class*="icon"] {
+        background: url(../img/service2.png) top center no-repeat;
+        display: block;
+        height: 90px;
+        margin: 0 auto 36px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 90px;
+        line-height: 90px; }
+      .ip-services .pad-row .ip-services-content .icon-group::before {
+        content: ""; }
+      .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+        text-decoration: inherit;
+        display: inline-block;
+        width: 45px;
+        height: 45px; }
+      .ip-services .pad-row .ip-services-content .service-box2:hover ::after {
+        height: 5px;
+        transform: translate(0px, 22px);
+        -ms-transform: translate(0px, 22px);
+        -moz-transform: translate(0px, 22px);
+        -webkit-transform: translate(0px, 22px);
+        width: 53px; }
+      .ip-services .pad-row .ip-services-content .service-box2:hover [class*="icon"] {
+        background: url(../img/service2-hover.png) top center no-repeat;
+        transform: translate(0px, -20px);
+        -ms-transform: translate(0px, -20px);
+        -moz-transform: translate(0px, -20px);
+        -webkit-transform: translate(0px, -20px); }
+      .ip-services .pad-row .ip-services-content .service-box3 {
+        background-color: #fff;
+        margin-bottom: 0;
+        min-height: 20px;
+        overflow: hidden;
+        padding: 0px 20px;
+        height: 100%; }
+      .ip-services .pad-row .ip-services-content h4, .ip-services .pad-row .ip-services-content .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .ceo-name {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 20px;
+        color: 1e1e1e;
+        padding: 20px 0; }
+      .ip-services .pad-row .ip-services-content p {
+        font-family: 'OpenSansRegular';
+        font-size: 15px;
+        color: #8a8a8a;
+        line-height: 24px;
+        width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box3:hover {
+        background-color: #f5f5f5; }
+      .ip-services .pad-row .ip-services-content .service-box3::before {
+        display: none; }
+      .ip-services .pad-row .ip-services-content .service-box3 [class*="icon"]::after {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 8px;
+        margin: 5px auto 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 88px; }
+      .ip-services .pad-row .ip-services-content .service-box3 [class*="icon"] {
+        background: url(../img/service3.png) top center no-repeat;
+        display: block;
+        height: 90px;
+        margin: 0 auto 36px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 90px;
+        line-height: 90px; }
+      .ip-services .pad-row .ip-services-content .icon-group::before {
+        content: ""; }
+      .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+        text-decoration: inherit;
+        display: inline-block;
+        width: 45px;
+        height: 45px; }
+      .ip-services .pad-row .ip-services-content .service-box3:hover ::after {
+        height: 5px;
+        transform: translate(0px, 22px);
+        -ms-transform: translate(0px, 22px);
+        -moz-transform: translate(0px, 22px);
+        -webkit-transform: translate(0px, 22px);
+        width: 53px; }
+      .ip-services .pad-row .ip-services-content .service-box3:hover [class*="icon"] {
+        background: url(../img/service3-hover.png) top center no-repeat;
+        transform: translate(0px, -20px);
+        -ms-transform: translate(0px, -20px);
+        -moz-transform: translate(0px, -20px);
+        -webkit-transform: translate(0px, -20px); }
+      .ip-services .pad-row .ip-services-content .service-box4 {
+        background-color: #fff;
+        margin-bottom: 0;
+        min-height: 20px;
+        overflow: hidden;
+        padding: 0px 20px;
+        height: 100%; }
+      .ip-services .pad-row .ip-services-content h4, .ip-services .pad-row .ip-services-content .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .ceo-name {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 20px;
+        color: 1e1e1e;
+        padding: 20px 0; }
+      .ip-services .pad-row .ip-services-content p {
+        font-family: 'OpenSansRegular';
+        font-size: 15px;
+        color: #8a8a8a;
+        line-height: 24px;
+        width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box4:hover {
+        background-color: #f5f5f5; }
+      .ip-services .pad-row .ip-services-content .service-box4::before {
+        display: none; }
+      .ip-services .pad-row .ip-services-content .service-box4 [class*="icon"]::after {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 8px;
+        margin: 5px auto 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 88px; }
+      .ip-services .pad-row .ip-services-content .service-box4 [class*="icon"] {
+        background: url(../img/service4.png) top center no-repeat;
+        display: block;
+        height: 90px;
+        margin: 0 auto 36px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 90px;
+        line-height: 90px; }
+      .ip-services .pad-row .ip-services-content .icon-group::before {
+        content: ""; }
+      .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+        text-decoration: inherit;
+        display: inline-block;
+        width: 45px;
+        height: 45px; }
+      .ip-services .pad-row .ip-services-content .service-box4:hover ::after {
+        height: 5px;
+        transform: translate(0px, 22px);
+        -ms-transform: translate(0px, 22px);
+        -moz-transform: translate(0px, 22px);
+        -webkit-transform: translate(0px, 22px);
+        width: 53px; }
+      .ip-services .pad-row .ip-services-content .service-box4:hover [class*="icon"] {
+        background: url(../img/service4-hover.png) top center no-repeat;
+        transform: translate(0px, -20px);
+        -ms-transform: translate(0px, -20px);
+        -moz-transform: translate(0px, -20px);
+        -webkit-transform: translate(0px, -20px); }
+      .ip-services .pad-row .ip-services-content .service-box5 {
+        background-color: #fff;
+        margin-bottom: 0;
+        min-height: 20px;
+        overflow: hidden;
+        padding: 0px 20px;
+        height: 100%; }
+      .ip-services .pad-row .ip-services-content h4, .ip-services .pad-row .ip-services-content .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .ceo-name {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 20px;
+        color: 1e1e1e;
+        padding: 20px 0; }
+      .ip-services .pad-row .ip-services-content p {
+        font-family: 'OpenSansRegular';
+        font-size: 15px;
+        color: #8a8a8a;
+        line-height: 24px;
+        width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box5:hover {
+        background-color: #f5f5f5; }
+      .ip-services .pad-row .ip-services-content .service-box5::before {
+        display: none; }
+      .ip-services .pad-row .ip-services-content .service-box5 [class*="icon"]::after {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 8px;
+        margin: 5px auto 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 88px; }
+      .ip-services .pad-row .ip-services-content .service-box5 [class*="icon"] {
+        background: url(../img/service5.png) top center no-repeat;
+        display: block;
+        height: 90px;
+        margin: 0 auto 36px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 90px;
+        line-height: 90px; }
+      .ip-services .pad-row .ip-services-content .icon-group::before {
+        content: ""; }
+      .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+        text-decoration: inherit;
+        display: inline-block;
+        width: 45px;
+        height: 45px; }
+      .ip-services .pad-row .ip-services-content .service-box5:hover ::after {
+        height: 5px;
+        transform: translate(0px, 22px);
+        -ms-transform: translate(0px, 22px);
+        -moz-transform: translate(0px, 22px);
+        -webkit-transform: translate(0px, 22px);
+        width: 53px; }
+      .ip-services .pad-row .ip-services-content .service-box5:hover [class*="icon"] {
+        background: url(../img/service5-hover.png) top center no-repeat;
+        transform: translate(0px, -20px);
+        -ms-transform: translate(0px, -20px);
+        -moz-transform: translate(0px, -20px);
+        -webkit-transform: translate(0px, -20px); }
+      .ip-services .pad-row .ip-services-content .service-box6 {
+        background-color: #fff;
+        margin-bottom: 0;
+        min-height: 20px;
+        overflow: hidden;
+        padding: 0px 20px;
+        height: 100%; }
+      .ip-services .pad-row .ip-services-content h4, .ip-services .pad-row .ip-services-content .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .ceo-name {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 20px;
+        color: 1e1e1e;
+        padding: 20px 0; }
+      .ip-services .pad-row .ip-services-content p {
+        font-family: 'OpenSansRegular';
+        font-size: 15px;
+        color: #8a8a8a;
+        line-height: 24px;
+        width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box6:hover {
+        background-color: #f5f5f5; }
+      .ip-services .pad-row .ip-services-content .service-box6::before {
+        display: none; }
+      .ip-services .pad-row .ip-services-content .service-box6 [class*="icon"]::after {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 8px;
+        margin: 5px auto 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 88px; }
+      .ip-services .pad-row .ip-services-content .service-box6 [class*="icon"] {
+        background: url(../img/service6.png) top center no-repeat;
+        display: block;
+        height: 90px;
+        margin: 0 auto 36px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 90px;
+        line-height: 90px; }
+      .ip-services .pad-row .ip-services-content .icon-group::before {
+        content: ""; }
+      .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+        text-decoration: inherit;
+        display: inline-block;
+        width: 45px;
+        height: 45px; }
+      .ip-services .pad-row .ip-services-content .service-box6:hover ::after {
+        height: 5px;
+        transform: translate(0px, 22px);
+        -ms-transform: translate(0px, 22px);
+        -moz-transform: translate(0px, 22px);
+        -webkit-transform: translate(0px, 22px);
+        width: 53px; }
+      .ip-services .pad-row .ip-services-content .service-box6:hover [class*="icon"] {
+        background: url(../img/service6-hover.png) top center no-repeat;
+        transform: translate(0px, -20px);
+        -ms-transform: translate(0px, -20px);
+        -moz-transform: translate(0px, -20px);
+        -webkit-transform: translate(0px, -20px); }
+      .ip-services .pad-row .ip-services-content .service-box7 {
+        background-color: #fff;
+        margin-bottom: 0;
+        min-height: 20px;
+        overflow: hidden;
+        padding: 0px 20px;
+        height: 100%; }
+      .ip-services .pad-row .ip-services-content h4, .ip-services .pad-row .ip-services-content .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .ceo-name {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 20px;
+        color: 1e1e1e;
+        padding: 20px 0; }
+      .ip-services .pad-row .ip-services-content p {
+        font-family: 'OpenSansRegular';
+        font-size: 15px;
+        color: #8a8a8a;
+        line-height: 24px;
+        width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box7:hover {
+        background-color: #f5f5f5; }
+      .ip-services .pad-row .ip-services-content .service-box7::before {
+        display: none; }
+      .ip-services .pad-row .ip-services-content .service-box7 [class*="icon"]::after {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 8px;
+        margin: 5px auto 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 88px; }
+      .ip-services .pad-row .ip-services-content .service-box7 [class*="icon"] {
+        background: url(../img/service7.png) top center no-repeat;
+        display: block;
+        height: 90px;
+        margin: 0 auto 36px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 90px;
+        line-height: 90px; }
+      .ip-services .pad-row .ip-services-content .icon-group::before {
+        content: ""; }
+      .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+        text-decoration: inherit;
+        display: inline-block;
+        width: 45px;
+        height: 45px; }
+      .ip-services .pad-row .ip-services-content .service-box7:hover ::after {
+        height: 5px;
+        transform: translate(0px, 22px);
+        -ms-transform: translate(0px, 22px);
+        -moz-transform: translate(0px, 22px);
+        -webkit-transform: translate(0px, 22px);
+        width: 53px; }
+      .ip-services .pad-row .ip-services-content .service-box7:hover [class*="icon"] {
+        background: url(../img/service7-hover.png) top center no-repeat;
+        transform: translate(0px, -20px);
+        -ms-transform: translate(0px, -20px);
+        -moz-transform: translate(0px, -20px);
+        -webkit-transform: translate(0px, -20px); }
+      .ip-services .pad-row .ip-services-content .service-box8 {
+        background-color: #fff;
+        margin-bottom: 0;
+        min-height: 20px;
+        overflow: hidden;
+        padding: 0px 20px;
+        height: 100%; }
+      .ip-services .pad-row .ip-services-content h4, .ip-services .pad-row .ip-services-content .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .ceo-name {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 20px;
+        color: 1e1e1e;
+        padding: 20px 0; }
+      .ip-services .pad-row .ip-services-content p {
+        font-family: 'OpenSansRegular';
+        font-size: 15px;
+        color: #8a8a8a;
+        line-height: 24px;
+        width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box8:hover {
+        background-color: #f5f5f5; }
+      .ip-services .pad-row .ip-services-content .service-box8::before {
+        display: none; }
+      .ip-services .pad-row .ip-services-content .service-box8 [class*="icon"]::after {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 8px;
+        margin: 5px auto 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 88px; }
+      .ip-services .pad-row .ip-services-content .service-box8 [class*="icon"] {
+        background: url(../img/service8.png) top center no-repeat;
+        display: block;
+        height: 90px;
+        margin: 0 auto 36px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 90px;
+        line-height: 90px; }
+      .ip-services .pad-row .ip-services-content .icon-group::before {
+        content: ""; }
+      .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+        text-decoration: inherit;
+        display: inline-block;
+        width: 45px;
+        height: 45px; }
+      .ip-services .pad-row .ip-services-content .service-box8:hover ::after {
+        height: 5px;
+        transform: translate(0px, 22px);
+        -ms-transform: translate(0px, 22px);
+        -moz-transform: translate(0px, 22px);
+        -webkit-transform: translate(0px, 22px);
+        width: 53px; }
+      .ip-services .pad-row .ip-services-content .service-box8:hover [class*="icon"] {
+        background: url(../img/service8-hover.png) top center no-repeat;
+        transform: translate(0px, -20px);
+        -ms-transform: translate(0px, -20px);
+        -moz-transform: translate(0px, -20px);
+        -webkit-transform: translate(0px, -20px); }
+      .ip-services .pad-row .ip-services-content .service-box9 {
+        background-color: #fff;
+        margin-bottom: 0;
+        min-height: 20px;
+        overflow: hidden;
+        padding: 0px 20px;
+        height: 100%; }
+      .ip-services .pad-row .ip-services-content h4, .ip-services .pad-row .ip-services-content .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .ceo-name {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 20px;
+        color: 1e1e1e;
+        padding: 20px 0; }
+      .ip-services .pad-row .ip-services-content p {
+        font-family: 'OpenSansRegular';
+        font-size: 15px;
+        color: #8a8a8a;
+        line-height: 24px;
+        width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box9:hover {
+        background-color: #f5f5f5; }
+      .ip-services .pad-row .ip-services-content .service-box9::before {
+        display: none; }
+      .ip-services .pad-row .ip-services-content .service-box9 [class*="icon"]::after {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 8px;
+        margin: 5px auto 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 88px; }
+      .ip-services .pad-row .ip-services-content .service-box9 [class*="icon"] {
+        background: url(../img/service9.png) top center no-repeat;
+        display: block;
+        height: 90px;
+        margin: 0 auto 36px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 90px;
+        line-height: 90px; }
+      .ip-services .pad-row .ip-services-content .icon-group::before {
+        content: ""; }
+      .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+        text-decoration: inherit;
+        display: inline-block;
+        width: 45px;
+        height: 45px; }
+      .ip-services .pad-row .ip-services-content .service-box9:hover ::after {
+        height: 5px;
+        transform: translate(0px, 22px);
+        -ms-transform: translate(0px, 22px);
+        -moz-transform: translate(0px, 22px);
+        -webkit-transform: translate(0px, 22px);
+        width: 53px; }
+      .ip-services .pad-row .ip-services-content .service-box9:hover [class*="icon"] {
+        background: url(../img/service9-hover.png) top center no-repeat;
+        transform: translate(0px, -20px);
+        -ms-transform: translate(0px, -20px);
+        -moz-transform: translate(0px, -20px);
+        -webkit-transform: translate(0px, -20px); }
+      .ip-services .pad-row .ip-services-content .service-box10 {
+        background-color: #fff;
+        margin-bottom: 0;
+        min-height: 20px;
+        overflow: hidden;
+        padding: 0px 20px;
+        height: 100%; }
+      .ip-services .pad-row .ip-services-content h4, .ip-services .pad-row .ip-services-content .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .ceo-name {
+        font-family: 'LinotypeMetroNovaPro';
+        font-size: 20px;
+        color: 1e1e1e;
+        padding: 20px 0; }
+      .ip-services .pad-row .ip-services-content p {
+        font-family: 'OpenSansRegular';
+        font-size: 15px;
+        color: #8a8a8a;
+        line-height: 24px;
+        width: 100%; }
+      .ip-services .pad-row .ip-services-content .service-box10:hover {
+        background-color: #f5f5f5; }
+      .ip-services .pad-row .ip-services-content .service-box10::before {
+        display: none; }
+      .ip-services .pad-row .ip-services-content .service-box10 [class*="icon"]::after {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 8px;
+        margin: 5px auto 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 88px; }
+      .ip-services .pad-row .ip-services-content .service-box10 [class*="icon"] {
+        background: url(../img/service10.png) top center no-repeat;
+        display: block;
+        height: 90px;
+        margin: 0 auto 36px;
+        transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        width: 90px;
+        line-height: 90px; }
+      .ip-services .pad-row .ip-services-content .icon-group::before {
+        content: ""; }
+      .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+        text-decoration: inherit;
+        display: inline-block;
+        width: 45px;
+        height: 45px; }
+      .ip-services .pad-row .ip-services-content .service-box10:hover ::after {
+        height: 5px;
+        transform: translate(0px, 22px);
+        -ms-transform: translate(0px, 22px);
+        -moz-transform: translate(0px, 22px);
+        -webkit-transform: translate(0px, 22px);
+        width: 53px; }
+      .ip-services .pad-row .ip-services-content .service-box10:hover [class*="icon"] {
+        background: url(../img/service10-hover.png) top center no-repeat;
+        transform: translate(0px, -20px);
+        -ms-transform: translate(0px, -20px);
+        -moz-transform: translate(0px, -20px);
+        -webkit-transform: translate(0px, -20px); }
 
 /* ip Services Html*/
 .ip-about {
@@ -2263,27 +2861,27 @@ footer {
       vertical-align: 22px;
       width: 50%; }
 
-.about-nav {
+.about-nav, .portfolio-nav {
   overflow: hidden;
   width: 100%;
   position: relative;
   background: #f5f5f5;
   height: 50px;
   margin: 5% 0; }
-  .about-nav .tab-head {
+  .about-nav .tab-head, .portfolio-nav .tab-head {
     width: 100%;
     overflow: hidden; }
-    .about-nav .tab-head .tab-navbar {
+    .about-nav .tab-head .tab-navbar, .portfolio-nav .tab-head .tab-navbar {
       width: 100%;
       overflow: hidden; }
-      .about-nav .tab-head .tab-navbar li {
+      .about-nav .tab-head .tab-navbar li, .portfolio-nav .tab-head .tab-navbar li {
         border-right: 1px solid #cacaca;
         display: inline-block;
         width: 24%;
         height: 50px; }
-        .about-nav .tab-head .tab-navbar li:first-child {
+        .about-nav .tab-head .tab-navbar li:first-child, .portfolio-nav .tab-head .tab-navbar li:first-child {
           border-left: 1px solid #cacaca; }
-        .about-nav .tab-head .tab-navbar li a {
+        .about-nav .tab-head .tab-navbar li a, .portfolio-nav .tab-head .tab-navbar li a {
           font-family: 'LinotypeMetroNovaProLight';
           font-size: 25px;
           color: #1e1e1e;
@@ -2291,7 +2889,7 @@ footer {
           display: block;
           text-decoration: none;
           line-height: 50px; }
-          .about-nav .tab-head .tab-navbar li a:hover, .about-nav .tab-head .tab-navbar li a.active {
+          .about-nav .tab-head .tab-navbar li a:hover, .portfolio-nav .tab-head .tab-navbar li a:hover, .about-nav .tab-head .tab-navbar li a.active, .portfolio-nav .tab-head .tab-navbar li a.active {
             color: #e03333; }
 
 .about-tab {
@@ -2584,6 +3182,232 @@ footer {
     line-height: 1px;
     vertical-align: 22px;
     width: 50%; }
+
+/*Portfolio*/
+.portfolio-nav {
+  margin: 0; }
+  .portfolio-nav .tab-head {
+    width: 100%;
+    overflow: hidden; }
+    .portfolio-nav .tab-head .tab-navbar {
+      width: 100%;
+      overflow: hidden; }
+      .portfolio-nav .tab-head .tab-navbar li {
+        border-right: 1px solid #cacaca;
+        display: inline-block;
+        width: 33%;
+        padding: 0;
+        margin: 0;
+        height: 50px; }
+        .portfolio-nav .tab-head .tab-navbar li:first-child {
+          border-left: 1px solid #cacaca; }
+        .portfolio-nav .tab-head .tab-navbar li a {
+          font-family: 'LinotypeMetroNovaProLight';
+          font-size: 1.5625em;
+          color: #1e1e1e;
+          height: 50px;
+          display: block;
+          text-decoration: none;
+          line-height: 50px; }
+          .portfolio-nav .tab-head .tab-navbar li a:hover {
+            color: #e03333; }
+          .portfolio-nav .tab-head .tab-navbar li a.active {
+            color: #e03333; }
+
+#tabs li a.current {
+  color: #e03333;
+  border-bottom: 2px solid #ff251b; }
+
+.portfolio-tab {
+  margin: 60px 0 0;
+  overflow: hidden; }
+  .portfolio-tab .mobileGames {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 50px; }
+    .portfolio-tab .mobileGames .four-strax, .portfolio-tab .mobileGames .one-touch, .portfolio-tab .mobileGames .owaisi, .portfolio-tab .mobileGames .dress-inbox, .portfolio-tab .mobileGames .peter-traveler, .portfolio-tab .mobileGames .first-aid {
+      background: #33cae0;
+      color: #fff;
+      height: 310px;
+      width: 39%;
+      float: left;
+      overflow: hidden;
+      margin: 0 0 20px; }
+      .portfolio-tab .mobileGames .four-strax .tab-content-header, .portfolio-tab .mobileGames .one-touch .tab-content-header, .portfolio-tab .mobileGames .owaisi .tab-content-header, .portfolio-tab .mobileGames .dress-inbox .tab-content-header, .portfolio-tab .mobileGames .peter-traveler .tab-content-header, .portfolio-tab .mobileGames .first-aid .tab-content-header {
+        margin: 20px 0;
+        overflow: hidden; }
+        .portfolio-tab .mobileGames .four-strax .tab-content-header h3, .portfolio-tab .mobileGames .one-touch .tab-content-header h3, .portfolio-tab .mobileGames .owaisi .tab-content-header h3, .portfolio-tab .mobileGames .dress-inbox .tab-content-header h3, .portfolio-tab .mobileGames .peter-traveler .tab-content-header h3, .portfolio-tab .mobileGames .first-aid .tab-content-header h3 {
+          font-size: 1.875em;
+          font-family: 'LinotypeMetroNovaProLight';
+          float: left;
+          text-align: left;
+          text-transform: uppercase;
+          width: 65%; }
+        .portfolio-tab .mobileGames .four-strax .tab-content-header ul, .portfolio-tab .mobileGames .one-touch .tab-content-header ul, .portfolio-tab .mobileGames .owaisi .tab-content-header ul, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul, .portfolio-tab .mobileGames .peter-traveler .tab-content-header ul, .portfolio-tab .mobileGames .first-aid .tab-content-header ul {
+          overflow: hidden;
+          float: right; }
+          .portfolio-tab .mobileGames .four-strax .tab-content-header ul li, .portfolio-tab .mobileGames .one-touch .tab-content-header ul li, .portfolio-tab .mobileGames .owaisi .tab-content-header ul li, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul li, .portfolio-tab .mobileGames .peter-traveler .tab-content-header ul li, .portfolio-tab .mobileGames .first-aid .tab-content-header ul li {
+            float: left;
+            margin: 0 0 0 15px; }
+          .portfolio-tab .mobileGames .four-strax .tab-content-header ul.display-view, .portfolio-tab .mobileGames .one-touch .tab-content-header ul.display-view, .portfolio-tab .mobileGames .owaisi .tab-content-header ul.display-view, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul.display-view, .portfolio-tab .mobileGames .peter-traveler .tab-content-header ul.display-view, .portfolio-tab .mobileGames .first-aid .tab-content-header ul.display-view {
+            display: block; }
+          .portfolio-tab .mobileGames .four-strax .tab-content-header ul.display-none, .portfolio-tab .mobileGames .one-touch .tab-content-header ul.display-none, .portfolio-tab .mobileGames .owaisi .tab-content-header ul.display-none, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul.display-none, .portfolio-tab .mobileGames .peter-traveler .tab-content-header ul.display-none, .portfolio-tab .mobileGames .first-aid .tab-content-header ul.display-none {
+            display: none; }
+            .portfolio-tab .mobileGames .four-strax .tab-content-header ul.display-none li, .portfolio-tab .mobileGames .one-touch .tab-content-header ul.display-none li, .portfolio-tab .mobileGames .owaisi .tab-content-header ul.display-none li, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul.display-none li, .portfolio-tab .mobileGames .peter-traveler .tab-content-header ul.display-none li, .portfolio-tab .mobileGames .first-aid .tab-content-header ul.display-none li {
+              padding: 0; }
+      .portfolio-tab .mobileGames .four-strax figure, .portfolio-tab .mobileGames .one-touch figure, .portfolio-tab .mobileGames .owaisi figure, .portfolio-tab .mobileGames .dress-inbox figure, .portfolio-tab .mobileGames .peter-traveler figure, .portfolio-tab .mobileGames .first-aid figure {
+        float: right;
+        margin: 0 40px; }
+      .portfolio-tab .mobileGames .four-strax:hover .overlay, .portfolio-tab .mobileGames .one-touch:hover .overlay, .portfolio-tab .mobileGames .owaisi:hover .overlay, .portfolio-tab .mobileGames .dress-inbox:hover .overlay, .portfolio-tab .mobileGames .peter-traveler:hover .overlay, .portfolio-tab .mobileGames .first-aid:hover .overlay {
+        opacity: 1;
+        transition: 1s all;
+        transform: scale(1); }
+    .portfolio-tab .mobileGames .one-touch, .portfolio-tab .mobileGames .owaisi, .portfolio-tab .mobileGames .dress-inbox {
+      background: #33e0de;
+      width: 59%;
+      float: right; }
+      .portfolio-tab .mobileGames .one-touch .tab-content-header li, .portfolio-tab .mobileGames .owaisi .tab-content-header li, .portfolio-tab .mobileGames .dress-inbox .tab-content-header li {
+        padding: 6px 10px 9px 0; }
+      .portfolio-tab .mobileGames .one-touch .tab-content-header .client, .portfolio-tab .mobileGames .owaisi .tab-content-header .client, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .client {
+        background: #1f8685; }
+      .portfolio-tab .mobileGames .one-touch .tab-content-header .arrow_box, .portfolio-tab .mobileGames .owaisi .tab-content-header .arrow_box, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box {
+        position: relative; }
+      .portfolio-tab .mobileGames .one-touch .tab-content-header .arrow_box:after, .portfolio-tab .mobileGames .owaisi .tab-content-header .arrow_box:after, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box:after {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(31, 134, 133, 0);
+        border-right-color: #1f8685;
+        border-width: 20px;
+        margin-top: -20px; }
+      .portfolio-tab .mobileGames .one-touch ul, .portfolio-tab .mobileGames .owaisi ul, .portfolio-tab .mobileGames .dress-inbox ul {
+        overflow: hidden;
+        float: none; }
+        .portfolio-tab .mobileGames .one-touch ul li, .portfolio-tab .mobileGames .owaisi ul li, .portfolio-tab .mobileGames .dress-inbox ul li {
+          margin: 0 0 0 15px;
+          float: left; }
+      .portfolio-tab .mobileGames .one-touch .one-touch-text, .portfolio-tab .mobileGames .owaisi .one-touch-text, .portfolio-tab .mobileGames .dress-inbox .one-touch-text {
+        margin: 5px 0 0;
+        float: none;
+        text-align: left; }
+        .portfolio-tab .mobileGames .one-touch .one-touch-text article, .portfolio-tab .mobileGames .owaisi .one-touch-text article, .portfolio-tab .mobileGames .dress-inbox .one-touch-text article {
+          padding: 16px 0 10px;
+          overflow: hidden;
+          float: left;
+          font-size: 0.9375em;
+          line-height: 22px;
+          color: #fff; }
+      .portfolio-tab .mobileGames .one-touch figure, .portfolio-tab .mobileGames .owaisi figure, .portfolio-tab .mobileGames .dress-inbox figure {
+        width: 50%;
+        margin: 0; }
+    .portfolio-tab .mobileGames .owaisi, .portfolio-tab .mobileGames .dress-inbox {
+      width: 59%;
+      float: left;
+      background: #33e088; }
+      .portfolio-tab .mobileGames .owaisi .tab-content-header li, .portfolio-tab .mobileGames .dress-inbox .tab-content-header li {
+        padding: 6px 10px 9px 0; }
+      .portfolio-tab .mobileGames .owaisi .tab-content-header .client, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .client {
+        background: #1f8652; }
+      .portfolio-tab .mobileGames .owaisi .tab-content-header .arrow_box, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box {
+        position: relative; }
+      .portfolio-tab .mobileGames .owaisi .tab-content-header .arrow_box:after, .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box:after {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(31, 134, 133, 0);
+        border-right-color: #1f8652;
+        border-width: 20px;
+        margin-top: -20px; }
+      .portfolio-tab .mobileGames .owaisi figure, .portfolio-tab .mobileGames .dress-inbox figure {
+        float: right;
+        margin: -80px 0 0;
+        width: 50%; }
+      .portfolio-tab .mobileGames .owaisi .one-touch-text article, .portfolio-tab .mobileGames .dress-inbox .one-touch-text article {
+        text-align: left; }
+    .portfolio-tab .mobileGames .peter-traveler {
+      float: right;
+      background: #e0ca33; }
+      .portfolio-tab .mobileGames .peter-traveler figure {
+        margin: -20px 20px 0 0; }
+    .portfolio-tab .mobileGames .first-aid {
+      float: left;
+      background: #e03333; }
+    .portfolio-tab .mobileGames .dress-inbox {
+      width: 59%;
+      float: right;
+      background: #e08033; }
+      .portfolio-tab .mobileGames .dress-inbox .tab-content-header li {
+        padding: 6px 10px 9px 0; }
+      .portfolio-tab .mobileGames .dress-inbox .tab-content-header .client {
+        background: #864d1f; }
+      .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box {
+        position: relative; }
+      .portfolio-tab .mobileGames .dress-inbox .tab-content-header .arrow_box:after {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(31, 134, 133, 0);
+        border-right-color: #864d1f;
+        border-width: 20px;
+        margin-top: -20px; }
+      .portfolio-tab .mobileGames .dress-inbox figure {
+        margin: -50px 0 0; }
+
+/*Indicators*/
+.carousel-indicators {
+  /*bottom: -30px;*/ }
+  .carousel-indicators li {
+    /*background: rgba(255,255,255, 0);
+    border: 1px solid rgba(226,61,61,1);*/
+    width: 12px;
+    height: 12px; }
+    .carousel-indicators li.active {
+      width: 12px;
+      height: 12px;
+      /*background: rgba(226,61,61,1);*/ }
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 310px;
+  display: table;
+  opacity: 0;
+  cursor: pointer; }
+  .overlay a {
+    color: #fff;
+    text-decoration: none; }
+    .overlay a h1 {
+      font-size: 40px;
+      font-family: 'LinotypeMetroNovaPro';
+      text-align: center;
+      text-transform: uppercase;
+      display: block;
+      width: 100%;
+      margin: 80px 0px 30px;
+      transform: scale(0.5); }
+    .overlay a span {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto;
+      display: block; }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .navbar-right {
@@ -4156,6 +4980,34 @@ footer {
     opacity: 0.2; }
     .company-logo:hover {
       opacity: 1; } }
+@media only screen and (min-width: 320px) and (max-width: 759px) {
+  .portfolio-tab .mobileGames .four-strax, .portfolio-tab .mobileGames .one-touch, .portfolio-tab .mobileGames .owaisi, .portfolio-tab .mobileGames .dress-inbox, .portfolio-tab .mobileGames .peter-traveler, .portfolio-tab .mobileGames .first-aid {
+    width: 100%;
+    height: auto; }
+    .portfolio-tab .mobileGames .four-strax .tab-content-header h3, .portfolio-tab .mobileGames .one-touch .tab-content-header h3, .portfolio-tab .mobileGames .owaisi .tab-content-header h3, .portfolio-tab .mobileGames .dress-inbox .tab-content-header h3, .portfolio-tab .mobileGames .peter-traveler .tab-content-header h3, .portfolio-tab .mobileGames .first-aid .tab-content-header h3 {
+      font-size: 1.7em; }
+    .portfolio-tab .mobileGames .four-strax .tab-content-header ul li, .portfolio-tab .mobileGames .one-touch .tab-content-header ul li, .portfolio-tab .mobileGames .owaisi .tab-content-header ul li, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul li, .portfolio-tab .mobileGames .peter-traveler .tab-content-header ul li, .portfolio-tab .mobileGames .first-aid .tab-content-header ul li {
+      margin: 0 0 0 10px; }
+    .portfolio-tab .mobileGames .four-strax .tab-content-header ul.display-view, .portfolio-tab .mobileGames .one-touch .tab-content-header ul.display-view, .portfolio-tab .mobileGames .owaisi .tab-content-header ul.display-view, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul.display-view, .portfolio-tab .mobileGames .peter-traveler .tab-content-header ul.display-view, .portfolio-tab .mobileGames .first-aid .tab-content-header ul.display-view {
+      display: none; }
+    .portfolio-tab .mobileGames .four-strax .tab-content-header ul.display-none, .portfolio-tab .mobileGames .one-touch .tab-content-header ul.display-none, .portfolio-tab .mobileGames .owaisi .tab-content-header ul.display-none, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul.display-none, .portfolio-tab .mobileGames .peter-traveler .tab-content-header ul.display-none, .portfolio-tab .mobileGames .first-aid .tab-content-header ul.display-none {
+      display: block; }
+    .portfolio-tab .mobileGames .four-strax figure, .portfolio-tab .mobileGames .one-touch figure, .portfolio-tab .mobileGames .owaisi figure, .portfolio-tab .mobileGames .dress-inbox figure, .portfolio-tab .mobileGames .peter-traveler figure, .portfolio-tab .mobileGames .first-aid figure {
+      margin: 0px auto;
+      float: none;
+      width: 80%; }
+  .portfolio-tab .one-touch, .portfolio-tab .mobileGames .owaisi, .portfolio-tab .mobileGames .dress-inbox {
+    height: auto; }
+    .portfolio-tab .one-touch .one-touch-text, .portfolio-tab .mobileGames .owaisi .one-touch-text, .portfolio-tab .mobileGames .dress-inbox .one-touch-text {
+      display: none; }
+    .portfolio-tab .one-touch ul, .portfolio-tab .mobileGames .owaisi ul, .portfolio-tab .mobileGames .dress-inbox ul {
+      display: none; }
+    .portfolio-tab .one-touch .tab-content-header ul li, .portfolio-tab .mobileGames .owaisi .tab-content-header ul li, .portfolio-tab .mobileGames .dress-inbox .tab-content-header ul li {
+      padding: 0; }
+    .portfolio-tab .one-touch figure, .portfolio-tab .mobileGames .owaisi figure, .portfolio-tab .mobileGames .dress-inbox figure {
+      margin: 0px auto;
+      float: none;
+      width: 80%; } }
 @media only screen and (min-width: 640px) and (max-width: 768px) {
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #9a998f; }
@@ -6612,27 +7464,27 @@ footer {
       background: #fff; }
 
   /* ip-career  480*/
-  .about-nav {
+  .about-nav, .portfolio-nav {
     overflow: hidden;
     width: 100%;
     position: relative;
     background: #f5f5f5;
     height: 50px;
     margin: 5% 0; }
-    .about-nav .tab-head {
+    .about-nav .tab-head, .portfolio-nav .tab-head {
       width: 100%;
       overflow: hidden; }
-      .about-nav .tab-head .tab-navbar {
+      .about-nav .tab-head .tab-navbar, .portfolio-nav .tab-head .tab-navbar {
         width: 100%;
         overflow: hidden; }
-        .about-nav .tab-head .tab-navbar li {
+        .about-nav .tab-head .tab-navbar li, .portfolio-nav .tab-head .tab-navbar li {
           border-right: 1px solid #cacaca;
           display: inline-block;
           width: 24%;
           height: 50px; }
-          .about-nav .tab-head .tab-navbar li:first-child {
+          .about-nav .tab-head .tab-navbar li:first-child, .portfolio-nav .tab-head .tab-navbar li:first-child {
             border-left: 1px solid #cacaca; }
-          .about-nav .tab-head .tab-navbar li a {
+          .about-nav .tab-head .tab-navbar li a, .portfolio-nav .tab-head .tab-navbar li a {
             font-family: 'LinotypeMetroNovaProLight';
             font-size: 15px;
             color: #1e1e1e;
@@ -6640,7 +7492,7 @@ footer {
             display: block;
             text-decoration: none;
             line-height: 50px; }
-            .about-nav .tab-head .tab-navbar li a:hover, .about-nav .tab-head .tab-navbar li a.active {
+            .about-nav .tab-head .tab-navbar li a:hover, .portfolio-nav .tab-head .tab-navbar li a:hover, .about-nav .tab-head .tab-navbar li a.active, .portfolio-nav .tab-head .tab-navbar li a.active {
               color: #e03333; }
 
   .about-tab {
