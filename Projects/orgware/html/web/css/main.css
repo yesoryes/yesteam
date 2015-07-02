@@ -2834,16 +2834,16 @@ footer {
       overflow: hidden;
       position: relative;
       text-align: center; }
-      .ip-about .about-content .h1-container h1 {
+      .ip-about .about-content .h1-container h1, .ip-about .about-content .h1-container .expansion-web h2, .expansion-web .ip-about .about-content .h1-container h2 {
         color: #1e1e1e;
         font-family: 'LinotypeMetroNovaProLight';
         font-size: 40px;
         margin: 80px 0; }
-        .ip-about .about-content .h1-container h1::before {
+        .ip-about .about-content .h1-container h1::before, .ip-about .about-content .h1-container .expansion-web h2::before, .expansion-web .ip-about .about-content .h1-container h2::before {
           margin-left: -50%; }
-        .ip-about .about-content .h1-container h1::after {
+        .ip-about .about-content .h1-container h1::after, .ip-about .about-content .h1-container .expansion-web h2::after, .expansion-web .ip-about .about-content .h1-container h2::after {
           margin-right: -50%; }
-    .ip-about .about-content .h1-container h1::before, .ip-about .about-content .h1-container h1::after {
+    .ip-about .about-content .h1-container h1::before, .ip-about .about-content .h1-container .expansion-web h2::before, .expansion-web .ip-about .about-content .h1-container h2::before, .ip-about .about-content .h1-container h1::after, .ip-about .about-content .h1-container .expansion-web h2::after, .expansion-web .ip-about .about-content .h1-container h2::after {
       background: #454545 none repeat scroll 0 0;
       content: "";
       display: inline-block;
@@ -3155,17 +3155,17 @@ footer {
     overflow: hidden;
     position: relative;
     text-align: center; }
-    .ip-career .h1-container h1 {
+    .ip-career .h1-container h1, .ip-career .h1-container .expansion-web h2, .expansion-web .ip-career .h1-container h2 {
       color: #1e1e1e;
       font-family: 'LinotypeMetroNovaProLight';
       font-size: 40px;
       margin: 30px 0;
       text-transform: uppercase; }
-      .ip-career .h1-container h1::before {
+      .ip-career .h1-container h1::before, .ip-career .h1-container .expansion-web h2::before, .expansion-web .ip-career .h1-container h2::before {
         margin-left: -50%; }
-      .ip-career .h1-container h1::after {
+      .ip-career .h1-container h1::after, .ip-career .h1-container .expansion-web h2::after, .expansion-web .ip-career .h1-container h2::after {
         margin-right: -50%; }
-  .ip-career .h1-container h1::before, .ip-career .h1-container h1::after {
+  .ip-career .h1-container h1::before, .ip-career .h1-container .expansion-web h2::before, .expansion-web .ip-career .h1-container h2::before, .ip-career .h1-container h1::after, .ip-career .h1-container .expansion-web h2::after, .expansion-web .ip-career .h1-container h2::after {
     background: #454545 none repeat scroll center center;
     content: "";
     display: inline-block;
@@ -3360,18 +3360,6 @@ footer {
         margin: -50px 0 0; }
 
 /*Indicators*/
-.carousel-indicators {
-  /*bottom: -30px;*/ }
-  .carousel-indicators li {
-    /*background: rgba(255,255,255, 0);
-    border: 1px solid rgba(226,61,61,1);*/
-    width: 12px;
-    height: 12px; }
-    .carousel-indicators li.active {
-      width: 12px;
-      height: 12px;
-      /*background: rgba(226,61,61,1);*/ }
-
 .overlay {
   position: absolute;
   left: 0;
@@ -3385,7 +3373,7 @@ footer {
   .overlay a {
     color: #fff;
     text-decoration: none; }
-    .overlay a h1 {
+    .overlay a h1, .overlay a .expansion-web h2, .expansion-web .overlay a h2 {
       font-size: 40px;
       font-family: 'LinotypeMetroNovaPro';
       text-align: center;
@@ -7604,5 +7592,98 @@ footer {
   font-family: 'OpenSansRegular';
   src: url("../fonts/OpenSansRegular.eot");
   src: url("../fonts/OpenSansRegular.eot") format("embedded-opentype"), url("../fonts/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular.ttf") format("truetype"), url("../fonts/OpenSansRegular.svg#OpenSansRegular") format("svg"); }
+.portfolio-indicaters {
+  bottom: -30px;
+  font-size: 0.9375em; }
+  .portfolio-indicaters li {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #e23d3d;
+    width: 12px;
+    height: 12px; }
+    .portfolio-indicaters li.active {
+      width: 12px;
+      height: 12px;
+      background: #e23d3d; }
+
+.detail-fullpage {
+  overflow: hidden;
+  margin: 60px 0; }
+
+a.btn-back {
+  display: block;
+  float: right;
+  color: #fb3e2f;
+  padding: 6px 16px 8px;
+  background: url(../img/portfolio/back_bg.png) no-repeat 0px 0px;
+  transition: 0.5s all;
+  cursor: pointer;
+  margin: 0 0 45px; }
+  a.btn-back:hover {
+    background: #fb3e2f;
+    text-decoration: none;
+    color: #fff; }
+
+.expansion-web {
+  overflow: hidden;
+  padding: 0 50px 0 0;
+  color: #1e1e1e; }
+  .expansion-web h1, .expansion-web h2 {
+    color: #000;
+    font-size: 2.3125em;
+    font-family: 'LinotypeMetroNovaPro';
+    margin: 0 0 30px; }
+  .expansion-web h2 {
+    font-size: 1.25em;
+    margin: 20px 0; }
+  .expansion-web article {
+    font-size: 0.9375em;
+    line-height: 1.375em; }
+  .expansion-web .client-list-detail {
+    overflow: hidden;
+    margin: 25px 0 0; }
+    .expansion-web .client-list-detail li {
+      float: left;
+      padding: 6px 10px 9px 0; }
+      .expansion-web .client-list-detail li.client {
+        background: url(../img/portfolio/bg_list_client.png) no-repeat;
+        padding: 6px 20px 9px 13px;
+        color: #fff; }
+  .expansion-web .list-color li {
+    padding: 0px 0 10px 20px;
+    margin: 0 0 0 10px;
+    background: url(../img/portfolio/list_style.png) no-repeat 0 5px; }
+
+.bg-desktop {
+  /*background: url(../img/portfolio/bg_desktop.png) no-repeat 0px 0px;
+  background-size: contain;*/
+  width: 100%;
+  height: 468px;
+  padding: 21px 25px 0;
+  margin: 20% 0px 0;
+  overflow: hidden; }
+  .bg-desktop ul {
+    overflow: hidden; }
+    .bg-desktop ul li .item {
+      width: 525px;
+      overflow: hidden; }
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .bg-desktop ul.carousel-inner {
+    overflow: hidden; }
+    .bg-desktop ul.carousel-inner li .item {
+      width: auto;
+      height: auto;
+      overflow: hidden; }
+      .bg-desktop ul.carousel-inner li .item img {
+        height: auto; }
+
+  .carousel-inner > .item > img {
+    height: auto; }
+
+  .detail-carousel {
+    bottom: 0px; } }
+@media screen and (max-width: 768px) and (min-width: 640px) {
+  .detail-carousel {
+    bottom: 0px; } }
 
 /*# sourceMappingURL=main.css.map */

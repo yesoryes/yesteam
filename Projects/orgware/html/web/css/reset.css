@@ -72,7 +72,9 @@ mark {
     font-style:italic;
     font-weight:bold;
 }
-
+li {
+	list-style: none;
+}
 del {
     text-decoration: line-through;
 }
