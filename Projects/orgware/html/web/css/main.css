@@ -262,12 +262,12 @@ header {
     text-shadow: none; }
     header .carousel-caption .banner-intro {
       font-family: 'LinotypeMetroNovaProLight';
-      font-size: 147px;
+      font-size: 115px;
       margin: 45px 0 0 0;
       line-height: 125px; }
     header .carousel-caption .banner-content {
       font-family: 'LinotypeMetroNovaProLight';
-      font-size: 41px;
+      font-size: 35px;
       text-transform: uppercase; }
       header .carousel-caption .banner-content span {
         font-family: 'LinotypeMetroNovaProBold'; }
@@ -277,9 +277,21 @@ header {
       position: absolute;
       right: 0;
       bottom: 26%;
+      text-align: right;
       background: url(../img/banner-link.png) top no-repeat;
       cursor: pointer; }
       header .carousel-caption .banner-link:hover {
+        background: url(../img/banner-link.png) bottom no-repeat; }
+    header .carousel-caption .banner-link2 {
+      width: 44px;
+      height: 52px;
+      position: absolute;
+      left: 46%;
+      bottom: 26%;
+      text-align: right;
+      background: url(../img/banner-link.png) top no-repeat;
+      cursor: pointer; }
+      header .carousel-caption .banner-link2:hover {
         background: url(../img/banner-link.png) bottom no-repeat; }
 
 section {
@@ -2014,84 +2026,88 @@ footer {
     height: auto;
     display: none;
     overflow: hidden; }
-    .contact-enquiry .contact-form .input-container {
+    .contact-enquiry .contact-form .contact-area {
       position: relative;
-      width: 30%;
-      height: 30px;
-      display: block;
-      float: left;
-      margin: 2% 1%;
-      z-index: 15; }
-      .contact-enquiry .contact-form .input-container .input-field {
-        background: none;
-        border: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+      overflow: hidden; }
+      .contact-enquiry .contact-form .contact-area .input-container {
+        position: relative;
+        width: 30%;
         height: 30px;
-        color: #fff;
-        width: 100%;
-        font-size: 1em;
-        border-radius: 0; }
-        .contact-enquiry .contact-form .input-container .input-field.textarea-field {
-          height: 200px;
-          width: 100%; }
-        .contact-enquiry .contact-form .input-container .input-field:focus {
-          background: rgba(204, 97, 71, 0.9) none repeat scroll 0 0;
-          outline: medium none; }
-      .contact-enquiry .contact-form .input-container .focused-border {
-        background: #fff none repeat scroll 0 0;
-        bottom: 0;
-        height: 3px;
-        left: 0;
-        position: absolute;
-        width: 0; }
-      .contact-enquiry .contact-form .input-container .input-label {
-        position: absolute;
-        left: 0;
-        transition: top 0.5s;
-        -webkit-transition: top 0.5s;
-        font-size: 1.4em;
-        top: 5px;
-        font-family: 'LinotypeMetroNovaPro';
-        font-size: 15px;
-        color: #fff; }
-        .contact-enquiry .contact-form .input-container .input-label.focused {
-          top: -22px;
-          transition: top 0.5s ease 0s; }
-        .contact-enquiry .contact-form .input-container .input-label.textarea-label {
-          position: absolute;
+        display: block;
+        float: left;
+        margin: 2% 1%;
+        z-index: 15; }
+        .contact-enquiry .contact-form .contact-area .input-container .input-field {
+          background: none;
+          border: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+          height: 30px;
+          color: #fff;
+          width: 100%;
+          font-size: 1em;
+          border-radius: 0; }
+          .contact-enquiry .contact-form .contact-area .input-container .input-field.textarea-field {
+            height: 200px;
+            width: 100%; }
+          .contact-enquiry .contact-form .contact-area .input-container .input-field:focus {
+            background: rgba(204, 97, 71, 0.9) none repeat scroll 0 0;
+            outline: medium none; }
+        .contact-enquiry .contact-form .contact-area .input-container .focused-border {
+          background: #fff none repeat scroll 0 0;
+          bottom: 0;
+          height: 3px;
           left: 0;
-          transition: top 0.5s;
-          -webkit-transition: top 0.5s;
-          top: 160px; }
-          .contact-enquiry .contact-form .input-container .input-label.textarea-label.focused {
-            top: -30px;
-            transition: top 0.5s ease 0s; }
-        .contact-enquiry .contact-form .input-container .input-label .textarea-label {
+          position: absolute;
+          width: 0; }
+        .contact-enquiry .contact-form .contact-area .input-container .input-label {
           position: absolute;
           left: 0;
           transition: top 0.5s;
           -webkit-transition: top 0.5s;
           font-size: 1.4em;
-          top: 170px; }
-    .contact-enquiry .contact-form .textarea-container {
-      width: 100%;
-      height: 200px;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      z-index: 9;
-      position: relative; }
-      .contact-enquiry .contact-form .textarea-container textarea {
-        font-family: 'LinotypeMetroNovaPro';
-        font-size: 15px;
-        color: #fff; }
-    .contact-enquiry .contact-form .sucess-msg {
-      display: none; }
-    .contact-enquiry .contact-form .error-msg {
-      color: #ea4c20;
-      display: none;
-      text-align: center;
-      padding: 15px; }
-    .contact-enquiry .contact-form .send-btn {
+          top: 5px;
+          font-family: 'LinotypeMetroNovaPro';
+          font-size: 15px;
+          color: #fff; }
+          .contact-enquiry .contact-form .contact-area .input-container .input-label.focused {
+            top: -22px;
+            transition: top 0.5s ease 0s; }
+          .contact-enquiry .contact-form .contact-area .input-container .input-label.textarea-label {
+            position: absolute;
+            left: 0;
+            transition: top 0.5s;
+            -webkit-transition: top 0.5s;
+            top: 160px; }
+            .contact-enquiry .contact-form .contact-area .input-container .input-label.textarea-label.focused {
+              top: -30px;
+              transition: top 0.5s ease 0s; }
+          .contact-enquiry .contact-form .contact-area .input-container .input-label .textarea-label {
+            position: absolute;
+            left: 0;
+            transition: top 0.5s;
+            -webkit-transition: top 0.5s;
+            font-size: 1.4em;
+            top: 170px; }
+      .contact-enquiry .contact-form .contact-area .textarea-container {
+        width: 100%;
+        height: 200px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        z-index: 9;
+        position: relative; }
+        .contact-enquiry .contact-form .contact-area .textarea-container textarea {
+          font-family: 'LinotypeMetroNovaPro';
+          font-size: 15px;
+          color: #fff; }
+      .contact-enquiry .contact-form .contact-area .sucess-msg {
+        display: none; }
+      .contact-enquiry .contact-form .contact-area .error-msg {
+        color: #ea4c20;
+        display: none;
+        text-align: center;
+        padding: 15px; }
+    .contact-enquiry .contact-form a {
+      display: inline-block;
       width: 73px;
       height: 30px;
       color: #fff;
@@ -2099,40 +2115,15 @@ footer {
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
-      display: block;
+      margin: 0 auto;
       transition: 1s all;
       -moz-transition: 1s all;
       -ms-transition: 1s all;
       -webkit-transition: 1s all;
-      position: absolute;
-      bottom: 3%;
-      left: 44%;
+      font-size: 12px;
       font-family: 'LinotypeMetroNovaProLight';
-      background: url(../img/send-form.png) center center no-repeat;
-      font-size: 12px; }
-      .contact-enquiry .contact-form .send-btn:hover {
-        color: #ff7959;
-        background: #fff; }
-    .contact-enquiry .contact-form .cancel-btn {
-      width: 73px;
-      height: 30px;
-      color: #fff;
-      line-height: 30px;
-      text-align: center;
-      text-transform: uppercase;
-      text-decoration: none;
-      display: block;
-      transition: 1s all;
-      -moz-transition: 1s all;
-      -ms-transition: 1s all;
-      -webkit-transition: 1s all;
-      position: absolute;
-      bottom: 3%;
-      left: 54%;
-      font-family: 'LinotypeMetroNovaProLight';
-      background: url(../img/send-form.png) center center no-repeat;
-      font-size: 12px; }
-      .contact-enquiry .contact-form .cancel-btn:hover {
+      background: url(../img/send-form.png) center center no-repeat; }
+      .contact-enquiry .contact-form a:hover {
         color: #ff7959;
         background: #fff; }
 
@@ -7416,52 +7407,6 @@ footer {
   .input-container {
     width: 100% !important;
     margin: 16% 0 !important; }
-
-  .send-btn {
-    width: 73px;
-    height: 30px;
-    color: #fff;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: block;
-    transition: 1s all;
-    -moz-transition: 1s all;
-    -ms-transition: 1s all;
-    -webkit-transition: 1s all;
-    position: absolute;
-    bottom: 1% !important;
-    left: 27% !important;
-    font-family: 'LinotypeMetroNovaProLight';
-    background: url(../img/send-form.png) center center no-repeat;
-    font-size: 12px; }
-    .send-btn:hover {
-      color: #ff7959;
-      background: #fff; }
-
-  .cancel-btn {
-    width: 73px;
-    height: 30px;
-    color: #fff;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: block;
-    transition: 1s all;
-    -moz-transition: 1s all;
-    -ms-transition: 1s all;
-    -webkit-transition: 1s all;
-    position: absolute;
-    bottom: 1% !important;
-    left: 54% !important;
-    font-family: 'LinotypeMetroNovaProLight';
-    background: url(../img/send-form.png) center center no-repeat;
-    font-size: 12px; }
-    .cancel-btn:hover {
-      color: #ff7959;
-      background: #fff; }
 
   /* ip-career  480*/
   .about-nav, .portfolio-nav {

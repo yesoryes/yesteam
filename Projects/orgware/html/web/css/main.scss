@@ -642,18 +642,18 @@ header
 		top: 20%;
 		right:15%;
 		text-align:right;
-		text-shadow:none;		
+		text-shadow:none; 
 		.banner-intro
 			{
 				font-family: 'LinotypeMetroNovaProLight';
-				font-size:147px; 
+				font-size:115px; 
 				margin:45px 0 0 0;
 				line-height:125px;
 			}
 		.banner-content
 			{
 				font-family: 'LinotypeMetroNovaProLight';
-				font-size:41px; 
+				font-size:35px; 
 				text-transform:uppercase;
 				span
 					{
@@ -667,14 +667,35 @@ header
 			  position: absolute;			  
 			  right: 0;
 			  bottom: 26%;
+			  text-align:right;
 			   background:url(../img/banner-link.png) top no-repeat; 
 			   cursor:pointer;
 			   &:hover
 			   {
 				    background:url(../img/banner-link.png) bottom no-repeat;
 			   }
+	  
 		   }
+		   .banner-link2
+		   {
+			   width: 44px;
+			  height: 52px;
+			  position: absolute;			  
+			  left: 46%;
+			  bottom: 26%;
+			  text-align:right;
+			   background:url(../img/banner-link.png) top no-repeat; 
+			   cursor:pointer;
+			   &:hover
+			   {
+				    background:url(../img/banner-link.png) bottom no-repeat;
+			   }
+	  
+		   }
+		   
 	}
+	 
+	 
 }
 section
 {
@@ -2125,173 +2146,151 @@ footer
 			  width: 100%;
 			  height: auto;
 			  display:none;
-			  overflow:hidden;
-			  .input-container
-				  {
-					  position: relative;
-					  width: 30%;
-					  height: 30px;
-					  display: block;
-					  float: left;
-					  margin: 2% 1%;
-					  z-index: 15; 
-					  .input-field
-					    {
-						  background: none;
-						  border: 0;
-						  border-bottom: 1px solid rgba(255,255,255,0.6);
-						  height: 30px;
-						  color: #fff;
-						  width: 100%;
-						  font-size: 1em;
-						  border-radius: 0; 
-						  &.textarea-field
+			  overflow:hidden; 
+			  .contact-area
+			  { 		  
+				position:relative;
+				overflow:hidden;
+				.input-container
+					{
+						position: relative;
+						width: 30%;
+						height: 30px;
+						display: block;
+						float: left;
+						margin: 2% 1%;
+						z-index: 15; 
+						.input-field
 						  {
-								  height: 200px;
-								  width: 100%;
-						 }
-						
-						&:focus
-						    {
-								background: rgba(204, 97, 71, 0.9) none repeat scroll 0 0;
-								outline: medium none;
-							} 
-						}
-						.focused-border
-						       {
-								 background: #fff none repeat scroll 0 0;
-								bottom: 0;
-								height: 3px;
-								left: 0;
-								position: absolute;
-								width: 0;
-							  }
-					  .input-label 
-					    {
-						  position: absolute;
-						  left: 0;
-						  transition: top 0.5s;
-						  -webkit-transition: top 0.5s;
-						  font-size: 1.4em;
-						  top: 5px;
-						   font-family: 'LinotypeMetroNovaPro';
-						    font-size: 15px;
-							 color:#fff;
-							 &.focused 
-							         {
-										top: -22px;
-										transition: top 0.5s ease 0s;
-									}
-							  &.textarea-label
+							background: none;
+							border: 0;
+							border-bottom: 1px solid rgba(255,255,255,0.6);
+							height: 30px;
+							color: #fff;
+							width: 100%;
+							font-size: 1em;
+							border-radius: 0; 
+							&.textarea-field
+							{
+									height: 200px;
+									width: 100%;
+						   }
+						  
+						  &:focus
 							  {
-								  position: absolute;
+								  background: rgba(204, 97, 71, 0.9) none repeat scroll 0 0;
+								  outline: medium none;
+							  } 
+						  }
+						  .focused-border
+								 {
+								   background: #fff none repeat scroll 0 0;
+								  bottom: 0;
+								  height: 3px;
 								  left: 0;
-								  transition: top 0.5s;
-								  -webkit-transition: top 0.5s; 
-								  top: 160px;
-								  &.focused 
-								           {
-												top: -30px;
-												transition: top 0.5s ease 0s;
-											}
-								} 
-							  .textarea-label
-							 {
 								  position: absolute;
-								  left: 0;
-								  transition: top 0.5s;
-								  -webkit-transition: top 0.5s;
-								  font-size: 1.4em;
-								  top: 170px;
-								  
-							 }
-							  
-					     }
-				    }
-				.textarea-container
-				{
-					width: 100%;
-					height: 200px;
-					margin-top: 40px;
-					margin-bottom: 40px;
-					z-index: 9;
-					position: relative;
-					textarea
-					{
-						font-family: 'LinotypeMetroNovaPro';
-						font-size: 15px;
-						color:#fff;
-						
+								  width: 0;
+								}
+						.input-label 
+						  {
+							position: absolute;
+							left: 0;
+							transition: top 0.5s;
+							-webkit-transition: top 0.5s;
+							font-size: 1.4em;
+							top: 5px;
+							 font-family: 'LinotypeMetroNovaPro';
+							  font-size: 15px;
+							   color:#fff;
+							   &.focused 
+									   {
+										  top: -22px;
+										  transition: top 0.5s ease 0s;
+									  }
+								&.textarea-label
+								{
+									position: absolute;
+									left: 0;
+									transition: top 0.5s;
+									-webkit-transition: top 0.5s; 
+									top: 160px;
+									&.focused 
+											 {
+												  top: -30px;
+												  transition: top 0.5s ease 0s;
+											  }
+								  } 
+								.textarea-label
+							   {
+									position: absolute;
+									left: 0;
+									transition: top 0.5s;
+									-webkit-transition: top 0.5s;
+									font-size: 1.4em;
+									top: 170px;
+									
+							   }
+								
+						   }
 					  }
-					
-				  } 	 
-					.sucess-msg 
-					{
-					display: none;
-					}
-					.error-msg 
-					{
-					color: #ea4c20;
-					display: none;
-					text-align: center;
-					padding: 15px;
-					} 
-				  .send-btn 
-					{ 
-					width: 73px;
+					  .textarea-container
+					  {
+						  width: 100%;
+						  height: 200px;
+						  margin-top: 40px;
+						  margin-bottom: 40px;
+						  z-index: 9;
+						  position: relative;
+						  textarea
+						  {
+							  font-family: 'LinotypeMetroNovaPro';
+							  font-size: 15px;
+							  color:#fff;
+							  
+							}
+						  
+						} 
+						   
+					  .sucess-msg 
+					  {
+					  display: none;
+					  }
+					  .error-msg 
+					  {
+					  color: #ea4c20;
+					  display: none;
+					  text-align: center;
+					  padding: 15px;
+					  } 
+			    }
+			    a
+			  {
+				   display:inline-block;
+				    width: 73px;
 					height:30px;
 					color:#fff;
 					line-height:30px;
 					text-align:center;			  
 					text-transform:uppercase; 
 					text-decoration:none;
-					display:block; 
+					margin:0 auto;
 					transition:1s all;
 					-moz-transition:1s all;
 					-ms-transition:1s all;
-					-webkit-transition:1s all;	
-					position:absolute;
-					bottom:3%;
-					left:44%;		
+					-webkit-transition:1s all;	 
+					font-size:12px;
 					font-family: 'LinotypeMetroNovaProLight';
 					background:url(../img/send-form.png) center center no-repeat; 
-					font-size: 12px;
-						&:hover
-							{
-							color:#ff7959;
-							background:#fff;
-							}
-					}
-					.cancel-btn 
-					{ 
-					width: 73px;
-					height:30px;
-					color:#fff;
-					line-height:30px;
-					text-align:center;			  
-					text-transform:uppercase; 
-					text-decoration:none;
-					display:block; 
-					transition:1s all;
-					-moz-transition:1s all;
-					-ms-transition:1s all;
-					-webkit-transition:1s all;	
-					position:absolute;
-					bottom:3%;
-					left:54%;		
-					font-family: 'LinotypeMetroNovaProLight';
-					background:url(../img/send-form.png) center center no-repeat; 
-					font-size: 12px;
-						&:hover
-							{
-							color:#ff7959;
-							background:#fff;
-							}
-					}
-		
+					&:hover
+						{
+						color:#ff7959;
+						background:#fff;
+						} 
+			  }
+			  
 			 
 		 }
-  }   
+    }   
   .map
   {
 	   overflow:hidden;
@@ -4003,7 +4002,7 @@ header
 			}
 	   .banner-link
 		   {
-			   width: 34px;
+			  width: 34px;
 			  height: 40px;
 			  position: absolute;			  
 			  right: 0;
@@ -7673,61 +7672,7 @@ footer
    {
   width: 100% !important;
   margin: 16% 0 !important;
-   }
-   .send-btn 
-					{ 
-					width: 73px;
-					height:30px;
-					color:#fff;
-					line-height:30px;
-					text-align:center;			  
-					text-transform:uppercase; 
-					text-decoration:none;
-					display:block; 
-					transition:1s all;
-					-moz-transition:1s all;
-					-ms-transition:1s all;
-					-webkit-transition:1s all;	
-					position:absolute;
-					bottom:1% !important;
-					left:27% !important;		
-					font-family: 'LinotypeMetroNovaProLight';
-					background:url(../img/send-form.png) center center no-repeat; 
-					font-size: 12px;
-						&:hover
-							{
-							color:#ff7959;
-							background:#fff;
-							}
-					}
-					.cancel-btn 
-					{ 
-					width: 73px;
-					height:30px;
-					color:#fff;
-					line-height:30px;
-					text-align:center;			  
-					text-transform:uppercase; 
-					text-decoration:none;
-					display:block; 
-					transition:1s all;
-					-moz-transition:1s all;
-					-ms-transition:1s all;
-					-webkit-transition:1s all;	
-					position:absolute;
-					bottom:1% !important;
-					left:54% !important;		
-					font-family: 'LinotypeMetroNovaProLight';
-					background:url(../img/send-form.png) center center no-repeat; 
-					font-size: 12px;
-						&:hover
-							{
-							color:#ff7959;
-							background:#fff;
-							}
-					}
-					
-		 
+   } 
  /* ip-career  480*/
  .about-nav
 	 {

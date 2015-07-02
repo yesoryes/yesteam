@@ -22,7 +22,7 @@
     <div class="navbar-header page-scroll">
       <button type="button" class="navbar-toggle" data-toggle="" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
     </div>
-    <span class="navbar-header page-scroll navbar-top"> <a class="navbar-brand" href="#page-top"> <img src="img/worgwarelogo.png" alt=""/> </a> </span> 
+    <span class="navbar-header page-scroll navbar-top"> <a class="navbar-brand" href="index.html"> <img src="img/worgwarelogo.png" alt=""/> </a> </span> 
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -127,7 +127,7 @@
     <div class="row text-center pad-row">
       <div class="col-md-12 col-sm-12"> <a href="javascript:void(0)" class="contact-app">Contact Form</a>
         <div class="contact-form" >
-          <form onsubmit="return false;">
+          <form onsubmit="return false;" class="contact-area">
             <span class="input-container" data-sr='wait 1s ,scale up 80% no reset' >
             <input class="input-field" type="text" id="field-name" name="name"/>
             <label class="input-label"  for="field-name"> Name </label>
@@ -254,18 +254,20 @@ $(document).ready(function(){
 		   'display' : 'block',
         });
 		
-		$(".contact-app").css({
+		$(".contact-app").delay(1000).css({
 		   //'display' : 'none',
+		   'visibility': 'hidden' 
         });
     });
     $(".cancel-btn").click(function(){
 		
-        $(".contact-form").slideUp(1500).css({
+        $(".contact-form").slideUp(1000).css({
    			//'display' : 'none',
        });
-		$(".contact-app").delay(5000).css({
-   			'display' : 'block',
-			'transition': '5s all'
+		$(".contact-app").delay(3000).css({
+   			//'display' : 'block',
+			'visibility': 'visible',
+			/*'transition': '5s all'*/
        });
     });
 	
