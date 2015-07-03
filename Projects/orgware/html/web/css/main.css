@@ -7667,6 +7667,9 @@ a.btn-back {
       width: 525px;
       overflow: hidden; }
 
+.detail-carousel {
+  bottom: -10px; }
+
 @media only screen and (max-width: 480px) and (min-width: 320px) {
   .bg-desktop ul.carousel-inner {
     overflow: hidden; }
