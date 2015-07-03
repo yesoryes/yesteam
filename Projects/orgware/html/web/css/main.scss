@@ -3754,7 +3754,7 @@ footer
 			&:hover .overlay {
 				opacity: 1;
 				transition: 1s all;
-				transform:scale(1)
+				transform:scale(1);
 			}
 		}
 		
@@ -3909,6 +3909,13 @@ footer
 			}
 		}
 	}
+	
+	.webapp {
+		@extend.mobileGames;
+	}
+	.mobileApp {
+		@extend.mobileGames;
+	}
 }
 	/*Indicators*/
 .overlay {
@@ -3921,18 +3928,35 @@ footer
 	display: table;
 	opacity: 0;
 	cursor: pointer;
+	padding: 30px;
+	transform: scale(1.2);
 	a {
 		color: #fff;
 		text-decoration: none;
+		display: block;
+		padding: 45px;
+		border: 1px solid #fff;
 		h1 {
-			font-size: 40px;
+			font-size: 30px;
 			font-family: 'LinotypeMetroNovaPro';
 			text-align: center;
 			text-transform: uppercase;
 			display: block;
 			width: 100%;
-			margin: 80px 0px 30px;
-			transform:scale(0.5)
+		}
+		article {
+			font-size: 15px;
+			margin: 20px 0;
+		}
+		ul {
+			overflow: hidden;
+			width: 140px;
+			margin: 0 auto;
+			li {
+				float: left;
+				margin: 0 8px;
+				text-align: center;
+			}
 		}
 		span {
 			width: 48px;
