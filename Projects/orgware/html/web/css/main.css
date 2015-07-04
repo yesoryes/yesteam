@@ -6,7 +6,7 @@
   color: #fec503; }
 
 .navbar-default .navbar-collapse {
-  border-color: rgba(255, 255, 255, 0.02); }
+  border-color: rgba(255, 255, 255, 0.2); }
 
 .navbar-default .navbar-toggle {
   border-color: #f03b3b;
@@ -87,7 +87,7 @@ body {
 .navbar-default {
   border-color: transparent;
   background: none;
-  padding: 2% 0 !important; }
+  padding: 2% 0 0% !important; }
 
 .navbar-right {
   float: right !important;
@@ -216,7 +216,7 @@ body {
         font-family: 'LinotypeMetroNovaProItalic';
         font-size: 25px;
         display: block;
-        padding: 11px 40px 11px;
+        padding: 3% 10%;
         text-decoration: none;
         text-transform: uppercase; }
         .menu .sub-menu li a:hover {
@@ -1914,6 +1914,7 @@ section {
     .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-prev:hover span, .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-next:hover span {
       display: block; }
 
+/* main */
 footer {
   width: 100%;
   float: left;
@@ -2030,8 +2031,9 @@ footer {
 .have-quest {
   height: 32px;
   overflow: hidden;
-  margin: 30px 0 0 9px;
-  position: relative; }
+  margin: 30px 4% 0 0;
+  position: relative;
+  float: right; }
   .have-quest span {
     background: url(../img/have-quest.png) no-repeat left;
     height: 32px;
@@ -2077,29 +2079,33 @@ footer {
     .have-quest a:hover:after, .have-quest a:active:after {
       width: 100%; }
 
-.copy-text {
-  float: left;
-  margin: 30px 15px 0 9px;
-  line-height: 20px;
-  font-family: 'LinotypeMetroNovaPro';
-  color: rgba(197, 197, 197, 0.4);
-  font-size: 13px; }
-  .copy-text a {
-    text-decoration: underline;
+.copy-logo {
+  overflow: hidden;
+  margin: 0% 0 0 0;
+  position: relative;
+  float: right; }
+  .copy-logo .copy-text {
+    float: left;
+    margin: 30px 15px 0 9px;
+    line-height: 20px;
     font-family: 'LinotypeMetroNovaPro';
     color: rgba(197, 197, 197, 0.4);
     font-size: 13px; }
-    .copy-text a:hover {
-      color: #c5c5c5; }
-  .copy-text span {
-    text-align: right !important; }
-
-.company-logo {
-  float: left;
-  margin: 30px 0 0 0px;
-  opacity: 0.2; }
-  .company-logo:hover {
-    opacity: 1; }
+    .copy-logo .copy-text a {
+      text-decoration: underline;
+      font-family: 'LinotypeMetroNovaPro';
+      color: rgba(197, 197, 197, 0.4);
+      font-size: 13px; }
+      .copy-logo .copy-text a:hover {
+        color: #c5c5c5; }
+    .copy-logo .copy-text span {
+      text-align: right !important; }
+  .copy-logo .company-logo {
+    float: right;
+    margin: 30px 18px 0 0px;
+    opacity: 0.2; }
+    .copy-logo .company-logo:hover {
+      opacity: 1; }
 
 /* Inner Pages               Contact US*/
 .contact-us {
@@ -2167,23 +2173,43 @@ footer {
   .contact-enquiry .contact-app {
     width: 156px;
     height: 32px;
-    color: #fff;
-    line-height: 32px;
+    position: relative;
     text-align: center;
-    text-transform: uppercase;
     margin: 17px auto;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    transition: 1s all;
-    -moz-transition: 1s all;
-    -ms-transition: 1s all;
-    -webkit-transition: 1s all;
-    font-family: 'LinotypeMetroNovaProLight';
-    background: url(../img/enqiury-now.png) center center no-repeat; }
-    .contact-enquiry .contact-app:hover {
-      color: #ff7959;
-      background: #fff; }
+    z-index: 2; }
+    .contact-enquiry .contact-app a {
+      color: #fff;
+      width: 156px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      transition: 1s all;
+      -moz-transition: 1s all;
+      -ms-transition: 1s all;
+      -webkit-transition: 1s all;
+      font-family: 'LinotypeMetroNovaProLight';
+      background: url(../img/enqiury-now.png) center center no-repeat; }
+      .contact-enquiry .contact-app a:after {
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #fff; }
+      .contact-enquiry .contact-app a:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s; }
+      .contact-enquiry .contact-app a:hover, .contact-enquiry .contact-app a:active {
+        color: #ff7959; }
+      .contact-enquiry .contact-app a:hover:after, .contact-enquiry .contact-app a:active:after {
+        width: 100%; }
   .contact-enquiry .contact-form {
     margin: 1% auto 4%;
     width: 100%;
@@ -2305,7 +2331,9 @@ footer {
     padding: 0 0 0% 0; }
     .ip-services .pad-row .ip-services-content {
       overflow: hidden;
-      width: 100%; }
+      width: 100%;
+      height: 550px;
+      margin: 10% auto; }
       .ip-services .pad-row .ip-services-content .service-box1 {
         background-color: #fff;
         margin-bottom: 0;
@@ -2313,8 +2341,7 @@ footer {
         overflow: hidden;
         padding: 0px 0px;
         width: 100%;
-        height: 100%;
-        margin: 10% auto; }
+        height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box:hover h4, .ip-services .pad-row .ip-services-content .service-box:hover .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .service-box:hover .ceo-name {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
@@ -2399,8 +2426,7 @@ footer {
         overflow: hidden;
         padding: 0px 20px;
         width: 100%;
-        height: 100%;
-        margin: 10% auto; }
+        height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box2::before {
         display: none; }
       .ip-services .pad-row .ip-services-content .service-box2 [class*="icon"]::after {
@@ -2455,8 +2481,7 @@ footer {
         overflow: hidden;
         padding: 0px 20px;
         width: 100%;
-        height: 100%;
-        margin: 10% auto; }
+        height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box3::before {
         display: none; }
       .ip-services .pad-row .ip-services-content .service-box3 [class*="icon"]::after {
@@ -2511,8 +2536,7 @@ footer {
         overflow: hidden;
         padding: 0px 20px;
         width: 100%;
-        height: 100%;
-        margin: 10% auto; }
+        height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box4::before {
         display: none; }
       .ip-services .pad-row .ip-services-content .service-box4 [class*="icon"]::after {
@@ -2567,8 +2591,7 @@ footer {
         overflow: hidden;
         padding: 0px 20px;
         width: 100%;
-        height: 100%;
-        margin: 10% auto; }
+        height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box5::before {
         display: none; }
       .ip-services .pad-row .ip-services-content .service-box5 [class*="icon"]::after {
@@ -2623,8 +2646,7 @@ footer {
         overflow: hidden;
         padding: 0px 20px;
         width: 100%;
-        height: 100%;
-        margin: 10% auto; }
+        height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box6::before {
         display: none; }
       .ip-services .pad-row .ip-services-content .service-box6 [class*="icon"]::after {
@@ -2679,8 +2701,7 @@ footer {
         overflow: hidden;
         padding: 0px 20px;
         width: 100%;
-        height: 100%;
-        margin: 10% auto; }
+        height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box7::before {
         display: none; }
       .ip-services .pad-row .ip-services-content .service-box7 [class*="icon"]::after {
@@ -2735,8 +2756,7 @@ footer {
         overflow: hidden;
         padding: 0px 20px;
         width: 100%;
-        height: 100%;
-        margin: 10% auto; }
+        height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box8::before {
         display: none; }
       .ip-services .pad-row .ip-services-content .service-box8 [class*="icon"]::after {
@@ -2791,8 +2811,7 @@ footer {
         overflow: hidden;
         padding: 0px 20px;
         width: 100%;
-        height: 100%;
-        margin: 10% auto; }
+        height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box9::before {
         display: none; }
       .ip-services .pad-row .ip-services-content .service-box9 [class*="icon"]::after {
@@ -2847,8 +2866,7 @@ footer {
         overflow: hidden;
         padding: 0px 20px;
         width: 100%;
-        height: 100%;
-        margin: 10% auto; }
+        height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box10::before {
         display: none; }
       .ip-services .pad-row .ip-services-content .service-box10 [class*="icon"]::after {
@@ -2897,7 +2915,7 @@ footer {
         -moz-transform: translate(0px, -20px);
         -webkit-transform: translate(0px, -20px); }
 
-/* ip Services Html*/
+/* ip about Html*/
 .ip-about {
   overflow: hidden;
   width: 100%;
@@ -2971,13 +2989,13 @@ footer {
   overflow: hidden;
   width: 100%;
   position: relative;
-  margin: 2% auto; }
+  margin: 1% auto; }
   .about-tab .tab-content {
     overflow: hidden;
     width: 100%;
     position: relative;
     background: #f5f5f5;
-    padding: 50px 20px; }
+    padding: 40px; }
     .about-tab .tab-content .developer-1 {
       width: 100%;
       position: relative;
@@ -3036,8 +3054,8 @@ footer {
       overflow: hidden; }
       .about-tab .tab-content .mgmt-details li {
         display: inline-block;
-        width: 38%;
-        margin: 0 5% 0 5%;
+        width: 49%;
+        margin: 0;
         height: 66px; }
         .about-tab .tab-content .mgmt-details li a {
           font-family: 'LinotypeMetroNovaProLight';
@@ -3052,7 +3070,7 @@ footer {
             border-bottom: 2px solid #e03333; }
     .about-tab .tab-content .mgmt-content {
       width: 100%;
-      margin: 5% auto;
+      margin: 3% auto 0 auto;
       overflow: hidden; }
       .about-tab .tab-content .mgmt-content img {
         margin: 0 auto;
@@ -3479,8 +3497,10 @@ footer {
   .overlay a {
     color: #fff;
     text-decoration: none;
-    display: block;
-    padding: 45px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 250px;
     border: 1px solid #fff; }
     .overlay a h1, .overlay a .expansion-web h2, .expansion-web .overlay a h2 {
       font-size: 30px;
@@ -3529,19 +3549,41 @@ footer {
   overflow: hidden;
   margin: 60px 0; }
 
-a.btn-back {
-  display: block;
-  float: right;
-  color: #fb3e2f;
-  padding: 6px 16px 8px;
-  background: url(../img/portfolio/back_bg.png) no-repeat 0px 0px;
-  transition: 0.5s all;
-  cursor: pointer;
-  margin: 0 0 45px; }
-  a.btn-back:hover {
-    background: #fb3e2f;
+.btn-back {
+  width: 65px;
+  height: 30px;
+  margin: 0 0 45px;
+  position: relative;
+  z-index: 2;
+  float: right; }
+  .btn-back a {
+    display: block;
+    width: 65px;
+    height: 30px;
+    color: #fb3e2f;
+    line-height: 30px;
+    text-align: center;
     text-decoration: none;
-    color: #fff; }
+    background: url(../img/portfolio/back_bg.png) no-repeat 0px 0px;
+    transition: 0.5s all;
+    cursor: pointer; }
+    .btn-back a:after {
+      width: 0%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #fb3e2f; }
+    .btn-back a:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    .btn-back a:hover, .btn-back a:active {
+      color: #fff; }
+    .btn-back a:hover:after, .btn-back a:active:after {
+      width: 100%; }
 
 .expansion-web {
   overflow: hidden;
@@ -3598,11 +3640,11 @@ a.btn-back {
   #back-top a {
     display: block;
     width: 122px;
-    height: 41px;
+    height: 40px;
     transition: 0.5s all;
-    background: url(../img/top-sprite.png) 0 0 no-repeat; }
+    background: url(../img/page-top.png) top no-repeat; }
     #back-top a:hover {
-      background: url(../img/top-sprite.png) 0 -41px no-repeat; }
+      background: url(../img/page-top-hover.png) top no-repeat; }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .navbar-right {
@@ -5181,6 +5223,7 @@ a.btn-back {
       .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-prev:hover span, .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-next:hover span {
         display: block; }
 
+  /* 1024 */
   footer {
     background: #444444 !important; }
     footer .foot-services {
@@ -5283,7 +5326,7 @@ a.btn-back {
   .have-quest {
     height: 32px;
     overflow: hidden;
-    margin: 30px 0 0 0px; }
+    margin: 30px 10% 0 0px; }
     .have-quest span {
       background: url(../img/have-quest.png) no-repeat left;
       height: 32px;
@@ -5327,44 +5370,627 @@ a.btn-back {
       .have-quest a:hover:after, .have-quest a:active:after {
         width: 100%; }
 
-  .copy-text {
-    float: left;
-    margin: 30px 15px 0 0px;
-    line-height: 20px;
-    font-family: 'LinotypeMetroNovaPro';
-    color: rgba(197, 197, 197, 0.4);
-    font-size: 13px; }
-    .copy-text a {
-      text-decoration: underline;
+  .copy-logo {
+    overflow: hidden;
+    margin: 0% 3% 0 0;
+    position: relative;
+    float: right; }
+    .copy-logo .copy-text {
+      float: left;
+      margin: 30px 15px 0 9px;
+      line-height: 20px;
       font-family: 'LinotypeMetroNovaPro';
       color: rgba(197, 197, 197, 0.4);
       font-size: 13px; }
-      .copy-text a:hover {
-        color: #c5c5c5; }
-    .copy-text span {
-      text-align: right !important; }
+      .copy-logo .copy-text a {
+        text-decoration: underline;
+        font-family: 'LinotypeMetroNovaPro';
+        color: rgba(197, 197, 197, 0.4);
+        font-size: 13px; }
+        .copy-logo .copy-text a:hover {
+          color: #c5c5c5; }
+      .copy-logo .copy-text span {
+        text-align: right !important; }
+    .copy-logo .company-logo {
+      float: right;
+      margin: 30px 18px 0 0px;
+      opacity: 0.2; }
+      .copy-logo .company-logo:hover {
+        opacity: 1; }
 
-  .company-logo {
-    float: left;
-    margin: 30px 0 0 0px;
-    opacity: 0.2; }
-    .company-logo:after {
-      width: 0%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      opacity: 1; }
-    .company-logo:after {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s; }
-    .company-logo:hover, .company-logo:active {
-      color: #f03b3b; }
-    .company-logo:hover:after, .company-logo:active:after {
-      width: 100%; } }
+  /* ip services */
+  /* ip Services Html*/
+  .ip-services {
+    overflow: hidden;
+    width: 100%;
+    position: relative; }
+    .ip-services .pad-row {
+      padding: 0 0 0% 0; }
+      .ip-services .pad-row .ip-services-content {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: 10% auto; }
+        .ip-services .pad-row .ip-services-content .service-box1 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 0px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box:hover h4, .ip-services .pad-row .ip-services-content .service-box:hover .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .service-box:hover .ceo-name {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          transition: .5s all;
+          -webkit-transform-origin: center;
+          -webkit-transition: .5s all;
+          transform-origin: center; }
+        .ip-services .pad-row .ip-services-content .service-box:hover p {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          transition: .5s all;
+          -webkit-transform-origin: center;
+          -webkit-transition: .5s all;
+          transform-origin: center; }
+        .ip-services .pad-row .ip-services-content .service-box:hover {
+          background-color: #f8f8f8; }
+        .ip-services .pad-row .ip-services-content .service-box_body {
+          padding: 20px; }
+          .ip-services .pad-row .ip-services-content .service-box_body h4, .ip-services .pad-row .ip-services-content .service-box_body .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .service-box_body .ceo-name {
+            font-family: 'LinotypeMetroNovaPro';
+            font-size: 20px;
+            color: 1e1e1e;
+            padding: 20px 0;
+            text-transform: uppercase; }
+          .ip-services .pad-row .ip-services-content .service-box_body p {
+            font-family: 'OpenSansRegular';
+            font-size: 15px;
+            color: #8a8a8a;
+            line-height: 24px;
+            width: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box1::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box1 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box1 [class*="icon"] {
+          background: url(../img/service1.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box1:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box1:hover [class*="icon"] {
+          background: url(../img/service1-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box2 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box2::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box2 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box2 [class*="icon"] {
+          background: url(../img/service2.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box2:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box2:hover [class*="icon"] {
+          background: url(../img/service2-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box3 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box3::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box3 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box3 [class*="icon"] {
+          background: url(../img/service3.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box3:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box3:hover [class*="icon"] {
+          background: url(../img/service3-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box4 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box4::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box4 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box4 [class*="icon"] {
+          background: url(../img/service4.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box4:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box4:hover [class*="icon"] {
+          background: url(../img/service4-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box5 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box5::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box5 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box5 [class*="icon"] {
+          background: url(../img/service5.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box5:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box5:hover [class*="icon"] {
+          background: url(../img/service5-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box6 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box6::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box6 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box6 [class*="icon"] {
+          background: url(../img/service6.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box6:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box6:hover [class*="icon"] {
+          background: url(../img/service6-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box7 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box7::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box7 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box7 [class*="icon"] {
+          background: url(../img/service7.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box7:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box7:hover [class*="icon"] {
+          background: url(../img/service7-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box8 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box8::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box8 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box8 [class*="icon"] {
+          background: url(../img/service8.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box8:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box8:hover [class*="icon"] {
+          background: url(../img/service8-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box9 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box9::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box9 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box9 [class*="icon"] {
+          background: url(../img/service9.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box9:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box9:hover [class*="icon"] {
+          background: url(../img/service9-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box10 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box10::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box10 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box10 [class*="icon"] {
+          background: url(../img/service10.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box10:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box10:hover [class*="icon"] {
+          background: url(../img/service10-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); } }
 @media only screen and (min-width: 320px) and (max-width: 759px) {
   .portfolio-tab .mobileGames .four-strax, .portfolio-tab .webapp .four-strax, .portfolio-tab .mobileApp .four-strax, .portfolio-tab .mobileGames .one-touch, .portfolio-tab .webapp .one-touch, .portfolio-tab .mobileApp .one-touch, .portfolio-tab .mobileGames .owaisi, .portfolio-tab .webapp .owaisi, .portfolio-tab .mobileApp .owaisi, .portfolio-tab .mobileGames .dress-inbox, .portfolio-tab .webapp .dress-inbox, .portfolio-tab .mobileApp .dress-inbox, .portfolio-tab .mobileGames .peter-traveler, .portfolio-tab .webapp .peter-traveler, .portfolio-tab .mobileApp .peter-traveler, .portfolio-tab .mobileGames .first-aid, .portfolio-tab .webapp .first-aid, .portfolio-tab .mobileApp .first-aid {
     width: 100%;
@@ -6539,6 +7165,7 @@ a.btn-back {
       .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-prev:hover span, .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-next:hover span {
         display: block; }
 
+  /* 768 */
   footer {
     width: 100%;
     float: left;
@@ -6649,7 +7276,9 @@ a.btn-back {
   .have-quest {
     height: 32px;
     overflow: hidden;
-    margin: 30px 0 0 22%; }
+    width: 100%;
+    margin: 3% 20%;
+    float: none; }
     .have-quest span {
       background: url(../img/have-quest.png) no-repeat left;
       height: 32px;
@@ -6693,29 +7322,34 @@ a.btn-back {
       .have-quest a:hover:after, .have-quest a:active:after {
         width: 100%; }
 
-  .copy-text {
-    float: left;
-    margin: 30px 15px 30px 22%;
-    line-height: 20px;
-    font-family: 'LinotypeMetroNovaPro';
-    color: rgba(197, 197, 197, 0.4);
-    font-size: 13px; }
-    .copy-text a {
-      text-decoration: underline;
+  .copy-logo {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 20%;
+    position: relative;
+    float: none; }
+    .copy-logo .copy-text {
+      float: left;
+      margin: 0 3% 0 0;
+      line-height: 20px;
       font-family: 'LinotypeMetroNovaPro';
       color: rgba(197, 197, 197, 0.4);
       font-size: 13px; }
-      .copy-text a:hover {
-        color: #c5c5c5; }
-    .copy-text span {
-      text-align: right !important; }
-
-  .company-logo {
-    float: left;
-    margin: 30px 0 30px 0px;
-    opacity: 0.2; }
-    .company-logo:hover {
-      opacity: 1; }
+      .copy-logo .copy-text a {
+        text-decoration: underline;
+        font-family: 'LinotypeMetroNovaPro';
+        color: rgba(197, 197, 197, 0.4);
+        font-size: 13px; }
+        .copy-logo .copy-text a:hover {
+          color: #c5c5c5; }
+      .copy-logo .copy-text span {
+        text-align: right !important; }
+    .copy-logo .company-logo {
+      float: left;
+      margin: 0 0 0 0px;
+      opacity: 0.2; }
+      .copy-logo .company-logo:hover {
+        opacity: 1; }
 
   /* Inner Pages               Contact US*/
   .contact-us {
@@ -6777,7 +7411,600 @@ a.btn-back {
     margin: 5% 0 !important; }
 
   .detail-carousel {
-    bottom: 0px; } }
+    bottom: 0px; }
+
+  /* ip Services Html*/
+  .ip-services {
+    overflow: hidden;
+    width: 100%;
+    position: relative; }
+    .ip-services .pad-row {
+      padding: 0 0 0% 0; }
+      .ip-services .pad-row .ip-services-content {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: 3% auto; }
+        .ip-services .pad-row .ip-services-content .service-box1 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 0px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box:hover h4, .ip-services .pad-row .ip-services-content .service-box:hover .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .service-box:hover .ceo-name {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          transition: .5s all;
+          -webkit-transform-origin: center;
+          -webkit-transition: .5s all;
+          transform-origin: center; }
+        .ip-services .pad-row .ip-services-content .service-box:hover p {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          transition: .5s all;
+          -webkit-transform-origin: center;
+          -webkit-transition: .5s all;
+          transform-origin: center; }
+        .ip-services .pad-row .ip-services-content .service-box:hover {
+          background-color: #f8f8f8; }
+        .ip-services .pad-row .ip-services-content .service-box_body {
+          padding: 20px; }
+          .ip-services .pad-row .ip-services-content .service-box_body h4, .ip-services .pad-row .ip-services-content .service-box_body .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .service-box_body .ceo-name {
+            font-family: 'LinotypeMetroNovaPro';
+            font-size: 20px;
+            color: 1e1e1e;
+            padding: 20px 0;
+            text-transform: uppercase; }
+          .ip-services .pad-row .ip-services-content .service-box_body p {
+            font-family: 'OpenSansRegular';
+            font-size: 15px;
+            color: #8a8a8a;
+            line-height: 24px;
+            width: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box1::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box1 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box1 [class*="icon"] {
+          background: url(../img/service1.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box1:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box1:hover [class*="icon"] {
+          background: url(../img/service1-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box2 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box2::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box2 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box2 [class*="icon"] {
+          background: url(../img/service2.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box2:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box2:hover [class*="icon"] {
+          background: url(../img/service2-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box3 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box3::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box3 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box3 [class*="icon"] {
+          background: url(../img/service3.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box3:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box3:hover [class*="icon"] {
+          background: url(../img/service3-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box4 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box4::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box4 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box4 [class*="icon"] {
+          background: url(../img/service4.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box4:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box4:hover [class*="icon"] {
+          background: url(../img/service4-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box5 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box5::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box5 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box5 [class*="icon"] {
+          background: url(../img/service5.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box5:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box5:hover [class*="icon"] {
+          background: url(../img/service5-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box6 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box6::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box6 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box6 [class*="icon"] {
+          background: url(../img/service6.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box6:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box6:hover [class*="icon"] {
+          background: url(../img/service6-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box7 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box7::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box7 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box7 [class*="icon"] {
+          background: url(../img/service7.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box7:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box7:hover [class*="icon"] {
+          background: url(../img/service7-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box8 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box8::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box8 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box8 [class*="icon"] {
+          background: url(../img/service8.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box8:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box8:hover [class*="icon"] {
+          background: url(../img/service8-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box9 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box9::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box9 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box9 [class*="icon"] {
+          background: url(../img/service9.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box9:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box9:hover [class*="icon"] {
+          background: url(../img/service9-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box10 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box10::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box10 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box10 [class*="icon"] {
+          background: url(../img/service10.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box10:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box10:hover [class*="icon"] {
+          background: url(../img/service10-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); } }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .navbar-default {
     border-color: transparent;
@@ -6816,6 +8043,118 @@ a.btn-back {
     max-width: 100%;
     /* height: 300px;*/ }
 
+  .menu {
+    background: #e85b3a repeat left top;
+    right: -325px;
+    position: fixed;
+    width: 325px;
+    height: auto;
+    display: block;
+    z-index: 10000; }
+    .menu .menu-logo {
+      text-align: center;
+      display: block;
+      position: absolute;
+      bottom: 3%;
+      left: 30%;
+      width: 40%; }
+      .menu .menu-logo:hover {
+        opacity: 0.8; }
+    .menu .more-close {
+      margin: 40px 0 15px 50px; }
+    .menu .sub-menu {
+      list-style: none;
+      text-align: right;
+      position: relative;
+      top: 2%; }
+      .menu .sub-menu li {
+        text-align: right; }
+        .menu .sub-menu li a {
+          color: #fff;
+          font-family: 'LinotypeMetroNovaProItalic';
+          font-size: 15px;
+          display: block;
+          padding: 3% 10%;
+          text-decoration: none;
+          text-transform: uppercase; }
+          .menu .sub-menu li a:hover {
+            background: #ae442b; }
+    .menu .git-menu {
+      border-top: 1px solid #f57676;
+      border-bottom: 1px solid #f57676;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 10%;
+      left: 10%;
+      margin: 0 auto; }
+      .menu .git-menu p {
+        color: #e9e9e9;
+        font-size: 19px;
+        text-align: left;
+        font-family: 'LinotypeMetroNovaProBold';
+        text-transform: none;
+        line-height: 30px;
+        margin: 2% 0; }
+      .menu .git-menu .social-menus {
+        list-style: none;
+        margin: 2% 0;
+        padding: 0;
+        text-align: center;
+        display: block; }
+        .menu .git-menu .social-menus li {
+          display: inline-block; }
+          .menu .git-menu .social-menus li a {
+            height: 40px;
+            width: 40px;
+            margin: 10px;
+            float: left;
+            display: block;
+            padding: 0;
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            border-radius: 50%;
+            -webkit-transition: all ease 0.3s;
+            -moz-transition: all ease 0.3s;
+            -o-transition: all ease 0.3s;
+            -ms-transition: all ease 0.3s;
+            transition: all ease 0.3s; }
+            .menu .git-menu .social-menus li a:hover {
+              /*box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);*/
+              -webkit-transform: rotate(15deg);
+              -moz-transform: rotate(15deg);
+              -o-transform: rotate(15deg);
+              -ms-transform: rotate(15deg);
+              transform: rotate(15deg); }
+            .menu .git-menu .social-menus li a.fb {
+              background: url(../img/facebook-menu.png) top no-repeat;
+              height: 40px;
+              width: 40px;
+              float: left; }
+              .menu .git-menu .social-menus li a.fb:hover {
+                background: url(../img/facebook-menu-hover.png) top no-repeat; }
+            .menu .git-menu .social-menus li a.google {
+              background: url(../img/google-menu.png) top no-repeat;
+              height: 40px;
+              width: 40px;
+              float: left; }
+              .menu .git-menu .social-menus li a.google:hover {
+                background: url(../img/google-menu-hover.png) bottom no-repeat; }
+            .menu .git-menu .social-menus li a.twitter {
+              background: url(../img/twitter-menu.png) top no-repeat;
+              height: 40px;
+              width: 40px;
+              float: left; }
+              .menu .git-menu .social-menus li a.twitter:hover {
+                background: url(../img/twitter-menu-hover.png) bottom no-repeat; }
+            .menu .git-menu .social-menus li a.linked {
+              background: url(../img/linked-menu.png) top no-repeat;
+              height: 40px;
+              width: 40px;
+              float: left; }
+              .menu .git-menu .social-menus li a.linked:hover {
+                background: url(../img/linked-menu-hover.png) bottom no-repeat; }
+
   /* header */
   header {
     overflow: hidden;
@@ -6842,13 +8181,13 @@ a.btn-back {
           margin: 2% 0 0 -16%; }
       header .carousel-caption .banner-text-slide2 {
         font-family: 'LinotypeMetroNovaProLight';
-        line-height: 1.6em;
-        padding: 30% 0 0 0; }
+        line-height: 1em;
+        padding: 12% 0 0 0; }
         header .carousel-caption .banner-text-slide2 .banner-text1 {
-          font-size: 2em;
+          font-size: 1.5em;
           line-height: 1em; }
         header .carousel-caption .banner-text-slide2 .banner-text2 {
-          font-size: 1em; }
+          font-size: 0.8em; }
           header .carousel-caption .banner-text-slide2 .banner-text2 span {
             font-family: 'LinotypeMetroNovaProBold'; }
       header .carousel-caption .banner-text-slide3 {
@@ -6878,23 +8217,23 @@ a.btn-back {
             font-size: 0.7em;
             color: #fff; }
       header .carousel-caption .banner-link {
-        width: 37px;
-        height: 43px;
+        width: 22px;
+        height: 27px;
         top: 100%;
         right: 1%;
         position: absolute;
-        background: url(../img/banner-link-mob.png) top no-repeat; }
+        background: url(../img/banner-mob-link.png) top no-repeat; }
         header .carousel-caption .banner-link:hover {
-          background: url(../img/banner-link-mob.png) bottom no-repeat; }
+          background: url(../img/banner-mob-link.png) bottom no-repeat; }
       header .carousel-caption .banner-link-left {
-        width: 37px;
-        height: 43px;
-        top: 100%;
+        width: 22px;
+        height: 27px;
+        top: 95%;
         left: 35%;
         position: absolute;
-        background: url(../img/banner-link-mob.png) top no-repeat; }
+        background: url(../img/banner-mob-link.png) top no-repeat; }
         header .carousel-caption .banner-link-left:hover {
-          background: url(../img/banner-link-mob.png) bottom no-repeat; }
+          background: url(../img/banner-mob-link.png) bottom no-repeat; }
 
   .our-team {
     margin: 60px 0px 60px 0;
@@ -6915,7 +8254,7 @@ a.btn-back {
     section .section-heading {
       margin-top: 0;
       margin-bottom: 15px;
-      font-size: 35px;
+      font-size: 24px;
       color: #444444;
       text-transform: lowercase;
       font-family: 'LinotypeMetroNovaProLight'; }
@@ -7581,7 +8920,7 @@ a.btn-back {
     z-index: 1; }
     .products .products-heading {
       margin: 0 0 20px 10px;
-      font-size: 35px;
+      font-size: 24px;
       color: #444444;
       font-family: 'LinotypeMetroNovaProLight'; }
       .products .products-heading span {
@@ -7773,9 +9112,8 @@ a.btn-back {
     overflow: hidden;
     position: relative; }
     .partners-page .partners-heading {
-      margin-top: 0;
-      margin-bottom: 15px;
-      font-size: 35px;
+      margin: 0 0 15px 0;
+      font-size: 24px;
       color: #444444;
       text-transform: capitalize;
       font-family: 'LinotypeMetroNovaProLight'; }
@@ -7980,6 +9318,7 @@ a.btn-back {
       .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-prev:hover span, .jcarousel-wrapper .jcarousel-control-next .jcarousel-control-next:hover span {
         display: block; }
 
+  /* footer 480*/
   footer {
     background: #444444 !important;
     position: relative; }
@@ -8087,6 +9426,7 @@ a.btn-back {
     height: 32px;
     width: 100%;
     overflow: hidden;
+    float: none;
     margin: 3% 11%; }
     .have-quest span {
       background: url(../img/have-quest.png) no-repeat left;
@@ -8138,29 +9478,34 @@ a.btn-back {
       .have-quest a:hover:after, .have-quest a:active:after {
         width: 100%; }
 
-  .copy-text {
-    float: left;
-    margin: 30px 15px 30px 12%;
-    line-height: 20px;
-    font-family: 'LinotypeMetroNovaPro';
-    color: rgba(197, 197, 197, 0.4);
-    font-size: 13px; }
-    .copy-text a {
-      text-decoration: underline;
+  .copy-logo {
+    overflow: hidden;
+    width: 80%;
+    margin: 5% auto;
+    position: relative;
+    float: none; }
+    .copy-logo .copy-text {
+      float: left;
+      margin: 0;
+      line-height: 20px;
       font-family: 'LinotypeMetroNovaPro';
       color: rgba(197, 197, 197, 0.4);
       font-size: 13px; }
-      .copy-text a:hover {
-        color: #c5c5c5; }
-    .copy-text span {
-      text-align: right !important; }
-
-  .company-logo {
-    float: left;
-    margin: 30px 0 30px 30px;
-    opacity: 0.2; }
-    .company-logo:hover {
-      opacity: 1; }
+      .copy-logo .copy-text a {
+        text-decoration: underline;
+        font-family: 'LinotypeMetroNovaPro';
+        color: rgba(197, 197, 197, 0.4);
+        font-size: 13px; }
+        .copy-logo .copy-text a:hover {
+          color: #c5c5c5; }
+      .copy-logo .copy-text span {
+        text-align: right !important; }
+    .copy-logo .company-logo {
+      float: right;
+      margin: 0;
+      opacity: 0.2; }
+      .copy-logo .company-logo:hover {
+        opacity: 1; }
 
   /* Inner Pages Contact us */
   .conatct-source {
@@ -8377,7 +9722,600 @@ a.btn-back {
     height: auto; }
 
   .detail-carousel {
-    bottom: 0px; } }
+    bottom: 0px; }
+
+  /* ip Services Html*/
+  .ip-services {
+    overflow: hidden;
+    width: 100%;
+    position: relative; }
+    .ip-services .pad-row {
+      padding: 0 0 0% 0; }
+      .ip-services .pad-row .ip-services-content {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: 5% auto; }
+        .ip-services .pad-row .ip-services-content .service-box1 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 0px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box:hover h4, .ip-services .pad-row .ip-services-content .service-box:hover .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .service-box:hover .ceo-name {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          transition: .5s all;
+          -webkit-transform-origin: center;
+          -webkit-transition: .5s all;
+          transform-origin: center; }
+        .ip-services .pad-row .ip-services-content .service-box:hover p {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          transition: .5s all;
+          -webkit-transform-origin: center;
+          -webkit-transition: .5s all;
+          transform-origin: center; }
+        .ip-services .pad-row .ip-services-content .service-box:hover {
+          background-color: #f8f8f8; }
+        .ip-services .pad-row .ip-services-content .service-box_body {
+          padding: 20px; }
+          .ip-services .pad-row .ip-services-content .service-box_body h4, .ip-services .pad-row .ip-services-content .service-box_body .ceo-quotes .ceo-name, .ceo-quotes .ip-services .pad-row .ip-services-content .service-box_body .ceo-name {
+            font-family: 'LinotypeMetroNovaPro';
+            font-size: 20px;
+            color: 1e1e1e;
+            padding: 20px 0;
+            text-transform: uppercase; }
+          .ip-services .pad-row .ip-services-content .service-box_body p {
+            font-family: 'OpenSansRegular';
+            font-size: 15px;
+            color: #8a8a8a;
+            line-height: 24px;
+            width: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box1::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box1 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box1 [class*="icon"] {
+          background: url(../img/service1.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box1:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box1:hover [class*="icon"] {
+          background: url(../img/service1-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box2 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box2::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box2 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box2 [class*="icon"] {
+          background: url(../img/service2.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box2:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box2:hover [class*="icon"] {
+          background: url(../img/service2-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box3 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box3::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box3 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box3 [class*="icon"] {
+          background: url(../img/service3.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box3:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box3:hover [class*="icon"] {
+          background: url(../img/service3-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box4 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box4::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box4 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box4 [class*="icon"] {
+          background: url(../img/service4.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box4:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box4:hover [class*="icon"] {
+          background: url(../img/service4-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box5 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box5::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box5 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box5 [class*="icon"] {
+          background: url(../img/service5.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box5:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box5:hover [class*="icon"] {
+          background: url(../img/service5-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box6 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box6::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box6 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box6 [class*="icon"] {
+          background: url(../img/service6.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box6:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box6:hover [class*="icon"] {
+          background: url(../img/service6-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box7 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box7::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box7 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box7 [class*="icon"] {
+          background: url(../img/service7.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box7:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box7:hover [class*="icon"] {
+          background: url(../img/service7-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box8 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box8::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box8 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box8 [class*="icon"] {
+          background: url(../img/service8.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box8:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box8:hover [class*="icon"] {
+          background: url(../img/service8-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box9 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box9::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box9 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box9 [class*="icon"] {
+          background: url(../img/service9.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box9:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box9:hover [class*="icon"] {
+          background: url(../img/service9-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); }
+        .ip-services .pad-row .ip-services-content .service-box10 {
+          background-color: #fff;
+          margin-bottom: 0;
+          min-height: 20px;
+          overflow: hidden;
+          padding: 0px 20px;
+          width: 100%;
+          height: 100%; }
+        .ip-services .pad-row .ip-services-content .service-box10::before {
+          display: none; }
+        .ip-services .pad-row .ip-services-content .service-box10 [class*="icon"]::after {
+          background-color: #e5e5e5;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 8px;
+          margin: 5px auto 0;
+          position: relative;
+          top: -5px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 88px; }
+        .ip-services .pad-row .ip-services-content .service-box10 [class*="icon"] {
+          background: url(../img/service10.png) top center no-repeat;
+          display: block;
+          height: 90px;
+          margin: 0 auto 36px;
+          transition: all 0.3s ease 0s;
+          -ms-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          width: 90px;
+          line-height: 90px; }
+        .ip-services .pad-row .ip-services-content .icon-group::before {
+          content: ""; }
+        .ip-services .pad-row .ip-services-content [class^="icon-"]::before, .ip-services .pad-row .ip-services-content [class*=" icon-"]::before {
+          text-decoration: inherit;
+          display: inline-block;
+          width: 45px;
+          height: 45px; }
+        .ip-services .pad-row .ip-services-content .service-box10:hover ::after {
+          height: 5px;
+          transform: translate(0px, 22px);
+          -ms-transform: translate(0px, 22px);
+          -moz-transform: translate(0px, 22px);
+          -webkit-transform: translate(0px, 22px);
+          width: 53px; }
+        .ip-services .pad-row .ip-services-content .service-box10:hover [class*="icon"] {
+          background: url(../img/service10-hover.png) top center no-repeat;
+          transform: translate(0px, -20px);
+          -ms-transform: translate(0px, -20px);
+          -moz-transform: translate(0px, -20px);
+          -webkit-transform: translate(0px, -20px); } }
 @font-face {
   font-family: 'LinotypeMetroNovaProItalic';
   src: url("../fonts/LinotypeMetroNovaProItalic.eot");
