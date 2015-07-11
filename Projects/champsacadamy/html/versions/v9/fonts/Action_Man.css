@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Action_Man';
+    src: url('fonts/Action_Man.eot');
+    src: url('fonts/Action_Man.eot') format('embedded-opentype'),
+         url('fonts/Action_Man.woff2') format('woff2'),
+         url('fonts/Action_Man.woff') format('woff'),
+         url('fonts/Action_Man.ttf') format('truetype'),
+         url('fonts/Action_Man.svg#Action_Man') format('svg');
+}

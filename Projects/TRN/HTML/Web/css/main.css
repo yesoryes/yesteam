@@ -1149,8 +1149,9 @@ transform: rotate(2deg) translate(-1px, 2px);
 	font-size: 13px;
 	color: #fff;
 	text-align: left;
-	line-height: 30px;
+	line-height: 18px;
 	font-family: 'OpenSansRegular';
+	margin-bottom: 20px;
 }
 /*Reach us*/
 .reachUs_banner {
@@ -1893,11 +1894,11 @@ transform: rotate(2deg) translate(-1px, 2px);
 .marquee {
     top: 0px;
     position: relative;
-    animation: marquee 25s linear infinite;
-	-moz-animation: marquee 25s linear infinite;
-	-o-animation: marquee 25s linear infinite;
-	-webkit-animation: marquee 25s linear infinite;
-	-ms-animation: marquee 25s linear infinite;
+    animation: marquee 60s linear infinite;
+	-moz-animation: marquee 60s linear infinite;
+	-o-animation: marquee 60s linear infinite;
+	-webkit-animation: marquee 60s linear infinite;
+	-ms-animation: marquee 60s linear infinite;
 }
 
 .marquee:hover {
@@ -1910,26 +1911,8 @@ transform: rotate(2deg) translate(-1px, 2px);
 
 /* Make it move! */
 @keyframes marquee {
-    0%   { top:   0em }
-    50% { top: -85em }
-	51% { top: -85em }
-	100% { top: 0em; }
-}
-/*@-webkit-keyframes marquee {
-    0%   { top:   0em }
-    100% { top: -85em }
-}*/
-@-moz-keyframes marquee {
-    0%   { top:   0em }
-    100% { top: -84em }
-}
-@-ms-keyframes marquee {
-    0%   { top:   0em }
-    100% { top: -84em }
-}
-@-o-keyframes marquee {
-    0%   { top:   0em }
-    100% { top: -84em }
+   from  { top: 0px }
+   to { top: -1600px }
 }
 
 
