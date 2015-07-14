@@ -171,25 +171,25 @@ header{
 	width: 100%;
 	height: 100vh;
 	
-	/*Normal Banner*/
-	.normal-home {	
-		background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
+	.left-story {
+		width: 50%;
+		float: left;
 		position: relative;
-		height: 100Vh;
-		width: 100%;
-		display: block;
+		overflow: hidden;
 		
+		/*Another School*/
 		.another-school {
-			width: 50%;
+			width: 100%;
 			left: 0;
-			float: left;
 			position: absolute;
 			overflow: hidden;
+			background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
+			display: none;
 			
 			.another-school-bg {
+				position: absolute;
 				transform: translateX(-50%);
 				-webkit-transform: translateX(-50%);
-				position: absolute;
 				left:50%;
 				bottom: 182px;
 			}
@@ -220,6 +220,141 @@ header{
 				bottom: 50px;
 			}
 		}
+		/*End Another School*/
+		
+		/*Another Class*/
+		.another-class {
+			@extend.another-school;
+			background: #76b598 url(../img/banner/another_class_bg.png) repeat-x 0 bottom;
+			left: 0;
+			top: 0;
+			display: none;
+			
+			.another-class-stu {
+				bottom: 100px;
+			}
+			.another-class-char {
+				bottom: 100px;
+			}
+			.another-class-window {
+				top: 180px;
+			}
+			.another-class-clock {
+				top: 160px;
+				margin: 0 0 0 300px;		
+			}
+		}
+		/*End Another Class*/
+		
+		/*Another karate*/
+		.another-school-karate {
+			position: absolute;
+			width: 100%;
+			float: left;
+			background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
+			overflow: hidden;
+			display: none;
+			
+			.banner-building {
+				  bottom: 185px;
+  				  z-index: 0;
+			}
+			.another-school-bg {
+				transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+				position: absolute;
+				left:50%;
+				bottom: 184px;
+	    	}
+			.another-school-building {
+				@extend.another-school-bg;
+				margin: 0 0 -3px;
+			}
+			.banner-cloud-white {
+				  top: 130px;
+ 				  margin: 0px 0px 0px 100px;
+			}
+			.banner-cloud-transparent {
+				top: 40px;
+			}
+			.another-school-busstop {
+				@extend.another-school-bg;
+				margin: 0 0 0 240px;
+			}
+			.another-school-boy {
+				overflow: hidden;
+				bottom: 150px;
+				margin: 0 0 0 180px;
+			}
+		}
+		/*End Another karate*/
+		
+		/*Another Activity*/
+		.another-school-activity {
+			position: absolute;
+			width: 100%;
+			background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
+			overflow: hidden;
+			display: none;
+			
+			.banner-building {
+				  bottom: 185px;
+  				  z-index: 0;
+			}
+			.another-school-bg {
+				transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+				position: absolute;
+				left:50%;
+				bottom: 184px;
+	    	}
+			.another-school-building {
+				@extend.another-school-bg;
+				margin: 0 0 -2px;
+			}
+			.banner-cloud-white {
+				  top: 130px;
+ 				  margin: 0px 0px 0px 100px;
+			}
+			.banner-cloud-transparent {
+				top: 40px;
+			}
+			.another-school-busstop {
+				@extend.another-school-bg;
+				margin: 0 0 0 240px;
+			}
+			.another-school-boy {
+				overflow: hidden;
+				bottom: 150px;
+				margin: 0 0 0 180px;
+			}
+		}
+		/*End Another Activity*/
+		
+		/*Another School Stay*/
+		.another-school {
+			&.stay {
+				display: none;
+			}
+		}
+		/*End Another School Stay*/
+		
+		.normal-banner-seps {
+			overflow: hidden;
+			position: absolute;
+			display: none;
+			width: 3px;
+			top: 0;
+			right: 0;
+			border-right: 3px solid rgba(0,0,0,0.1);
+		}
+	}
+	
+/*//////////<<<<<<<<< Right Story >>>>>>>>>>>>/////////////////////*/
+	.right-story {
+		@extend.left-story;
+		
+		/*Champs School*/
 		.champs-school {
 			@extend.another-school;
 			right: 0;
@@ -254,41 +389,9 @@ header{
 				top: 40px;
 			}
 		}
-		.normal-banner-seps {
-			overflow: hidden;
-			width: 3px;
-			top: 0;
-			border-right: 3px solid rgba(0,0,0,0.1);
-		}
-	}
-	
-	/*Class Banner*/
-	.class-home {
-		@extend.normal-home;
-		background: none;
-		display: none;
-		bottom: 0;
+		/*End Champs School*/
 		
-		
-		.another-class {
-			@extend.another-school;
-			background: #76b598 url(../img/banner/another_class_bg.png) repeat-x 0 bottom;
-			left: 0;
-			top: 0;
-			.another-class-stu {
-				bottom: 100px;
-			}
-			.another-class-char {
-				bottom: 100px;
-			}
-			.another-class-window {
-				top: 180px;
-			}
-			.another-class-clock {
-				top: 160px;
-				margin: 0 0 0 300px;		
-			}
-		}
+		/*Champs Class*/
 		.champs-class {
 			@extend.another-class;
 			right: 0;
@@ -308,59 +411,10 @@ header{
 				margin: 0 0 0 -300px;
 			}
 		}
-		.class-banner-seps {
-			@extend.normal-banner-seps;
-			border-right: 4px solid #fff;
-		}
-	}
-	
-	/*Karate Banner*/
-	.karate-home {
-		position: relative;
-		overflow: hidden;
-		width: 100%;
-		display: none;
+		/*End Champs Class*/
 		
-		.another-school-activity {
-			position: absolute;
-			width: 50%;
-			float: left;
-			background: #cbefff url(../img/banner/bgNew.jpg) repeat-x left bottom ;
-			overflow: hidden;
-			
-			.banner-building {
-				  bottom: 185px;
-  				  z-index: 0;
-			}
-			.another-school-bg {
-				transform: translateX(-50%);
-				-webkit-transform: translateX(-50%);
-				position: absolute;
-				left:50%;
-				bottom: 184px;
-	    	}
-			.another-school-building {
-				@extend.another-school-bg;
-				margin: 0 0 -2px;
-			}
-			.banner-cloud-white {
-				  top: 130px;
- 				  margin: 0px 0px 0px 100px;
-			}
-			.banner-cloud-transparent {
-				top: 40px;
-			}
-			.another-school-busstop {
-				@extend.another-school-bg;
-				margin: 0 0 0 240px;
-			}
-			.another-school-boy {
-				overflow: hidden;
-				bottom: 150px;
-				margin: 0 0 0 180px;
-			}
-		}
-		.champs-school-activity {
+		/*Champs Karate*/
+		.champs-school-karate {
 			@extend.another-school-activity;
 			background: #cbefff url(../img/banner/champs_activity_bg.png) repeat-x left bottom;
 			right: 0;
@@ -386,35 +440,46 @@ header{
 				bottom: 20px;
 			}
 		}
-		.class-banner-seps {
-			@extend.normal-banner-seps;
-			border-right: 4px solid #fff;
-		}
-	}
-	
-	/*Chess Banner*/
-	.chess-home {
-		@extend.karate-home;
-		display: none;
+		/*End Champs karate*/
+		
+		/*Champs Activity*/
 		.champs-school-activity {
+			@extend.another-school-activity;
+			background: #cbefff url(../img/banner/champs_activity_bg.png) repeat-x left bottom;
+			right: 0;
 			
+			.banner-building {
+				  bottom: 185px;
+  				  z-index: 0;
+			}
+			.champs-school-building {
+				@extend.another-school-bg;
+				margin: 0 0 -2px -280px;
+			}
+			.banner-cloud-white {
+				  top: 130px;
+ 				  margin: 0px 0px 0px 100px;
+			}
+			.banner-cloud-transparent {
+				top: 40px;
+			}
 			.champs-school-chess {
-				@extend.champs-school-karate;
-				margin: 0 0 0 0px;
+				@extend.another-school-bg;
+				margin: 0 ;
+				bottom: 20px;
 			}
 		}
+		/*End Champs Activity*/
+		
+		/*Champs School Stay*/
+		.champs-school {
+			@extend.another-school;
+		}
+		/*End School Stay*/		
 	}
-	
-	/*Going Home*/
-	.normal-home{
-	&.going-home {
-		display: none;
-	}
-	}
-	
 	/*Festival Home*/
 	.festival-home {
-		position: relative;
+		position: absolute;
 		overflow: hidden;
 		width: 100%;
 		display: none;
@@ -467,11 +532,11 @@ header{
 	
 	/*Champions Home*/
 	.champions-home {
-		position: relative;
+		position: absolute;
 		overflow: hidden;
 		width: 100%;
 		background: #4bcfc9 url(../img/banner/champions_bg.png) repeat-x left bottom ;
-		display: none;
+		display: block;
 		
 		.champions-stage {
 			transform: translateX(-50%);
@@ -492,13 +557,14 @@ header{
 			bottom: 10px;
 			margin: 0 0 0 250px;
 		}
-	}
+	}	
 }
 
 .stage-story {
-	position: absolute;
-	bottom: 20px;
+	position: relative;
+	bottom: 90px;
 	width: 1280px;
+	z-index: 1;
 	left: 50%;
 	transform: translateX(-50%);
 	
@@ -1675,9 +1741,15 @@ Back to top button
 #back-top a {
 	display: block;
 	/* background color transition */
-	-webkit-transition: 1s;
+	width: 106px;
+	height: 209px;
+	/*-webkit-transition: 1s;
 	-moz-transition: 1s;
-	transition: 1s;
+	transition: 1s;*/
+	background: url(../img/back_top.png) no-repeat 0px;
+	&:hover {
+		background: url(../img/back_top_hover.gif) no-repeat 0px;
+	}
 }
 
 /*End Index Page*/
