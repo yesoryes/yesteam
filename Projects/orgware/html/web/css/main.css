@@ -2113,7 +2113,7 @@ footer {
       .contact-us .pad-row .contact-content .line {
         background-color: #fd9189;
         width: 63%;
-        margin: 10% auto;
+        margin: 5% auto;
         height: 1px;
         opacity: 1; }
       .contact-us .pad-row .contact-content .contact-heading {
@@ -2144,7 +2144,7 @@ footer {
           background: url(../img/phno.png) left center no-repeat; }
         .contact-us .pad-row .contact-content .conatct-source .sales-email {
           background: url(../img/sales-email.png) left center no-repeat;
-          margin: 37px 0; }
+          margin: 30px 0; }
           .contact-us .pad-row .contact-content .conatct-source .sales-email:first-child a {
             color: 1e1e1e !important; }
         .contact-us .pad-row .contact-content .conatct-source p {
@@ -2962,7 +2962,7 @@ footer {
         color: #1e1e1e;
         font-family: 'LinotypeMetroNovaProLight';
         font-size: 40px;
-        margin: 1% 0; }
+        margin: 2% 0; }
         .ip-about .about-content .h1-container h1::before, .ip-about .about-content .h1-container .expansion-web h2::before, .expansion-web .ip-about .about-content .h1-container h2::before {
           margin-left: -50%; }
         .ip-about .about-content .h1-container h1::after, .ip-about .about-content .h1-container .expansion-web h2::after, .expansion-web .ip-about .about-content .h1-container h2::after {
@@ -2992,7 +2992,7 @@ footer {
       .about-nav .tab-head .tab-navbar li, .portfolio-nav .tab-head .tab-navbar li {
         border-right: 1px solid #cacaca;
         display: inline-block;
-        width: 24%;
+        width: 33%;
         height: 50px; }
         .about-nav .tab-head .tab-navbar li:first-child, .portfolio-nav .tab-head .tab-navbar li:first-child {
           border-left: 1px solid #cacaca; }
@@ -3304,7 +3304,7 @@ footer {
       color: #1e1e1e;
       font-family: 'LinotypeMetroNovaProLight';
       font-size: 40px;
-      margin: 2% 0;
+      margin: 3% 0 1%;
       text-transform: uppercase; }
       .ip-career .h1-container h1::before, .ip-career .h1-container .expansion-web h2::before, .expansion-web .ip-career .h1-container h2::before {
         margin-left: -50%; }
@@ -9824,7 +9824,7 @@ footer {
                     line-height: 15px;
                     text-transform: uppercase;
                     width: auto;
-                    font-size: 10px; }
+                    font-size: 0.625em; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services1 .back {
                   position: absolute;
                   width: 100%;
@@ -9841,7 +9841,7 @@ footer {
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
-                  background: url(../img/more-app.png) 50% 85% no-repeat #fff !important; }
+                  background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services1 .back .back-content {
                     display: block;
                     font-family: 'LinotypeMetroNovaProThin';
@@ -9855,8 +9855,8 @@ footer {
                     width: auto;
                     text-decoration: none;
                     display: block;
-                    font-size: 15px !important;
-                    padding: 40px !important; }
+                    font-size: 0.9375em !important;
+                    padding: 40px 50px !important; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 {
                   width: 48%;
                   height: 140px;
@@ -9911,7 +9911,7 @@ footer {
                     line-height: 15px;
                     text-transform: uppercase;
                     width: auto;
-                    font-size: 10px; }
+                    font-size: 0.625em; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 .back {
                   position: absolute;
                   width: 100%;
@@ -9928,7 +9928,7 @@ footer {
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
-                  background: url(../img/more-app.png) 50% 85% no-repeat #fff !important; }
+                  background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 .back .back-content {
                     display: block;
                     font-family: 'LinotypeMetroNovaProThin';
@@ -9942,8 +9942,8 @@ footer {
                     width: auto;
                     text-decoration: none;
                     display: block;
-                    font-size: 15px !important;
-                    padding: 40px !important; }
+                    font-size: 0.9375em !important;
+                    padding: 40px 50px !important; }
               .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 {
                 float: left;
                 margin: 0px 0% 20px; }
@@ -10002,7 +10002,7 @@ footer {
                     line-height: 15px;
                     text-transform: uppercase;
                     width: auto;
-                    font-size: 10px; }
+                    font-size: 0.625em; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services1 .back {
                   position: absolute;
                   width: 100%;
@@ -10019,7 +10019,7 @@ footer {
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
-                  background: url(../img/more-app.png) 50% 85% no-repeat #fff !important; }
+                  background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services1 .back .back-content {
                     display: block;
                     font-family: 'LinotypeMetroNovaProThin';
@@ -10033,8 +10033,8 @@ footer {
                     width: auto;
                     text-decoration: none;
                     display: block;
-                    font-size: 15px !important;
-                    padding: 40px !important; }
+                    font-size: 0.9375em !important;
+                    padding: 40px 50px !important; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 {
                   width: 48%;
                   height: 140px;
@@ -10089,7 +10089,7 @@ footer {
                     line-height: 15px;
                     text-transform: uppercase;
                     width: auto;
-                    font-size: 10px; }
+                    font-size: 0.625em; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 .back {
                   position: absolute;
                   width: 100%;
@@ -10106,7 +10106,7 @@ footer {
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
-                  background: url(../img/more-app.png) 50% 85% no-repeat #fff !important; }
+                  background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 .back .back-content {
                     display: block;
                     font-family: 'LinotypeMetroNovaProThin';
@@ -10120,8 +10120,8 @@ footer {
                     width: auto;
                     text-decoration: none;
                     display: block;
-                    font-size: 15px !important;
-                    padding: 40px !important; }
+                    font-size: 0.9375em !important;
+                    padding: 40px 50px !important; }
               .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 {
                 float: left;
                 margin: 0px 0% 40px; }
@@ -10180,7 +10180,7 @@ footer {
                     line-height: 15px;
                     text-transform: uppercase;
                     width: auto;
-                    font-size: 10px; }
+                    font-size: 0.625em; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services1 .back {
                   position: absolute;
                   width: 100%;
@@ -10197,7 +10197,7 @@ footer {
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
-                  background: url(../img/more-app.png) 50% 85% no-repeat #fff !important; }
+                  background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services1 .back .back-content {
                     display: block;
                     font-family: 'LinotypeMetroNovaProThin';
@@ -10211,8 +10211,8 @@ footer {
                     width: auto;
                     text-decoration: none;
                     display: block;
-                    font-size: 15px !important;
-                    padding: 40px !important; }
+                    font-size: 0.9375em !important;
+                    padding: 40px 50px !important; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 {
                   width: 48%;
                   height: 140px;
@@ -10267,7 +10267,7 @@ footer {
                     line-height: 15px;
                     text-transform: uppercase;
                     width: auto;
-                    font-size: 10px; }
+                    font-size: 0.625em; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 .back {
                   position: absolute;
                   width: 100%;
@@ -10284,7 +10284,7 @@ footer {
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
-                  background: url(../img/more-app.png) 50% 85% no-repeat #fff !important; }
+                  background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 .back .back-content {
                     display: block;
                     font-family: 'LinotypeMetroNovaProThin';
@@ -10298,8 +10298,8 @@ footer {
                     width: auto;
                     text-decoration: none;
                     display: block;
-                    font-size: 15px !important;
-                    padding: 40px !important; }
+                    font-size: 0.9375em !important;
+                    padding: 40px 50px !important; }
 
   .more-serv-mob {
     width: 100%;
@@ -10336,6 +10336,7 @@ footer {
       .more-serv-mob a:hover:after, .more-serv-mob a:active:after {
         width: 100%; }
 
+  /*prodcut 480*/
   .products {
     width: 100%;
     float: left;
@@ -10366,7 +10367,10 @@ footer {
         -webkit-background-size: contain;
         -moz-background-size: contain; }
         .products .product-content .product-1:hover {
-          background: url(../img/product1-mob-hover.png) top no-repeat; }
+          background: url(../img/product1-mob-hover.png) top no-repeat;
+          background-size: contain;
+          -webkit-background-size: contain;
+          -moz-background-size: contain; }
       .products .product-content .product-2 {
         float: left;
         width: 100%;
@@ -10378,7 +10382,10 @@ footer {
         -webkit-background-size: contain;
         -moz-background-size: contain; }
         .products .product-content .product-2:hover {
-          background: url(../img/product2-mob-hover.png) top no-repeat; }
+          background: url(../img/product2-mob-hover.png) top no-repeat;
+          background-size: contain;
+          -webkit-background-size: contain;
+          -moz-background-size: contain; }
       .products .product-content .product-3 {
         float: left;
         width: 100%;
@@ -10391,7 +10398,10 @@ footer {
         -webkit-background-size: contain;
         -moz-background-size: contain; }
         .products .product-content .product-3:hover {
-          background: url(../img/product3-mob-hover.png) top no-repeat; }
+          background: url(../img/product3-mob-hover.png) top no-repeat;
+          background-size: contain;
+          -webkit-background-size: contain;
+          -moz-background-size: contain; }
       .products .product-content .product-4 {
         float: left;
         width: 100%;
@@ -10404,7 +10414,10 @@ footer {
         -webkit-background-size: contain;
         -moz-background-size: contain; }
         .products .product-content .product-4:hover {
-          background: url(../img/product4-mob-hover.png) top no-repeat; }
+          background: url(../img/product4-mob-hover.png) top no-repeat;
+          background-size: contain;
+          -webkit-background-size: contain;
+          -moz-background-size: contain; }
       .products .product-content .product-main {
         width: 97%;
         height: 293px;
@@ -10958,7 +10971,7 @@ footer {
         .about-nav .tab-head .tab-navbar li, .portfolio-nav .tab-head .tab-navbar li {
           border-right: 1px solid #cacaca;
           display: inline-block;
-          width: 24%;
+          width: 32%;
           height: 50px; }
           .about-nav .tab-head .tab-navbar li:first-child, .portfolio-nav .tab-head .tab-navbar li:first-child {
             border-left: 1px solid #cacaca; }
@@ -11166,7 +11179,7 @@ footer {
         .ip-services .pad-row .ip-services-content .service-box:hover {
           background-color: #f8f8f8; }
         .ip-services .pad-row .ip-services-content .service-box_body {
-          padding: 0px 20px; }
+          padding: 20px 20px; }
           .ip-services .pad-row .ip-services-content .service-box_body h4 {
             font-family: 'LinotypeMetroNovaPro';
             font-size: 20px;
@@ -11736,7 +11749,7 @@ footer {
           display: inline-block;
           width: 33% !important;
           float: left;
-          padding: 0;
+          padding: 5px 0;
           margin: 0;
           height: 50px; }
           .portfolio-nav .tab-head .tab-navbar li:first-child {

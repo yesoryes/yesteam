@@ -80,7 +80,7 @@ $(window).load(function()
 	          }
       }
 
-                $.preloadImages("img/4way-color.png", "img/menu_option.png", "img/4way-taxi-color.png","img/acclary-color.png","img/asna-color.png","img/banner-link.png","img/banner-link1024.png","img/banner-mob-link.png","img/paradise-color.png","img/product1-hover.png","img/product2-hover.png","img/product3-hover.png","img/product4-hover.png","img/right-nav.png","img/seskhan-link.png","img/product1-1024-hover.png","img/product2-1024-hover.png","img/product3-1024-hover.png","img/product4-1024-hover.png", "img/service1-hover.png", "img/service2-hover.png", "img/service3-hover.png", "img/service4-hover.png","img/service5-hover.png", "img/service6-hover.png", "img/service7-hover.png", "img/service8-hover.png", "img/page-top-hover.png", "img/service9-hover.png", "img/service10-hover.png", "img/menu_option.png", "img/product-main.jpg", "img/product-main-1024.jpg", "img/twitter-hover.png", "img/twitter-menu-hover.png", "img/google-hover.png", "img/google-menu-hover.png", "img/facebook-hover.png", "img/facebook-menu-hover.png", "img/linked-hover.png", "img/linked-menu-hover.png",  "img/product1-mob-hover.png", "img/product2-mob-hover.png", "img/product3-mob-hover.png", "img/product4-mob-hover.png"); 
+                $.preloadImages("img/4way-color.png", "img/menu_option.png", "img/4way-taxi-color.png","img/acclary-color.png","img/asna-color.png","img/banner-link.png","img/banner-link1024.png","img/banner-mob-link.png","img/paradise-color.png","img/product1-hover.png","img/product2-hover.png","img/product3-hover.png","img/product4-hover.png","img/right-nav.png","img/seskhan-link.png","img/product1-1024-hover.png","img/product2-1024-hover.png","img/product3-1024-hover.png","img/product4-1024-hover.png", "img/service1-hover.png", "img/service2-hover.png", "img/service3-hover.png", "img/service4-hover.png","img/service5-hover.png", "img/service6-hover.png", "img/service7-hover.png", "img/service8-hover.png", "img/page-top-hover.png", "img/service9-hover.png", "img/service10-hover.png", "img/menu_option.png", "img/product-main.jpg", "img/product-main-1024.jpg", "img/google-hover.png", "img/google-menu-hover.png", "img/facebook-hover.png", "img/facebook-menu-hover.png", "img/linked-hover.png", "img/linked-menu-hover.png",  "img/product1-mob-hover.png", "img/product2-mob-hover.png", "img/product3-mob-hover.png", "img/product4-mob-hover.png", "img/youtube-hover.png", "img/youtube-menu-hover.png", "img/web-app-menu-hover.png", "img/mobile-app-hover.png", "img/mobile-game-hover.png"); 
 });
  
  // JavaScript Document
@@ -211,6 +211,9 @@ $(document).ready(function () {
     	var accordion = $(this);
     	var accordionaccontent = $(this).next().slideToggle('fast');;
     	var accordionToggleIcon = $(this).children('.toggle-icon');
+		
+		$('.accordion-toggle').children('.toggle-icon').html("<i class='fa fa-plus-circle'></i>");
+		accordionToggleIcon.html("<i class='fa fa-minus-circle'></i>");
 		
     	 $(".accordion-accontent").not($(this).next()).slideUp('fast');
     	// toggle accordion link open class

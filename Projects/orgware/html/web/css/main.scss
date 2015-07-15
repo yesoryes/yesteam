@@ -1453,8 +1453,7 @@ section
 					 height:172px;
 					  float:left; 
 					  overflow:hidden;
-					  display: block; 
-					  
+					  display: block;  
 					  @include transition-product;
 					  margin: 0 0px 5% 0px; 
 					  background:url(../img/product1.png) top no-repeat; 
@@ -2244,7 +2243,7 @@ footer
 				  {
 					  background-color:#fd9189;
 					  width: 63%;
-					  margin: 10% auto;
+					  margin: 5% auto;
 					  height: 1px;
 					  opacity: 1; 
 				  }
@@ -2290,7 +2289,7 @@ footer
 					  .sales-email
 						  {
 							 background:url(../img/sales-email.png) left center no-repeat;
-							   margin: 37px 0;
+							   margin:30px 0;
 							  &:first-child a
 							 {
 								  color:1e1e1e !important;
@@ -3332,7 +3331,7 @@ footer
 									color: #1e1e1e;
 									font-family: 'LinotypeMetroNovaProLight';
 									font-size: 40px;
-									margin: 1% 0;
+									margin: 2% 0;
 									&::before 
 									   {
 										  margin-left: -50%;
@@ -3377,7 +3376,7 @@ footer
 				 {
 					   border-right:1px solid #cacaca;
 					   display:inline-block; 
-					   width: 24%;
+					   width: 33%;
   					   height: 50px;
 					   &:first-child
 					   {
@@ -3798,7 +3797,7 @@ footer
 							  color: #1e1e1e;
 							  font-family: 'LinotypeMetroNovaProLight';
 							  font-size: 40px;
-							  margin: 2% 0;
+							  margin: 3% 0 1%;
 							  text-transform:uppercase;
 							  &::before 
 								 {
@@ -11701,19 +11700,19 @@ section
 														  .front-content 
 																 {
 																	  @include servicesfront-content;
-																	   font-size: 10px;
+																	   font-size: 0.625em;
 																 }
 														 }
 														 .services1 .back
 														{
 														   @include services-back; 
-														    background: url(../img/more-app.png) 50% 85% no-repeat #fff !important;
+														    background: url(../img/more-app.png) 50% 65% no-repeat #fff !important;
 														   .back-content 
 																 {
 																	  @include servicesback-content;
 																	   display: block; 
-																	   font-size: 15px !important; 
-																	   padding: 40px !important; 
+																	   font-size: 0.9375em !important; 
+																	   padding: 40px 50px !important; 
 																 }
 														  
 														}
@@ -11737,20 +11736,20 @@ section
 														  .front-content 
 																 {
 																	  @include servicesfront-content;
-																	  font-size: 10px;
+																	  font-size: 0.625em;
 																 }
 														 }
 														 .services2 .back
 														{
 														  
 														  @include services-back; 
-														   background: url(../img/more-app.png) 50% 85% no-repeat #fff !important;
+														   background: url(../img/more-app.png) 50% 65% no-repeat #fff !important;
 														 .back-content 
 																 {
 																	   @include servicesback-content;
 																	    display: block; 
-																	   font-size: 15px !important; 
-																	   padding: 40px !important; 
+																	   font-size: 0.9375em !important;
+																	    padding: 40px 50px !important; 
 																 }
 														  
 														}
@@ -11780,19 +11779,19 @@ section
 														  .front-content 
 																 {
 																	  @include servicesfront-content;
-																	  font-size: 10px;
+																	  font-size: 0.625em;
 																 }
 														 }
 														 .services1 .back
 														{
 														   @include services-back; 
-														    background: url(../img/more-app.png) 50% 85% no-repeat #fff !important;
+														    background: url(../img/more-app.png) 50% 65% no-repeat #fff !important;
 														   .back-content 
 																 {
 																	  @include servicesback-content;
 																	   display: block; 
-																	   font-size: 15px !important; 
-																	   padding: 40px !important; 
+																	   font-size: 0.9375em !important;
+																	    padding: 40px 50px !important;  
 																 }
 														  
 														}
@@ -11816,20 +11815,20 @@ section
 														  .front-content 
 																 {
 																	  @include servicesfront-content;
-																	  font-size: 10px;
+																	  font-size: 0.625em;
 																 }
 														 }
 														 .services2 .back
 														{
 														  
 														  @include services-back; 
-														   background: url(../img/more-app.png) 50% 85% no-repeat #fff !important;														  
+														   background: url(../img/more-app.png) 50% 65% no-repeat #fff !important;														  
 														 .back-content 
 																 {
 																	   @include servicesback-content;
 																	    display: block; 
-																	   font-size: 15px !important; 
-																	   padding: 40px !important; 
+																	   font-size: 0.9375em !important;
+																	    padding: 40px 50px !important;  
 																 }
 														  
 														}
@@ -11858,19 +11857,19 @@ section
 														  .front-content 
 																 {
 																	  @include servicesfront-content;
-																	  font-size: 10px;
+																	  font-size: 0.625em;
 																 }
 														 }
 														 .services1 .back
 														{
 														   @include services-back; 
-														    background: url(../img/more-app.png) 50% 85% no-repeat #fff !important;
+														    background: url(../img/more-app.png) 50% 65% no-repeat #fff !important;
 														   .back-content 
 																 {
 																	  @include servicesback-content;
 																	   display: block; 
-																	   font-size: 15px !important; 
-																	   padding: 40px !important; 
+																	   font-size: 0.9375em !important; 
+																	    padding: 40px 50px !important;  
 																 }
 														  
 														}
@@ -11894,20 +11893,20 @@ section
 														  .front-content 
 																 {
 																	  @include servicesfront-content;
-																	  font-size: 10px;
+																	  font-size: 0.625em;
 																 }
 														 }
 														 .services2 .back
 														{
 														  
 														  @include services-back; 
-														  background: url(../img/more-app.png) 50% 85% no-repeat #fff !important; 
+														  background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; 
 														  .back-content 
 																 {
 																	  @include servicesback-content;
 																	   display: block; 
-																	   font-size: 15px !important; 
-																	   padding: 40px !important; 
+																	   font-size: 0.9375em !important; 
+																	    padding: 40px 50px !important;  
 																 }
 														}
 													 
@@ -11971,6 +11970,7 @@ section
 			}
 			
 		}
+/*prodcut 480*/
 .products
  {          
           width: 100%;
@@ -12011,6 +12011,10 @@ section
 						&:hover
 						{
 							background:url(../img/product1-mob-hover.png) top no-repeat; 
+							background-size:contain;
+						-webkit-background-size:contain;
+						-moz-background-size:contain; 
+							
 						}
 				  }
 				  
@@ -12029,6 +12033,9 @@ section
 						&:hover
 						{
 							background:url(../img/product2-mob-hover.png) top no-repeat; 
+							background-size:contain;
+						-webkit-background-size:contain;
+						-moz-background-size:contain; 
 						} 
 				  }
 				   .product-3
@@ -12046,7 +12053,10 @@ section
 						-moz-background-size:contain;
 						&:hover
 						{
-							background:url(../img/product3-mob-hover.png) top no-repeat; 
+							background:url(../img/product3-mob-hover.png) top no-repeat;
+							background-size:contain;
+							-webkit-background-size:contain;
+							-moz-background-size:contain;  
 						} 
 						
 						
@@ -12067,6 +12077,9 @@ section
 						&:hover
 						{
 							background:url(../img/product4-mob-hover.png) top no-repeat;
+							background-size:contain;
+						-webkit-background-size:contain;
+						-moz-background-size:contain; 
 						}
 				  }
 				  .product-main
@@ -12869,7 +12882,7 @@ footer
 				 {
 					   border-right:1px solid #cacaca;
 					   display:inline-block; 
-					   width: 24%;
+					   width: 32%;
   					   height: 50px;
 					   &:first-child
 					   {
@@ -13186,7 +13199,7 @@ footer
 				}
 				.service-box_body
 					 {
-						padding:0px 20px;
+						padding:20px 20px;
 						h4
 							  {
 								   font-family: 'LinotypeMetroNovaPro';
@@ -13878,7 +13891,7 @@ footer
 					display:inline-block; 
 					width: 33% !important;
 					float:left;
-					padding: 0;
+					padding: 5px 0;
 					margin: 0;
 					height: 50px;
 						&:first-child {
