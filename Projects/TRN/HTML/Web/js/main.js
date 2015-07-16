@@ -3,7 +3,14 @@
 
 $(document).ready(function() {
 	
-	$("body").queryLoader2();
+	//preloader
+	jQuery(window).load(function () {		
+		$("#preloader").addClass("animated slideOutUp");
+		$("body").removeClass("scr_hide");
+		$(".trn_home").trigger("click");
+		homeOut();
+		setTimeout(homeIn,400);
+	});
 	
 /* For Browser Height*/
 	function resizeSlide() {
@@ -103,6 +110,12 @@ $(document).ready(function() {
 	function setActive(id) {
 		$.scrollify("move",$(id).attr('href'));
 	};
+	
+	// For preloader
+	$('.trn_home').click(function(){
+		$.scrollify("move",'#Home');
+	});
+	
 /*End Menu Click */
 	
 	
