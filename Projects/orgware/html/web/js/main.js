@@ -1,4 +1,13 @@
- 
+$(document).ready(function() {
+	
+	/* For Browser Height*/ 
+	$("header .carousel-inner .item").css({
+			'height' : $( window ).height() 
+	});
+	
+	 
+	
+}); 
 /*Menu More Button*/
  var more = function() {  
   $('.more, .navbar-toggle').click(function() { 

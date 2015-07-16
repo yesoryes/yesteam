@@ -303,81 +303,295 @@ body {
 header {
   overflow: hidden;
   position: relative; }
-  header .carousel-caption {
-    text-align: right;
-    text-shadow: none;
-    left: 0;
-    right: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    top: 22%; }
-    header .carousel-caption .banner-text-slide1 {
+  header .carousel-inner .item.one {
+    background: url(../img/1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  header .carousel-inner .item.two {
+    background: url(../img/2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  header .carousel-inner .item.three {
+    background: url(../img/3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  header .carousel-inner .item.four {
+    background: url(../img/4.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  header .carousel-inner .item.five {
+    background: url(../img/5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  header .carousel-caption.first-slide {
+    bottom: 5%;
+    text-transform: uppercase; }
+    header .carousel-caption.first-slide .banner-text-1 {
+      font-family: 'LinotypeMetroNovaProCond';
+      font-size: 2.75em;
+      color: #fff;
+      text-shadow: none; }
+      header .carousel-caption.first-slide .banner-text-1 span {
+        font-size: 0.925em;
+        font-family: 'LinotypeMetroNovaProThin'; }
+    header .carousel-caption.first-slide .banner-link {
+      width: 108px;
+      height: 45px;
+      margin: 30px auto;
+      text-transform: uppercase;
+      text-shadow: none;
+      position: relative; }
+      header .carousel-caption.first-slide .banner-link a {
+        text-decoration: none;
+        color: #fff;
+        width: 108px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-family: 'LinotypeMetroNovaProLight';
+        font-size: 1.5343em;
+        background: url(../img/banner-link.png) center center no-repeat;
+        display: block;
+        transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -webkit-transition: 0.5s all; }
+        header .carousel-caption.first-slide .banner-link a:after {
+          width: 0%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #fff; }
+        header .carousel-caption.first-slide .banner-link a:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
+        header .carousel-caption.first-slide .banner-link a:hover, header .carousel-caption.first-slide .banner-link a:active {
+          color: #454545; }
+        header .carousel-caption.first-slide .banner-link a:hover:after, header .carousel-caption.first-slide .banner-link a:active:after {
+          width: 100%; }
+  header .carousel-caption.second-slide {
+    top: 15%;
+    text-transform: uppercase; }
+    header .carousel-caption.second-slide .banner-text-2 {
+      font-family: 'LinotypeMetroNovaProBold';
+      font-size: 3.95em;
+      color: #fff;
+      text-shadow: none; }
+      header .carousel-caption.second-slide .banner-text-2 span {
+        font-family: 'LinotypeMetroNovaProThin'; }
+    header .carousel-caption.second-slide .banner-link {
+      width: 108px;
+      height: 45px;
+      margin: 30px auto;
+      text-transform: uppercase;
+      text-shadow: none;
+      position: relative; }
+      header .carousel-caption.second-slide .banner-link a {
+        text-decoration: none;
+        color: #fff;
+        width: 108px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-family: 'LinotypeMetroNovaProLight';
+        font-size: 1.5343em;
+        background: url(../img/banner-link.png) center center no-repeat;
+        display: block;
+        transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -webkit-transition: 0.5s all; }
+        header .carousel-caption.second-slide .banner-link a:after {
+          width: 0%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #fff; }
+        header .carousel-caption.second-slide .banner-link a:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
+        header .carousel-caption.second-slide .banner-link a:hover, header .carousel-caption.second-slide .banner-link a:active {
+          color: #454545; }
+        header .carousel-caption.second-slide .banner-link a:hover:after, header .carousel-caption.second-slide .banner-link a:active:after {
+          width: 100%; }
+  header .carousel-caption.third-slide {
+    top: 15%;
+    text-transform: uppercase; }
+    header .carousel-caption.third-slide .banner-text-3 {
+      font-family: 'LinotypeMetroNovaProCond';
+      font-size: 2.86em;
+      color: #fff;
+      text-shadow: none; }
+      header .carousel-caption.third-slide .banner-text-3 span {
+        font-family: 'LinotypeMetroNovaProBold'; }
+    header .carousel-caption.third-slide .banner-link {
+      width: 108px;
+      height: 45px;
+      margin: 30px auto;
+      text-transform: uppercase;
+      text-shadow: none;
+      position: relative; }
+      header .carousel-caption.third-slide .banner-link a {
+        text-decoration: none;
+        color: #fff;
+        width: 108px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-family: 'LinotypeMetroNovaProLight';
+        font-size: 1.5343em;
+        background: url(../img/banner-link.png) center center no-repeat;
+        display: block;
+        transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -webkit-transition: 0.5s all; }
+        header .carousel-caption.third-slide .banner-link a:after {
+          width: 0%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #fff; }
+        header .carousel-caption.third-slide .banner-link a:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
+        header .carousel-caption.third-slide .banner-link a:hover, header .carousel-caption.third-slide .banner-link a:active {
+          color: #454545; }
+        header .carousel-caption.third-slide .banner-link a:hover:after, header .carousel-caption.third-slide .banner-link a:active:after {
+          width: 100%; }
+  header .carousel-caption.fourth-slide {
+    bottom: 15%; }
+    header .carousel-caption.fourth-slide .banner-text-4 {
       font-family: 'LinotypeMetroNovaProLight';
-      line-height: 6em; }
-      header .carousel-caption .banner-text-slide1 .banner-text1 {
-        font-size: 2.2em;
-        float: left;
-        line-height: 1em; }
-      header .carousel-caption .banner-text-slide1 .banner-text2 {
-        font-size: 7em;
-        float: left;
-        margin: -8px 0 0 -95px; }
-    header .carousel-caption .banner-text-slide2 {
-      font-family: 'LinotypeMetroNovaProLight';
-      line-height: 2em;
-      padding: 38% 0 0 0; }
-      header .carousel-caption .banner-text-slide2 .banner-text1 {
-        font-size: 7em;
-        line-height: 1em; }
-      header .carousel-caption .banner-text-slide2 .banner-text2 {
+      font-size: 2.1em;
+      color: #fff;
+      text-shadow: none;
+      text-transform: lowercase;
+      text-align: left;
+      line-height: 39px; }
+      header .carousel-caption.fourth-slide .banner-text-4 span.text-1 {
+        font-family: 'LinotypeMetroNovaProLight';
         font-size: 2.1em; }
-        header .carousel-caption .banner-text-slide2 .banner-text2 span {
-          font-family: 'LinotypeMetroNovaProBold'; }
-    header .carousel-caption .banner-text-slide3 {
-      line-height: 3em; }
-      header .carousel-caption .banner-text-slide3 .banner-text1 {
-        font-size: 3.8em;
-        line-height: 1em;
-        font-family: 'LinotypeMetroNovaProCond'; }
-      header .carousel-caption .banner-text-slide3 .banner-text2 {
-        font-size: 2.8em;
-        font-family: 'LinotypeMetroNovaProMedium'; }
-        header .carousel-caption .banner-text-slide3 .banner-text2 span {
-          font-family: 'LinotypeMetroNovaProLight';
-          font-size: 0.9em; }
-    header .carousel-caption .banner-text-slide4 {
-      line-height: 3em; }
-      header .carousel-caption .banner-text-slide4 .banner-text1 {
-        font-size: 1.8em;
-        line-height: 1em;
-        font-family: 'LinotypeMetroNovaProCond'; }
-      header .carousel-caption .banner-text-slide4 .banner-text2 {
-        font-size: 2.8em;
-        color: #dcb033;
-        font-family: 'LinotypeMetroNovaProMedium'; }
-        header .carousel-caption .banner-text-slide4 .banner-text2 span {
-          font-family: 'LinotypeMetroNovaProLight';
-          font-size: 0.9em;
-          color: #fff; }
-    header .carousel-caption .banner-link {
-      width: 37px;
-      height: 43px;
-      top: 100%;
-      right: 1%;
-      position: absolute;
-      background: url(../img/banner-link.png) top no-repeat; }
-      header .carousel-caption .banner-link:hover {
-        background: url(../img/banner-link.png) bottom no-repeat; }
-    header .carousel-caption .banner-link-left {
-      width: 37px;
-      height: 43px;
-      top: 100%;
-      left: 35%;
-      position: absolute;
-      background: url(../img/banner-link.png) top no-repeat; }
-      header .carousel-caption .banner-link-left:hover {
-        background: url(../img/banner-link.png) bottom no-repeat; }
+      header .carousel-caption.fourth-slide .banner-text-4 span.text-3 {
+        font-family: 'LinotypeMetroNovaProBold';
+        font-size: 1.05em;
+        text-transform: uppercase; }
+    header .carousel-caption.fourth-slide .banner-link {
+      width: 108px;
+      height: 45px;
+      margin: 30px auto;
+      text-transform: uppercase;
+      text-shadow: none;
+      position: relative; }
+      header .carousel-caption.fourth-slide .banner-link a {
+        text-decoration: none;
+        color: #fff;
+        width: 108px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-family: 'LinotypeMetroNovaProLight';
+        font-size: 1.5343em;
+        background: url(../img/banner-link.png) center center no-repeat;
+        display: block;
+        transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -webkit-transition: 0.5s all; }
+        header .carousel-caption.fourth-slide .banner-link a:after {
+          width: 0%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #fff; }
+        header .carousel-caption.fourth-slide .banner-link a:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
+        header .carousel-caption.fourth-slide .banner-link a:hover, header .carousel-caption.fourth-slide .banner-link a:active {
+          color: #454545; }
+        header .carousel-caption.fourth-slide .banner-link a:hover:after, header .carousel-caption.fourth-slide .banner-link a:active:after {
+          width: 100%; }
+  header .carousel-caption.fifth-slide {
+    top: 30%;
+    text-transform: uppercase; }
+    header .carousel-caption.fifth-slide .banner-text-5 {
+      font-family: 'LinotypeMetroNovaProBold';
+      font-size: 1.25em;
+      color: #fff;
+      text-shadow: none;
+      padding: 3% 0 3%; }
+      header .carousel-caption.fifth-slide .banner-text-5 span {
+        font-family: 'LinotypeMetroNovaProLight'; }
+    header .carousel-caption.fifth-slide .banner-link {
+      width: 108px;
+      height: 45px;
+      margin: 30px auto;
+      text-transform: uppercase;
+      text-shadow: none;
+      position: relative; }
+      header .carousel-caption.fifth-slide .banner-link a {
+        text-decoration: none;
+        color: #fff;
+        width: 108px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-family: 'LinotypeMetroNovaProLight';
+        font-size: 1.5343em;
+        background: url(../img/banner-link.png) center center no-repeat;
+        display: block;
+        transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -webkit-transition: 0.5s all; }
+        header .carousel-caption.fifth-slide .banner-link a:after {
+          width: 0%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #fff; }
+        header .carousel-caption.fifth-slide .banner-link a:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
+        header .carousel-caption.fifth-slide .banner-link a:hover, header .carousel-caption.fifth-slide .banner-link a:active {
+          color: #454545; }
+        header .carousel-caption.fifth-slide .banner-link a:hover:after, header .carousel-caption.fifth-slide .banner-link a:active:after {
+          width: 100%; }
 
 section {
   background-color: #fff;
@@ -4920,85 +5134,6 @@ footer {
     padding: 2% 0; }
 
   /* header part 1024*/
-  header {
-    overflow: hidden;
-    position: relative; }
-    header .carousel-caption {
-      text-align: right;
-      text-shadow: none;
-      left: 0;
-      right: 0;
-      padding: 0;
-      position: absolute;
-      bottom: 0;
-      top: 22%; }
-      header .carousel-caption .banner-text-slide1 {
-        font-family: 'LinotypeMetroNovaProLight';
-        line-height: 3em; }
-        header .carousel-caption .banner-text-slide1 .banner-text1 {
-          font-size: 1.7em;
-          float: left;
-          line-height: 1em; }
-        header .carousel-caption .banner-text-slide1 .banner-text2 {
-          font-size: 4.7em;
-          float: left;
-          margin: 2% 0 0 -16%; }
-      header .carousel-caption .banner-text-slide2 {
-        font-family: 'LinotypeMetroNovaProLight';
-        line-height: 2em;
-        padding: 30% 0 0 0; }
-        header .carousel-caption .banner-text-slide2 .banner-text1 {
-          font-size: 4.6em;
-          line-height: 1em; }
-        header .carousel-caption .banner-text-slide2 .banner-text2 {
-          font-size: 1.7em; }
-          header .carousel-caption .banner-text-slide2 .banner-text2 span {
-            font-family: 'LinotypeMetroNovaProBold'; }
-      header .carousel-caption .banner-text-slide3 {
-        line-height: 3em; }
-        header .carousel-caption .banner-text-slide3 .banner-text1 {
-          font-size: 3.8em;
-          line-height: 1em;
-          font-family: 'LinotypeMetroNovaProCond'; }
-        header .carousel-caption .banner-text-slide3 .banner-text2 {
-          font-size: 2.8em;
-          font-family: 'LinotypeMetroNovaProMedium'; }
-          header .carousel-caption .banner-text-slide3 .banner-text2 span {
-            font-family: 'LinotypeMetroNovaProLight';
-            font-size: 0.9em; }
-      header .carousel-caption .banner-text-slide4 {
-        line-height: 3em; }
-        header .carousel-caption .banner-text-slide4 .banner-text1 {
-          font-size: 1.8em;
-          line-height: 1em;
-          font-family: 'LinotypeMetroNovaProCond'; }
-        header .carousel-caption .banner-text-slide4 .banner-text2 {
-          font-size: 2.8em;
-          color: #dcb033;
-          font-family: 'LinotypeMetroNovaProMedium'; }
-          header .carousel-caption .banner-text-slide4 .banner-text2 span {
-            font-family: 'LinotypeMetroNovaProLight';
-            font-size: 0.9em;
-            color: #fff; }
-      header .carousel-caption .banner-link {
-        width: 37px;
-        height: 43px;
-        top: 100%;
-        right: 1%;
-        position: absolute;
-        background: url(../img/banner-link.png) top no-repeat; }
-        header .carousel-caption .banner-link:hover {
-          background: url(../img/banner-link.png) bottom no-repeat; }
-      header .carousel-caption .banner-link-left {
-        width: 37px;
-        height: 43px;
-        top: 100%;
-        left: 35%;
-        position: absolute;
-        background: url(../img/banner-link.png) top no-repeat; }
-        header .carousel-caption .banner-link-left:hover {
-          background: url(../img/banner-link.png) bottom no-repeat; }
-
   .our-team {
     margin: 90px 0px 0 0;
     overflow: hidden; }
@@ -7325,87 +7460,6 @@ footer {
     max-width: 100%;
     /* height: 300px;*/ }
 
-  /* header 768 */
-  header {
-    overflow: hidden;
-    position: relative;
-    margin: 8% 0 0 !important; }
-    header .carousel-caption {
-      text-align: right;
-      text-shadow: none;
-      left: 0;
-      right: 0;
-      padding: 0;
-      position: absolute;
-      bottom: 0;
-      top: 22%; }
-      header .carousel-caption .banner-text-slide1 {
-        font-family: 'LinotypeMetroNovaProLight';
-        line-height: 2.4em; }
-        header .carousel-caption .banner-text-slide1 .banner-text1 {
-          font-size: 1.3em;
-          float: left;
-          line-height: 1em; }
-        header .carousel-caption .banner-text-slide1 .banner-text2 {
-          font-size: 3.2em;
-          float: left;
-          margin: 2% 0 0 -16%; }
-      header .carousel-caption .banner-text-slide2 {
-        font-family: 'LinotypeMetroNovaProLight';
-        line-height: 1.5em;
-        padding: 30% 0 0 0%; }
-        header .carousel-caption .banner-text-slide2 .banner-text1 {
-          font-size: 2.5em;
-          line-height: 1em; }
-        header .carousel-caption .banner-text-slide2 .banner-text2 {
-          font-size: 1em; }
-          header .carousel-caption .banner-text-slide2 .banner-text2 span {
-            font-family: 'LinotypeMetroNovaProBold'; }
-      header .carousel-caption .banner-text-slide3 {
-        line-height: 2em; }
-        header .carousel-caption .banner-text-slide3 .banner-text1 {
-          font-size: 2.8em;
-          line-height: 1em;
-          font-family: 'LinotypeMetroNovaProCond'; }
-        header .carousel-caption .banner-text-slide3 .banner-text2 {
-          font-size: 1.8em;
-          font-family: 'LinotypeMetroNovaProMedium'; }
-          header .carousel-caption .banner-text-slide3 .banner-text2 span {
-            font-family: 'LinotypeMetroNovaProLight';
-            font-size: 0.7em; }
-      header .carousel-caption .banner-text-slide4 {
-        line-height: 2em; }
-        header .carousel-caption .banner-text-slide4 .banner-text1 {
-          font-size: 1.8em;
-          line-height: 1em;
-          font-family: 'LinotypeMetroNovaProCond'; }
-        header .carousel-caption .banner-text-slide4 .banner-text2 {
-          font-size: 2.4em;
-          color: #dcb033;
-          font-family: 'LinotypeMetroNovaProMedium'; }
-          header .carousel-caption .banner-text-slide4 .banner-text2 span {
-            font-family: 'LinotypeMetroNovaProLight';
-            font-size: 0.7em;
-            color: #fff; }
-      header .carousel-caption .banner-link {
-        width: 37px;
-        height: 43px;
-        top: 100%;
-        right: 1%;
-        position: absolute;
-        background: url(../img/banner-link.png) top no-repeat; }
-        header .carousel-caption .banner-link:hover {
-          background: url(../img/banner-link.png) bottom no-repeat; }
-      header .carousel-caption .banner-link-left {
-        width: 37px;
-        height: 43px;
-        top: 65%;
-        left: 35%;
-        position: absolute;
-        background: url(../img/banner-link.png) top no-repeat; }
-        header .carousel-caption .banner-link-left:hover {
-          background: url(../img/banner-link.png) bottom no-repeat; }
-
   .our-team {
     margin: 60px 0px 60px 0;
     overflow: hidden; }
@@ -9575,87 +9629,6 @@ footer {
               float: left; }
               .menu .git-menu .social-menus li a.linked:hover {
                 background: url(../img/linked-menu-hover.png) bottom no-repeat; }
-
-  /* header */
-  header {
-    overflow: hidden;
-    position: relative;
-    margin: 12% 0 0 !important; }
-    header .carousel-caption {
-      text-align: right;
-      text-shadow: none;
-      left: 0;
-      right: 0;
-      padding: 0;
-      position: absolute;
-      bottom: 0;
-      top: 22%; }
-      header .carousel-caption .banner-text-slide1 {
-        font-family: 'LinotypeMetroNovaProLight';
-        line-height: 1.6em; }
-        header .carousel-caption .banner-text-slide1 .banner-text1 {
-          font-size: 1em;
-          float: left;
-          line-height: 1em; }
-        header .carousel-caption .banner-text-slide1 .banner-text2 {
-          font-size: 2em;
-          float: left;
-          margin: 2% 0 0 -16%; }
-      header .carousel-caption .banner-text-slide2 {
-        font-family: 'LinotypeMetroNovaProLight';
-        line-height: 1em;
-        padding: 12% 0 0 0; }
-        header .carousel-caption .banner-text-slide2 .banner-text1 {
-          font-size: 1.5em;
-          line-height: 1em; }
-        header .carousel-caption .banner-text-slide2 .banner-text2 {
-          font-size: 0.8em; }
-          header .carousel-caption .banner-text-slide2 .banner-text2 span {
-            font-family: 'LinotypeMetroNovaProBold'; }
-      header .carousel-caption .banner-text-slide3 {
-        line-height: 1.6em; }
-        header .carousel-caption .banner-text-slide3 .banner-text1 {
-          font-size: 2em;
-          line-height: 1em;
-          font-family: 'LinotypeMetroNovaProCond'; }
-        header .carousel-caption .banner-text-slide3 .banner-text2 {
-          font-size: 1.2em;
-          font-family: 'LinotypeMetroNovaProMedium'; }
-          header .carousel-caption .banner-text-slide3 .banner-text2 span {
-            font-family: 'LinotypeMetroNovaProLight';
-            font-size: 0.5em; }
-      header .carousel-caption .banner-text-slide4 {
-        line-height: 1.6em; }
-        header .carousel-caption .banner-text-slide4 .banner-text1 {
-          font-size: 1em;
-          line-height: 1em;
-          font-family: 'LinotypeMetroNovaProCond'; }
-        header .carousel-caption .banner-text-slide4 .banner-text2 {
-          font-size: 1.5em;
-          color: #dcb033;
-          font-family: 'LinotypeMetroNovaProMedium'; }
-          header .carousel-caption .banner-text-slide4 .banner-text2 span {
-            font-family: 'LinotypeMetroNovaProLight';
-            font-size: 0.7em;
-            color: #fff; }
-      header .carousel-caption .banner-link {
-        width: 22px;
-        height: 27px;
-        top: 100%;
-        right: 1%;
-        position: absolute;
-        background: url(../img/banner-mob-link.png) top no-repeat; }
-        header .carousel-caption .banner-link:hover {
-          background: url(../img/banner-mob-link.png) bottom no-repeat; }
-      header .carousel-caption .banner-link-left {
-        width: 22px;
-        height: 27px;
-        top: 95%;
-        left: 35%;
-        position: absolute;
-        background: url(../img/banner-mob-link.png) top no-repeat; }
-        header .carousel-caption .banner-link-left:hover {
-          background: url(../img/banner-mob-link.png) bottom no-repeat; }
 
   .our-team {
     margin: 30px 0 30px 0%;
