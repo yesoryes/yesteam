@@ -2179,7 +2179,8 @@ transform: rotate(0deg) );
 	height:100px;
 	text-align:center;
 	padding-top:200px;
-	animation: preloadAnimLabel 1.5s infinite;
+	animation: preloadAnimLabel 4s infinite;
+	/*opacity:.1;*/
 }
 
 @keyframes preloadAnimLabel {
