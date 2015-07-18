@@ -1,4 +1,4 @@
-/* Scss Document */ 
+/* Scss Document */  
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
@@ -737,23 +737,7 @@ header
 		width:100%;
 		height:100%; 
 	}
-	.carousel-caption.first-slide
-	{ 
-		bottom:5%;
-		text-transform:uppercase; 
-		.banner-text-1
-			{
-				font-family: 'LinotypeMetroNovaProCond';
-				font-size: 2.75em;
-				color:#fff;
-				text-shadow:none;
-				span 
-					{
-						font-size: 0.925em;  
-						font-family: 'LinotypeMetroNovaProThin';
-					}
-			}
-		.banner-link
+	.banner-link
 		{
 			
 			width:108px;
@@ -809,7 +793,24 @@ header
 					}
 			}
 			
-		}
+	 }
+	.carousel-caption.first-slide
+	{ 
+		bottom:5%;
+		text-transform:uppercase; 
+		.banner-text-1
+			{
+				font-family: 'LinotypeMetroNovaProCond';
+				font-size: 2.75em;
+				color:#fff;
+				text-shadow:none;
+				span 
+					{
+						font-size: 0.925em;  
+						font-family: 'LinotypeMetroNovaProThin';
+					}
+			}
+		 
 			
 	}
 	.carousel-caption.second-slide
@@ -827,63 +828,7 @@ header
 						font-family: 'LinotypeMetroNovaProThin';
 					}
 			}
-			.banner-link
-			{
-				
-				width:108px;
-				height:45px;
-				margin:30px auto;
-				text-transform:uppercase; 
-				text-shadow:none;
-				position: relative; 
-				a
-				{
-					text-decoration:none;
-					color: #fff;
-					width:108px;
-					height:45px;
-					line-height:45px;
-					text-align:center;
-					font-family: 'LinotypeMetroNovaProLight';
-					font-size:1.5343em;
-					background: url(../img/banner-link.png) center center no-repeat;   
-					display:block;
-					transition:0.5s all;
-					-ms-transition:0.5s all;
-					-moz-transition:0.5s all;
-					-webkit-transition:0.5s all; 
-					 &:after
-						{
-							width: 0%;
-							height: 100%;
-							top: 0;
-							left: 0;
-							background: #fff;
-						}
-						&:after
-						   {
-							content: '';
-							position: absolute;
-							z-index: -1;
-							-webkit-transition: all 0.3s;
-							-moz-transition: all 0.3s;
-							transition: all 0.3s;
-							 }
-						
-						&:hover,
-						&:active 
-						{
-							color: #454545;
-						}
-						
-						&:hover:after,
-						&:active:after
-						{
-							width: 100%; 
-						}
-				}
-				
-			}
+			 
 			
 			
 	}
@@ -904,63 +849,7 @@ header
 						
 					}
 			}
-			.banner-link
-				{
-					
-					width:108px;
-					height:45px;
-					margin:30px auto;
-					text-transform:uppercase; 
-					text-shadow:none;
-					position: relative; 
-					a
-					{
-						text-decoration:none;
-						color: #fff;
-						width:108px;
-						height:45px;
-						line-height:45px;
-						text-align:center;
-						font-family: 'LinotypeMetroNovaProLight';
-						font-size:1.5343em;
-						background: url(../img/banner-link.png) center center no-repeat;   
-						display:block;
-						transition:0.5s all;
-						-ms-transition:0.5s all;
-						-moz-transition:0.5s all;
-						-webkit-transition:0.5s all; 
-						 &:after
-							{
-								width: 0%;
-								height: 100%;
-								top: 0;
-								left: 0;
-								background: #fff;
-							}
-							&:after
-							   {
-								content: '';
-								position: absolute;
-								z-index: -1;
-								-webkit-transition: all 0.3s;
-								-moz-transition: all 0.3s;
-								transition: all 0.3s;
-								 }
-							
-							&:hover,
-							&:active 
-							{
-								color: #454545;
-							}
-							
-							&:hover:after,
-							&:active:after
-							{
-								width: 100%; 
-							}
-					}
-			
-		     } 
+			 
 	}
 	.carousel-caption.fourth-slide
 	{ 
@@ -986,138 +875,26 @@ header
 						text-transform:uppercase;					
 					}
 			}
-			.banner-link
-				{
-					
-					width:108px;
-					height:45px;
-					margin:30px auto;
-					text-transform:uppercase; 
-					text-shadow:none;
-					position: relative; 
-					a
-					{
-						text-decoration:none;
-						color: #fff;
-						width:108px;
-						height:45px;
-						line-height:45px;
-						text-align:center;
-						font-family: 'LinotypeMetroNovaProLight';
-						font-size:1.5343em;
-						background: url(../img/banner-link.png) center center no-repeat;   
-						display:block;
-						transition:0.5s all;
-						-ms-transition:0.5s all;
-						-moz-transition:0.5s all;
-						-webkit-transition:0.5s all; 
-						 &:after
-							{
-								width: 0%;
-								height: 100%;
-								top: 0;
-								left: 0;
-								background: #fff;
-							}
-							&:after
-							   {
-								content: '';
-								position: absolute;
-								z-index: -1;
-								-webkit-transition: all 0.3s;
-								-moz-transition: all 0.3s;
-								transition: all 0.3s;
-								 }
-							
-							&:hover,
-							&:active 
-							{
-								color: #454545;
-							}
-							
-							&:hover:after,
-							&:active:after
-							{
-								width: 100%; 
-							}
-					}
-					
-				} 
-	     }
-		 .carousel-caption.fifth-slide
-	     {   
-		  top:30%;
-		  text-transform:uppercase;
-		  .banner-text-5
-			{
-				font-family: 'LinotypeMetroNovaProBold';
-				font-size: 1.25em;  
-				color:#fff;
-				text-shadow:none;
-				padding:3% 0 3%;
-				span 
-					{ 
-						font-family: 'LinotypeMetroNovaProLight';						
-					}
-			}
-			.banner-link
-				{
-					
-					width:108px;
-					height:45px;
-					margin:30px auto;
-					text-transform:uppercase; 
-					text-shadow:none;
-					position: relative; 
-					a
-					{
-						text-decoration:none;
-						color: #fff;
-						width:108px;
-						height:45px;
-						line-height:45px;
-						text-align:center;
-						font-family: 'LinotypeMetroNovaProLight';
-						font-size:1.5343em;
-						background: url(../img/banner-link.png) center center no-repeat;   
-						display:block;
-						transition:0.5s all;
-						-ms-transition:0.5s all;
-						-moz-transition:0.5s all;
-						-webkit-transition:0.5s all; 
-						 &:after
-							{
-								width: 0%;
-								height: 100%;
-								top: 0;
-								left: 0;
-								background: #fff;
-							}
-							&:after
-							   {
-								content: '';
-								position: absolute;
-								z-index: -1;
-								-webkit-transition: all 0.3s;
-								-moz-transition: all 0.3s;
-								transition: all 0.3s;
-								 }
-							
-							&:hover,
-							&:active 
-							{
-								color: #454545;
-							}
-							
-							&:hover:after,
-							&:active:after
-							{
-								width: 100%; 
-							}
-					}
-			
-		     } 
-	   }
+			 
+	  }
+	 .carousel-caption.fifth-slide
+	 {   
+	  top:30%;
+	  text-transform:uppercase;
+	  .banner-text-5
+		{
+			font-family: 'LinotypeMetroNovaProBold';
+			font-size: 1.25em;  
+			color:#fff;
+			text-shadow:none;
+			padding:3% 0 3%;
+			span 
+				{ 
+					font-family: 'LinotypeMetroNovaProLight';						
+				}
+		}
+		 
+   }
 }  
 section
 {
@@ -6685,18 +6462,211 @@ navbar-default.navbar-shrink {
 }
    /* header part 1024*/
   
-
-.our-team
+header
 {
-	margin:90px 0px 0 0;
 	overflow:hidden;
-	.ourteam-MainImage
+	position:relative;
+	.carousel-inner .item.one
 	{
-		margin:24px 0 0 0;
+		background:url(../img/1.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
 		width:100%;
-		display:block;
+		height:100%; 
 	}
-	 
+	.carousel-inner .item.two
+	{
+		background:url(../img/2.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%;		 
+	}
+	.carousel-inner .item.three
+	{
+		background:url(../img/3.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%;		 
+	}
+	.carousel-inner .item.four
+	{
+		background:url(../img/4.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%; 
+	}
+	.carousel-inner .item.five
+	{
+		background:url(../img/5.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%; 
+	}
+	.banner-link
+		{
+			
+			width:108px;
+			height:45px;
+			margin:30px auto;
+			text-transform:uppercase; 
+			text-shadow:none;
+			position: relative; 
+			a
+			{
+				text-decoration:none;
+			    color: #fff;
+				width:108px;
+			    height:45px;
+				line-height:29px;
+				text-align:center;
+				font-family: 'LinotypeMetroNovaProLight';
+			    font-size:0.9em;
+				background:url(../img/banner-link.png) center center no-repeat;   
+				display:block;
+				transition:0.5s all;
+				-ms-transition:0.5s all;
+				-moz-transition:0.5s all;
+				-webkit-transition:0.5s all; 
+				 &:after
+					{
+						width: 0%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						background: #fff;
+					}
+					&:after
+					   {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						-webkit-transition: all 0.3s;
+						-moz-transition: all 0.3s;
+						transition: all 0.3s;
+						 }
+					
+					&:hover,
+					&:active 
+					{
+						color: #454545;
+					}
+					
+					&:hover:after,
+					&:active:after
+					{
+						width: 100%; 
+					}
+			}
+			
+		}
+	.carousel-caption.first-slide
+	{ 
+		bottom:5%;
+		text-transform:uppercase; 
+		.banner-text-1
+			{
+				font-family: 'LinotypeMetroNovaProCond';
+				font-size: 2.25em;
+				color:#fff;
+				text-shadow:none;
+				span 
+					{
+						font-size: 0.725em;  
+						font-family: 'LinotypeMetroNovaProThin';
+					}
+			}
+		
+			
+	}
+	.carousel-caption.second-slide
+	{    
+	     top:15%;
+		 text-transform:uppercase;
+		 .banner-text-2
+			{
+				font-family: 'LinotypeMetroNovaProBold';
+				font-size: 1.95em;  
+				color:#fff;
+				text-shadow:none;
+				span 
+					{ 
+						font-family: 'LinotypeMetroNovaProThin';
+					}
+			}
+			 
+			
+	}
+	.carousel-caption.third-slide
+	{   
+	    
+		  top:15%;
+		 text-transform:uppercase;
+		  .banner-text-3
+			{
+				font-family: 'LinotypeMetroNovaProThin';
+				font-size: 1.98em;  
+				color:#fff;
+				text-shadow:none;
+				span 
+					{ 
+						font-family: 'LinotypeMetroNovaProBold'; 
+					}
+			}
+			 
+	}
+	.carousel-caption.fourth-slide
+	{ 
+			bottom:5%; 
+			.banner-text-4
+			{
+				font-family: 'LinotypeMetroNovaProLight';
+				font-size:2.1em;  
+				color:#fff;
+				text-shadow:none;
+				text-transform:lowercase;
+				text-align:left;
+				line-height: 39px;
+				span.text-1
+					{ 
+						font-family: 'LinotypeMetroNovaProLight';
+						font-size: 1.9em;						
+					}
+				span.text-3
+					{ 
+						font-family: 'LinotypeMetroNovaProBold';
+						font-size: 0.85em;	
+						text-transform:uppercase;					
+					}
+			}
+			 
+	 }
+	 .carousel-caption.fifth-slide
+	 {   
+	  top:30%;
+	  text-transform:uppercase;
+	  .banner-text-5
+		{
+			font-family: 'LinotypeMetroNovaProBold';
+			font-size: 0.95em;  
+			color:#fff;
+			text-shadow:none;
+			padding:3% 0 3%;
+			span 
+				{ 
+					font-family: 'LinotypeMetroNovaProLight';						
+				}
+		}
+		 
+   }
 }
                                /* section1 About Team */
 section
@@ -6789,6 +6759,19 @@ section
 		} 
 }
 
+
+.our-team
+{
+	margin:90px 0px 0 0;
+	overflow:hidden;
+	.ourteam-MainImage
+	{
+		margin:24px 0 0 0;
+		width:100%;
+		display:block;
+	}
+	 
+}
 
 
 /* services Section 1024*/
@@ -8915,6 +8898,218 @@ footer
 		}
 		
 	}
+}
+.ip-banner img
+{
+	width:auto !important;
+	height:250px !important;
+}
+header
+{
+	overflow:hidden;
+	position:relative; 
+	.carousel-inner .item.one
+	{
+		background:url(../img/1-768.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%; 
+	}
+	.carousel-inner .item.two
+	{
+		background:url(../img/2-768.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%;		 
+	}
+	.carousel-inner .item.three
+	{
+		background:url(../img/3-768.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%;		 
+	}
+	.carousel-inner .item.four
+	{
+		background:url(../img/4-768.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%; 
+	}
+	.carousel-inner .item.five
+	{
+		background:url(../img/5-768.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%; 
+	}
+	.banner-link
+		{
+			
+			width:70px;
+			height:29px;
+			margin:30px auto;
+			text-transform:uppercase; 
+			text-shadow:none;
+			position: relative; 
+			a
+			{
+				text-decoration:none;
+			    color: #fff;
+				width:70px;
+			    height:29px;
+				line-height:29px;
+				text-align:center;
+				font-family: 'LinotypeMetroNovaProLight';
+			    font-size:0.9em;
+				background: url(../img/banner-link-mob.png) center center no-repeat;   
+				display:block;
+				transition:0.5s all;
+				-ms-transition:0.5s all;
+				-moz-transition:0.5s all;
+				-webkit-transition:0.5s all; 
+				 &:after
+					{
+						width: 0%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						background: #fff;
+					}
+					&:after
+					   {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						-webkit-transition: all 0.3s;
+						-moz-transition: all 0.3s;
+						transition: all 0.3s;
+						 }
+					
+					&:hover,
+					&:active 
+					{
+						color: #454545;
+					}
+					
+					&:hover:after,
+					&:active:after
+					{
+						width: 100%; 
+					}
+			}
+			
+		}
+	.carousel-caption.first-slide
+	{ 
+		bottom:5%;
+		text-transform:uppercase; 
+		.banner-text-1
+			{
+				font-family: 'LinotypeMetroNovaProCond';
+				font-size: 1.75em;
+				color:#fff;
+				text-shadow:none;
+				span 
+					{
+						font-size: 0.725em;  
+						font-family: 'LinotypeMetroNovaProThin';
+					}
+			}
+		
+			
+	}
+	.carousel-caption.second-slide
+	{    
+	     top:30%;
+		 text-transform:uppercase;
+		 .banner-text-2
+			{
+				font-family: 'LinotypeMetroNovaProBold';
+				font-size: 1.95em;  
+				color:#fff;
+				text-shadow:none;
+				span 
+					{ 
+						font-family: 'LinotypeMetroNovaProThin';
+					}
+			}
+			 
+			
+	}
+	.carousel-caption.third-slide
+	{   
+	    
+		  top:30%;
+		 text-transform:uppercase;
+		  .banner-text-3
+			{
+				font-family: 'LinotypeMetroNovaProThin';
+				font-size: 1.56em;  
+				color:#fff;
+				text-shadow:none;
+				span 
+					{ 
+						font-family: 'LinotypeMetroNovaProBold'; 
+					}
+			}
+			 
+	}
+	.carousel-caption.fourth-slide
+	{ 
+			  bottom: 0%;
+  			  left: 2%; 
+			.banner-text-4
+			{
+				font-family: 'LinotypeMetroNovaProLight';
+				font-size:1.9em;  
+				color:#fff;
+				text-shadow:none;
+				text-transform:lowercase;
+				text-align:left;
+				line-height: 30px;
+				span.text-1
+					{ 
+						font-family: 'LinotypeMetroNovaProLight';
+						font-size: 1.9em;						
+					}
+				span.text-3
+					{ 
+						font-family: 'LinotypeMetroNovaProBold';
+						font-size: 0.85em;	
+						text-transform:uppercase;					
+					}
+			}
+			 
+	 }
+	 .carousel-caption.fifth-slide
+	 {   
+	  top:20%;
+	  text-transform:uppercase;
+	  .banner-text-5
+		{
+			font-family: 'LinotypeMetroNovaProBold';
+			font-size: 0.95em;  
+			color:#fff;
+			text-shadow:none;
+			padding:3% 0 3%;
+			span 
+				{ 
+					font-family: 'LinotypeMetroNovaProLight';						
+				}
+		}
+		 
+   }
 }
 section
 {
@@ -11271,6 +11466,218 @@ footer
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+}
+.ip-banner img
+{
+	width:auto !important;
+	height:216px !important;
+}
+header
+{
+	overflow:hidden;
+	position:relative;
+	.carousel-inner .item.one
+	{
+		background:url(../img/1-768.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%; 
+	}
+	.carousel-inner .item.two
+	{
+		background:url(../img/2-768.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%;		 
+	}
+	.carousel-inner .item.three
+	{
+		background:url(../img/3-768.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%;		 
+	}
+	.carousel-inner .item.four
+	{
+		background:url(../img/4-768.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%; 
+	}
+	.carousel-inner .item.five
+	{
+		background:url(../img/5-768.jpg) no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		width:100%;
+		height:100%; 
+	}
+	.banner-link
+		{
+			
+			width:70px;
+			height:29px;
+			margin:30px auto;
+			text-transform:uppercase; 
+			text-shadow:none;
+			position: relative; 
+			a
+			{
+				text-decoration:none;
+			    color: #fff;
+				width:70px;
+			    height:29px;
+				line-height:29px;
+				text-align:center;
+				font-family: 'LinotypeMetroNovaProLight';
+			    font-size:0.9em;
+				background: url(../img/banner-link-mob.png) center center no-repeat;   
+				display:block;
+				transition:0.5s all;
+				-ms-transition:0.5s all;
+				-moz-transition:0.5s all;
+				-webkit-transition:0.5s all; 
+				 &:after
+					{
+						width: 0%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						background: #fff;
+					}
+					&:after
+					   {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						-webkit-transition: all 0.3s;
+						-moz-transition: all 0.3s;
+						transition: all 0.3s;
+						 }
+					
+					&:hover,
+					&:active 
+					{
+						color: #454545;
+					}
+					
+					&:hover:after,
+					&:active:after
+					{
+						width: 100%; 
+					}
+			}
+			
+		}
+	.carousel-caption.first-slide
+	{ 
+		bottom:5%;
+		text-transform:uppercase; 
+		.banner-text-1
+			{
+				font-family: 'LinotypeMetroNovaProCond';
+				font-size: 1.75em;
+				color:#fff;
+				text-shadow:none;
+				span 
+					{
+						font-size: 0.725em;  
+						font-family: 'LinotypeMetroNovaProThin';
+					}
+			}
+		
+			
+	}
+	.carousel-caption.second-slide
+	{    
+	     top:30%;
+		 text-transform:uppercase;
+		 .banner-text-2
+			{
+				font-family: 'LinotypeMetroNovaProBold';
+				font-size: 1.55em;  
+				color:#fff;
+				text-shadow:none;
+				span 
+					{ 
+						font-family: 'LinotypeMetroNovaProThin';
+					}
+			}
+			 
+			
+	}
+	.carousel-caption.third-slide
+	{   
+	    
+		  top:25%;
+		 text-transform:uppercase;
+		  .banner-text-3
+			{
+				font-family: 'LinotypeMetroNovaProThin';
+				font-size: 1.30em;  
+				color:#fff;
+				text-shadow:none;
+				span 
+					{ 
+						font-family: 'LinotypeMetroNovaProBold'; 
+					}
+			}
+			 
+	}
+	.carousel-caption.fourth-slide
+	{ 
+			  bottom: 1%;
+  			  left: 5%; 
+			.banner-text-4
+			{
+				font-family: 'LinotypeMetroNovaProLight';
+				font-size:1.9em;  
+				color:#fff;
+				text-shadow:none;
+				text-transform:lowercase;
+				text-align:left;
+				line-height: 30px;
+				span.text-1
+					{ 
+						font-family: 'LinotypeMetroNovaProLight';
+						font-size: 1.9em;						
+					}
+				span.text-3
+					{ 
+						font-family: 'LinotypeMetroNovaProBold';
+						font-size: 0.85em;	
+						text-transform:uppercase;					
+					}
+			}
+			 
+	 }
+	 .carousel-caption.fifth-slide
+	 {   
+	  top:20%;
+	  text-transform:uppercase;
+	  .banner-text-5
+		{
+			font-family: 'LinotypeMetroNovaProBold';
+			font-size: 0.95em;  
+			color:#fff;
+			text-shadow:none;
+			padding:3% 0 3%;
+			span 
+				{ 
+					font-family: 'LinotypeMetroNovaProLight';						
+				}
+		}
+		 
+   }
 }
 .menu 
 {
