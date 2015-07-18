@@ -1524,7 +1524,7 @@ transform: rotate(2deg) translate(-1px, 2px);
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
-	background: url('fancybox_loading.gif') center center no-repeat;
+	background: url(../img/fancybox_loading.gif) center center no-repeat;
 }
 .fancybox-close {
 	position: absolute;

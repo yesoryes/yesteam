@@ -1,0 +1,592 @@
+@charset "utf-8";
+/* CSS Document */
+body, h1, p {
+	padding: 0;
+	margin: 0;
+}
+.portfolio {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: url(../img/bg_portfolio.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.portfolio h1 {
+	font-size: 5.625em;
+	padding: 50px 0;
+	border-bottom: 1px solid #000;
+	color: #fff;
+	font-weight: lighter;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+.tiles {
+	border-bottom: 1px solid #000;	
+}
+.filter-menu {
+	overflow: hidden;
+	width: 1140px;
+	margin: 60px auto 0;
+}
+/*.filter-menu li {
+	overflow: hidden;
+	width: 155px;
+	font-size: 18px;
+	padding: 0;
+}
+.filter-menu a {
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;
+	background: #444444;
+	border: 1px solid #666146;
+	border-right: none;
+	border-left: none;
+}
+.filter-menu li a:hover {
+	background: #fff;
+	color: #444444;
+	border-bottom: 1px solid #e8e3c7;
+	border-top: 1px solid #e8e3c7;
+}*/
+
+/**/
+
+nav a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: capitalize;
+	width: 185px;
+	text-align: center;
+	font-size: 18px;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+
+/* Effect 10: reveal, push out */
+.cl-effect-10  {
+	position: relative;
+	z-index: 1;
+}
+
+.cl-effect-10 a {
+	overflow: hidden;
+	margin: 0 ;
+}
+
+.cl-effect-10 a span {
+	display: block;
+	padding: 12px 0px;
+	background: #302a0e;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cl-effect-10 a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 12px 0px;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	color: #302a0e;
+	content: attr(data-hover);
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: translateX(-25%);
+}
+
+.cl-effect-10 a:hover span,
+.cl-effect-10 a:focus span {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.cl-effect-10 a:hover::before,
+.cl-effect-10 a:focus::before {
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+/**/
+.carousel {
+	width: 1140px;
+	margin: 0 auto;
+}
+.list-group ul {
+	/*margin: 0 auto;
+	width: 1140px*/; 
+	height: 530px;
+	overflow: hidden;
+	padding: 30px 0px
+}
+.list-group ul li {
+	padding: 0px;
+	margin: 0.5%
+}
+.col-lg-3 {
+	width: 24%
+}
+.list-group ul li img {
+	width: 100%;
+	cursor: pointer;
+}
+.desktop-portfolio {
+	display: block;
+}
+.mobile-portfolio {
+	display: none;
+}
+.carousel-indicators {
+	bottom: 0;
+}
+.carousel-indicators li {
+	border-radius: 0;
+	background-color: #000;
+    border: none;
+}
+.mob-menu-filter {
+	background: url(../img/mobile_filter.png) no-repeat 0px;
+	width: 26px;
+	height: 26px;
+}
+
+
+.content-item {
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  position: relative;
+}
+.content-item .overlay {
+  border-bottom: 50px solid rgba(0,0,0,0.8);
+  border-left: 50px solid transparent;
+  bottom: 0px;
+  height: 0;
+  position: absolute;
+  right: 0px;
+  text-indent: -9999px;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  width: 0;
+}
+.content-item:hover .overlay {
+  border-bottom: 800px solid rgba(0,0,0,0.8);
+  border-left: 800px solid transparent;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.content-item .corner-overlay-content {
+  bottom: 5px;
+  color: #fff;
+  font-size:12px;
+  position: absolute;
+  right: 5px;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.content-item:hover .corner-overlay-content {
+  opacity: 0;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.content-item .overlay-content {
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  opacity: 0;
+  padding: 15px;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.content-item .overlay-content h2 {
+  border-bottom: 1px solid #fff;
+  padding: 0 0 12px;
+  font-size: 24px;
+  margin: 7px 0;
+}
+.content-item:hover .overlay-content {
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.btn-view {
+	display: block;
+	background: #fff;
+	color: #444;
+	padding: 4px;
+	width: 50px;
+	text-align: center;
+	margin: 10px auto 0;
+}
+.btn-view:hover {
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+	.list-group ul { 
+		height: 550px;
+		overflow: hidden;
+		padding: 30px 0px
+	}
+	.content-item .overlay-content {
+	  padding: 0 10px;
+	  font-size: 14px;
+	}
+}
+@media screen and (min-width: 1000px) and (max-width: 1366px) {
+	.desktop-portfolio {
+		display: block;
+	}
+	.desktop-portfolio h1 {
+		font-size: 5.625em;
+		padding: 30px 0;
+		color: #fff;
+		font-size: 3.75em;
+	}
+	.carousel {
+		width: 940px;
+		margin: 0 auto;
+	}
+	.list-group ul { 
+		height: 465px;
+		overflow: hidden;
+		padding: 30px 0px
+	}
+	.list-group ul li {
+	}
+	.filter-menu {
+		overflow: hidden;
+		width: 940px;
+		margin: 60px auto 0;
+	}
+	.filter-menu li {
+		overflow: hidden;
+		width: 155px;
+		font-size: 16px;
+		padding: 0;
+	}
+	nav a {
+		position: relative;
+		display: inline-block;
+		outline: none;
+		color: #fff;
+		text-decoration: none;
+		text-transform: capitalize;
+		width: 153px;
+		text-align: center;
+		font-size: 16px;
+	}
+	.content-item .overlay-content {
+	  padding: 0 10px;
+	  font-size: 14px;
+	}
+
+}
+@media screen and (min-width: 768px) and (max-width: 999px) {
+	.desktop-portfolio {
+		display: none;
+	}
+	.mobile-portfolio {
+		display: block;
+		position: relative;
+	}
+	.mobile-portfolio h1 {
+		color: #fff;
+		font-size: 3.75em;
+		margin: 0;
+		padding: 0;
+		border-bottom: 1px solid #fff;
+	}
+	.tiles {
+		border-bottom: 1px solid #fff;
+	}
+	.carousel {
+		width: 550px;
+		margin: 0 auto;
+	}
+	.list-group {
+		margin: 0 auto;
+	}
+	.list-group ul {
+		width: 100%; 
+		height: 750px;
+		overflow: hidden;
+		padding: 30px 0px;;
+	}
+	.list-group ul li {
+		padding: 15px;
+		margin: 0;
+		float: left;
+	}
+	.filter-menu {
+		/*width: 100%;*/
+		margin: 0px;
+	}
+	.mob-menu-filter {
+		/*position: absolute;
+		right: 0; 
+		top: 20px;
+		margin: 0 45px 0 0;*/
+	}
+	.closed {
+		display: none;
+	}
+	.filter_list_button	{
+		z-index:1;
+		position: relative;
+		float: right;
+		top: -40px;
+		right: 25px
+	}
+	.filter-menu li {
+		overflow: hidden;
+		width: 100%;
+		font-size: 18px;
+		padding: 0;
+		margin: -3px 0;
+	}
+	ul.filter-menu {	
+		overflow: hidden;
+		position:absolute;
+		width: 90%;
+		z-index:1;
+		right: 25px;
+		top: 59px;
+		display:none;
+	}
+	.filter-menu li a {
+		display: block;
+		padding: 10px 0;
+		background: #272009;
+		text-align: center;
+		color: #fff;
+		text-transform: capitalize;
+		text-decoration: none;
+		border: none;
+	}
+	.filter-menu li a:hover {
+		background: #fff;
+		color: #444444;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	.desktop-portfolio {
+		display: none;
+	}
+	.mobile-portfolio {
+		display: block;
+		position: relative;
+	}
+	.mobile-portfolio h1 {
+		color: #fff;
+		font-size: 3.75em;
+		margin: 0;
+		padding: 20px 0 25px;
+		border: none;
+	}
+	.tiles {
+		border: none;
+	}
+	.carousel {
+		/*width: 90%;*/
+		margin: 0 auto;		 
+		height: 600px;
+	}
+	.list-group {
+		margin: 0 auto;
+		width: 400px;
+		border-bottom: 1px solid #fff;
+		border-top: 1px solid #fff
+	}
+	.list-group ul {
+		width: 100%; 
+		height: 600px;
+		overflow: hidden;
+		padding: 30px 0px;;
+	}
+	.list-group ul li {
+		
+		float: left;
+		padding: 15px;
+		margin: 0;
+	}
+	.filter-menu {
+		/*width: 100%;*/
+		margin: 0px;
+	}
+	.mob-menu-filter {
+		/*position: absolute;
+		right: 0; 
+		top: 20px;
+		margin: 0 45px 0 0;*/
+	}
+	.closed {
+		display: none;
+	}
+	.filter_list_button	{
+		z-index:1;
+		position: relative;
+		float: right;
+		top: -65px;
+		right: 25px
+	}
+	.filter-menu li {
+		overflow: hidden;
+		width: 100%;
+		font-size: 18px;
+		padding: 0;
+		margin: -3px 0;
+	}
+	ul.filter-menu {	
+		overflow: hidden;
+		position:absolute;
+		width: 400px;
+		z-index:1;
+		right: 25px;
+		top:105px;
+		display:none;
+	}
+	.filter-menu li a {
+		display: block;
+		padding: 10px 0;
+		background: #272009;
+		text-align: center;
+		color: #fff;
+		text-transform: capitalize;
+		text-decoration: none;
+		border: none;
+	}
+	.filter-menu li a:hover {
+		background: #fff;
+		color: #444444;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.desktop-portfolio {
+		display: none;
+	}
+	.mobile-portfolio {
+		display: block;
+		position: relative;
+	}
+	.mobile-portfolio h1 {
+		color: #fff;
+		font-size: 3.75em;
+		margin: 0;
+		padding: 0;
+		border-bottom: 1px solid #fff;
+	}
+	.tiles {
+		border-bottom: 1px solid #fff;
+	}
+	.carousel {
+		margin: 0 auto;		 
+		height: 415px;
+	}
+	.list-group {
+		margin: 0px auto;
+		width: 290px;
+	}
+	.list-inline {
+		margin: 0
+	}
+	.list-group ul {
+		height: 390px;
+		overflow: hidden;
+		padding: 0px 0px;;
+		border: none;
+	}
+	.list-group ul li {
+		padding: 15px;
+		margin: 0;
+	}
+	.filter-menu {
+		margin: 0px;
+	}
+	.mob-menu-filter {
+		/*position: absolute;
+		right: 0; 
+		top: 20px;
+		margin: 0 45px 0 0;*/
+	}
+	.closed {
+		display: none;
+	}
+	.filter_list_button	{
+		z-index:1;
+		position: relative;
+		float: right;
+		top: -40px;
+		right: 0;
+	}
+	.filter-menu li {
+		overflow: hidden;
+		width:100%;
+		font-size: 18px;
+		padding: 0;
+		margin: -3px 0;
+	}
+	ul.filter-menu {	
+		overflow: hidden;
+		position:absolute;
+		width: 290px;
+		z-index:1;
+		right: 0px;
+		top: 60px;
+		display:none;
+	}
+	.filter-menu li a {
+		display: block;
+		padding: 10px 0;
+		background: #272009;
+		text-align: center;
+		color: #fff;
+		text-transform: capitalize;
+		text-decoration: none;
+		border: none;
+	}
+	.filter-menu li a:hover {
+		background: #fff;
+		color: #444444;
+	}
+	.carousel-indicators {
+		bottom: -5px;
+	}
+}
