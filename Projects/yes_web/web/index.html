@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>YesorYes</title>
+<link rel="icon" type="images/jpg" href="images/fevi.jpg" sizes="18x16">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/portfolio.css" rel="stylesheet">
+<link href="css/fresco.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script> 
+<script type='text/javascript' src='js/TweenMax.min.js'></script>
+
+<script src="js/bootstrap.min.js"></script> 
+<!-- Plugin JavaScript --> 
+<script type="text/javascript" src="js/fresco.js"></script>
+<script src="js/jquery-easing-1.3.js"></script><!--Easing-->
+<script src="js/jquery.scrollify.js"></script>
+<script src="js/main.js"></script>
+<script>
+$(document).ready(function() {
+    
+});
+</script>
+</head>
+<body>
+<div class="logo"></div>
+<nav class="nav-desktop">
+  <ul class="pull-left nav-bar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#about">About</a></li>	
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <ul class="pull-right social-icons">
+    <li><a href="javascript:void(0)" class="fb"></a></li>
+    <li><a href="javascript:void(0)" class="linked-in"></a></li>
+    <li><a href="javascript:void(0)" class="twitter"></a></li>
+  </ul>
+</nav>
+<nav class="nav-mobile">
+  <ul>
+    <li class="mob-home"><a href="#home">Home</a></li>
+    <li class="mob-portfolio"><a href="#portfolio">Portfolio</a></li>
+    <li class="mob-about"><a href="#about">About</a></li>
+    <li class="mob-services"><a href="#services">Services</a></li>
+    <li class="mob-contact"><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<section id="home" class="home scrollify">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="section centre">
+              <div id="question">
+                <div id="q1">Will you have more <br> business in this year?</div>
+                <div id="q2">Will you surpass your <br> competitor this year?</div>
+                <div id="q3">Will you double your <br> profit this year?</div>
+                <div id="q4">Will you make your <br> customer happy this year?</div>
+                <div id="q5">Will you make your <br> employees happy this year?</div>
+              </div>
+              <script>
+                //Random Questions - BEGIN
+                    var qRan = Math.floor(Math.random() * 5) + 1;
+                    var Qs = "#q".concat(qRan);
+                    $(Qs).show();
+                //Random Questions - End
+              </script>
+              <div id="intro-outer">
+                  <div id="intro-container">
+                    <img id="intro-triangle" src="images/intro-triangle.png" width="53" height="32"  alt=""/>
+                    <img id="intro-rect" src="images/intro-rect.png" width="477" height="7"  alt=""/>
+                    <img id="intro-coin" src="images/intro-coin.png" width="97" height="19"  alt=""/>
+                    <div id="intro-text">Click on the hand<br>
+                      to <strong>see the answer</strong></div>
+                    <img id="intro-arrow" src="images/intro-arrow1.png" width="10" height="17"  alt=""/>
+                    <img id="intro-hand" src="images/intro-hand.png" width="51" height="70"  alt=""/>
+                  </div>
+                  <div id="intro-container-yes">
+                    <img id="intro-coin-yes" src="images/intro-coin-yes.png" width="234" height="239"  alt=""/><br>
+                    <a id="link-replay" href="#">replay</a>
+                  </div>
+              </div>
+        </div><!--Home page-->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="portfolio" class="portfolio scrollify">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">            	
+        <div class="tiles desktop-portfolio">
+            <h1 class="text-center">works</h1>
+            <div style="height:1px;width:100%;background-color:#ffffff;opacity:0.2;margin:25px 0px 35px 0px;" class="servicesFooterLine1 hidden-xs visible-sm visible-lg visible-md"></div>
+            <nav class="list-inline filter-menu cl-effect-10" id="cl-effect-10">
+                <a href="#cl-effect-10" data-hover="List all"><span>List all</span></a>
+                <a href="#cl-effect-10" data-hover="Digital Campaigns"><span>Digital Campaigns</span></a>
+                <a href="#cl-effect-10" data-hover="Web Sites"><span>Web Sites</span></a>
+                <a href="#cl-effect-10" data-hover="Graphic Designs"><span>Graphic Designs</span></a>
+                <a href="#cl-effect-10" data-hover="Web Apps"><span>Web Apps</span></a>
+                <a href="#cl-effect-10" data-hover="Mobile Apps"><span>Mobile Apps</span></a>
+            </nav>
+             <div id="myCarousel" class="carousel slide list-group" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <ul class="list-inline item active">
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img1.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img2.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img3.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img4.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img5.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img6.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img7.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img8.jpg" alt="" />
+                            </li>
+                        </a>
+                    </ul>     
+                                      
+                    <ul class="list-inline item">
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img1.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img2.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img3.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img4.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img5.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img6.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img7.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img8.jpg" alt="" />
+                            </li>
+                        </a>
+                    </ul>
+                     <ul class="list-inline item">
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img1.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img2.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img3.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img4.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img5.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img6.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img7.jpg" alt="" />
+                            </li>
+                        </a>
+                         <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-lg-3 col-md-3 content-item">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio_img8.jpg" alt="" />
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+             </div>
+        </div>
+        <div class="tiles mobile-portfolio">
+            <h1 class="text-center">works</h1>
+            <a href="javascript:void(0)" class="mob-menu-filter filter_list_button"></a>
+            <ul class="list-inline filter-menu closed">
+                <li><a href="#">List all</a></li>
+                <li><a href="#">Digital Campaigns</a></li>
+                <li><a href="#">Web Sites</a></li>
+                <li><a href="#">Graphic Designs</a></li>
+                <li><a href="#">Web Apps</a></li>
+                <li><a href="#">Mobile Apps</a></li>
+            </ul>
+            <div class="list-group">
+                <div id="myCarousel-b" class="carousel slide list-group" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel-b" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel-b" data-slide-to="1"></li>
+                    <li data-target="#myCarousel-b" data-slide-to="2"></li>
+                    <li data-target="#myCarousel-b" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <ul class="list-inline item active">
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                    </ul>
+                    <ul class="list-inline item">
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                    </ul>
+                    <ul class="list-inline item">
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                    </ul>
+                    <ul class="list-inline item">
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                        </a>
+                    </ul>
+                </div>
+             </div>
+        </div>
+      </div>
+      <div style="height:1px;width:100%;background-color:#ffffff;opacity:0.2;margin:25px 0px 35px 0px;" class="servicesFooterLine1 hidden-xs visible-sm visible-lg visible-md"></div>
+    </div>
+</section>
+
+
+<section id="about" class="about scrollify">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h1>about us</h1>
+        <div class="line hidden-xs hidden-sm visible-lg visible-md"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="about-us">
+          <h2>we are...</h2>
+          <p>Yes Or Yes is an emerging digital agency working towards creating long term solutions for all the online solutions. If you are serious about reaching your maximum potential in your business endeavor by using the latest technology around the world, then we absolutely guarantee that you are in the right place, at the right time. We are proud to have a group of young, enthusiastic and dedicated professionals, who have excellent domain experience.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="testimonial">
+          <div class="article">
+          <div class="article-bg">
+          <div id="myCarousel" class="carousel slide carousel-container pull-left" data-ride="carousel"> 
+            <!-- Wrapper for slides -->
+             <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner carousel-width" role="listbox">
+              <div class="item active">
+                <div class="carousel-content">
+                  <div class="pull-left test-content">
+                    <article>Mauris accumsan nulla vel diam. Sed in lacus adipiscing aliquet. Fusce euismod consequat.. </article>
+                    <p class="by-line">- M.Natesh<br/>
+                      Yesoryes digital marketing</p>
+                    <div class="test-line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-content">
+                  <div class="pull-left test-content">
+                    <article>Mauris accumsan nulla vel diam. Sed in lacus adipiscing aliquet. Fusce euismod consequat.. </article>
+                    <p class="by-line">- M.Natesh<br/>
+                      Yesoryes digital marketing</p>
+                    <div class="test-line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-content">
+                  <div class="pull-left test-content">
+                    <article>Mauris accumsan nulla vel diam. Sed in lacus adipiscing aliquet. Fusce euismod consequat.. </article>
+                    <p class="by-line">- M.Natesh<br/>
+                      Yesoryes digital marketing</p>
+                    <div class="test-line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-content">
+                  <div class="pull-left test-content">
+                    <article>Mauris accumsan nulla vel diam. Sed in lacus adipiscing aliquet. Fusce euismod consequat.. </article>
+                    <p class="by-line">- M.Natesh<br/>
+                      Yesoryes digital marketing</p>
+                    <div class="test-line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+          </div>
+          <div class="pull-left test-image"> <img src="images/avatar.jpg" width="96" height="96"  alt=""/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="services" class="services scrollify">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h1>services</h1>
+        <div class="line hidden-xs hidden-sm visible-lg visible-md"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+        <div class="services-content">
+          <div class="services-list">
+            <ul class="navbar-left">
+              <li>Advance Web Design &amp; Development</li>
+              <li>Completer E-Shopping Solution</li>
+              <li>Facebook Application</li>
+              <li>Digital Campaign Creation</li>
+              <li>Multimedia Presentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <div class="services-content">
+          <div class="services-list">
+            <ul class="navbar-right">
+              <li>Branding with Concepts</li>
+              <li>Digital Media Marketing</li>
+              <li>Graphic Design &amp; Animations</li>
+              <li>Online Community Management</li>
+              <li>Creative Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 hidden-xs visible-sm visible-lg visible-md">
+        <div class="package-slider"> 
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel"> 
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                	<ul class="list-inline tech-list col-md-12">
+                    	<li class="col-md-4"><img src="images/ico_tech_ps.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_ai.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_id.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_fi.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_ae.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_sb.png" alt=""/></li>
+                    </ul>
+                </div>
+                <div class="item">
+                	<ul class="list-inline tech-list col-md-12">
+                    	<li class="col-md-4"><img src="images/ico_tech_ps.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_ai.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_id.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_fi.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_ae.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_sb.png" alt=""/></li>
+                    </ul>
+                </div>
+                <div class="item">
+                	<ul class="list-inline tech-list col-md-12">
+                    	<li class="col-md-4"><img src="images/ico_tech_ps.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_ai.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_id.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_fi.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_ae.png" alt=""/></li>
+                        <li class="col-md-4"><img src="images/ico_tech_sb.png" alt=""/></li>
+                    </ul>
+                </div>
+              </div>
+              <!-- Indicators -->
+              <ol class="carousel-indicators carousel-slider">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                <li data-target="#myCarousel2" data-slide-to="2"></li>
+              </ol> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="service-bottom">
+          <div class="quality-trust">
+            <h2>quality &amp; trustability</h2>
+            <div style="height:1px;width:100%;background-color:#ffffff;opacity:0.2;margin:25px 0px 35px 0px;" class="servicesFooterLine1 hidden-xs visible-sm visible-lg visible-md"></div>
+            <ul class="footer-navbar">
+              <li class="knowledge">
+              	<div class="service-quality">
+                  <img src="images/f1.png" class="services-image f1" alt="">
+                  <p>knowledge gathering</p>
+                </div>
+              </li>
+              <li class="right-arrow1"><img src="images/arrowBig.png" alt=""></li>
+              
+              <li class="concept-prototype">
+                <div class="service-quality">
+                  <img src="images/f2.png" class="services-image f2" alt="">                	
+                  <p>concept &amp; prototype</p>
+                </div>
+              </li>
+              <li class="right-arrow2"><img src="images/arrowBig.png" alt=""></li>
+              <li class="visual">
+                <div class="service-quality">
+                  <img src="images/f3.png" class="services-image f3" alt="">
+                  <p>visual design</p>
+                </div>
+              </li>
+              <li class="right-arrow3"><img src="images/arrowBig.png" alt=""></li>
+              <li class="knowledge-gathering">
+                <div class="service-quality">
+                  <img src="images/f4.png" class="services-image f4" alt="">
+                  <p>knowledge gathering</p>
+                </div>
+              </li>
+              <li class="right-arrow4"><img src="images/arrowBig.png" alt=""></li>
+              <li class="concept-prototype-1">
+                <div class="service-quality">
+                  <img src="images/f5.png" class="services-image f5" alt="">
+                  <p>concept &amp; prototype</p>
+                </div>
+              </li>
+              <li class="right-arrow5"><img src="images/arrowBig.png" alt=""></li>
+              <li class="online-promotion">
+                <div class="service-quality">
+                  <img src="images/f6.png" class="services-image f6" alt="">
+                  <p>online promotion</p>
+                </div>
+              </li>
+            </ul>
+            
+            <div style="height:1px;width:100%;background-color:#ffffff;opacity:0.2;margin:30px 0px 0px 0px;" class="servicesFooterLine2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact scrollify">
+  <div class="container">
+  <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h1>contact</h1>
+        <div class="line hidden-xs hidden-sm visible-lg visible-md"></div>
+      </div>
+    </div>
+    <div class="row pad-row">
+      <div class="col-md-4 col-sm-12">
+        <div class="contact-content"> 
+            <h2>Reach Us</h2> 
+            <p class="contact-address">YesOrYes Digital Agency<br>
+                48/1, 18th Cross Street<br>
+                Indra Nagar<br>
+                Chennai - 600020<br>
+                India.</p> 
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="contact-content"> 
+            <h2>For Enquiries</h2> 
+          <p class="e-mail"><a href="mailto:reach@yesoryes.co.in">reach@yesoryes.co.in</a></p>
+          <p class="ph-no">+91 98400 22990</p> 
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="contact-content"> 
+             <h2>Follow us</h2> 
+          <ul class="social-link">
+          	<li><a href="javascript:void(0)" class="fb"></a></li>
+            <li><a href="javascript:void(0)" class="twitter"></a></li>
+            <li><a href="javascript:void(0)" class="google"></a></li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+    
+</div>  
+<section class="contact-enquiry desktop-contact">
+    <div class="row text-center pad-row">
+      <div class="col-md-12 col-sm-12">
+      	<div class="container">
+        <p class="contact-app"><a href="javascript:void(0)">ENQUIRY</a></p>
+        <div class="contact-form" >
+          <form onsubmit="return false;" class="contact-area">
+            <span class="input-container" data-sr='wait 1s ,scale up 80% no reset' >
+            <input class="input-field" type="text" id="field-name" name="name"/>
+            <label class="input-label"  for="field-name"> Name </label>
+            <span class="focused-border"></span> </span> <span class="input-container"  data-sr='wait 1s ,scale up 80% no reset' >
+            <input class="input-field" type="text" id="field-mail" name="mail"/>
+            <label class="input-label"  for="field-mail"> Email </label>
+            <span class="focused-border"></span> </span> <span class="input-container"  data-sr='wait 1s ,scale up 80% no reset' >
+            <input class="input-field" type="text" id="field-phone" name="phone"/>
+            <label class="input-label"  for="field-phone"> Phone </label>
+            <span class="focused-border"></span> </span> <span class="input-container textarea-container"  data-sr='wait 1s ,scale up 80% no reset' >
+            <textarea class="input-field textarea-field"  id="field-msg" name="message"></textarea>
+            <label class="input-label textarea-label"  for="field-msg"> Your Message </label>
+            <span class="focused-border"></span> </span>
+            <p class=" sucess-msg">Congratulations your message has been sent!</p>
+            <p class=" error-msg" id="error_req">There's an error, email address and message are required</p>
+            <p class=" error-msg" id="error_email">There's an error, please check your email address</p>
+            <p class=" error-msg" id="error_send">There's an error, please try again later</p>
+          </form>
+          <div class="contact-ours">
+            <p class="send-btn"><a href="javascript:void(0)">Send</a></p>
+            <p class="cancel-btn"><a href="javascript:void(0)">Cancel</a></p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!--Mobile Contact Form-->
+<section class="contact-enquiry mobile-contact">
+    <div class="row text-center pad-row">
+      <div class="col-md-12 col-sm-12">
+      	<div class="container">
+        <p class="contact-app"><a href="javascript:void(0)">ENQUIRY</a></p>
+        <div class="contact-form" >
+          <form onsubmit="return false;" class="contact-area">
+            <span class="input-container" data-sr='wait 1s ,scale up 80% no reset' >
+            <input class="input-field" type="text" id="field-name" name="name"/>
+            <label class="input-label"  for="field-name"> Name </label>
+            <span class="focused-border"></span> </span> <span class="input-container"  data-sr='wait 1s ,scale up 80% no reset' >
+            <input class="input-field" type="text" id="field-mail" name="mail"/>
+            <label class="input-label"  for="field-mail"> Email </label>
+            <span class="focused-border"></span> </span> <span class="input-container"  data-sr='wait 1s ,scale up 80% no reset' >
+            <input class="input-field" type="text" id="field-phone" name="phone"/>
+            <label class="input-label"  for="field-phone"> Phone </label>
+            <span class="focused-border"></span> </span> <span class="input-container textarea-container"  data-sr='wait 1s ,scale up 80% no reset' >
+            <textarea class="input-field textarea-field"  id="field-msg" name="message"></textarea>
+            <label class="input-label textarea-label"  for="field-msg"> Your Message </label>
+            <span class="focused-border"></span> </span>
+            <p class=" sucess-msg">Congratulations your message has been sent!</p>
+            <p class=" error-msg" id="error_req">There's an error, email address and message are required</p>
+            <p class=" error-msg" id="error_email">There's an error, please check your email address</p>
+            <p class=" error-msg" id="error_send">There's an error, please try again later</p>
+          </form>
+          <div class="contact-ours">
+            <p class="send-btn"><a href="javascript:void(0)">Send</a></p>
+            <p class="cancel-btn"><a href="javascript:void(0)">Cancel</a></p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+  
+  
+   <div class="row text-center pad-row desktop-map">
+   	  <p class="click-map"><a href="javascript:void(0)">Find Us</a></p>
+      <div class="col-md-12 col-sm-12 map-expand"> 
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:328px;width:100%;margin:5% 0"><div id="gmap_canvas" style="height:352px;width:100%;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.pureblack.de/google-maps/" id="get-map-data">pureblack.de</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(12.9919197,80.25270669999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.9919197, 80.25270669999998)});infowindow = new google.maps.InfoWindow({content:"<b>YesOrYes Digital Agency</b><br/>48/1, 18th Cross Street, Indra Nagar, Adyar<br/>600020 Chennai " });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      </div>
+<footer>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <p>YesOrYes &copy; All Rights Reserved.</p>
+          </div>
+   	  </div>
+    </div>
+</footer>      
+      
+  </div>
+   
+  
+
+</section>
+
+
+<!--Model window-->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/portfolio_pop_img1.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    
+});
+</script>
+</body>
+</html>
