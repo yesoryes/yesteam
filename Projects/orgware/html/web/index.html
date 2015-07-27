@@ -282,10 +282,10 @@
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="row">
           <div class="product-main">
-            <figure class="visible-md visible-lg hidden-xs visible-sm"><img src="img/product-main.jpg" alt=""/></figure>
-            <figure class="hidden-md hidden-lg visible-xs hidden-sm"><img src="img/product-main-480.jpg" alt=""/></figure>
+            <figure class="visible-md visible-lg hidden-sm hidden-xs "><img src="img/product-main.jpg" alt=""/></figure>
+            <figure class="hidden-md hidden-lg visible-sm visible-xs "><img src="img/product-main-480.jpg" alt=""/></figure>
             <div class="product-cont">
-              <h3>Trackidon</h3>
+              <h3>Trackid<span>on</span></h3>
               <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilimpedit quo minus id quod maxime placeat.</p>
               <a href="javascript:void(0)" class="sesKhan-link"></a> </div>
           </div>
@@ -451,22 +451,18 @@
               <li><a href="portfolio_detail.html">4way Taxi</a></li>
               <li><a href="portfolio_detail.html">4way Bus</a></li>
               <li><a href="portfolio_detail.html">4way Auto</a></li>
-              <li><a href="portfolio_detail.html">TrackIDoN</a></li>
-              <li><a href="portfolio_detail.html">NearbyU</a></li>
-              <li><a href="portfolio_detail.html">4way EHRM</a></li>
-            </ul>
+              <li><a href="portfolio_detail.html">TrackIDoN</a></li
+            ></ul>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-xs-12">
           <div class="foot-services">
             <h5>Technologies</h5>
             <ul>
-              <li><a href="javascript:void(0)">HTML5</a></li>
-              <li><a href="javascript:void(0)">CSS3</a></li>
-              <li><a href="javascript:void(0)">Coraona</a></li>
-              <li><a href="javascript:void(0)">PHP</a></li>
-              <li><a href="javascript:void(0)">MySQL</a></li>
-              <li><a href="javascript:void(0)">PhoneGap</a></li>
+              <li><a href="javascript:void(0)">Microsoft Technologies</a></li>
+              <li><a href="javascript:void(0)">Mobile Application Development</a></li>
+              <li><a href="javascript:void(0)">Web Application development</a></li>
+              <li><a href="javascript:void(0)">Mobile Games Development</a></li>
             </ul>
           </div>
         </div>
@@ -501,13 +497,20 @@
 </section>
 <div id="back-top" style="display: block;"> <a href="#"></a> </div>
 <!-- jQuery --> 
-<script src="js/jquery.min.js"></script> 
-<script src="js/jquery.preload.min.js"></script>
+<script src="js/jquery.min.js"></script>  
 <!-- Bootstrap Core JavaScript --> 
 <script src="js/bootstrap.min.js"></script> 
 <!-- Plugin JavaScript --> 
 <script src="js/classie.js"></script> 
 <script src="js/cbpAnimatedHeader.js"></script> 
 <script src="js/main.js"></script>
+<script>
+ $(window).load(function()
+{
+(function(a){a.preload=function(){var d=Object.prototype.toString.call(arguments[0])==="[object Array]"?arguments[0]:arguments;
+var c=[];var b=d.length;for(;b--;){c.push(a("<img />").attr("src",d[b]));}};})(jQuery); 
+$.preload('img/1.jpg','img/2.jpg','img/3.jpg', 'img/4.jpg','img/5.jpg','img/1-768.jpg','img/2-768.jpg', 'img/3-768.jpg','img/4-768.jpg', 'img/5-768.jpg','img/page-top-hover.png', 'img/4way-color.png', 'img/menu_option.png', 'img/4way-taxi-color.png', 'img/acclary-color.png','img/asna-color.png', 'img/banner-link.png','img/paradise-color.png','img/product1-hover.png','img/product2-hover.png','img/product3-hover.png','img/product4-hover.png','img/right-nav.png','img/seskhan-link.png','img/product1-1024-hover.png','img/product2-1024-hover.png','img/product3-1024-hover.png','img/product4-1024-hover.png', 'img/menu_option.png', 'img/product-main.jpg', 'img/product-main-1024.jpg', 'img/linked-hover.png', 'img/linked-menu-hover.png', 'img/facebook-menu-hover.png', 'img/facebook-hover.png', 'img/google-hover.png', 'img/google-menu-hover.png', 'img/menu_option.png','img/youtube-hover.png', 'img/youtube-menu-hover.png', 'img/product1-mob-hover.png', 'img/product2-mob-hover.png', 'img/product3-mob-hover.png', 'img/product4-mob-hover.png');
+ }); 
+</script>
 </body>
 </html>

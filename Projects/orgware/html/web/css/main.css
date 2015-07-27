@@ -1,4 +1,5 @@
 /* Scss Document */
+/* Nav Bar */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
@@ -17,7 +18,7 @@
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #f03b3b; }
+  background-color: #e85b3a; }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
@@ -190,7 +191,7 @@ body {
   -moz-transition: 0.9s all; }
 
 .menu {
-  background: #f03b3b repeat left top;
+  background: #e85b3a repeat left top;
   right: -325px;
   position: fixed;
   width: 325px;
@@ -304,40 +305,35 @@ header {
   overflow: hidden;
   position: relative; }
   header .carousel-inner .item.one {
-    background: url(../img/1.jpg) no-repeat center center fixed;
+    background: url(../img/1.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
   header .carousel-inner .item.two {
-    background: url(../img/2.jpg) no-repeat center center fixed;
+    background: url(../img/2.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
   header .carousel-inner .item.three {
-    background: url(../img/3.jpg) no-repeat center center fixed;
+    background: url(../img/3.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
   header .carousel-inner .item.four {
-    background: url(../img/4.jpg) no-repeat center center fixed;
+    background: url(../img/4.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
   header .carousel-inner .item.five {
-    background: url(../img/5.jpg) no-repeat center center fixed;
+    background: url(../img/5.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
   header .banner-link {
     width: 108px;
     height: 45px;
@@ -552,8 +548,8 @@ section {
             margin: 0 2% 0 0;
             position: absolute;
             -webkit-transform: rotateY(-361deg);
-            -moz-transform: rotateY(-361deg);
             -ms-transform: rotateY(-361deg);
+            -moz-transform: rotateY(-361deg);
             transform: rotateY(-361deg); }
             .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 {
               float: left;
@@ -598,6 +594,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/mob-app.png) center 25px no-repeat #fb6246; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services1 .front .front-content {
@@ -629,6 +627,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services1 .back .back-content {
                   display: block;
@@ -680,6 +680,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/mob-game.png) center 45px no-repeat #ff7959; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 .front .front-content {
@@ -711,6 +713,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 .back .back-content {
                   display: block;
@@ -767,6 +771,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/mob-cloud.png) center 25px no-repeat #ff7959; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services1 .front .front-content {
@@ -798,6 +804,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services1 .back .back-content {
                   display: block;
@@ -849,6 +857,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/web-app.png) center 25px no-repeat #fb6246; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 .front .front-content {
@@ -880,6 +890,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 .back .back-content {
                   display: block;
@@ -936,6 +948,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/e-commerce.png) center 25px no-repeat #fb6246; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services1 .front .front-content {
@@ -967,6 +981,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services1 .back .back-content {
                   display: block;
@@ -1018,6 +1034,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/loc-base.png) center 25px no-repeat #ff7959; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 .front .front-content {
@@ -1049,6 +1067,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 .back .back-content {
                   display: block;
@@ -1114,6 +1134,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/cross-plat.png) center 25px no-repeat #fb6246; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right1 .services1 .front .front-content {
@@ -1145,6 +1167,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right1 .services1 .back .back-content {
                   display: block;
@@ -1196,6 +1220,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/enterprise.png) center 15px no-repeat #ff7959; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right1 .services2 .front .front-content {
@@ -1238,6 +1264,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right1 .services2 .back .back-content {
                   display: block;
@@ -1294,6 +1322,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/web-design.png) center 25px no-repeat #ff7959; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right2 .services1 .front .front-content {
@@ -1325,6 +1355,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right2 .services1 .back .back-content {
                   display: block;
@@ -1376,6 +1408,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/open-source.png) center 25px no-repeat #fb6246; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right2 .services2 .front .front-content {
@@ -1407,6 +1441,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right2 .services2 .back .back-content {
                   display: block;
@@ -1463,6 +1499,8 @@ section {
                 -webkit-transition: all 0.5s ease-in;
                 color: white;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/mob-app.png) center 25px no-repeat #fb6246; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right3 .services1 .front .front-content {
@@ -1494,6 +1532,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right3 .services1 .back .back-content {
                   display: block;
@@ -1546,6 +1586,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/more-app.png) 225px 70px no-repeat #fff; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right3 .services2 .front .front-content {
@@ -1575,6 +1617,8 @@ section {
                 color: white;
                 background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                 backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
                 -webkit-backface-visibility: hidden;
                 background: url(../img/more-app.png) 225px 70px no-repeat #fff; }
                 .services .services-center .services-top .services-bottom .services-content .services-right .services-right3 .services2 .back .front-content {
@@ -1696,12 +1740,14 @@ section {
           right: 0px;
           top: 0; }
         .products .product-content .product-main .product-cont h3 {
-          font-size: 54px;
-          font-family: 'LinotypeMetroNovaProBold';
+          font-size: 3.2em;
+          font-family: 'LinotypeMetroNovaPro';
           color: #fff;
           position: absolute;
           bottom: 30%;
           text-transform: uppercase; }
+          .products .product-content .product-main .product-cont h3 span {
+            font-family: 'LinotypeMetroNovaProLight'; }
         .products .product-content .product-main .product-cont p {
           font-size: 14px;
           font-family: 'LinotypeMetroNovaPro';
@@ -2422,23 +2468,35 @@ footer {
         width: 100%;
         height: 100%; }
       .ip-services .pad-row .ip-services-content .service-box:hover h4 {
-        -webkit-transform: scale(1.1);
         transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         transition: .5s all;
-        -webkit-transform-origin: center;
         -webkit-transition: .5s all;
-        transform-origin: center; }
+        -moz-transition: .5s all;
+        -ms-transition: .5s all;
+        transform-origin: center;
+        -moz-transform-origin: center;
+        -ms-transform-origin: center;
+        -webkit-transform-origin: center; }
       .ip-services .pad-row .ip-services-content .service-box:hover p {
-        -webkit-transform: scale(1.1);
         transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         transition: .5s all;
-        -webkit-transform-origin: center;
         -webkit-transition: .5s all;
-        transform-origin: center; }
+        -moz-transition: .5s all;
+        -ms-transition: .5s all;
+        transform-origin: center;
+        -moz-transform-origin: center;
+        -ms-transform-origin: center;
+        -webkit-transform-origin: center; }
       .ip-services .pad-row .ip-services-content .service-box:hover {
         background-color: #f8f8f8; }
       .ip-services .pad-row .ip-services-content .service-box_body {
-        padding: 10px 20px; }
+        padding: 10px 30px 0; }
         .ip-services .pad-row .ip-services-content .service-box_body h4 {
           font-family: 'LinotypeMetroNovaPro';
           font-size: 20px;
@@ -3016,16 +3074,16 @@ footer {
       position: relative;
       text-align: center;
       margin: 2% 0 0 0; }
-      .ip-about .about-content .h1-container h1, .ip-about .about-content .h1-container .expansion-web h2, .expansion-web .ip-about .about-content .h1-container h2 {
+      .ip-about .about-content .h1-container h1, .ip-about .about-content .h1-container .expansion-web h2, .expansion-web .ip-about .about-content .h1-container h2, .ip-about .about-content .h1-container .android-web h2, .android-web .ip-about .about-content .h1-container h2 {
         color: #1e1e1e;
         font-family: 'LinotypeMetroNovaProLight';
         font-size: 40px;
         margin: 2% 0; }
-        .ip-about .about-content .h1-container h1::before, .ip-about .about-content .h1-container .expansion-web h2::before, .expansion-web .ip-about .about-content .h1-container h2::before {
+        .ip-about .about-content .h1-container h1::before, .ip-about .about-content .h1-container .expansion-web h2::before, .expansion-web .ip-about .about-content .h1-container h2::before, .ip-about .about-content .h1-container .android-web h2::before, .android-web .ip-about .about-content .h1-container h2::before {
           margin-left: -50%; }
-        .ip-about .about-content .h1-container h1::after, .ip-about .about-content .h1-container .expansion-web h2::after, .expansion-web .ip-about .about-content .h1-container h2::after {
+        .ip-about .about-content .h1-container h1::after, .ip-about .about-content .h1-container .expansion-web h2::after, .expansion-web .ip-about .about-content .h1-container h2::after, .ip-about .about-content .h1-container .android-web h2::after, .android-web .ip-about .about-content .h1-container h2::after {
           margin-right: -50%; }
-    .ip-about .about-content .h1-container h1::before, .ip-about .about-content .h1-container .expansion-web h2::before, .expansion-web .ip-about .about-content .h1-container h2::before, .ip-about .about-content .h1-container h1::after, .ip-about .about-content .h1-container .expansion-web h2::after, .expansion-web .ip-about .about-content .h1-container h2::after {
+    .ip-about .about-content .h1-container h1::before, .ip-about .about-content .h1-container .expansion-web h2::before, .expansion-web .ip-about .about-content .h1-container h2::before, .ip-about .about-content .h1-container .android-web h2::before, .android-web .ip-about .about-content .h1-container h2::before, .ip-about .about-content .h1-container h1::after, .ip-about .about-content .h1-container .expansion-web h2::after, .expansion-web .ip-about .about-content .h1-container h2::after, .ip-about .about-content .h1-container .android-web h2::after, .android-web .ip-about .about-content .h1-container h2::after {
       background: #454545 none repeat scroll 0 0;
       content: "";
       display: inline-block;
@@ -3215,15 +3273,15 @@ footer {
   margin: 1% auto; }
   .ip-career .accordion-container {
     width: 100%;
-    margin: 0 0 1px;
     clear: both; }
-    .ip-career .accordion-container .accordion-toggle {
+    .ip-career .accordion-container .accordion-head {
       position: relative;
       display: block;
       padding: 15px;
       font-family: 'OpenSansRegular';
       font-size: 15px;
       color: #fff;
+      margin: 0 0 1px;
       text-transform: uppercase;
       text-align: left;
       font-weight: 300;
@@ -3245,7 +3303,7 @@ footer {
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8465', endColorstr='#ff6d4e',GradientType=0 );
       /* IE6-9 */
       text-decoration: none; }
-      .ip-career .accordion-container .accordion-toggle.open, .ip-career .accordion-container .accordion-toggle:hover {
+      .ip-career .accordion-container .accordion-head.open, .ip-career .accordion-container .accordion-head:hover {
         color: #fff;
         background: #e85b3a;
         /* Old browsers */
@@ -3263,16 +3321,13 @@ footer {
         /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e85b3a', endColorstr='#e85b3d',GradientType=0 );
         /* IE6-9 */ }
-      .ip-career .accordion-container .accordion-toggle span.toggle-icon {
+      .ip-career .accordion-container .accordion-head span.plusminus {
         position: absolute;
         top: 10px;
-        /*Edited for small size*/
         right: 20px;
-        font-size: 1.5em; }
-        .ip-career .accordion-container .accordion-toggle span.toggle-icon i {
-          font-size: 27px;
-          /*Edited for small size*/ }
-    .ip-career .accordion-container .accordion-accontent {
+        width: 25px;
+        height: 25px; }
+    .ip-career .accordion-container .accordion-body {
       overflow: auto;
       width: 100%;
       height: 100%;
@@ -3280,13 +3335,13 @@ footer {
       display: none;
       padding: 10px;
       background: #f8f8f8; }
-      .ip-career .accordion-container .accordion-accontent h4 {
+      .ip-career .accordion-container .accordion-body h4 {
         color: #444444;
         font-family: 'OpenSansRegular';
         font-size: 16px;
         padding: 10px 0;
         text-align: left; }
-      .ip-career .accordion-container .accordion-accontent li {
+      .ip-career .accordion-container .accordion-body li {
         background: url(../img/red-square.jpg) center left no-repeat;
         font-family: 'OpenSansRegular';
         font-size: 15px;
@@ -3296,13 +3351,13 @@ footer {
         margin: 0 0 0 4%;
         list-style: none;
         padding: 0 0 0% 3%; }
-      .ip-career .accordion-container .accordion-accontent .apply-now {
+      .ip-career .accordion-container .accordion-body .apply-now {
         width: 73px;
         height: 30px;
         position: relative;
         z-index: 2;
         margin: 2% 0; }
-        .ip-career .accordion-container .accordion-accontent .apply-now a {
+        .ip-career .accordion-container .accordion-body .apply-now a {
           width: 73px;
           height: 30px;
           color: #e65636;
@@ -3321,7 +3376,7 @@ footer {
           font-family: 'LinotypeMetroNovaProLight';
           background: url(../img/send-btn.png) center center no-repeat;
           font-size: 12px; }
-          .ip-career .accordion-container .accordion-accontent .apply-now a:after {
+          .ip-career .accordion-container .accordion-body .apply-now a:after {
             width: 0%;
             height: 100%;
             top: 0;
@@ -3333,9 +3388,9 @@ footer {
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s; }
-          .ip-career .accordion-container .accordion-accontent .apply-now a:hover, .ip-career .accordion-container .accordion-accontent .apply-now a:active {
+          .ip-career .accordion-container .accordion-body .apply-now a:hover, .ip-career .accordion-container .accordion-body .apply-now a:active {
             color: #fff; }
-          .ip-career .accordion-container .accordion-accontent .apply-now a:hover:after, .ip-career .accordion-container .accordion-accontent .apply-now a:active:after {
+          .ip-career .accordion-container .accordion-body .apply-now a:hover:after, .ip-career .accordion-container .accordion-body .apply-now a:active:after {
             width: 100%; }
   .ip-career li {
     background: url(../img/red-square.jpg) center left no-repeat;
@@ -3358,17 +3413,17 @@ footer {
     overflow: hidden;
     position: relative;
     text-align: center; }
-    .ip-career .h1-container h1, .ip-career .h1-container .expansion-web h2, .expansion-web .ip-career .h1-container h2 {
+    .ip-career .h1-container h1, .ip-career .h1-container .expansion-web h2, .expansion-web .ip-career .h1-container h2, .ip-career .h1-container .android-web h2, .android-web .ip-career .h1-container h2 {
       color: #1e1e1e;
       font-family: 'LinotypeMetroNovaProLight';
       font-size: 40px;
       margin: 3% 0 1%;
       text-transform: uppercase; }
-      .ip-career .h1-container h1::before, .ip-career .h1-container .expansion-web h2::before, .expansion-web .ip-career .h1-container h2::before {
+      .ip-career .h1-container h1::before, .ip-career .h1-container .expansion-web h2::before, .expansion-web .ip-career .h1-container h2::before, .ip-career .h1-container .android-web h2::before, .android-web .ip-career .h1-container h2::before {
         margin-left: -50%; }
-      .ip-career .h1-container h1::after, .ip-career .h1-container .expansion-web h2::after, .expansion-web .ip-career .h1-container h2::after {
+      .ip-career .h1-container h1::after, .ip-career .h1-container .expansion-web h2::after, .expansion-web .ip-career .h1-container h2::after, .ip-career .h1-container .android-web h2::after, .android-web .ip-career .h1-container h2::after {
         margin-right: -50%; }
-  .ip-career .h1-container h1::before, .ip-career .h1-container .expansion-web h2::before, .expansion-web .ip-career .h1-container h2::before, .ip-career .h1-container h1::after, .ip-career .h1-container .expansion-web h2::after, .expansion-web .ip-career .h1-container h2::after {
+  .ip-career .h1-container h1::before, .ip-career .h1-container .expansion-web h2::before, .expansion-web .ip-career .h1-container h2::before, .ip-career .h1-container .android-web h2::before, .android-web .ip-career .h1-container h2::before, .ip-career .h1-container h1::after, .ip-career .h1-container .expansion-web h2::after, .expansion-web .ip-career .h1-container h2::after, .ip-career .h1-container .android-web h2::after, .android-web .ip-career .h1-container h2::after {
     background: #454545 none repeat scroll center center;
     content: "";
     display: inline-block;
@@ -3377,7 +3432,22 @@ footer {
     vertical-align: 22px;
     width: 50%; }
 
-/*Portfolio*/
+/*Portfolio Ip main*/
+header {
+  width: 100%;
+  position: relative; }
+  header .ip-banner {
+    position: relative; }
+  header h2 {
+    position: absolute;
+    bottom: 0%;
+    margin: 0 0 30px;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-family: 'LinotypeMetroNovaProLight';
+    font-size: 3.75em; }
+
 .portfolio-nav {
   margin: 0; }
   .portfolio-nav .tab-head {
@@ -3975,7 +4045,7 @@ footer {
           float: left;
           text-align: left;
           text-transform: uppercase;
-          width: 75%; }
+          width: 65%; }
         .portfolio-tab .mobile-app .four-strax .tab-content-header ul, .portfolio-tab .mobile-app .one-touch .tab-content-header ul, .portfolio-tab .mobile-app .owaisi .tab-content-header ul, .portfolio-tab .mobile-app .track-id .tab-content-header ul, .portfolio-tab .mobile-app .my-church .tab-content-header ul, .portfolio-tab .mobile-app .field-serv .tab-content-header ul, .portfolio-tab .mobile-app .pregnan-adv .tab-content-header ul, .portfolio-tab .mobile-app .you-cloud .tab-content-header ul, .portfolio-tab .mobile-app .dress-inbox .tab-content-header ul, .portfolio-tab .mobile-app .gem-wis .tab-content-header ul, .portfolio-tab .mobile-app .radio-dart .tab-content-header ul, .portfolio-tab .mobile-app .hcr-emp .tab-content-header ul, .portfolio-tab .mobile-app .see-wink .tab-content-header ul, .portfolio-tab .mobile-app .val-hang .tab-content-header ul, .portfolio-tab .mobile-app .one-card .tab-content-header ul, .portfolio-tab .mobile-app .i-collaborate .tab-content-header ul, .portfolio-tab .mobile-app .movers-fax .tab-content-header ul, .portfolio-tab .mobile-app .per-sec .tab-content-header ul, .portfolio-tab .mobile-app .wubbzy-halloween .tab-content-header ul, .portfolio-tab .mobile-app .res-mgmt .tab-content-header ul, .portfolio-tab .mobile-app .west-lake .tab-content-header ul, .portfolio-tab .mobile-app .comb-word .tab-content-header ul, .portfolio-tab .mobile-app .health-analyser .tab-content-header ul, .portfolio-tab .mobile-app .glo-slim .tab-content-header ul, .portfolio-tab .mobile-app .first-aid .tab-content-header ul, .portfolio-tab .mobile-app .pocket-gym .tab-content-header ul, .portfolio-tab .mobile-app .tabler .tab-content-header ul, .portfolio-tab .mobile-app .four-taxi .tab-content-header ul, .portfolio-tab .mobile-app .solid-solution .tab-content-header ul, .portfolio-tab .mobile-app .fourway-Ehrm .tab-content-header ul, .portfolio-tab .mobile-app .nearbyu .tab-content-header ul, .portfolio-tab .mobile-app .my-bus .tab-content-header ul, .portfolio-tab .mobile-app .prince-jewel .tab-content-header ul, .portfolio-tab .mobile-app .contact-merge .tab-content-header ul {
           overflow: hidden;
           float: right; }
@@ -4004,7 +4074,7 @@ footer {
         margin: 10px 0 0;
         overflow: hidden; }
         .portfolio-tab .mobile-app .one-touch .tab-content-header h3, .portfolio-tab .mobile-app .owaisi .tab-content-header h3, .portfolio-tab .mobile-app .track-id .tab-content-header h3, .portfolio-tab .mobile-app .my-church .tab-content-header h3, .portfolio-tab .mobile-app .field-serv .tab-content-header h3, .portfolio-tab .mobile-app .pregnan-adv .tab-content-header h3, .portfolio-tab .mobile-app .you-cloud .tab-content-header h3, .portfolio-tab .mobile-app .dress-inbox .tab-content-header h3, .portfolio-tab .mobile-app .gem-wis .tab-content-header h3, .portfolio-tab .mobile-app .radio-dart .tab-content-header h3, .portfolio-tab .mobile-app .hcr-emp .tab-content-header h3, .portfolio-tab .mobile-app .see-wink .tab-content-header h3, .portfolio-tab .mobile-app .val-hang .tab-content-header h3, .portfolio-tab .mobile-app .one-card .tab-content-header h3, .portfolio-tab .mobile-app .i-collaborate .tab-content-header h3, .portfolio-tab .mobile-app .movers-fax .tab-content-header h3, .portfolio-tab .mobile-app .per-sec .tab-content-header h3 {
-          width: 75%; }
+          width: 65%; }
         .portfolio-tab .mobile-app .one-touch .tab-content-header li, .portfolio-tab .mobile-app .owaisi .tab-content-header li, .portfolio-tab .mobile-app .track-id .tab-content-header li, .portfolio-tab .mobile-app .my-church .tab-content-header li, .portfolio-tab .mobile-app .field-serv .tab-content-header li, .portfolio-tab .mobile-app .pregnan-adv .tab-content-header li, .portfolio-tab .mobile-app .you-cloud .tab-content-header li, .portfolio-tab .mobile-app .dress-inbox .tab-content-header li, .portfolio-tab .mobile-app .gem-wis .tab-content-header li, .portfolio-tab .mobile-app .radio-dart .tab-content-header li, .portfolio-tab .mobile-app .hcr-emp .tab-content-header li, .portfolio-tab .mobile-app .see-wink .tab-content-header li, .portfolio-tab .mobile-app .val-hang .tab-content-header li, .portfolio-tab .mobile-app .one-card .tab-content-header li, .portfolio-tab .mobile-app .i-collaborate .tab-content-header li, .portfolio-tab .mobile-app .movers-fax .tab-content-header li, .portfolio-tab .mobile-app .per-sec .tab-content-header li {
           padding: 6px 6px 9px; }
         .portfolio-tab .mobile-app .one-touch .tab-content-header .client, .portfolio-tab .mobile-app .owaisi .tab-content-header .client, .portfolio-tab .mobile-app .track-id .tab-content-header .client, .portfolio-tab .mobile-app .my-church .tab-content-header .client, .portfolio-tab .mobile-app .field-serv .tab-content-header .client, .portfolio-tab .mobile-app .pregnan-adv .tab-content-header .client, .portfolio-tab .mobile-app .you-cloud .tab-content-header .client, .portfolio-tab .mobile-app .dress-inbox .tab-content-header .client, .portfolio-tab .mobile-app .gem-wis .tab-content-header .client, .portfolio-tab .mobile-app .radio-dart .tab-content-header .client, .portfolio-tab .mobile-app .hcr-emp .tab-content-header .client, .portfolio-tab .mobile-app .see-wink .tab-content-header .client, .portfolio-tab .mobile-app .val-hang .tab-content-header .client, .portfolio-tab .mobile-app .one-card .tab-content-header .client, .portfolio-tab .mobile-app .i-collaborate .tab-content-header .client, .portfolio-tab .mobile-app .movers-fax .tab-content-header .client, .portfolio-tab .mobile-app .per-sec .tab-content-header .client {
@@ -4046,7 +4116,7 @@ footer {
           width: 98%; }
       .portfolio-tab .mobile-app .one-touch figure, .portfolio-tab .mobile-app .owaisi figure, .portfolio-tab .mobile-app .track-id figure, .portfolio-tab .mobile-app .my-church figure, .portfolio-tab .mobile-app .field-serv figure, .portfolio-tab .mobile-app .pregnan-adv figure, .portfolio-tab .mobile-app .you-cloud figure, .portfolio-tab .mobile-app .dress-inbox figure, .portfolio-tab .mobile-app .gem-wis figure, .portfolio-tab .mobile-app .radio-dart figure, .portfolio-tab .mobile-app .hcr-emp figure, .portfolio-tab .mobile-app .see-wink figure, .portfolio-tab .mobile-app .val-hang figure, .portfolio-tab .mobile-app .one-card figure, .portfolio-tab .mobile-app .i-collaborate figure, .portfolio-tab .mobile-app .movers-fax figure, .portfolio-tab .mobile-app .per-sec figure {
         width: 50%;
-        margin: 8% 0 0 0; }
+        margin: 2% 0 0 0; }
     .portfolio-tab .mobile-app .owaisi, .portfolio-tab .mobile-app .track-id, .portfolio-tab .mobile-app .my-church, .portfolio-tab .mobile-app .field-serv, .portfolio-tab .mobile-app .pregnan-adv, .portfolio-tab .mobile-app .you-cloud {
       background: #33e088;
       float: left; }
@@ -4074,7 +4144,7 @@ footer {
           margin-top: -20px; }
       .portfolio-tab .mobile-app .owaisi figure, .portfolio-tab .mobile-app .track-id figure, .portfolio-tab .mobile-app .my-church figure, .portfolio-tab .mobile-app .field-serv figure, .portfolio-tab .mobile-app .pregnan-adv figure, .portfolio-tab .mobile-app .you-cloud figure {
         width: 50%;
-        margin: -7% 0 0 0; }
+        margin: -7% -14px 0 0px; }
     .portfolio-tab .mobile-app .wubbzy-halloween, .portfolio-tab .mobile-app .res-mgmt, .portfolio-tab .mobile-app .west-lake, .portfolio-tab .mobile-app .comb-word, .portfolio-tab .mobile-app .health-analyser, .portfolio-tab .mobile-app .glo-slim {
       background: #e0ca33;
       float: right; }
@@ -4243,7 +4313,7 @@ footer {
           border-width: 20px;
           margin-top: -20px; }
       .portfolio-tab .mobile-app .my-church figure, .portfolio-tab .mobile-app .field-serv figure, .portfolio-tab .mobile-app .pregnan-adv figure, .portfolio-tab .mobile-app .you-cloud figure {
-        margin: -12% 0% 0%; }
+        margin: 0% -16% 0% 10%; }
     .portfolio-tab .mobile-app .west-lake, .portfolio-tab .mobile-app .comb-word, .portfolio-tab .mobile-app .health-analyser, .portfolio-tab .mobile-app .glo-slim {
       background: #c35031;
       float: right; }
@@ -4329,7 +4399,7 @@ footer {
           border-width: 20px;
           margin-top: -20px; }
       .portfolio-tab .mobile-app .field-serv figure, .portfolio-tab .mobile-app .pregnan-adv figure, .portfolio-tab .mobile-app .you-cloud figure {
-        margin: -12% 0% 0%; }
+        margin: -4% -25% 0 15%; }
     .portfolio-tab .mobile-app .comb-word, .portfolio-tab .mobile-app .health-analyser, .portfolio-tab .mobile-app .glo-slim {
       background: #e2412b;
       float: right; }
@@ -4360,7 +4430,7 @@ footer {
           border-width: 20px;
           margin-top: -20px; }
       .portfolio-tab .mobile-app .hcr-emp figure, .portfolio-tab .mobile-app .see-wink figure {
-        margin: -1% -8% 0 7%; }
+        margin: -1% 0% 0 7%; }
     .portfolio-tab .mobile-app .prince-jewel, .portfolio-tab .mobile-app .contact-merge {
       background: #d8a436; }
       .portfolio-tab .mobile-app .prince-jewel .tab-content-header h3, .portfolio-tab .mobile-app .contact-merge .tab-content-header h3 {
@@ -4402,7 +4472,7 @@ footer {
           border-width: 20px;
           margin-top: -20px; }
       .portfolio-tab .mobile-app .movers-fax figure, .portfolio-tab .mobile-app .per-sec figure {
-        margin: 0% -10% 0% 0; }
+        margin: 2% -4% 0% 0; }
     .portfolio-tab .mobile-app .pregnan-adv, .portfolio-tab .mobile-app .you-cloud {
       background: #a136d8;
       float: left; }
@@ -4429,7 +4499,7 @@ footer {
           border-width: 20px;
           margin-top: -20px; }
       .portfolio-tab .mobile-app .pregnan-adv figure, .portfolio-tab .mobile-app .you-cloud figure {
-        margin: -12% 0% 0%; }
+        margin: -3% -17% 0% 10%; }
     .portfolio-tab .mobile-app .health-analyser, .portfolio-tab .mobile-app .glo-slim {
       background: #36d886;
       float: right; }
@@ -4460,7 +4530,7 @@ footer {
           border-width: 20px;
           margin-top: -20px; }
       .portfolio-tab .mobile-app .see-wink figure {
-        margin: -1% -8% 0 7%; }
+        margin: -1% 0% 0 7%; }
     .portfolio-tab .mobile-app .contact-merge {
       background: #36bfd8; }
       .portfolio-tab .mobile-app .contact-merge .tab-content-header h3 {
@@ -4502,7 +4572,7 @@ footer {
           border-width: 20px;
           margin-top: -20px; }
       .portfolio-tab .mobile-app .per-sec figure {
-        margin: 0% -10% 0% 0; }
+        margin: 10% -10% 0% 0; }
     .portfolio-tab .mobile-app .you-cloud {
       background: #d86f36;
       float: left; }
@@ -4529,7 +4599,7 @@ footer {
           border-width: 20px;
           margin-top: -20px; }
       .portfolio-tab .mobile-app .you-cloud figure {
-        margin: -8% -6% 0% 0; }
+        margin: 0% -13% 0% 5%; }
     .portfolio-tab .mobile-app .glo-slim {
       background: #36b4d8;
       float: right; }
@@ -4559,7 +4629,7 @@ footer {
           float: left;
           text-align: left;
           text-transform: uppercase;
-          width: 65%; }
+          width: 55%; }
         .portfolio-tab .web-app .fourtaxi-web .tab-content-header ul, .portfolio-tab .web-app .inven-sys .tab-content-header ul, .portfolio-tab .web-app .hosp-sys .tab-content-header ul, .portfolio-tab .web-app .res-sys .tab-content-header ul, .portfolio-tab .web-app .leather-job .tab-content-header ul, .portfolio-tab .web-app .french-alley .tab-content-header ul {
           overflow: hidden;
           float: right; }
@@ -4649,7 +4719,7 @@ footer {
           width: 98%; }
       .portfolio-tab .web-app .inven-sys figure, .portfolio-tab .web-app .hosp-sys figure, .portfolio-tab .web-app .res-sys figure {
         width: 50%;
-        margin: 4% -7% 0 0%; }
+        margin: 0% auto; }
     .portfolio-tab .web-app .hosp-sys {
       background: #33e088;
       width: 59%;
@@ -4724,7 +4794,7 @@ footer {
             border-width: 20px;
             margin-top: -20px; }
       .portfolio-tab .web-app .leather-job figure {
-        margin: -2% 18% 0 0; }
+        margin: 0 auto !important; }
     .portfolio-tab .web-app .french-alley {
       background: #e03333; }
       .portfolio-tab .web-app .french-alley .tab-content-header {
@@ -4755,7 +4825,7 @@ footer {
             border-width: 20px;
             margin-top: -20px; }
       .portfolio-tab .web-app .french-alley figure {
-        margin: 8% 18%; }
+        margin: 0 auto !important; }
     .portfolio-tab .web-app .res-sys {
       background: #e08033; }
       .portfolio-tab .web-app .res-sys .tab-content-header {
@@ -4784,7 +4854,7 @@ footer {
             border-width: 20px;
             margin-top: -20px; }
       .portfolio-tab .web-app .res-sys figure {
-        margin: 5% -7% 0 0%; }
+        margin: 0 0%; }
 
 /*Indicators*/
 .overlay {
@@ -4815,7 +4885,7 @@ footer {
     height: 100%; }
     .overlay a:hover {
       outline-offset: 0px; }
-    .overlay a h1, .overlay a .expansion-web h2, .expansion-web .overlay a h2 {
+    .overlay a h1, .overlay a .expansion-web h2, .expansion-web .overlay a h2, .overlay a .android-web h2, .android-web .overlay a h2 {
       font-size: 30px;
       font-family: 'LinotypeMetroNovaPro';
       text-align: center;
@@ -4904,16 +4974,18 @@ footer {
   padding: 0 50px 0 0;
   color: #1e1e1e; }
   .expansion-web h1, .expansion-web h2 {
-    color: #000;
-    font-size: 2.3125em;
-    font-family: 'LinotypeMetroNovaPro';
+    color: #1e1e1e;
+    font-size: 2.5em;
+    font-family: 'LinotypeMetroNovaProMedium';
     margin: 0 0 30px; }
   .expansion-web h2 {
     font-size: 1.25em;
     margin: 20px 0; }
   .expansion-web article {
     font-size: 0.9375em;
-    line-height: 1.375em; }
+    line-height: 1.375em;
+    color: #1e1e1e;
+    font-family: 'OpenSansRegular'; }
   .expansion-web .client-list-detail {
     overflow: hidden;
     margin: 25px 0 0; }
@@ -4930,21 +5002,122 @@ footer {
     background: url(../img/portfolio/list_style.png) no-repeat 0 5px; }
 
 .bg-desktop {
-  /*background: url(../img/portfolio/bg_desktop.png) no-repeat 0px 0px;
-  background-size: contain;*/
   width: 100%;
   height: 468px;
-  padding: 21px 25px 0;
-  margin: 20% 0px 0;
+  padding: 21px 20px 0;
+  margin: 4% auto;
   overflow: hidden; }
   .bg-desktop ul {
     overflow: hidden; }
-    .bg-desktop ul li .item {
-      width: 525px;
+    .bg-desktop ul li.item {
+      overflow: hidden; }
+  .bg-desktop .detail-carousel {
+    bottom: 0; }
+
+.bg-tab {
+  padding: 32px 56px 0; }
+  .bg-tab ul {
+    overflow: hidden; }
+    .bg-tab ul li.item {
       overflow: hidden; }
 
-.detail-carousel {
-  bottom: -10px; }
+.tab-web {
+  padding: 0 20px 0 0; }
+  .tab-web .client-list-detail {
+    overflow: hidden;
+    margin: 48px 0 0;
+    left: 0 !important;
+    position: relative; }
+    .tab-web .client-list-detail li {
+      float: left;
+      padding: 6px 10px 9px 0; }
+      .tab-web .client-list-detail li.client {
+        background: url(../img/portfolio/bg_list_client.png) no-repeat;
+        padding: 6px 20px 9px 13px;
+        color: #fff; }
+  .tab-web .andriod-app {
+    margin: 24px 0 0;
+    position: relative;
+    float: right; }
+  .tab-web p {
+    float: left !important;
+    padding: 0;
+    width: auto; }
+
+.android-web {
+  overflow: hidden;
+  padding: 0 0 0;
+  color: #1e1e1e; }
+  .android-web h1, .android-web h2 {
+    color: #1e1e1e;
+    font-size: 2.5em;
+    font-family: 'LinotypeMetroNovaProMedium';
+    margin: 0 0 30px; }
+  .android-web h2 {
+    font-size: 1.25em;
+    margin: 20px 0; }
+  .android-web article {
+    font-size: 0.9375em;
+    line-height: 1.375em;
+    color: #1e1e1e;
+    font-family: 'OpenSansRegular'; }
+  .android-web .client-list-detail {
+    overflow: hidden;
+    margin: 25px 0 0; }
+    .android-web .client-list-detail li {
+      float: left;
+      padding: 6px 10px 9px 0; }
+      .android-web .client-list-detail li.client {
+        background: url(../img/portfolio/bg_list_client.png) no-repeat;
+        padding: 6px 20px 9px 13px;
+        color: #fff; }
+  .android-web .list-color li {
+    padding: 0px 0 10px 20px;
+    margin: 0 0 0 10px;
+    background: url(../img/portfolio/list_style.png) no-repeat 0 5px; }
+
+.app-design {
+  position: relative;
+  overflow: hidden;
+  margin: 4% 0px 0; }
+  .app-design .detail-carousel {
+    bottom: -15%;
+    left: 50%;
+    position: relative; }
+  .app-design .bg-android {
+    height: 560px;
+    padding: 30px 32px 0;
+    margin: 0% 0px 0;
+    overflow: hidden;
+    float: left; }
+    .app-design .bg-android ul {
+      overflow: hidden; }
+      .app-design .bg-android ul li .item {
+        width: 525px;
+        overflow: hidden; }
+  .app-design .client-list-detail {
+    overflow: hidden;
+    margin: 25px 0 0;
+    float: left; }
+    .app-design .client-list-detail li {
+      float: left;
+      padding: 6px 10px 9px 0; }
+      .app-design .client-list-detail li.client {
+        background: url(../img/portfolio/bg_list_client.png) no-repeat;
+        padding: 6px 20px 9px 13px;
+        color: #fff; }
+  .app-design .andriod-app {
+    margin: 24px 0 0;
+    float: left;
+    width: 35%; }
+
+.bg-apple {
+  height: 560px;
+  padding: 91px 36px 0px !important;
+  margin: 0% 0px 0; }
+
+.apple-carousel {
+  bottom: -24% !important; }
 
 #back-top {
   bottom: 0px;
@@ -4953,12 +5126,231 @@ footer {
   z-index: 100000000; }
   #back-top a {
     display: block;
-    width: 122px;
-    height: 40px;
+    width: 73px;
+    height: 30px;
     transition: 0.5s all;
-    background: url(../img/page-top.png) top no-repeat; }
+    background: url(../img/page-top.png) top right no-repeat; }
     #back-top a:hover {
-      background: url(../img/page-top-hover.png) top no-repeat; }
+      background: url(../img/page-top-hover.png) top right no-repeat; }
+
+/* career form main*/
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: 23; }
+
+.box {
+  background: #ff7959;
+  text-align: center;
+  position: absolute;
+  display: none;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  z-index: 24; }
+  .box .career-form {
+    width: 430px;
+    padding: 40px;
+    overflow: hidden; }
+    .box .career-form .contact-area {
+      position: relative;
+      overflow: hidden; }
+      .box .career-form .contact-area .input-container {
+        position: relative;
+        width: 430px;
+        height: 30px;
+        display: block;
+        float: left;
+        margin: 9% 1% 0;
+        z-index: 15; }
+        .box .career-form .contact-area .input-container .input-field {
+          background: none;
+          border: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+          height: 30px;
+          color: #fff;
+          width: 100%;
+          font-size: 1em;
+          padding: 0 0 0 3px;
+          border-radius: 0; }
+          .box .career-form .contact-area .input-container .input-field:focus {
+            background: rgba(204, 97, 71, 0.9) none repeat scroll 0 0;
+            outline: medium none; }
+        .box .career-form .contact-area .input-container .focused-border {
+          background: #fff none repeat scroll 0 0;
+          bottom: 0;
+          height: 3px;
+          left: 0;
+          position: absolute;
+          width: 0; }
+        .box .career-form .contact-area .input-container .input-label {
+          position: absolute;
+          left: 0;
+          transition: top 0.5s;
+          -webkit-transition: top 0.5s;
+          -moz-transition: top 0.5s;
+          top: 5px;
+          font-family: 'OpenSansRegular';
+          font-size: 1.125em;
+          color: #fff; }
+          .box .career-form .contact-area .input-container .input-label.focused {
+            top: -22px;
+            transition: top 0.5s ease 0s; }
+      .box .career-form .contact-area .custom-file-upload-hidden {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        left: -9999px; }
+      .box .career-form .contact-area .custom-file-upload {
+        display: block;
+        width: auto;
+        font-size: 16px;
+        margin-top: 30px; }
+        .box .career-form .contact-area .custom-file-upload label {
+          display: block;
+          margin-bottom: 5px; }
+      .box .career-form .contact-area .file-upload-wrapper {
+        position: relative;
+        margin-bottom: 5px; }
+      .box .career-form .contact-area .file-upload-input {
+        background: none;
+        border: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        height: 30px;
+        color: #fff;
+        /*width: 310px;*/
+        margin: 9% 1%;
+        font-family: 'OpenSansRegular';
+        font-size: 1.125em;
+        padding: 0 0 0 0px;
+        border-radius: 0;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        float: left;
+        /* IE 9 Fix */ }
+        .box .career-form .contact-area .file-upload-input:hover, .box .career-form .contact-area .file-upload-input:focus {
+          background: rgba(204, 97, 71, 0.9) none repeat scroll 0 0;
+          outline: medium none; }
+      .box .career-form .contact-area ::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #fff;
+        font-family: 'OpenSansRegular';
+        font-size: 1.125em; }
+      .box .career-form .contact-area :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+        opacity: 1;
+        font-family: 'OpenSansRegular';
+        font-size: 1.125em; }
+      .box .career-form .contact-area ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #fff;
+        opacity: 1;
+        font-family: 'OpenSansRegular';
+        font-size: 1.125em; }
+      .box .career-form .contact-area :-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #fff;
+        font-family: 'OpenSansRegular';
+        font-size: 1.125em; }
+      .box .career-form .contact-area .file-upload-button {
+        cursor: pointer;
+        display: inline-block;
+        color: #fff;
+        width: 100px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 0.875em;
+        text-transform: uppercase;
+        margin: 36px 0 0 0;
+        border: none;
+        position: relative;
+        background: url(../img/bg-browse.png) no-repeat;
+        float: left;
+        /* IE 9 Fix */
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
+        .box .career-form .contact-area .file-upload-button:after {
+          width: 0%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #fff; }
+        .box .career-form .contact-area .file-upload-button:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
+        .box .career-form .contact-area .file-upload-button:hover, .box .career-form .contact-area .file-upload-button:active {
+          color: #e85b3b; }
+        .box .career-form .contact-area .file-upload-button:hover:after, .box .career-form .contact-area .file-upload-button:active:after {
+          width: 100%; }
+    .box .career-form .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      background: url(../img/close-button.png) top no-repeat;
+      width: 17px;
+      height: 17px;
+      opacity: 1; }
+    .box .career-form .apply-career {
+      width: 76px;
+      height: 28px;
+      position: relative;
+      z-index: 2;
+      margin: 2% 1%; }
+      .box .career-form .apply-career a {
+        width: 76px;
+        height: 28px;
+        color: #fff;
+        font-weight: bold;
+        line-height: 28px;
+        font-size: 0.875em;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        transition: 1s all;
+        -moz-transition: 1s all;
+        -ms-transition: 1s all;
+        -webkit-transition: 1s all;
+        margin: 2% 0%;
+        font-family: 'LinotypeMetroNovaProLight';
+        background: url(../img/apply-career.png) center center no-repeat; }
+        .box .career-form .apply-career a:after {
+          width: 0%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #fff; }
+        .box .career-form .apply-career a:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
+        .box .career-form .apply-career a:hover, .box .career-form .apply-career a:active {
+          color: #e85b3b; }
+        .box .career-form .apply-career a:hover:after, .box .career-form .apply-career a:active:after {
+          width: 100%; }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .navbar-right {
@@ -5028,10 +5420,10 @@ footer {
         color: #fff;
         width: 108px;
         height: 45px;
-        line-height: 29px;
+        line-height: 45px;
         text-align: center;
         font-family: 'LinotypeMetroNovaProLight';
-        font-size: 0.9em;
+        font-size: 1.59em;
         background: url(../img/banner-link.png) center center no-repeat;
         display: block;
         transition: 0.5s all;
@@ -5276,6 +5668,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/mob-app.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services1 .front .front-content {
@@ -5304,6 +5698,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services1 .back .back-content {
                     display: block;
@@ -5355,6 +5751,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/mob-game.png) center 45px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 .front .front-content {
@@ -5383,6 +5781,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 .back .back-content {
                     display: block;
@@ -5439,6 +5839,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/mob-cloud.png) center 25px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services1 .front .front-content {
@@ -5467,6 +5869,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services1 .back .back-content {
                     display: block;
@@ -5518,6 +5922,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/web-app.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 .front .front-content {
@@ -5546,6 +5952,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 .back .back-content {
                     display: block;
@@ -5602,6 +6010,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/e-commerce.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services1 .front .front-content {
@@ -5630,6 +6040,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services1 .back .back-content {
                     display: block;
@@ -5681,6 +6093,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/loc-base.png) center 25px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 .front .front-content {
@@ -5709,6 +6123,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 .back .back-content {
                     display: block;
@@ -5774,6 +6190,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/cross-plat.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right1 .services1 .front .front-content {
@@ -5802,6 +6220,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right1 .services1 .back .back-content {
                     display: block;
@@ -5853,6 +6273,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/enterprise.png) center 15px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right1 .services2 .front .front-content {
@@ -5892,6 +6314,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right1 .services2 .back .back-content {
                     display: block;
@@ -5948,6 +6372,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/web-design.png) center 25px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right2 .services1 .front .front-content {
@@ -5976,6 +6402,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right2 .services1 .back .back-content {
                     display: block;
@@ -6027,6 +6455,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/open-source.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right2 .services2 .front .front-content {
@@ -6055,6 +6485,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right2 .services2 .back .back-content {
                     display: block;
@@ -6111,6 +6543,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/mob-app.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right3 .services1 .front .front-content {
@@ -6139,6 +6573,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right3 .services1 .back .back-content {
                     display: block;
@@ -6191,6 +6627,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/more-app.png) 225px 70px no-repeat #fff; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right3 .services2 .front .front-content {
@@ -6220,6 +6658,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 124px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/more-app.png) 225px 70px no-repeat #fff; }
                   .services .services-center .services-top .services-bottom .services-content .services-right .services-right3 .services2 .back .front-content {
@@ -6338,12 +6778,14 @@ footer {
             right: 0px;
             top: 0; }
           .products .product-content .product-main .product-cont h3 {
-            font-size: 40px;
-            font-family: 'LinotypeMetroNovaProBold';
+            font-size: 2.5em;
+            font-family: 'LinotypeMetroNovaPro';
             color: #fff;
             position: absolute;
             bottom: 30%;
             text-transform: uppercase; }
+            .products .product-content .product-main .product-cont h3 span {
+              font-family: 'LinotypeMetroNovaProLight'; }
           .products .product-content .product-main .product-cont p {
             font-size: 12px;
             font-family: 'LinotypeMetroNovaPro';
@@ -6365,7 +6807,7 @@ footer {
     .products .more-prod {
       width: 156px;
       height: 32px;
-      margin: 30px 0 0 10px;
+      margin: 30px 0 0 16px;
       position: relative;
       z-index: 2; }
       .products .more-prod a {
@@ -6754,6 +7196,21 @@ footer {
         width: 100%; }
 
   /* Portfolio html 1024 */
+  header {
+    width: 100%;
+    position: relative; }
+    header .ip-banner {
+      position: relative; }
+    header h2 {
+      position: absolute;
+      bottom: 0%;
+      margin: 0 0 30px;
+      left: 0;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      font-family: 'LinotypeMetroNovaProLight';
+      font-size: 2.75em; }
+
   .portfolio-nav {
     margin: 0; }
     .portfolio-nav .tab-head {
@@ -6828,23 +7285,35 @@ footer {
           width: 100%;
           height: 100%; }
         .ip-services .pad-row .ip-services-content .service-box:hover h4 {
-          -webkit-transform: scale(1.1);
           transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
           transition: .5s all;
-          -webkit-transform-origin: center;
           -webkit-transition: .5s all;
-          transform-origin: center; }
+          -moz-transition: .5s all;
+          -ms-transition: .5s all;
+          transform-origin: center;
+          -moz-transform-origin: center;
+          -ms-transform-origin: center;
+          -webkit-transform-origin: center; }
         .ip-services .pad-row .ip-services-content .service-box:hover p {
-          -webkit-transform: scale(1.1);
           transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
           transition: .5s all;
-          -webkit-transform-origin: center;
           -webkit-transition: .5s all;
-          transform-origin: center; }
+          -moz-transition: .5s all;
+          -ms-transition: .5s all;
+          transform-origin: center;
+          -moz-transform-origin: center;
+          -ms-transform-origin: center;
+          -webkit-transform-origin: center; }
         .ip-services .pad-row .ip-services-content .service-box:hover {
           background-color: #f8f8f8; }
         .ip-services .pad-row .ip-services-content .service-box_body {
-          padding: 10px 20px; }
+          padding: 20px 20px 30px; }
           .ip-services .pad-row .ip-services-content .service-box_body h4 {
             font-family: 'LinotypeMetroNovaPro';
             font-size: 20px;
@@ -7402,21 +7871,21 @@ footer {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .navbar {
     border-radius: none;
-    background-color: f03b3b; }
+    background-color: e85b3a; }
 
   .navbar-default {
-    background-color: #f03b3b; }
+    background-color: #e85b3a; }
 
   .navbar-default .navbar-brand {
     width: 100%;
     margin: 0 20%; }
 
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #f03b3b; }
+    background-color: #e85b3a; }
 
   .navbar-default .navbar-toggle {
     border-color: #fff;
-    background-color: #f03b3b;
+    background-color: #e85b3a;
     border-radius: 50%;
     display: block !important;
     float: right;
@@ -7451,10 +7920,6 @@ footer {
       .our-team .ourteam-MobImage img {
         width: 80%;
         margin: 0 auto; }
-
-  .ip-banner img {
-    width: auto !important;
-    height: 250px !important; }
 
   header {
     overflow: hidden;
@@ -7734,6 +8199,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/mob-app.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services1 .front .front-content {
@@ -7765,6 +8232,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services1 .back .back-content {
                     display: block;
@@ -7816,6 +8285,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/mob-game.png) center 45px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 .front .front-content {
@@ -7847,6 +8318,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 .back .back-content {
                     display: block;
@@ -7902,6 +8375,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/mob-cloud.png) center 25px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services1 .front .front-content {
@@ -7933,6 +8408,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services1 .back .back-content {
                     display: block;
@@ -7984,6 +8461,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/web-app.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 .front .front-content {
@@ -8015,6 +8494,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 .back .back-content {
                     display: block;
@@ -8070,6 +8551,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/e-commerce.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services1 .front .front-content {
@@ -8101,6 +8584,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services1 .back .back-content {
                     display: block;
@@ -8152,6 +8637,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/loc-base.png) center 25px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 .front .front-content {
@@ -8183,6 +8670,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 .back .back-content {
                     display: block;
@@ -8232,6 +8721,7 @@ footer {
       .more-serv-mob a:hover:after, .more-serv-mob a:active:after {
         width: 100%; }
 
+  /*product 768*/
   .products {
     width: 100%;
     float: left;
@@ -8240,8 +8730,8 @@ footer {
     position: relative;
     z-index: 1; }
     .products .products-heading {
-      margin: 0 0 20px 10px;
-      font-size: 35px;
+      margin: 0 0 20px 1%;
+      font-size: 50px;
       color: #444444;
       font-family: 'LinotypeMetroNovaProLight'; }
       .products .products-heading span {
@@ -8251,145 +8741,116 @@ footer {
       width: 100%;
       overflow: hidden; }
       .products .product-content .product-1 {
-        width: 50%;
-        height: 172px;
+        width: 100%;
+        height: 208px;
         float: left;
         overflow: hidden;
         display: block;
         margin: 5% 0px 5% 0px;
-        transition: .5s all;
-        -webkit-transition: .5s all;
-        -moz-transition: .5s all;
-        -ms-transition: .5s all;
-        background: url(../img/product1.png) top no-repeat;
+        background: url(../img/product1-mob.png) top no-repeat;
         background-size: contain;
         -webkit-background-size: contain;
         -moz-background-size: contain; }
         .products .product-content .product-1:hover {
-          background: url(../img/product1-hover.png) top no-repeat;
+          background: url(../img/product1-mob-hover.png) top no-repeat;
           background-size: contain;
           -webkit-background-size: contain;
           -moz-background-size: contain; }
       .products .product-content .product-2 {
         float: left;
-        width: 50%;
-        height: 172px;
+        width: 100%;
+        height: 208px;
         overflow: hidden;
         display: block;
-        margin: 5% 0px 5% 0px;
-        transition: .5s all;
-        -webkit-transition: .5s all;
-        -moz-transition: .5s all;
-        -ms-transition: .5s all;
-        /* margin: 0 0px 20px 10px;*/
-        background: url(../img/product2.png) top no-repeat;
+        background: url(../img/product2-mob.png) top no-repeat;
         background-size: contain;
         -webkit-background-size: contain;
         -moz-background-size: contain; }
         .products .product-content .product-2:hover {
-          background: url(../img/product2-hover.png) top no-repeat;
+          background: url(../img/product2-mob-hover.png) top no-repeat;
           background-size: contain;
           -webkit-background-size: contain;
           -moz-background-size: contain; }
       .products .product-content .product-3 {
         float: left;
-        width: 50%;
-        height: 172px;
+        width: 100%;
+        height: 208px;
         overflow: hidden;
         display: block;
-        transition: .5s all;
-        -webkit-transition: .5s all;
-        -moz-transition: .5s all;
-        -ms-transition: .5s all;
-        margin: 0% 0px 5% 0px;
-        background: url(../img/product3.png) top no-repeat;
+        margin: 5% 0px 5% 0px;
+        background: url(../img/product3-mob.png) top no-repeat;
         background-size: contain;
         -webkit-background-size: contain;
         -moz-background-size: contain; }
         .products .product-content .product-3:hover {
-          background: url(../img/product3-hover.png) top no-repeat;
+          background: url(../img/product3-mob-hover.png) top no-repeat;
           background-size: contain;
           -webkit-background-size: contain;
           -moz-background-size: contain; }
       .products .product-content .product-4 {
         float: left;
-        width: 50%;
-        height: 172px;
-        margin: 0% 0px 5% 0px;
+        width: 100%;
+        height: 208px;
+        margin: 0 0px 5% 0px;
         overflow: hidden;
         display: block;
-        transition: .5s all;
-        -webkit-transition: .5s all;
-        -moz-transition: .5s all;
-        -ms-transition: .5s all;
-        background: url(../img/product4.png) top no-repeat;
+        background: url(../img/product4-mob.png) top no-repeat;
         background-size: contain;
         -webkit-background-size: contain;
         -moz-background-size: contain; }
         .products .product-content .product-4:hover {
-          background: url(../img/product4-hover.png) top no-repeat;
+          background: url(../img/product4-mob-hover.png) top no-repeat;
           background-size: contain;
           -webkit-background-size: contain;
           -moz-background-size: contain; }
       .products .product-content .product-main {
-        width: 53%;
-        left: 24%;
+        width: 58%;
+        height: 293px;
         overflow: hidden;
-        transition: 1s all;
-        -webkit-transition: 1s all;
-        -moz-transition: 1s all;
-        -ms-transition: 1s all;
         position: relative;
-        margin: 0 0px 0px 0px; }
+        margin: 0 21% 0; }
         .products .product-content .product-main figure {
           position: absolute; }
           .products .product-content .product-main figure img {
             right: 0px;
             top: 0;
-            z-index: -1;
-            transition: 1s;
-            -moz-transition: 1s all;
-            -ms-transition: 1s all;
-            -webkit-transition: 1s all; }
+            z-index: -1; }
         .products .product-content .product-main .product-cont {
           position: absolute;
           background: url(../img/ongoing.png) top right no-repeat;
           width: 100%;
-          height: 100%;
-          padding: 5%; }
+          height: 100%; }
           .products .product-content .product-main .product-cont img {
             position: absolute;
             right: 0px;
             top: 0; }
           .products .product-content .product-main .product-cont h3 {
-            font-size: 45px;
+            font-size: 40px;
             font-family: 'LinotypeMetroNovaProBold';
             color: #fff;
             position: absolute;
-            bottom: 24%;
+            bottom: 40%;
             text-transform: uppercase; }
           .products .product-content .product-main .product-cont p {
-            font-size: 15px;
+            font-size: 12px;
             font-family: 'LinotypeMetroNovaPro';
             color: #ccc;
             line-height: 100%;
             text-transform: none;
             position: absolute;
-            bottom: 10%;
+            bottom: 25%;
             width: 80%; }
           .products .product-content .product-main .product-cont .sesKhan-link {
             position: absolute;
-            bottom: 13%;
+            bottom: 30%;
             right: 5%;
             width: 28px;
             height: 30px;
             background: url(../img/seskhan-link.png) top no-repeat; }
-            .products .product-content .product-main .product-cont .sesKhan-link:hover {
-              background: url(../img/seskhan-link.png) bottom no-repeat; }
     .products .more-prod {
       width: 156px;
       height: 32px;
-      margin: 30px 0 0 10px;
+      margin: 30px 0 0 3%;
       position: relative;
       z-index: 2; }
       .products .more-prod a {
@@ -8803,11 +9264,11 @@ footer {
       .contact-us .pad-row .contact-content {
         position: relative;
         overflow: hidden;
-        margin: 10% auto; }
+        margin: 5% auto; }
         .contact-us .pad-row .contact-content .contact-heading {
           width: 100%;
-          height: 65px;
-          margin: 5% 0 10%; }
+          height: 55px;
+          margin: 0% 0 0%; }
           .contact-us .pad-row .contact-content .contact-heading h4 {
             font-family: 'LinotypeMetroNovaPro';
             font-size: 20px;
@@ -8825,12 +9286,12 @@ footer {
         .contact-us .pad-row .contact-content .line {
           background-color: #fd9189;
           width: 63%;
-          margin: 10% auto;
+          margin: 3% auto;
           height: 1px;
           opacity: 1; }
         .contact-us .pad-row .contact-content .conatct-source {
           overflow: hidden;
-          width: 80% !important;
+          width: 36% !important;
           margin: 0 auto; }
           .contact-us .pad-row .contact-content .conatct-source .e-mail {
             background: url(../img/email.png) left center no-repeat; }
@@ -8847,7 +9308,7 @@ footer {
             height: 20px; }
             .contact-us .pad-row .contact-content .conatct-source p:first-child {
               color: #fd9189;
-              padding: 0 0 0 12%; }
+              padding: 0 0 0 0%; }
             .contact-us .pad-row .contact-content .conatct-source p img {
               margin: 0 50px -20px 63px; }
 
@@ -8880,19 +9341,31 @@ footer {
           width: 100%;
           height: 100%; }
         .ip-services .pad-row .ip-services-content .service-box:hover h4 {
-          -webkit-transform: scale(1.1);
           transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
           transition: .5s all;
-          -webkit-transform-origin: center;
           -webkit-transition: .5s all;
-          transform-origin: center; }
+          -moz-transition: .5s all;
+          -ms-transition: .5s all;
+          transform-origin: center;
+          -moz-transform-origin: center;
+          -ms-transform-origin: center;
+          -webkit-transform-origin: center; }
         .ip-services .pad-row .ip-services-content .service-box:hover p {
-          -webkit-transform: scale(1.1);
           transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
           transition: .5s all;
-          -webkit-transform-origin: center;
           -webkit-transition: .5s all;
-          transform-origin: center; }
+          -moz-transition: .5s all;
+          -ms-transition: .5s all;
+          transform-origin: center;
+          -moz-transform-origin: center;
+          -ms-transform-origin: center;
+          -webkit-transform-origin: center; }
         .ip-services .pad-row .ip-services-content .service-box:hover {
           background-color: #f8f8f8; }
         .ip-services .pad-row .ip-services-content .service-box_body {
@@ -8908,7 +9381,8 @@ footer {
             font-size: 15px;
             color: #8a8a8a;
             line-height: 24px;
-            width: 100%; }
+            width: 94%;
+            margin: 3% auto; }
         .ip-services .pad-row .ip-services-content .service-box1::before {
           display: none; }
         .ip-services .pad-row .ip-services-content .service-box1 [class*="icon"]::after {
@@ -9453,6 +9927,22 @@ footer {
           -webkit-transform: translate(0px, -20px); }
 
   /* Portfolio html 768 */
+  header {
+    width: 100%;
+    position: relative; }
+    header .ip-banner {
+      position: relative;
+      margin: 8% auto 0; }
+    header h2 {
+      position: absolute;
+      bottom: 0%;
+      margin: 0 0 30px;
+      left: 2%;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      font-family: 'LinotypeMetroNovaProLight';
+      font-size: 1.75em; }
+
   .portfolio-nav {
     margin: 0; }
     .portfolio-nav .tab-head {
@@ -9582,7 +10072,37 @@ footer {
   .portfolio-tab .web-app figure {
     margin: 0px auto;
     float: none;
-    width: 50%; } }
+    width: 50%; }
+
+  /* portfolio link 1024*/
+  .tab-web .client-list-detail {
+    overflow: hidden;
+    margin: 48px 0 0;
+    left: 0 !important;
+    position: relative; }
+
+  .tab-web p {
+    float: left !important;
+    padding: 0; }
+
+  .bg-tab {
+    width: 74% !important;
+    height: 468px !important;
+    padding: 26px 56px 0 !important;
+    margin: 4% auto;
+    overflow: hidden; }
+
+  .bg-desktop {
+    width: 84%;
+    height: 490px;
+    padding: 21px 25px 0;
+    margin: 4% auto;
+    overflow: hidden; }
+
+  .app-design .client-list-detail {
+    overflow: hidden;
+    margin: 25px 0 0;
+    float: none !important; } }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .navbar-default {
     border-color: transparent;
@@ -9597,7 +10117,7 @@ footer {
     -moz-transition: 0.9s all; }
 
   .navbar-header {
-    background-color: #f03b3b; }
+    background-color: #e85b3a; }
 
   .navbar-default .navbar-brand {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9612,11 +10132,11 @@ footer {
     position: relative; }
 
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #f03b3b; }
+    background-color: #e85b3a; }
 
   .navbar-default .navbar-toggle {
     border-color: #fff;
-    background-color: #f03b3b;
+    background-color: #e85b3a;
     border-radius: 50%; }
 
   .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -9784,7 +10304,7 @@ footer {
           font-family: 'LinotypeMetroNovaProLight'; }
 
   .menu {
-    background: #f03b3b repeat left top;
+    background: #e85b3a repeat left top;
     right: -325px;
     position: fixed;
     width: 325px;
@@ -10046,6 +10566,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/mob-app.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services1 .front .front-content {
@@ -10078,6 +10600,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services1 .back .back-content {
@@ -10133,6 +10657,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/mob-game.png) center 45px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 .front .front-content {
@@ -10165,6 +10691,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left1 .services2 .back .back-content {
@@ -10224,6 +10752,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/mob-cloud.png) center 25px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services1 .front .front-content {
@@ -10256,6 +10786,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services1 .back .back-content {
@@ -10311,6 +10843,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/web-app.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 .front .front-content {
@@ -10343,6 +10877,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left2 .services2 .back .back-content {
@@ -10402,6 +10938,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/e-commerce.png) center 25px no-repeat #fb6246; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services1 .front .front-content {
@@ -10434,6 +10972,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services1 .back .back-content {
@@ -10489,6 +11029,8 @@ footer {
                   -webkit-transition: all 0.5s ease-in;
                   color: white;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/loc-base.png) center 25px no-repeat #ff7959; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 .front .front-content {
@@ -10521,6 +11063,8 @@ footer {
                   color: white;
                   background: url(../img/more-app.png) 175px 70px no-repeat #fff;
                   backface-visibility: hidden;
+                  -moz-backface-visibility: hidden;
+                  -ms-backface-visibility: hidden;
                   -webkit-backface-visibility: hidden;
                   background: url(../img/more-app.png) 50% 65% no-repeat #fff !important; }
                   .services .services-center .services-top .services-bottom .services-content .services-left .services-left3 .services2 .back .back-content {
@@ -10680,7 +11224,7 @@ footer {
             right: 0px;
             top: 0; }
           .products .product-content .product-main .product-cont h3 {
-            font-size: 40px;
+            font-size: 35px;
             font-family: 'LinotypeMetroNovaProBold';
             color: #fff;
             position: absolute;
@@ -11004,14 +11548,14 @@ footer {
 
   .social-icons {
     llist-style: none;
-    margin: 5% 0 2% 10%;
+    margin: 5% auto;
     padding: 0;
     text-align: center;
-    display: block;
+    display: table;
     overflow: hidden; }
     .social-icons li {
       float: left;
-      margin: 10px;
+      margin: 7px;
       padding: 0; }
       .social-icons li a {
         height: 64px;
@@ -11401,19 +11945,31 @@ footer {
           width: 100%;
           height: 100%; }
         .ip-services .pad-row .ip-services-content .service-box:hover h4 {
-          -webkit-transform: scale(1.1);
           transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
           transition: .5s all;
-          -webkit-transform-origin: center;
           -webkit-transition: .5s all;
-          transform-origin: center; }
+          -moz-transition: .5s all;
+          -ms-transition: .5s all;
+          transform-origin: center;
+          -moz-transform-origin: center;
+          -ms-transform-origin: center;
+          -webkit-transform-origin: center; }
         .ip-services .pad-row .ip-services-content .service-box:hover p {
-          -webkit-transform: scale(1.1);
           transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
           transition: .5s all;
-          -webkit-transform-origin: center;
           -webkit-transition: .5s all;
-          transform-origin: center; }
+          -moz-transition: .5s all;
+          -ms-transition: .5s all;
+          transform-origin: center;
+          -moz-transform-origin: center;
+          -ms-transform-origin: center;
+          -webkit-transform-origin: center; }
         .ip-services .pad-row .ip-services-content .service-box:hover {
           background-color: #f8f8f8; }
         .ip-services .pad-row .ip-services-content .service-box_body {
@@ -11974,6 +12530,21 @@ footer {
           -webkit-transform: translate(0px, -20px); }
 
   /* Portfolio html 480 */
+  header {
+    width: 100%;
+    position: relative; }
+    header .ip-banner {
+      position: relative; }
+    header h2 {
+      position: absolute;
+      bottom: 0%;
+      margin: 0 0 30px;
+      left: 2%;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      font-family: 'LinotypeMetroNovaProLight';
+      font-size: 1.75em; }
+
   .portfolio-nav {
     margin: 0; }
     .portfolio-nav .tab-head {
@@ -12043,17 +12614,17 @@ footer {
     position: relative;
     text-align: center;
     margin: 2% 0 0 0; }
-    .h1-container h1, .h1-container .expansion-web h2, .expansion-web .h1-container h2 {
+    .h1-container h1, .h1-container .expansion-web h2, .expansion-web .h1-container h2, .h1-container .android-web h2, .android-web .h1-container h2 {
       color: #1e1e1e;
       font-family: 'LinotypeMetroNovaProLight';
       font-size: 24px !important;
       margin: 1% 0; }
-      .h1-container h1::before, .h1-container .expansion-web h2::before, .expansion-web .h1-container h2::before {
+      .h1-container h1::before, .h1-container .expansion-web h2::before, .expansion-web .h1-container h2::before, .h1-container .android-web h2::before, .android-web .h1-container h2::before {
         margin-left: -50%; }
-      .h1-container h1::after, .h1-container .expansion-web h2::after, .expansion-web .h1-container h2::after {
+      .h1-container h1::after, .h1-container .expansion-web h2::after, .expansion-web .h1-container h2::after, .h1-container .android-web h2::after, .android-web .h1-container h2::after {
         margin-right: -50%; }
 
-  .h1-container h1::before, .h1-container .expansion-web h2::before, .expansion-web .h1-container h2::before, .h1-container h1::after, .h1-container .expansion-web h2::after, .expansion-web .h1-container h2::after {
+  .h1-container h1::before, .h1-container .expansion-web h2::before, .expansion-web .h1-container h2::before, .h1-container .android-web h2::before, .android-web .h1-container h2::before, .h1-container h1::after, .h1-container .expansion-web h2::after, .expansion-web .h1-container h2::after, .h1-container .android-web h2::after, .android-web .h1-container h2::after {
     background: #454545 none repeat scroll 0 0;
     content: "";
     display: inline-block;
@@ -12137,7 +12708,50 @@ footer {
   .portfolio-tab .web-app figure {
     margin: 0px auto;
     float: none;
-    width: 80%; } }
+    width: 80%; }
+
+  /* POrtfolio LInk */
+  .tab-web .client-list-detail {
+    overflow: hidden;
+    margin: 48px 0 0;
+    left: 0 !important;
+    position: relative; }
+
+  .tab-web p {
+    float: left !important;
+    padding: 0; }
+
+  .bg-tab {
+    padding: 26px 44px 0 !important; }
+
+  .bg-desktop {
+    width: 100%;
+    height: 350px;
+    padding: 14px 16px 0;
+    margin: 4% auto;
+    overflow: hidden; }
+
+  .app-design .client-list-detail {
+    overflow: hidden;
+    margin: 25px 1% 0;
+    float: left !important; }
+
+  .app-design p {
+    float: left !important;
+    width: 100%; }
+
+  /* career form lightbox*/
+  .file-upload-input {
+    margin: 10% 1% !important; }
+
+  .file-upload-button {
+    margin: 35px 0 0 0 !important; } }
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  /* Career Form */
+  .career-form {
+    width: 100% !important;
+    padding: 14% !important;
+    overflow: hidden !important; } }
 @font-face {
   font-family: 'LinotypeMetroNovaProItalic';
   src: url("../fonts/LinotypeMetroNovaProItalic.eot");

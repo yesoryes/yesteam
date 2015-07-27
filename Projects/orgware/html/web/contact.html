@@ -61,12 +61,22 @@
 </div>
 
 <!-- Header -->
-
-<header class="ip-banner"> <img src="img/banner-contact.jpg"  alt=""/> </header>
+ 
+<header>
+  <div class="ip-banner"> <img src="img/banner-contact.jpg"  alt=""/>
+    <div class="container">
+      <div class="row text-center pad-row">
+        <div class="col-md-12 col-sm-12">
+          <h2>Contact</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 <section class="contact-us">
   <div class="container">
     <div class="row text-center pad-row">
-      <div class="col-md-4  col-sm-4">
+      <div class="col-md-4  col-sm-12">
         <div class="contact-content">
           <div class="contact-heading">
             <h4>HQ &amp; Technology R&amp;D Center </h4>
@@ -85,7 +95,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4  col-sm-4">
+      <div class="col-md-4  col-sm-12">
         <div class="contact-content">
           <div class="contact-heading"> 
             <h4>Web Development Center<br/>
@@ -105,15 +115,14 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4  col-sm-4">
+      <div class="col-md-4  col-sm-12">
         <div class="contact-content">
           <div class="contact-heading">
              <h4>Marketing Office</h4>
           </div>
           <div class="contact-address">
             <p>Acclary Consulting Pvt Ltd<br/>
-              Shakthi Towers<br/>
-              Tower II, 4th floor<br/>
+              Shakthi Towers, Tower II, 4th floor<br/>
               #766 Anna salai<br/>
               Chennai – 600 002, India.</p>
           </div>
@@ -147,7 +156,7 @@
             <span class="focused-border"></span> </span> <span class="input-container textarea-container"  data-sr='wait 1s ,scale up 80% no reset' >
             <textarea class="input-field textarea-field"  id="field-msg" name="message"></textarea>
             <label class="input-label textarea-label"  for="field-msg"> Your Message </label>
-            <span class="focused-border"></span> </span>
+            <span class="focused-border"></span></span>
             <p class=" sucess-msg">Congratulations your message has been sent!</p>
             <p class=" error-msg" id="error_req">There's an error, email address and message are required</p>
             <p class=" error-msg" id="error_email">There's an error, please check your email address</p>
@@ -196,9 +205,7 @@
               <li><a href="portfolio_detail.html">4way Taxi</a></li>
               <li><a href="portfolio_detail.html">4way Bus</a></li>
               <li><a href="portfolio_detail.html">4way Auto</a></li>
-              <li><a href="portfolio_detail.html">TrackIDoN</a></li>
-              <li><a href="portfolio_detail.html">NearbyU</a></li>
-              <li><a href="portfolio_detail.html">4way EHRM</a></li>
+              <li><a href="portfolio_detail.html">TrackIDoN</a></li> 
             </ul>
           </div>
         </div>
@@ -206,12 +213,10 @@
           <div class="foot-services">
             <h5>Technologies</h5>
             <ul>
-              <li><a href="javascript:void(0)">HTML5</a></li>
-              <li><a href="javascript:void(0)">CSS3</a></li>
-              <li><a href="javascript:void(0)">Coraona</a></li>
-              <li><a href="javascript:void(0)">PHP</a></li>
-              <li><a href="javascript:void(0)">MySQL</a></li>
-              <li><a href="javascript:void(0)">PhoneGap</a></li>
+             <li><a href="javascript:void(0)">Microsoft Technologies</a></li>
+              <li><a href="javascript:void(0)">Mobile Application Development</a></li>
+              <li><a href="javascript:void(0)">Web Application development</a></li>
+              <li><a href="javascript:void(0)">Mobile Games Development</a></li>
             </ul>
           </div>
         </div>
@@ -254,5 +259,17 @@
 <script src="js/classie.js"></script> 
 <script src="js/cbpAnimatedHeader.js"></script> 
 <script src="js/main.js"></script>
+<script>
+
+
+ $(window).load(function()
+{
+(function(a){a.preload=function(){var d=Object.prototype.toString.call(arguments[0])==="[object Array]"?arguments[0]:arguments;
+var c=[];var b=d.length;for(;b--;){c.push(a("<img />").attr("src",d[b]));}};})(jQuery);
+
+ $.preload('img/page-top-hover.png', 'img/linked-hover.png', 'img/linked-menu-hover.png', 'img/facebook-menu-hover.png', 'img/facebook-hover.png', 'img/google-hover.png', 'img/google-menu-hover.png', 'img/menu_option.png','img/youtube-hover.png', 'img/youtube-menu-hover.png', 'img/web-app-menu-hover.png', 'img/mobile-app-hover.png', 'img/mobile-game-hover.png');
+ });
+ 
+</script>
 </body>
 </html>
