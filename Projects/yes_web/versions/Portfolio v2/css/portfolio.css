@@ -354,7 +354,9 @@ nav a:focus {
 .mob-menu-filter {
 	display: none;
 }
-
+.mob-filter {
+	display: none;
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
 	.list-group ul { 
@@ -447,7 +449,7 @@ nav a:focus {
 	.des-menu-filter {
 		display: none;
 	}
-	.mob-menu-filter {
+	.mob-menu-filter, .mob-filter {
 		display: block;
 	}
 	/*.desktop-portfolio {
@@ -565,7 +567,7 @@ nav a:focus {
 	.des-menu-filter {
 		display: none;
 	}
-	.mob-menu-filter {
+	.mob-menu-filter, .mob-filter {
 		display: block;
 	}
 	.portfolio h1 {
@@ -692,7 +694,7 @@ nav a:focus {
 	.des-menu-filter {
 		display: none;
 	}
-	.mob-menu-filter {
+	.mob-menu-filter, .mob-filter {
 		display: block;
 	}
 	.mobile-portfolio {
