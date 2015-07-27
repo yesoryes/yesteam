@@ -241,7 +241,7 @@ $(document).ready(function() {
 		//console.log( filteredItems.length );
 		$('.port-prv').css({'display': 'none'});
 		$('.port-nxt').css({'display': 'none'});
-		if ($('.iso_portfolio').width()-100 > $('.portfolio-warp').width()) {
+		if ($('.iso_portfolio').width()-120 > $('.portfolio-warp').width()) {
 			//$('.port-nxt').fadeIn('fast');
 			$('.port-nxt').css({'display': 'block'});
 		};

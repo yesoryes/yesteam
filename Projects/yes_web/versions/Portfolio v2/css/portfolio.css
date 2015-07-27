@@ -298,6 +298,64 @@ nav a:focus {
 	opacity: 1;
 }
 
+/* Isotope */
+
+.portfolio-warp {
+	width: 1092px;
+	/*width: 546px;*/
+	overflow:hidden;
+}
+
+.iso_portfolio  {
+	height: 600px !important;
+	left: 0;
+	transition: all .5s;
+}
+
+.iso_portfolio li {
+	width: 263px;
+	height: 210px;
+	padding: 0 !important;
+	margin: 0 10px 10px 0 !important;
+}
+
+.filter-menu { 
+	margin: 0 auto 25px;
+}
+.port-prv, .port-nxt {
+	position: absolute;
+	width: 53px;
+	height: 98px;
+	top: 50%;
+	background: url(../images/por_arrow.png) no-repeat; 
+}
+.port-prv {
+	left: 0;
+	background-position: left top;
+}
+.port-nxt {
+	right: 0;
+	background-position: right top;
+}
+/*Portfolio Model Box*/
+.modal-dialog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%) !important;
+	-webkit-transform: translate(-50% , -50%) !important;
+	-moz-transform: translate(-50% , -50%) !important;
+	-ms-transform: translate(-50% , -50%) !important;
+}
+
+.des-menu-filter {
+	display: block;
+}
+.mob-menu-filter {
+	display: none;
+}
+
+
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
 	.list-group ul { 
 		height: 550px;
@@ -308,10 +366,22 @@ nav a:focus {
 	  padding: 0 10px;
 	  font-size: 14px;
 	}
+	.mob-menu-filter {
+		display: none;
+	}
+	ul.filter-menu {
+		display: none;
+	}
 }
 @media screen and (min-width: 1000px) and (max-width: 1366px) {
 	.desktop-portfolio {
 		display: block;
+	}
+	.mob-menu-filter {
+		display: none;
+	}
+	ul.filter-menu {
+		display: none;
 	}
 	.desktop-portfolio h1 {
 		font-size: 5.625em;
@@ -357,29 +427,45 @@ nav a:focus {
 	  padding: 0 10px;
 	  font-size: 14px;
 	}
-
+	.portfolio-warp {
+		width: 940px;
+	}
+	.iso_portfolio li {
+		width: 225px;
+		height: auto;
+	}
+	.port-prv, .port-nxt {
+		width: 30px;
+		height: 54px;
+		background-size: cover;
+	}
 }
 @media screen and (min-width: 768px) and (max-width: 999px) {
 	.portfolio {
 		padding: 11% 0 0;
 	}
-	.desktop-portfolio {
+	.des-menu-filter {
+		display: none;
+	}
+	.mob-menu-filter {
+		display: block;
+	}
+	/*.desktop-portfolio {
 		display: none;
 	}
 	.mobile-portfolio {
 		display: block;
 		position: relative;
-	}
-	.mobile-portfolio h1 {
+	}*/
+	.portfolio h1 {
 		color: #fff;
 		font-size: 3.75em;
 		margin: 0;
 		padding: 0;
-		border-bottom: 1px solid #fff;
 	}
-	.tiles {
+	/*.tiles {
 		border-bottom: 1px solid #fff;
-	}
+	}*/
 	.portfolio .carousel {
 		width: 550px;
 		margin: 0 auto;
@@ -413,9 +499,9 @@ nav a:focus {
 	}
 	.filter_list_button	{
 		z-index:1;
-		position: relative;
+		position: absolute;
 		float: right;
-		top: -40px;
+		top: 23px;
 		right: 25px
 	}
 	.filter-menu li {
@@ -448,27 +534,45 @@ nav a:focus {
 		background: #fff;
 		color: #444444;
 	}
+	.portfolio-warp {
+		width: 558px;
+	}
+	.iso_portfolio li {
+		width: 176px;
+		height: auto;
+	}
+	.port-prv, .port-nxt {
+		width: 30px;
+		height: 54px;
+		background-size: cover;
+	}
+	.overlay, .corner-overlay-content, .overlay-content {
+		display: none
+	}
 }
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
 	.portfolio {
 		padding: 11% 0 0;
 	}
-	.desktop-portfolio {
+	/*.desktop-portfolio {
 		display: none;
 	}
 	.mobile-portfolio {
 		display: block;
 		position: relative;
+	}*/
+	.des-menu-filter {
+		display: none;
 	}
-	.mobile-portfolio h1 {
+	.mob-menu-filter {
+		display: block;
+	}
+	.portfolio h1 {
 		color: #fff;
 		font-size: 3.75em;
 		margin: 0;
 		padding: 20px 0 25px;
-		border-bottom: 1px solid #fff;
-	}
-	.tiles {
-		border-bottom: 1px solid #fff;
 	}
 	.portfolio .carousel {
 		width: 90%;
@@ -544,11 +648,52 @@ nav a:focus {
 	.pop-contain {
 		display: none;
 	}
+	.portfolio-warp {
+		width: 400px;
+	}
+	.iso_portfolio li {
+		width: 190px;
+		height: auto;
+	}
+	.port-prv, .port-nxt {
+		width: 30px;
+		height: 54px;
+		background-size: cover;
+	}
+	.overlay, .corner-overlay-content, .overlay-content {
+		display: none
+	}
 }
-
+@media screen and (min-width: 640px) and (max-width: 767px) {
+	.portfolio-warp {
+		width: 540px;
+	}
+	.iso_portfolio li {
+		width: 170px;
+		height: auto;
+	}
+	.port-prv, .port-nxt {
+		width: 30px;
+		height: 54px;
+		background-size: cover;
+	}
+	.overlay, .corner-overlay-content, .overlay-content {
+		display: none
+	}
+	
+	.click-map {
+		right: 38px;
+	}
+}
 @media screen and (min-width: 320px) and (max-width: 479px) {
 	.desktop-portfolio {
 		display: none;
+	}
+	.des-menu-filter {
+		display: none;
+	}
+	.mob-menu-filter {
+		display: block;
 	}
 	.mobile-portfolio {
 		display: block;
@@ -635,42 +780,6 @@ nav a:focus {
 	.pop-contain {
 		display: none;
 	}
-}
-
-/* Isotope */
-
-.portfolio-warp {
-	width: 1092px;
-	/*width: 546px;*/
-	overflow:hidden;
-}
-
-.iso_portfolio  {
-	height: 600px !important;
-	left: 0;
-	transition: all .5s;
-}
-
-.iso_portfolio li {
-	width: 263px;
-	height: 210px;
-	padding: 0 !important;
-	margin: 0 10px 10px 0 !important;
-}
-
-.filter-menu { 
-	margin: 0 auto 25px;
-}
-
-.port-prv {
-	font-size:24px;
-	float:left;
-	color:black;
-}
-.port-nxt {
-	font-size:24px;
-	float:right;
-	color:black;
 }
 
 
