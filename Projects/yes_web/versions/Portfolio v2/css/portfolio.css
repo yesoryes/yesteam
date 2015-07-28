@@ -10,6 +10,7 @@ body, h1, p {
 	overflow: hidden;
 	background: url(../images/bg_portfolio.jpg) no-repeat 0px 0px;
 	background-size: cover;
+	position: relative;
 }
 .portfolio h1 {
 	font-size: 5.625em;
@@ -36,10 +37,10 @@ nav.filter-menu a {
 	color: #fff;
 	text-decoration: none;
 	text-transform: capitalize;
-	width: 160px;
+	width: 125px;
 	height: auto;
 	text-align: center;
-	font-size: 18px;
+	font-size: 14px;
 	font-family: 'MyriadProRegular';
 }
 
@@ -62,7 +63,7 @@ nav a:focus {
 
 .cl-effect-10 a span {
 	display: block;
-	padding: 12px 0px;
+	padding: 8px 0px;
 	background: #302a0e;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
@@ -73,7 +74,7 @@ nav a:focus {
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 12px 0px;
+	padding: 8px 0px;
 	z-index: -1;
 	width: 100%;
 	height: 100%;
@@ -87,14 +88,16 @@ nav a:focus {
 }
 
 .cl-effect-10 a:hover span,
-.cl-effect-10 a:focus span {
+.cl-effect-10 a:focus span,
+.cl-effect-10 a:active span {
 	-webkit-transform: translateX(100%);
 	-moz-transform: translateX(100%);
 	transform: translateX(100%);
 }
 
 .cl-effect-10 a:hover::before,
-.cl-effect-10 a:focus::before {
+.cl-effect-10 a:focus::before,
+.cl-effect-10 a:active::before {
 	-webkit-transform: translateX(0%);
 	-moz-transform: translateX(0%);
 	transform: translateX(0%);
@@ -152,7 +155,7 @@ nav a:focus {
 .content-item .overlay {
   border-bottom: 50px solid rgba(0,0,0,0.8);
   border-left: 50px solid transparent;
-  bottom: 3px;
+  bottom: 0px;
   height: 0;
   position: absolute;
   right: 0px;
@@ -246,7 +249,7 @@ nav a:focus {
 	width: 90%;
 	margin: auto;
 	display: block;
-	padding: 10% 0 0;
+	padding: 0 0;
 }
 .pop-contain {
 	position: absolute;
@@ -320,7 +323,7 @@ nav a:focus {
 }
 
 .filter-menu { 
-	margin: 0 auto 25px;
+	margin:70px auto 0px;
 }
 .port-prv, .port-nxt {
 	position: absolute;
@@ -339,6 +342,7 @@ nav a:focus {
 }
 /*Portfolio Model Box*/
 .modal-dialog {
+	width: 600px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -387,7 +391,7 @@ nav a:focus {
 	}
 	.desktop-portfolio h1 {
 		font-size: 5.625em;
-		padding: 30px 0;
+		padding: 45px 0 30px;
 		color: #fff;
 		font-size: 3.75em;
 	}
@@ -434,7 +438,7 @@ nav a:focus {
 	}
 	.iso_portfolio li {
 		width: 225px;
-		height: auto;
+		height: 179px;
 	}
 	.port-prv, .port-nxt {
 		width: 30px;
@@ -688,34 +692,25 @@ nav a:focus {
 	}
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
-	.desktop-portfolio {
-		display: none;
-	}
 	.des-menu-filter {
 		display: none;
 	}
 	.mob-menu-filter, .mob-filter {
 		display: block;
 	}
-	.mobile-portfolio {
+	/*.mobile-portfolio {
 		display: block;
 		position: relative;
-	}
-	.mobile-portfolio h1 {
+	}*/
+	.portfolio h1 {
 		color: #fff;
 		font-size: 3.75em;
-		margin: 0;
+		margin: 20% 0 0;
 		padding: 0;
+	}
+	/*.tiles {
 		border-bottom: 1px solid #fff;
-	}
-	.tiles {
-		border-bottom: 1px solid #fff;
-	}
-	.portfolio .carousel {
-		margin: 0 auto;		 
-		height: 375px;
-		width: 90%;
-	}
+	}*/
 	.list-group {
 		margin: 0px auto;
 		width: 290px;
@@ -782,19 +777,88 @@ nav a:focus {
 	.pop-contain {
 		display: none;
 	}
+	.filter-menu li a:hover {
+		background: #fff;
+		color: #444444;
+	}
+	.pop-contain {
+		display: none;
+	}
+	.portfolio-warp {
+		width: 270px;
+		margin: 1px;
+	}
+	.iso_portfolio li {
+		width: 125px;
+		height: auto;
+	}
+	.port-prv, .port-nxt {
+		width: 15px;
+		height: 34px;
+		background-size: cover;
+		z-index: 100;
+	}
+	.overlay, .corner-overlay-content, .overlay-content {
+		display: none
+	}
+	.iso_portfolio {
+		height: 330px !important;
+	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 3d filip content */
+#f1_container {
+	position: relative;
+	width: 61px;
+	height: 60px;
+	z-index: 1;
+}
+#f1_container {
+	perspective: 1000px;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-ms-perspective: 1000px;
+}
+#f1_card {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+}
+#f1_container:hover #f1_card {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;  /* W3C */
+	-webkit-backface-visibility: hidden; /* Safari & Chrome */
+	-moz-backface-visibility: hidden; /* Firefox */
+	-ms-backface-visibility: hidden; /* Internet Explorer */
+	-o-backface-visibility: hidden; /* Opera */
+}
+.face.back {
+	display: block;
+	transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}

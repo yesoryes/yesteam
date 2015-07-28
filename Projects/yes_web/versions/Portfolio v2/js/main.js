@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var fullHeight = $(window).height();
 	
-	$(".home, .about, .services, .contact, .portfolio").css({
+	$(".home, .about, .services, .contact, .portfolio, .overlay-portfolio").css({
 		height: fullHeight,
 	})
 	
@@ -120,6 +120,8 @@ $(document).ready(function() {
 		}
 	});
 	
+	
+	
 	/*Services Quality Image Hover*/
 	$('.knowledge').hover(function (){
 		$('img.f1').attr('src', 'images/f1_hover.gif');
@@ -164,7 +166,8 @@ $(document).ready(function() {
 		   'display' : 'block',
 		});
 		$(".contact-enquiry.mobile-contact").css ({
-			background: '#000',
+			background: '#b4b4b4',
+			'z-index': '100'
 		})
 		
 		$(".contact-app").delay(1000).css({

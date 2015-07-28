@@ -1,5 +1,8 @@
 /* Scss Document */
 /*Home*/
+.outer-container {
+  font-size: 0.875em; }
+
 .home {
   background: #63af49;
   padding: 200px 0 0;
@@ -276,13 +279,20 @@ div.centre {
   background: url(../images/btn-send.png) 0 -36px no-repeat; }
 
 /*End Home*/
-.logo {
+.logo, .contact-logo {
   width: 88px;
-  height: 40px;
+  height: 61px;
   bottom: 2%;
   right: 2%;
-  background: url(../images/logo.png) right bottom no-repeat;
-  position: fixed; }
+  display: block;
+  position: absolute; }
+
+.new-logo {
+  width: 91px;
+  height: 61px;
+  bottom: 2%;
+  right: 2%;
+  position: absolute; }
 
 nav {
   position: fixed;
@@ -369,12 +379,15 @@ nav {
     font-size: 0.875em; }
     .nav-mobile ul li {
       overflow: hidden;
-      float: left; }
+      float: left;
+      display: inline-block;
+      width: 20%;
+      text-align: center; }
       .nav-mobile ul li a {
         display: block;
         padding: 40px 1.66em 7px;
         color: #fff;
-        background: rgba(0, 0, 0, 0.7); }
+        background: rgba(0, 0, 0, 0.5); }
         .nav-mobile ul li a:hover {
           background: transparent;
           color: #000; }
@@ -407,7 +420,8 @@ nav {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover; }
+  -o-background-size: cover;
+  position: relative; }
   .about h1 {
     text-align: center;
     font-size: 5.25em;
@@ -538,7 +552,8 @@ nav {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .services h1 {
     text-align: center;
     font-size: 5.25em;
@@ -706,7 +721,8 @@ nav {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .contact h1 {
     text-align: center;
     font-size: 5.25em;
@@ -1233,6 +1249,9 @@ footer {
   .nav-desktop {
     display: none; }
 
+  .logo {
+    display: none; }
+
   .nav-mobile {
     display: block; }
 
@@ -1255,7 +1274,7 @@ footer {
     .about h1 {
       text-align: center;
       font-size: 4em;
-      margin: 3% 0 2% 0;
+      margin: 7% 0 2% 0;
       color: #fff;
       font-family: 'MyriadProLight'; }
     .about .line {
@@ -1497,6 +1516,8 @@ footer {
   .contact {
     padding: 11% 0px;
     position: relative; }
+    .contact h1 {
+      font-size: 4em; }
 
   .contact .contact-enquiry {
     top: -330px;
@@ -1517,7 +1538,7 @@ footer {
 
   .desktop-map {
     position: absolute;
-    top: 26%;
+    top: 21%;
     left: 0px;
     margin: 0;
     width: 100%;
@@ -1608,6 +1629,30 @@ footer {
 @media only screen and (min-width: 768px) {
   .nav-mobile ul li a {
     padding: 54px 3.72em 7px; } }
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+  .testimonial, .service-bottom {
+    display: none; }
+
+  .services h1, .contact h1 {
+    margin: 7% 0 2%; }
+
+  .contact .contact-content p {
+    line-height: 18px !important; }
+
+  .contact .contact-content .ph-no, .contact .contact-content .e-mail {
+    background: none !important; }
+
+  .mobile-contact, .click-map {
+    display: none; }
+
+  .contact .contact-content {
+    margin: 0; }
+
+  .contact .contact-content .social-link {
+    margin: 0; }
+
+  .about-us p {
+    line-height: 18px; } }
 @font-face {
   font-family: 'MyriadProRegular';
   src: url("../fonts/myriadpro-bold.eot");

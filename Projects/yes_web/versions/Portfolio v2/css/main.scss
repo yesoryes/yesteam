@@ -1,5 +1,8 @@
 /* Scss Document */ 
 /*Home*/
+.outer-container {
+	font-size: 0.875em;
+}
 .home {
 	background: #63af49;
 	padding: 200px 0 0;
@@ -284,14 +287,21 @@ div.centre {
 }
 /*End Home*/
 
-.logo
+.logo, .contact-logo
 {
-	  width: 88px;
-  height: 40px;
+  width: 88px;
+  height: 61px;
   bottom: 2%;
   right: 2%;
-  background: url(../images/logo.png) right bottom no-repeat;
-  position: fixed;
+  display: block;
+  position: absolute;
+}
+.new-logo {
+	width: 91px;
+	height: 61px;
+	bottom: 2%;
+	right: 2%;
+	position: absolute;
 }
 nav
 {
@@ -422,12 +432,15 @@ nav
 		li {
 			overflow: hidden;
 			float: left;
+			display: inline-block;
+			width: 20%;
+			text-align: center;
 			
 			a {
 				display: block;
 				padding: 40px 1.66em 7px;
 				color: #fff;
-				background: rgba(0,0,0,0.7);
+				background: rgba(0,0,0,0.5);
 				&:hover {
 					background: transparent;
 					color: #000;
@@ -478,7 +491,8 @@ nav
 			   background-size: cover;
 			  -webkit-background-size: cover;
 			  -moz-background-size: cover;
-			  -o-background-size: cover;  
+			  -o-background-size: cover; 
+			  position: relative; 
 			  h1
 					{   
 						text-align:center; 
@@ -658,6 +672,7 @@ nav
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
 			  background-size: cover;
+			  position: relative;
 			  h1
 					{   
 						text-align:center; 
@@ -903,6 +918,7 @@ nav
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
 			  background-size: cover;
+			  position: relative;
 			  h1
 					{   
 						text-align:center; 
@@ -1671,6 +1687,10 @@ footer
 	.nav-desktop {
 		display: none;
 	}
+	.logo
+	{
+	  display: none;
+	}
 	.nav-mobile {
 		display: block;
 	}
@@ -1695,7 +1715,7 @@ footer
 					{   
 						text-align:center; 
 						font-size:4em; 
-						 margin: 3% 0 2% 0; 
+						 margin: 7% 0 2% 0; 
 						color:#fff; 
 						font-family: 'MyriadProLight';
 					}
@@ -1738,7 +1758,7 @@ footer
 					position: relative;
 					  width: 90%;
   					margin: 0% auto 35%;
-					overflow:hidden; 
+					overflow:hidden;
 					.article {
 						width: 78%;
 					}
@@ -2049,6 +2069,9 @@ footer
 	.contact {
 		padding: 11% 0px;
 		position: relative;
+		h1 {
+			font-size: 4em;
+		}
 	}
 	.contact .contact-enquiry {
 		top: -330px;
@@ -2069,7 +2092,7 @@ footer
 	}
 	.desktop-map {
 		position: absolute;
-		top: 26%;
+		top: 21%;
 		left: 0px;
 		margin: 0;
 		width: 100%;
@@ -2177,6 +2200,32 @@ footer
 @media only screen and (min-width:768px) {
 	.nav-mobile ul li a {
 		padding: 54px 3.72em 7px;
+	}
+}
+@media only screen and (min-width:320px) and (max-width: 360px)  {
+	.testimonial, .service-bottom {
+		display: none;
+	}
+	.services h1, .contact h1 {
+		margin: 7% 0 2%;
+	}
+	.contact .contact-content p {
+		line-height: 18px !important;
+	}
+	.contact .contact-content .ph-no, .contact .contact-content .e-mail {
+		background: none !important;
+	}
+	.mobile-contact, .click-map {
+		display: none;
+	}
+	.contact .contact-content {
+		margin: 0;
+	}
+	.contact .contact-content .social-link {
+		margin: 0;
+	}
+	.about-us p {
+		line-height: 18px;
 	}
 }
 @font-face {

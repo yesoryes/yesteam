@@ -27,10 +27,10 @@
 
 </head>
 <body>
-<div class="logo"></div>
+<div class="outer-container">
 <nav class="nav-desktop">
   <ul class="pull-left nav-bar">
-    <li><a href="#home">Home</a></li>
+    <li class="scroll-active"><a href="#home">Home</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
     <li><a href="#about">About</a></li>	
     <li><a href="#services">Services</a></li>
@@ -52,6 +52,7 @@
   </ul>
 </nav>
 <section id="home" class="home scrollify">
+  <div class="new-logo"><img src="images/logo.png" alt=""/></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -93,10 +94,13 @@
 
 
 <section id="portfolio" class="portfolio scrollify">
+	<div class="logo"><img src="images/new_logo.png"  alt=""/></div>
+    <!--div class="container">
+    <div class="row"-->
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">            	
         <div class="tiles desktop-portfolio">
             <h1 class="text-center">works</h1>
-            <div style="height:1px;width:100%;background-color:#ffffff;opacity:0.2;margin:25px 0px 35px 0px;" class="servicesFooterLine1 hidden-xs visible-sm visible-lg visible-md"></div>
+            <div style="height:1px; width:100%; background-color:#fff; opacity:0.2; margin:25px 0px 35px 0px;" class="servicesFooterLine1 hidden-xs visible-sm visible-lg visible-md"></div>
             <!--<nav class="list-inline filter-menu cl-effect-10" id="cl-effect-10">
                 <a href="#cl-effect-10" data-hover="List all"><span>List all</span></a>
                 <a href="#cl-effect-10" data-hover="Digital Campaigns"><span>Digital Campaigns</span></a>
@@ -145,11 +149,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img1.jpg" alt="" />
+                                <img src="images/portfolio/small/01.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item port-website">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal1">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -157,11 +161,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img2.jpg" alt="" />
+                                <img src="images/portfolio/small/02.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item port-webapp port-website">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal2">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -169,11 +173,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img3.jpg" alt="" />
+                                <img src="images/portfolio/small/03.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item port-website port-webapp">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal3">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -181,11 +185,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img4.jpg" alt="" />
+                                <img src="images/portfolio/small/04.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item port-mobileapp port-digital">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal4">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -193,11 +197,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img5.jpg" alt="" />
+                                <img src="images/portfolio/small/05.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item port-webapp">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal5">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -205,11 +209,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img6.jpg" alt="" />
+                                <img src="images/portfolio/small/06.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item port-digital  port-mobileapp">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal6">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -217,11 +221,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img7.jpg" alt="" />
+                                <img src="images/portfolio/small/07.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item port-digital">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal7">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -229,13 +233,13 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img8.jpg" alt="" />
+                                <img src="images/portfolio/small/08.jpg" alt="" />
                             </a>
                      	</li>
                         
                         
                     	<li class="col-lg-3 col-md-3 content-item  port-mobileapp">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal8">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -243,11 +247,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img1.jpg" alt="" />
+                                <img src="images/portfolio/small/09.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item  port-mobileapp">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal9">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -255,11 +259,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img2.jpg" alt="" />
+                                <img src="images/portfolio/small/10.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item  port-website">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal10">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -267,11 +271,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img3.jpg" alt="" />
+                                <img src="images/portfolio/small/11.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal11">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -279,11 +283,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img4.jpg" alt="" />
+                                <img src="images/portfolio/small/12.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal12">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -291,11 +295,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img5.jpg" alt="" />
+                                <img src="images/portfolio/small/13.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal13">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -303,11 +307,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img6.jpg" alt="" />
+                                <img src="images/portfolio/small/14.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal14">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -315,11 +319,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img7.jpg" alt="" />
+                                <img src="images/portfolio/small/15.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item port-website">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal15">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -327,13 +331,13 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img8.jpg" alt="" />
+                                <img src="images/portfolio/small/16.jpg" alt="" />
                             </a>
                      	</li>
 
 
                     	<li class="col-lg-3 col-md-3 content-item port-website">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal16">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -341,11 +345,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img1.jpg" alt="" />
+                                <img src="images/portfolio/small/17.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal17">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -353,11 +357,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img2.jpg" alt="" />
+                                <img src="images/portfolio/small/18.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item port-website">
-                            <a href='#'>
+                            <a href='#'    data-toggle="modal" data-target="#myModal18">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -365,11 +369,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img3.jpg" alt="" />
+                                <img src="images/portfolio/small/19.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item port-webapp">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal19">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -377,11 +381,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img4.jpg" alt="" />
+                                <img src="images/portfolio/small/20.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal20">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -389,11 +393,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img5.jpg" alt="" />
+                                <img src="images/portfolio/small/21.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal21">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -401,23 +405,11 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img6.jpg" alt="" />
-                            </a>
-                     	</li>
-                        <!--<li class="col-lg-3 col-md-3 content-item">
-                            <a href='#'>
-                                <div class="overlay"></div>
-                                <div class="corner-overlay-content">Info</div>  
-                                <div class="overlay-content">
-                                    <h2><span>CS</span> grand</h2>
-                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
-                                    <span class="btn-view">View</span>
-                                </div>
-                                <img src="images/portfolio_img7.jpg" alt="" />
+                                <img src="images/portfolio/small/22.jpg" alt="" />
                             </a>
                      	</li>
                         <li class="col-lg-3 col-md-3 content-item">
-                            <a href='#'>
+                            <a href='#'   data-toggle="modal" data-target="#myModal22">
                                 <div class="overlay"></div>
                                 <div class="corner-overlay-content">Info</div>  
                                 <div class="overlay-content">
@@ -425,9 +417,309 @@
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
                                     <span class="btn-view">View</span>
                                 </div>
-                                <img src="images/portfolio_img8.jpg" alt="" />
+                                <img src="images/portfolio/small/23.jpg" alt="" />
                             </a>
-                     	</li>-->
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal23">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/24.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal25">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/26.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal26">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/27.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal27">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/28.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal28">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/29.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal29">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/30.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal30">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/31.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal32">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/33.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal33">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/34.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal34">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/35.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal35">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/36.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal36">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/37.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal37">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/38.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal38">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/39.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal39">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/40.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#' data-toggle="modal" data-target="#myModal40">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/41.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal41">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/42.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal42">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/43.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal43">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/44.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal44">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/45.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal45">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/46.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal46">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/47.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal47">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/48.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal48">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/49.jpg" alt="" />
+                            </a>
+                     	</li>
+                        <li class="col-lg-3 col-md-3 content-item">
+                            <a href='#'   data-toggle="modal" data-target="#myModal49">
+                                <div class="overlay"></div>
+                                <div class="corner-overlay-content">Info</div>  
+                                <div class="overlay-content">
+                                    <h2><span>CS</span> grand</h2>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown</p>
+                                    <span class="btn-view">View</span>
+                                </div>
+                                <img src="images/portfolio/small/50.jpg" alt="" />
+                            </a>
+                     	</li>
                     </ul> 
                     
                 </div>
@@ -457,82 +749,82 @@
                 <div class="carousel-inner" role="listbox">
                     <ul class="list-inline item active">
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
-                        </a>
-                    </ul>
-                    <ul class="list-inline item">
-                        <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
-                        </a>
-                        <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
-                        </a>
-                        <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
-                        </a>
-                        <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
-                        </a>
-                        <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
-                        </a>
-                        <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                     </ul>
                     <ul class="list-inline item">
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                     </ul>
                     <ul class="list-inline item">
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                         <a href='#'  data-toggle="modal" data-target="#myModal">
-                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio_img1.jpg" alt="" /></li>
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
+                        </a>
+                    </ul>
+                    <ul class="list-inline item">
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
+                        </a>
+                        <a href='#'  data-toggle="modal" data-target="#myModal">
+                            <li class="col-md-6 col-sm-6 col-xs-6"><img src="images/portfolio/small/01.jpg" alt="" /></li>
                         </a>
                     </ul>
                 </div>
@@ -542,10 +834,13 @@
       
       <div style="height:1px;width:100%;background-color:#ffffff;opacity:0.2;margin:25px 0px 35px 0px;" class="servicesFooterLine1 hidden-xs visible-sm visible-lg visible-md"></div>
     </div>
+    <!--/div>
+    </div-->
 </section>
 
 
 <section id="about" class="about scrollify">
+  <div class="logo"><img src="images/new_logo.png"  alt=""/></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -567,12 +862,12 @@
           <div id="myCarousel" class="carousel slide carousel-container pull-left" data-ride="carousel"> 
             <!-- Wrapper for slides -->
              <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+            <ol class="carousel-indicators carousel-slider">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                <li data-target="#myCarousel2" data-slide-to="2"></li>
+                <li data-target="#myCarousel2" data-slide-to="3"></li>
+             </ol>
             <div class="carousel-inner carousel-width" role="listbox">
               <div class="item active">
                 <div class="carousel-content">
@@ -627,6 +922,7 @@
 
 
 <section id="services" class="services scrollify">
+	<div class="logo"><img src="images/new_logo.png"  alt=""/></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -665,6 +961,12 @@
         <div class="package-slider"> 
             <div id="myCarousel2" class="carousel slide" data-ride="carousel"> 
               <!-- Wrapper for slides -->
+              <!-- Indicators -->
+              <ol class="carousel-indicators carousel-slider">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                <li data-target="#myCarousel2" data-slide-to="2"></li>
+              </ol> 
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
                 	<ul class="list-inline tech-list col-md-12">
@@ -697,12 +999,7 @@
                     </ul>
                 </div>
               </div>
-              <!-- Indicators -->
-              <ol class="carousel-indicators carousel-slider">
-                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel2" data-slide-to="1"></li>
-                <li data-target="#myCarousel2" data-slide-to="2"></li>
-              </ol> 
+              
           </div>
         </div>
       </div>
@@ -767,6 +1064,7 @@
 </section>
 
 <section id="contact" class="contact scrollify">
+	<div class="contact-logo"><img src="images/new_logo.png"  alt=""/></div>
   <div class="container">
   <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -796,9 +1094,33 @@
         <div class="contact-content"> 
              <h2>Follow us</h2> 
           <ul class="social-link">
-          	<li><a href="javascript:void(0)" class="fb"></a></li>
-            <li><a href="javascript:void(0)" class="twitter"></a></li>
-            <li><a href="javascript:void(0)" class="google"></a></li>
+          	<!--<li><a href="javascript:void(0)" class="fb"></a></li>-->
+              <li > <a href="" class="ico-fb">
+            <div id="f1_container">
+              <div id="f1_card">
+                <div class="front face"><img src="images/fb_contact.png" alt=""/></div>
+                <div class="back face"><img src="images/btn_fb_hover.png" alt=""/></div>
+              </div>
+            </div>
+            </a> </li>
+          <li > <a href="" class="ico-tweet">
+            <div id="f1_container">
+              <div id="f1_card">
+                <div class="front face"><img src="images/twitter-contact.png" alt=""/></div>
+                <div class="back face"><img src="images/btn_tweet_hover.png" alt=""/></div>
+              </div>
+            </div>
+            </a> </li>
+          <li > <a href="" class="ico-google">
+            <div id="f1_container">
+              <div id="f1_card">
+                <div class="front face"><img src="images/google.png" alt=""/></div>
+                <div class="back face"><img src="images/btn_google_hover.png" alt=""/></div>
+              </div>
+            </div>
+            </a> </li>
+            <!--<li><a href="javascript:void(0)" class="twitter"></a></li>
+            <li><a href="javascript:void(0)" class="google"></a></li>-->
           </ul> 
         </div>
       </div>
@@ -903,7 +1225,7 @@
     <div class="modal-dialog">
     	<div class="close" data-dismiss="modal">&times;</div>
       <!-- Modal content-->
-      <div><img src="images/portfolio/portfolio_pop_img1.jpg" alt=""/></div>
+      <div><img src="images/portfolio/big/01.jpg" alt=""/></div>
       <div class="pop-contain">
           <div class="pop-article">
             <h1>Narasu Sarathy</h1>
@@ -918,10 +1240,918 @@
     </div>
 </div>
 
+<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/02.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/03.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/04.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/05.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/06.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/07.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/08.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/09.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal9" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/10.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal10" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/11.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal11" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/12.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal12" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/13.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal13" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/14.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal14" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/15.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal15" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/16.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal16" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/17.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal17" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/18.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal18" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/19.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal19" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/20.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal20" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/21.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal21" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/22.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal22" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/23.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal23" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/24.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal24" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/25.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal25" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/26.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal26" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/27.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal27" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/28.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal28" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/29.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal29" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/30.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal30" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/31.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal31" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/32.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal32" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/33.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal33" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/34.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal34" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/35.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal35" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/36.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal36" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/37.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal37" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/38.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal38" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/39.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal40" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/41.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal41" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/42.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal42" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/43.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal43" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/44.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal44" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/45.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal45" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/46.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal46" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/47.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal47" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/48.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal48" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/49.jpg" alt=""/></div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+<div class="modal fade" id="myModal49" role="dialog">
+    <div class="modal-dialog">
+    	<div class="close" data-dismiss="modal">&times;</div>
+      <!-- Modal content-->
+      <div><img src="images/portfolio/big/50.jpg" alt=""/>
+      	<img src="images/portfolio/big/50.jpg" alt="lighthouse"
+         sizes="80vw"
+         srcset="images/portfolio/big/49.jpg 160w, 
+                 images/portfolio/big/48.jpg 320w,        
+                 images/portfolio/big/47.jpg 640w,
+                 images/portfolio/big/50.jpg 1280w">
+      </div>
+      <div class="pop-contain">
+          <div class="pop-article">
+            <h1>Narasu Sarathy</h1>
+            <h6>Website Design & Developement</h6>
+            <article>This is websitea with dynamic content. We technologies and tools like Photoshop, HTML5, CSS3 and Drupal to develope the entire site. </article>        
+          </div>
+          <div class="go-link">
+          		<a href="#">Go link</a>
+          </div>
+      </div>
+      
+    </div>
+</div>
+</div>
 <script>
-$(document).ready(function() {
-    
-});
 </script>
 </body>
 </html>
