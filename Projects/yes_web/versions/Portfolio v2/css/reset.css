@@ -113,3 +113,6 @@ input, select {
 .input-field:focus .textarea-label {
 	top: 0;
 }
+a:active {
+	text-decoration: none;
+}

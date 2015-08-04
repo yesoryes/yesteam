@@ -14,7 +14,7 @@ body, h1, p {
 }
 .portfolio h1 {
 	font-size: 5.625em;
-	padding: 50px 0;
+	padding: 80px 0 0;
 	/*border-bottom: 1px solid rgba(0,0,0,0.2);*/
 	color: #fff;
 	font-weight: lighter;
@@ -55,12 +55,10 @@ nav a:focus {
 	position: relative;
 	z-index: 1;
 }
-
 .cl-effect-10 a {
 	overflow: hidden;
 	margin: 0 ;
 }
-
 .cl-effect-10 a span {
 	display: block;
 	padding: 8px 0px;
@@ -69,7 +67,6 @@ nav a:focus {
 	-moz-transition: -moz-transform 0.3s;
 	transition: transform 0.3s;
 }
-
 .cl-effect-10 a::before {
 	position: absolute;
 	top: 0;
@@ -86,7 +83,6 @@ nav a:focus {
 	transition: transform 0.3s;
 	-webkit-transform: translateX(-25%);
 }
-
 .cl-effect-10 a:hover span,
 .cl-effect-10 a:focus span,
 .cl-effect-10 a:active span {
@@ -94,7 +90,6 @@ nav a:focus {
 	-moz-transform: translateX(100%);
 	transform: translateX(100%);
 }
-
 .cl-effect-10 a:hover::before,
 .cl-effect-10 a:focus::before,
 .cl-effect-10 a:active::before {
@@ -102,7 +97,6 @@ nav a:focus {
 	-moz-transform: translateX(0%);
 	transform: translateX(0%);
 }
-
 /**/
 .portfolio .carousel {
 	width: 1140px;
@@ -198,8 +192,8 @@ nav a:focus {
   left: 0;
   opacity: 0;
   padding: 15px;
-  font-size: 16px;
-  line-height:19px;
+  font-size: 12px;
+  line-height:15px;
   font-family: 'MyriadProRegular';
   position: absolute;
   right: 0;
@@ -214,7 +208,7 @@ nav a:focus {
   text-transform: uppercase;
   font-family: 'MyriadProBold';
   padding: 0 0 12px;
-  font-size: 24px;
+  font-size: 18px;
   margin: 7px 0;
 }
 .content-item .overlay-content h2 span {
@@ -234,12 +228,18 @@ nav a:focus {
 }
 .btn-view {
 	display: block;
-	background: #fff;
-	color: #444;
+	border: 1px solid #fff;
+	color: #fff;
 	padding: 4px;
 	width: 50px;
+	font-size: 14px;
 	text-align: center;
 	margin: 10px auto 0;
+	transition: 0.5s all;
+}
+.btn-view:hover {
+	background: #fff;
+	color: #444;
 }
 /*model box*/
 /*.modal-dialog {
@@ -247,19 +247,27 @@ nav a:focus {
 	max-width: 100%;
 	max-height: 100%;
 }*/
+.model-img {
+	height: 780px;
+}
 .modal-dialog img {
-	width: 90%;
-	height: 90%;
+	/*width: 90%;
+	height: 90%;*/
 	margin: auto;
 	display: block;
 	padding: 0 0;
+	width: auto;
+	max-width: 100%;
+	height: 100%
 }
 .pop-contain {
 	position: absolute;
-	right: 0;
+	right: 40px;
 	bottom: -50px;
 	height: 200px;
 	display: block;
+	overflow: hidden;
+	background: #fff;
 }
 .pop-article {
 	width: 400px;
@@ -278,8 +286,8 @@ nav a:focus {
 	margin: 12px 0 18px;
 }
 .pop-article article {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 18px;
 	font-family: 'MyriadProRegular';
 }
 .go-link {
@@ -288,6 +296,14 @@ nav a:focus {
 	overflow: hidden;
 	background: #444444;
 	display: table;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.go-link:hover {
+	background: #e0b734;
 }
 .go-link a {
 	display: table-cell;
@@ -298,6 +314,14 @@ nav a:focus {
 	text-align: center;
 	padding: 60px 0 0;
 	vertical-align: middle;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.go-link a:hover {
+	background: url(../images/golink_hover.png) no-repeat center;
 }
 .close {
 	color: #fff;
@@ -316,7 +340,7 @@ nav a:focus {
 }
 
 .iso_portfolio  {
-	height: 600px !important;
+	height: 530px;
 	left: 0;
 	transition: all .5s;
 }
@@ -333,22 +357,29 @@ nav a:focus {
 }
 .port-prv, .port-nxt {
 	position: absolute;
-	width: 53px;
-	height: 98px;
-	top: 50%;
+	width: 33px;
+	height: 60px;
+	top: 57%;
 	background: url(../images/por_arrow.png) no-repeat; 
 }
 .port-prv {
-	left: 0;
+	left: 65px;
 	background-position: left top;
 }
+.port-prv:hover {
+	background-position: left bottom;
+}
 .port-nxt {
-	right: 0;
+	right: 65px;
 	background-position: right top;
+}
+.port-nxt:hover {
+	background-position: right bottom;
 }
 /*Portfolio Model Box*/
 .modal-dialog {
-	width: 600px;
+	/*width: 600px;*/
+	width: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -383,6 +414,9 @@ nav a:focus {
 	}
 	ul.filter-menu {
 		display: none;
+	}
+	.model-img {
+		height: 580px;
 	}
 }
 @media screen and (min-width: 1000px) and (max-width: 1366px) {
@@ -446,11 +480,10 @@ nav a:focus {
 		width: 225px;
 		height: 179px;
 	}
-	.port-prv, .port-nxt {
+	/*.port-prv, .port-nxt {
 		width: 30px;
-		height: 54px;
 		background-size: cover;
-	}
+	}*/
 }
 @media screen and (min-width: 768px) and (max-width: 999px) {
 	.portfolio {
@@ -462,22 +495,12 @@ nav a:focus {
 	.mob-menu-filter, .mob-filter {
 		display: block;
 	}
-	/*.desktop-portfolio {
-		display: none;
-	}
-	.mobile-portfolio {
-		display: block;
-		position: relative;
-	}*/
 	.portfolio h1 {
 		color: #fff;
 		font-size: 3.75em;
 		margin: 0;
 		padding: 0;
 	}
-	/*.tiles {
-		border-bottom: 1px solid #fff;
-	}*/
 	.portfolio .carousel {
 		width: 550px;
 		margin: 0 auto;
@@ -497,14 +520,7 @@ nav a:focus {
 		float: left;
 	}
 	.filter-menu {
-		/*width: 100%;*/
 		margin: 0px;
-	}
-	.mob-menu-filter {
-		/*position: absolute;
-		right: 0; 
-		top: 20px;
-		margin: 0 45px 0 0;*/
 	}
 	.closed {
 		display: none;
@@ -553,13 +569,28 @@ nav a:focus {
 		width: 176px;
 		height: auto;
 	}
-	.port-prv, .port-nxt {
+	/*.port-prv, .port-nxt {
 		width: 30px;
-		height: 54px;
-		background-size: cover;
+		
+	}*/
+	.port-prv, .port-nxt {
+		top: 37%;
+	}
+	.port-nxt {
+		right: 0;
+	}
+	.port-prv {
+		left: 0;
 	}
 	.overlay, .corner-overlay-content, .overlay-content {
 		display: none
+	}
+	.pop-contain {
+		display: none;
+	}
+	.testimonial .article {
+		width: 68%;
+		margin: 0px 0px 0px 10%;
 	}
 }
 
@@ -589,7 +620,7 @@ nav a:focus {
 	.portfolio .carousel {
 		width: 90%;
 		margin: 0 auto;		 
-		height: 600px;
+		/*height: 600px;*/
 	}
 	.list-group {
 		margin: 0 auto;
@@ -668,12 +699,22 @@ nav a:focus {
 		height: auto;
 	}
 	.port-prv, .port-nxt {
-		width: 30px;
-		height: 54px;
-		background-size: cover;
+		width: 20px;
 	}
 	.overlay, .corner-overlay-content, .overlay-content {
 		display: none
+	}
+	.modal-dialog {
+		margin: 0;
+	}
+	.model-img {
+		height: 580px !important;
+	}
+	.port-nxt {
+		right: 0;
+	}
+	.port-prv {
+		left: 0;
 	}
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
@@ -686,8 +727,6 @@ nav a:focus {
 	}
 	.port-prv, .port-nxt {
 		width: 30px;
-		height: 54px;
-		background-size: cover;
 	}
 	.overlay, .corner-overlay-content, .overlay-content {
 		display: none
@@ -695,6 +734,12 @@ nav a:focus {
 	
 	.click-map {
 		right: 38px;
+	}
+	.port-nxt {
+		right: 0;
+	}
+	.port-prv {
+		left: 0;
 	}
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -708,6 +753,12 @@ nav a:focus {
 		display: block;
 		position: relative;
 	}*/
+	#intro-outer {
+		display: none;
+	}
+	.testimonial {
+		display: none;
+	}
 	.portfolio h1 {
 		color: #fff;
 		font-size: 3.75em;
@@ -719,7 +770,7 @@ nav a:focus {
 	}*/
 	.list-group {
 		margin: 0px auto;
-		width: 290px;
+		width: 262px !important;
 	}
 	.list-inline {
 		margin: 0
@@ -760,7 +811,7 @@ nav a:focus {
 		width: 290px;
 		z-index:1;
 		right: 0px;
-		top: 60px;
+		top: 115px;
 		display:none;
 	}
 	.filter-menu li a {
@@ -791,17 +842,15 @@ nav a:focus {
 		display: none;
 	}
 	.portfolio-warp {
-		width: 270px;
-		margin: 1px;
+		width: 262px;
+		margin: 1px auto;
 	}
 	.iso_portfolio li {
-		width: 125px;
+		width: 121px;
 		height: auto;
 	}
 	.port-prv, .port-nxt {
-		width: 15px;
-		height: 34px;
-		background-size: cover;
+		width:20px;
 		z-index: 100;
 	}
 	.overlay, .corner-overlay-content, .overlay-content {
@@ -809,6 +858,18 @@ nav a:focus {
 	}
 	.iso_portfolio {
 		height: 330px !important;
+	}
+	.port-nxt {
+		right: 0;
+	}
+	.port-prv {
+		left: 0;
+	}
+	.model-img {
+		height: 400px;
+	}
+	.contact .contact-content .e-mail {
+		margin: 0;
 	}
 }
 
@@ -818,8 +879,6 @@ nav a:focus {
 	width: 61px;
 	height: 60px;
 	z-index: 1;
-}
-#f1_container {
 	perspective: 1000px;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;

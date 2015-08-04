@@ -1,16 +1,66 @@
 $(document).ready(function() {
+	
+	$(window).on('resize',function(){location.reload();});
+	
     var fullHeight = $(window).height();
 	
-	$(".home, .about, .services, .contact, .portfolio, .overlay-portfolio").css({
+	$(".home, .about, .services, .contact, .portfolio, .overlay-portfolio, .body").css({
 		height: fullHeight,
 	})
 	
+	// scroll
 	$(function() {
 		$.scrollify({
 			section : ".scrollify",
+			sectionName : "section-name",
+			easing: "easeOutExpo",
+			scrollSpeed: 1100,
+			offset : 0,
+			scrollbars: true,
+			before:function(id) {
+				if ($('.nav-desktop ul li a').hasClass('active-scroll')) {
+					$('.nav-desktop ul li a').removeClass('active-scroll');
+				}
+				if ($('.nav-mobile ul li a').hasClass('mob-active-scroll')) {
+					$('.nav-mobile ul li a').removeClass('mob-active-scroll');
+				}
+				$('.nav-desktop ul li a:eq('+id+')').addClass('active-scroll').focus();
+				$('.nav-mobile ul li a:eq('+id+')').addClass('mob-active-scroll');
+			},
 		});
 	});
 	
+	/* Menu Click */
+	$('.nav-desktop ul li a').click(function(){
+		$.scrollify("move",$(this).attr('href'));
+	});
+	$('.nav-mobile ul li a').click(function(){
+		$.scrollify("move",$(this).attr('href'));
+	});
+	
+	//carousal
+	$("#myCarousel1").on('slide.bs.carousel', function (ev) {
+		$("#testimonialImg00").hide();
+		$("#testimonialImg01").hide();
+		$("#testimonialImg02").hide();
+		$("#testimonialImg03").hide();
+		if ($('#caroCount li:eq('+0+')').hasClass('active')) {
+			$("#testimonialImg01").show();
+		};
+		if ($('#caroCount li:eq('+1+')').hasClass('active')) {
+			$("#testimonialImg02").show();
+		};
+		if ($('#caroCount li:eq('+2+')').hasClass('active')) {
+			$("#testimonialImg03").show();
+		};
+		if ($('#caroCount li:eq('+3+')').hasClass('active')) {
+			$("#testimonialImg00").show();
+		};
+		
+		//console.log($('#caroCount li:eq('+2+')').attr('data-slide-to'));
+		//curCar.fadeOut();
+           //alert("vv"+ev.class);
+    });
 	
 	/*home*/
 	$('#intro-coin-yes').css('display', 'none');
@@ -107,7 +157,8 @@ $(document).ready(function() {
 				background: 'url(images/mobile_filter_close.png) no-repeat 0px',
 				width: '26px',
 				height: '26px',
-			})
+			});
+			
 		} else {
 			ul.slideUp(500);
 			ul.addClass('closed');
@@ -119,6 +170,10 @@ $(document).ready(function() {
 			})
 		}
 	});
+	$('.body').click(function() {
+		$('.mob-filter').hide();
+		$('.mob-menu-filter').css({background: 'url(images/mobile_filter.png) no-repeat 0px',})
+	})
 	
 	
 	
@@ -219,15 +274,27 @@ $(document).ready(function() {
 	
 	// Porfolio isotope
 	
+	function isotope(destroy) {
+		$('.iso_portfolio').isotope('destroy')
+	};
+	
 	var $isoPort = $('.iso_portfolio').isotope({
 		itemSelector: '.iso_portfolio li',
 		layoutMode: 'masonryHorizontal',
+		resizesContainer: true,
     	masonryHorizontal: {
       		rowHeight:0,
     	}
 	
 	});
 	
+	/*Window resize
+	$(window).resize(function(){
+		isotope(destroy);
+	})*/
+	$(window).on("resize", function(){
+		isotope(destroy);
+	});
 	
 	$('#port-filter a').click(function(){
 		$('.iso_portfolio').isotope({ filter: $(this).attr('data-sec')});
@@ -286,5 +353,51 @@ $(document).ready(function() {
 	
 	
 	
+	/*Form Validation*/
+	function sendContact() {
+		var valid;	
+		valid = validateContact();
+		if(valid) {
+			jQuery.ajax({
+				url: "enquiry.php",
+				data:'userName='+$("#userName").val()+'&userEmail='+
+				$("#userEmail").val()+'&subject='+
+				$("#subject").val()+'&content='+
+				$(content).val(),
+				type: "POST",
+				success:function(data){
+					$("#mail-status").html(data);
+				},
+				error:function (){}
+			});
+		}
+	}
+	function validateContact() {
+		var valid = true;	
+		$(".demoInputBox").css('background-color','');
+		$(".info").html('');
+		if(!$("#userName").val()) {
+			$("#userName-info").html("(required)");
+			valid = false;
+		}
+		if(!$("#userEmail").val()) {
+			$("#userEmail-info").html("(required)");
+			valid = false;
+		}
+		if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+			$("#userEmail-info").html("(invalid)");
+			valid = false;
+		}
+		if(!$("#subject").val().match(/^({0~9})/)) {
+			$("#subject-info").html("(required)");
+			valid = false;
+		}
+		if(!$("#content").val()) {
+			$("#content-info").html("(required)");
+			valid = false;
+		}
+		return valid;
+	};
+/*End Form Validation*/
 
 });

@@ -18,6 +18,9 @@
   color: #FFF;
   position: relative; }
 
+.dHide {
+  display: none; }
+
 @media (max-width: 600px) {
   #question {
     font-size: 44px; } }
@@ -339,6 +342,11 @@ nav {
           -webkit-transform: translateX(0px);
           -moz-transform: translateX(0px);
           transform: translateX(0px); }
+        nav .nav-bar li a.active-scroll::before, nav .nav-bar li a.active-scroll::after, nav .nav-bar li a.active-scroll::before, nav .nav-bar li a.active-scroll::after {
+          opacity: 1;
+          -webkit-transform: translateX(0px);
+          -moz-transform: translateX(0px);
+          transform: translateX(0px); }
   nav .social-icons {
     padding: 0;
     margin: 0 2% 0 0; }
@@ -391,25 +399,28 @@ nav {
         .nav-mobile ul li a:hover {
           background: transparent;
           color: #000; }
+        .nav-mobile ul li a.mob-active-scroll {
+          background-color: transparent;
+          color: #454545; }
     .nav-mobile ul .mob-home a {
       background: rgba(0, 0, 0, 0.7) url(../images/nav_home.png) no-repeat center 10px; }
-      .nav-mobile ul .mob-home a:hover {
+      .nav-mobile ul .mob-home a:hover, .nav-mobile ul .mob-home a.mob-active-scroll {
         background: transparent url(../images/nav_home_hover.png) no-repeat center 10px; }
     .nav-mobile ul .mob-portfolio a {
       background: rgba(0, 0, 0, 0.7) url(../images/nav_portfolio.png) no-repeat center 10px; }
-      .nav-mobile ul .mob-portfolio a:hover {
+      .nav-mobile ul .mob-portfolio a:hover, .nav-mobile ul .mob-portfolio a.mob-active-scroll {
         background: transparent url(../images/nav_portfolio_hover.png) no-repeat center 10px; }
     .nav-mobile ul .mob-about a {
       background: rgba(0, 0, 0, 0.7) url(../images/nav_about.png) no-repeat center 10px; }
-      .nav-mobile ul .mob-about a:hover {
+      .nav-mobile ul .mob-about a:hover, .nav-mobile ul .mob-about a.mob-active-scroll {
         background: transparent url(../images/nav_about_hover.png) no-repeat center 10px; }
     .nav-mobile ul .mob-services a {
       background: rgba(0, 0, 0, 0.7) url(../images/nav_services.png) no-repeat center 10px; }
-      .nav-mobile ul .mob-services a:hover {
+      .nav-mobile ul .mob-services a:hover, .nav-mobile ul .mob-services a.mob-active-scroll {
         background: transparent url(../images/nav_services_hover.png) no-repeat center 10px; }
     .nav-mobile ul .mob-contact a {
       background: rgba(0, 0, 0, 0.7) url(../images/nav_contact.png) no-repeat center 10px; }
-      .nav-mobile ul .mob-contact a:hover {
+      .nav-mobile ul .mob-contact a:hover, .nav-mobile ul .mob-contact a.mob-active-scroll {
         background: transparent url(../images/nav_contact_hover.png) no-repeat center 10px; }
 
 /* About us START */
@@ -441,7 +452,8 @@ nav {
     color: #fff;
     text-align: left;
     font-size: 2.375em;
-    padding: 0% 0%; }
+    padding: 0% 0%;
+    font-family: 'MyriadProLight'; }
   .about-us p {
     color: #fff;
     text-align: left;
@@ -465,9 +477,11 @@ nav {
   .testimonial .article-bg {
     background: #fff;
     overflow: hidden;
-    width: 96%; }
+    width: 96%;
+    height: 216px;
+    padding: 20px; }
   .testimonial .carousel-container {
-    margin: 0 10%;
+    margin: 0 0%;
     overflow: hidden;
     position: relative; }
     .testimonial .carousel-container .carousel-indicators {
@@ -491,9 +505,10 @@ nav {
     .testimonial .carousel-container .carousel-width {
       position: relative;
       /*width: 100%;*/
-      height: 216px;
+      height: 190px;
       /*background: #fff;*/
-      overflow: hidden; }
+      overflow: hidden;
+      background: url(../images/testi_border_bot.png) repeat-x 0px 150px; }
       .testimonial .carousel-container .carousel-width .carousel-content {
         width: 90%;
         margin: 0 auto;
@@ -505,9 +520,9 @@ nav {
             color: #313030;
             text-align: left;
             font-size: 1em;
-            padding: 12% 10% 0;
-            background: url(../images/quote.png) 0px 33% no-repeat;
-            line-height: 22px;
+            padding: 20px 0 0 35px;
+            background: url(../images/quote.png) 10px 10px no-repeat;
+            line-height: 19px;
             font-family: "Calibri light"; }
           .testimonial .carousel-container .carousel-width .carousel-content .test-content p {
             color: #313030;
@@ -520,14 +535,17 @@ nav {
             color: #6b6b6b;
             text-align: right;
             font-size: 1em;
-            margin: 0 6% 0 0;
-            font-family: "Calibri"; }
+            margin: 0 0% 0 0;
+            font-family: "Calibri";
+            line-height: 18px; }
+            .testimonial .carousel-container .carousel-width .carousel-content .test-content .by-line span {
+              font-family: 'MyriadProBold'; }
           .testimonial .carousel-container .carousel-width .carousel-content .test-content .test-line {
             height: 1px;
-            width: 91%;
+            width: 100%;
             background-color: #e0e0e0;
             clear: both;
-            margin: 4% 5%; }
+            margin: 4% 0%; }
   .testimonial .test-image {
     width: 96px;
     height: 96px;
@@ -710,6 +728,24 @@ nav {
       .quality-section li a.knowledge:hover {
         background: url(../images/f1_hover.gif) no-repeat center top; }
 
+/*Testimonial Article*/
+.testi-content {
+  overflow: hidden;
+  font-family: 'Calibri-Regular'; }
+  .testi-content article {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #313030;
+    padding: 15px 0 0 15px;
+    margin: 0 0 20px;
+    background: url(../images/quote-1024.png) no-repeat 0px 0px; }
+  .testi-content p {
+    float: right;
+    font-size: 16px;
+    text-align: right; }
+    .testi-content p span {
+      font-size: 18px; }
+
 /* SERVICES END*/
 /* contact Start*/
 .contact {
@@ -747,7 +783,7 @@ nav {
       font-size: 1.125em;
       color: #313131;
       font-family: "calibri";
-      line-height: 30px; }
+      line-height: 22px; }
     .contact .contact-content .contact-address {
       padding: 0px 0 0 13%;
       margin: 5% 0 0;
@@ -757,7 +793,8 @@ nav {
       padding: 0px 0 0 13%;
       margin: 5% 0 0;
       text-align: left;
-      background: url(../images/mail-icon.png) no-repeat top left; }
+      background: url(../images/mail-icon.png) no-repeat top left;
+      background-size: contain; }
       .contact .contact-content .e-mail a {
         font-size: 1.125em;
         color: #313131;
@@ -767,7 +804,8 @@ nav {
       padding: 0% 0 0 13%;
       text-align: left;
       margin: 5% 0 0;
-      background: url(../images/phno-icon.png) no-repeat top left; }
+      background: url(../images/phno-icon.png) no-repeat top left;
+      background-size: contain; }
     .contact .contact-content .social-link {
       padding: 0;
       margin: 5% 0% 0 0; }
@@ -807,7 +845,8 @@ nav {
     overflow: hidden;
     width: 100%;
     position: relative;
-    background-color: #b4b4b4; }
+    background-color: #b4b4b4;
+    margin: 30px  0 0; }
     .contact .contact-enquiry .contact-app {
       width: 156px;
       height: 32px;
@@ -879,8 +918,9 @@ nav {
               height: 95px;
               width: 100%; }
             .contact .contact-enquiry .contact-form .contact-area .input-container .input-field:focus {
-              background: rgba(76, 76, 76, 0.3) none repeat scroll 0 0;
-              outline: medium none; }
+              background: white none repeat scroll 0 0;
+              outline: medium none;
+              color: #454545; }
           .contact .contact-enquiry .contact-form .contact-area .input-container .focused-border {
             background: #fff none repeat scroll 0 0;
             bottom: 0;
@@ -1069,7 +1109,7 @@ footer {
         position: relative;
         width: 96%;
         height: 174px;
-        background: #fff;
+        /*background: #fff;*/
         overflow: hidden; }
         .testimonial .carousel-container .carousel-width .carousel-content {
           width: 100%;
@@ -1088,11 +1128,11 @@ footer {
               color: #6b6b6b;
               text-align: right;
               font-size: 1em;
-              margin: 0 6% 0 0;
+              margin: 0;
               font-family: "Calibri"; }
             .testimonial .carousel-container .carousel-width .carousel-content .test-content .test-line {
               height: 1px;
-              width: 90%;
+              width: 100%;
               background-color: #e0e0e0;
               clear: both;
               margin: 2% 4%; }
@@ -1200,7 +1240,7 @@ footer {
   .service-bottom {
     float: left;
     width: 100%;
-    margin: 7% auto; }
+    margin: 3% auto; }
     .service-bottom .quality-trust h2 {
       color: #fff;
       text-align: center;
@@ -1245,6 +1285,15 @@ footer {
         font-family: 'MyriadProRegular'; }
         .service-bottom .footer-navbar p:hover {
           color: #000; }
+
+  .contact .contact-enquiry .contact-form .contact-area {
+    padding: 10px 0px 0px; }
+
+  .contact .contact-enquiry {
+    margin: 0; }
+
+  .model-img {
+    height: 580px; }
 
   /* SERVICES END 1024*/ }
 @media screen and (min-width: 769px) and (max-width: 999px) {
@@ -1357,7 +1406,7 @@ footer {
               color: #6b6b6b;
               text-align: right;
               font-size: 1em;
-              margin: 0 6% 0 0;
+              margin: 0 0% 0 0;
               font-family: "Calibri"; }
             .testimonial .carousel-container .carousel-width .carousel-content .test-content .test-line {
               height: 1px;
@@ -1526,14 +1575,7 @@ footer {
     background: none; }
 
   .contact-app {
-    right: -300px !important;
-                         /*a {
-		color: #000 !important;
-		border: 1px solid #000 !important;
-		&:hover {
-			color: #fff;
-		}
-	}*/ }
+    right: -300px; }
 
   .contact-content {
     position: relative; }
@@ -1659,11 +1701,11 @@ footer {
 
   .testimonial {
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: 0% auto 35%;
     overflow: hidden; }
     .testimonial .article {
-      width: 78%; }
+      width: 80%; }
     .testimonial .carousel-container {
       overflow: hidden;
       position: relative; }
@@ -1689,7 +1731,7 @@ footer {
         position: relative;
         width: 96%;
         height: 174px;
-        background: #fff;
+        /*background: #fff;*/
         overflow: hidden; }
         .testimonial .carousel-container .carousel-width .carousel-content {
           width: 100%;
@@ -1712,7 +1754,7 @@ footer {
               color: #6b6b6b;
               text-align: right;
               font-size: 1em;
-              margin: 0 6% 0 0;
+              margin: 0 0% 0 0;
               font-family: "Calibri"; }
             .testimonial .carousel-container .carousel-width .carousel-content .test-content .test-line {
               height: 1px;
@@ -1877,7 +1919,7 @@ footer {
       font-size: 4em; }
 
   .contact .contact-enquiry {
-    top: -330px;
+    top: -290px;
     background: none; }
 
   .contact-app {
@@ -1888,7 +1930,7 @@ footer {
 
   .desktop-map {
     position: absolute;
-    top: 21%;
+    top: 23%;
     left: 0px;
     margin: 0;
     width: 100%;
@@ -1908,7 +1950,7 @@ footer {
     margin: 7px auto;
     padding: 0;
     z-index: 2;
-    right: 5%;
+    right: 24px;
     bottom: 4%; }
     .click-map a {
       color: #000;
@@ -1943,6 +1985,9 @@ footer {
       .click-map a:hover:after, .click-map a:active:after {
         width: 100%; }
 
+  .contact .contact-enquiry .contact-form .contact-area {
+    padding: 30px 0px 0px; }
+
   /*.map-expand {
   		margin: 1% auto 4%;
   		width: 100%;
@@ -1961,7 +2006,25 @@ footer {
   /*.modal-dialog {
   	width: 100% !important;
   	height: 100%;
-  }*/ }
+  }*/
+  .contact .contact-content {
+    margin: 10% 0 0; }
+
+  .contact .contact-content .social-link {
+    margin: 0; }
+
+  .contact .contact-content .contact-address, .contact .contact-content .e-mail, .contact .contact-content .ph-no {
+    padding: 0 0 0 30px; }
+
+  .testi-content article {
+    font-size: 0.9375em;
+    line-height: 1.1875em; }
+
+  .testi-content p {
+    font-size: 0.875; }
+
+  .testi-content p span {
+    font-size: 1em; } }
 @media only screen and (min-width: 480px) and (max-width: 600px) {
   .testimonial .test-image img {
     margin: 25% 0 0; }
@@ -1979,22 +2042,43 @@ footer {
 
   /*.click-map {
   	right: 3% !important;
-  }*/ }
-@media only screen and (min-width: 640px) {
+  }*/
+  .mobile-contact, .click-map {
+    display: none; } }
+@media only screen and (min-width: 640px) and (max-width: 767px) {
   .nav-mobile ul li a {
     padding: 54px 2.805em 7px; }
 
   .contact-app {
-    right: -195px !important; } }
-@media only screen and (min-width: 768px) {
+    right: -195px !important; }
+
+  .desktop-map {
+    top: 24%; }
+
+  .contact .contact-enquiry {
+    top: -340px; } }
+@media only screen and (min-width: 768px) and (max-width: 999px) {
   .nav-mobile ul li a {
     padding: 54px 3.72em 7px; }
 
   .contact-app {
-    right: -260px !important; } }
+    right: -260px; }
+
+  .click-map {
+    right: 80px; }
+
+  .contact .contact-enquiry {
+    top: -360px;
+    background: none; }
+
+  .contact .contact-enquiry .contact-form .contact-area {
+    padding: 10px 0px 0px; }
+
+  .desktop-map {
+    top: 25%; } }
 @media only screen and (min-width: 641px) and (max-width: 767px) {
   .contact-app {
-    right: -260px !important; } }
+    right: -260px; } }
 @media only screen and (min-width: 320px) and (max-width: 360px) {
   .testimonial, .service-bottom {
     display: none; }
@@ -2005,20 +2089,26 @@ footer {
   .contact .contact-content p {
     line-height: 18px !important; }
 
-  .contact .contact-content .ph-no, .contact .contact-content .e-mail {
-    background: none !important; }
-
+  /*.contact .contact-content .ph-no, .contact .contact-content .e-mail {
+  	background: none !important;
+  }*/
   .mobile-contact, .click-map {
     display: none; }
 
   .contact .contact-content {
-    margin: 0; }
+    margin: 10px 0 0; }
 
   .contact .contact-content .social-link {
     margin: 0; }
 
   .about-us p {
-    line-height: 18px; } }
+    line-height: 18px; }
+
+  .contact .contact-content .contact-address {
+    margin: 0; }
+
+  .contact .contact-content .social-link li {
+    margin: 5px; } }
 @font-face {
   font-family: 'MyriadProRegular';
   src: url("../fonts/myriadpro-bold.eot");
@@ -2057,5 +2147,9 @@ footer {
   src: url("../fonts/HelveticaNeueLTStd-Roman.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueLTStd-Roman.woff") format("woff"), url("../fonts/HelveticaNeueLTStd-Roman.ttf") format("truetype"), url("../fonts/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Calibri-Regular';
+  src: url("../fonts/Calibri_gdi.eot");
+  src: url("../fonts/Calibri_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Calibri_gdi.woff") format("woff"), url("../fonts/Calibri_gdi.ttf") format("truetype"), url("../fonts/Calibri_gdi.otf") format("opentype"), url("../fonts/Calibri_gdi.svg#Calibri-Regular") format("svg"); }
 
 /*# sourceMappingURL=main.css.map */
