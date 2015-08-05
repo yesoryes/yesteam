@@ -1937,7 +1937,7 @@ Back to top button
 /* IP Team */
 .ip-team {
   color: #454545;
-  padding: 65px 0 0;
+  padding: 65px 0 40px;
   overflow: hidden; }
   .ip-team h2 {
     font-size: 25px;
@@ -1951,7 +1951,7 @@ Back to top button
     margin: 20px auto 20px 60px; }
     .ip-team .champs-team li {
       display: inline-block;
-      padding: 40px 50px 20px 0px;
+      padding: 40px 50px 0px 0px;
       color: #454545;
       font-family: 'RobotoRegular'; }
       .ip-team .champs-team li .staff-design {
