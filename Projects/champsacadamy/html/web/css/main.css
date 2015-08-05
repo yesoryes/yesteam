@@ -1,9 +1,9 @@
 /* Scss Document */
-.ip-innerstyle, .ip-contact, .ip-news, .ip-gallery, .career, .ip-whychamps, .ip-pre {
+.ip-innerstyle, .ip-contact, .ip-news, .ip-team, .ip-gallery, .career, .ip-whychamps, .ip-pre {
   position: relative;
   width: 100%;
   overflow: hidden; }
-  .ip-innerstyle h1, .ip-contact h1, .ip-news h1, .ip-gallery h1, .career h1, .ip-whychamps h1, .ip-pre h1 {
+  .ip-innerstyle h1, .ip-contact h1, .ip-news h1, .ip-team h1, .ip-gallery h1, .career h1, .ip-whychamps h1, .ip-pre h1 {
     text-align: center;
     -webkit-transform-origin: 0 0px;
     -ms-transform-origin: 0 0px;
@@ -1932,6 +1932,35 @@ Back to top button
           color: #e53f3e;
           opacity: 1; }
         .ip-news .jcarousel-wrapper .jcarousel-pagination a:hover {
+          color: #e53f3e; }
+
+/* IP Team */
+.ip-team {
+  color: #454545;
+  padding: 65px 0 0;
+  overflow: hidden; }
+  .ip-team h2 {
+    font-size: 25px;
+    color: #454545;
+    font-family: 'Action_Man';
+    text-align: left;
+    margin: 0 0 0 60px; }
+  .ip-team .champs-team {
+    overflow: hidden;
+    list-style: none;
+    margin: 20px auto 20px 60px; }
+    .ip-team .champs-team li {
+      display: inline-block;
+      padding: 40px 50px 20px 0px;
+      color: #454545;
+      font-family: 'RobotoRegular'; }
+      .ip-team .champs-team li .staff-design {
+        text-align: center;
+        padding: 10px 0 0; }
+        .ip-team .champs-team li .staff-design h6 {
+          font-size: 18px; }
+        .ip-team .champs-team li .staff-design p {
+          font-size: 14px;
           color: #e53f3e; }
 
 /* IP gallery */
