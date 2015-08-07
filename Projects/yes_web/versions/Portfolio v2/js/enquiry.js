@@ -7,7 +7,7 @@ $(function() {
 	var formMessages = $('#form-messages');
 
 	// Set up an event listener for the contact form.
-	$(form).submit(function(e) {
+	$(form).on('submit', function(e) {
 		// Stop the browser from submitting the form.
 		e.preventDefault();
 
@@ -18,7 +18,10 @@ $(function() {
 		$.ajax({
 			type: 'POST',
 			url: $(form).attr('action'),
-			data: formData
+			data: formData,
+			success: function () {
+              alert('form was submitted');
+            }
 		})
 		.done(function(response) {
 			// Make sure that the formMessages div has the 'success' class.

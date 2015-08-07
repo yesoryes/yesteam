@@ -286,15 +286,16 @@ div.centre {
   width: 88px;
   height: 61px;
   bottom: 2%;
-  right: 2%;
+  leftt: 2%;
   display: block;
-  position: absolute; }
+  position: absolute;
+  z-index: 1; }
 
 .new-logo {
   width: 91px;
   height: 61px;
   bottom: 2%;
-  right: 2%;
+  left: 2%;
   position: absolute; }
 
 nav {
@@ -581,7 +582,8 @@ nav {
   .services .line {
     height: 1px;
     background-color: rgba(255, 255, 255, 0.1);
-    clear: both; }
+    clear: both;
+    width: 99%; }
   .services .services-content {
     width: 100%;
     overflow: hidden;
@@ -845,7 +847,7 @@ nav {
     overflow: hidden;
     width: 100%;
     position: relative;
-    background-color: #b4b4b4;
+    /*background-color: #b4b4b4;*/
     margin: 30px  0 0; }
     .contact .contact-enquiry .contact-app {
       width: 156px;
@@ -910,9 +912,10 @@ nav {
             border: 0;
             border-bottom: 1px solid #454545;
             height: 30px;
-            color: #fff;
+            color: #444;
             width: 100%;
-            font-size: 1em;
+            /*font-size: 1em;*/
+            font-family: 'MyriadProRegular';
             border-radius: 0; }
             .contact .contact-enquiry .contact-form .contact-area .input-container .input-field.textarea-field {
               height: 95px;
@@ -933,28 +936,32 @@ nav {
             left: 0;
             transition: top 0.5s;
             -webkit-transition: top 0.5s;
-            font-size: 1.4em;
             top: 5px;
             font-size: 15px;
+            font-family: 'MyriadProRegular';
             color: #454545; }
             .contact .contact-enquiry .contact-form .contact-area .input-container .input-label.focused {
               top: -22px;
-              transition: top 0.5s ease 0s; }
+              transition: top 0.5s ease 0s;
+              font-family: 'MyriadProRegular'; }
             .contact .contact-enquiry .contact-form .contact-area .input-container .input-label.textarea-label {
               position: absolute;
               left: 0;
               transition: top 0.5s;
               -webkit-transition: top 0.5s;
-              top: 0px; }
+              top: 0px;
+              font-family: 'MyriadProRegular';
+              font-size: 15px; }
               .contact .contact-enquiry .contact-form .contact-area .input-container .input-label.textarea-label.focused {
                 top: -30px;
-                transition: top 0.5s ease 0s; }
+                transition: top 0.5s ease 0s;
+                font-size: 15px; }
             .contact .contact-enquiry .contact-form .contact-area .input-container .input-label .textarea-label {
               position: absolute;
               left: 0;
               transition: top 0.5s;
               -webkit-transition: top 0.5s;
-              font-size: 1.4em;
+              font-size: 15px;
               top: 170px; }
         .contact .contact-enquiry .contact-form .contact-area .textarea-container {
           width: 94%;
@@ -964,7 +971,7 @@ nav {
           z-index: 9;
           position: relative; }
           .contact .contact-enquiry .contact-form .contact-area .textarea-container textarea {
-            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+            font-family: 'MyriadProRegular';
             font-size: 15px;
             color: #fff; }
         .contact .contact-enquiry .contact-form .contact-area .sucess-msg {
@@ -1023,6 +1030,8 @@ footer {
   height: 40px;
   margin: 0 auto;
   overflow: hidden;
+  position: absolute;
+  bottom: 0;
   /*background:#000;*/ }
   footer p {
     color: #656565;
@@ -1042,14 +1051,17 @@ footer {
 /*Media Queries*/
 @media only screen and (min-width: 1000px) and (max-width: 1366px) {
   /* About us START 1024 */
+  #question {
+    font-size: 60px; }
+
   .about {
     width: 100%;
     overflow: hidden;
     background: url(../images/bg-about.jpg) no-repeat center bottom #ee733a;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain; }
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; }
     .about h1 {
       text-align: center;
       font-size: 4em;
@@ -1295,7 +1307,9 @@ footer {
   .model-img {
     height: 580px; }
 
-  /* SERVICES END 1024*/ }
+  /* SERVICES END 1024*/
+  .contact h1 {
+    font-size: 4em; } }
 @media screen and (min-width: 769px) and (max-width: 999px) {
   .nav-desktop {
     display: none !important; }
@@ -1892,7 +1906,7 @@ footer {
         padding-left: 0px; }
       .service-bottom .footer-navbar .right-arrow1, .service-bottom .footer-navbar .right-arrow2, .service-bottom .footer-navbar .right-arrow3, .service-bottom .footer-navbar .right-arrow4, .service-bottom .footer-navbar .right-arrow5 {
         vertical-align: top;
-        margin: 4% 0 0 0; }
+        margin: 2% 0 0 0; }
       .service-bottom .footer-navbar .right-arrow1 {
         opacity: 0.3; }
       .service-bottom .footer-navbar .right-arrow2 {
@@ -2044,6 +2058,9 @@ footer {
   	right: 3% !important;
   }*/
   .mobile-contact, .click-map {
+    display: none; }
+
+  .quality-trust {
     display: none; } }
 @media only screen and (min-width: 640px) and (max-width: 767px) {
   .nav-mobile ul li a {
@@ -2084,7 +2101,7 @@ footer {
     display: none; }
 
   .services h1, .contact h1 {
-    margin: 7% 0 2%; }
+    margin: 7% 0 1%; }
 
   .contact .contact-content p {
     line-height: 18px !important; }
