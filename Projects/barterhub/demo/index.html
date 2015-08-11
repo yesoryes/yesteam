@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BarterHub</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+<body>
+         <div id="login-block" class="container">
+    		<div class="row">
+			    <div class="col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4">
+			    	<img src="img/logo.png"/>
+			    	     <div class="login-box clearfix">
+			        	<div id="login-form">
+			        		<form method="get" action="#">
+						   		 <input type="email" required="" class="input-field" placeholder="Email Address"> 
+						   		 <input type="password" required="" class="input-field" placeholder="Password"> 
+						   		 <button class="btn btn-login" type="submit">Login</button> 
+							</form>	
+							<div class="login-links"> 
+					            <a href="forgot-password.html?login-theme-6">
+					          	   Forgot password?
+					            </a>
+					           <div>      		
+			        	</div> 			        	
+			       </div>
+			        
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jQuery.Validate/1.6/jQuery.Validate.min.js"></script>
+        <script>
+            // When the document is ready
+            $(document).ready(function () {
+                $("#login-form").validate({
+                    rules: {
+                        "email": {
+                            required: true,
+                            email: true
+                        },  
+                        "password": {
+                            required: true,
+                            minlength: 5
+                        } 
+                    }
+                });
+            });
+        </script>
+</body>
+</html>

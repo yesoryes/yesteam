@@ -1,0 +1,62 @@
+.normal {
+	height:128px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+.normal .navbar-right { 
+
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+	overflow:hidden;
+}
+.navbar-brand {
+	padding: 0px !important;
+}
+.navbar-brand img {
+	max-height: 75px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+.shrink {
+	height:60px;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+.shrink .navbar-right {
+	padding: 0px 15px 0px 0px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s; 
+	overflow:hidden;
+}
+.shrink .navbar-brand img {
+	max-height: 50px;
+	padding:0 !important;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+} 
+.shrink .logo
+{
+	padding:5px 0 0 20px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+}
+.shrink .navbar-toggle
+{
+	margin: 12px 40px 0px 0px !important;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+}
