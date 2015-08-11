@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	
-	$(window).on('resize',function(){location.reload();});
+	$(window).on('resize',function(){
+		location.reload();
+	});
 	
     var fullHeight = $(window).height();
 	
@@ -57,20 +59,15 @@ $(document).ready(function() {
 			$("#testimonialImg00").show();
 		};
 		
-		//console.log($('#caroCount li:eq('+2+')').attr('data-slide-to'));
-		//curCar.fadeOut();
-           //alert("vv"+ev.class);
     });
 	
 	/*home*/
 	$('#intro-coin-yes').css('display', 'none');
 	$('#link-replay').css('display', 'none');
-	//$('#menu-container').css('display', 'none');
 	$('#menu-container').css('opacity', '0');
 	
 	var t1 = new TimelineMax({onComplete:loop1});
 	t1
-	//.to("#intro-coin-yes", .1, {alpha:0})
 	.fromTo("#intro-hand",.2, {top:15}, {top:25, ease:Linear.easeNone}, "lp1")
 	.fromTo("#intro-hand",.2, {top:25}, {top:15, ease:Linear.easeNone})
 	;
@@ -103,7 +100,6 @@ $(document).ready(function() {
 	function press1(){
 		var t3 = new TimelineMax({onComplete:loop3});
 		t3
-		//.to("#question",.15, {top:-125, ease:Linear.easeNone}, "lp3")
 		.to("#intro-hand",.15, {top:125, ease:Linear.easeNone}, "lp3")
 		.to("#intro-rect",.2, {rotation:10}, "lp3")
 		.fromTo("#intro-coin",1.5, {top:232}, {scaleX:1.5, scaleY:1.5, rotation:480, top:-550}, "-=.3")
@@ -224,14 +220,9 @@ $(document).ready(function() {
 			background: '#fff',
 			'z-index': '100'
 		}, 1000)
-		/*$(".contact-enquiry.mobile-contact").css ({
-			background: '#b4b4b4',
-			
-		})*/
 		
 		$(".contact-app").delay(700).css({
 		   'display' : 'none',
-		   //'visibility': 'hidden' 
 		});
 	});
 	$(".cancel-btn").click(function(){
@@ -242,10 +233,8 @@ $(document).ready(function() {
 	   $(".contact-enquiry").css ({
 			background: 'none'
 	   }, 3000);
-	   /*$(".contact-enquiry.mobile-contact").delay(3000).css ({
-			background: 'none'
-		})*/
-		$(".contact-app").delay(7000).css({
+	   
+	   $(".contact-app").delay(7000).css({
 			'display' : 'block',
 			//'visibility': 'visible',
 			'transition': '5s all'
@@ -286,8 +275,7 @@ $(document).ready(function() {
 	
 	
 	
-	// Porfolio isotope
-	
+	// Porfolio isotope	
 	function isotope(destroy) {
 		$('.iso_portfolio').isotope('destroy')
 	};
@@ -319,11 +307,9 @@ $(document).ready(function() {
 		$('.port-nxt').css({'display': 'block'});
 	}
 	$isoPort.on( 'arrangeComplete', function( event, filteredItems ) {
-		//console.log( filteredItems.length );
 		$('.port-prv').css({'display': 'none'});
 		$('.port-nxt').css({'display': 'none'});
 		if ($('.iso_portfolio').width()-120 > $('.portfolio-warp').width()) {
-			//$('.port-nxt').fadeIn('fast');
 			$('.port-nxt').css({'display': 'block'});
 		};
 	});
@@ -334,8 +320,6 @@ $(document).ready(function() {
 	});
  
 	$('.port-nxt').click(function(){
-		//$('.iso_portfolio').css({'left': '0px'});
-		//alert($('.portfolio-warp').width()+", "+$('.iso_portfolio').position().left);
 		var portTar = $('.iso_portfolio').position().left - $('.portfolio-warp').width();
 		if (portTar > -$('.iso_portfolio').width() && !portAnim) {
 			$('.iso_portfolio').css({'left': portTar});
@@ -362,9 +346,6 @@ $(document).ready(function() {
 			$('.port-prv').fadeOut('fast');
 		};
 	});
-	
-	
-	
 	
 	/*Form Validation*/
 	function sendContact() {
@@ -413,11 +394,11 @@ $(document).ready(function() {
 	};
 /*End Form Validation*/
 
-
 	$('#myCarousel2').on('bind swipeleft', function() {
       $(this).carousel('prev');
     });
    $('#myCarousel2').on('bind swipeleft', function() {
       $(this).carousel('next');
    });
+   
 });

@@ -286,7 +286,7 @@ div.centre {
   width: 88px;
   height: 61px;
   bottom: 2%;
-  leftt: 2%;
+  left: 2%;
   display: block;
   position: absolute;
   z-index: 1; }
@@ -315,7 +315,8 @@ nav {
         text-decoration: none;
         font-family: 'MyriadProRegular';
         color: rgba(255, 255, 255, 0.7);
-        text-decoration: none; }
+        text-decoration: none;
+        text-transform: capitalize; }
         nav .nav-bar li a:hover, nav .nav-bar li a:focus {
           outline: none;
           color: white;

@@ -1,0 +1,1106 @@
+﻿<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Application Management</title>
+    <link rel="shortcut icon" id="favicon" href="images/favicon.ico">
+
+    <!--Gendral css-->
+    <link href="css/inner-page.css" rel="stylesheet" type="text/css" />
+    <link href="css/style .css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-3.1.1.css" rel="stylesheet" type="text/css" />
+    <link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+     <link href="css/stylesanimate.css" rel='stylesheet' type='text/css'>
+
+    <!-- Java Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+    <script type="text/javascript" src="tweetie.js"></script>
+
+    <style type="text/css">
+        @-ms-viewport {
+            width: device-width;
+        }
+
+        .dropdown-menu {
+            min-width: 710px;
+        }
+
+            .dropdown-menu.columns-2 {
+                min-width: 600px;
+            }
+
+            .dropdown-menu.columns-3 {
+                min-width: 600px;
+            }
+
+            .dropdown-menu li a {
+                padding: 5px 15px;
+                font-weight: 300;
+            }
+
+        .multi-column-dropdown {
+            list-style: none;
+            padding: 20px 0 20px 0;
+        }
+
+            .multi-column-dropdown:hover {
+                list-style: none;
+            }
+
+            .multi-column-dropdown li a {
+                display: block;
+                clear: both;
+                line-height: 1.428571429;
+                font-family: 'MyriadPro-Cond', Helvetica, sans-serif;
+                color: #3DB0F3;
+                padding: 10px;
+                padding-top:10px;
+                white-space: nowrap;
+            }
+
+                .multi-column-dropdown li a:hover {
+                    background: none;
+                    opacity: 0.9;
+                    color: rgb(211, 32, 32);
+                    text-decoration: none;
+                    width: auto;
+                }
+
+        @media (max-width: 767px) {
+            .dropdown-menu.multi-column {
+                min-width: 240px !important;
+                overflow-x: hidden;
+            }
+
+            .logo {
+                margin-top: -4px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                width: 100%;
+                margin: 50px auto;
+                padding: 10px;
+            }
+
+            .logo {
+                margin-top: -4px;
+            }
+        }
+
+        .desc {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-stretch: normal;
+            color: #B8C0BE;
+            width: 279px;
+            word-wrap: break-word;
+            margin-top: -10px;
+            margin-left: 12px;
+        }
+
+        .i-left {
+            width: 68px;
+            height: 83px;
+            float: left;
+            margin-left: -10px;
+        }
+
+        .sb-search {
+            position: relative;
+            width: 0%;
+            min-width: 40px;
+            height: 40px;
+            float: right;
+            overflow: hidden;
+            -webkit-transition: width 0.3s;
+            -moz-transition: width 0.3s;
+            transition: width 1s;
+            -webkit-backface-visibility: hidden;
+        }
+
+        .f-box {
+            margin-top: 0px;
+        }
+
+        @media screen and (max-width:768px) {
+            .sb-search {
+                float: left;
+                margin-left: 12px;
+            }
+
+            .navbar table {
+                width: 100%;
+            }
+
+            body.disabled-onepage-scroll .onepage-wrapper section {
+                min-height: 300px;
+            }
+
+            .back {
+                position: relative;
+            }
+
+            .skdslider {
+                top: 0px;
+            }
+
+            .navbar-nav > li > a {
+                font-family: "MyriadPro-Cond",Helvetica,sans-serif;
+                font-size: 15px;
+                font-stretch: ultra-expanded;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+
+            .MenuRight1 {
+                right: 0px;
+            }
+
+            .MenuRight2 {
+                right: 0px;
+            }
+
+            .MenuRight3 {
+                right: 0px;
+            }
+
+            .row {
+                padding: 0px;
+            }
+
+            .multi-column-dropdown {
+                padding: 0px;
+            }
+
+            .sb-search-input {
+                color: red;
+            }
+        }
+
+        @media screen and (max-width:910px) {
+
+            .container-fluid {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .sb-search-input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: none;
+            outline: none;
+            background: #fff;
+            width: 100%;
+            height: 39.6px;
+            margin: 0;
+            z-index: 10;
+            padding: 10px 47px 10px 10px;
+            font-family: inherit;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+
+            .sb-search-input::-webkit-input-placeholder {
+                color: #cccccc;
+            }
+
+            .sb-search-input:-moz-placeholder {
+                color: #cccccc;
+            }
+
+            .sb-search-input::-moz-placeholder {
+                color: #cccccc;
+            }
+
+            .sb-search-input:-ms-input-placeholder {
+                color: #cccccc;
+            }
+
+        .sb-icon-search,
+        .sb-search-submit {
+            width: 40px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 0;
+            margin: 0;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .sb-search-submit {
+            background: #fff; /* IE needs this */
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+            filter: alpha(opacity=0); /* IE 5-7 */
+            opacity: 0;
+            color: transparent;
+            border: none;
+            outline: none;
+            z-index: -1;
+        }
+
+        .sb-icon-search {
+            color: #fff;
+            background: rgb(211, 32, 32) none repeat scroll 0 0;
+            z-index: 90;
+            font-size: 22px;
+            /*font-family: 'icomoon';*/
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            -webkit-font-smoothing: antialiased;
+        }
+
+            .sb-icon-search:before {
+                /*content: "\e000";*/
+            }
+
+        /* Open state */
+        .sb-search.sb-search-open,
+        .no-js .sb-search {
+            width: 200px;
+        }
+
+            .sb-search.sb-search-open .sb-icon-search,
+            .no-js .sb-search .sb-icon-search {
+                background: rgb(211, 32, 32) none repeat scroll 0 0;
+                color: #fff;
+                z-index: 11;
+            }
+
+            .sb-search.sb-search-open .sb-search-submit,
+            .no-js .sb-search .sb-search-submit {
+                z-index: 90;
+            }
+
+
+        .hidetop {
+            display: none;
+        }
+    </style>
+
+    <style type="text/css">
+        .InnerPageColumn {
+            width: 50%;
+            float: left;
+        }
+
+        .ColumnContent {
+            background: #ffffff;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .trendmenu1 {
+            width: 98.5% !important;
+            height: 142px;
+            background-color: rgba(70, 202, 112, 0.47);
+            margin-top: 10px !important;
+        }
+
+        .trendmenu2 {
+            width: 98.5%;
+            margin-top: 10px;
+        }
+
+        .trendmenu3 {
+            width: 49% !important;
+            height: 152px;
+            background-color: rgba(81, 209, 255, 0.47);
+            float: left;
+        }
+
+        .trendmenu4 {
+            width: 49% !important;
+            height: 152px;
+            background: rgba(0,0,0,0.5);
+            text-align: left;
+            float: right;
+            margin-left: 5px !important;
+        }
+
+        @media screen and (max-width:767px) {
+            .q_link {
+                padding-top: 40px;
+            }
+
+            .InnerPageColumn {
+                width: 100%;
+                float: left;
+                margin-left: 0px;
+            }
+
+            .ColumnContent {
+                margin: 0px;
+            }
+
+            .trendmenu1 {
+                width: 100% !important;
+                border: 0;
+            }
+
+            .trendmenu2 {
+                width: 100%;
+            }
+
+            .trendmenu3 {
+                width: 100% !important;
+                height: 152px;
+                background-color: rgba(81, 209, 255, 0.47);
+                border: 0;
+                float: left;
+                margin: 0px !important;
+                /*margin-left: 10px;*/
+            }
+
+            .trendmenu4 {
+                width: 100% !important;
+                height: 152px;
+                background: rgba(0,0,0,0.5);
+                text-align: left;
+                float: right;
+                margin-left: 0px !important;
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+        }
+
+        @media screen and (max-width:348px) {
+            .trendmenu1 {
+                height: 162px;
+            }
+        }
+
+        .contentmain {
+            margin-right: 76px;
+            padding-bottom: 30px;
+            margin-left: 80px;
+        }
+
+        @media screen and (max-width:910px) {
+            .contentmain {
+                margin-right: 20px;
+                padding-bottom: 30px;
+                margin-left: 20px;
+            }
+        }
+    </style>
+
+    <style type="text/css">
+        .slider {
+            float: right;
+            margin-right: 0px !important;
+            width: 80%;
+            margin-left: 70px !important;
+            margin-top: 20px;
+        }
+
+        .fboxColumn {
+            float: left;
+            width: 50%;
+        }
+
+        .SocialWebsites {
+            border-spacing: 5px;
+            border-collapse: separate;
+            padding-top: 25px;
+            margin-right: 70px !important;
+            float: right;
+        }
+
+        .terms {
+            padding-bottom: 0px;
+        }
+
+        .BottomPage {
+            position: relative;
+            bottom: 0;
+        }
+
+        .SocialIcons {
+            font-style: normal;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 30px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            margin-right: 3px;
+            color: #ffffff;
+            background-color: none;
+            border: 1px solid #848B93;
+        }
+
+        @media screen and (max-width:768px) {
+            .slider {
+                float: left;
+                margin-right: 0px !important;
+                margin-left: 0px !important;
+                width: 97%;
+            }
+
+            .fboxColumn {
+                float: left;
+                width: 100%;
+                padding-right: 20px;
+            }
+
+
+
+            .arrows-up {
+                top: -110px;
+                left: 30px;
+            }
+
+            .arrows-down {
+                left: 0px;
+            }
+
+            .SocialWebsites {
+                border-spacing: 5px;
+                border-collapse: separate;
+                padding-top: 0px;
+                margin-right: 0px !important;
+                margin-left: 30px !important;
+                float: left;
+            }
+
+            .BottomPage {
+                position: initial;
+                bottom: initial;
+            }
+
+            .SocialIcons {
+                font-size: 40px;
+                width: 59px;
+                height: 59px;
+                display: block;
+                line-height: 59px;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            .SocialIcons {
+                font-size: 25px;
+                width: 39px;
+                height: 39px;
+                line-height: 39px;
+                display: block;
+            }
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.accordion-toggle').on('click', function (event) {
+                event.preventDefault();
+                // create accordion variables
+                var accordion = $(this);
+                var accordionContent = accordion.next('.accordion-content');
+                var accordionToggleIcon = $(this).children('.toggle-icon');
+
+                // toggle accordion link open class
+                accordion.toggleClass("open");
+                // toggle accordion content
+                accordionContent.slideToggle(400);
+
+                // change plus/minus icon
+                if (accordion.hasClass("open")) {
+                    accordionToggleIcon.html("<i class='fa fa-minus-circle'></i>");
+                } else {
+                    accordionToggleIcon.html("<i class='fa fa-plus-circle'></i>");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).bind('scroll', function () {
+                var navHeight = $("#pageTop").height();
+                if ($(window).scrollTop() > navHeight) {
+                    $('#pageTop').addClass('hidetop');
+                    $('#imglogo').height(50);
+                    $('.logo').css("height", "auto");
+                    $('.logo').css("margin-top", "10px");
+                }
+                else {
+                    $('#pageTop').removeClass('hidetop');
+                    $('#imglogo').removeClass('logoimage');
+                    $('#imglogo').height("auto");
+                    $('.logo').css("margin-top", "-26px");
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            var $elems = $('.animateblock');
+            animate_elems();
+            function animate_elems() {
+                // loop through each item to check when it animates
+                $elems.each(function () {
+                    $elm = $(this);
+
+                    if ($elm.hasClass('animated')) { return true; } // if already animated skip to the next item
+                    $elm.addClass('animated');
+                });
+            } // end animate_elems()
+        });
+    </script>
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="back">
+
+            <div id="pageTop" style="background: #181818; padding-top: 8px;">
+                <div class="container-fluid">
+                    <div class="menu1">
+                        <ul>
+                            <li><a href="Company.html"><span>Company</span></a></li>
+                            <li><a href="Careers.html"><span>Careers</span></a></li>
+                            <li id="last"><a href="Contact.html"><span>Contact Us</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="headerMenu" class="container-fluid">
+                <div class="logo" style="position: relative; z-index: 5;">
+
+                    <a href="index.html">
+                        <img src="images/logo.png" id="imglogo" />
+                    </a>
+
+                </div>
+
+
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <table style="float: right">
+                        <tr>
+                            <td>
+
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-top: 12px;">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="Consulting.html"><span>Consulting</span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Technology<b class="caret"></b></span></a>
+                                            <ul class="dropdown-menu multi-column columns-2">
+                                                <div class="row MenuRight1">
+                                                    <div class="col-sm-6">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="Application Management.html">Application Management</a>
+                                                                <div class="desc">Reveille with its distinctive approach helps you realize results consistently and predictably.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+
+                                                            <li><a href="MobilityServices.html">Enterprise Mobility</a>
+                                                                <div class="desc">Mobility in the future, we need closely networked information systems.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+
+                                                            <li><a href="Cloud.html">Cloud Technology</a><div class="desc">Allows enterprises to get their applications up and running faster, with improved manageability and less maintenance.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="EngineeringServices.html">Engineering Services</a>
+                                                                <div class="desc">Reveille is a global supplier of engineering services to a diverse spectrum of industries. </div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="InfrastructureManagement.html">Infrastructure Management</a>
+                                                                <div class="desc">Reveilles utilities and alternative energy experts help both upstream and downstream players face challenges.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Outsourcing<b class="caret"></b></span></a>
+                                            <ul class="dropdown-menu multi-column columns-2">
+                                                <div class="row MenuRight2">
+                                                    <div class="col-sm-6">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="ApplicationOutsourcing.html">Application Outsourcing</a>
+                                                                <div class="desc">We help our clients build state of the art IT capabilities that expedite business outcomes with best-in-class cost structures.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="BusinessProcessOutsourcing.html">Business Process Outsourcing</a>
+                                                                <div class="desc">Reveille offers multiple sourcing options to better match your needs: fully outsourced services with optional components,</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="InfrastructureOutsourcing.html">Infrastructure Outsourcing</a>
+                                                                <div class="desc">The Reveille team consists of experienced consultants who are able to work closely with our clients.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Industries<b class="caret"></b></span></a>
+                                            <ul class="dropdown-menu multi-column columns-2">
+                                                <div class="row MenuRight3">
+                                                    <div class="col-sm-6" style="margin-top: 10px;">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="AeroSpace.html">Aerospace and Defense</a><div class="desc">Aerospace and defense industry is the fastest growing industry. With potential deep cuts in Defense and commercial.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="Healthcare.html">Healthcare</a><div class="desc">Reveille responding to this unprecedented change in the healthcare industry, achieves high performances using knowledge in new ways.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="ConsumerGoods.html">Consumer Packaged Goods</a><div class="desc">Reveille's global team has experience in all major consumer goods industry sectors. </div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="Telecom.html">Telecom</a><div class="desc">Reveille Technologies has served a wide range of telecommunications players.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="Transportation.html">Transportation</a><div class="desc">Reveille helps its client to position themselves to meet the cutthroat competition, unforgiving credit markets, and new regulations and stakeholders expectations.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="Utilities.html">Utilities</a><div class="desc">Reveille's utilities and alternative energy experts help both upstream and downstream players face challenges.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="Insurance.html">Insurance</a><div class="desc">Reveille Technologies services group helps insurance industry clients ? insurers, reinsurers, brokers, investors.</div>
+                                                            </li>
+                                                            <li><a href="Banking.html">Banking</a><div class="desc">Reveille?s clients span every dimension of the Banking and financial services industry.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li id="last1"><a href="Partners.html"><span>Partners</span></a></li>
+                                        <li>
+                                            <div id="sb-search" class="sb-search">
+                                                <form>
+                                                    <input id="search" class="sb-search-input" type="text" name="search" value="" placeholder="Enter your search term...">
+                                                    <input class="sb-search-submit" type="submit" value="">
+                                                    <span class="sb-icon-search"><i class="fa fa-search"></i></span>
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+                </nav>
+
+            </div>
+
+        </div>
+        <!--end of back-->
+
+        <div style="clear: both"></div>
+
+        <div style="clear: both"></div>
+
+        <div class=" technology-Apbackground">
+
+            <div class="q_link"></div>
+
+            <div class="contentmain">
+                <div class="layer-bg">
+
+                    <div class="heading">
+                        <img src="images/images/arrow1.png" style="padding: 15px" />Application Services
+                    </div>
+
+                    <div class="InnerPageColumn">
+
+                        <div class="ColumnContent">
+
+                            <div class="side-h1">Application Services Overview</div>
+                            <p class="c-text">
+                                Demanding market, crashing applications, and diverse and disparate application environments are some of the challenges facing the industry. As applications become more capable they become more complicated - demanding more time, resources and expertise to manage them. Companies are left to face the problem instead of moving the business forward. It's hard to focus on strategic business initiatives while struggling with daily application management tasks - especially with the increasing complexity of business software.
+
+                            </p>
+
+                            <p class="c-text" style="color: #191919; border-left: 2px solid #e24b44; margin-left: 13px">
+                                Reveille with its distinctive approach helps you realize results consistently and predictably. We bring with us extensive experience, proven methodologies that provide consistent delivery across all platforms enabling cost effective outcome and maximize your return on investment.
+
+                            </p>
+
+
+                            <div class="heading2" style="margin-left: 12px;">Reveille Application services Advantage.</div>
+                            <div class="list" style="margin-left: 12px;">
+                                <li>Application expertise and focus</li>
+                                <li>Full spectrum of application services</li>
+                                <li>Global delivery model</li>
+                                <li>Service Commitment</li>
+                                <li>Outstanding performance</li>
+                                <li>Unsurpassed Client Satisfaction</li>
+                            </div>
+
+                            <div style="padding-left: 9px; margin-top: 26px;">
+                                <div class="heading1" style="color: #000000">
+                                    <img src="images/box_03.jpg" />
+                                    <font color="#747474">Reveille</font>Application Services
+                                </div>
+                                <div style="border-bottom: 1px solid #000000; margin-bottom: 20px; margin-top: -1px;"></div>
+                                <div style="padding-left: 9px; margin-top: 32px;">
+
+
+                                    <div class="content white">
+                                        <div class="accordion-container">
+                                            <a href="#" class="accordion-toggle">Application Development <span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    Reveille Application development team can help construct and deliver your projects faster and with higher quality. Reveille application development solutions for Java™, JEE, C++, Web, COBOL, RPG, PL/1, SOA, mobile and multi-platform development will help you succeed by supporting modern software development paradigms, providing requirements-to-code traceability, and offering optimized support for runtimes.
+                                           
+                                                </p>
+                                                <p>
+                                                    Reveille delivers high-quality, resilient systems and applications with our application development solutions that help you focus on the business logic and software design, while addressing the numerous challenges facing developers
+                                                </p>
+                                                <p>
+                                                    Reveille has become a sort after application development partner for its focus on
+                                                </p>
+                                                <ul>
+                                                    <li>Product Engineering Processes</li>
+                                                    <li>Functional Expertise</li>
+                                                    <li>Rapid Relationship Environment</li>
+                                                    <li>Governance Models</li>
+                                                </ul>
+
+                                                <p>
+                                                    The world's business leaders come to Reveille when they want enduring results. Together, we find value across boundaries, develop insights to act on, and energize teams to sustain success. We're passionate about always doing the right thing for our clients, our people and our communities, even if it isn't easy.
+                                                </p>
+                                                <p>
+                                                    Why Reveille:
+                                                </p>
+                                                <ul>
+                                                    <li>Application Performance improvement</li>
+                                                    <li>Risk Management</li>
+                                                    <li>Independent blue print </li>
+                                                    <li>Protection of investment – validation of architectures</li>
+                                                    <li>Robustness of Application</li>
+                                                    <li>Scalability and Flexibility</li>
+                                                    <li>Budgetary benefits</li>
+                                                </ul>
+
+                                            </div>
+                                            <!--/.accordion-content-->
+                                        </div>
+                                        <!--/.accordion-container-->
+                                        <div class="accordion-container">
+                                            <a href="#" class="accordion-toggle">Application Support & Maintenance <span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    Reveille's Application Support & Maintenance Services provide the support required for organizations to perform in changing business scenarios.  Our enhanced services and technology initiatives help achieve a deeper level of integration with the Infrastructure, Development, and Testing teams. Our deep understanding of the business, of the ERPs and packaged solutions in play, of ITIL® and Agile processes, help companies overcome the challenges they face and realize a system that’s stable across and ever changing range of legacy and unlocks the companies potential without additional cost burdens. Reveille provides next generation support environment designed to both track and improve results simultaneously.
+                                           
+                                                </p>
+                                                <p>
+                                                    <b>Reveille services:</b>  throughout the entire application life-cycle we provide a range of services including:
+                                                </p>
+                                                <ul>
+                                                    <li>Application Assessment and Audit (Architecture, Design, Performance)</li>
+                                                    <li>Application Support: Incident Investigation, Troubleshooting, and Management</li>
+                                                    <li>Application Maintenance: Problem Management and Root Cause Analysis</li>
+                                                    <li>Application Enhancement: Request for Change Implementations, Functional Uplifts</li>
+                                                    <li>Application Performance Monitoring, Management, and Tuning</li>
+                                                    <li>Release and Deployment Management integrated with Application Systems Management, Development and QA services</li>
+                                                    <li>Preventive and Proactive Maintenance and Support</li>
+                                                    <li>Application Transition and Consulting Services</li>
+                                                </ul>
+                                            </div>
+                                            <!--/.accordion-content-->
+                                        </div>
+                                        <!--/.accordion-container-->
+                                        <div class="accordion-container">
+                                            <a href="#" class="accordion-toggle">Application integration<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    Application integration with Reveille is easier than ever before. The main reasons are the consistent use of open, international communication standards, the comprehensive functionality as well as the open interfaces of the software systems. We provide user-centric business processes across enterprise applications, leveraging industry’s best practices and open standards to reduce costs and increase business flexibility. 
+                                           
+                                                </p>
+                                                <p>Reveille offers Application Integration services in three areas:</p>
+                                                <ul>
+                                                    <li>Enterprise application integration (intra-enterprise)</li>
+                                                    <li>B2B and B2C integration</li>
+                                                    <li>Legacy integration</li>
+                                                </ul>
+
+                                            </div>
+                                            <!--/.accordion-content-->
+                                        </div>
+                                        <!--/.accordion-container-->
+                                        <div class="accordion-container">
+                                            <a href="#" class="accordion-toggle">Application Re-Engineering & Mordenization<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    Maintaining and upgrading legacy systems is one of the most challenging tasks faced today, including limitations of adding new capabilities and features for the new-age work styles and business models, multiple technology platforms, high maintenance costs, unsupported systems , diminishing employee expertise, and lack of web capabilities.
+                                           
+                                                </p>
+                                                <p>
+                                                    Constraints of budget, time, and resource and risk management compel business to modernize legacy system by implementing one of the strategies below:
+                                                </p>
+                                                <ul>
+                                                    <li>Simply update and optimize performance of current system.</li>
+                                                    <li>Keep the business logic of application on legacy application while providing user a more friendly interface to the data(GUI screens or  Web Browser)</li>
+                                                    <li>Integrate legacy application including business logic with new technologies while data resides on legacy system.</li>
+                                                    <li>Migrate part of legacy application to different platform with little or no change to core business logic.</li>
+                                                </ul>
+                                                <p>Reveille’s end-to-end transformation of legacy applications to newer technologies and architectures help companies to mitigate cost and risks.</p>
+                                                <p>Reveille Re-Engineering services include: </p>
+                                                <ul>
+                                                    <li>Legacy Database & Platform Migration</li>
+                                                    <li>
+                                                    Application Re-engineering/li>
+                                                <li>.Net Architecture Design </li>
+                                                    <li>Reverse Engineering to generate system specification</li>
+                                                    <li>Data Migration & Verification</li>
+                                                    <li>Migration to multiple databases or database upgrade/migration to web platforms</li>
+                                                </ul>
+                                                <p>Reveille provide cost effective migration to new technologies while extending the life cycle of their functionally-rich existing legacy software.</p>
+                                            </div>
+                                            <!--/.accordion-content-->
+                                        </div>
+                                        <!--/.accordion-container-->
+                                        <div class="accordion-container">
+                                            <a href="#" class="accordion-toggle">Mergers and Acquisitions <span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                                            <div class="accordion-content">
+                                                <p>The mergers and acquisitions (M&A) transaction process is fraught with pitfalls and roadblocks that should be carefully navigated with skill and care to achieve the goal of one new improved organization from two separate, distinctly different companies. Of all these pitfalls, the one that frequently poses a challenge is how to plan for and execute the post-merger IT systems integration.</p>
+                                                <p>We work with clients to assess existing IT environments and capabilities, and then identify the opportunities and threats of changes in business structure through our due diligence process. We work together to develop a tailored strategic IT roadmap and migration plan, and to guide the IT decisions and actions required to realize the deal’s maximum value.</p>
+                                                <p>Reveille brings to you not only our extensive knowledge base and hands-on efforts in post merger integration, M&A due diligence and post-deal restructuring, but also its combined skills and leadership from our staff.</p>
+
+                                            </div>
+                                            <!--/.accordion-content-->
+                                        </div>
+                                        <!--/.accordion-container-->
+                                    </div>
+                                    <!--/.content-->
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="InnerPageColumn">
+
+                        <div class="trendmenu1 animateblock top" style="font-family: myriad-pro,myriad-pro-n4,myriad-pro,Myriad Pro,Arial,Helvetica,sans-serif; font-size: 20px;">
+                            <div style="width: 100%; float: left; text-align: center; color: #fff;">
+                                <img src="images/box-2-white.png" style="display: block; margin: 18px auto auto; padding-bottom: 5px;" />
+                                <div>
+                                    <span>Proven methodologies&nbsp;|&nbsp;Consistent delivery</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div style="clear: both"></div>
+
+
+                        <div class="trendmenu2" style="text-align: center; font-family: myriad-pro,myriad-pro-n4,myriad-pro,Myriad Pro,Arial,Helvetica,sans-serif; font-size: 20px; color: #fff">
+                            <div class="trendmenu3 animateblock centerright">
+                                <div>
+                                    <a href="files/ReveilleBrochure.pdf" target="_blank">
+                                        <img src="images/23_10.png" style="display: block; margin: 18px auto auto;" /></a>
+                                    <div>
+                                        <span>Download</span> <span style="font-weight: bold">Brochure</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="trendmenu4 ct animateblock centerleft">
+                                <li><a href="Contact.html"><i class="fa fa-phone"></i>&nbsp;Contacts</a></li>
+                                <li><a href="#"><i class="fa fa-globe"></i>&nbsp;Subscribe</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o"></i>&nbsp;Write to us</a></li>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div style="clear: both"></div>
+
+        <div class="footer" style="clear: both;">
+
+            <div style="clear: both; width: 100%; background: #212a33 none repeat scroll 0 0;" class="BottomPage">
+
+                <div style="margin-left: auto; margin-right: auto; max-width: 1170px;">
+
+                    <div class="Tbox fboxColumn">
+
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="padding-right: 10px; padding: 5px;">
+                                    <a class="tweeticon" href="#1" data-index="1">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </td>
+
+                                <td style="vertical-align: middle; padding-top: 30px; padding-bottom: 30px;">
+                                    <div class="check">Check out this great item</div>
+                                    <div class="ReveilleTweet">
+                                        <div class="tweet"></div>
+                                    </div>
+
+                                </td>
+                                <td style="padding-left: 5px;">
+
+                                    <div id="TweetForward" style="vertical-align: top; margin-top: 10px;"><a class="MoveButton" href="#"><i class="fa fa-chevron-up" style="font-size: 18px"></i></a></div>
+                                    <div id="TweetBackward" style="vertical-align: bottom; margin-top: 25px;"><a class="MoveButton" href="#"><i class="fa fa-chevron-down" style="font-size: 18px"></i></a></div>
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <div class="fboxColumn">
+
+                        <table class="SocialWebsites" style="padding-bottom: 30px;">
+                            <tr>
+                                <td colspan="4">
+
+                                    <span class="check">Connect With us </span>
+
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <a class="SocialIcons soc-facebook" href="https://www.facebook.com/reveilletech" data-index="1">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="SocialIcons soc-google" href="https://plus.google.com/+ReveilletechnologiesReveilleInc" data-index="1">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="SocialIcons soc-twitter" href="https://twitter.com/reveilletech" data-index="1">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="SocialIcons soc-linkedin" href="https://www.linkedin.com/company/reveille-technologies-inc" data-index="1">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <div style="clear: both" class="line"></div>
+
+                <div class="terms">
+                    <span style="white-space: nowrap">Terms and privacy policy under which this service is provided to you</span>
+                    <br />
+                    <span>Copyright &copy; 2015 Reveille Technologies.</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        $('.ReveilleTweet .tweet').twittie({
+            username: 'reveilletech',
+            list: 'c-oo-l-e-s-t-nerds-i-know',
+            dateFormat: '%b. %d, %Y',
+            template: '<strong class="date">{{date}}</strong> - {{screen_name}} {{tweet}}',
+            count: 10
+        }, function () {
+            setInterval(function () {
+                var item = $('.ReveilleTweet .tweet ul').find('li:first');
+                item.animate({ margintop: '-220px', 'opacity': '0' }, 500, function () {
+                    $(this).detach().appendTo('.ReveilleTweet .tweet ul').removeAttr('style');
+                });
+            }, 5000);
+        });
+
+        $('#TweetForward').click(function (e) {
+            var item1 = $('.ReveilleTweet .tweet ul').find('li:first');
+
+            item1.animate({ margintop: '-220px', 'opacity': '0' }, 500, function () {
+                $(this).detach().appendTo('.ReveilleTweet .tweet ul').removeAttr('style');
+            });
+        });
+
+        $('#TweetBackward').click(function (e) {
+            var item1 = $('.ReveilleTweet .tweet ul').find('li:last');
+
+            item1.animate({ marginbottom: '-220px', 'opacity': '0' }, 500, function () {
+                $(this).detach().prependTo('.ReveilleTweet .tweet ul').removeAttr('style');
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $(".sb-icon-search").click(function (e) {
+            $('.sb-search').toggleClass('sb-search-open');
+        });
+    </script>
+
+</body>
+</html>
