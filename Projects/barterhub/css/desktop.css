@@ -698,8 +698,7 @@ background-color: #fff;
 .front-content {
   font-size: 1.625em;
   color: #fff;
-  width: 100%;
-  
+  width: 100%;  
   text-align:center;
   vertical-align:middle;
   line-height:30px;
@@ -1124,4 +1123,196 @@ footer p
 	position: absolute;
 	top: 30px;
 	right: 30px;	
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+/* Safari and Chrome */
+.rotateLeft {
+    -webkit-transform: rotateZ(-45deg);
+    -moz-transform: rotateZ(-45deg);
+    -ms-transform: rotateZ(-45deg);
+    -o-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+    width: 230px;
+    height: 230px;
+    display: table-cell;
+    margin: 0 auto;
+    vertical-align: middle; 
+}
+/* Safari only override */
+::i-block-chrome,.rotateLeft {
+	 -webkit-transform: rotateZ(-45deg);
+	-moz-transform: rotateZ(-45deg);
+	-ms-transform: rotateZ(-45deg);
+	-o-transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg);
+	width: 230px;
+	height: 230px; 
+	display: -webkit-inline-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center; 
+	padding:0;
+    vertical-align: middle;
+	
+}
+::i-block-chrome,.rotateLeft p{
+	  margin:10px 5px;
+	
+}
+.faq-content
+.faq-content1 .front 
+{
+  padding:5%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display:table;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  color: white;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background:url(../images/faq_triangle.png) left top no-repeat rgba(33,33,33,0.8);
+}
+
+::i-block-chrome,.faq-content
+.faq-content1 .front 
+ {
+  padding:20%;
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  display: -webkit-inline-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  color: white;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background:url(../images/faq_triangle.png) left top no-repeat rgba(33,33,33,0.8);
+	
+}
+
+
+
+.faq-content
+.faq-content1 .front
+.front-content {
+  font-size: 1.625em;
+  color: #fff;
+  width: 100%;  
+  text-align:center;
+  vertical-align:middle;
+  line-height:30px;
+  display:table-cell;
+}
+
+::i-block-chrome, .faq-content
+.faq-content1 .front
+.front-content {
+  font-size: 1.625em;
+  color: #fff;
+  width: 100%;  
+  text-align:center;
+  vertical-align:middle;
+  line-height:30px;
+  display: -webkit-inline-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.faq-content
+.faq-content1 .back {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  padding:5%;
+   display:table;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  color: white;
+  background:#d94642;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+::i-block-chrome, .faq-content
+.faq-content1 .back {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  padding:5%;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  color: white;
+  background:#d94642;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+   display: -webkit-inline-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+
+.faq-content
+.faq-content1 .back
+.back-content {
+  
+  font-size: 1.125em; 
+  color: #fff;
+  width: 100%; 
+  text-align:center;
+  vertical-align:middle;
+  line-height:24px;
+  display:table-cell;
+}
+
+::i-block-chrome, .faq-content
+.faq-content1 .back
+.back-content {
+  
+  font-size: 1.125em; 
+  color: #fff;
+  width: 100%; 
+  text-align:center;
+  vertical-align:middle;
+  line-height:24px;
+  display: -webkit-inline-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+
 }
