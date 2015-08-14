@@ -309,8 +309,8 @@ html {
     text-align: center;
 }
 .onepage-pagination li a {
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
     padding: 2px;
     display: block;
 }
@@ -322,8 +322,8 @@ html {
     left: 15px;
 }
 .onepage-pagination li a.active:before {
-    width: 50px;
-    height: 48px;
+    width:35px;
+    height: 35px;
     background: rgb(211, 32, 32);
     left: 0px;
     top: 0px;

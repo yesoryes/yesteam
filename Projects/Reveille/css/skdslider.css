@@ -44,7 +44,7 @@
     margin-right: 4px;
     cursor: pointer;
 }
-.skdslider ul.slide-navs li.current-slide {
+.skdslider ul.slide-navs li.current-slide, .skdslider ul.slide-navs li:hover {
     /*background: url(../src/image/slide-bg-active.png) no-repeat scroll 0 0 transparent;*/
     
     background: #848b93;

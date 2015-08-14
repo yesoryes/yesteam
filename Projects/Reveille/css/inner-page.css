@@ -252,6 +252,9 @@ body {
     text-decoration: none;
     text-align: center;
 }
+.ct li a:hover {
+    color: rgba(211, 32, 32, 1);
+}
 .content {
     width: 100%;
     margin: 10px auto;
@@ -544,9 +547,12 @@ body {
 #last {
     border-right: none;
 }
+.MenuRight1 .row, .MenuRight2 .row, .MenuRight3 .row {
+    margin: 0;
+}
 @media screen and (min-width: 767px) {
     .dropdown:hover .dropdown-menu {
-        display: block;
+        //display: block;
     }
 }
 .multi-column-dropdown li a {

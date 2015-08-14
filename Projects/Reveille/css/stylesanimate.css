@@ -2,9 +2,9 @@
 
 .animateblock {
     opacity: 0;
-    -webkit-transition: all 1s linear;
-    -moz-transition: all 1s linear;
-    transition: all 1s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 .animateblock.animated {
     opacity: 1;
@@ -19,7 +19,7 @@
 }
 .animateblock.right {
     display: block;
-    margin-left: 100%;
+   /* margin-left: 100%;*/
 }
 .animateblock.right.animated {
     margin-left: 70%;
@@ -32,33 +32,65 @@
 .animateblock.top.animated {
     margin-top: 0px;
 }
+.animateblock.btm1 {
+    display: block;
+    width: auto;
+    /*margin-top: 25px;*/
+	transform: scale(0.5,0.5)
+}
+.animateblock.btm1.animated {
+    margin-top: 0;
+	transform: scale(1,1)
+}
 .animateblock.btm {
     display: block;
     width: auto;
-    margin-top: 25px;
+    margin-top: 20px;
+	transform: scale(0.9,0.9)
 }
 .animateblock.btm.animated {
-    margin-top: 0;
+    margin-top: 20px;
+	transform: scale(1,1)
+}
+.animateblock.centerleft1 {
+    display: block;
+    width: auto;
+	transform: scale(0.3,0.3)
+}
+.animateblock.centerleft1.animated {
+    margin-right: 0;
+    margin-left:0;
+	transform: scale(1,1)
 }
 .animateblock.centerleft {
     display: block;
     width: auto;
-    margin-right: -12%;
-    margin-left:12%;
+	transform: scale(0.8,0.8)
 }
 .animateblock.centerleft.animated {
     margin-right: 0;
     margin-left:0;
+	transform: scale(1,1)
 }
 .animateblock.centerright {
     display: block;
     width: auto;
-    margin-left: -12%;
-    margin-right:12%;
+	transform: scale(0.8,0.8)
 }
 .animateblock.centerright.animated {
     margin-left: 0;
      margin-right:0;
+	 transform: scale(1,1)
+}
+.animateblock.centerright1 {
+    display: block;
+    width: auto;
+	transform: scale(0.5,0.5)
+}
+.animateblock.centerright1.animated {
+    margin-left: 0;
+     margin-right:0;
+	 transform: scale(1,1)
 }
 .animateblock.center {
     margin-left: 2%;
@@ -79,36 +111,52 @@
 }
 
 
-/*DropDown*/
-.open > .dropdown-menu {
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);  
-  
+
+
+.sb-icon-search .fa:hover {
+	color: #000;
 }
-.dropdown-menu {
-  -webkit-transform-origin: top;
-  transform-origin: top;
-  -webkit-animation-fill-mode: forwards;  
-  animation-fill-mode: forwards; 
-  -webkit-transform: scale(1, 0);
-  display: block;
-  
-  transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
+
+#TweetBackward {
+	margin: 5px 0 0;
 }
-.dropup .dropdown-menu {
-  -webkit-transform-origin: bottom;
-  transform-origin: bottom;  
+/*Tiles*/
+.Changerow .ChangeColumn.box1 {
+	width: 385px;
+	height: 285px;
+	overflow: hidden;
+	background: #3f91d1;
 }
-.dropup > .dropdown-menu:after {
-  border-bottom: 0;
-  border-top: 6px solid rgba(39, 45, 51, 0.9);
-  top: auto;
-  display: inline-block;
-  bottom: -6px;
-  content: '';
-  position: absolute;
-  left: 50%;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
+.Changerow .ChangeColumn.box2 {
+	width: 390px;
+	height: 285px;
+	overflow: hidden;
+	background: #3f91d1;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.Changerow .ChangeColumn.box3 {
+	background: #3f91d1;
+}
+.Changerow .ChangeColumncollabrate.box4{
+	background: #3f91d1;
+}
+.Changerow .ChangeColumn.box1:hover, .Changerow .ChangeColumn.box2:hover, .Changerow .ChangeColumn.box3:hover, .Changerow .ChangeColumncollabrate.box4:hover {
+	background: #454545
+}
+.no-bg {
+	font-family: 'MyriadProLight';
+    font-size: 50px;
+	line-height: 50px;
+    white-space: nowrap;
+    text-align: left;
+    color: #323232;
+    padding: 17px;
+}
+.img3 {
+	 background-image: url(../images/img3.png); 
+	 background-size: cover;
+	 transition: 0.5s all;
 }

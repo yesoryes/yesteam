@@ -196,13 +196,13 @@
         }
 
         .sb-search-input {
-            position: absolute;
+            position: static;
             top: 0;
             right: 0;
             border: none;
             outline: none;
             background: #fff;
-            width: 100%;
+            width: 0%;
             height: 39.6px;
             margin: 0;
             z-index: 10;
@@ -253,6 +253,10 @@
             outline: none;
             z-index: -1;
         }
+		
+		.last-child {
+			width: 40px;
+		}
 
         .sb-icon-search {
             color: #fff;
@@ -268,6 +272,28 @@
             -webkit-font-smoothing: antialiased;
         }
 
+            .sb-icon-search:before {
+                /*content: "\e000";*/
+            }
+
+        /* Open state */
+        /*.sb-search.sb-search-open,
+        .no-js .sb-search {
+            width: 200px;
+			transition: 0.5s all;
+        }
+*/
+            .sb-search.sb-search-open .sb-icon-search,
+            .no-js .sb-search .sb-icon-search {
+                background: rgb(211, 32, 32) none repeat scroll 0 0;
+                color: #fff;
+                z-index: 11;
+            }
+
+            .sb-search.sb-search-open .sb-search-submit,
+            .no-js .sb-search .sb-search-submit {
+                z-index: 90;
+            }
             .sb-icon-search:before {
                 /*content: "\e000";*/
             }
@@ -325,6 +351,9 @@
             height: 152px;
             background-color: rgba(81, 209, 255, 0.47);
             float: left;
+        }
+		.trendmenu3:hover {
+            background-color: rgba(81, 209, 255, 1);
         }
 
         .trendmenu4 {
@@ -404,6 +433,9 @@
     </style>
 
     <style type="text/css">
+		.last-child {
+			
+		}
         .slider {
             float: right;
             margin-right: 0px !important;
@@ -425,9 +457,9 @@
             float: right;
         }
 
-        .terms {
+        /*.terms {
             padding-bottom: 0px;
-        }
+        }*/
 
         .BottomPage {
             position: relative;
@@ -604,8 +636,8 @@
                                         <li><a href="Consulting.html"><span>Consulting</span></a></li>
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Technology<b class="caret"></b></span></a>
-                                            <ul class="dropdown-menu multi-column columns-2">
-                                                <div class="row MenuRight1">
+                                            <ul class="dropdown-menu MenuRight1 multi-column columns-2">
+                                                <div class="row">
                                                     <div class="col-sm-6">
                                                         <ul class="multi-column-dropdown">
                                                             <li><a href="Application Management.html">Application Management</a>
@@ -640,8 +672,8 @@
 
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Outsourcing<b class="caret"></b></span></a>
-                                            <ul class="dropdown-menu multi-column columns-2">
-                                                <div class="row MenuRight2">
+                                            <ul class="dropdown-menu MenuRight2 multi-column columns-2">
+                                                <div class="row">
                                                     <div class="col-sm-6">
                                                         <ul class="multi-column-dropdown">
                                                             <li><a href="ApplicationOutsourcing.html">Application Outsourcing</a>
@@ -666,8 +698,8 @@
 
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Industries<b class="caret"></b></span></a>
-                                            <ul class="dropdown-menu multi-column columns-2">
-                                                <div class="row MenuRight3">
+                                            <ul class="dropdown-menu MenuRight3 multi-column columns-2">
+                                                <div class="row">
                                                     <div class="col-sm-6" style="margin-top: 10px;">
                                                         <ul class="multi-column-dropdown">
                                                             <li><a href="AeroSpace.html">Aerospace and Defense</a><div class="desc">Aerospace and defense industry is the fastest growing industry. With potential deep cuts in Defense and commercial.</div>
@@ -702,7 +734,7 @@
                                             </ul>
                                         </li>
                                         <li id="last1"><a href="Partners.html"><span>Partners</span></a></li>
-                                        <li>
+                                        <li class="last-child">
                                             <div id="sb-search" class="sb-search">
                                                 <form>
                                                     <input id="search" class="sb-search-input" type="text" name="search" value="" placeholder="Enter your search term...">
@@ -724,11 +756,29 @@
         </div>
         <!--end of back-->
 
-        <script type="text/javascript">
+        <!--<script type="text/javascript">
             $(".sb-icon-search").click(function (e) {
                 $('.sb-search').toggleClass('sb-search-open');
             });
-        </script>
+        </script>-->
+        
+        <script type="text/javascript">
+			$(document).ready(function() {
+		
+				$(".sb-icon-search").click(function () {
+					$('.sb-search').addClass('sb-search-open').css({
+						width: '200px',
+					});
+					$('.sb-search-input').css({
+						width: '100%',
+					});
+					$('.last-child ').animate({
+						width: '200px',
+					});
+				})
+			});
+		</script>
+
 
         <div style="clear: both"></div>
 
@@ -812,9 +862,10 @@
 
 
                             <div class="trendmenu5 animateblock btm" style="font-family: myriad-pro,myriad-pro-n4,myriad-pro,Myriad Pro,Arial,Helvetica,sans-serif; font-size: 20px;">
-                                <div style="width: 100%; float: left; text-align: center; color: #fff; margin-top: 10px">
+                                <div style="width: 100%; float: left; text-align: center; color: #fff; margin-top: 20px">
                                     <a href="https://www.servicenow.com/" target="_blank">
                                         <img src="images/ServiceNow.png" width="100%" />
+                                     </a>
                                 </div>
 
                             </div>
@@ -859,7 +910,7 @@
                                 <td style="padding-left: 5px;">
 
                                     <div id="TweetForward" style="vertical-align: top; margin-top: 10px;"><a class="MoveButton" href="#"><i class="fa fa-chevron-up" style="font-size: 18px"></i></a></div>
-                                    <div id="TweetBackward" style="vertical-align: bottom; margin-top: 25px;"><a class="MoveButton" href="#"><i class="fa fa-chevron-down" style="font-size: 18px"></i></a></div>
+                                    <div id="TweetBackward" style="vertical-align: bottom; margin-top: 5px;"><a class="MoveButton" href="#"><i class="fa fa-chevron-down" style="font-size: 18px"></i></a></div>
 
                                 </td>
                             </tr>

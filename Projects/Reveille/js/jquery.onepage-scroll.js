@@ -306,15 +306,15 @@
 
       if(settings.pagination == true) {
 		  if(i==0){
-			   paginationList += "<li><a data-index='"+(i+1)+"' href='#" + (i+1) + "' style='position:relative;z-index:999;color:#fff;font-size:30px;font-family: cursive;'><i class='fa fa-home'></i></a></li>"
+			   paginationList += "<li><a data-index='"+(i+1)+"' href='#" + (i+1) + "' style='position:relative;z-index:999;color:#fff;font-size:20px;font-family: cursive;'><i class='fa fa-home'></i></a></li>"
 			  }
 			  
 			    if(i==1){
-			   paginationList += "<li><a data-index='"+(i+1)+"' href='#" + (i+1) + "' style='position:relative;z-index:999;color:#fff;font-size:30px;font-family: cursive;'><i class='fa fa-cloud'></i></a></li>"
+			   paginationList += "<li><a data-index='"+(i+1)+"' href='#" + (i+1) + "' style='position:relative;z-index:999;color:#fff;font-size:20px;font-family: cursive;'><i class='fa fa-cloud'></i></a></li>"
 			  }
 			  
 			    if(i==2){
-			   paginationList += "<li><a data-index='"+(i+1)+"' href='#" + (i+1) + "' style='position:relative;z-index:999;color:#fff;font-size:30px;font-family: cursive;'><i class='fa fa-info-circle'></i></i></a></li>"
+			   paginationList += "<li><a data-index='"+(i+1)+"' href='#" + (i+1) + "' style='position:relative;z-index:999;color:#fff;font-size:20px;font-family: cursive;'><i class='fa fa-info-circle'></i></i></a></li>"
 			  }
        
       }

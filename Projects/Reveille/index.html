@@ -46,7 +46,7 @@
         $(document).ready(function () {
             $(".main").onepage_scroll({
                 sectionContainer: "section",
-                responsiveFallback: 768,
+                responsiveFallback: 1170,
                 loop: false,
                 beforeMove: function (index) {
                     if (index == 1) {
@@ -54,7 +54,7 @@
                         $('#imglogo').removeClass('logoimage');
                         $('#imglogo').height("auto");
                         $('.logo').css("margin-top", "-26px");
-
+						animate_elems()
                     }
                     else {
                         $('#pageTop').addClass('hidetop');
@@ -62,8 +62,20 @@
                         $('.logo').css("height", "auto");
                         $('.logo').css("margin-top", "10px");
                         animate_elems();
+						
                     }
-                }
+					
+                },
+				afterMove: function(index) {
+					if (index == 1) {
+                        
+						animate_elems();
+
+                    }
+                    else {
+                       animate_elems()
+                    }
+				}
             });
         });
 
@@ -76,16 +88,26 @@
                 $elm = $(this);
 
                 if ($elm.hasClass('animated')) { return true; } // if already animated skip to the next item
-
+					
                 topcoords = $elm.offset().top; // element's distance from top of page in pixels
                 $elm.addClass('animated');
 
             });
-        } // 
+			 
+        }animate_elems();// 
 
     </script>
 
     <style type="text/css">
+	.navbar-default {
+		width: 99%;
+	}
+		.animateblock {
+			opacity: 0;
+			-webkit-transition: all 1s linear;
+			-moz-transition: all 1s linear;
+			transition: all 1s linear;
+		}
         @-ms-viewport {
             width: device-width;
         }
@@ -135,7 +157,10 @@
                     width: auto;
                 }
 
-        @media (max-width: 767px) {
+        @media (max-width: 1169px) {
+			.navbar-nav>li {
+				transition: 0.5s all;
+			}
             .dropdown-menu.multi-column {
                 min-width: 240px !important;
                 overflow-x: hidden;
@@ -144,9 +169,7 @@
             .logo {
                 margin-top: -4px;
             }
-        }
-
-        @media (max-width: 480px) {
+        
             .content {
                 width: 100%;
                 margin: 50px auto;
@@ -156,6 +179,21 @@
             .logo {
                 margin-top: -4px;
             }
+			.skdslider ul.slide-navs {
+				bottom: 20px;
+			}
+			.animateblock.animated, .animateblock {
+				opacity: 1;
+			}
+			.animateblock.btm1.animated {
+				
+			}
+			.animateblock.top {
+				margin: 0;
+			}
+			.animateblock.centerright1, .animateblock.centerleft1, .animateblock.btm1, .animateblock.centerleft {
+				transform: scale(1,1);
+			}
         }
 
         .desc {
@@ -172,9 +210,9 @@
     </style>
 
     <style type="text/css">
-        @media screen and (min-width:767px) {
+        @media screen and (min-width:1169px) {
             .dropdown:hover .dropdown-menu {
-                display: block;
+               // display: block;
             }
         }
 
@@ -191,7 +229,7 @@
             -webkit-backface-visibility: hidden;
         }
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:1169px) {
             .sb-search {
                 float: left;
                 margin-left: 12px;
@@ -252,7 +290,9 @@
             }
         }
 
-        @media screen and (max-width:910px) {
+		
+
+        @media screen and (max-width:1169px) {
 
             .container-fluid {
                 padding-left: 10px;
@@ -261,18 +301,17 @@
         }
 
         .sb-search-input {
-            position: absolute;
+            position: static;
             top: 0;
             right: 0;
             border: none;
             outline: none;
             background: #fff;
-            width: 100%;
+            width: 0%;
             height: 39.6px;
             margin: 0;
             z-index: 10;
             padding: 10px 47px 10px 10px;
-            font-family: inherit;
             font-size: 16px;
             color: #2c3e50;
         }
@@ -318,6 +357,10 @@
             outline: none;
             z-index: -1;
         }
+		
+		.last-child {
+			width: 40px;
+		}
 
         .sb-icon-search {
             color: #fff;
@@ -338,11 +381,12 @@
             }
 
         /* Open state */
-        .sb-search.sb-search-open,
+        /*.sb-search.sb-search-open,
         .no-js .sb-search {
             width: 200px;
+			transition: 0.5s all;
         }
-
+*/
             .sb-search.sb-search-open .sb-icon-search,
             .no-js .sb-search .sb-icon-search {
                 background: rgb(211, 32, 32) none repeat scroll 0 0;
@@ -357,7 +401,9 @@
 
 
         .hidetop {
-            display: none;
+            /*display: none;*/
+			margin-top: -30px;
+			transition: 0.5s all;
         }
 
         .a {
@@ -429,7 +475,7 @@
             border: 1px solid #848B93;
         }
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:1169px) {
             .slider {
                 float: left;
                 margin-right: 0px !important;
@@ -474,6 +520,9 @@
                 display: block;
                 line-height: 59px;
             }
+			.page2 section {
+				max-height: 100%;
+			}
         }
 
         @media screen and (max-width:400px) {
@@ -531,8 +580,13 @@
         }
 
         #imagepower {
-            background: rgba(0, 0, 0, 0) url("images/blue2_09.jpg") repeat-x scroll 0 0;
+            background: #368acd;
+			transition: 0.5s all;
         }
+		#imagepower:hover {
+            background: #454545;
+        }
+		
 
         .imgCollabarate {
             float: right;
@@ -544,8 +598,11 @@
 
 
 
-        @media screen and (max-width:767px) {
-
+        @media screen and (max-width:1169px) {
+			.w-content {
+				font-size: 50px;
+				line-height: 47px;
+			}
             .ChangeColumn {
                 opacity: 1;
                 width: 100% !Important;
@@ -574,8 +631,11 @@
                 margin-top: 5px;
             }
 
-            body.disabled-onepage-scroll .onepage-wrapper section {
+            body.disabled-onepage-scroll .onepage-wrapper  section {
                 min-height: 0px;
+            }
+			body.disabled-onepage-scroll .onepage-wrapper page2 section {
+                max-height: 100%;
             }
 
             .f-box {
@@ -595,7 +655,7 @@
             }
         }
 
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:1169px) {
             .outer {
                 display: table;
                 position: absolute;
@@ -613,6 +673,7 @@
                 margin-right: auto;
             }
         }
+		
     </style>
 
 </head>
@@ -656,15 +717,20 @@
                     <table style="float: right">
                         <tr>
                             <td>
-
+                            	<style>
+                                	.MenuRight1 .row, .MenuRight2 .row, .MenuRight3 .row{
+										margin: 0;
+									}
+                                </style>
+				
 
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-top: 12px;">
                                     <ul class="nav navbar-nav">
                                         <li><a href="Consulting.html"><span>Consulting</span></a></li>
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Technology<b class="caret"></b></span></a>
-                                            <ul class="dropdown-menu multi-column columns-2">
-                                                <div class="row MenuRight1">
+                                            <ul class="dropdown-menu MenuRight1 multi-column columns-2">
+                                                <div class="row">
                                                     <div class="col-sm-6">
                                                         <ul class="multi-column-dropdown">
                                                             <li><a href="Application Management.html">Application Management</a>
@@ -701,8 +767,8 @@
 
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Outsourcing<b class="caret"></b></span></a>
-                                            <ul class="dropdown-menu multi-column columns-2">
-                                                <div class="row MenuRight2">
+                                            <ul class="dropdown-menu MenuRight2 multi-column columns-2">
+                                                <div class="row">
                                                     <div class="col-sm-6">
                                                         <ul class="multi-column-dropdown">
                                                             <li><a href="ApplicationOutsourcing.html">Application Outsourcing</a>
@@ -728,8 +794,8 @@
 
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Industries<b class="caret"></b></span></a>
-                                            <ul class="dropdown-menu multi-column columns-2">
-                                                <div class="row MenuRight3">
+                                            <ul class="dropdown-menu MenuRight3 multi-column columns-2">
+                                                <div class="row">
                                                     <div class="col-sm-6" style="margin-top: 10px;">
                                                         <ul class="multi-column-dropdown">
                                                             <li><a href="AeroSpace.html">Aerospace and Defense</a>
@@ -771,7 +837,7 @@
                                             </ul>
                                         </li>
                                         <li id="last1"><a href="Partners.html"><span>Partners</span></a></li>
-                                        <li>
+                                        <li class="last-child">
                                             <div id="sb-search" class="sb-search">
                                                 <form>
                                                     <input id="search" class="sb-search-input" type="text" name="search" value="" placeholder="Enter your search term...">
@@ -829,8 +895,8 @@
                             <div class="change2npage" style="margin-left: auto; margin-right: auto; max-width: 1170px;">
                                 <div class="Changerow">
 
-                                    <div class="ChangeColumn   animateblock centerright" >
-                                        <div style="background-image: linear-gradient(to bottom, #23abd5, #0a82c5);" class="ChangeColumn">
+                                    <div class="ChangeColumn box1 animateblock centerright1" style="position:relative" >
+                                        <div style="" class="ChangeColumn ">
                                             <div class="w-content">
                                                 Challenges of<br />
                                                 Big Data
@@ -839,12 +905,12 @@
                                                 Morbi suscipit interdum moestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus.
                                 et netus et  alesuada fames ac turpis egestas. Vivamus ut molestie nulla.
                                             </div>
-                                        </div>
+                                        </div>                                                                              
                                     </div>
-
-                                    <div style="background: #fff;" class="ChangeColumn">
+ 
+                                     <div style="background: #fff;" class="ChangeColumn">
                                         <div class="animateblock top">
-                                        <div class="b1-title" style="text-align: center;">
+                                        <div class="b1-title w-content no-bg">
                                             Digitalize your<br />
                                             Strategy
                                         </div>
@@ -852,8 +918,8 @@
                                             </div>
                                     </div>
 
-                                    <div class="ChangeColumn" style="background-image: linear-gradient(to bottom, #23abd5, #0a82c5);">
-                                        <div class="ChangeColumn animateblock centerleft" >
+                                    <div class="ChangeColumn ">
+                                        <div class="ChangeColumn box2 animateblock centerleft1" >
                                             <table style="width: 100%">
                                                 <tr>
                                                     <td>
@@ -878,14 +944,14 @@
                                 <div class="Changerow">
 
 
-                                    <div id="kickstartCell" class="ChangeColumn" style="padding: initial; height: 100%; overflow: hidden; background-image: linear-gradient(to bottom, #23abd5, #0a82c5);">
+                                    <div id="kickstartCell" class="ChangeColumn" style="padding: initial; height: 100%; overflow: hidden;">
 
-                                        <div class="ChangeColumn  animateblock centerright" style="padding: initial; height: 100%; overflow: hidden; background-image: linear-gradient(to bottom, #23abd5, #0a82c5);">
+                                        <div class="ChangeColumn box3 animateblock centerright1" style="padding: initial; height: 100%; overflow: hidden; ">
 
                                             <table id="kickstartData" style="width: 100%; height: 100%">
                                                 <tr>
                                                     <td style="width: 60%">
-                                                        <div class="pattern" style="padding: 25px; padding-top: 5px; padding-bottom: 5px;">
+                                                        <div class="w-content" style="padding: 25px; padding-top: 5px; padding-bottom: 5px;">
                                                             Kickstart<br />
                                                             Enterprise<br />
                                                             Mobility
@@ -894,7 +960,7 @@
                                                             <img src="images/images/arrow.png" />
                                                         </div>
                                                     </td>
-                                                    <td style="width: 40%; vertical-align: top; background-image: url(images/img3.jpg); background-size: cover">
+                                                    <td class="img3" style="width: 40%; vertical-align: top;">
 
                                                         <!--<img src="images/img3.jpg" style="height:auto;width:100%" />-->
 
@@ -907,7 +973,7 @@
                                     </div>
 
                                     <div class="ChangeColumnPower" id="imagepower">
-                                        <div class="animateblock btm">
+                                        <div class="animateblock  btm1">
                                         <div class="ti-img">
                                         </div>
                                         <div class="patterns">
@@ -917,7 +983,7 @@
                                             </div>
                                     </div>
 
-                                    <div id="CollabrateCell" class="ChangeColumncollabrate animateblock centerleft" style="height: 100%; overflow: hidden; background-image: linear-gradient(to bottom, #23abd5, #0a82c5);">
+                                    <div id="CollabrateCell" class="ChangeColumncollabrate box4 animateblock centerleft" style="height: 100%; overflow: hidden;">
 
 
 
@@ -925,9 +991,8 @@
 
                                             <tr>
                                                 <td style="width: 70%">
-                                                    <div class="pattern" style="padding: 25px; padding-top: 5px; padding-bottom: 5px;">
-                                                        Collaborating in<br />
-                                                        the Cloud
+                                                    <div class="w-content" style="padding: 25px; padding-top: 5px; padding-bottom: 5px;">
+                                                        Collaborating<br /> in the Cloud
                                                     </div>
                                                     <p class="wr-text" style="margin-right: 10px;">Morbi suscipit interdum moestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus et netus et  alesuadas. </p>
                                                 </td>
@@ -965,6 +1030,8 @@
                 </script>
 
             </section>
+            
+            
 
             <section class="page3" style="background: #2a3440 none repeat scroll 0 0;">
 
@@ -1123,7 +1190,7 @@
                                         <td style="padding-left: 5px;">
 
                                             <div id="TweetForward" style="vertical-align: top; margin-top: 10px;"><a class="MoveButton" href="#"><i class="fa fa-chevron-up" style="font-size: 18px"></i></a></div>
-                                            <div id="TweetBackward" style="vertical-align: bottom; margin-top: 25px;"><a class="MoveButton" href="#"><i class="fa fa-chevron-down" style="font-size: 18px"></i></a></div>
+                                            <div id="TweetBackward" style="vertical-align: bottom;"><a class="MoveButton" href="#"><i class="fa fa-chevron-down" style="font-size: 18px"></i></a></div>
 
                                         </td>
                                     </tr>
@@ -1203,9 +1270,20 @@
     </script>
 
     <script type="text/javascript">
-        $(".sb-icon-search").click(function (e) {
-            $('.sb-search').toggleClass('sb-search-open');
+	$(document).ready(function() {
+    
+        $(".sb-icon-search").click(function () {
+            $('.sb-search').addClass('sb-search-open').css({
+				width: '200px',
+			});
+			$('.sb-search-input').css({
+				width: '100%',
+			});
+			$('.last-child ').animate({
+				width: '200px',
+			});
         });
+	});
     </script>
 
     <script type="text/javascript">

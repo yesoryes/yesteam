@@ -188,14 +188,14 @@ html[xmlns] .flexslider .slides {
     text-align: center;
 }
 .flex-control-nav li {
-    margin: 0 6px;
+    margin: 0 3px;
     display: inline-block;
     zoom: 1;
     *display: inline;
 }
 .flex-control-paging li a {
-    width: 11px;
-    height: 11px;
+    width: 9px;
+    height: 9px;
     display: block;
     background: #666;
     background: rgba(0, 0, 0, 0.5);

@@ -8,6 +8,54 @@
     src: url('../fonts/myriadpro-cond.eot');
     src: url('../fonts/myriadpro-cond.eot'), url('../fonts/MyriadPro-Cond.otf') format('opentype'), url('../fonts/myriadpro-cond.ttf') format('truetype'), url('../fonts/myriadpro-cond.woff');
 }
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url("../fonts/myriadpro-bold.eot");
+  src: url("../fonts/myriadpro-regular.eot") format("embedded-opentype"), url("../fonts/myriadpro-regular.woff2") format("woff2"), url("../fonts/myriadpro-regular.woff") format("woff"), url("../fonts/myriadpro-regular.ttf") format("truetype"), url("../fonts/myriadpro-regular.svg#MyriadProRegular") format("svg"); }
+@font-face {
+  font-family: 'MyriadProBold';
+  src: url("../fonts/myriadpro-bold.eot");
+  src: url("../fonts/myriadpro-bold.eot") format("embedded-opentype"), url("../fonts/myriadpro-bold.woff2") format("woff2"), url("../fonts/myriadpro-bold.woff") format("woff"), url("../fonts/myriadpro-bold.ttf") format("truetype"), url("../fonts/myriadpro-bold.svg#MyriadProBold") format("svg"); }
+@font-face {
+  font-family: 'MyriadProLight';
+  src: url("../fonts/myriadpro-light.eot");
+  src: url("../fonts/myriadpro-light.eot") format("embedded-opentype"), url("../fonts/myriadpro-light.woff2") format("woff2"), url("../fonts/myriadpro-light.woff") format("woff"), url("../fonts/myriadpro-light.ttf") format("truetype"), url("../fonts/myriadpro-light.svg#MyriadProLight") format("svg"); }
+@font-face {
+  font-family: 'MyriadPro-SemiboldCond';
+  src: url("../fonts/myriadpro-SemiboldCond.eot");
+  src: url("../fonts/myriadpro-SemiboldCond.eot") format("embedded-opentype"), url("../fonts/myriadpro-SemiboldCond.woff") format("woff"), url("../fonts/myriadpro-SemiboldCond.ttf") format("truetype"), url("../fonts/myriadpro-SemiboldCond.svg#MyriadPro-SemiboldCond") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'TrebuchetMS';
+  src: url("../fonts/TrebuchetMS.eot");
+  src: url("../fonts/TrebuchetMS.eot") format("embedded-opentype"), url("../fonts/TrebuchetMS.woff") format("woff"), url("../fonts/TrebuchetMS.ttf") format("truetype"), url("../fonts/TrebuchetMS.svg#TrebuchetMS") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadProLightCondensed';
+  src: url("../fonts/myriadpro-lightcond.eot");
+  src: url("../fonts/myriadpro-lightcond.eot") format("embedded-opentype"), url("../fonts/myriadpro-lightcond.woff2") format("woff2"), url("../fonts/myriadpro-lightcond.woff") format("woff"), url("../fonts/myriadpro-lightcond.ttf") format("truetype"), url("../fonts/myriadpro-lightcond.svg#MyriadProLightCondensed") format("svg"); }
+@font-face {
+  font-family: 'MyriadProCondensed';
+  src: url("../fonts/myriadpro-cond.eot");
+  src: url("../fonts/myriadpro-cond.eot") format("embedded-opentype"), url("../fonts/myriadpro-cond.woff2") format("woff2"), url("../fonts/myriadpro-cond.woff") format("woff"), url("../fonts/myriadpro-cond.ttf") format("truetype"), url("../fonts/myriadpro-cond.svg#MyriadProCondensed") format("svg"); }
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Roman';
+  src: url("../fonts/HelveticaNeueLTStd-Roman.eot");
+  src: url("../fonts/HelveticaNeueLTStd-Roman.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueLTStd-Roman.woff") format("woff"), url("../fonts/HelveticaNeueLTStd-Roman.ttf") format("truetype"), url("../fonts/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Calibri-Regular';
+  src: url("../fonts/Calibri_gdi.eot");
+  src: url("../fonts/Calibri_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Calibri_gdi.woff") format("woff"), url("../fonts/Calibri_gdi.ttf") format("truetype"), url("../fonts/Calibri_gdi.otf") format("opentype"), url("../fonts/Calibri_gdi.svg#Calibri-Regular") format("svg"); }
+
+
+.sb-search-input {
+	font-family: 'MyriadProRegular';
+}
+
 a {
     text-decoration: none;
     outline: none !important;
@@ -27,21 +75,22 @@ body {
     margin-top: -26px;
 }
 .w-content {
-    font-family: myriad-pro, myriad-pro-n4, myriad-pro, Myriad Pro, Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-family: 'MyriadProLight';
+    font-size: 55px;
+	line-height: 51px;
     color: #fff;
     padding: 25px;
-    text-align: center;
+    text-align: left;
 }
 .wr-text {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'MyriadProRegular';
     font-size: 15px;
     color: #fff;
     padding: 0px 25px 25px;
     text-align: justify;
 }
 .b1-title {
-    font-family: myriad-pro, myriad-pro-n4, myriad-pro, Myriad Pro, Arial, Helvetica, sans-serif;
+    font-family: 'MyriadProLight';
     font-size: 40px;
     white-space: nowrap;
     text-align: center;
@@ -49,7 +98,7 @@ body {
     padding: 17px;
 }
 .b1-text {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'MyriadProRegular';
     font-size: 15px;
     color: #323232;
     padding: 0px 25px;
@@ -69,15 +118,17 @@ body {
     height: 131px;
 }
 .pattern {
-    font-family: myriad-pro, myriad-pro-n4, myriad-pro, Myriad Pro, Arial, Helvetica, sans-serif;
-    font-size: 38px;
+    font-family: 'MyriadProLight';
+    font-size: 44px;
+	line-height: 44px;
     color: #fff;
     text-align: center;
     padding-bottom: 25px;
 }
 .patterns {
-    font-family: myriad-pro, myriad-pro-n4, myriad-pro, Myriad Pro, Arial, Helvetica, sans-serif;
+    font-family: 'MyriadProLight';
     font-size: 32px;
+	line-height: 30px;
     color: #fff;
     padding-top: 5px;
     margin-bottom: 24px;
@@ -90,7 +141,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 9px;
-    margin-top: 80px;
+   /* margin-top: 80px;*/
+	margin-top: 13%;
 }
 .check {
     font-size: 14px;
@@ -307,7 +359,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding-bottom: 50px;
-    padding-top: 10px;
+    padding: 10px 0 30px;
     position: relative;
 }
 <!--top menu--> .menu1 {
@@ -345,10 +397,10 @@ body {
     color: #fff;
 }
 .menu1 ul li:hover a span {
-    border-bottom: 3px solid #D32020;
+    border-bottom: 1px solid #D32020;
 }
 #active1 {
-    border-bottom: 3px solid #D32020;
+    border-bottom: 1px solid #D32020;
 }
 #last {
     border-right: none;
