@@ -24,7 +24,7 @@
 	transition: 0.5s;
 }
 .shrink {
-	height:60px;
+	height:60px; 
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
 	-ms-transition:all 0.5s;
@@ -36,7 +36,8 @@
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
 	transition: 0.5s; 
-	overflow:hidden;
+	overflow:hidden; 
+	 
 }
 .shrink .navbar-brand img {
 	max-height: 50px;
@@ -45,6 +46,7 @@
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
 	transition: 0.5s;
+	 
 } 
 .shrink .logo
 {

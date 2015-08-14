@@ -5,23 +5,14 @@
 <title>BarterHub</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="D9QPnBdBs5OuI0V5KAFFkM3sCoe7Nujnd6EnGTHO5xc" />
 <link rel="icon" type="image/png" href="images/faviBarterHub.png" sizes="16x13">
-<link href="css/reset.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="css/bootstrap.css">
+<link href="css/reset.css" type="text/css" rel="stylesheet"> 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css" />
-<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="css/bootstrap-theme.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">  
 <link href="css/desktop.css" type="text/css" rel="stylesheet">
-<link href="css/media.css" type="text/css" rel="stylesheet">
-<script src="js/jquery-1.11.2.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/npm.js"></script>
-<script src="js/banheight.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/validation.js"></script>
-<meta name="google-site-verification" content="D9QPnBdBs5OuI0V5KAFFkM3sCoe7Nujnd6EnGTHO5xc" />
+<link href="css/media.css" type="text/css" rel="stylesheet"> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -32,6 +23,7 @@
   ga('send', 'pageview');
 
 </script>
+
 
 </head>
 <!--<body>-->
@@ -99,9 +91,9 @@ error_reporting(0);
 
 
 <!--MENU SECTION START-->
-<nav class="navbar navbar-inverse navbar-fixed-top normal scroll-me" id="menu-section" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top normal scroll-me navbar-default" id="menu-section" role="navigation">
    <div class="container">
-    <div class="social_sites">
+    <div class="social_sites display-none">
       <ul>
         <li><a href="https://www.facebook.com/barterhubindia" target=_blank class="fb"></a></li>
         <li><a href="https://twitter.com/barterhub_india" target=_blank class="twitter"></a></li>
@@ -109,14 +101,25 @@ error_reporting(0);
       </ul>
     </div>
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-      	<img src="images/mob-menu-span.png" alt="">
-      </button>
+      
       <div class="logo"> <a class="navbar-brand" href="#"><img src="images/barter_logo.jpg" alt="Barter Hub" /></a> </div>
     </div>
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right nav_menu nav_bar_menu">
-        <li><a class="page-scroll" href="#home"><strong>Home Page</strong></a></li>
+      <ul class="nav navbar-nav navbar-right nav_menu nav_bar_menu display-none">
+        <li><a class="page-scroll" href="#home"><strong>Home</strong></a></li>
+        <li><a class="page-scroll" href="#about"><strong>About</strong></a></li>
+        <li><a class="page-scroll" href="#appfeature"><strong>App Features</strong></a></li>
+        <li><a class="page-scroll" href="#whybarter"><strong>Why Barter</strong></a></li>
+        <li><a class="page-scroll" href="#charity"><strong>Barter for Charity</strong></a></li>
+        <li><a class="page-scroll" href="#faq"><strong>Faq's</strong></a></li>
+        <li><a class="page-scroll" href="#contact"><strong>Contact us</strong></a></li>
+      </ul>
+    </div>
+    
+    <button type="button" class="mobile-menu-click" ><img src="images/mob-menu-span.png" alt=""></button>
+    <div class="mob-menu-cont hidden-lg hidden-md">
+      <ul class="mob-menu">
+        <li><a class="page-scroll" href="#home"><strong>Home</strong></a></li>
         <li><a class="page-scroll" href="#about"><strong>About</strong></a></li>
         <li><a class="page-scroll" href="#appfeature"><strong>App Features</strong></a></li>
         <li><a class="page-scroll" href="#whybarter"><strong>Why Barter</strong></a></li>
@@ -126,18 +129,17 @@ error_reporting(0);
       </ul>
     </div>
   </div>
-</nav>
+</nav> 
+
 <!--MENU SECTION END-->
 <div id="home" class="row center banner-home" style="overflow:hidden">
   <ul class="banner_images">
-    <li class="item active">
-      <div class="container_banner_text">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+    <li class="item active">  
+        <div class="banner-content text-center center">
           <div class="google_play"><a href="#"></a></div>
           <h1>If I had my life to live over again, I would elect to be a trader of goods rather than a student of science. I think barter is a noble thing.</h1>
           <p class="byline">-Albert Einstein</p> 
-        </div>
-      </div>
+        </div> 
     </li>
   </ul>
 </div>
@@ -156,88 +158,138 @@ error_reporting(0);
     <div class="container">
       <div class="col-lg-12 col-md-12 col-sm-12">
         <h1>App <span>Features</span></h1>
-        <ul class="diamond-grid">
-          <li>
-            <div class="flip">
-              <div class="card">
-                <div class="face front rotateRight">
-                  <div class="rotateLeft"> <img src="images/app_ui.png" width="63" height="88"  alt=""/>
-                    <p>Easy to Use UI</p>
-                  </div>
-                </div>
-                <div class="face back rotateRight">
-                  <div class="rotateLeft">
-                    <p>A simple user interface enables you to list and exchange products easily.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="flip">
-              <div class="card">
-                <div class="face front rotateRight">
-                  <div class="rotateLeft"> <img src="images/app2.png" width="82" height="72"  alt=""/>
-                    <p>Product Listing</p>
-                  </div>
-                </div>
-                <div class="face back rotateRight">
-                  <div class="rotateLeft">
-                    <p>A wide range of products listed by other users and dealers for you to choose from.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="flip">
-              <div class="card">
-                <div class="face front rotateRight">
-                  <div class="rotateLeft"> <img src="images/app3.png" width="82" height="94"  alt=""/>
-                    <p>Profile</p>
-                  </div>
-                </div>
-                <div class="face back rotateRight">
-                  <div class="rotateLeft">
-                    <p>Edit and update your profile. View and manage your listing . </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>          
-          <li>
-            <div class="flip">
-              <div class="card">
-                <div class="face front rotateRight">
-                  <div class="rotateLeft"> <img src="images/app_charity.png" width="63" height="88"  alt=""/>
-                    <p>Barter for Charity</p>
-                  </div>
-                </div>
-                <div class="face back rotateRight">
-                  <div class="rotateLeft">
-                    <p>Exchange your used items with happiness by donating them at the closest Non - profit house.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="flip">
-              <div class="card">
-                <div class="face front rotateRight">
-                  <div class="rotateLeft"> <img src="images/app_ui.png" width="63" height="88"  alt=""/>
-                    <p>Customer Service</p>
-                  </div>
-                </div>
-                <div class="face back rotateRight">
-                  <div class="rotateLeft">
-                    <p>Available 24*7 for all your queries via email &amp; twitter.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <div class="diamond-grid-mobile hidden-lg hidden-md visible-xs visible-sm">
+                    <div class="diamond-flip">
+                        <div class="flip-card">
+                            <div class="front">
+                                <img src="images/app_ui.png"  alt=""/>
+                                <p>Easy to Use UI</p>
+                            </div>
+                            <div class="back"><p>A simple user interface enables you to list and exchange products easily.</p></div>
+                        </div>
+                    </div>
+                    <div class="diamond-flip hidden-lg hidden-md visible-xs visible-sm">
+                        <div class="flip-card">
+                            <div class="front">
+                            	<img src="images/app2.png" alt=""/>
+                                <p>Product Listing</p>
+                            </div>
+                            <div class="back"><p>A wide range of products listed by other users and dealers for you to choose from.</p></div>
+                        </div>
+                    </div>
+                    <div class="diamond-flip hidden-lg hidden-md visible-xs visible-sm">
+                        <div class="flip-card">
+                            <div class="front">
+                            	<img src="images/app3.png" alt=""/>
+                            	<p>Profile</p>
+                            </div>
+                            <div class="back"><p>Edit and update your profile. View and manage your listing.</p></div>
+                        </div>
+                    </div>
+                    <div class="diamond-flip hidden-lg hidden-md visible-xs visible-sm">
+                        <div class="flip-card">
+                            <div class="front">
+                            	<img src="images/app_charity.png" alt=""/>
+                            	<p>Barter for Charity</p>
+                            </div>
+                            <div class="back"><p>Exchange your used items with happiness by donating them at the closest Non - profit house.</p></div>
+                        </div>
+                    </div>
+                    <div class="diamond-flip hidden-lg hidden-md visible-xs visible-sm">
+                        <div class="flip-card">
+                            <div class="front">
+                            	<img src="images/app_ui.png" alt=""/>
+                            	<p>Customer Service</p>
+                            </div>
+                            <div class="back">
+                            	<p>Available 24*7 for all your queries via email &amp; twitter.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+			    </div> 
+                <ul class="diamond-grid visible-lg visible-md hidden-xs hidden-sm">
+                  <li>
+                    <div class="flip">
+                      <div class="card">
+                        <div class="face front rotateRight">
+                          <div class="rotateLeft"> <img src="images/app_ui.png"  alt=""/>
+                            <p>Easy to Use UI</p>
+                          </div>
+                        </div>
+                        <div class="face back rotateRight">
+                          <div class="rotateLeft">
+                            <p>A simple user interface enables you to list and exchange products easily.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flip">
+                      <div class="card">
+                        <div class="face front rotateRight">
+                          <div class="rotateLeft"> <img src="images/app2.png" alt=""/>
+                            <p>Product Listing</p>
+                          </div>
+                        </div>
+                        <div class="face back rotateRight">
+                          <div class="rotateLeft">
+                            <p>A wide range of products listed by other users and dealers for you to choose from.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flip">
+                      <div class="card">
+                        <div class="face front rotateRight">
+                          <div class="rotateLeft"> <img src="images/app3.png" alt=""/>
+                            <p>Profile</p>
+                          </div>
+                        </div>
+                        <div class="face back rotateRight">
+                          <div class="rotateLeft">
+                            <p>Edit and update your profile. View and manage your listing. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>          
+                  <li>
+                    <div class="flip">
+                      <div class="card">
+                        <div class="face front rotateRight">
+                          <div class="rotateLeft"> <img src="images/app_charity.png" alt=""/>
+                            <p>Barter for Charity</p>
+                          </div>
+                        </div>
+                        <div class="face back rotateRight">
+                          <div class="rotateLeft">
+                            <p>Exchange your used items with happiness by donating them at the closest Non - profit house.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flip">
+                      <div class="card">
+                        <div class="face front rotateRight">
+                          <div class="rotateLeft"> <img src="images/app_ui.png"   alt=""/>
+                            <p>Customer Service</p>
+                          </div>
+                        </div>
+                        <div class="face back rotateRight">
+                          <div class="rotateLeft">
+                            <p>Available 24*7 for all your queries via email &amp; twitter.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
       </div>
     </div>
   </div>
@@ -299,11 +351,12 @@ error_reporting(0);
   <div class="row center">
     <div class="container">
       <div class="col-lg-12 col-md-12 col-sm-12">
-        <h1>Barter <span>for Charity</span></h1>
-        <blockquote>&quot;Buy laughter with tears and you'll be rich forever.&quot;</blockquote>
-        <p class="byline2">&ndash; Michael Bassey Johnson
-          </h3>
-        <p>Want to exchange your used clothes, furniture or any other product with smiles and blessings, this is the place. It allows you to donate your items to the closest NGO, orphan house, old age home or other non-profit organizations. Items needed by these organizations are also listed in some cases, you can donate or sponsor accordingly. Barter Hub neither charges you nor the organizations of using its platform.</p>
+      	<div class="charity-content">
+            <h1>Barter <span>for Charity</span></h1>
+            <blockquote>&quot;Buy laughter with tears and you'll be rich forever.&quot;</blockquote>
+            <p class="byline2">&ndash; Michael Bassey Johnson</p>
+            <p>Want to exchange your used clothes, furniture or any other product with smiles and blessings, this is the place. It allows you to donate your items to the closest NGO, orphan house, old age home or other non-profit organizations. Items needed by these organizations are also listed in some cases, you can donate or sponsor accordingly. Barter Hub neither charges you nor the organizations of using its platform.</p>
+         </div>
       </div>
     </div>
   </div>
@@ -315,99 +368,75 @@ error_reporting(0);
         <h1>Frequently <span>Ask Questions</span></h1>
         <ul>
           <li>
-            <div id="f1_container">
-              <div id="f1_card" class="shadow">
-                <div class="front face">
-                  <div class="text_mid">
-                    <p>Why Barter?</p>
-                  </div>
+            <div class="faq-content">
+              <div class="faq-content1 h">
+                <div class="front">
+                  <p class="front-content">Why Barter?</p>
                 </div>
-                <div class="back face">
-                  <div class="text_mid">
-                    <p>Bartering is the oldest and the noblest method of trading. It appreciates your product and gives it self-worth. 
-                      It reduces your cash dependency while giving you a product of your choice.</p>
-                  </div>
+                <div class="back">
+                  <p class="back-content">Bartering is the oldest and the noblest method of trading. It appreciates your product and gives it self-worth. 
+                    It reduces your cash dependency while giving you a product of your choice.</p>
                 </div>
               </div>
             </div>
           </li>
           <li>
-            <div id="f1_container">
-              <div id="f1_card" class="shadow">
-                <div class="front face">
-                  <div class="text_mid">
-                    <p>How does this work:</p>
-                  </div>
+            <div class="faq-content">
+              <div class="faq-content1 h">
+                <div class="front">
+                  <p class="front-content">How does this work:</p>
                 </div>
-                <div class="back face">
-                  <div class="text_mid">
-                    <p>Once you upload your product for exchange, you will have to give it a valuation in Barter points. (1 barter point = 1 INR) You can now choose the item from the product listing and send a request for exchange. Once the opposite user accepts the request you can get connected to him and initiate the exchange of the product.</p>
-                  </div>
+                <div class="back">
+                  <p class="back-content">Once you upload your product for exchange, you will have to give it a valuation in Barter points. (1 barter point = 1 INR) You can now choose the item from the product listing and send a request for exchange. Once the opposite user accepts the request you can get connected to him and initiate the exchange of the product.</p>
                 </div>
               </div>
             </div>
           </li>
           <li>
-            <div id="f1_container">
-              <div id="f1_card" class="shadow">
-                <div class="front face">
-                  <div class="text_mid">
-                    <p>What if there is a difference in the value of product? Do I have to pay in cash?</p>
-                  </div>
+            <div class="faq-content">
+              <div class="faq-content1 h">
+                <div class="front">
+                  <p class="front-content">What if there is a difference in the value of product? Do I have to pay in cash?</p>
                 </div>
-                <div class="back face">
-                  <div class="text_mid">
-                    <p>Based on mutual consent both the parties are advised to conclude the manner in which they would like to clear the difference in value.  
-*Barter Hub holds no responsibility in case of disputes.</p>
-                  </div>
+                <div class="back">
+                  <p class="back-content">Based on mutual consent both the parties are advised to conclude the manner in which they would like to clear the difference in value.  
+                    *Barter Hub holds no responsibility in case of disputes.</p>
                 </div>
               </div>
             </div>
           </li>
           <li>
-            <div id="f1_container">
-              <div id="f1_card" class="shadow">
-                <div class="front face">
-                  <div class="text_mid">
-                    <p>Do I have to pay Barter Hub for listing my products?</p>                  
-                  </div>
+            <div class="faq-content">
+              <div class="faq-content1 h">
+                <div class="front">
+                  <p class="front-content">Do I have to pay Barter Hub for listing my products?</p>
                 </div>
-                <div class="back face">
-                  <div class="text_mid">
-                    <p>No</p>
-                  </div>
+                <div class="back">
+                  <p class="back-content">No</p>
                 </div>
               </div>
             </div>
           </li>
           <li>
-            <div id="f1_container">
-              <div id="f1_card" class="shadow">
-                <div class="front face">
-                  <div class="text_mid">
-                    <p>Do I have to deliver my product?</p>
-                  </div>
+            <div class="faq-content">
+              <div class="faq-content1 h">
+                <div class="front">
+                  <p class="front-content"> Do I have to deliver my product?</p>
                 </div>
-                <div class="back face">
-                  <div class="text_mid">
-                    <p>You can have a mutual arrangement with the other party for logistics.</p>
-                  </div>
+                <div class="back">
+                  <p class="back-content">You can have a mutual arrangement with the other party for logistics.</p>
                 </div>
               </div>
             </div>
-          </li>                 
+          </li>
           <li>
-            <div id="f1_container">
-              <div id="f1_card" class="shadow">
-                <div class="front face">
-                  <div class="text_mid">
-                    <p>How does barter for charity works?</p>
-                  </div>
+            <div class="faq-content">
+              <div class="faq-content1 h">
+                <div class="front">
+                  <p class="front-content">How does barter for charity works?</p>
                 </div>
-                <div class="back face">
-                  <div class="text_mid">
-                    <p>Barter for charity allows you to donate any item to the closest possible Non-profit organizations like NGO, Orphan Houses, Old age homes, etc…                                                                         You can either deliver the items yourself or ask the organization for pick up. Barter Hub doesn’t charge you for the exchange.</p>
-                  </div>
+                <div class="back">
+                  <p class="back-content">Barter for charity allows you to donate any item to the closest possible Non-profit organizations like NGO, Orphan Houses, Old age homes, etc…You can either deliver the items yourself or ask the organization for pick up. Barter Hub doesn’t charge you for the exchange.</p>
                 </div>
               </div>
             </div>
@@ -437,7 +466,7 @@ error_reporting(0);
             <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" value="<?php if(isset($_POST['subject'])){ echo $_POST['subject']; } ?>">
           </div>
           <div class="input-group">
-            <textarea class="form-control custom-control" id="description" name="description" style="resize:none;height: 170px;"></textarea>
+            <textarea class="form-control custom-control" id="description" name="description" style="resize:none;"></textarea>
           </div>
           <div style="text-align: left;" class=""><img src="captcha.php?rand=<?php echo rand();?>" id='captchaimg' style="height: 49px;margin-top: 8px;margin-bottom: 10px;"><a style="color:#BBD1FC;" class="rCaptcha" href="javascript:void(0)" onclick="refreshCaptcha();"><img src="images/refresh.png"></a>
           <div class="form-group">
@@ -482,19 +511,7 @@ error_reporting(0);
     <div class="container">
       <div class="col-lg-12 col-md-12 col-sm-12">
         <ul class="footer_text">
-          <!--<li> <a href="sitemap.xml" onclick="lightbox_open();">Site Map</a>
-            <div id="light"> <a href = "javascript:void(0)"  onclick="lightbox_close()" class="close_box"><img src="images/btn_close.png" alt=""/></a>
-              <h1>Site <span>Map</span></h1>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
-                quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro 
-                quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non 
-                numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-                Ut enim ad minima veniam.</p>
-            </div>
-            <div id="fade" onClick="lightbox_close();"> </div>
-          </li> -->
+          
           <li> <a href="#" onclick="lightbox_open1();">Legal Disclaimer</a>
             <div id="light1"> <a href = "javascript:void(0)"  onclick="lightbox_close1()" class="close_box1"><img src="images/btn_close.png" alt=""/></a>
               <h1>Legal <span>Disclaimer</span></h1>
@@ -551,6 +568,12 @@ If you have any questions about this Privacy Policy, the practices of this site,
 </footer>
 <!--- Header Slide up and down js---> 
 
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/npm.js"></script>
+<script src="js/banheight.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/validation.js"></script>
 <script>
       $(window).scroll(function() {
       if ($(document).scrollTop() > 10) {
@@ -562,6 +585,8 @@ If you have any questions about this Privacy Policy, the practices of this site,
         $('.social_sites ul').slideDown(); 
        }
       });
+	  
+	  
 </script> 
 <script>
 window.document.onkeydown = function (e)
@@ -608,14 +633,12 @@ function lightbox_close2(){
 <script src="js/jquery.easing.min.js"></script> 
 <script src="js/scrolling-nav.js"></script> 
 <script>
+ 
+     
+  
     $( document ).ready(function() {
       
-      /*$('.flip').click(function(){
-        $(this).find('.card').addClass('flipped').mouseleave(function(){
-          $(this).removeClass('flipped');
-        });
-        return false;
-      });*/
+     
       
       $(".flip").hover(function(){
         $(this).find('.card').addClass('flipped');
@@ -651,6 +674,22 @@ function lightbox_close2(){
       var code = $('#ecode').text();
       $('#autoGenerator').val(code);
     });
+	
+	$(document).ready(function() {
+
+		$('.mobile-menu-click').click(function(){
+			$('.mob-menu-cont').slideToggle().css({
+				'display' : 'block',
+			})
+		});
+		$('.mob-menu li').click(function(){
+			$('.mob-menu-cont').slideUp().css({
+				'display' : 'none',
+			})
+		})
+	})
   </script>
+  
+
 </body>
 </html>
