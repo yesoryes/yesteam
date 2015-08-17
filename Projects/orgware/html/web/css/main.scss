@@ -59,6 +59,9 @@
 .navbar-brand>img{
 	margin:-25px 0 0 0;
 } 
+.carousel-inner > .item > img.mob-only-img {
+	display: none;
+}
 
 $font-size:16px;
 $color:#000;
@@ -559,6 +562,15 @@ body
   .more-close 
 	{
 	 margin: 40px 0 15px 50px;
+	 background:url(../img/more_close.png) left no-repeat;
+	 transition:.5s all;
+	 width:30px;
+	 height:30px;	 
+	 cursor:pointer;
+	 &:hover
+	 {
+		 background:url(../img/more_close.png) right no-repeat;
+	 }
 	} 
 
   .sub-menu 
@@ -706,7 +718,7 @@ header
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		background-size:cover;
-		width:100%; 
+		 width: 100%; 
 	}
 	.carousel-inner .item.two
 	{
@@ -714,7 +726,7 @@ header
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		background-size:cover;
-		width:100%; 	 
+		 width: 100%; 
 	}
 	.carousel-inner .item.three
 	{
@@ -722,7 +734,7 @@ header
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		background-size:cover;
-		width:100%; 	 
+		 width: 100%; 
 	}
 	.carousel-inner .item.four
 	{
@@ -730,7 +742,7 @@ header
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		background-size:cover;
-		width:100%; 
+		 width: 100%; 
 	}
 	.carousel-inner .item.five
 	{
@@ -738,7 +750,15 @@ header
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		background-size:cover;
-		width:100%; 
+		 width: 100%; 
+	}
+	.carousel-inner .item.six
+	{
+		background:url(../img/6.jpg) no-repeat center center;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		 width: 100%; 
 	}
 	.banner-link
 		{
@@ -749,6 +769,8 @@ header
 			text-transform:uppercase; 
 			text-shadow:none;
 			position: relative; 
+			top: -250px;
+			left: 90px;
 			a
 			{
 				text-decoration:none;
@@ -935,8 +957,8 @@ section
 	.more-link
 		{
 			
-			width:54px;
-			height:22px;
+			width:75px;
+			height:30px;
 			margin:30px 0 0 0;
 			position: relative;
 			z-index: 2; 
@@ -944,13 +966,13 @@ section
 			{
 				text-decoration:none;
 			    color: #fb3e2f;
-				width:54px;
-			    height:22px;
-				line-height:22px;
+				width:75px;
+			    height:30px;
+				line-height:29px;
 				text-align:center;
 				font-family: 'LinotypeMetroNovaPro';
 			    font-size:12px;
-				background:url(../img/more-link.png) no-repeat left center; 
+				background:url(../img/service_more.png) no-repeat left center; 
 				display:block;
 				transition:0.5s all;
 				-ms-transition:0.5s all;
@@ -1478,19 +1500,21 @@ section
 														.services2 .front
 														{
 														   @include services-back; 
-														   background: url(../img/more-app.png) 225px 70px no-repeat #fff;
+														   background: url(../img/more-app1.png) 225px 70px no-repeat #ff7959;
 														  .front-content 
 																 {
-																	  @include servicesback-content;
+																	   @include servicesback-content;
+																	   color:#fff;
 																 }
 														 }
 														 .services2 .back
 														{ 
 														   @include services-back; 
-														   background: url(../img/more-app.png) 225px 70px no-repeat #fff;
+														   background: url(../img/more-app1.png) 225px 70px no-repeat #454545;
 														 .front-content 
 																 {
 																	   @include servicesback-content;
+																	   color:#fff;
 																 }
 														  
 														}
@@ -2534,7 +2558,7 @@ footer
 							   color:#fff;
 							   &.focused 
 									   {
-										  top: -22px;
+										  top: -20px;
 										  transition: top 0.5s ease 0s;
 									  }
 								&.textarea-label
@@ -6339,6 +6363,42 @@ header
 		}
 	}
 }
+.portfolio-content .carousel-control 
+	{
+	position: absolute;
+	top: -30px; /* pushes the icon in the middle of the height */ 
+	left:89%;
+	display: inline-block; 
+	opacity:1;
+	}
+.portfolio-content .carousel-control.left
+	{
+		  width:26px;
+		  height:26px;
+		  float:right;
+		  position: initial; 
+		  background:url(../img/left-nav.png) top right no-repeat;
+		  &:hover
+			  {
+				background:url(../img/left-nav.png) bottom right no-repeat;
+			  }
+	
+	}
+.portfolio-content .carousel-control.right
+	{
+		  left: 96%;
+		  width: 26px;
+		  height: 26px;
+		  margin: 0 0 30px 13px;
+		  padding: 0 0px 0 0px;
+		  position: initial;
+		  float: right;
+		  background: url(../img/right-nav.png) top right no-repeat;
+			  &:hover
+			  {
+				  background:url(../img/right-nav.png) bottom  right no-repeat;
+			  }	
+	}
 .detail-fullpage {
 	overflow: hidden;
 	margin: 60px 0;
@@ -6961,48 +7021,52 @@ header
 	position:relative;
 	.carousel-inner .item.one
 	{
-		background:url(../img/1.jpg) no-repeat center center fixed;
+		background:url(../img/1.jpg) no-repeat center center;
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		background-size:cover;
-		width:100%;
-		height:100%; 
+		 width: 100%; 
+		 
 	}
 	.carousel-inner .item.two
 	{
-		background:url(../img/2.jpg) no-repeat center center fixed;
+		background:url(../img/2.jpg) no-repeat center center;
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		background-size:cover;
-		width:100%;
-		height:100%;		 
+		 width: 100%; 
 	}
 	.carousel-inner .item.three
 	{
-		background:url(../img/3.jpg) no-repeat center center fixed;
+		background:url(../img/3.jpg) no-repeat center center;
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		background-size:cover;
-		width:100%;
-		height:100%;		 
+		 width: 100%; 
 	}
 	.carousel-inner .item.four
 	{
-		background:url(../img/4.jpg) no-repeat center center fixed;
+		background:url(../img/4.jpg) no-repeat center center;
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		background-size:cover;
-		width:100%;
-		height:100%; 
+		 width: 100%; 
 	}
 	.carousel-inner .item.five
 	{
-		background:url(../img/5.jpg) no-repeat center center fixed;
+		background:url(../img/5.jpg) no-repeat center center;
 		-webkit-background-size:cover;
 		-moz-background-size:cover;
 		background-size:cover;
-		width:100%;
-		height:100%; 
+		 width: 100%; 
+	}
+	.carousel-inner .item.six
+	{
+		background:url(../img/6.jpg) no-repeat center center;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		 width: 100%; 
 	}
 	.banner-link
 		{
@@ -7013,6 +7077,8 @@ header
 			text-transform:uppercase; 
 			text-shadow:none;
 			position: relative; 
+			top: -93px;
+			left: 75px;
 			a
 			{
 				text-decoration:none;
@@ -7194,7 +7260,7 @@ section
 			width:100%;
 			padding:0;
 		}
-	.more-link
+	/*.more-link
 		{
 			
 			width:54px;
@@ -7249,7 +7315,7 @@ section
 					}
 			}
 			
-		} 
+		}*/ 
 }
 
 
@@ -7743,19 +7809,21 @@ section
 														.services2 .front
 														{
 														   @include services-back; 
-														   background: url(../img/more-app.png) 225px 70px no-repeat #fff;
+														   background: url(../img/more-app1.png) 225px 70px no-repeat #ff7959;
 														  .front-content 
 																 {
 																	  @include servicesback-content-1024;
+																	  color:#fff;
 																 }
 														 }
 														 .services2 .back
 														{ 
 														   @include services-back-1024;
-														   background: url(../img/more-app.png) 225px 70px no-repeat #fff; 
+														   background: url(../img/more-app1.png) 225px 70px no-repeat #454545; 
 														 .front-content 
 																 {
 																	  @include servicesback-content-1024;
+																	  color:#fff;
 																 }
 														  
 														}
@@ -8620,10 +8688,12 @@ footer
 	{
 		background:url(../img/mobile-game-hover.png) 10% center no-repeat;
 	}
-	&.mobile-app{
+	&.mobile-app
+	{
 		background:url(../img/mobile-app-hover.png) 20% center no-repeat;
 	}
-	&.web-app{
+	&.web-app
+	{
 		background:url(../img/web-app-menu-hover.png) 20% center no-repeat;
 	}
 }  
@@ -9376,11 +9446,12 @@ footer
 .navbar-default
 {
 	background-color: #e85b3a;
+	padding: 3% 2% 3% !important;
 }
 .navbar-default .navbar-brand {
   
   width: 100%; 
-  margin:0 20%;
+  margin:0 0%;
 }
 
  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -9416,6 +9487,13 @@ footer
  /* height: 300px;*/
 } 
  
+.navbar-brand {
+    float: left;
+    height: 25px;
+    padding: 10px 0px;
+    font-size: 18px;
+    line-height: 20px;
+}
 .our-team
 {
 	margin: 60px 0px 60px 0;
@@ -9433,75 +9511,84 @@ footer
 		
 	}
 }
- 
 header
 {
 	overflow:hidden;
 	position:relative; 
-	.carousel-inner .item.one
+	.carousel-inner .item.one-mobile
 	{
-		background:url(../img/1-768.jpg) no-repeat center center fixed;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		background-size:cover;
+		/*background:url(../img/1-768.jpg) no-repeat center;
+		background-size: cover; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;*/
 		width:100%;
-		height:100%; 
+	 
 	}
-	.carousel-inner .item.two
+	.carousel-inner .item.two-mobile
 	{
-		background:url(../img/2-768.jpg) no-repeat center center fixed;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		background-size:cover;
+		/*background:url(../img/2-768.jpg) no-repeat center; 
+		background-size: cover; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;*/
 		width:100%;
-		height:100%;		 
+		 
 	}
-	.carousel-inner .item.three
+	.carousel-inner .item.three-mobile
 	{
-		background:url(../img/3-768.jpg) no-repeat center center fixed;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		background-size:cover;
+		/*background:url(../img/3-768.jpg) no-repeat center;
+		background-size: cover; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;*/
 		width:100%;
-		height:100%;		 
+		 
 	}
-	.carousel-inner .item.four
+	.carousel-inner .item.four-mobile
 	{
-		background:url(../img/4-768.jpg) no-repeat center center fixed;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		background-size:cover;
+		/*background:url(../img/4-768.jpg) no-repeat center; 
+		background-size: cover; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;*/
 		width:100%;
-		height:100%; 
+		 
 	}
-	.carousel-inner .item.five
+	.carousel-inner .item.five-mobile
 	{
-		background:url(../img/5-768.jpg) no-repeat center center fixed;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		background-size:cover;
+		/*background:url(../img/5-768.jpg) no-repeat center;
+		background-size: cover; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;*/
 		width:100%;
-		height:100%; 
+	 
+	}
+	.carousel-inner .item.six-mobile
+	{
+		/*background:url(../img/6-768.jpg) no-repeat center center; 
+		background-size: cover; 
+		-webkit-background-size: cover;*/
+		width:100%;
+		 
 	}
 	.banner-link
 		{
 			
-			width:70px;
-			height:29px;
-			margin:30px auto;
-			text-transform:uppercase; 
-			text-shadow:none;
-			position: relative; 
+			width: 70px;
+			height: 29px;
+			margin: 10% auto;
+			text-transform: uppercase;
+			text-shadow: none;
+			left: 9%;
+			top: 0;
+			position: relative;
 			a
 			{
 				text-decoration:none;
 			    color: #fff;
-				width:70px;
-			    height:29px;
+				width: 70px;
+			    height: 29px;
 				line-height:29px;
 				text-align:center;
 				font-family: 'LinotypeMetroNovaProLight';
-			    font-size:0.9em;
+			    font-size:1em;
 				background: url(../img/banner-link-mob.png) center center no-repeat;   
 				display:block;
 				transition:0.5s all;
@@ -9539,7 +9626,7 @@ header
 					}
 			}
 			
-		}
+	 }
 	.carousel-caption.first-slide
 	{ 
 		bottom:5%;
@@ -9547,26 +9634,26 @@ header
 		.banner-text-1
 			{
 				font-family: 'LinotypeMetroNovaProCond';
-				font-size: 1.75em;
+				font-size: 2.75em;
 				color:#fff;
 				text-shadow:none;
 				span 
 					{
-						font-size: 0.725em;  
+						font-size: 0.925em;  
 						font-family: 'LinotypeMetroNovaProThin';
 					}
 			}
-		
+		 
 			
 	}
 	.carousel-caption.second-slide
 	{    
-	     top:30%;
+	     top:15%;
 		 text-transform:uppercase;
 		 .banner-text-2
 			{
 				font-family: 'LinotypeMetroNovaProBold';
-				font-size: 1.95em;  
+				font-size: 3.95em;  
 				color:#fff;
 				text-shadow:none;
 				span 
@@ -9576,60 +9663,61 @@ header
 			}
 			 
 			
+			
 	}
 	.carousel-caption.third-slide
 	{   
 	    
-		  top:30%;
+		  top:15%;
 		 text-transform:uppercase;
 		  .banner-text-3
 			{
-				font-family: 'LinotypeMetroNovaProThin';
-				font-size: 1.56em;  
+				font-family: 'LinotypeMetroNovaProCond';
+				font-size: 2.86em;  
 				color:#fff;
 				text-shadow:none;
 				span 
 					{ 
-						font-family: 'LinotypeMetroNovaProBold'; 
+						font-family: 'LinotypeMetroNovaProBold';
+						
 					}
 			}
 			 
 	}
 	.carousel-caption.fourth-slide
 	{ 
-			  bottom: 0%;
-  			  left: 2%; 
+			bottom:15%; 
 			.banner-text-4
 			{
 				font-family: 'LinotypeMetroNovaProLight';
-				font-size:1.9em;  
+				font-size:2.1em;  
 				color:#fff;
 				text-shadow:none;
 				text-transform:lowercase;
 				text-align:left;
-				line-height: 30px;
+				line-height: 39px;
 				span.text-1
 					{ 
 						font-family: 'LinotypeMetroNovaProLight';
-						font-size: 1.9em;						
+						font-size: 2.1em;						
 					}
 				span.text-3
 					{ 
 						font-family: 'LinotypeMetroNovaProBold';
-						font-size: 0.85em;	
+						font-size: 1.05em;	
 						text-transform:uppercase;					
 					}
 			}
 			 
-	 }
+	  }
 	 .carousel-caption.fifth-slide
 	 {   
-	  top:20%;
+	  top:30%;
 	  text-transform:uppercase;
 	  .banner-text-5
 		{
 			font-family: 'LinotypeMetroNovaProBold';
-			font-size: 0.95em;  
+			font-size: 1.25em;  
 			color:#fff;
 			text-shadow:none;
 			padding:3% 0 3%;
@@ -9640,7 +9728,8 @@ header
 		}
 		 
    }
-}
+} 
+
 section
 {
     
@@ -12012,10 +12101,10 @@ header
 
 .navbar-brand > img {
   
-  width: 90%;
-  top: -50px;
-  left: 44%;
-  position: relative;
+     width: 78%;
+    top: -44px;
+    left: 44%;
+    position: relative;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #e85b3a;
@@ -12043,8 +12132,8 @@ header
 .navbar-toggle {
   position: relative;
   float: right;
-  padding: 9px 10px;
-  margin:3% 3% 3% 0;
+  padding: 8px;
+  margin:3% 3% 2% 0;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -12058,71 +12147,77 @@ header
 header
 {
 	overflow:hidden;
-	position:relative;
-	.carousel-inner .item.one
+	position:relative; 
+	width:100%;
+	.carousel-inner .item.one-mobile
 	{
-		background:url(../img/1-768.jpg) no-repeat center center fixed;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		background-size:cover;
+		/*background:url(../img/1-768.jpg) no-repeat center center; 
+		background-size: cover; 
+		-webkit-background-size: cover;*/
 		width:100%;
-		height:100%; 
+		 
 	}
-	.carousel-inner .item.two
+	.carousel-inner .item.two-mobile
 	{
-		background:url(../img/2-768.jpg) no-repeat center center fixed;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		background-size:cover;
+		/*background:url(../img/2-768.jpg) no-repeat center center; 
+		background-size: cover; 
+		-webkit-background-size: cover;*/
 		width:100%;
-		height:100%;		 
+		 
 	}
-	.carousel-inner .item.three
+	.carousel-inner .item.three-mobile
 	{
-		background:url(../img/3-768.jpg) no-repeat center center fixed;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		background-size:cover;
+		/*background:url(../img/3-768.jpg) no-repeat center center; 
+		background-size: cover; 
+		-webkit-background-size: cover;*/
 		width:100%;
-		height:100%;		 
+		 
 	}
-	.carousel-inner .item.four
+	.carousel-inner .item.four-mobile
 	{
-		background:url(../img/4-768.jpg) no-repeat center center fixed;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		background-size:cover;
+		/*background:url(../img/4-768.jpg) no-repeat center center; 
+		background-size: cover; 
+		-webkit-background-size: cover;*/
 		width:100%;
-		height:100%; 
+		 
 	}
-	.carousel-inner .item.five
+	.carousel-inner .item.five-mobile
 	{
-		background:url(../img/5-768.jpg) no-repeat center center fixed;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		background-size:cover;
+		/*background:url(../img/5-768.jpg) no-repeat center center; 
+		background-size: cover; 
+		-webkit-background-size: cover;*/
 		width:100%;
-		height:100%; 
+		 
+	}
+	.carousel-inner .item.six-mobile
+	{
+		/*background:url(../img/6-768.jpg) no-repeat center center; 
+		background-size: cover; 
+		-webkit-background-size: cover;*/
+		width:100%;
+		 
 	}
 	.banner-link
 		{
 			
-			width:70px;
-			height:29px;
-			margin:30px auto;
-			text-transform:uppercase; 
-			text-shadow:none;
-			position: relative; 
+			width: 70px;
+			height: 29px;
+			margin: 14% auto;
+			text-transform: uppercase;
+			text-shadow: none;
+			left: 14%;
+			top: 0;
+			position: relative;
 			a
 			{
 				text-decoration:none;
 			    color: #fff;
-				width:70px;
-			    height:29px;
+				width: 70px;
+			    height: 29px;
 				line-height:29px;
 				text-align:center;
 				font-family: 'LinotypeMetroNovaProLight';
-			    font-size:0.9em;
+			    font-size:1em;
 				background: url(../img/banner-link-mob.png) center center no-repeat;   
 				display:block;
 				transition:0.5s all;
@@ -12160,7 +12255,7 @@ header
 					}
 			}
 			
-		}
+	 }
 	.carousel-caption.first-slide
 	{ 
 		bottom:5%;
@@ -12168,26 +12263,26 @@ header
 		.banner-text-1
 			{
 				font-family: 'LinotypeMetroNovaProCond';
-				font-size: 1.75em;
+				font-size: 2.75em;
 				color:#fff;
 				text-shadow:none;
 				span 
 					{
-						font-size: 0.725em;  
+						font-size: 0.925em;  
 						font-family: 'LinotypeMetroNovaProThin';
 					}
 			}
-		
+		 
 			
 	}
 	.carousel-caption.second-slide
 	{    
-	     top:30%;
+	     top:15%;
 		 text-transform:uppercase;
 		 .banner-text-2
 			{
 				font-family: 'LinotypeMetroNovaProBold';
-				font-size: 1.55em;  
+				font-size: 3.95em;  
 				color:#fff;
 				text-shadow:none;
 				span 
@@ -12197,60 +12292,61 @@ header
 			}
 			 
 			
+			
 	}
 	.carousel-caption.third-slide
 	{   
 	    
-		  top:25%;
+		  top:15%;
 		 text-transform:uppercase;
 		  .banner-text-3
 			{
-				font-family: 'LinotypeMetroNovaProThin';
-				font-size: 1.30em;  
+				font-family: 'LinotypeMetroNovaProCond';
+				font-size: 2.86em;  
 				color:#fff;
 				text-shadow:none;
 				span 
 					{ 
-						font-family: 'LinotypeMetroNovaProBold'; 
+						font-family: 'LinotypeMetroNovaProBold';
+						
 					}
 			}
 			 
 	}
 	.carousel-caption.fourth-slide
 	{ 
-			  bottom: 1%;
-  			  left: 5%; 
+			bottom:15%; 
 			.banner-text-4
 			{
 				font-family: 'LinotypeMetroNovaProLight';
-				font-size:1.9em;  
+				font-size:2.1em;  
 				color:#fff;
 				text-shadow:none;
 				text-transform:lowercase;
 				text-align:left;
-				line-height: 30px;
+				line-height: 39px;
 				span.text-1
 					{ 
 						font-family: 'LinotypeMetroNovaProLight';
-						font-size: 1.9em;						
+						font-size: 2.1em;						
 					}
 				span.text-3
 					{ 
 						font-family: 'LinotypeMetroNovaProBold';
-						font-size: 0.85em;	
+						font-size: 1.05em;	
 						text-transform:uppercase;					
 					}
 			}
 			 
-	 }
+	  }
 	 .carousel-caption.fifth-slide
 	 {   
-	  top:20%;
+	  top:30%;
 	  text-transform:uppercase;
 	  .banner-text-5
 		{
 			font-family: 'LinotypeMetroNovaProBold';
-			font-size: 0.95em;  
+			font-size: 1.25em;  
 			color:#fff;
 			text-shadow:none;
 			padding:3% 0 3%;
@@ -15193,6 +15289,251 @@ header
 }
 
 } 
+@media only screen and (min-width:769px) and (max-width: 991px)  
+{
+   
+footer
+{
+	
+	width: 100%;
+	float: none;
+	margin: 60px auto 0;
+	overflow: hidden;
+	position: relative;
+	background:#444444 !important;
+	.foot-services 
+		{
+			float:none;
+			margin:60px 0;
+			h5
+				{
+				 
+					color:#e9e9e9;
+					font-size:1.5em;
+					text-align:center;
+					font-family: 'LinotypeMetroNovaProBold';
+					text-transform:none; 
+					line-height:30px;
+				}
+		   ul
+				{
+					list-style:none; 
+					li
+						{
+							display:block;
+							text-align:center !important;		
+							text-decoration:none;					
+							a
+							{
+								color:#9e9e9e;
+								font-family: 'LinotypeMetroNovaPro';
+								font-size:1em;
+								line-height:18px;
+								text-decoration:none;
+								display:block;
+								padding:10px 0 0px;
+								@include transition-product; 
+									&:hover
+									{
+										color:#1e1e1e; 
+									}
+									&:focus
+									{
+										color:#1e1e1e; 
+									}
+								 
+							}
+						}
+				}
+			 
+		}
+   .footer-line
+	   {
+		    border-right: 2px solid rgba(158,158,158,0.2);
+			height: 173px;
+			margin: 70px 0 0 0;
+	   }
+		
+		
+}
+.git
+		{
+			color: #e9e9e9;
+			font-size: 1.8em;
+			text-align: center;
+			font-family: 'LinotypeMetroNovaProBold';
+			text-transform: none;
+			line-height: 30px;
+			margin: 0 auto;
+			float: none;
+	   } 
+.social-icons
+		{
+				list-style: none;
+				margin: 0 auto;
+				padding: 0;
+				text-align: center;
+				display: block;
+				overflow: hidden; 
+				margin: 5% 26%;
+				li
+					{
+					   
+					    float: none;
+						margin: 0px;
+						padding: 0;
+						text-align: center;
+						margin: 0 auto;				
+					 a
+						{
+							 
+							height: 64px;
+							width: 64px;
+							margin: 10px;
+							float: left;
+							display:block;
+							padding:0;
+							-webkit-transition: all ease 0.3s;
+							-moz-transition: all ease 0.3s;
+							-o-transition: all ease 0.3s;
+							-ms-transition: all ease 0.3s;
+							transition: all ease 0.3s; 
+							transform:scale(1.1);
+							-webkit-transform:scale(1.1);
+							-moz-transform:scale(1.1);
+							&:hover 
+								{
+									   
+									  /*box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);*/
+									  -webkit-transform:rotate(15deg);
+									  -moz-transform:rotate(15deg);
+									  -o-transform:rotate(15deg);
+									  -ms-transform:rotate(15deg);
+									  transform:rotate(15deg);
+								}
+							  &.fb
+							   {
+								    background:url(../img/facebook.png) top no-repeat;
+									height: 64px;
+							        width: 64px;
+									float:left;
+								   &:hover
+									   { 
+									   	background:url(../img/facebook-hover.png) top no-repeat;
+									   }
+							   }
+							   &.google
+							   {
+								   background:url(../img/google.png) top no-repeat;
+									height: 64px;
+							        width: 64px;
+									float:left;
+								   &:hover
+									   {
+										   background:url(../img/google-hover.png) bottom no-repeat;
+									   }
+							   }
+							   &.you-tube
+							   {
+								   background:url(../img/you-tube.png) top no-repeat;
+									height: 64px;
+							        width: 64px;
+									float:left;
+								   &:hover
+									   {
+										   background:url(../img/youtube-hover.png) top no-repeat;
+									   }
+							   }
+							   &.linked
+							   {
+								   background:url(../img/linked.png) top no-repeat;
+									height: 64px;
+							        width: 64px;
+									float:left;
+								   &:hover
+									   {
+										   background:url(../img/linked-hover.png) bottom no-repeat;
+									   }
+							   }
+								
+						
+					  }   
+				}
+			
+		} 
+		.have-quest
+		{
+						
+			    height: 32px;
+				overflow: hidden;
+				width: 100%;
+				margin: 3% 26%;
+				float: none;
+			span
+			{
+				background:url(../img/have-quest.png) no-repeat left;
+				height:32px;
+				width:187px;
+				float:left;
+				overflow:hidden;
+				color:#e9e9e9;
+				line-height:30px;
+				font-size:19px;
+				margin:0 10px 0 0;
+				font-family: 'LinotypeMetroNovaProLight';
+				text-align:center;
+			}
+			a
+			{
+				background:url(../img/enqiury-now.png) no-repeat left;
+				height:32px;
+				width:156px;
+				float:left; 
+				color:#fff;
+				line-height:30px;
+				font-size:16px;
+				display:block;
+				position:relative;
+				text-transform:uppercase;
+				text-decoration:none;
+				font-family: 'LinotypeMetroNovaProBold';
+				text-align:center;
+				 z-index:5;
+				&:after
+					{
+						width: 0%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						background:#1c1c1c; 
+					}
+					&:after
+					   {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						-webkit-transition: all 0.3s;
+						-moz-transition: all 0.3s;
+						transition: all 0.3s;
+						 }
+					
+					&:hover,
+					&:active 
+					{
+						color:#9e9e9e;
+					}
+					
+					&:hover:after,
+					&:active:after
+					{
+						width: 100%; 
+					} 
+			}
+			
+			
+		} 
+}
+ 
 @media only screen and (min-width:320px) and (max-width: 479px)  
 {
    /* Career Form */
@@ -15201,6 +15542,20 @@ header
 	  width:100% !important;
 	  padding: 14% !important;
 	  overflow: hidden !important;
+	}
+}
+ 
+@media only screen and (max-width: 320px)  
+{
+	header .banner-link {
+		width: 70px;
+		height: 29px;
+		margin: 30px auto;
+		text-transform: uppercase;
+		text-shadow: none;
+		position: relative;
+		top: 0px;
+		left: 70px;
 	}
 }
 @font-face 
