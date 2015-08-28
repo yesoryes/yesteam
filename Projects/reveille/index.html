@@ -1,0 +1,1326 @@
+﻿<!Doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="title" content="Reveille Technologies" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Reveille Technologies</title>
+
+    <link rel="shortcut icon" id="favicon" href="images/favicon.ico">
+
+    <!--Gendral css-->
+    <link href="css/style .css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-3.1.1.css" rel="stylesheet" type="text/css" />
+    <link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/skdslider.css" rel="stylesheet" type="text/css">
+    <link href="css/onepage-scroll.css" rel='stylesheet' type='text/css'>
+    <link href="css/stylesanimate.css" rel='stylesheet' type='text/css'>
+
+    <!-- JS -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/skdslider.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+    <script type="text/javascript" src="tweetie.js"></script>
+    <script type="text/javascript" src="js/createyes.js"></script>
+    
+
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#demo1').skdslider({ 'delay': 6000, 'animationSpeed': 1000, 'showNextPrev': true, 'showPlayButton': false, 'autoSlide': true, 'animationType': 'fading' });
+            jQuery('#responsive').change(function () {
+                $('#responsive_wrapper').width(jQuery(this).val());
+            });
+			
+			
+			// Add slideDown animation to dropdown
+
+        });
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(".main").onepage_scroll({
+                sectionContainer: "section",
+                responsiveFallback: 1170,
+                loop: false,
+                beforeMove: function (index) {
+                    if (index == 1) {
+                        $('#pageTop').removeClass('hidetop');
+                        $('#imglogo').removeClass('logoimage');
+                        $('#imglogo').height("auto");
+                        $('.logo').css("margin-top", "-26px");
+						animate_elems()
+                    }
+                    else {
+                        $('#pageTop').addClass('hidetop');
+                        $('#imglogo').height(50);
+                        $('.logo').css("height", "auto");
+                        $('.logo').css("margin-top", "10px");
+                        animate_elems();
+						
+                    }
+					
+                },
+				afterMove: function(index) {
+					if (index == 1) {
+                        
+						animate_elems();
+
+                    }
+                    else {
+                       animate_elems()
+                    }
+				}
+            });
+        });
+
+
+        function animate_elems() {
+            var $elems = $('.animateblock');
+
+            // loop through each item to check when it animates
+            $elems.each(function () {
+                $elm = $(this);
+
+                if ($elm.hasClass('animated')) { return true; } // if already animated skip to the next item
+					
+                topcoords = $elm.offset().top; // element's distance from top of page in pixels
+                $elm.addClass('animated');
+
+            });
+			 
+        }animate_elems();// 
+
+    </script>
+
+    <style type="text/css">
+	.navbar-default {
+		width: 99%;
+	}
+		.animateblock {
+			opacity: 0;
+			-webkit-transition: all 1s linear;
+			-moz-transition: all 1s linear;
+			transition: all 1s linear;
+		}
+        @-ms-viewport {
+            width: device-width;
+        }
+
+        .dropdown-menu {
+            min-width: 710px;
+        }
+
+            .dropdown-menu.columns-2 {
+                min-width: 600px;
+            }
+
+            .dropdown-menu.columns-3 {
+                min-width: 600px;
+            }
+
+            .dropdown-menu li a {
+                padding: 5px 15px;
+                font-weight: 300;
+            }
+
+        .multi-column-dropdown {
+            list-style: none;
+            padding: 20px 0 20px 0;
+        }
+
+            .multi-column-dropdown:hover {
+                list-style: none;
+            }
+
+            .multi-column-dropdown li a {
+                display: block;
+                clear: both;
+                line-height: 1.428571429;
+                font-family: 'MyriadPro-Cond', Helvetica, sans-serif;
+                color: #ffffff;
+                padding: 10px;
+                padding-top:5px;
+                white-space: nowrap;
+            }
+
+                .multi-column-dropdown li a:hover {
+                    background: none;
+                    opacity: 0.9;
+                    color: rgb(211, 32, 32);
+                    text-decoration: none;
+                    width: auto;
+                }
+
+        @media (max-width: 1169px) {
+			.navbar-nav>li {
+				transition: 0.5s all;
+			}
+            .dropdown-menu.multi-column {
+                min-width: 240px !important;
+                overflow-x: hidden;
+            }
+
+            .logo {
+                margin-top: -4px;
+            }
+        
+            .content {
+                width: 100%;
+                margin: 50px auto;
+                padding: 10px;
+            }
+
+            .logo {
+                margin-top: -4px;
+            }
+			.skdslider ul.slide-navs {
+				bottom: 20px;
+			}
+			.animateblock.animated, .animateblock {
+				opacity: 1;
+			}
+			.animateblock.btm1.animated {
+				
+			}
+			.animateblock.top {
+				margin: 0;
+			}
+			.animateblock.centerright1, .animateblock.centerleft1, .animateblock.btm1, .animateblock.centerleft {
+				transform: scale(1,1);
+			}
+        }
+
+        .desc {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-stretch: normal;
+            color: #aaaaaa;
+            width: 279px;
+            word-wrap: break-word;
+            margin-top: -10px;
+            margin-left: 12px;
+        }
+
+    </style>
+
+    <style type="text/css">
+        @media screen and (min-width:1169px) {
+            .dropdown:hover .dropdown-menu {
+               // display: block;
+            }
+        }
+
+        .sb-search {
+            position: relative;
+            width: 0%;
+            min-width: 40px;
+            height: 40px;
+            float: right;
+            overflow: hidden;
+            -webkit-transition: width 0.3s;
+            -moz-transition: width 0.3s;
+            transition: width 0.3s;
+            -webkit-backface-visibility: hidden;
+        }
+
+        @media screen and (max-width:1169px) {
+            .sb-search {
+                float: left;
+                margin-left: 12px;
+            }
+
+            .navbar table {
+                width: 100%;
+            }
+
+            body.disabled-onepage-scroll .onepage-wrapper section {
+                min-height: 300px;
+            }
+
+            .back {
+                position: relative;
+            }
+
+            .skdslider {
+                top: 0px;
+            }
+
+            .navbar-nav > li > a {
+                font-family: "MyriadPro-Cond",Helvetica,sans-serif;
+                font-size: 15px;
+                font-stretch: ultra-expanded;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+
+            .MenuRight1 {
+                right: 0px;
+            }
+
+            .MenuRight2 {
+                right: 0px;
+            }
+
+            .MenuRight3 {
+                right: 0px;
+            }
+
+            .row {
+                padding: 0px;
+            }
+
+            .multi-column-dropdown {
+                padding: 0px;
+            }
+
+            .sb-search-input {
+                color: red;
+            }
+
+            .container-fluid {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+		
+
+        @media screen and (max-width:1169px) {
+
+            .container-fluid {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .sb-search-input {
+            position: static;
+            top: 0;
+            right: 0;
+            border: none;
+            outline: none;
+            background: #fff;
+            width: 0%;
+            height: 39.6px;
+            margin: 0;
+            z-index: 10;
+            padding: 10px 47px 10px 10px;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+
+            .sb-search-input::-webkit-input-placeholder {
+                color: #cccccc;
+            }
+
+            .sb-search-input:-moz-placeholder {
+                color: #cccccc;
+            }
+
+            .sb-search-input::-moz-placeholder {
+                color: #cccccc;
+            }
+
+            .sb-search-input:-ms-input-placeholder {
+                color: #cccccc;
+            }
+
+        .sb-icon-search,
+        .sb-search-submit {
+            width: 40px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 0;
+            margin: 0;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .sb-search-submit {
+            background: #fff; /* IE needs this */
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+            filter: alpha(opacity=0); /* IE 5-7 */
+            opacity: 0;
+            color: transparent;
+            border: none;
+            outline: none;
+            z-index: -1;
+        }
+		
+		.last-child {
+			width: 40px;
+		}
+
+        .sb-icon-search {
+            color: #fff;
+            background: rgb(211, 32, 32) none repeat scroll 0 0;
+            z-index: 90;
+            font-size: 22px;
+            /*font-family: 'icomoon';*/
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            -webkit-font-smoothing: antialiased;
+        }
+
+            .sb-icon-search:before {
+                /*content: "\e000";*/
+            }
+
+        /* Open state */
+        /*.sb-search.sb-search-open,
+        .no-js .sb-search {
+            width: 200px;
+			transition: 0.5s all;
+        }
+*/
+            .sb-search.sb-search-open .sb-icon-search,
+            .no-js .sb-search .sb-icon-search {
+                background: rgb(211, 32, 32) none repeat scroll 0 0;
+                color: #fff;
+                z-index: 11;
+            }
+
+            .sb-search.sb-search-open .sb-search-submit,
+            .no-js .sb-search .sb-search-submit {
+                z-index: 90;
+            }
+
+
+        .hidetop {
+            /*display: none;*/
+			margin-top: -30px;
+			transition: 0.5s all;
+        }
+
+        .a {
+            outline: none;
+        }
+
+        .logoimage {
+            height: 50px;
+            margin-top: 10px;
+        }
+    </style>
+
+    <style type="text/css">
+        .slider {
+            float: right;
+            margin-right: 0px !important;
+            width: 100%;
+            margin-left: 70px !important;
+        }
+
+        .fboxColumn {
+            float: left;
+            width: 48%;
+        }
+
+        .SocialWebsites {
+            border-spacing: 5px;
+            border-collapse: separate;
+            padding-top: 25px;
+            margin-right: 70px !important;
+            float: right;
+        }
+
+        .terms {
+            padding-bottom: 0px;
+        }
+
+        .BottomPage {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .SocialIcons {
+            font-style: normal;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 30px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            margin-right: 3px;
+            color: #ffffff;
+            background-color: none;
+            border: 1px solid #848B93;
+        }
+
+        @media screen and (max-width:1169px) {
+            .slider {
+                float: left;
+                margin-right: 0px !important;
+                margin-left: 0px !important;
+                width: 100%;
+            }
+
+            .fboxColumn {
+                float: left;
+                width: 100%;
+            }
+
+
+
+            .arrows-up {
+                top: -110px;
+                left: 30px;
+            }
+
+            .arrows-down {
+                left: 0px;
+            }
+
+            .SocialWebsites {
+                border-spacing: 5px;
+                border-collapse: separate;
+                padding-top: 0px;
+                margin-right: 0px !important;
+                margin-left: 30px !important;
+                float: left;
+            }
+
+            .BottomPage {
+                position: initial;
+                bottom: initial;
+            }
+
+            .SocialIcons {
+                font-size: 40px;
+                width: 59px;
+                height: 59px;
+                display: block;
+                line-height: 59px;
+            }
+			.page2 section {
+				max-height: 100%;
+			}
+        }
+
+        @media screen and (max-width:400px) {
+            .SocialIcons {
+                font-size: 25px;
+                width: 39px;
+                height: 39px;
+                line-height: 39px;
+                display: block;
+            }
+        }
+    </style>
+    
+    <style type="text/css">
+        .change2npage {
+            margin: 0 auto;
+            /*padding-left: 5.5%;
+                        padding-right: 5.5%;*/
+            margin-top: 70px;
+            display: table;
+            border-spacing: 3px;
+        }
+
+        .Changerow {
+            display: table-row;
+        }
+
+        .ChangeColumn {
+            width: 33.3%;
+            display: table-cell;
+            top: 0px;
+            vertical-align: top;
+        }
+
+        .ChangeColumnPower {
+            width: 23.3%;
+            display: table-cell;
+            top: 0px;
+            vertical-align: top;
+        }
+
+        .ChangeColumncollabrate {
+            width: 43.3%;
+            display: table-cell;
+            top: 0px;
+            vertical-align: top;
+        }
+
+        .imgMobile {
+            background: rgba(0, 0, 0, 0) url("images/img3.jpg") no-repeat scroll right center;
+            float: right;
+            height: 252px;
+            width: 232px;
+            overflow-y: hidden;
+        }
+
+        #imagepower {
+            background: #368acd;
+			transition: 0.5s all;
+        }
+		#imagepower:hover {
+            background: #454545;
+        }
+		
+
+        .imgCollabarate {
+            float: right;
+            background: url(images/img4.png) no-repeat right;
+            width: 179px;
+            height: 252px;
+            overflow-y: hidden;
+        }
+
+
+
+        @media screen and (max-width:1169px) {
+			.w-content {
+				font-size: 50px;
+				line-height: 47px;
+			}
+            .ChangeColumn {
+                opacity: 1;
+                width: 100% !Important;
+                float: left;
+                margin-left: initial !Important;
+            }
+
+            .ChangeColumnPower {
+                width: 100%;
+                float: left;
+                margin-top: 5px;
+            }
+
+            .ChangeColumncollabrate {
+                width: 100%;
+                float: left;
+                margin-top: 5px;
+                opacity: 1;
+                margin-left: initial !Important;
+            }
+
+            .change2npage {
+                margin: 0 auto;
+                padding-left: 0%;
+                padding-right: 0%;
+                margin-top: 5px;
+            }
+
+            body.disabled-onepage-scroll .onepage-wrapper  section {
+                min-height: 0px;
+            }
+			body.disabled-onepage-scroll .onepage-wrapper page2 section {
+                max-height: 100%;
+            }
+
+            .f-box {
+                margin-top: 5px;
+            }
+        }
+
+        @media screen and (max-width:483px) {
+            .imgCollabarate {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:409px) {
+            .imgMobile {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width:1169px) {
+            .outer {
+                display: table;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+
+            .middle {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .inner {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+		
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="back">
+
+            <div id="pageTop" style="background: #181818; padding-top: 8px;">
+                <div class="container-fluid">
+                    <div class="menu1">
+                        <ul>
+                            <li><a href="Company.html"><span>Company</span></a></li>
+                            <li><a href="Careers.html"><span>Careers</span></a></li>
+                            <li id="last"><a href="Contact.html"><span>Contact Us</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="logo" style="position: relative; z-index: 5;">
+
+                    <a href="index.html">
+                        <img src="images/logo.png" id="imglogo" />
+                    </a>
+
+                </div>
+
+
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <table style="float: right">
+                        <tr>
+                            <td>
+                            	<style>
+                                	.MenuRight1 .row, .MenuRight2 .row, .MenuRight3 .row{
+										margin: 0;
+									}
+                                </style>
+				
+
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-top: 12px;">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="Consulting.html"><span>Consulting</span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Technology<b class="caret"></b></span></a>
+                                            <ul class="dropdown-menu MenuRight1 multi-column columns-2">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="Application Management.html">Application Management</a>
+                                                                <div class="desc" >Reveille with its distinctive approach helps you realize results consistently and predictably.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+
+                                                            <li><a href="MobilityServices.html">Enterprise Mobility</a>
+                                                                <div class="desc">Mobility in the future, we need closely networked information systems.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+
+                                                            <li><a href="Cloud.html">Cloud Technology</a>
+                                                                <div class="desc">Allows enterprises to get their applications up and running faster, with improved manageability and less maintenance.</div>
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="EngineeringServices.html">Engineering Services</a>
+                                                                <div class="desc">Reveille is a global supplier of engineering services to a diverse spectrum of industries. </div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="InfrastructureManagement.html">Infrastructure Management</a>
+                                                                <div class="desc">Reveilles utilities and alternative energy experts help both upstream and downstream players face challenges.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Outsourcing<b class="caret"></b></span></a>
+                                            <ul class="dropdown-menu MenuRight2 multi-column columns-2">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="ApplicationOutsourcing.html">Application Outsourcing</a>
+                                                                <div class="desc">We help our clients build state of the art IT capabilities that expedite business outcomes with best-in-class cost structures.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="BusinessProcessOutsourcing.html">Business Process Outsourcing</a>
+                                                                <div class="desc">Reveille offers multiple sourcing options to better match your needs: fully outsourced services with optional components,</div>
+
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="InfrastructureOutsourcing.html">Infrastructure Outsourcing</a>
+                                                                <div class="desc">The Reveille team consists of experienced consultants who are able to work closely with our clients.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Industries<b class="caret"></b></span></a>
+                                            <ul class="dropdown-menu MenuRight3 multi-column columns-2">
+                                                <div class="row">
+                                                    <div class="col-sm-6" style="margin-top: 10px;">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="AeroSpace.html">Aerospace and Defense</a>
+                                                                <div class="desc">Aerospace and defense industry is the fastest growing industry. With potential deep cuts in Defense and commercial.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="Healthcare.html">Healthcare</a>
+                                                                <div class="desc">Reveille responding to this unprecedented change in the healthcare industry, achieves high performances using knowledge in new ways.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="ConsumerGoods.html">Consumer Packaged Goods</a>
+                                                                <div class="desc">Reveille's global team has experience in all major consumer goods industry sectors. </div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="Telecom.html">Telecom</a>
+                                                                <div class="desc">Reveille Technologies has served a wide range of telecommunications players.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <ul class="multi-column-dropdown">
+                                                            <li><a href="Transportation.html">Transportation</a>
+                                                                <div class="desc">Reveille helps its client to position themselves to meet the cutthroat competition, unforgiving credit markets, and new regulations and stakeholders expectations.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="Utilities.html">Utilities</a>
+                                                                <div class="desc">Reveille's utilities and alternative energy experts help both upstream and downstream players face challenges.</div>
+                                                                <div class = "MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="Insurance.html">Insurance</a>
+                                                                <div class="desc">Reveille Technologies services group helps insurance industry clients ? insurers, reinsurers, brokers, investors.</div>
+                                                                <div class="MenuDivider"></div>
+                                                            </li>
+                                                            <li><a href="Banking.html">Banking</a><div class="desc">Reveille?s clients span every dimension of the Banking and financial services industry.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li id="last1"><a href="Partners.html"><span>Partners</span></a></li>
+                                        <li class="last-child">
+                                            <div id="sb-search" class="sb-search">
+                                                <form>
+                                                    <input id="search" class="sb-search-input" type="text" name="search" value="" placeholder="Enter your search term...">
+                                                    <input class="sb-search-submit" type="submit" value="">
+                                                    <span class="sb-icon-search"><i class="fa fa-search"></i></span>
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+                </nav>
+
+            </div>
+
+        </div>
+        <!--end of back-->
+
+        <div class="main">
+
+            <section class="page1">
+                <!--slider-->
+                <ul id="demo1">
+
+                    <li>
+                        <img src="images/01.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/002.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/003.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/004.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/001.jpg" />
+                    </li>
+                </ul>
+                <!--end of slider-->
+
+            </section>
+
+            <section class="page2">
+
+                <div class="outer">
+                    <div class="middle">
+                        <div class="inner">
+
+
+                            <div class="change2npage" style="margin-left: auto; margin-right: auto; max-width: 1170px;">
+                                <div class="Changerow">
+
+                                    <div class="ChangeColumn box1 animateblock centerright1" style="position:relative" >
+                                        <div style="" class="ChangeColumn ">
+                                            <div class="w-content">
+                                                Challenges of<br />
+                                                Big Data
+                                            </div>
+                                            <div class="wr-text">
+                                                Morbi suscipit interdum moestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus.
+                                et netus et  alesuada fames ac turpis egestas. Vivamus ut molestie nulla.
+                                            </div>
+                                        </div>                                                                              
+                                    </div>
+ 
+                                     <div style="background: #fff;" class="ChangeColumn">
+                                        <div class="animateblock top">
+                                        <div class="b1-title w-content no-bg">
+                                            Digitalize your<br />
+                                            Strategy
+                                        </div>
+                                        <p class="b1-text">Morbi suscipit interdum moestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus et netus et  alesuada fames ac turpis egestas. Vivamus ut molestie nulla.</p>
+                                            </div>
+                                    </div>
+
+                                    <div class="ChangeColumn ">
+                                        <div class="ChangeColumn box2 animateblock centerleft1" >
+                                            <table style="width: 100%">
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/img1_03.png" height="110" style="padding-top: 25px; display: block; margin-left: auto; margin-right: auto;" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="pattern">
+                                                            Meaningful<br />
+                                                            patterns analysis
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="change2npage" style="margin-left: auto; margin-right: auto; max-width: 1170px; margin-top: 0px;">
+                                <div class="Changerow">
+
+
+                                    <div id="kickstartCell" class="ChangeColumn" style="padding: initial; height: 100%; overflow: hidden;">
+
+                                        <div class="ChangeColumn box3 animateblock centerright1" style="padding: initial; height: 100%; overflow: hidden; ">
+
+                                            <table id="kickstartData" style="width: 100%; height: 100%">
+                                                <tr>
+                                                    <td style="width: 60%">
+                                                        <div class="w-content" style="padding: 25px; padding-top: 5px; padding-bottom: 5px;">
+                                                            Kickstart<br />
+                                                            Enterprise<br />
+                                                            Mobility
+                                                        </div>
+                                                        <div style="padding-left: 25px; padding-bottom: 5px">
+                                                            <img src="images/images/arrow.png" />
+                                                        </div>
+                                                    </td>
+                                                    <td class="img3" style="width: 40%; vertical-align: top;">
+
+                                                        <!--<img src="images/img3.jpg" style="height:auto;width:100%" />-->
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="ChangeColumnPower" id="imagepower">
+                                        <div class="animateblock  btm1">
+                                        <div class="ti-img">
+                                        </div>
+                                        <div class="patterns">
+                                            Power of<br />
+                                            Outsouring
+                                        </div>
+                                            </div>
+                                    </div>
+
+                                    <div id="CollabrateCell" class="ChangeColumncollabrate box4 animateblock centerleft" style="height: 100%; overflow: hidden;">
+
+
+
+                                        <table id="CollabrateCellData" style="width: 100%; height: 100%">
+
+                                            <tr>
+                                                <td style="width: 70%">
+                                                    <div class="w-content" style="padding: 25px; padding-top: 5px; padding-bottom: 5px;">
+                                                        Collaborating<br /> in the Cloud
+                                                    </div>
+                                                    <p class="wr-text" style="margin-right: 10px;">Morbi suscipit interdum moestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus et netus et  alesuadas. </p>
+                                                </td>
+                                                <td style="width: 30%; vertical-align: top; background-image: url(images/img4.png); background-size: cover"></td>
+                                            </tr>
+
+                                        </table>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <script>
+                    $(function () {
+
+                        var $CollabrateCellData = $('#CollabrateCellData');
+                        var $CollabrateCell = $('#imagepower');
+                        var $kickstartCell = $('#kickstartCell');
+
+
+                        var $window = $(window).on('resize', function () {
+
+                            $CollabrateCellData.height($CollabrateCell.height());
+                            $kickstartCell.height($CollabrateCell.height() + .5);
+
+                        }).trigger('resize'); //on page load
+                    });
+                </script>
+
+            </section>
+            
+            
+
+            <section class="page3" style="background: #2a3440 none repeat scroll 0 0;">
+
+                <div class="f-box" style="margin-left: auto; margin-right: auto; max-width: 1170px;">
+
+                    <div style="width: 100%; clear: both;">
+
+                        <div class="fboxColumn">
+
+                            <div class="f-heading">
+                                About&nbsp;Reveille
+                            </div>
+                            <div class="f-text font-r">
+                                Morbi suscipit interdum molestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamt interdum molestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus et netus  ut moles et netus et malesuadastie nulla. Morbi suscipit interdum molestie ac turpis egestas. Vivamus ut molestie nulla. Morbi suscipit interdum molestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ut molestie nulla. 
+                            </div>
+                            <div class="read"><a href="#">READ MORE </a></div>
+
+                        </div>
+
+                        <div class="fboxColumn" style="float: right;padding:-9px;">
+
+                            <div class="f-heading" style="text-align: left; padding: 0px; margin-bottom: -50px; margin-top: 23px">
+                                Careers
+                            </div>
+                            <div class="slider">
+                                <div class="f-tabico1">
+                                    <div class="f-arrow"><i class="fa  fa-lightbulb-o" style="font-size: 24px; color: #AAAAAA; position: relative; bottom: 46px; right: 11px;"></i></div>
+                                </div>
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li>
+
+                                            <div class="f-first">
+
+                                                <div style="padding-left: 25px">
+                                                    <div class="f-slidertext ">
+                                                        "Dot Net Tech Lead :
+                                                  
+                                                        Experience in C#, ASP.NET, MVC 3/4, WCF/Web Services, .NET 2.0/3.5/4.0"
+                                                   
+                                                        <a href="Careers.html">More...</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </li>
+                                        <li>
+
+
+                                            <div class="f-first">
+
+
+                                                <div style="padding-left: 25px">
+
+
+                                                    <div class="f-slidertext ">
+                                                        "Technical Lead - Sr.Developer :
+                                                   
+                                                        10+ YEARS OF EXPERIENCE
+                                          
+                                                        Technical Skills Required - ASP.NET, MVC, C#, SQL Server 2008, PL/SQL, Javascript, Jquery, AJAX"
+                                                     
+                                                        <a href="Careers.html">More...</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </li>
+                                        <li>
+
+
+                                            <div class="f-first">
+
+
+                                                <div style="padding-left: 25px">
+
+
+                                                    <div class="f-slidertext ">
+                                                        System Administrator :
+                                                    
+                                                        EMC Document Science(xPression), SOLIMAR"
+                                                     
+                                                        <a href="Careers.html">More...</a>
+                                                        </>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+
+                                            <div class="f-first">
+
+
+                                                <div style="padding-left: 25px">
+
+
+                                                    <div class="f-slidertext ">
+                                                        "Active Directory Engineer :
+                                                        
+                                                        Experience in IT infrastructure services (DNS, DHCP, WINS, DFS) and Windows Server 2012/2008
+                                                  
+                                                        <a href="Careers.html">More...</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="footer" style="clear: both;">
+
+                    <div style="clear: both; width: 100%; background: #212a33 none repeat scroll 0 0;" class="BottomPage">
+
+                        <div style="margin-left: auto; margin-right: auto; max-width: 1170px;">
+
+                            <div class="Tbox fboxColumn">
+
+                                <table style="width:100%">
+                                    <tr>
+                                        <td style="padding-right: 10px; padding: 5px;">
+                                            <a class="tweeticon" href="#1" data-index="1">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </td>
+
+                                        <td style="vertical-align: middle; padding-top: 30px; padding-bottom: 30px;">
+                                            <div class="check">Check out this great item</div>
+                                            <div class="ReveilleTweet">
+                                                <div class="tweet"></div>
+                                            </div>
+
+                                            <!--<div class="check">Check out this great item</div>
+                                            <div class="check-content">Embrace - Creative Corporate At vero eos et accusaff dfg mus et iusto odio dignissimos ducimus qui blaeem rerum facsentium vlorum fuga.</div>
+                                            <div class="check-content pull-left" style="color: #6c7885">http//tco/owmCXLYi9jhttp://t.com</div>
+                                            <br />
+                                            <div class="check-content" style="color: #3d5269">105 days ago </div>-->
+
+                                        </td>
+                                        <td style="padding-left: 5px;">
+
+                                            <div id="TweetForward" style="vertical-align: top; margin-top: 10px;"><a class="MoveButton" href="#"><i class="fa fa-chevron-up" style="font-size: 18px"></i></a></div>
+                                            <div id="TweetBackward" style="vertical-align: bottom;"><a class="MoveButton" href="#"><i class="fa fa-chevron-down" style="font-size: 18px"></i></a></div>
+
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+
+                            <div class="fboxColumn">
+
+                                <table class="SocialWebsites" style="padding-bottom: 30px;">
+                                    <tr>
+                                        <td colspan="4">
+
+                                            <span class="check">Connect With us </span>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+                                            <a class="SocialIcons soc-facebook" href="https://www.facebook.com/reveilletech" data-index="1">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a class="SocialIcons soc-google" href="https://plus.google.com/+ReveilletechnologiesReveilleInc" data-index="1">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a class="SocialIcons soc-twitter" href="https://twitter.com/reveilletech" data-index="1">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a class="SocialIcons soc-linkedin" href="https://www.linkedin.com/company/reveille-technologies-inc" data-index="1">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                        <div style="clear: both" class="line"></div>
+
+                        <div class="terms">
+                            <span style="white-space: nowrap">Terms and privacy policy under which this service is provided to you</span>
+                            <br />
+                            <span>Copyright &copy; 2015 Reveille Technologies.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+        <!--main-->
+
+
+    </div>
+    <!--wrapper-->
+
+    <script src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+	$(document).ready(function() {
+    
+        $(".sb-icon-search").click(function () {
+            $('.sb-search').addClass('sb-search-open').css({
+				width: '200px',
+			});
+			$('.sb-search-input').css({
+				width: '100%',
+			});
+			$('.last-child ').animate({
+				width: '200px',
+			});
+        });
+	});
+    </script>
+
+    <script type="text/javascript">
+        $('.ReveilleTweet .tweet').twittie({
+            username: 'reveilletech',
+            list: 'c-oo-l-e-s-t-nerds-i-know',
+            dateFormat: '%b. %d, %Y',
+            template: '<strong class="date">{{date}}</strong> - {{screen_name}} {{tweet}}',
+            count: 10
+        }, function () {
+            setInterval(function () {
+                var item = $('.ReveilleTweet .tweet ul').find('li:first');
+                item.animate({ margintop: '-220px', 'opacity': '0' }, 500, function () {
+                    $(this).detach().appendTo('.ReveilleTweet .tweet ul').removeAttr('style');
+                });
+            }, 5000);
+        });
+
+        $('#TweetForward').click(function (e) {
+            var item1 = $('.ReveilleTweet .tweet ul').find('li:first');
+
+            item1.animate({ margintop: '-220px', 'opacity': '0' }, 500, function () {
+                $(this).detach().appendTo('.ReveilleTweet .tweet ul').removeAttr('style');
+            });
+        });
+
+        $('#TweetBackward').click(function (e) {
+            var item1 = $('.ReveilleTweet .tweet ul').find('li:last');
+
+            item1.animate({ marginbottom: '-220px', 'opacity': '0' }, 500, function () {
+                $(this).detach().prependTo('.ReveilleTweet .tweet ul').removeAttr('style');
+            });
+        });
+
+       
+
+    </script>
+
+</body>
+</html>

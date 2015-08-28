@@ -1,0 +1,162 @@
+/* animated elements */
+
+.animateblock {
+    opacity: 0;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.animateblock.animated {
+    opacity: 1;
+}
+/* animation transition styles */
+
+.animateblock.left {
+    margin-left: -12%;
+}
+.animateblock.left.animated {
+    margin-left: 12%;
+}
+.animateblock.right {
+    display: block;
+   /* margin-left: 100%;*/
+}
+.animateblock.right.animated {
+    margin-left: 70%;
+}
+.animateblock.top {
+    display: block;
+    width: auto;
+    margin-top: -25px;
+}
+.animateblock.top.animated {
+    margin-top: 0px;
+}
+.animateblock.btm1 {
+    display: block;
+    width: auto;
+    /*margin-top: 25px;*/
+	transform: scale(0.5,0.5)
+}
+.animateblock.btm1.animated {
+    margin-top: 0;
+	transform: scale(1,1)
+}
+.animateblock.btm {
+    display: block;
+    width: auto;
+    margin-top: 20px;
+	transform: scale(0.9,0.9)
+}
+.animateblock.btm.animated {
+    margin-top: 20px;
+	transform: scale(1,1)
+}
+.animateblock.centerleft1 {
+    display: block;
+    width: auto;
+	transform: scale(0.3,0.3)
+}
+.animateblock.centerleft1.animated {
+    margin-right: 0;
+    margin-left:0;
+	transform: scale(1,1)
+}
+.animateblock.centerleft {
+    display: block;
+    width: auto;
+	transform: scale(0.8,0.8)
+}
+.animateblock.centerleft.animated {
+    margin-right: 0;
+    margin-left:0;
+	transform: scale(1,1)
+}
+.animateblock.centerright {
+    display: block;
+    width: auto;
+	transform: scale(0.8,0.8)
+}
+.animateblock.centerright.animated {
+    margin-left: 0;
+     margin-right:0;
+	 transform: scale(1,1)
+}
+.animateblock.centerright1 {
+    display: block;
+    width: auto;
+	transform: scale(0.5,0.5)
+}
+.animateblock.centerright1.animated {
+    margin-left: 0;
+     margin-right:0;
+	 transform: scale(1,1)
+}
+.animateblock.center {
+    margin-left: 2%;
+}
+.animateblock.center.animated {
+    margin-left: 42%;
+}
+.animateblock.size {
+    display: block;
+    width: 10%;
+}
+.animateblock.size.animated {
+    width: 100%;
+    height: 100%;
+}
+.animateblock.size img {
+    max-width: 100%;
+}
+
+
+
+
+.sb-icon-search .fa:hover {
+	color: #000;
+}
+
+#TweetBackward {
+	margin: 5px 0 0;
+}
+/*Tiles*/
+.Changerow .ChangeColumn.box1 {
+	width: 385px;
+	height: 285px;
+	overflow: hidden;
+	background: #3f91d1;
+}
+.Changerow .ChangeColumn.box2 {
+	width: 390px;
+	height: 285px;
+	overflow: hidden;
+	background: #3f91d1;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.Changerow .ChangeColumn.box3 {
+	background: #3f91d1;
+}
+.Changerow .ChangeColumncollabrate.box4{
+	background: #3f91d1;
+}
+.Changerow .ChangeColumn.box1:hover, .Changerow .ChangeColumn.box2:hover, .Changerow .ChangeColumn.box3:hover, .Changerow .ChangeColumncollabrate.box4:hover {
+	background: #454545
+}
+.no-bg {
+	font-family: 'MyriadProLight';
+    font-size: 50px;
+	line-height: 50px;
+    white-space: nowrap;
+    text-align: left;
+    color: #323232;
+    padding: 17px;
+}
+.img3 {
+	 background-image: url(../images/img3.png); 
+	 background-size: cover;
+	 transition: 0.5s all;
+}

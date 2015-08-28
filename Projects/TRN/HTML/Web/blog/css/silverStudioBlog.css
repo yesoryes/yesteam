@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	padding:0px;
+	margin:0px;
+}
+img {
+	margin:0px;
+	border:0px;
+}
+ul {
+	list-style:none;
+}
+a {
+	color:#b7b7b7;
+	text-decoration:underline;
+}
+a:hover {
+	color:#b7b7b7;
+	text-decoration:none;
+}
+.sSBlogBut {
+	background:url(../images/sSBButBg.gif) scroll left center;
+	border:1px solid #dc6b00;
+	cursor:pointer;
+	color:#000000;
+	font-weight:bold;
+	padding:5px;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(../images/sSBlogBodyBg.gif) scroll left top repeat-x #000000;
+	color:#b7b7b7;
+	font-size:12px;
+}
+p {
+	line-height:18px;
+	padding:0px 0px 10px 0px;
+}
+.sSBlogWrapper {
+	width:900px;
+	margin:0px auto;
+}
+.sSBlogRoot {
+	width:900px;
+	float:left;
+}
+.sSBHeader {
+	background:url(../images/sSBHeaderBg.jpg) scroll left top no-repeat;
+	float:left;
+	width:900px;
+	height:143px;
+}
+.sSBHeader img.sSBLogo {
+	float:left;
+	margin:25px 0px 0px 20px;
+}
+.sSBHeaderR {
+	float:right;
+	width:175px;
+}
+.sSBHeaderT {
+	width:100%;
+	float:left;
+	padding:6px 0px 0px 0px;
+}
+.sSBHeaderT label, .sSBHeaderT img, .sSBHeaderB {
+	float:left;
+}
+.sSBHeaderT img {
+	margin:0px 2px 0px 0px;
+}
+.sSBHeaderT label {
+	font-weight:bold;
+	line-height:18px;
+	padding:0px 5px 0px 0px;
+}
+.sSBHeaderB ul {
+	padding:65px 0px 0px 0px;
+}
+.sSBHeaderB ul li {
+	list-style:none;
+	font-size:11px;
+	line-height:20px;
+	background:url(../images/sSBHListBulletBg.gif) scroll left center no-repeat;
+	padding:0px 0px 0px 10px;
+}
+.sSBHeaderB ul li a {
+	text-decoration:none;
+}
+.sSBHeaderB ul li a:hover {
+	text-decoration:underline;
+}
+.sSBlogContent {
+	width:860px;
+	float:left;
+	padding:30px 20px;
+	background:url(../images/sSBContTopBg.gif) scroll center top no-repeat #000000;
+}
+.sSBAccordCont, .sSBAccordRow {
+	width:860px;
+	float:left;
+}
+.sSBACHead {
+	float:left;
+	background:url(../images/sSBAccordHeadBg.gif) scroll left top no-repeat;
+}
+.sSBACHead h1 {
+	font-size:24px;
+	padding:0px 20px 0px 50px;
+}
+.sSBHSelect, .sSBHSelect a, .sSBHSelect a:hover {
+	color:#ce7801 !important;
+}
+.sSBACHead a {
+	display:block;
+	width:820px;
+	background:url(../images/blogHeadArrow.gif) scroll 20px center no-repeat;
+	outline:0px;
+	text-decoration:none;
+	line-height:66px;
+	font-size:24px;
+	color:#797979;
+	height:67px;
+	cursor:pointer;
+	padding:0px 20px;
+}
+.sSBACHead a:hover {
+	color:#666666;
+	text-decoration:none;
+}
+.sSBACIn {
+	width:820px;
+	padding:20px;
+	float:left;
+}
+.sSBACIn img {
+	float:right;
+	margin:15px;
+}
+.sSBFooter {
+	background:url(../images/sSBFooterBg.gif) scroll left top no-repeat;
+	width:860px;
+	float:left;
+	color:#797979;
+	font-size:12px;
+	padding:40px 20px;
+}
+.sSBAComm {
+	width:100%;
+	float:left;
+	border-top:1px dotted #303030;
+	padding:10px 0px;
+}
+.sSBACTop span {
+	float:right;
+}
+.sSBACTop ul {
+	float:left;
+}
+.sSBACTop ul li {
+	display:inline;
+	padding:0px 2px 0px 0px;
+}
+.sSBACTop {
+	float:left;
+	width:100%;
+}
+.sSBFooter label {
+	float:left;
+}
+.sSBACForm {
+	width:100%;
+	float:left;
+	padding:20px 0px 0px 0px;
+}
+.sSBACFRow {
+	width:100%;
+	float:left;
+	padding:10px;
+}
+.sSBACFRow input.sSBlogBut {
+	float:left;
+	margin:0px 10px 0px 0px;
+}
+.sSBACFRow label {
+	float:left;
+	line-height:40px;
+	text-align:left;
+	width:10%;
+}
+.sSBACFRow input.textBox, .sSBACFRow textarea {
+	float:left;
+	padding:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	width:400px;
+	background:#111111;
+	color:#797979;
+	border:1px solid #303030;
+}
+.sSBFooter ul {
+	float:right;
+}
+.sSBFooter ul li {
+	display:inline;
+	padding:0px 3px 0px 0px;
+	text-transform:uppercase;
+}
+.sSBFooter ul li a {
+	text-decoration:none;
+	color:#797979;
+}
+.sSBFooter ul li a:hover {
+	text-decoration:underline;
+	color:#797979;
+}

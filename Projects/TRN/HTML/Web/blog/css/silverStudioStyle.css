@@ -1,0 +1,491 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	padding:0px;
+	margin:0px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+.del a, .del a:hover {
+	color:#ff0000;
+}
+ol, ul {
+	list-style: none;
+}
+ol li, ul li {
+	line-height:17px;
+	padding:0px 0px 5px 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#89ab20;
+	padding:10px 0px 10px 0px;
+}
+p {
+	line-height:16px;
+	padding:0px 0px 10px 0px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+h1.whySilverStudio {
+	background:url(../images/headingTxt.gif) scroll -5px -54px no-repeat;
+	height:25px;
+	margin:10px 0px;
+	padding:0px;
+	text-indent:-99999999px;
+}
+h1.aboutUs {
+	background:url(../images/headingTxt.gif) scroll -5px -6px no-repeat;
+	height:25px;
+	padding:0px;
+	margin:10px 0px;
+	text-indent:-99999999px;
+}
+h1.getInTouch {
+	background:url(../images/headingTxt.gif) scroll -5px -103px no-repeat;
+	height:25px;
+	margin:10px 0px;
+	padding:0px;
+	text-indent:-99999999px;
+}
+h1.studioFac {
+	background:url(../images/headingTxt.gif) scroll -5px -321px no-repeat;
+	height:25px;
+	margin:10px 0px;
+	padding:0px;
+	text-indent:-99999999px;
+}
+h1.studioSpace {
+	background:url(../images/headingTxt.gif) scroll -5px -190px no-repeat;
+	height:18px;
+	margin:15px 0px 10px 0px;
+	padding:0px;
+	text-indent:-99999999px;
+}
+h1.studioEquip {
+	background:url(../images/headingTxt.gif) scroll -5px -234px no-repeat;
+	height:18px;
+	margin:15px 0px 10px 0px;
+	padding:0px;
+	text-indent:-99999999px;
+}
+h1.staff {
+	background:url(../images/headingTxt.gif) scroll -5px -278px no-repeat;
+	height:18px;
+	margin:15px 0px 10px 0px;
+	padding:0px;
+	text-indent:-99999999px;
+}
+.moreButtons {
+	float:right;
+}
+.moreButtons a {
+	background:url(../images/buttonsBgs.gif) scroll left top no-repeat;
+	width:54px;
+	height:26px;
+	display:block;
+	cursor:pointer;
+}
+.moreButtons a:hover {
+	background:url(../images/buttonsBgs.gif) scroll left -26px no-repeat;
+}
+.submitBut {
+	float:left;
+}
+.submitBut a {
+	background:url(../images/buttonsBgs.gif) scroll left -62px no-repeat;
+	width:54px;
+	height:26px;
+	display:block;
+	cursor:pointer;
+}
+.submitBut a:hover {
+	background:url(../images/buttonsBgs.gif) scroll left -88px no-repeat;
+}
+/* main menu */
+#container {
+	position: relative;
+	width:100%;
+}
+#navigation {
+	position:absolute;
+	width: inherit;
+	top: 0;
+	right: 0;
+	margin: 0;
+}
+#navigation li {
+	background:url(../images/sSMainMenuBg.gif);
+	float:left;
+	list-style-type: none;
+	width:70px;
+	padding:0px;
+	margin:0px;
+}
+#navigation li a {
+	color: #FFFFFF;
+	display:block;
+	cursor:pointer;
+}
+#navigation li#home {
+	background-position:left top;
+}
+#navigation li#home:hover {
+	background-position:left -88px;
+}
+#navigation li#aboutus {
+	background-image:url('images/leftfight.GIF');
+}
+#navigation li#buy {
+	background-image:url('images/rightfight.GIF');
+}
+#navigation li#idea {
+	background-image:url('images/ideas.png');
+}
+/* main menu */
+body {
+	background:url(../images/studioBodyBg.jpg) scroll left top repeat-x #fafafa;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#292929;
+}
+.noBg {
+	background:none !important;
+}
+.btnStandard {
+	/*background:url(../images/butLookLikeBg.gif) scroll left top repeat-x;*/
+	border:0px;
+	cursor:pointer;
+	display:block;
+	padding:5px 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#ffffff;
+	/*border-top:1px solid #c1c1c1;
+	border-bottom:1px solid #c1c1c1;*/
+	background:#89ab20;
+}
+.errorMessage {
+	color:#ff0000;
+}
+.txtStandard {
+	background:url(../images/textBoxBg.gif) scroll left top repeat-x;
+	padding:3px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	border:1px solid #d0d0d0;
+}
+.sSButLike input {
+	float:left;
+}
+.txtAreaStandard {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:url(../images/textBoxBg.gif) scroll left top repeat-x;
+	padding:3px;
+	border:1px solid #d0d0d0;
+}
+.sSButLike {
+	display:block;
+	cursor:pointer;
+}
+.sSButLike span {
+	background-image:url(../images/buttonStyle1.gif);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+}
+.sSButLike span.sSBLLeft {
+	width:5px;
+	background-position:left top;
+	float:left;
+	height:28px;
+}
+.sSButLike a, .sSButLike a:hover {
+	/*background:url(../images/butLookLikeBg.gif) scroll left top repeat-x;*/
+	background:#89ab20;
+	line-height:28px;
+	font-weight:bold;
+	text-decoration:none;
+	float:left;
+	padding:0px 5px;
+	color:#ffffff;/*border-top:1px solid #c1c1c1;
+	border-bottom:1px solid #c1c1c1;*/
+}
+.sSButLike span.sSBLRight {
+	width:5px;
+	background-position:right top;
+	float:left;
+	height:28px;
+}
+.sSWrapper {
+	width:980px;
+	margin:0px auto;
+}
+.sSRoot {
+	width:980px;
+	float:left;
+}
+.sSHeader {
+	width:980px;
+	float:left;
+	padding:0px 0px 20px 0px;
+}
+.sSHeader img {
+	border:0px;
+	margin:0px;
+	float:left;
+}
+.sSMainMenu {
+	/*background:url(../images/menuBg.gif) scroll left top no-repeat;*/
+	width:657px;
+	height:121px;
+	float:left;
+}
+.sSHomeCont {
+	background:url(../images/homePageBg.gif) scroll left 207px no-repeat;
+	width:940px;
+	float:left;
+	padding:0px 20px;
+}
+.sSMainMenuIn {
+	height:88px;
+	width:526px;
+	float:right;
+}
+.sSMainMenuIn ul {
+}
+.sSMainMenuIn ul li {
+	list-style:none;
+	padding:0px;
+	float:left;
+	text-indent:-9999999px;
+	margin:0px;
+}
+.sSMainMenuIn ul li a, .sSMainMenuIn ul li a:hover {
+	background-image:url(../images/sSMainMenuBg.gif);
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+	height:88px;
+	display:block;
+}
+.sSMainMenuIn ul li.home a {
+	background-position:left top;
+	width:111px;
+}
+.sSMainMenuIn ul li.home a:hover {
+	background-position:left -88px;
+	width:111px;
+}
+.sSMainMenuIn ul li.homeActive a, .sSMainMenuIn ul li.homeActive a:hover {
+	background-position:left -88px;
+	width:111px;
+}
+.sSMainMenuIn ul li.aboutus a {
+	background-position:-111px top;
+	width:140px;
+}
+.sSMainMenuIn ul li.aboutus a:hover {
+	background-position:-111px -88px;
+	width:140px;
+}
+.sSMainMenuIn ul li.asActive a, .sSMainMenuIn ul li.asActive a:hover {
+	background-position:-111px -88px;
+	width:140px;
+}
+.sSMainMenuIn ul li.studioFacilities a {
+	background-position:-251px top;
+	width:154px;
+}
+.sSMainMenuIn ul li.studioFacilities a:hover {
+	background-position:-251px -88px;
+	width:154px;
+}
+.sSMainMenuIn ul li.sFActive a, .sSMainMenuIn ul li.sFActive a:hover {
+	background-position:-251px -88px;
+	width:154px;
+}
+.sSMainMenuIn ul li.getInTouch a {
+	background-position:-405px top;
+	width:120px;
+}
+.sSMainMenuIn ul li.getInTouch a:hover {
+	background-position:-405px -88px;
+	width:120px;
+}
+.sSMainMenuIn ul li.gIActive a, .sSMainMenuIn ul li.gIActive a:hover {
+	background-position:-405px -88px;
+	width:120px;
+}
+.sSHomeCont code {
+	color:#7ca303;
+}
+.sSHomeCL {
+	width:350px;
+	float:left;
+}
+.sSInnerCL {
+	width:500px;
+	float:left;
+}
+.sSContLTop {
+	width:100%;
+	float:left;
+	height:421px;
+}
+.sSContLTop div.sSButLike {
+	float:right;
+}
+.sSHomeCL ul {
+}
+.sSHomeCL ul li {
+	background:url(../images/bulletList.gif) scroll left 3px no-repeat;
+}
+.sSHomeCR {
+	width:590px;
+	float:right;
+}
+.sSHomeCR object {
+	margin:-50px 0px 0px 0px;
+}
+.sSInnnerCR {
+	width:440px;
+	float:right;
+}
+.contactBox {
+	float:left;
+	padding:0px 0px 0px 0px;
+}
+.contactBox a, .contactBox a:hover {
+	width:324px;
+	height:99px;
+	display:block;
+	cursor:pointer;
+	background:url(../images/contactBotBox.jpg) scroll 47px top no-repeat;
+}
+.sSFooter {
+	width:980px;
+	padding:0px 0px 50px 0px;
+	float:left;
+	height:120px;
+	background:url(../images/footerBg.jpg) scroll left top no-repeat;
+}
+.sSFooter ul {
+	float:right;
+	padding:70px 20px 0px 0px;
+}
+.sSFooter ul li {
+	display:inline;
+}
+.aboutUsImg {
+	height:500px;
+	width:405px;
+	background:url(../images/aboutUsRightBg.jpg) scroll left 79px no-repeat;
+}
+.sSFacilities {
+	background:url(../images/silverStudioFacilities.gif) scroll center 20px no-repeat;
+	padding:150px 0px 0px 0px;
+}
+.sSContactUs {
+	height:510px;
+	background:url(../images/contactRightImg.gif) scroll left 46px no-repeat;
+}
+.sSContactUs div.contactForm {
+	padding:117px 0px 0px 215px;
+}
+.contactForm span.errorMessage {
+	clear:left;
+	display:block;
+	padding:10px 0px;
+}
+.contactForm input.txtStandard {
+	width:200px;
+	margin:0px 0px 7px 0px;
+}
+.contactForm textarea {
+	width:200px;
+	margin:0px 0px 7px 0px;
+}
+.aboutUsImg ul {
+	padding:387px 0px 0px 200px;
+}
+.aboutUsImg ul li {
+	list-style:none;
+	background:none;
+	padding:0px;
+	float:left;
+	margin:0px 3px 0px 0px;
+}
+.aboutUsImg ul li a, .aboutUsImg ul li a:hover {
+	display:block;
+	cursor:pointer;/*background-image:url(../images/aboutUsRightBg.jpg);
+	background-attachment:scroll;
+	background-repeat:no-repeat;*/	
+}
+.aboutUsImg ul li.photographerSite a {
+	width:67px;
+	height:31px;
+}
+.aboutUsImg ul li.photographerSite a:hover {
+	background:url(../images/aboutUsHover.jpg) scroll left top no-repeat;
+	width:67px;
+	height:31px;
+}
+.aboutUsImg ul li.photographerBlog a {
+	background-position:-186px -326px;
+	margin:5px 0px 0px 0px;
+	width:43px;
+	height:31px;
+}
+.aboutUsImg ul li.photographerBlog a:hover {
+	background:url(../images/aboutUsHover.jpg) scroll -70px -5px no-repeat;
+	margin:5px 0px 0px 0px;
+	width:43px;
+	height:31px;
+}
+.ownWebsiteLink {
+	float:left;
+	width:340px;
+	padding:0px 0px 0px 24px;
+}
+.ownWebsiteLink a {
+	background:url(../images/footerBotLink.jpg) scroll left top no-repeat;
+	width:317px;
+	height:134px;
+	display:block;
+	cursor:pointer;
+}
+.ownWebsiteLink a:hover {
+	background:url(../images/footerBotLink.jpg) scroll left -134px no-repeat
+}
+.sSLocationMap {
+	float:left;
+	width:100%;
+}
+h2.sSLocMap {
+	background:url(../images/headingTxt.gif) scroll -5px -152px no-repeat;
+	height:18px;
+	margin:15px 0px 0px 0px;
+	padding:0px 0px 10px 0px;
+	text-indent:-999999px;
+}
+.sSLocLiveMap {
+	width:400px;
+	border:2px solid #c1c1c1;
+	height:270px;
+	float:left;
+}
+.sSLocLiveMap small {
+	display:none;
+}

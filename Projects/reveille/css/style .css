@@ -1,0 +1,545 @@
+@font-face {
+    font-family: 'MyriadProSemibold';
+    src: url('../fonts/myriadpro-semibold.eot');
+    src: url('../fonts/myriadpro-semibold.eot') format('embedded-opentype'), url('../fonts/myriadpro-semibold.woff') format('woff'), url('../fonts/myriadpro-semibold.ttf') format('truetype'), url('../fonts/myriadpro-semibold.svg#MyriadProSemibold') format('svg');
+}
+@font-face {
+    font-family: MyriadPro-Cond;
+    src: url('../fonts/myriadpro-cond.eot');
+    src: url('../fonts/myriadpro-cond.eot'), url('../fonts/MyriadPro-Cond.otf') format('opentype'), url('../fonts/myriadpro-cond.ttf') format('truetype'), url('../fonts/myriadpro-cond.woff');
+}
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url("../fonts/myriadpro-bold.eot");
+  src: url("../fonts/myriadpro-regular.eot") format("embedded-opentype"), url("../fonts/myriadpro-regular.woff2") format("woff2"), url("../fonts/myriadpro-regular.woff") format("woff"), url("../fonts/myriadpro-regular.ttf") format("truetype"), url("../fonts/myriadpro-regular.svg#MyriadProRegular") format("svg"); }
+@font-face {
+  font-family: 'MyriadProBold';
+  src: url("../fonts/myriadpro-bold.eot");
+  src: url("../fonts/myriadpro-bold.eot") format("embedded-opentype"), url("../fonts/myriadpro-bold.woff2") format("woff2"), url("../fonts/myriadpro-bold.woff") format("woff"), url("../fonts/myriadpro-bold.ttf") format("truetype"), url("../fonts/myriadpro-bold.svg#MyriadProBold") format("svg"); }
+@font-face {
+  font-family: 'MyriadProLight';
+  src: url("../fonts/myriadpro-light.eot");
+  src: url("../fonts/myriadpro-light.eot") format("embedded-opentype"), url("../fonts/myriadpro-light.woff2") format("woff2"), url("../fonts/myriadpro-light.woff") format("woff"), url("../fonts/myriadpro-light.ttf") format("truetype"), url("../fonts/myriadpro-light.svg#MyriadProLight") format("svg"); }
+@font-face {
+  font-family: 'MyriadPro-SemiboldCond';
+  src: url("../fonts/myriadpro-SemiboldCond.eot");
+  src: url("../fonts/myriadpro-SemiboldCond.eot") format("embedded-opentype"), url("../fonts/myriadpro-SemiboldCond.woff") format("woff"), url("../fonts/myriadpro-SemiboldCond.ttf") format("truetype"), url("../fonts/myriadpro-SemiboldCond.svg#MyriadPro-SemiboldCond") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'TrebuchetMS';
+  src: url("../fonts/TrebuchetMS.eot");
+  src: url("../fonts/TrebuchetMS.eot") format("embedded-opentype"), url("../fonts/TrebuchetMS.woff") format("woff"), url("../fonts/TrebuchetMS.ttf") format("truetype"), url("../fonts/TrebuchetMS.svg#TrebuchetMS") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadProLightCondensed';
+  src: url("../fonts/myriadpro-lightcond.eot");
+  src: url("../fonts/myriadpro-lightcond.eot") format("embedded-opentype"), url("../fonts/myriadpro-lightcond.woff2") format("woff2"), url("../fonts/myriadpro-lightcond.woff") format("woff"), url("../fonts/myriadpro-lightcond.ttf") format("truetype"), url("../fonts/myriadpro-lightcond.svg#MyriadProLightCondensed") format("svg"); }
+@font-face {
+  font-family: 'MyriadProCondensed';
+  src: url("../fonts/myriadpro-cond.eot");
+  src: url("../fonts/myriadpro-cond.eot") format("embedded-opentype"), url("../fonts/myriadpro-cond.woff2") format("woff2"), url("../fonts/myriadpro-cond.woff") format("woff"), url("../fonts/myriadpro-cond.ttf") format("truetype"), url("../fonts/myriadpro-cond.svg#MyriadProCondensed") format("svg"); }
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Roman';
+  src: url("../fonts/HelveticaNeueLTStd-Roman.eot");
+  src: url("../fonts/HelveticaNeueLTStd-Roman.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueLTStd-Roman.woff") format("woff"), url("../fonts/HelveticaNeueLTStd-Roman.ttf") format("truetype"), url("../fonts/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Calibri-Regular';
+  src: url("../fonts/Calibri_gdi.eot");
+  src: url("../fonts/Calibri_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Calibri_gdi.woff") format("woff"), url("../fonts/Calibri_gdi.ttf") format("truetype"), url("../fonts/Calibri_gdi.otf") format("opentype"), url("../fonts/Calibri_gdi.svg#Calibri-Regular") format("svg"); }
+
+
+.sb-search-input {
+	font-family: 'MyriadProRegular';
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+}
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 87.5%;
+}
+.logo {
+    height: 70px;
+    float: left;
+    margin-top: -26px;
+}
+.w-content {
+    font-family: 'MyriadProLight';
+    font-size: 55px;
+	line-height: 51px;
+    color: #fff;
+    padding: 25px;
+    text-align: left;
+}
+.wr-text {
+    font-family: 'MyriadProRegular';
+    font-size: 15px;
+    color: #fff;
+    padding: 0px 25px 25px;
+    text-align: justify;
+}
+.b1-title {
+    font-family: 'MyriadProLight';
+    font-size: 40px;
+    white-space: nowrap;
+    text-align: center;
+    color: #323232;
+    padding: 17px;
+}
+.b1-text {
+    font-family: 'MyriadProRegular';
+    font-size: 15px;
+    color: #323232;
+    padding: 0px 25px;
+    text-align: justify;
+}
+#m-left {
+    margin-left: 215px;
+    background: url(../images/blue2_09.jpg) repeat-x;
+}
+.t-img {
+    height: 103px;
+    background: url(../images/img1_03.png) no-repeat center;
+    margin: 18px 0px;
+}
+.ti-img {
+    background: url(../images/img2_07.png) no-repeat center;
+    height: 131px;
+}
+.pattern {
+    font-family: 'MyriadProLight';
+    font-size: 44px;
+	line-height: 44px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.patterns {
+    font-family: 'MyriadProLight';
+    font-size: 32px;
+	line-height: 30px;
+    color: #fff;
+    padding-top: 5px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.f-box {
+    width: 100%;
+    height: auto;
+    background: #2a3440;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9px;
+   /* margin-top: 80px;*/
+	margin-top: 13%;
+}
+.check {
+    font-size: 14px;
+    color: #fff;
+    /*padding-top:60px;
+  margin-top: 50px;*/
+    
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+.check-content {
+    font-size: 12px;
+    color: #848B93;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: inherit;
+}
+.f-about {
+    font-family: 'MyriadPro-Cond', Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: 100;
+}
+.f-heading {
+    font-family: myriad-pro, myriad-pro-n4, myriad-pro, Myriad Pro, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    color: #ffffff;
+    padding: 25px 22px 15px 0px;
+}
+.f-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #949aa1;
+    padding: 0px 0px 20px;
+    margin-left: 0px;
+    text-align: justify;
+}
+.read {
+    border: 1px solid #222d39;
+    background: rgba(211, 32, 32, 0.80);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #e9ecf0;
+    text-align: center;
+    text-decoration: none;
+    width: 121px;
+    height: 32px;
+    padding: 8px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+    -o-transition: .7s;
+    -ms-transition: .7s;
+    -moz-transition: .7s;
+    -webkit-transition: .7s;
+}
+.read:hover {
+    cursor: pointer;
+    background: rgba(211, 32, 32, 1);
+}
+.f-first {
+    width: 100%;
+    background: rgba(33, 42, 51, 0.55);
+    padding-top: 20px;
+    height: 150px;
+}
+.f-tabico1 {
+    width: 36px;
+    height: 46px;
+    border: 1px solid transparent;
+    position: relative;
+    top: 65px;
+    right: 21px;
+    z-index: 100;
+    background: rgba(33, 42, 51, 1);
+}
+@media (max-width: 767px) {
+    .f-tabico1 {
+        display: none;
+    }
+    .f-heading {
+        margin-bottom: initial !important;
+    }
+}
+.f-arrow {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #AAAAAA;
+    top: 104%;
+    left: 0;
+    position: relative;
+}
+.f-slidertext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #AAAAAA;
+    padding: 20px 28px;
+    margin-left: 0px;
+    text-align: justify;
+}
+.f-left {
+    font-family: myriad-pro, myriad-pro-n4, myriad-pro, Myriad Pro, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    width: 116px;
+    height: 32px;
+    margin-bottom: 20px;
+    line-height: 31px;
+    margin-left: 164px;
+    background: #2a3440;
+    margin-top: -16px;
+    border: 1px solid #cccccc;
+    display: none
+}
+.f-message {
+    font-family: myriad-pro, myriad-pro-n4, myriad-pro, Myriad Pro, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.f-text1 {
+    font-family: myriad-pro, myriad-pro-n4, myriad-pro, Myriad Pro, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #949aa1;
+}
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    
+    font-family: 'MyriadPro-Cond', Helvetica, sans-serif;
+    color: #c1c1c1;
+}
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    
+    color: #c1c1c1;
+    font-family: 'MyriadPro-Cond', Helvetica, sans-serif;
+    opacity: 1;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    
+    color: #c1c1c1;
+    opacity: 1;
+    font-family: 'MyriadPro-Cond', Helvetica, sans-serif;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    
+    color: #c1c1c1;
+    font-family: 'MyriadPro-Cond', Helvetica, sans-serif;
+}
+.footer {
+    width: 100%;
+    /*height:100%;
+	background:#212a33;*/
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+}
+.left {
+    height: 200px;
+    padding: 57px;
+    margin-top: 57px;
+    float: left;
+}
+.line {
+    background: url(../images/images/b-line.jpg) repeat-x;
+    width: 100%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -32px;
+}
+.arrows-up {
+    float: right;
+    position: relative;
+    top: -100px;
+    left: 85px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #D32020;
+    background: #D32020;
+    text-align: center;
+    width: 31px;
+    height: 32px;
+}
+.arrows-down {
+    float: right;
+    position: relative;
+    top: -28px;
+    left: 53px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #D32020;
+    background: #D32020;
+    width: 31px;
+    height: 32px;
+}
+.connect {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #abbcc6;
+}
+.terms {
+    font-size: 9.5px;
+    color: #596778;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+    padding: 10px 0 30px;
+    position: relative;
+}
+<!--top menu--> .menu1 {
+    width: auto;
+    float: right;
+}
+.menu1 ul {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    float: right;
+    position: relative;
+    left: 8px;
+    text-transform: capitalize;
+}
+.menu1 ul li {
+    float: left;
+    list-style: none;
+    /*border-right:1px solid #ccc;*/
+    
+    background: rgba(0, 0, 0, 0) url("../images/sep_03.jpg") no-repeat scroll right center;
+    display: block;
+    line-height: 1;
+}
+.menu1 ul li:last-child {
+    background: none;
+}
+.menu1 ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: #aaa;
+    padding: 0px 10px 0px 10px;
+}
+.menu1 ul li a:hover {
+    color: #fff;
+}
+.menu1 ul li:hover a span {
+    border-bottom: 1px solid #D32020;
+}
+#active1 {
+    border-bottom: 1px solid #D32020;
+}
+#last {
+    border-right: none;
+}
+a {
+    -o-transition: .7s;
+    -ms-transition: .7s;
+    -moz-transition: .7s;
+    -webkit-transition: .7s;
+}
+.soc-twitter:hover {
+    background-color: #4da7de;
+    border: 1px solid #4da7de !important;
+    color: #fff !important;
+}
+.soc-facebook:hover {
+    background-color: #3e5b98;
+    border: 1px solid #3e5b98 !important;
+    color: #fff !important;
+}
+.soc-google:hover {
+    background-color: #d93e2d;
+    border: 1px solid #d93e2d !important;
+    color: #fff !important;
+}
+.soc-linkedin:hover {
+    background-color: #3371b7;
+    border: 1px solid #3371b7 !important;
+    color: #fff !important;
+}
+.ReveilleTweet ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ReveilleTweet a {
+    color: #76949F;
+    text-decoration: none;
+}
+.ReveilleTweet a:hover {
+    text-decoration: underline;
+}
+.ReveilleTweet {
+    width: 490px;
+    background: #212a33;
+    color: #949aa1;
+}
+.ReveilleTweet .tweet {
+    overflow: hidden;
+}
+.ReveilleTweet ul {
+    width: 99999px;
+}
+.ReveilleTweet ul li {
+    width: 490px;
+    float: left;
+}
+.MoveButton {
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    color: #ffffff;
+    background-color: none;
+    background: #2a3440 none repeat scroll 0 0;
+}
+.MoveButton:hover {
+    background: #5a6470 none repeat scroll 0 0;
+}
+.tweeticon {
+    position: relative;
+    z-index: 999;
+    color: #4da7de;
+    font-size: 50px;
+    font-family: cursive;
+}
+.tweeticon:hover {
+    color: #4da7de;
+}
+@media (max-width: 960px) and (min-width: 767px) {
+    .ReveilleTweet {
+        width: 290px;
+        background: #212a33;
+        color: #949aa1;
+    }
+    .ReveilleTweet ul li {
+        width: 290px;
+        float: left;
+    }
+}
+@media (max-width: 650px) {
+    .ReveilleTweet {
+        width: 290px;
+        background: #212a33;
+        color: #949aa1;
+    }
+    .ReveilleTweet ul li {
+        width: 290px;
+        float: left;
+    }
+}
+@media (max-width: 433px) {
+    .ReveilleTweet {
+        width: 200px;
+        background: #212a33;
+        color: #949aa1;
+    }
+    .ReveilleTweet ul li {
+        width: 200px;
+        float: left;
+    }
+}
+.MenuDivider {
+    width: 279px;
+    height: 1px;
+    border-bottom: 1px dotted rgba(204, 204, 204, 0.2);
+    margin-top: 10px;
+}
+@media (max-width: 767px) {
+    .MenuDivider {
+        width: initial;
+        height: 0px;
+        border-bottom: none;
+        margin-top: 5px;
+    }
+}
