@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PMS - check-in-out</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="assignments, pratical, thoery, lab"/>
+<meta name="description" content="Define assignments for various projects "/>
+<link rel="icon" href="images/fevi.png">
+<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<!--/head-->
+<body>
+<div id="header" class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="logo pull-left"> <img src="images/logo.png" class="img-responsive" alt=""/> </div>
+        <div class="side-content pull-right">
+        	<ul>
+            	<li class="text-uppercase refresh-image">
+                 <select id="" name="" required>
+                              <option value="" selected="selected">Texas health Harris Methodist hospital Alliance</option>
+                              <option value="">Texas health Harris Methodist hospital Alliance</option>
+                              <option value="">Texas health Harris Methodist hospital Alliance</option>
+                            </select></li>
+                <li class="text-uppercase"><img src="images/patient.png" class="img-responsive img-circle" alt="patient"/></li>
+            </ul>
+        	
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="patient-infobar">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="home-menu">
+          <ul class="nav nav-pills" id="pills-first">
+            <li><a href="#" class="pms-dashboard">Dashboard</a></li>
+            <li><a href="#" class="pms-schedule">Schedule</a></li>
+            <li><a href="#" class="pms-patient">Patient</a></li>
+            <li><a href="#" class="pms-billing">Billing</a></li>
+            <li><a href="#" class="pms-payment">Payment</a></li>
+            <li><a href="#" class="pms-reports">Reports</a></li>
+            <li><a href="#" class="pms-masters">Masters</a></li>
+            <li><a href="#" class="pms-admin">Admin</a></li>
+            <li><a href="#" class="pms-ar">AR</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="breadcrumb-wrap">
+  <div class="container">
+    <div class="row">
+    	<div class="breadcrumb-container">
+          <ul class="breadcrumb pull-left"> 
+            <li><a href="#"><img src="images/left-arrow.png" alt=""/>Schedule</a></li>
+            <li class="active">Check in and Check out</li>
+          </ul>
+           
+          </div>
+    </div>
+  </div>
+</div>
+<div class="provider-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="bill-info"> 
+          <div class="header-info">
+            <ul>
+              <li class="pull-left">
+                <h2>Schedule Charges <span>( 0 - 15 records of 208 )</span></h2>
+              </li>
+              <li class="appointment-info pull-right" style="border:none;margin: 0px 0 0;width:300px">
+        <div class="daily-view search-view">  
+                <div class="search-icon"> 
+                    <p class="search-filter">
+                            <input type="text" class="search rounded search-byname" placeholder="Search by Patientname">
+                            <span style="width: 1px;height: 25px;background: #dddddd;right:55px;position: absolute;top:6px;"></span>
+                            <select id="" name="" required>
+                                  <option value="" selected="selected"></option>
+                                  <option value="">ramprabhu</option>
+                                  <option value="">ramjado</option>
+                                  <option value="">Gridhar</option>
+                                </select>
+                    </p> 
+            </div> 
+          </div>
+               <!--<p class="search-filter">
+                            <input type="text" class="search rounded search-byname" placeholder="Search by Firstname">
+                            <span style="width: 1px;height: 25px;background: #dddddd;right:55px;position: absolute;top:6px;"></span>
+                            <select id="" name="" required>
+                                  <option value="" selected="selected"></option>
+                                  <option value="">ramprabhu</option>
+                                  <option value="">ramjado</option>
+                                  <option value="">Gridhar</option>
+                                </select>
+                    </p> 
+               -->
+              </li>
+            </ul>
+          </div>
+          
+          <div class="table-layout">
+          						<table id="example" class="table table-bordered charges-table" cellspacing="0" cellpadding="0" width="100%">  
+                                    
+                                 	 <thead>
+                                       <tr>
+                                         
+                                                     <th class="text-center">Acct#</th>
+                                                     <th class="text-center">Ticket#</th>
+                                                     <th class="text-center">Patient Name</th>
+                                                     <th class="text-center">DOB</th>
+                                                     <th class="text-center">Appt. Date</th>
+                                                     <th class="text-center">Provider</th>
+                                                     <th class="text-center">Facilty</th>
+                                                     <th class="text-center">Status</th>
+                                                    <th class="text-center">Check In</th>
+                                                    <th class="text-center">Check Out</th> 
+                                        </tr>
+                                       </thead> 
+                                           <tbody>
+                                            <tr>
+                                                	<td class="text-center">1370</td>
+                                                     <td class="text-center">284</td>
+                                                     <td class="text-center">jado Kumar</td>
+                                                     <td class="text-center">MM/DD/YYYY</td>
+                                                     <td class="text-center">MM/DD/YYYY</td>
+                                                     <td class="text-center">Provider</td>
+                                                     <td class="text-center">Facilty</td>
+                                                     <td class="text-center">Schedule</td>
+                                                     <td class="text-center">5:00 PM</td>
+                                                    <td class="text-center"><a href="#" class="check-in"><img src="images/check-in.png" width="18" height="18"  alt=""/></a> 7:00 PM </td> 
+                                      </tr> 
+                                                <tr>
+                                                <td class="text-center">1370</td>
+                                                     <td class="text-center">284</td>
+                                                     <td class="text-center">mahen</td>
+                                                     <td class="text-center">MM/DD/YYYY</td>
+                                                     <td class="text-center">MM/DD/YYYY</td>
+                                                     <td class="text-center">Provider</td>
+                                                     <td class="text-center">Facilty</td>
+                                                     <td class="text-center">Schedule</td>
+                                                     <td class="text-center">5:00 PM</td>
+                                                    <td class="text-center"><a href="#" class="check-out"><img src="images/check-out.png" width="18" height="18"  alt=""/></a> 7:00 PM </td>
+                                                </tr>
+                                                 <tr>
+                                                <td class="text-center">1370</td>
+                                                     <td class="text-center">284</td>
+                                                     <td class="text-center">Taufig Umar</td>
+                                                     <td class="text-center">MM/DD/YYYY</td>
+                                                     <td class="text-center">MM/DD/YYYY</td>
+                                                     <td class="text-center">Provider</td>
+                                                     <td class="text-center">Facilty</td>
+                                                     <td class="text-center">Schedule</td>
+                                                     <td class="text-center" style="opacity:0.5">Check In</td>
+                                                    <td class="text-center" style="opacity:0.5">Check Out </td>
+                                                </tr>
+                                                 <tr>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td> 
+                                                <td class="text-center"></td>
+                                                </tr>
+                                                 <tr>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td> 
+                                                <td class="text-center"></td>
+                                                </tr>
+                                                 <tr>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td> 
+                                                <td class="text-center"></td>
+                                                </tr>
+                                                 <tr>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center"></td> 
+                                                <td class="text-center"></td>
+                                                </tr>
+                                                  
+                                     </tbody>
+                                  </table>          	
+                              </div>
+        </div>
+         
+         
+      </div>
+    </div>
+  </div>
+</div> 
+<div id="footer" class="footer" style="position:fixed;bottom:0">
+<p><span class="text-center"></span><span class="text-center">Copyrights Version V0.2.6 &copy; PMS Insight 2016</span></p>
+  </div>
+   
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
