@@ -508,7 +508,7 @@
                                       <th class="text-center"><span class="required">*</span> Act as</th>
                                       <th class="text-center"><span class="skipped">*</span> Efft. From</th>
                                       <th class="text-center"><span class="skipped">*</span> Efft. To</th>
-                                      <th class="text-center"><span class="skipped">*</span> Status</th> 
+                                      <th class="text-center"><span class="skipped">*</span> Status</th>
                                     </tr>
                                   </thead>
                                   <tbody>
@@ -531,13 +531,13 @@
                                           <option value=""></option>
                                         </select></td>
                                       <td class="text-center"><input type="text" name="" placeholder=""/></td>
-                                      <td class="text-center"><input type="text" name="" placeholder=""/></td>                                        
+                                      <td class="text-center"><input type="text" name="" placeholder=""/></td>
                                       <td class="text-center"><select id="" name="" required>
                                           <option value="" selected="selected">Active</option>
                                           <option value=""></option>
                                           <option value=""></option>
                                           <option value=""></option>
-                                        </select></td> 
+                                        </select></td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -1054,292 +1054,250 @@
 
 <div class="modal subs-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content" style="box-shadow:none">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/close-icon.png" alt="close-icon"/></button>
-        <h3 class="smaller lighter blue no-margin">Subscriber Information</h3>
+        <h3 class="">Subscriber Information</h3>
       </div>
       <div class="modal-body">
-        <div class="row" id="additionalInfo">
-          <h4 class="widget-title blue smaller"> &nbsp;Overwrite of Claim Level </h4>
-          <div class="col-xs-6">
+        <div class="table-responsive">
+          <div class="col-lg-6 col-md-6">
             <div class="profile-user-info profile-user-info-striped">
               <div class="profile-info-row">
-                <div class="profile-info-value">
-                  <h4 class="widget-title blue smaller"> &nbsp;Ambulance </h4>
-                </div>
-                <div class="profile-info-value" style="border-left:none"></div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Patient Weight (Pounds)</label>
+                <div class="profile-info-name"> <span class="required">*</span>
+                  <label>Relationship</label>
                 </div>
                 <div class="profile-info-value">
-                  <input class="col-xs-12 weight dynamic col-xs-12Box" maxlength="7" name="TicketHoldLineItemInfo[sPatWeight][0]" id="TicketHoldLineItemInfo_sPatWeight_0" type="text">
-                </div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Round Trip Purpose Description</label>
-                </div>
-                <div class="profile-info-value">
-                  <input class="col-xs-12 dynamic col-xs-12Box" maxlength="256" name="TicketHoldLineItemInfo[sRoundTripDesc][0]" id="TicketHoldLineItemInfo_sRoundTripDesc_0" type="text">
-                </div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Reason Code</label>
-                </div>
-                <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sReasonCode][0]" id="TicketHoldLineItemInfo_sReasonCode_0">
-                    <option value="" selected="selected">--Select--</option>
-                    <option value="E">Patient Transferred</option>
-                    <option value="E">Patient Transferred</option>
+                  <select class="" alt="" name="" id="">
+                    <option value="">--Select--</option>
+                    <option value="">Self</option>
+                    <option value="">Spouse</option>
                   </select>
                 </div>
               </div>
               <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Transport Distance (Miles)</label>
+                <div class="profile-info-name"> <span class="required">*</span>
+                  <label>Subscriber Type</label>
                 </div>
                 <div class="profile-info-value">
-                  <input class="col-xs-12 dynamic col-xs-12Box distance" maxlength="6" name="TicketHoldLineItemInfo[sTransportDist][0]" id="TicketHoldLineItemInfo_sTransportDist_0" type="text">
-                </div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Stretcher Purpose Description</label>
-                </div>
-                <div class="profile-info-value">
-                  <input class="col-xs-12 dynamic col-xs-12Box" maxlength="50" name="TicketHoldLineItemInfo[sStretcherPurposeDesc][0]" id="TicketHoldLineItemInfo_sStretcherPurposeDesc_0" type="text">
-                </div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Condition Code1</label>
-                </div>
-                <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sConditionCode1][0]" id="TicketHoldLineItemInfo_sConditionCode1_0">
-                    <option value="" selected="selected">--Select--</option>
-                    <option value="01">admitted to a hospital</option>
-                    <option value="04">moved by stretcher</option>
-                    <option value="05">unconscious or in shock</option>
+                  <select class="" alt="" name="" id="">
+                    <option value="">--Select--</option>
+                    <option value="">Organization</option>
+                    <option value="">Indivdual</option>
                   </select>
                 </div>
               </div>
               <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Condition Code2</label>
+                <div class="profile-info-name"> <span class="skipped">*</span>
+                  <label>Last Name</label>
                 </div>
                 <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sConditionCode2][0]" id="TicketHoldLineItemInfo_sConditionCode2_0">
-                    <option value="" selected="selected">--Select--</option>
-                    <option value="01">admitted to a hospital</option>
-                    <option value="04">moved by stretcher</option>
-                    <option value="05">unconscious or in shock</option>
-                  </select>
+                  <input type="text" maxlength="60" class="" alt="Last name" min="1" max="60" name="" id="" value="">
+                </div>
+              </div>
+              <div class="profile-info-row">
+                <div class="profile-info-name"> <span class="skipped">*</span>
+                  <label>First Name</label>
+                </div>
+                <div class="profile-info-value">
+                  <input maxlength="60" class="" alt="First name" min="1" max="60" name="" id="" type="text" value="">
                 </div>
               </div>
               <div class="profile-info-row">
                 <div class="profile-info-name">
-                  <label>Condition Code3</label>
+                  <label>Middle Name</label>
                 </div>
                 <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sConditionCode3][0]" id="TicketHoldLineItemInfo_sConditionCode3_0">
-                    <option value="" selected="selected">--Select--</option>
-                    <option value="01">admitted to a hospital</option>
-                    <option value="04">moved by stretcher</option>
-                    <option value="05">unconscious or in shock</option>
-                    <option value="06">transported in an emergency situation</option>
-                    <option value="07">physically restrained</option>
-                    <option value="08">hemorrhaging</option>
-                    <option value="09">medically necessary</option>
-                    <option value="12">bed or chair</option>
-                  </select>
+                  <input maxlength="25" class="" min="1" max="25" alt="Middle Name" name="" id="" type="text" value="">
                 </div>
               </div>
               <div class="profile-info-row">
                 <div class="profile-info-name">
-                  <label>Condition Code4</label>
+                  <label>Suffix</label>
                 </div>
                 <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sConditionCode4][0]" id="TicketHoldLineItemInfo_sConditionCode4_0">
-                    <option value="" selected="selected">--Select--</option>
-                    <option value="" selected="selected">--Select--</option>
-                    <option value="01">admitted to a hospital</option>
-                    <option value="04">moved by stretcher</option>
-                    <option value="05">unconscious or in shock</option>
-                    <option value="06">transported in an emergency situation</option>
-                    <option value="07">physically restrained</option>
-                    <option value="08">hemorrhaging</option>
-                    <option value="09">medically necessary</option>
-                    <option value="12">bed or chair</option>
-                  </select>
+                  <input maxlength="" class="" min="1" max="25" alt="suffix" name="" id="" type="text" value="">
+                </div>
+              </div>
+              <div class="profile-info-row">
+                <div class="profile-info-name"> <span class="required">*</span>
+                  <label>Address1</label>
+                </div>
+                <div class="profile-info-value">
+                  <input type="text" name="" id="" value="">
                 </div>
               </div>
               <div class="profile-info-row">
                 <div class="profile-info-name">
-                  <label>Condition Code5</label>
+                  <label>Address2</label>
                 </div>
                 <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sConditionCode5][0]" id="TicketHoldLineItemInfo_sConditionCode5_0">
-                    <option value="" selected="selected">--Select--</option>
-                    <option value="01">admitted to a hospital</option>
-                    <option value="04">moved by stretcher</option>
-                    <option value="05">unconscious or in shock</option>
-                    <option value="06">transported in an emergency situation</option>
-                    <option value="07">physically restrained</option>
-                    <option value="08">hemorrhaging</option>
-                    <option value="09">medically necessary</option>
-                    <option value="12">bed or chair</option>
-                  </select>
+                  <input type="text" name="" id="" value="">
+                </div>
+              </div>
+              <div class="profile-info-row">
+                <div class="profile-info-name"> <span class="required">*</span>
+                  <label>ZIP</label>
+                </div>
+                <div class="profile-info-value">
+                  <input type="text" name="" id="" value="">
+                </div>
+              </div>
+              <div class="profile-info-row">
+                <div class="profile-info-name"> <span class="required">*</span>
+                  <label>City</label>
+                </div>
+                <div class="profile-info-value">
+                  <input type="text" name="" id="" value="">
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xs-6">
+          <div class="col-lg-6 col-md-6">
             <div class="profile-user-info profile-user-info-striped">
               <div class="profile-info-row">
-                <div class="profile-info-value">
-                  <h4 class="widget-title blue smaller"> &nbsp;Special Case </h4>
-                </div>
-                <div class="profile-info-value" style="border-left:none"></div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name"> </div>
-                <div class="profile-info-value">
-                  <input class="dynamic wid-1" name="TicketHoldLineItemInfo[sEmerIndicator][0]" id="TicketHoldLineItemInfo_sEmerIndicator_0" value="1" type="checkbox">
-                  <label for="TicketHoldLineItemInfo_sEmerIndicator_0"><span></span>Emergency Indicator</label>
-                </div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Procedure Description</label>
+                <div class="profile-info-name"> <span class="required">*</span>
+                  <label>State</label>
                 </div>
                 <div class="profile-info-value">
-                  <input class="col-xs-12 dynamic col-xs-12Box sProcCodeDesc_0" maxlength="80" name="TicketHoldLineItemInfo[sProcCodeDesc][0]" id="TicketHoldLineItemInfo_sProcCodeDesc_0" type="text">
-                </div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name"></div>
-                <div class="profile-info-value">
-                  <input class="dynamic wid-1" name="TicketHoldLineItemInfo[sFamilyPlanningIndicator][0]" id="TicketHoldLineItemInfo_sFamilyPlanningIndicator_0" value="1" type="checkbox">
-                  <label for="TicketHoldLineItemInfo_sFamilyPlanningIndicator_0"><span></span>Family Planning Indicator</label>
-                </div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name"></div>
-                <div class="profile-info-value">
-                  <input class="dynamic wid-1" name="TicketHoldLineItemInfo[sCopayExempt][0]" id="TicketHoldLineItemInfo_sCopayExempt_0" value="1" type="checkbox">
-                  <label for="TicketHoldLineItemInfo_sCopayExempt_0"><span></span>Copay Exempt</label>
-                </div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>National Drug Code</label>
-                </div>
-                <div class="profile-info-value">
-                  <input class="col-xs-12 dynamic col-xs-12Box" maxlength="48" name="TicketHoldLineItemInfo[sNDCCode][0]" id="TicketHoldLineItemInfo_sNDCCode_0" type="text">
-                </div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Hospice Employed Provider Indicator</label>
-                </div>
-                <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sHospiceEmpProIndicator][0]" id="TicketHoldLineItemInfo_sHospiceEmpProIndicator_0">
-                    <option value="1">Yes</option>
-                    <option value="0">No</option>
+                  <select class="" alt="State" name="UserCreation[sState]" id="UserCreation_sState">
+                    <option value="">--Select--</option>
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AZ">AZ</option>
+                    <option value="AR">AR</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DE">DE</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="IA">IA</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="ME">ME</option>
+                    <option value="MD">MD</option>
+                    <option value="MA">MA</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MS">MS</option>
+                    <option value="MO">MO</option>
+                    <option value="MT">MT</option>
+                    <option value="NE">NE</option>
+                    <option value="NV">NV</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NY">NY</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VT">VT</option>
+                    <option value="VA">VA</option>
+                    <option value="WA">WA</option>
+                    <option value="WV">WV</option>
+                    <option value="WI">WI</option>
+                    <option value="WY">WY</option>
                   </select>
                 </div>
               </div>
               <div class="profile-info-row">
-                <div class="profile-info-value">
-                  <h4 class="widget-title blue smaller"> &nbsp;DME </h4>
-                </div>
-                <div class="profile-info-value" style="border-left:none"></div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Rental Price</label>
+                <div class="profile-info-name"> <span class="skipped">*</span>
+                  <label>Date of Birth</label>
                 </div>
                 <div class="profile-info-value">
-                  <input class="col-xs-12 dynamic col-xs-12Box" maxlength="18" name="TicketHoldLineItemInfo[dRentalPrice][0]" id="TicketHoldLineItemInfo_dRentalPrice_0" type="text">
+                  <input name="" id="" type="text" value="" placeholder="mm/dd/yyyy"/>
                 </div>
               </div>
               <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Purchase Price</label>
+                <div class="profile-info-name"> <span class="skipped">*</span>
+                  <label>Gender</label>
                 </div>
                 <div class="profile-info-value">
-                  <input class="col-xs-12 dynamic col-xs-12Box" maxlength="18" name="TicketHoldLineItemInfo[dDMRPurchasePrice][0]" id="TicketHoldLineItemInfo_dDMRPurchasePrice_0" type="text">
-                </div>
-              </div>
-              <div class="profile-info-row">
-                <div class="profile-info-name">
-                  <label>Rental Unit Price Indicator</label>
-                </div>
-                <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sRentalUnitPriceIndicator][0]" id="TicketHoldLineItemInfo_sRentalUnitPriceIndicator_0">
-                    <option value="" selected="selected">--Select--</option>
-                    <option value="1">Weekly</option>
-                    <option value="4">Monthly</option>
-                    <option value="6">Daily</option>
+                  <select class="" alt="Gender" name="UserCreation[sGender]" id="UserCreation_sGender">
+                    <option value="">--Select--</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="U" selected="selected">Unknown</option>
                   </select>
                 </div>
               </div>
               <div class="profile-info-row">
                 <div class="profile-info-name">
-                  <label>Certification Type Code</label>
+                  <label>Race</label>
                 </div>
                 <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sCertTypeCode][0]" id="TicketHoldLineItemInfo_sCertTypeCode_0">
-                    <option value="" selected="selected">--Select--</option>
-                    <option value="I">Initial</option>
-                    <option value="R">Renewal</option>
-                    <option value="S">Revised</option>
+                  <select class="" alt="race" name="" id="">
+                    <option value="">--Select--</option>
+                    <option value="">White American</option>
+                    <option value="">African American</option>
+                    <option value="">White American</option>
+                    <option value="">African American</option>
                   </select>
                 </div>
               </div>
               <div class="profile-info-row">
                 <div class="profile-info-name">
-                  <label>DME Duration in Month</label>
+                  <label>Weight(Pounds)</label>
                 </div>
                 <div class="profile-info-value">
-                  <input size="15" maxlength="15" class="col-xs-12 dynamic col-xs-12Box" name="TicketHoldLineItemInfo[sDuration][0]" id="TicketHoldLineItemInfo_sDuration_0" type="text">
+                  <input type="text" name="" id="" value="">
                 </div>
               </div>
               <div class="profile-info-row">
                 <div class="profile-info-name">
-                  <label>Certification Condition Indicator</label>
+                  <label>SSN</label>
                 </div>
                 <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sCertCondIndicator][0]" id="TicketHoldLineItemInfo_sCertCondIndicator_0">
-                    <option value="1">Yes</option>
-                    <option value="0">No</option>
-                  </select>
+                  <input type="text" name="" id="" value="">
                 </div>
               </div>
               <div class="profile-info-row">
                 <div class="profile-info-name">
-                  <label>Condition Indicator</label>
+                  <label>Telephone</label>
                 </div>
                 <div class="profile-info-value">
-                  <select class="col-xs-12 dynamic dropDown" name="TicketHoldLineItemInfo[sCondIndicator][0]" id="TicketHoldLineItemInfo_sCondIndicator_0">
-                    <option value="" selected="selected">--Select--</option>
-                    <option value="38">Certification signed by the physician is on file at the supplier's office</option>
-                    <option value="ZV">Replacement Item</option>
-                  </select>
+                  <input name="" id="" type="text" value="" placeholder=""/>
+                </div>
+              </div>
+              <div class="profile-info-row">
+                <div class="profile-info-name">
+                  <label>Mobile</label>
+                </div>
+                <div class="profile-info-value">
+                  <input name="" id="" type="text" value="" placeholder=""/>
+                </div>
+              </div>
+              <div class="profile-info-row">
+                <div class="profile-info-name">
+                  <label>Email</label>
+                </div>
+                <div class="profile-info-value">
+                  <input type="text" name="" id="" value="">
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer"> 
-        <!-- <ul class="pms-buttons pull-right" data-dismiss="modal">
+        <!-- <div class="modal-footer"> 
+                          <ul class="pms-buttons pull-right" data-dismiss="modal">
                             <li><a href="#" class="red"><i class="ace-icon fa fa-times"></i> Close</a></li> 
-          				</ul>--> 
+          					</ul>
+                        </div> --modal-footer --> 
       </div>
     </div>
     <!-- /.modal-content --> 
