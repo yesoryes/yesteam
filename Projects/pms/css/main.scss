@@ -1,25 +1,117 @@
 /*******************
 *****body******
-*******************/ 
-@mixin transition($transition) {
-    -moz-transition:    $transition;
-    -o-transition:      $transition;
-    -webkit-transition: $transition;
-    transition:         $transition;
-}
-
-html, body
+*******************/
+body
 {
-	font-family: 'Oxygen', sans-serif;
+	font:14px 'Open Sans', sans-serif; 
 	outline:0;
 	position: relative;
     min-height:100%;
+} 
+/***************************
+********Declaration**********
+***************************/
+@mixin transition($transition) { 
+    	 -o-transition:$transition;
+    -webkit-transition:$transition;
+	   -moz-transition:$transition;
+		-ms-transition:$transition;
+    		transition:$transition;
 }
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+          transform: $transform;
+}
+@mixin transform-origin($transform-origin) {
+  -webkit-transform-origin: $transform-origin;
+     -moz-transform-origin: $transform-origin;
+      -ms-transform-origin: $transform-origin;
+          transform-origin: $transform-origin;
+}
+@mixin box-shadow($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+     -moz-box-shadow: $box-shadow;
+      -ms-box-shadow: $box-shadow;
+          box-shadow: $box-shadow;
+}
+@mixin appearance($appearance) {
+  -webkit-appearance: $appearance;
+     -moz-appearance: $appearance;
+      -ms-appearance: $appearance;
+          appearance: $appearance;
+}
+ 
+$tab_shadows:4px -2px 4px rgba(0, 0, 0, 0.1), -3px -4px 4px rgba(0, 0, 0, 0.1);
+$white:#fff;
+$black: #000;
+$blue: #008bd1;
+$dblue: #283036;
+
+@mixin font-size($sizeValue: 12 ){
+  font-size: $sizeValue + px; //fallback for old browsers 
+}
+@mixin line-height($heightValue: 12 ){
+    line-height: $heightValue + px; //fallback for old browsers 
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+.pad-zero
+{
+	padding:0;
+}
+.bold_text
+{
+	font-weight:bold;
+}
+.font_normal
+{
+	@include line-height (25);
+	@include font-size(12); 
+	color:$black;
+	 
+}
+.font_bold
+{
+	@extend .font_normal;
+	font-weight:bold;
+}
+ 
 table thead tr th, table tbody tr td, table tfoot tr td,
 {
 	height:25px !important;
 	line-height:25px !important;
+} 
+table thead tr, table tbody tr, table tfoot tr,
+{
+	height:25px !important;
+	line-height:25px !important; 
+	border:transparent;
+} 
+table thead tr:hover, table tbody tr:hover, table tfoot tr:hover
+{
+	 background:#d5e4f1; 
+} 
+
+table thead tr th, table tfoot tr td    
+{
+	@extend .font_bold;
 }
+table tbody tr td   
+{
+	@extend .font_normal;
+}
+ 
  
 #wrapper {
 	width: 100%;
@@ -36,6 +128,82 @@ a, a:hover, a:focus {
 {
 	width:100%;
 } 
+
+ ::-webkit-input-placeholder {
+    @include opacity(0.4);
+}
+:-moz-placeholder {
+    @include opacity(0.4);
+}
+::-moz-placeholder {
+    @include opacity(0.4);
+}
+:-ms-input-placeholder {
+     @include opacity(0.4);
+}
+select
+{
+	@include appearance(none);
+	height:25px !important;
+	line-height:25px !important; 
+}
+/**IE select box Issue**/
+select::-ms-expand {
+    display: none;
+} 
+/**Firfox line Issue**/
+@-moz-document url-prefix()
+{
+   select
+	{
+		  @include box-shadow(none); 
+	}
+	select option
+	{
+		padding:0 0 0 10px !important;
+	}
+	.account-aubmit .dropdown-mode option
+	{
+		text-align: center;
+		padding:0 0 0 0px !important;
+	} 
+}
+select:hover
+{
+	 
+	background: url(../images/select-tick-black.png) no-repeat right #d5e4f1 !important;
+}
+input[type=text]
+{
+	color:$dblue;
+	border:none; 
+	width:100%;
+	height:25px; 
+	@include line-height(25);
+	padding:0 15px;
+}
+ 
+input[type=text]:hover, input[type=text]:focus
+{ 
+	 outline:none;
+}
+.line-item input[type="text"]:hover, .line-item input[type=text]:focus
+{
+		border-color: #b5b5b5;	
+		outline:auto; 
+		height:23px;
+		padding:2px 15px 0;
+}
+label {
+	white-space: nowrap;
+	font:12px;
+	font-weight:bold;
+} 
+
+/***************************
+********Content**********
+***************************/
+
 .header {
 	background: #2f3840;
 	height:36px;
@@ -53,8 +221,7 @@ a, a:hover, a:focus {
 		 height:36px;
 		  li
 		  {
-				color: #fefefe;
-				font-size: 12px;   
+				color: #fefefe;  
 				text-transform:uppercase;
 				float: left; 
 				height:36px;
@@ -66,7 +233,8 @@ a, a:hover, a:focus {
 				}
 				a
 				{
-					  font: 13px/36px 'Oxygen', sans-serif;
+					   
+					  @include line-height(36);
 					  color: #ffffff;
 					   display:block;
 					   position:relative;					  
@@ -100,14 +268,14 @@ a, a:hover, a:focus {
 	top: 46px;
 	z-index: 100;
 	background: #4fc2f2;
-	color: #FFF;
-	display: none;
-	font: 14px/24px 'Oxygen', sans-serif;
+	color:$white;
+	display: none; 
+	@include line-height(24);
 	text-decoration: none;
 	padding: 10px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	@include box-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); 
 	&:hover {
-	background: #008bd1;
+	background: $blue;
 	}
 	&:after {
 	content: '';
@@ -123,14 +291,14 @@ a, a:hover, a:focus {
 	border-right: 10px solid transparent;
 	}
 	&:hover:after {
-	border-bottom-color: #008bd1;
+	border-bottom-color: $blue;
 	}
 
 }   
 
 /***patient Info Bar***/
 .patient-infobar {
-	background: #283036; 
+	background: $dblue; 
 	position:relative;
 	height:auto;
 	.patient-det
@@ -142,8 +310,8 @@ a, a:hover, a:focus {
 				overflow:hidden;
 				li
 				{
-					color: #fff; 
-					font: 14px/40px 'Oxygen', sans-serif; 
+					color:$white; 					 
+					@include line-height (40); 
 					border-left: 1px solid #1a1e21;
 					padding: 0px 0px 0 20px;
 					margin: 0 0px 0 20px;
@@ -171,21 +339,15 @@ a, a:hover, a:focus {
 .patient-infobar .patient-det li select, .bill-info select
 {
 	 
-	 text-decoration:underline;
-	 -o-appearance:none;
-	 -ms-appearance:none;
-	 appearance:none;
-	 -moz-appearance:none;
-	 -webkit-appearance:none;
+	 text-decoration:underline; 
 	 background:url(../images/select-tick.png) no-repeat right #283036;
 	 border:none;
 	 padding:0px 40px 0 20px;
-	 outline:0;
-	 line-height:40px; 
+	 outline:0;  
 	 option 
 	 {
 		  background:#fff;
-		  color:#283036; 
+		  color:$dblue; 
 	 }
 }
 .search-box
@@ -195,15 +357,17 @@ a, a:hover, a:focus {
 .search-box-margin
 { 
 	margin: 8px 0 0;
-    position: relative;
+    position: relative;	
+	background: #fff;
+	@include border-radius(12px);
 	button
 	{
 		position: absolute;
 		top: 3px;
 		background: #fff;
 		right: 3px;
-		border: none;
-		border-radius: 12px;
+		border: none; 
+		@include border-radius(12px);
 		outline: none;
 	}
 }
@@ -215,58 +379,27 @@ a, a:hover, a:focus {
 } 
 .rounded 
 { 
-	border-radius:15px; 
-	-moz-border-radius:15px; 
-	-webkit-border-radius:15px; 
+	 @include border-radius(15px);
 }
-input[type=text]
-{
-	color:#283036;
-	border:none; 
-	width:100%;
-	height:24px; 
-	font:14px/24px 'Oxygen', sans-serif; 
-	padding:0 15px;
-}
-input[type=text]:hover, input[type=text]:focus
-{ 
-	 outline:none;
-}
-.line-item input[type="text"]:hover, .line-item input[type=text]:focus
-{
-		border-color: #b5b5b5;	
-		outline:auto; 
-		height:23px;
-		padding:2px 15px 0;
-}
-/*@-moz-document url-prefix() {
-   .line-item input[type="text"]:hover, .line-item input[type=text]:focus
-	{
-			 
-			height:18px;
-			padding:2px 12px 0 15px;
-	}
-}
-*/
+
+
+
 /***Status Info Bar***/
 
 .status-infobar
 {
 	 
-	height:40px;
-	line-height:40px;
+	height:30px;
+	@include line-height (30); 
 	position:relative; 
 	background:#fff; 
-	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
+	@include box-shadow(0px 2px 6px 0px rgba(0,0,0,0.3)); 
 	p
 	{
-		 
-		font: 16px/40px 'Oxygen', sans-serif;
 		font-weight:bold;
-		text-align: left;
-		color: #000000;
+		@include line-height (30); 
+		text-align: left; 
+		color:$black;
 		padding: 0px 0 0;
 		 span
 		{
@@ -310,7 +443,7 @@ input[type=text]:hover, input[type=text]:focus
      min-width: 128px;
 	 height:110px;
 	 background:#3a6891;
-	 border-radius:5px; 
+	 @include border-radius(5px);
 	 margin:0 15px 0 0;
 	 display:inline-block;
 	 overflow:hidden;
@@ -321,29 +454,29 @@ input[type=text]:hover, input[type=text]:focus
 		}
 	  h1
 		{
-			 font-size: 14px;
-			 font-family:'Oxygen', sans-serif; 
-			 color:#fff;
+			  
+			 color:$white;
 			 border-bottom:1px solid rgba(255,255,255,0.8);
 			 text-align:center;
-			 padding:12px 15px;
+			 padding:12px 12px;
 			 margin: 0 0 5px 0;
 		} 
 	   p
 		{
 			 
-			font:16px 'Oxygen', sans-serif;
+			
 			color: rgba(255, 255, 255, 0.9);
 			text-align: center;
-			padding: 10px 0 0px;
+			padding: 5px 0 0px;
 			 span
 			{
-				font-size: 12px;
-				font-family:'Oxygen', sans-serif; 
+				@extend .font_normal;
+				color: rgba(255, 255, 255, 0.9);
 			}
 			img
 			{
-				 padding: 0px 10px 0 0; 
+				    padding:0px 5px 0 0;
+    				margin: 0px 0 -2px;
 			}
 		    &:nth-child(1)
 			{
@@ -356,33 +489,48 @@ input[type=text]:hover, input[type=text]:focus
 .main-content { 
    position:relative;  
    margin:15px 0 100px; 
+   height:100%;
+   min-height:540px;
 }  
 .provider-info
 {
 	background:#fff; 
 } 
+.header-info
+{
+	background: #4fc2f2;
+	padding: 0px 0 0px 20px;
+	@include border-radius(10px 10px 0 0);
+	overflow: hidden;
+	height: 25px;
+	@include line-height (25);  
+	width: 100%;
+	h2
+	{
+		@include line-height (25);
+		color:$white;
+	}
+} 
 
 .bill-info
 {
 	
-	border-radius:10px 10px 0px 0px;
+	@include border-radius(10px 10px 0 0);
 	margin:0 0 20px;
-	overflow: hidden; 
-	.header-info
-		{
-			background: #4fc2f2;
-			padding: 0px 0 0px 20px;
-			border-radius: 10px 10px 0 0px;
-			overflow: hidden;
-			height: 25px;
-			line-height: 25px;
-			
-		} 
+	overflow: hidden;  
 		.table-layout
 		{
-			border-radius:10px;
+			@include border-radius(10px);
 		}
-} 
+}
+.trans-info
+{
+	overflow: scroll;  
+	.header-info 
+	{
+     	min-width: 1366px; 
+	}
+}
 .provider-info-table
 {
 	tbody  
@@ -395,19 +543,15 @@ input[type=text]:hover, input[type=text]:focus
 				text-align:center; 
 				select
 				{	 
-					 text-decoration: none;
-					-o-appearance: none;
-					-ms-appearance: none;
-					appearance: none;
-					-moz-appearance: none;
-					-webkit-appearance: none;
+					 @extend .font_normal;
+					 text-decoration: none; 
 					background: url(../images/select-tick-black.png) no-repeat right #fff;
 					border: none;
-					padding: 0px 0px 0 10px; 
-					font:12px/25px 'Oxygen', sans-serif; 
-					color: #000000; 
+					padding: 0px 0px 0 10px;  
 					width: 100%; 
-					outline:0;
+					outline:0; 
+					outline:none;
+					letter-spacing: 0.5px;
 					option
 					{
 						padding:2px 3px 5px;
@@ -444,11 +588,10 @@ input[type=text]:hover, input[type=text]:focus
 {
 	p	
 	{	 
-		font: 12px/25px 'Oxygen', sans-serif;
-		color: #000000; 
-		text-align:right; 
-		font-weight: bold;
+		@extend .font_bold; 
+		text-align:right;  
 		padding: 0 20px 0;
+		letter-spacing: 1px;
 	} 
 	 
 }
@@ -473,11 +616,13 @@ input[type=text]:hover, input[type=text]:focus
 		    padding:10px 0;
 			width: auto;
     		text-align: center; 
-			font:16px/30px 'Oxygen', sans-serif; 
+			@include font-size(16);
+			@include line-height (30); 
 		}
 } 
 .insurance-subs-table
 {
+	@extend .provider-info-table;
 	thead 
 	{
 		tr
@@ -485,9 +630,7 @@ input[type=text]:hover, input[type=text]:focus
 			th
 			{
 				    text-align: center;
-					padding: 0px;
-					font: bold 12px/25px 'Oxygen', sans-serif;
-					color:#000;
+					padding: 0px; 
 			}
 		}
 	}
@@ -504,31 +647,16 @@ input[type=text]:hover, input[type=text]:focus
 				{
 					select
 					{
-						width: 100%; 
+						width: 100% !important; 
 					}
-				}
-				 
+				} 
 				select
 				{	 
-					 text-decoration: none;
-					-o-appearance: none;
-					-ms-appearance: none;
-					appearance: none;
-					-moz-appearance: none;
-					-webkit-appearance: none;
-					background: url(../images/select-tick-black.png) no-repeat right #fff;
-					border: none;
-					padding: 0px 0px 0 10px; 
-					font:12px/25px 'Oxygen', sans-serif; 
-					color: #000000; 
-					width: 90%; 
-					outline:0;
-					float:left;
-					option
-					{
-						padding:2px 3px 5px;
-					}
-					
+					  
+					width: 90% !important; 
+					float:left; 
+					outline:0; 
+					outline:none; 
 				}
 				.help
 				{
@@ -537,6 +665,7 @@ input[type=text]:hover, input[type=text]:focus
 					float:left;
 					@include transition(0.5s all);
 					background:url(../images/help.png) no-repeat center;
+					border-left:1px solid #ddd;
 					&:hover
 					{
 						background:url(../images/help-hover.png) no-repeat center; 
@@ -579,9 +708,7 @@ input[type=text]:hover, input[type=text]:focus
 
 .header-info h2, .pos-code .header-info h2
 {
-	 
-	font:14px/25px 'Oxygen', sans-serif; 
-    color: #fff; 
+	 color:$white; 
 }
 .pos-code
 {
@@ -630,8 +757,9 @@ input[type=text]:hover, input[type=text]:focus
     display: none;
 }
 .checkbox label, .radio label { 
-    font:14px/25px 'Oxygen', sans-serif;
-	color:#fff;
+    
+	color:$white;
+	@include line-height(25);
 }
  
 input[type="radio"] + label span {
@@ -641,7 +769,7 @@ input[type="radio"] + label span {
     vertical-align:middle;
     background:url(../images/radio-button.png) top no-repeat;
     cursor:pointer;
-	font: 14px/25px 'Oxygen', sans-serif;
+	@include line-height(25);
 }
 input[type="radio"]:checked + label span {
     background:url(../images/radio-hover.png) top no-repeat;
@@ -654,11 +782,11 @@ input[type="radio"]:checked + label span {
 .header-info ul li
 {
 	border-right:#2e93bd;
-	padding:10px 30px 0 0px;
+	padding:0px 30px 0 0px;
 	span
 	{
 		padding:0px 0 0 0px;
-		font:14px/25px 'Oxygen', sans-serif;
+		@include line-height(25);
 	}
 } 
 .radio-info
@@ -668,7 +796,7 @@ input[type="radio"]:checked + label span {
 } 
 .dropdown-mode
 {
-	border-radius: 8px;
+	@include border-radius(8px);
     border: 1px solid #d3d3d3; 
     margin: 12px 0 10px 20px;
 	label
@@ -676,32 +804,26 @@ input[type="radio"]:checked + label span {
         width: auto;
 		height: 25px;
 		text-align: center;
-		border-radius: 8px 0 0 8px;
+		@include border-radius(8px 0 0 8px); 
 		padding: 0px 20px;
 		margin: 0;
-		position: inherit; 
-		font:12px/25px 'Oxygen', sans-serif;
-		font-weight: bold;
+		position: inherit;  
+		@extend .font_bold;
 		background-image: -moz-linear-gradient(90deg, #c9cacc 0%, #f4f3f3 100%);
 		background-image: -webkit-linear-gradient(90deg, #c9cacc 0%, #f4f3f3 100%);
 		background-image: -ms-linear-gradient(90deg, #c9cacc 0%, #f4f3f3 100%);
 	} 
 	select
 	{
-		 text-decoration: none;
-		-o-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-appearance: none;
-		-webkit-appearance: none;
+		 text-decoration: none; 
 		background: url(../images/select-tick-black.png) no-repeat center right;
 		border: none;
 		margin: 0px 0px 0 0px;
 		outline: none;
 		float: right;
 		height: 25px; 
-		padding: 0 30px 0 20px;
-		font:12px/25px 'Oxygen', sans-serif;
+		padding: 0 30px 0 12px;
+		@extend .font_normal;
 	}
 	input[type="text"]
 	{
@@ -709,31 +831,31 @@ input[type="radio"]:checked + label span {
 		margin: 0px 0px 0 0px;
 		outline: none;
 		float: right;
-		height: 25px;
-		line-height: 30px;
+		height: 26px;
+		@include line-height (30);
 		padding: 0 30px 0 20px; 
     	width: auto; 
-		border-radius:8px;  
+		@include border-radius(0px 8px 8px 0);  
 	} 
 }
 .dropdown-diag
 {
-	border-radius:8px;
+	@include border-radius(8px); 
 	border:1px solid #d3d3d3; 
 	height:25px;
 	margin: 12px 0 10px 20px;	
 	p
 	{  
+		@extend .font_bold;
 		width: 150px;
 		height: 23px; 
+		@include line-height(23); 
 		text-align: center; 
 		float: left;
-		border-radius: 8px 0 0 8px;
+		@include border-radius(8px 0 0 8px); 
 		padding: 0;
 		margin: 0;
-		position: inherit;
-		font:12px/23px 'Oxygen', sans-serif;
-		font-weight:bold;
+		position: inherit;		
 		background-image: -moz-linear-gradient( 90deg, rgb(201,202,204) 0%, rgb(244,243,243) 100%);
 		background-image: -webkit-linear-gradient( 90deg, rgb(201,202,204) 0%, rgb(244,243,243) 100%);
 		background-image: -ms-linear-gradient( 90deg, rgb(201,202,204) 0%, rgb(244,243,243) 100%); 
@@ -751,20 +873,20 @@ input[type="radio"]:checked + label span {
 	
 	.radio-toolbar label {
 		display:inline-block;
-	   background:url(../images/radio-button.png) no-repeat 10px 4px;
+	    background:url(../images/radio-button.png) no-repeat 10px 4px;
 		padding:4px 11px;
-		font:12px 'Oxygen'; 
+		@extend .font_normal;
 	}
 	.radio-toolbar label { 
 	   background:url(../images/radio-button.png) no-repeat 10px 4px;
 		padding: 0 0 0 35px;
-		line-height: 24px;
+		@include line-height(24);
 	}
 	.radio-toolbar input[type="radio"]:checked + label 
 	{
 		background: url(../images/radio-hover.png) no-repeat 10px 4px;
 		padding: 0 0 0 35px;
-		line-height: 24px; 
+		@include line-height(24);
 	}
  
 
@@ -774,9 +896,10 @@ input[type="radio"]:checked + label span {
     width: 25px;
     height: 24px;
     text-align: center;
-    font: 26px/20px 'Oxygen', sans-serif;
-    color: #fff;
-    border-radius: 0 8px 8px 0;
+   @include font-size(26);
+	@include line-height(20);
+    color:$white;
+   @include border-radius(0 8px 8px 0); 
     display: block; 
     background-image: -moz-linear-gradient(90deg, #09ba54 0%, #0ad660 100%);
     background-image: -webkit-linear-gradient(90deg, #09ba54 0%, #0ad660 100%);
@@ -804,7 +927,7 @@ input[type="radio"]:checked + label span {
 }
 .diag-a
 {
-	border-radius: 8px;
+	@include border-radius(8px); 
     border: 1px solid #d3d3d3;
     width: 280px;
     height: 25px;
@@ -813,12 +936,12 @@ input[type="radio"]:checked + label span {
 	label
 	{
 		width:35px;
-		height:25px;  
-		font:14px/25px 'Oxygen', sans-serif; 
-		color:#fff;
+		height:25px;   
+        @include line-height(23);
+		color:$white;
 		text-align: center; 
 		float: left;
-		border-radius: 8px 0 0 8px;
+		@include border-radius(8px 0 0 8px); 
 		padding: 0;
 		margin: 0;
 		position: inherit;
@@ -832,7 +955,7 @@ input[type="radio"]:checked + label span {
 {
 	height:25px;
     padding: 0px 0 0px 20px;
-    border-radius: 0px 0px 0px 0px; 
+    @include border-radius(0px); 
     text-align: center;
     clear: both; 
 	@include transition(0.5s all);
@@ -849,7 +972,7 @@ input[type="radio"]:checked + label span {
      display: block;
 	 @include transition(0.5s all);
      padding: 0 0 0 137px; 
-	 font:14px/25px 'Oxygen', sans-serif; 
+	 @include line-height(25);
 	 background:url(../images/plus-symbol.png) no-repeat center center;
 } 
 
@@ -865,7 +988,7 @@ input[type="radio"]:checked + label span {
 {
 	margin:0; 
 	display:inline-block;  
-	font:14px/25px 'Oxygen', sans-serif; 
+	@include line-height(25);
 }  
 .pms-buttons
 {
@@ -881,13 +1004,13 @@ input[type="radio"]:checked + label span {
 		a
 		{
 			 display:block;  
-			 color:#fff;
+			 color:$white;
 			 padding: 0px 20px 0px; 
 			 height:25px;
 			 text-align:center; 
-			 font:14px/25px 'Oxygen', sans-serif; 
+			 @include line-height(25); 
 			 @include transition(0.5s all);
-			  border-radius: 8px;
+			  @include border-radius(8px); 
 		}
 	}
     
@@ -938,7 +1061,7 @@ input[type="radio"]:checked + label span {
   background-image: -moz-linear-gradient( 90deg, rgb(201,202,204) 0%, rgb(244,243,243) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(201,202,204) 0%, rgb(244,243,243) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(201,202,204) 0%, rgb(244,243,243) 100%); 
-  color:#000;
+  color:$black;
 	
 }
 
@@ -950,10 +1073,11 @@ input[type="radio"]:checked + label span {
     max-width: 100%;
     margin-bottom: 0px;
 } 
-.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+.table-bordered>tbody>tr>td, .table-bordered>thead>tr>th {
     border-bottom-width: 0;
+	padding:0;
 }
-
+ 
  
 input[type="checkbox"] 
 {
@@ -969,14 +1093,11 @@ input[type="checkbox"]
 .line-item tr td:nth-child(5), .line-item tr td:nth-child(10), .line-item tr td:nth-child(13)
 {
 	background:#ececec;  
+	padding:0 10px 0 0;
+	text-align:right;
 }
 .line-item select {
-    text-decoration: underline;
-    -o-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+    text-decoration: underline;    
     background:url(../images/select-tick-black.png) no-repeat right center;
     border: none;
     padding: 0px 0px 0 10px;
@@ -997,8 +1118,8 @@ input[type="checkbox"]
 	{
 		width: 100%;
 		height:25px;
-		line-height:none; 
-		font: 14px 'Oxygen', sans-serif;
+		line-height:none;
+		text-align:center;
 	}
 	
 }
@@ -1051,17 +1172,19 @@ input[type="checkbox"] + label span {
     vertical-align:middle;
     background:url(../images/check-box.png) top no-repeat;
     cursor:pointer;
+	margin:0 10px 0 0;
 }
 input[type="checkbox"]:checked + label span {
     background:url(../images/right-symbol.png) top no-repeat;
 }
  
-.line-item>tbody>tr, .line-item-trans>tbody>tr {  
-     font:12px/25px 'Oxygen', sans-serif;
-     padding:0 0; 
+/*.line-item>tbody>tr, .line-item-trans>tbody>tr {  
+     @include line-height(25); 
+	 @extend .font_normal;
+     padding:0 0;
 	 color:#2f3840;
 	 overflow:hidden;
-} 
+}*/ 
   
 .line-item table, .line-item-trans table
 {
@@ -1077,60 +1200,67 @@ input[type="checkbox"]:checked + label span {
     visibility: hidden;
     clear: both;
 }
-.line-item>thead>tr>th { 
-	padding:2px 8px; 
-}
-.line-item-trans>thead>tr>th { 
-	padding:2px 4px; 
-}
+ 
+ 
 .line-item>tbody>tr>td, .line-item-trans>tbody>tr>td { 
 	padding:0 ; 
 } 
-
+.line-item-trans tbody tr td:nth-child(7), .line-item-trans thead tr th:nth-child(7), .line-item-trans tbody tr td:nth-child(8), .line-item-trans thead tr th:nth-child(8), .line-item-trans tbody tr td:nth-child(9), .line-item-trans thead tr th:nth-child(9), .line-item-trans tbody tr td:nth-child(10), .line-item-trans thead tr th:nth-child(10), .line-item-trans tbody tr td:nth-child(11), .line-item-trans thead tr th:nth-child(11), .line-item-trans tbody tr td:nth-child(12), .line-item-trans thead tr th:nth-child(12), .line-item-trans tbody tr td:nth-child(13), .line-item-trans thead tr th:nth-child(13)
+{
+	text-align:right;
+	padding:0 10px 0 0;
+}
 
  
-.line-item-trans tbody tr td:nth-child(12), .line-item-trans thead tr th:nth-child(12), .line-item-trans tbody tr td:nth-child(10), .line-item-trans thead tr th:nth-child(10), .line-item-trans tbody tr td:nth-child(4), .line-item-trans thead tr th:nth-child(4), .line-item-trans tbody tr td:nth-child(18), .line-item-trans thead tr th:nth-child(18),  .line-item-trans tbody tr td:nth-child(11), .line-item-trans thead tr th:nth-child(11), .line-item-trans tbody tr td:nth-child(8), .line-item-trans thead tr th:nth-child(8), .line-item-trans tbody tr td:nth-child(6), .line-item-trans thead tr th:nth-child(6), .line-item-trans tbody tr td:nth-child(9), .line-item-trans thead tr th:nth-child(9), .line-item-trans tbody tr td:nth-child(13), .line-item-trans thead tr th:nth-child(13), .line-item-trans tbody tr td:nth-child(7), .line-item-trans thead tr th:nth-child(7)
+.line-item-trans tbody tr td:nth-child(12), .line-item-trans thead tr th:nth-child(12), .line-item-trans tbody tr td:nth-child(10), .line-item-trans thead tr th:nth-child(10), .line-item-trans tbody tr td:nth-child(4), .line-item-trans thead tr th:nth-child(4), .line-item-trans tbody tr td:nth-child(18), .line-item-trans thead tr th:nth-child(18),  .line-item-trans tbody tr td:nth-child(11), .line-item-trans thead tr th:nth-child(11), .line-item-trans tbody tr td:nth-child(8), .line-item-trans thead tr th:nth-child(8), .line-item-trans tbody tr td:nth-child(9), .line-item-trans thead tr th:nth-child(9), .line-item-trans tbody tr td:nth-child(13), .line-item-trans thead tr th:nth-child(13), .line-item-trans tbody tr td:nth-child(7), .line-item-trans thead tr th:nth-child(7)
 {
     width: 4%;
     float: left;
 }
-.line-item-trans tbody tr td:nth-child(1), .line-item-trans thead tr th:nth-child(1), .line-item-trans tbody tr td:nth-child(2), .line-item-trans thead tr th:nth-child(2), .line-item-trans tbody tr td:nth-child(3), .line-item-trans thead tr th:nth-child(3), .line-item-trans tbody tr td:nth-child(15), .line-item-trans thead tr th:nth-child(15), .line-item-trans thead tr th:nth-child(16), .line-item-trans tbody tr td:nth-child(16),  .line-item-trans tbody tr td:nth-child(5), .line-item-trans thead tr th:nth-child(5)
+.line-item-trans tbody tr td:nth-child(1), .line-item-trans thead tr th:nth-child(1), .line-item-trans tbody tr td:nth-child(15), .line-item-trans thead tr th:nth-child(15), .line-item-trans thead tr th:nth-child(16), .line-item-trans tbody tr td:nth-child(16),  .line-item-trans tbody tr td:nth-child(5), .line-item-trans thead tr th:nth-child(5), .line-item-trans tbody tr td:nth-child(6), .line-item-trans thead tr th:nth-child(6)
 {
     width: 8%;
     float: left;
 }
-.line-item-trans tbody tr td:nth-child(14), .line-item-trans thead tr th:nth-child(14), .line-item-trans tbody tr td:nth-child(17), .line-item-trans thead tr th:nth-child(17) 
+.line-item-trans tbody tr td:nth-child(14), .line-item-trans thead tr th:nth-child(14), .line-item-trans tbody tr td:nth-child(17), .line-item-trans thead tr th:nth-child(17), .line-item-trans tbody tr td:nth-child(2), .line-item-trans thead tr th:nth-child(2), .line-item-trans tbody tr td:nth-child(3), .line-item-trans thead tr th:nth-child(3),
 {
     width: 6%;
     float: left;
 } 
   
 .line-item-trans tbody tr:nth-last-child(2) td:first-child {
-    width:52%;
+    width:56%;
     float: left;
 } 
 .line-item-trans tbody tr:last-child td:first-child {
-    width:52%;
+    width:56%;
     float: left;
 } 
 .line-item-trans tbody tr:last-child td:nth-child(2) {
     width:4%;
     float: left;
+	@extend .bold_text;
+	padding:0 10px 0 0;
+	text-align:right;
 }
 .line-item-trans tbody tr:last-child td:nth-child(3) {
     width:4%;
     float: left;
+	@extend .bold_text;
+	padding:0 10px 0 0;
+	text-align:right;
 }
 .line-item-trans tbody tr:last-child td:nth-child(4) {
     width:4%;
     float: left;
+	@extend .bold_text;
 }
 .line-item-trans tbody tr:last-child td:nth-child(5) {
     width:6%;
     float: left;
 }
 .line-item-trans tbody tr:last-child td:last-child {
-    width: 40%;
+    width: 32%;
     float: left;
     border: 1px solid #ddd;
     border-bottom: none;
@@ -1138,14 +1268,18 @@ input[type="checkbox"]:checked + label span {
 } 
 .line-item-trans tbody tr:nth-last-child(2) td:nth-child(2) {
     width: 4%; 
+	@extend .bold_text;
+	padding:0 10px 0 0;
+	text-align:right;
 } 
 .line-item-trans tbody tr:nth-last-child(2) td:last-child {
-    width: 44%;
+    width: 40%;
     float: left;
     border: 1px solid #ddd;
     border-bottom: none;
     border-left: none;
 } 
+
 
 
 /*************
@@ -1175,10 +1309,9 @@ input[type="checkbox"]:checked + label span {
 			&:nth-child(2)
 			{ 
 				text-align: center;  
-				font:12px/30px 'Oxygen', sans-serif; 
-				font-weight:bold;
-				color: rgba(255,255,255,0.6); 
-				line-height: 30px; 
+				 @extend .font_bold; 
+				 color: rgba(255,255,255,0.6); 
+				@include line-height (30); 
 			}
 	   }
 	}
@@ -1200,25 +1333,29 @@ input[type="checkbox"]:checked + label span {
 {
 	margin: 0 0 20px;
 }
-.new-reg tr {
-	height: 30px;
+.new-reg tr:hover
+{
+	background:none; 
+} 
+.new-reg tr:nth-child(1) td
+{
+	color:#fff;
 }
 .new-reg tr td {
 	border: 1px solid #d3d3d3;
 	border-collapse: seperate;
 	padding: 4px 0 0;
 	position: relative;
-	text-align: center;
+	text-align: center; 
 }
  
 .font-add
 {
-	color:#fff;
-	 font-size: 14px;
-		font-family:'Oxygen', sans-serif;  
+	color:$white;
+	   
 }
 .new-reg img {
-    border-radius: 10px; 
+    @include border-radius(10px);  
     top: 0px;
     position: absolute;
 	
@@ -1262,9 +1399,7 @@ input[type="checkbox"]:checked + label span {
  
 .line-item>thead>tr:nth-child(1), .line-item>tfoot>tr, .line-item-trans>thead>tr:nth-child(1), .charges-table>thead>tr:nth-child(1), .charges-info>thead>tr:nth-child(1)
 { 
-    font:bold 12px 'Oxygen', sans-serif; 
-    color: #000; 
-	padding:0 17px 0 0;
+    padding:0 17px 0 0;
 }
 .line-item-trans>thead>tr:nth-child(1){ 
     
@@ -1301,17 +1436,14 @@ input[type="checkbox"]:checked + label span {
 	border-right: 1px solid #ddd; 
     border-left: none;
     border-bottom: none; 
+	padding:0;
 }
 .line-item>thead>tr>td, .line-item-trans>thead>tr>td
 {
 	border-right: 1px solid #ddd; 
     border-left: none;
     border-top: 1px solid #ddd;
-}
-.line-item-trans>thead>tr>th { 
-	padding:2px 4px; 
-}
-
+} 
 .line-item>tbody>tr>td, .line-item-trans>tbody>tr>td, .charges-table>tbody>tr>td, .charges-info>tbody>tr>td {
     padding:0 ; 
 	    
@@ -1324,13 +1456,12 @@ input[type="checkbox"]:checked + label span {
 } 
 .charges-table>thead>tr>td, .charges-info>thead>tr>td
 {
-	 font:13px 'Oxygen', sans-serif; 
-	 font-weight:bold;
-	 color:#000;
+	 @extend .font_bold; 
+	 color:$black;
 } 
 .charges-table>tbody>tr, .charges-info>tbody>tr
 {
-	 font:13px/25px 'Oxygen', sans-serif; 
+	 @extend .font_normal; 
 	 color:#2f3840;
 	 @include transition(0.5s all);
 }
@@ -1388,7 +1519,7 @@ input[type="checkbox"]:checked + label span {
 		display: inline-block;
 		padding-left: 0;
 		margin: 20px 0;
-		border-radius: 4px;
+		@include border-radius(4px); 
 		>li 
 		{
 			display: inline-block;
@@ -1398,10 +1529,10 @@ input[type="checkbox"]:checked + label span {
 			>a
 			{
 				position: relative;
-				display: block;
-				font: 16px 'Oxygen';font-weight:bold;
+				display: block; 
+				font-weight:bold;
 				text-decoration:underline;
-				color:#000;
+				color:$black;
 				border:none;
 				width:26px;
 				height:26px; 
@@ -1409,14 +1540,14 @@ input[type="checkbox"]:checked + label span {
 				padding:0;
 				margin:0 20px 0 0;  
 				float: none; 		
-				line-height: 26px;  
+				@include line-height(26);  
 				@include transition(0.5s all);
 				background:#fff;
 				&:hover, &.active
 				{
-				   color:#fff;
+				   color:$white;
 				   background:#44b0dd;
-				   border-radius:100%;
+				   @include border-radius(100%); 
 				   text-decoration:none;
 				}
 			}
@@ -1476,9 +1607,9 @@ input[type="checkbox"]:checked + label span {
 					a 
 						{
 							display: block;
-							color: #fff; 
+							color:$white; 
 							padding: 45px 10px 15px;
-							font:12px 'Oxygen', sans-serif;  
+							@extend .font_normal; 
 							margin: 0 40px 0 0 !important;
 							text-align:center;
 							@include transition(0.5s all);
@@ -1520,40 +1651,40 @@ input[type="checkbox"]:checked + label span {
 }
 .home-menu ul li a.pms-dashboard:hover {
    background:url(../images/dashboard.png) no-repeat center top;
-   transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);
+   @include transform(scale(1.1));
 } 
 .home-menu ul li a.pms-schedule:hover {
    background:url(../images/schedule.png) no-repeat center top;
-   transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);
+  @include transform(scale(1.1));
 }
 .home-menu ul li a.pms-patient:hover
  {
    background:url(../images/patient-tab.png) no-repeat center top;
-   transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);
+  @include transform(scale(1.1));
 }
 .home-menu ul li a.pms-billing:hover {
    background:url(../images/billing.png) no-repeat center top;
-   transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);
+   @include transform(scale(1.1));
 }
 .home-menu ul li a.pms-payment:hover {
    background:url(../images/payment.png) no-repeat center top;
-   transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);
+   @include transform(scale(1.1));
 }
 .home-menu ul li a.pms-reports:hover {
    background:url(../images/reports.png) no-repeat center top;
-   transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);
+   @include transform(scale(1.1));
 }
 .home-menu ul li a.pms-masters:hover {
    background:url(../images/masters.png) no-repeat center top;
-   transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);
+   @include transform(scale(1.1));
 }
 .home-menu ul li a.pms-admin:hover {
    background:url(../images/admin.png) no-repeat center top;
-   transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);
+  @include transform(scale(1.1));
 }
 .home-menu ul li a.pms-ar:hover {
    background:url(../images/pms-ar.png) no-repeat center top;
-   transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);
+  @include transform(scale(1.1));
 }
  
 /**********************
@@ -1564,9 +1695,7 @@ input[type="checkbox"]:checked + label span {
      
      position: relative; 
 	 background:#fff;
-	 box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
+	 @include box-shadow(0px 2px 6px 0px rgba(0,0,0,0.3)); 
 }
 .breadcrumb-container
 {
@@ -1593,10 +1722,10 @@ input[type="checkbox"]:checked + label span {
 } 
 .breadcrumb li a
 {
-    color: #283036;
-    font:16px 'Oxygen', sans-serif;font-weight:bold;
+    color: $dblue;
+    @extend .font_bold;  
     padding: 0 24px 0 0px;
-    line-height: 35px;
+    @include line-height(35);
     margin: 0 0px 0 0px;
 	@include transition(0.5s all);
 	img
@@ -1611,9 +1740,9 @@ input[type="checkbox"]:checked + label span {
 } 
 .breadcrumb li.active
 {
-	    color: #0583c3;
+	color: #0583c3;
     padding: 0 0 0 10px; 
-	font:16px 'Oxygen', sans-serif;font-weight:bold; 
+	@extend .font_bold;  
 }
 .breadcrumb>li:before {
     padding: 0 0px; 
@@ -1626,7 +1755,7 @@ input[type="checkbox"]:checked + label span {
 }
 .breadcrumb>li+li:before {
     padding: 0 0px;
-    color: #FFF;
+    color:$white;
     content: "";
 }
 
@@ -1644,11 +1773,11 @@ input[type="checkbox"]:checked + label span {
 			height: 30px;
 			a
 			{
-				    line-height: 25px;
+				    @include line-height (25);
 					height: 25px;
 					padding: 0px 30px 0px;
 					margin: 4px 0;
-					border-radius: 8px;
+					@include border-radius(8px); 
 			}
 		}
 }  
@@ -1669,20 +1798,17 @@ input[type="checkbox"]:checked + label span {
      width:100%;
 	 margin-bottom: 20px;
 	 padding: 0 0 30px;
-     background-color: #fff;
+     background-color:$white;
      border: none;
-     border-radius:none;    
-	 box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);
-	-ms-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3); 
+     @include border-radius(none);
+	 @include box-shadow(0px 0px 2px 0px rgba(0,0,0,0.3));  
 } 
 .panel .panel-heading
 {
     padding: 0px 0px 0 0px;
 	position:relative;
 	top:-25px;
-	width:478px; 
+	width:482px; 
 	height:25px;
 	left: 15px; 
 	z-index: 1;
@@ -1700,16 +1826,18 @@ input[type="checkbox"]:checked + label span {
 	top: -2px; right: 0; bottom:0; left: 0px;
 	z-index: -1;
 	border-bottom: none;
-	border-radius: 6px 6px 0 0;
-	background: #008bd1; 
-	transform: perspective(40px) rotateX(4deg);
-	-webkit-transform: perspective(40px) rotateX(4deg);
-	-moz-transform: perspective(40px) rotateX(4deg);
-	-ms-transform: perspective(40px) rotateX(4deg);
-	transform-origin: bottom;
-	-webkit-transform-origin: bottom;
-	-moz-transform-origin: bottom;
-	-ms-transform-origin: bottom; 
+	@include border-radius(6px 6px 0 0); 
+	background: $blue; 
+	@include transform(perspective(40px) rotateX(4deg)); 
+	@include transform-origin(bottom); 
+}
+.panel .demo-panelhead
+{
+	width:258px; 
+}
+.panel .demo-panelhead:before
+{
+	@include transform(perspective(20px) rotateX(4deg)); 
 }
 .panel-body {
     padding: 0 15px;
@@ -1737,46 +1865,34 @@ input[type="checkbox"]:checked + label span {
     left: -3px;
     outline: none;
     z-index: 0;
-    border-bottom: none;
-    border-radius: 7px 7px 0 0;
+    border-bottom: none; 
+	@include border-radius(7px 7px 0 0); 
     background: #fff;
-    transform: perspective(12px) rotateX(4deg);
-    webkit-transform: perspective(12px) rotateX(4deg);
-    -moz-transform: perspective(12px) rotateX(4deg);
-    -ms-transform: perspective(12px) rotateX(4deg);
-    transform-origin: bottom;
-    -webkit-transform-origin: bottom;
-    -moz-transform-origin: bottom;
-    -ms-transform-origin: bottom;
-    box-shadow: 4px -2px 4px rgba(0, 0, 0, 0.1), -3px -4px 4px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 4px -2px 4px rgba(22,22,22,0.1), -3px -4px 4px rgba(22,22,22,0.1);
-    -ms-box-shadow: 4px -2px 4px rgba(0, 0, 0, 0.1), -3px -4px 4px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 4px -2px 4px rgba(0, 0, 0, 0.1), -3px -4px 4px rgba(0, 0, 0, 0.1);
-}
-
-
- 
+	@include transform(perspective(12px) rotateX(4deg));  
+    @include transform-origin(bottom);
+	@include box-shadow($tab_shadows); 
+} 
 .nav-tabs>li:last-child
 {
 	 border-right:none;
 }
 .nav-tabs>li>a
 {
-	color: #fff;
+	color:$white;
 	margin: 0px; 
     border:none;
-    border-radius:0;
+    @include border-radius(0px); 
 	height:25px;	
 	display:block;
-	font:14px/25px 'Oxygen', sans-serif;
+	@include line-height(25);
 	padding: 0px 13px 0px 44px;
 	outline:none;
 	 
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
-    color: #008bd1;
+    color: $blue;
     cursor: default;
-    background-color: #fff;
+    background-color:$white;
     border: 1px solid #ddd;
     border-bottom-color: transparent;
 }
@@ -1807,11 +1923,11 @@ input[type="checkbox"]:checked + label span {
 	 span
 	 {
 		  background: #ffe129;
-		  border-radius: 100%;
+		  @include border-radius(100%); 
 		  padding: 1px 6px;
 		  margin: 0px 0 0 6px;
 		  height: 10px;
-		  color:#008bd1; 
+		  color:$blue; 
 	 }
 } 
 .nav-tabs>li.active>a.notes-tab
@@ -1821,8 +1937,8 @@ input[type="checkbox"]:checked + label span {
 	 span
 	  {
 			
-		   background: #008bd1;
-		   color:#fff;  
+		   background: $blue;
+		   color:$white;  
 	  }
 } 
 
@@ -1838,7 +1954,7 @@ input[type="checkbox"]:checked + label span {
 .nav-tabs>li>a.more-tab
 {
 	 background:url(../images/more.png) no-repeat 18px 4px;
-	 color:#fff; 
+	 color:$white; 
 	 padding: 0px 13px 0px 35px;
 }
 .nav-tabs>li.active>a.more-tab
@@ -1852,6 +1968,13 @@ input[type="checkbox"]:checked + label span {
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: none;
     border-color: #337ab7;
+	color: #23527c;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    color: #23527c;
+    text-decoration: none;
+    background-color: #337ab7;
+    outline: 0;
 }
  
 /*.nav>li:hover:before {
@@ -1898,7 +2021,7 @@ input[type="checkbox"]:checked + label span {
 }
 .nav .open>a, .nav .open>a:focus
 {
-	color:#fff; 
+	color:$white; 
 	background:none;
 	 background:url(../images/more.png) no-repeat  18px 4px;
 }
@@ -1913,15 +2036,14 @@ input[type="checkbox"]:checked + label span {
     clear: both;
     font-weight: 400;
     line-height: 1.42857143;
-    color: #000;
+    color:#23527c;
     white-space: nowrap;
-	font-family:16px 'Oxygen';
-	@include transition(0.5s all);
+	@include font-size(14); 
 }
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus
 {
 	background:#fff;
-	color:#000;
+	color:$black;
 }
 .dropdown-menu>li>a:focus
 {
@@ -1944,14 +2066,28 @@ input[type="checkbox"]:checked + label span {
 	position:relative;
 	top:20px;
 }
+/*********Demo Subs Table**********/
+.demo_sub-table thead tr th, .demo_sub-table tbody tr td
+{
+	width:9.1%;
+}
+.demo_sub-table thead tr th:last-child
+{
+	 padding:0 10px;
+}
+.demo_ins-table thead tr th, .demo_ins-table tbody tr td
+{
+	width:11.1%; 
+}
+/*****************/
+
 .facility-provider
 	{
 		width: 100%; 
 		overflow: hidden;
-		border-radius: 8px;
+		@include border-radius(8px); 
 		border: 1px solid #d3d3d3; 
-		margin:0; 
-		font: 16px 'Oxygen', sans-serif; 
+		margin:0;  
 		.facility-det
 		{
 			width:40%;
@@ -1959,10 +2095,7 @@ input[type="checkbox"]:checked + label span {
 			border:none;
 			background:none;
 			float:left;
-			appearance:none;
-			-webkit-appearance:none;
-			-ms-appearance:none;
-			-moz-appearance:none; 
+			@include appearance(none);
 			padding: 0 10px;
 			background:url(../images/select-tick-black.png) right no-repeat;
 		}
@@ -1973,10 +2106,7 @@ input[type="checkbox"]:checked + label span {
 			border:none;
 			background:none;
 			float:left;
-			appearance:none;
-			-webkit-appearance:none;
-			-ms-appearance:none;
-			-moz-appearance:none;
+			@include appearance(none);
 			padding: 0 10px;
 			border-left:1px solid #d3d3d3;
 			background:url(../images/select-tick-black.png) right no-repeat;
@@ -1985,7 +2115,7 @@ input[type="checkbox"]:checked + label span {
 .appointment-info
 	{
 		    border: 1px solid #d3d3d3;
-			border-radius: 10px;
+			@include border-radius(10px); 
 			margin: 15px 0 0;
 			overflow: hidden;
 	}
@@ -1999,19 +2129,15 @@ input[type="checkbox"]:checked + label span {
 			{
 				position: relative;
 				top: 0px;
-				font-size: 14px;font-family:'Oxygen', sans-serif; font-weight:bold; 
+				@extend .font_bold; 
 				width:100%;
 			} 
 			select
 			{
 				 
 				padding: 2px 10px;
-				font-size: 14px;font-family:'Oxygen', sans-serif; font-weight:bold;
+				@extend .font_bold;
 				margin: 0px 0 0;  
-				-webkit-appearance: none;
-				-ms-appearance: none;
-				-moz-appearance: none; 
-				appearance: none;
 				position:absolute;
 				right:15px;
 				top:8px;
@@ -2084,11 +2210,10 @@ input[type="checkbox"]:checked + label span {
 						{
 								position: relative;
 								display: block;
-								font-size: 14px;
-								font-family:'Oxygen', sans-serif; font-weight:bold;
-								line-height:25px;
+								 font-weight:bold;
+								@include line-height(25);
 								text-decoration: underline;
-								color: #000;
+								color:$black;
 								border: none; 
 								height: 50px;
 								text-align: center;
@@ -2123,7 +2248,7 @@ input[type="checkbox"]:checked + label span {
 						 
 						> a span
 						{ 
-							color:#fff;
+							color:$white;
 							display:block;
 						}
 					
@@ -2199,8 +2324,8 @@ input[type="checkbox"]:checked + label span {
 	}
 	.add-pat
 	{
-		border-radius: 10px;
-		color:#fff;
+		@include border-radius(10px); 
+		color:$white;
 		margin:20px 15px;    
 		padding: 0px 0;
 		background-image: -moz-linear-gradient( 90deg, rgb(5,131,195) 0%, rgb(79,180,231) 100%);
@@ -2209,7 +2334,6 @@ input[type="checkbox"]:checked + label span {
 		p
 		{
 			text-align:center;
-			font-size: 14px;font-family:'Oxygen', sans-serif; 
 			background:url(../images/plus-white.png) no-repeat center center;
 			padding:5px 0 5px 100px; 
 			&:hover
@@ -2228,7 +2352,7 @@ input[type="checkbox"]:checked + label span {
 	
 	.names-table
 	{ 
-			border-radius: 10px;
+			@include border-radius(10px); 
 			width: 95%;
 			margin: 10px auto;
 			border: none;
@@ -2240,9 +2364,8 @@ input[type="checkbox"]:checked + label span {
 	
 	.names-table > tbody > tr > td  
 	{
-		    border: 1px solid #ddd; 
-			font-size: 12px;
-			font-family:'Oxygen', sans-serif;
+		    border: 1px solid #ddd;  
+			@extend .font_normal;
 			padding:0 0 0 12px;
 			width:100%;
 	}
@@ -2267,7 +2390,7 @@ input[type="checkbox"]:checked + label span {
 		background-image: -moz-linear-gradient( 90deg, rgb(5,131,195) 0%, rgb(79,180,231) 100%);
 		background-image: -webkit-linear-gradient( 90deg, rgb(5,131,195) 0%, rgb(79,180,231) 100%);
 		background-image: -ms-linear-gradient( 90deg, rgb(5,131,195) 0%, rgb(79,180,231) 100%);
-		color:#fff;
+		color:$white;
 	}
 	.names-table > tbody > tr:first-child, .names-table > tbody > tr
 	{
@@ -2283,7 +2406,15 @@ input[type="checkbox"]:checked + label span {
 	background-image:none;
 	border-top:0;
 }
- .notes-table > tbody > tr:hover
+ .notes-table tbody tr
+{
+	 border-bottom: 1px solid #ddd;
+}
+ .notes-table tbody tr:last-child
+{
+	 border-bottom:none;
+}
+ .notes-table tbody tr:hover
 {
 	    background: #d5e4f1;
 }
@@ -2311,15 +2442,17 @@ input[type="checkbox"]:checked + label span {
 			li
 			{
 				
-    			font: 16px/25px 'Oxygen', sans-serif; 
+    			
+				@include line-height(25);
 				&:first-child
 				{
-					color: #283036; 
+					color: $dblue; 
+					@include font-size(16);
 				}
 				&:nth-child(2)
 				{
-					 font-size: 14px;font-family:'Oxygen', sans-serif;
 					 color:#282f36;
+					 @include font-size(14);
 					 span
 					 {
 						color:#d2661e; 
@@ -2328,7 +2461,7 @@ input[type="checkbox"]:checked + label span {
 				}
 				 span.system-color
 					{
-						color:#008bd1;
+						color:$blue;
 					}
 			}
 		}
@@ -2339,8 +2472,10 @@ input[type="checkbox"]:checked + label span {
 			width: 100%;
 			p
 			{
-				font: 12px/20px 'Oxygen', sans-serif;
-		        color:#000;
+			 
+				@include line-height(20);
+				@include font-size(14);
+				color:$black;
 			}
 	}
 }
@@ -2356,20 +2491,20 @@ input[type="checkbox"]:checked + label span {
 			Width:100px;
 			height:30px;
 			text-align:center;
-			font:14px/30px 'Oxygen', sans-serif; 
-			color:#fff;
+			@include line-height (30); 
+			color:$white;
 			display:block; 
-			border-radius:8px; 
+			@include border-radius(8px);  
 			@include transition(0.5s all);
 			background-image: -moz-linear-gradient( 90deg, rgb(17,107,199) 0%, rgb(0,139,209) 100%);
 			background-image: -webkit-linear-gradient( 90deg, rgb(17,107,199) 0%, rgb(0,139,209) 100%);
 			background-image: -ms-linear-gradient( 90deg, rgb(17,107,199) 0%, rgb(0,139,209) 100%);
 			&:hover
 			{
-				background-image: -moz-linear-gradient( 90deg, rgb(201,202,204) 0%, rgb(244,243,243) 100%);
+			  background-image: -moz-linear-gradient( 90deg, rgb(201,202,204) 0%, rgb(244,243,243) 100%);
 			  background-image: -webkit-linear-gradient( 90deg, rgb(201,202,204) 0%, rgb(244,243,243) 100%);
 			  background-image: -ms-linear-gradient( 90deg, rgb(201,202,204) 0%, rgb(244,243,243) 100%);
-			  color:#000;
+			  color:$black;
 			}			
 		}
 		
@@ -2378,41 +2513,34 @@ input[type="checkbox"]:checked + label span {
 	
 .bill-info-notes
 {
-	border:1px solid #ddd;
-	h2
-	{
-		font: 14px/10px 'Oxygen', sans-serif;
-	}
+	border:1px solid #ddd; 
 	select
 	{
 		background: url(../images/select-tick-black.png) no-repeat right;
-		border:1px solid #ddd !important;
+		border-bottom:1px solid #ddd !important;
 		margin: 0 0 10px;
 		border: none;
 		padding: 0px 40px 0 20px;
 		outline: 0;
-		line-height: 30px;
+		@include line-height (30);
 		width: 100%;
-		text-decoration: none;
-		font-size: 14px;
+		text-decoration: none; 
 	}
 }
 
 /* Text Area*/ 
 
- .bill-info textarea { 
-	
-	 
+ .bill-info textarea {  
 	width:90%;
 	height: 256px;
-	 max-height: 256px;  
-	 font:18px 'Oxygen', sans-serif;
+	 max-height: 256px;   
 	text-align:left;
-	color: #283036;   
+	color: $dblue;   
 	 display: block;
 	 margin:0px auto 10px; 
 	 overflow-y: scroll;
 	 resize:none;
+	 padding:5px 0 0 5px;
 
 }
 
@@ -2422,21 +2550,24 @@ input[type="checkbox"]:checked + label span {
 }
 .bill-info textarea::-moz-placeholder {
     position: relative;
-    font:18px/234px 'Oxygen', sans-serif;
-	color: #283036; 
+	@include line-height(234);
+	@include font-size (18);
+	color: $dblue; 
 }
 
 .bill-info textarea::-ms-input-placeholder {
     position: relative;
-    font:18px/234px 'Oxygen', sans-serif;
-	color: #283036; 
+    @include line-height(234);
+	@include font-size (18);
+	color: $dblue; 
 }
 
 .bill-info textarea::-webkit-input-placeholder {
     position: relative;
-    font:18px/215px 'Oxygen', sans-serif; 
+    @include line-height(215);
+	@include font-size (18);
     text-align: center;
-	color: #283036; 
+	color: $dblue; 
 }
 	
 	/********************
@@ -2451,12 +2582,11 @@ input[type="checkbox"]:checked + label span {
 #dropZone 
 {
 	  border: 2px dashed #bbb;
-	  -webkit-border-radius: 5px;
-	  border-radius: 5px;
+	  @include border-radius(5px);  
 	  padding: 50px;
 	  text-align: center; 
 	  color: #bbb;
-	  font: 48px 'Oxygen', sans-serif;
+	  @include font-size(48);
 }
 
 .appointment-schedule
@@ -2464,7 +2594,7 @@ input[type="checkbox"]:checked + label span {
 	display:none;	
 	h2
 	{
-		font: 24px 'Oxygen', sans-serif;
+		@include font-size(24);
 		font-weight:bold;
 		padding:10px 0;
 		text-align:center;
@@ -2488,15 +2618,12 @@ input[type="checkbox"]:checked + label span {
 	width:70%;
 	text-align:center;
 	margin:120px auto;
-	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
+	@include box-shadow(0px 2px 6px 0px rgba(0,0,0,0.3)); 
 	p
 	{ 
-		font-size: 14px;font-family:'Oxygen', sans-serif; 
-		color:#fff;
+		color:$white;
 		height:25px;
-		line-height:25px;
+		@include line-height(25);
 		padding:0px 10px;
 		text-decoration:underline; 
 		overflow: hidden;
@@ -2534,8 +2661,8 @@ input[type="checkbox"]:checked + label span {
 			a
 			{
 				display:block;
-				font: 13px 'Oxygen';font-weight:bold;
-				color:#000;
+				@extend .font_bold;
+				color:$black;
 				text-align:center;
 				height:60px;
 				padding: 20px 36px 20px 0px;				
@@ -2574,38 +2701,27 @@ input[type="checkbox"]:checked + label span {
 {
 	    vertical-align:middle;
 		margin: -5px 0 0 0;
-} 
-.more-sample>.table-layout>.table>tbody>tr>td
-{
-	padding: 0px;
-    line-height:40px;
-}
- 
+}  
 .more-sample select
 {
 	 
-	 text-decoration:none;
-	 -o-appearance:none;
-	 -ms-appearance:none;
-	 appearance:none;
-	 -moz-appearance:none;
-	 -webkit-appearance:none;
+	 text-decoration:none; 
 	 background:url(../images/select-tick-black.png) no-repeat right center;
 	 border:none;
 	 padding:0px 0px 0 0px;
-	 outline:0;
-	 line-height:40px; 
+	 outline:0; 
 	 width: 100%;
 	 option 
 	 {
 		  background:#fff;
-		  color:#283036; 
+		  color:$dblue; 
 	 }
 }
 /********Model Info*********/
 .close {
      
-    font-size: 30px; 
+    @include font-size(30);
+	opacity:1;
 }
  .table-responsive { 
     margin: 0px auto;
@@ -2629,10 +2745,7 @@ input[type="checkbox"]:checked + label span {
 	margin: auto;
 	width:768px;
 	height: 100%;
-	-webkit-transform: translate3d(0%, 0, 0);
-	-ms-transform: translate3d(0%, 0, 0);
-	-o-transform: translate3d(0%, 0, 0);
-	transform: translate3d(0%, 0, 0);
+	@include transform(translate3d(0%, 0, 0));  
 }
 .modal.subs-modal .modal-dialog {
  
@@ -2645,82 +2758,93 @@ input[type="checkbox"]:checked + label span {
 /* ----- MODAL STYLE ----- */ 
   
 .modal-content {
-	border-radius: 0;
+	@include border-radius(0px); 
 	border: none;
 }
 .modal-header {
-	border-bottom-color: #EEEEEE;
-	background-color: #4fc2f2;
+	border-bottom-color: #ddd;
+	background-color: #4fc2f2; 
 }
 .modal-header h3 {
-	 font: 24px/20px 'Oxygen', sans-serif;
-	 color:#fff;
+	 @include font-size(18);
+	 @include line-height(20);
+	 color:$white;
 }
 .modal-body { 
     overflow: hidden;
 }
 .modal-body h4 {
-	 font: 18px 'Oxygen', sans-serif;
+	 @include font-size(18);
 	 color:#478fca; 
-	 margin:10px 0;
+	 margin:10px 10px;
 }
-.modal-body .span-text {
-	 font: 12px/20px 'Oxygen', sans-serif; 
+.modal-body .span-text { 
+	  @include line-height(20);
+}
+.modal-body .notes-detail ul li{ 
+   line-height:30px;
+}
+.modal-body .notes-detail ul li:first-child { 
+    @include font-size(18);
+	 color: #000; 
+}
+.modal-body .notes-detail ul li:nth-child(2) {
+    color: #000; 
 }
 .profile-user-info {
     display: table;
-    width: 98%;
-    width: calc(100% - 24px);
-    margin: 0 auto;
+    width: 100%; 
+    margin:0px auto 25px;
 }
 .profile-user-info-striped {
-    border: 1px solid #DCEBF7;
+    border: 1px solid #dddddd;
 }
 .profile-info-row {
     display: table-row;
+	line-height:25px !important;
+	height:25px !important;
+	@include font-size(12);
 }
 .profile-info-row:first-child .profile-info-name {
-    border-top: none;
+    border-top: none; 
+	
 }
 .profile-user-info-striped .profile-info-name {
-    color: #fff;
-    background-color:rgba(0,139,201,0.8);
-    border-top: 1px solid #F7FBFF;
+    color:$black;
+    border-top: 1px solid #dddddd;
+	padding:0 15px;
+	
 }
 .profile-info-name {
     text-align: right;
-    padding: 6px 10px 6px 4px;
+    padding:0;
     font-weight: normal;
     color: #667E99;
     background-color: transparent;
-    border-top: 1px dotted #D5E4F1;
-    display: table-cell;
-    width: 200px;
+    border-top: 1px dotted #dddddd;
+    display: table-cell; 
     vertical-align: middle;
 }
-label {
-    font-weight: normal;
-    font-size: 13px;
-}
+ 
 .profile-info-row:first-child .profile-info-value {
     border-top: none;
 }
 .profile-user-info-striped .profile-info-value {
-    border-top: 1px dotted #DCEBF7;
-    padding-left: 12px;
-	font: 13px/25px 'Oxygen', sans-serif;
+    border-top: 1px dotted #dddddd;
+    padding:0px;
+	 border-left: 1px dotted #dddddd;
 }
 
 .profile-info-value {
     display: table-cell;
     padding: 0;
-    border-top: 1px dotted #D5E4F1;
+    border-top: 1px dotted #dddddd;
 }
 .modal-content textarea,.modal-content input[type="text"],.modal-content input[type="password"],.modal-content input[type="datetime"],.modal-content input[type="datetime-local"],.modal-content input[type="date"],.modal-content input[type="month"],.modal-content input[type="time"],.modal-content input[type="week"],.modal-content input[type="number"],.modal-content input[type="email"],.modal-content input[type="url"],.modal-content input[type="search"],.modal-content input[type="tel"],.modal-content input[type="color"] {
-       font: 13px/25px 'Oxygen', sans-serif;
+        
 }
 .modal-content textarea:focus, .modal-content input[type="text"]:focus, .modal-content input[type="password"]:focus, .modal-content input[type="datetime"]:focus, .modal-content input[type="datetime-local"]:focus, .modal-content input[type="date"]:focus, .modal-content input[type="month"]:focus, .modal-content input[type="time"]:focus, .modal-content input[type="week"]:focus, .modal-content input[type="number"]:focus, .modal-content input[type="email"]:focus, .modal-content input[type="url"]:focus, .modal-content input[type="search"]:focus, .modal-content input[type="tel"]:focus, .modal-content input[type="color"]:focus {
-    -webkit-box-shadow: none;
+   @include box-shadow(none); 
     box-shadow: none;
     color: #696969;
     border: 1px solid #478fca; 
@@ -2729,17 +2853,13 @@ label {
 }
 .modal-content select
 {
-	 width: 100%;
-    font: 13px/30px 'Oxygen', sans-serif;
+	 width: 100%;     
     border: none;
-    outline: none;
-    height: 30px;
+    outline: none; 
+	padding:0 0 0 12px;
     background:url(../images/select-tick-black.png) no-repeat right center;
-	-o-appearance:none;
-	 -ms-appearance:none;
-	 appearance:none;
-	 -moz-appearance:none;
-	 -webkit-appearance:none;
+	text-decoration:none;
+	 
 }
 .demo-footer {
 	position: fixed;
@@ -2751,7 +2871,8 @@ label {
 }
 input[disabled], select[disabled] {
     color: #848484 !important;
-    background-color: #eeeeee !important;
+    background-color: #ececec !important;
+	padding:0 0 0 12px !important;
 }
 .no-padding {
     padding: 0 !important;
@@ -2759,82 +2880,52 @@ input[disabled], select[disabled] {
 .demo-footer > a {
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 16px;
-	color: #fff;
+	@include font-size(16);
+	color:$white;
+}
+.modal-footer {
+    padding: 30px; 
+    border: none;
 }
 @media (min-width: 1350px) and (max-width: 1366px) 
 {
 .line-item-trans > thead > tr > th {
-    padding: 2px 0px;
-	font:bold 12px 'Oxygen', sans-serif; 
+    padding: 2px 0px; 
 }
 
 }
-@media only screen and (min-width: 992px)
-{
-	label {
-		white-space: nowrap;
-	}
-}
+ 
 @media (min-width: 992px) and (max-width: 1349px) 
 {
  
-.line-item > thead > tr > th, .charges-table > thead > tr > th, .charges-info> thead > tr > th  {
-    padding: 2px 3px;
-}
-.line-item select {
-    text-decoration: underline;
-    -o-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background:url(../images/select-tick-black.png) no-repeat right center;
-    border: none;
-    padding: 0px 0px 0 5px;
-    outline: 0;
-    line-height: inherit;
-	text-decoration:none;
-	width:100%
-}
  
-.line-item-trans > thead > tr > th {
-    padding: 2px 0px;
-	font:bold 12px 'Oxygen', sans-serif; 
-}
-
-	
-.search-box 
-	{
-		width: 280px;
-		margin: 0 auto;
-	}
-		
-.transact-show
-{
-	.transact-content
-	{
-	 width: auto;
-     min-width: 115px;
-	 height:110px; 
-	 margin:0 0px 0 0; 
-	}
-	
-}
+		.transact-show
+		{
+			.transact-content
+			{
+			 width: auto;
+			 min-width: 115px;
+			 height:110px; 
+			 margin:0 0px 0 0; 
+			}
+			
+		}
 	.diag-a 
 		{
 			 width: 190px; 
 		}
-	.line-item>tbody>tr>td
-		{
-			padding: 0 0px; 
-		}
+	 .line-item select {
+     
+    padding: 0px 0px 0 5px; 
+}
+	 
 	.daywise-table ul > li > a
 	{
 		 
 		padding:0px 20px; 
 	}
-	.search-byname {
+	.search-byname 
+	{
     background: url(../images/search.png) no-repeat 75% 54% #fff;
 	} 
 }
