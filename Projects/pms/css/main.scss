@@ -492,6 +492,13 @@ label {
    height:100%;
    min-height:540px;
 }  
+.schedule-fixheight{ 
+   min-height:597px;
+} 
+.ticket-fixheight
+{
+	min-height:625px;
+}
 .provider-info
 {
 	background:#fff; 
@@ -1084,10 +1091,84 @@ input[type="checkbox"]
     display:none;
 }
 
-.line-item tbody tr td label span
+.line-item
 {
-    margin: 0 7px 0 0px;
+	thead
+	{
+		display: block; 
+		tr
+		{
+			border:1px solid #ddd !important;
+			padding:0 17px 0 0;
+			display: block; 
+			&:after
+			{
+				content:'';
+				display: block;
+				visibility: hidden;
+				clear: both;
+			}
+			th
+			{
+				display: block; 
+			}
+		}
+	}
+	tbody 
+	{
+		width:100%;
+		height: 148px;  
+		overflow-y: auto;
+		overflow-x: hidden; 
+		display: block; 
+		tr
+		{ 
+			display: block; 
+			td 
+			{
+				
+				display: block; 
+				padding:0;
+				label
+				{
+					
+					span
+					{
+						margin: 0 7px 0 0px; 
+					}
+				}
+				select
+				{
+					text-decoration: underline;    
+					background:url(../images/select-tick-black.png) no-repeat right center;
+					border: none;
+					padding: 0px 0px 0 10px;
+					outline: 0;
+					line-height: inherit;
+					text-decoration:none;
+					width:100%
+				}
+				input[type=text] 
+				{
+					width: 100%;
+					height:25px;
+					line-height:none;
+					text-align:center;
+				}
+				
+			}
+		}
+	}
+	tfoot
+	{
+		tr
+		{
+			 padding:0 17px 0 0;
+		}
+		
+	}
 }
+ 
  
  
 .line-item tr td:nth-child(5), .line-item tr td:nth-child(10), .line-item tr td:nth-child(13)
@@ -1096,33 +1177,8 @@ input[type="checkbox"]
 	padding:0 10px 0 0;
 	text-align:right;
 }
-.line-item select {
-    text-decoration: underline;    
-    background:url(../images/select-tick-black.png) no-repeat right center;
-    border: none;
-    padding: 0px 0px 0 10px;
-    outline: 0;
-    line-height: inherit;
-	text-decoration:none;
-	width:100%
-}
-  
-.line-item tbody {
-    width:100%;
-	height: 148px; 
-	/* overflow: scroll;
-	overflow: auto; */ 
-    overflow-y: auto;
-    overflow-x: hidden;
-	input[type=text] 
-	{
-		width: 100%;
-		height:25px;
-		line-height:none;
-		text-align:center;
-	}
-	
-}
+ 
+ 
 .line-item tbody tr td:nth-child(16), .line-item thead tr th:nth-child(16), .line-item tbody tr td:nth-child(6), .line-item thead tr th:nth-child(6), .line-item tbody tr td:nth-child(7), .line-item thead tr th:nth-child(7), .line-item tbody tr td:nth-child(8), .line-item thead tr th:nth-child(8), .line-item tbody tr td:nth-child(9), .line-item thead tr th:nth-child(9)  {
     width: 4%;
     float: left;
@@ -1178,31 +1234,20 @@ input[type="checkbox"]:checked + label span {
     background:url(../images/right-symbol.png) top no-repeat;
 }
  
-/*.line-item>tbody>tr, .line-item-trans>tbody>tr {  
-     @include line-height(25); 
-	 @extend .font_normal;
-     padding:0 0;
-	 color:#2f3840;
-	 overflow:hidden;
-}*/ 
-  
-.line-item table, .line-item-trans table
+
+.line-item-trans thead, .line-item-trans tbody, .line-item-trans tr, .line-item-trans td, .line-item-trans th 
 {
-    width: 100%;
+	display: block; 
 }
 
-.line-item thead, .line-item tbody, .line-item tr, .line-item td, .line-item th, 
-.line-item-trans thead, .line-item-trans tbody, .line-item-trans tr, .line-item-trans td, .line-item-trans th { display: block; }
-
-.line-item tr:after, .line-item-trans tr:after {
+ .line-item-trans tr:after {
     content:'';
     display: block;
     visibility: hidden;
     clear: both;
 }
  
- 
-.line-item>tbody>tr>td, .line-item-trans>tbody>tr>td { 
+.line-item-trans>tbody>tr>td { 
 	padding:0 ; 
 } 
 .line-item-trans tbody tr td:nth-child(7), .line-item-trans thead tr th:nth-child(7), .line-item-trans tbody tr td:nth-child(8), .line-item-trans thead tr th:nth-child(8), .line-item-trans tbody tr td:nth-child(9), .line-item-trans thead tr th:nth-child(9), .line-item-trans tbody tr td:nth-child(10), .line-item-trans thead tr th:nth-child(10), .line-item-trans tbody tr td:nth-child(11), .line-item-trans thead tr th:nth-child(11), .line-item-trans tbody tr td:nth-child(12), .line-item-trans thead tr th:nth-child(12), .line-item-trans tbody tr td:nth-child(13), .line-item-trans thead tr th:nth-child(13)
@@ -1279,7 +1324,70 @@ input[type="checkbox"]:checked + label span {
     border-bottom: none;
     border-left: none;
 } 
+/********Schedule Charges Table*************/
 
+.sch-table
+{
+	@extend .line-item;
+	thead
+	{
+		tr
+		{
+			th
+			{
+				  width: 11.1% !important; 
+			}
+		}
+	}
+	tbody
+	{
+		tr
+		{
+			td
+			{
+				  width: 11.1% !important;
+				  background:none!important;
+				  padding: 0 0px 0 0 !important;;
+				  text-align: center !important;;
+			}
+		}
+	}
+}
+.sch-info 
+{
+    @extend .header-info;	 
+    height: 35px;
+    line-height: 35px; 
+	h2
+	{
+		line-height: 35px;
+	}
+}
+.srh-table
+{
+	@extend .sch-table;
+	thead
+	{
+		tr
+		{
+			th
+			{
+				  width: 14.28% !important; 
+			}
+		}
+	}
+	tbody
+	{
+		tr
+		{
+			td
+			{
+				  width: 14.28% !important; 
+			}
+		}
+	}
+	 
+}
 
 
 /*************
@@ -1376,35 +1484,11 @@ input[type="checkbox"]:checked + label span {
    margin:15px 0;
 }
 /*** New Reg***/
-
-.charges-info .header-info {
-    padding: 0px 0 0px 20px;
-}
-.charges-info .header-info ul {
-    overflow:hidden;
-}
-.charges-info .header-info ul li {
-    border-right: #2e93bd;
-    padding: 0 30px 0 0px;
-} 
-.charges-info .search {
-    padding: 0 25px 0 20px; 
-    margin: 0px 0 0px 0;
-    background: url(../images/search.png) no-repeat 94% 54% #fff;
-}
-.line-item>thead>tr
-{
-	 border:1px solid #ddd !important;
-}
  
-.line-item>thead>tr:nth-child(1), .line-item>tfoot>tr, .line-item-trans>thead>tr:nth-child(1), .charges-table>thead>tr:nth-child(1), .charges-info>thead>tr:nth-child(1)
+
+.line-item-trans>thead>tr:nth-child(1)
 { 
-    padding:0 17px 0 0;
-}
-.line-item-trans>thead>tr:nth-child(1){ 
-    
-	padding:0 0 0 0;
-	
+    padding:0 0 0 0; 
 }
 .line-item-trans
 {  
@@ -1416,19 +1500,19 @@ input[type="checkbox"]:checked + label span {
       background: #d5e4f1;   
 }
 
-.line-item table, .line-item-trans table, .charges-info table,  .charges-info table
+.line-item table, .line-item-trans table
 {
     width: 100%;
 }
-.charges-info thead,  .charges-info tbody,  .charges-info tr,  .charges-info td,  .charges-info th , .charges-table thead,  .charges-table tbody,  .charges-table tr,  .charges-table td,  .charges-table th, .line-item thead, .line-item tbody, .line-item tfoot, .line-item tr, .line-item td, .line-item th, .line-item-trans thead, .line-item-trans tbody, .line-item-trans tr, .line-item-trans td, .line-item-trans th { display: block; }
+.line-item thead, .line-item tbody, .line-item tfoot, .line-item tr, .line-item td, .line-item th, .line-item-trans thead, .line-item-trans tbody, .line-item-trans tr, .line-item-trans td, .line-item-trans th { display: block; }
 
-.line-item tr:after, .line-item-trans tr:after, .charges-info tr:after, .charges-table tr:after {
+.line-item tr:after, .line-item-trans tr:after {
     content:'';
     display: block;
     visibility: hidden;
     clear: both;
 }
-.line-item>thead>tr>th, .charges-info>thead>tr>th, .charges-table>thead>tr>th, .line-item>tfoot>tr>td { 
+.line-item>thead>tr>th, .line-item>tfoot>tr>td { 
 	padding:0px 8px; 
 }
 .line-item>thead>tr>th, .line-item-trans>thead>tr>th, .line-item>tfoot>tr>td
@@ -1444,53 +1528,21 @@ input[type="checkbox"]:checked + label span {
     border-left: none;
     border-top: 1px solid #ddd;
 } 
-.line-item>tbody>tr>td, .line-item-trans>tbody>tr>td, .charges-table>tbody>tr>td, .charges-info>tbody>tr>td {
+.line-item>tbody>tr>td, .line-item-trans>tbody>tr>td{
     padding:0 ; 
 	    
 } 
 .line-item>tbody>tr>td, .line-item-trans>tbody>tr>td
 {
-	 
-    border-left: none;
+	 border-left: none;
     border-bottom: none;
 } 
-.charges-table>thead>tr>td, .charges-info>thead>tr>td
-{
-	 @extend .font_bold; 
-	 color:$black;
-} 
-.charges-table>tbody>tr, .charges-info>tbody>tr
-{
-	 @extend .font_normal; 
-	 color:#2f3840;
-	 @include transition(0.5s all);
-}
-.charges-table>tbody>tr:hover
-{
-	 background:#d5e4f1;
-} 
-.charges-info tbody, .charges-table tbody 
-{
-    height:160px;
-    overflow-y: auto; 
-}
-.charges-info tbody td, .charges-info thead th 
-{
-    width: 11.1%;
-    float: left;
-}
-.check-in-table tbody td, .check-in-table thead th 
-{
-    width: 10%;
-}
+ 
 .ticket-info tbody td, .ticket-info thead th 
 {
     width: 14.28%; 
 } 
-.charges-info thead tr 
-{
-    padding:0 17px 0 0;
-}
+
 .payment-table-head tr td, .payment-table tr td
 {
 	width:100px;
@@ -1726,6 +1778,7 @@ input[type="checkbox"]:checked + label span {
     @extend .font_bold;  
     padding: 0 24px 0 0px;
     @include line-height(35);
+	@include font-size(14);
     margin: 0 0px 0 0px;
 	@include transition(0.5s all);
 	img
@@ -1743,6 +1796,7 @@ input[type="checkbox"]:checked + label span {
 	color: #0583c3;
     padding: 0 0 0 10px; 
 	@extend .font_bold;  
+	@include font-size(14);
 }
 .breadcrumb>li:before {
     padding: 0 0px; 

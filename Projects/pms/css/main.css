@@ -16,12 +16,12 @@ body {
 .bold_text, .line-item-trans tbody tr:last-child td:nth-child(2), .line-item-trans tbody tr:last-child td:nth-child(3), .line-item-trans tbody tr:last-child td:nth-child(4), .line-item-trans tbody tr:nth-last-child(2) td:nth-child(2) {
   font-weight: bold; }
 
-.font_normal, .font_bold, table thead tr th, table tfoot tr td, .provider-info-table tbody tr td p, .insurance-subs-table tbody tr td p, .dropdown-mode label, .dropdown-diag p, .footer p span:nth-child(2), .charges-table > thead > tr > td, .charges-info > thead > tr > td, .breadcrumb li a, .breadcrumb li.active, .daily-view h2, .daily-view select, .appointment-status ul li a, table tbody tr td, .transact-show .transact-content p span, .provider-info-table tbody tr td select, .insurance-subs-table tbody tr td select, .dropdown-mode select, .radio-toolbar label, .charges-table > tbody > tr, .charges-info > tbody > tr, .home-menu ul li a, .names-table > tbody > tr > td {
+.font_normal, .font_bold, table thead tr th, table tfoot tr td, .provider-info-table tbody tr td p, .insurance-subs-table tbody tr td p, .dropdown-mode label, .dropdown-diag p, .footer p span:nth-child(2), .breadcrumb li a, .breadcrumb li.active, .daily-view h2, .daily-view select, .appointment-status ul li a, table tbody tr td, .transact-show .transact-content p span, .provider-info-table tbody tr td select, .insurance-subs-table tbody tr td select, .dropdown-mode select, .radio-toolbar label, .home-menu ul li a, .names-table > tbody > tr > td {
   line-height: 25px;
   font-size: 12px;
   color: #000; }
 
-.font_bold, table thead tr th, table tfoot tr td, .provider-info-table tbody tr td p, .insurance-subs-table tbody tr td p, .dropdown-mode label, .dropdown-diag p, .footer p span:nth-child(2), .charges-table > thead > tr > td, .charges-info > thead > tr > td, .breadcrumb li a, .breadcrumb li.active, .daily-view h2, .daily-view select, .appointment-status ul li a {
+.font_bold, table thead tr th, table tfoot tr td, .provider-info-table tbody tr td p, .insurance-subs-table tbody tr td p, .dropdown-mode label, .dropdown-diag p, .footer p span:nth-child(2), .breadcrumb li a, .breadcrumb li.active, .daily-view h2, .daily-view select, .appointment-status ul li a {
   font-weight: bold; }
 
 table thead tr th, table tbody tr td, table tfoot tr td {
@@ -105,7 +105,7 @@ input[type=text] {
 input[type=text]:hover, input[type=text]:focus {
   outline: none; }
 
-.line-item input[type="text"]:hover, .line-item input[type=text]:focus {
+.line-item input[type="text"]:hover, .sch-table input[type="text"]:hover, .srh-table input[type="text"]:hover, .line-item input[type=text]:focus, .sch-table input[type=text]:focus, .srh-table input[type=text]:focus {
   border-color: #b5b5b5;
   outline: auto;
   height: 23px;
@@ -336,10 +336,16 @@ label {
   height: 100%;
   min-height: 540px; }
 
+.schedule-fixheight {
+  min-height: 597px; }
+
+.ticket-fixheight {
+  min-height: 625px; }
+
 .provider-info {
   background: #fff; }
 
-.header-info {
+.header-info, .sch-info {
   background: #4fc2f2;
   padding: 0px 0 0px 20px;
   -webkit-border-radius: 10px 10px 0 0;
@@ -350,7 +356,7 @@ label {
   height: 25px;
   line-height: 25px;
   width: 100%; }
-  .header-info h2 {
+  .header-info h2, .sch-info h2 {
     line-height: 25px;
     color: #fff; }
 
@@ -369,7 +375,7 @@ label {
 
 .trans-info {
   overflow: scroll; }
-  .trans-info .header-info {
+  .trans-info .header-info, .trans-info .sch-info {
     min-width: 1366px; }
 
 .provider-info-table tbody tr td, .insurance-subs-table tbody tr td {
@@ -404,9 +410,9 @@ label {
   padding: 0 20px 0;
   letter-spacing: 1px; }
 
-.insurance-subs .header-info ul li {
+.insurance-subs .header-info ul li, .insurance-subs .sch-info ul li {
   padding: 0px 20px 0px 0px; }
-  .insurance-subs .header-info ul li:nth-child(2) {
+  .insurance-subs .header-info ul li:nth-child(2), .insurance-subs .sch-info ul li:nth-child(2) {
     border-right: 1px solid #2e93bd;
     border-left: 1px solid #2e93bd;
     padding: 0 20px 0px 20px; }
@@ -465,12 +471,12 @@ label {
   .subscriber-modal:hover {
     background: url(../images/more-circle-hover.png) no-repeat center center; }
 
-.header-info h2, .pos-code .header-info h2 {
+.header-info h2, .sch-info h2, .pos-code .header-info h2, .pos-code .sch-info h2 {
   color: #fff; }
 
 .pos-code {
   border: 1px solid #ddd; }
-  .pos-code .header-info h2 {
+  .pos-code .header-info h2, .pos-code .sch-info h2 {
     padding: 0px 0 4px; }
 
 .bill-info .help, .insurance-subs .help {
@@ -531,10 +537,10 @@ input[type="radio"]:checked + label span {
 /****************************************
 **********Insurance END********
 ****************************************/
-.header-info ul li {
+.header-info ul li, .sch-info ul li {
   border-right: #2e93bd;
   padding: 0px 30px 0 0px; }
-  .header-info ul li span {
+  .header-info ul li span, .sch-info ul li span {
     padding: 0px 0 0 0px;
     line-height: 25px; }
 
@@ -809,71 +815,88 @@ input[type="radio"]:checked + label span {
 input[type="checkbox"] {
   display: none; }
 
-.line-item tbody tr td label span {
-  margin: 0 7px 0 0px; }
+.line-item thead, .sch-table thead, .srh-table thead {
+  display: block; }
+  .line-item thead tr, .sch-table thead tr, .srh-table thead tr {
+    border: 1px solid #ddd !important;
+    padding: 0 17px 0 0;
+    display: block; }
+    .line-item thead tr:after, .sch-table thead tr:after, .srh-table thead tr:after {
+      content: '';
+      display: block;
+      visibility: hidden;
+      clear: both; }
+    .line-item thead tr th, .sch-table thead tr th, .srh-table thead tr th {
+      display: block; }
+.line-item tbody, .sch-table tbody, .srh-table tbody {
+  width: 100%;
+  height: 148px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block; }
+  .line-item tbody tr, .sch-table tbody tr, .srh-table tbody tr {
+    display: block; }
+    .line-item tbody tr td, .sch-table tbody tr td, .srh-table tbody tr td {
+      display: block;
+      padding: 0; }
+      .line-item tbody tr td label span, .sch-table tbody tr td label span, .srh-table tbody tr td label span {
+        margin: 0 7px 0 0px; }
+      .line-item tbody tr td select, .sch-table tbody tr td select, .srh-table tbody tr td select {
+        text-decoration: underline;
+        background: url(../images/select-tick-black.png) no-repeat right center;
+        border: none;
+        padding: 0px 0px 0 10px;
+        outline: 0;
+        line-height: inherit;
+        text-decoration: none;
+        width: 100%; }
+      .line-item tbody tr td input[type=text], .sch-table tbody tr td input[type=text], .srh-table tbody tr td input[type=text] {
+        width: 100%;
+        height: 25px;
+        line-height: none;
+        text-align: center; }
+.line-item tfoot tr, .sch-table tfoot tr, .srh-table tfoot tr {
+  padding: 0 17px 0 0; }
 
-.line-item tr td:nth-child(5), .line-item tr td:nth-child(10), .line-item tr td:nth-child(13) {
+.line-item tr td:nth-child(5), .sch-table tr td:nth-child(5), .srh-table tr td:nth-child(5), .line-item tr td:nth-child(10), .sch-table tr td:nth-child(10), .srh-table tr td:nth-child(10), .line-item tr td:nth-child(13), .sch-table tr td:nth-child(13), .srh-table tr td:nth-child(13) {
   background: #ececec;
   padding: 0 10px 0 0;
   text-align: right; }
 
-.line-item select {
-  text-decoration: underline;
-  background: url(../images/select-tick-black.png) no-repeat right center;
-  border: none;
-  padding: 0px 0px 0 10px;
-  outline: 0;
-  line-height: inherit;
-  text-decoration: none;
-  width: 100%; }
-
-.line-item tbody {
-  width: 100%;
-  height: 148px;
-  /* overflow: scroll;
-  overflow: auto; */
-  overflow-y: auto;
-  overflow-x: hidden; }
-  .line-item tbody input[type=text] {
-    width: 100%;
-    height: 25px;
-    line-height: none;
-    text-align: center; }
-
-.line-item tbody tr td:nth-child(16), .line-item thead tr th:nth-child(16), .line-item tbody tr td:nth-child(6), .line-item thead tr th:nth-child(6), .line-item tbody tr td:nth-child(7), .line-item thead tr th:nth-child(7), .line-item tbody tr td:nth-child(8), .line-item thead tr th:nth-child(8), .line-item tbody tr td:nth-child(9), .line-item thead tr th:nth-child(9) {
+.line-item tbody tr td:nth-child(16), .sch-table tbody tr td:nth-child(16), .srh-table tbody tr td:nth-child(16), .line-item thead tr th:nth-child(16), .sch-table thead tr th:nth-child(16), .srh-table thead tr th:nth-child(16), .line-item tbody tr td:nth-child(6), .sch-table tbody tr td:nth-child(6), .srh-table tbody tr td:nth-child(6), .line-item thead tr th:nth-child(6), .sch-table thead tr th:nth-child(6), .srh-table thead tr th:nth-child(6), .line-item tbody tr td:nth-child(7), .sch-table tbody tr td:nth-child(7), .srh-table tbody tr td:nth-child(7), .line-item thead tr th:nth-child(7), .sch-table thead tr th:nth-child(7), .srh-table thead tr th:nth-child(7), .line-item tbody tr td:nth-child(8), .sch-table tbody tr td:nth-child(8), .srh-table tbody tr td:nth-child(8), .line-item thead tr th:nth-child(8), .sch-table thead tr th:nth-child(8), .srh-table thead tr th:nth-child(8), .line-item tbody tr td:nth-child(9), .sch-table tbody tr td:nth-child(9), .srh-table tbody tr td:nth-child(9), .line-item thead tr th:nth-child(9), .sch-table thead tr th:nth-child(9), .srh-table thead tr th:nth-child(9) {
   width: 4%;
   float: left; }
 
-.line-item tbody tr td:nth-child(5), .line-item thead tr th:nth-child(5) {
+.line-item tbody tr td:nth-child(5), .sch-table tbody tr td:nth-child(5), .srh-table tbody tr td:nth-child(5), .line-item thead tr th:nth-child(5), .sch-table thead tr th:nth-child(5), .srh-table thead tr th:nth-child(5) {
   width: 4%;
   float: left; }
 
-.line-item tbody tr td:nth-child(1), .line-item thead tr th:nth-child(1), .line-item tbody tr td:nth-child(15), .line-item thead tr th:nth-child(15), .line-item tbody tr td:nth-child(4), .line-item thead tr th:nth-child(4), .line-item tbody tr td:nth-child(12), .line-item thead tr th:nth-child(12), .line-item tbody tr td:nth-child(10), .line-item thead tr th:nth-child(10), .line-item tbody tr td:nth-child(11), .line-item thead tr th:nth-child(11) {
+.line-item tbody tr td:nth-child(1), .sch-table tbody tr td:nth-child(1), .srh-table tbody tr td:nth-child(1), .line-item thead tr th:nth-child(1), .sch-table thead tr th:nth-child(1), .srh-table thead tr th:nth-child(1), .line-item tbody tr td:nth-child(15), .sch-table tbody tr td:nth-child(15), .srh-table tbody tr td:nth-child(15), .line-item thead tr th:nth-child(15), .sch-table thead tr th:nth-child(15), .srh-table thead tr th:nth-child(15), .line-item tbody tr td:nth-child(4), .sch-table tbody tr td:nth-child(4), .srh-table tbody tr td:nth-child(4), .line-item thead tr th:nth-child(4), .sch-table thead tr th:nth-child(4), .srh-table thead tr th:nth-child(4), .line-item tbody tr td:nth-child(12), .sch-table tbody tr td:nth-child(12), .srh-table tbody tr td:nth-child(12), .line-item thead tr th:nth-child(12), .sch-table thead tr th:nth-child(12), .srh-table thead tr th:nth-child(12), .line-item tbody tr td:nth-child(10), .sch-table tbody tr td:nth-child(10), .srh-table tbody tr td:nth-child(10), .line-item thead tr th:nth-child(10), .sch-table thead tr th:nth-child(10), .srh-table thead tr th:nth-child(10), .line-item tbody tr td:nth-child(11), .sch-table tbody tr td:nth-child(11), .srh-table tbody tr td:nth-child(11), .line-item thead tr th:nth-child(11), .sch-table thead tr th:nth-child(11), .srh-table thead tr th:nth-child(11) {
   width: 6%;
   float: left; }
 
-.line-item tbody tr td:nth-child(2), .line-item thead tr th:nth-child(2), .line-item tbody tr td:nth-child(3), .line-item thead tr th:nth-child(3), .line-item tbody tr td:nth-child(14), .line-item thead tr th:nth-child(14), .line-item tbody tr td:nth-child(13), .line-item thead tr th:nth-child(13) {
+.line-item tbody tr td:nth-child(2), .sch-table tbody tr td:nth-child(2), .srh-table tbody tr td:nth-child(2), .line-item thead tr th:nth-child(2), .sch-table thead tr th:nth-child(2), .srh-table thead tr th:nth-child(2), .line-item tbody tr td:nth-child(3), .sch-table tbody tr td:nth-child(3), .srh-table tbody tr td:nth-child(3), .line-item thead tr th:nth-child(3), .sch-table thead tr th:nth-child(3), .srh-table thead tr th:nth-child(3), .line-item tbody tr td:nth-child(14), .sch-table tbody tr td:nth-child(14), .srh-table tbody tr td:nth-child(14), .line-item thead tr th:nth-child(14), .sch-table thead tr th:nth-child(14), .srh-table thead tr th:nth-child(14), .line-item tbody tr td:nth-child(13), .sch-table tbody tr td:nth-child(13), .srh-table tbody tr td:nth-child(13), .line-item thead tr th:nth-child(13), .sch-table thead tr th:nth-child(13), .srh-table thead tr th:nth-child(13) {
   width: 10%;
   float: left; }
 
-.line-item tfoot tr td:first-child {
+.line-item tfoot tr td:first-child, .sch-table tfoot tr td:first-child, .srh-table tfoot tr td:first-child {
   width: 70%;
   float: left; }
 
-.line-item tfoot tr td:nth-child(2) {
+.line-item tfoot tr td:nth-child(2), .sch-table tfoot tr td:nth-child(2), .srh-table tfoot tr td:nth-child(2) {
   width: 10%;
   float: left;
   background: #ececec; }
 
-.line-item tfoot tr td:nth-child(3) {
+.line-item tfoot tr td:nth-child(3), .sch-table tfoot tr td:nth-child(3), .srh-table tfoot tr td:nth-child(3) {
   width: 10%;
   float: left; }
 
-.line-item tfoot tr td:nth-child(4) {
+.line-item tfoot tr td:nth-child(4), .sch-table tfoot tr td:nth-child(4), .srh-table tfoot tr td:nth-child(4) {
   width: 6%;
   float: left; }
 
-.line-item tfoot tr td:nth-child(5) {
+.line-item tfoot tr td:nth-child(5), .sch-table tfoot tr td:nth-child(5), .srh-table tfoot tr td:nth-child(5) {
   width: 4%;
   float: left;
   background: none; }
@@ -890,27 +913,16 @@ input[type="checkbox"] + label span {
 input[type="checkbox"]:checked + label span {
   background: url(../images/right-symbol.png) top no-repeat; }
 
-/*.line-item>tbody>tr, .line-item-trans>tbody>tr {  
-     @include line-height(25); 
-	 @extend .font_normal;
-     padding:0 0;
-	 color:#2f3840;
-	 overflow:hidden;
-}*/
-.line-item table, .line-item-trans table {
-  width: 100%; }
-
-.line-item thead, .line-item tbody, .line-item tr, .line-item td, .line-item th,
 .line-item-trans thead, .line-item-trans tbody, .line-item-trans tr, .line-item-trans td, .line-item-trans th {
   display: block; }
 
-.line-item tr:after, .line-item-trans tr:after {
+.line-item-trans tr:after {
   content: '';
   display: block;
   visibility: hidden;
   clear: both; }
 
-.line-item > tbody > tr > td, .line-item-trans > tbody > tr > td {
+.line-item-trans > tbody > tr > td {
   padding: 0; }
 
 .line-item-trans tbody tr td:nth-child(7), .line-item-trans thead tr th:nth-child(7), .line-item-trans tbody tr td:nth-child(8), .line-item-trans thead tr th:nth-child(8), .line-item-trans tbody tr td:nth-child(9), .line-item-trans thead tr th:nth-child(9), .line-item-trans tbody tr td:nth-child(10), .line-item-trans thead tr th:nth-child(10), .line-item-trans tbody tr td:nth-child(11), .line-item-trans thead tr th:nth-child(11), .line-item-trans tbody tr td:nth-child(12), .line-item-trans thead tr th:nth-child(12), .line-item-trans tbody tr td:nth-child(13), .line-item-trans thead tr th:nth-child(13) {
@@ -975,6 +987,26 @@ input[type="checkbox"]:checked + label span {
   border: 1px solid #ddd;
   border-bottom: none;
   border-left: none; }
+
+/********Schedule Charges Table*************/
+.sch-table thead tr th, .srh-table thead tr th {
+  width: 11.1% !important; }
+.sch-table tbody tr td, .srh-table tbody tr td {
+  width: 11.1% !important;
+  background: none !important;
+  padding: 0 0px 0 0 !important;
+  text-align: center !important; }
+
+.sch-info {
+  height: 35px;
+  line-height: 35px; }
+  .sch-info h2 {
+    line-height: 35px; }
+
+.srh-table thead tr th {
+  width: 14.28% !important; }
+.srh-table tbody tr td {
+  width: 14.28% !important; }
 
 /*************
 ******Footer**
@@ -1063,99 +1095,50 @@ input[type="checkbox"]:checked + label span {
   margin: 15px 0; }
 
 /*** New Reg***/
-.charges-info .header-info {
-  padding: 0px 0 0px 20px; }
-
-.charges-info .header-info ul {
-  overflow: hidden; }
-
-.charges-info .header-info ul li {
-  border-right: #2e93bd;
-  padding: 0 30px 0 0px; }
-
-.charges-info .search {
-  padding: 0 25px 0 20px;
-  margin: 0px 0 0px 0;
-  background: url(../images/search.png) no-repeat 94% 54% #fff; }
-
-.line-item > thead > tr {
-  border: 1px solid #ddd !important; }
-
-.line-item > thead > tr:nth-child(1), .line-item > tfoot > tr, .line-item-trans > thead > tr:nth-child(1), .charges-table > thead > tr:nth-child(1), .charges-info > thead > tr:nth-child(1) {
-  padding: 0 17px 0 0; }
-
 .line-item-trans > thead > tr:nth-child(1) {
   padding: 0 0 0 0; }
 
 .line-item-trans {
   border-right: none; }
 
-.line-item > tbody > tr:hover, .line-item-trans > tbody > tr:hover {
+.line-item > tbody > tr:hover, .sch-table > tbody > tr:hover, .srh-table > tbody > tr:hover, .line-item-trans > tbody > tr:hover {
   background: #d5e4f1; }
 
-.line-item table, .line-item-trans table, .charges-info table, .charges-info table {
+.line-item table, .sch-table table, .srh-table table, .line-item-trans table {
   width: 100%; }
 
-.charges-info thead, .charges-info tbody, .charges-info tr, .charges-info td, .charges-info th, .charges-table thead, .charges-table tbody, .charges-table tr, .charges-table td, .charges-table th, .line-item thead, .line-item tbody, .line-item tfoot, .line-item tr, .line-item td, .line-item th, .line-item-trans thead, .line-item-trans tbody, .line-item-trans tr, .line-item-trans td, .line-item-trans th {
+.line-item thead, .sch-table thead, .srh-table thead, .line-item tbody, .sch-table tbody, .srh-table tbody, .line-item tfoot, .sch-table tfoot, .srh-table tfoot, .line-item tr, .sch-table tr, .srh-table tr, .line-item td, .sch-table td, .srh-table td, .line-item th, .sch-table th, .srh-table th, .line-item-trans thead, .line-item-trans tbody, .line-item-trans tr, .line-item-trans td, .line-item-trans th {
   display: block; }
 
-.line-item tr:after, .line-item-trans tr:after, .charges-info tr:after, .charges-table tr:after {
+.line-item tr:after, .sch-table tr:after, .srh-table tr:after, .line-item-trans tr:after {
   content: '';
   display: block;
   visibility: hidden;
   clear: both; }
 
-.line-item > thead > tr > th, .charges-info > thead > tr > th, .charges-table > thead > tr > th, .line-item > tfoot > tr > td {
+.line-item > thead > tr > th, .sch-table > thead > tr > th, .srh-table > thead > tr > th, .line-item > tfoot > tr > td, .sch-table > tfoot > tr > td, .srh-table > tfoot > tr > td {
   padding: 0px 8px; }
 
-.line-item > thead > tr > th, .line-item-trans > thead > tr > th, .line-item > tfoot > tr > td {
+.line-item > thead > tr > th, .sch-table > thead > tr > th, .srh-table > thead > tr > th, .line-item-trans > thead > tr > th, .line-item > tfoot > tr > td, .sch-table > tfoot > tr > td, .srh-table > tfoot > tr > td {
   border-right: 1px solid #ddd;
   border-left: none;
   border-bottom: none;
   padding: 0; }
 
-.line-item > thead > tr > td, .line-item-trans > thead > tr > td {
+.line-item > thead > tr > td, .sch-table > thead > tr > td, .srh-table > thead > tr > td, .line-item-trans > thead > tr > td {
   border-right: 1px solid #ddd;
   border-left: none;
   border-top: 1px solid #ddd; }
 
-.line-item > tbody > tr > td, .line-item-trans > tbody > tr > td, .charges-table > tbody > tr > td, .charges-info > tbody > tr > td {
+.line-item > tbody > tr > td, .sch-table > tbody > tr > td, .srh-table > tbody > tr > td, .line-item-trans > tbody > tr > td {
   padding: 0; }
 
-.line-item > tbody > tr > td, .line-item-trans > tbody > tr > td {
+.line-item > tbody > tr > td, .sch-table > tbody > tr > td, .srh-table > tbody > tr > td, .line-item-trans > tbody > tr > td {
   border-left: none;
   border-bottom: none; }
 
-.charges-table > thead > tr > td, .charges-info > thead > tr > td {
-  color: #000; }
-
-.charges-table > tbody > tr, .charges-info > tbody > tr {
-  color: #2f3840;
-  -o-transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  transition: 0.5s all; }
-
-.charges-table > tbody > tr:hover {
-  background: #d5e4f1; }
-
-.charges-info tbody, .charges-table tbody {
-  height: 160px;
-  overflow-y: auto; }
-
-.charges-info tbody td, .charges-info thead th {
-  width: 11.1%;
-  float: left; }
-
-.check-in-table tbody td, .check-in-table thead th {
-  width: 10%; }
-
 .ticket-info tbody td, .ticket-info thead th {
   width: 14.28%; }
-
-.charges-info thead tr {
-  padding: 0 17px 0 0; }
 
 .payment-table-head tr td, .payment-table tr td {
   width: 100px;
@@ -1397,6 +1380,7 @@ input[type="checkbox"]:checked + label span {
   color: #283036;
   padding: 0 24px 0 0px;
   line-height: 35px;
+  font-size: 14px;
   margin: 0 0px 0 0px;
   -o-transition: 0.5s all;
   -webkit-transition: 0.5s all;
@@ -1411,7 +1395,8 @@ input[type="checkbox"]:checked + label span {
 
 .breadcrumb li.active {
   color: #0583c3;
-  padding: 0 0 0 10px; }
+  padding: 0 0 0 10px;
+  font-size: 14px; }
 
 .breadcrumb > li:before {
   padding: 0 0px;
@@ -2426,7 +2411,7 @@ input[disabled], select[disabled] {
   .diag-a {
     width: 190px; }
 
-  .line-item select {
+  .line-item select, .sch-table select, .srh-table select {
     padding: 0px 0px 0 5px; }
 
   .daywise-table ul > li > a {
